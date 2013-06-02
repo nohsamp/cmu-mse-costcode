@@ -1,0 +1,1106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_rOG1QMfZEeKj__JByXBSIg">
+  <modelElement href="WIFIScanner.uml#_snNWMMfZEeKj__JByXBSIg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_t9Du0MfZEeKj__JByXBSIg" targetItem="_t9XQ5sfZEeKj__JByXBSIg" sourceItem="_t9CgsMfZEeKj__JByXBSIg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_t9EV4cfZEeKj__JByXBSIg" targetItem="_t9XQ6sfZEeKj__JByXBSIg" sourceItem="_t9EV4MfZEeKj__JByXBSIg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_t9E88cfZEeKj__JByXBSIg" targetItem="_t9XQ7sfZEeKj__JByXBSIg" sourceItem="_t9E88MfZEeKj__JByXBSIg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_t9FkAcfZEeKj__JByXBSIg" targetItem="_t9XQ8sfZEeKj__JByXBSIg" sourceItem="_t9FkAMfZEeKj__JByXBSIg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_t9GLEcfZEeKj__JByXBSIg" targetItem="_t9XQ9sfZEeKj__JByXBSIg" sourceItem="_t9GLEMfZEeKj__JByXBSIg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_t9GyIcfZEeKj__JByXBSIg" targetItem="_t9XQ-sfZEeKj__JByXBSIg" sourceItem="_t9GyIMfZEeKj__JByXBSIg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_t9HZMMfZEeKj__JByXBSIg" targetItem="_t9XQ_sfZEeKj__JByXBSIg" sourceItem="_t9GyIsfZEeKj__JByXBSIg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_t9IAQMfZEeKj__JByXBSIg" targetItem="_t9XRAsfZEeKj__JByXBSIg" sourceItem="_t9HZMcfZEeKj__JByXBSIg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_t9InUMfZEeKj__JByXBSIg" targetItem="_t9XRBsfZEeKj__JByXBSIg" sourceItem="_t9IAQcfZEeKj__JByXBSIg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_t9InUsfZEeKj__JByXBSIg" targetItem="_t9XRCsfZEeKj__JByXBSIg" sourceItem="_t9InUcfZEeKj__JByXBSIg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_t9JOYcfZEeKj__JByXBSIg" targetItem="_t9XRDsfZEeKj__JByXBSIg" sourceItem="_t9JOYMfZEeKj__JByXBSIg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_t9J1ccfZEeKj__JByXBSIg" targetItem="_t9XREsfZEeKj__JByXBSIg" sourceItem="_t9J1cMfZEeKj__JByXBSIg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_t9KcgcfZEeKj__JByXBSIg" targetItem="_t9XRFsfZEeKj__JByXBSIg" sourceItem="_t9KcgMfZEeKj__JByXBSIg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_t9LDkcfZEeKj__JByXBSIg" targetItem="_t9XRGsfZEeKj__JByXBSIg" sourceItem="_t9LDkMfZEeKj__JByXBSIg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_t9LqoMfZEeKj__JByXBSIg" targetItem="_t9XRHsfZEeKj__JByXBSIg" sourceItem="_t9LDksfZEeKj__JByXBSIg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_t9MRsMfZEeKj__JByXBSIg" targetItem="_t9XRIsfZEeKj__JByXBSIg" sourceItem="_t9LqocfZEeKj__JByXBSIg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_t-vJ0MfZEeKj__JByXBSIg" sourceAnchor="187.0,0.0" targetAnchor="746.0,267.0" target="_t9WpwMfZEeKj__JByXBSIg" source="_t_Nq8MfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tS-3EcfZEeKj__JByXBSIg"/>
+    <bendpoints xmi:id="_xB7OAMfZEeKj__JByXBSIg" sourceY="-322" targetX="287"/>
+    <stereotypes xmi:id="_t-zbQMfZEeKj__JByXBSIg" name="Reference">
+      <modelElement href="WIFIScanner.uml#_tTAFMMfZEeKj__JByXBSIg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_t-yNIMfZEeKj__JByXBSIg" text="">
+      <visualProperties xmi:id="_xB8cIMfZEeKj__JByXBSIg" position="-47.94814207192803,77.14516959021705"/>
+    </nameVisual>
+    <sourceRole xmi:id="_t-y0MMfZEeKj__JByXBSIg" aggregationKind="NONE" name="">
+      <modelElement href="WIFIScanner.uml#_tS-3EsfZEeKj__JByXBSIg"/>
+      <visualProperties xmi:id="_xB71EMfZEeKj__JByXBSIg" position="-18.483515039597478,-68.1691295537745"/>
+      <visibility xmi:id="_t-9MQcfZEeKj__JByXBSIg" label="+"/>
+      <cardinality xmi:id="_t-9MQMfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_t-y0McfZEeKj__JByXBSIg" aggregationKind="NONE" name="apList" navigable="true">
+      <modelElement href="WIFIScanner.uml#_tQKMkMfZEeKj__JByXBSIg"/>
+      <visualProperties xmi:id="_xB8cIcfZEeKj__JByXBSIg" position="252.65932604123418,-135.6559452438895"/>
+      <visibility xmi:id="_t-9MQ8fZEeKj__JByXBSIg" label="-"/>
+      <cardinality xmi:id="_t-9MQsfZEeKj__JByXBSIg" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_t-w_AcfZEeKj__JByXBSIg" targetItem="_t_Nq8MfZEeKj__JByXBSIg" sourceItem="_t-w_AMfZEeKj__JByXBSIg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_t_CEwMfZEeKj__JByXBSIg" source="_t_Nq8MfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tSw0ocfZEeKj__JByXBSIg"/>
+    <stereotypes xmi:id="_t_CEwcfZEeKj__JByXBSIg" name="Reference">
+      <modelElement href="WIFIScanner.uml#_tSyp0MfZEeKj__JByXBSIg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_t_CEwsfZEeKj__JByXBSIg" text=""/>
+    <sourceRole xmi:id="_t_CEw8fZEeKj__JByXBSIg" aggregationKind="NONE" name="">
+      <modelElement href="WIFIScanner.uml#_tSw0osfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_CExMfZEeKj__JByXBSIg" label="+"/>
+      <cardinality xmi:id="_t_CExcfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_t_CExsfZEeKj__JByXBSIg" aggregationKind="NONE" name="wifimanager" navigable="true">
+      <modelElement href="WIFIScanner.uml#_tP7jEMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_CEx8fZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_CEyMfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_t_DS4MfZEeKj__JByXBSIg" source="_t_Nq8MfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tSzQ4MfZEeKj__JByXBSIg"/>
+    <stereotypes xmi:id="_t_DS4cfZEeKj__JByXBSIg" name="Reference">
+      <modelElement href="WIFIScanner.uml#_tS0fAMfZEeKj__JByXBSIg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_t_DS4sfZEeKj__JByXBSIg" text=""/>
+    <sourceRole xmi:id="_t_DS48fZEeKj__JByXBSIg" aggregationKind="NONE" name="">
+      <modelElement href="WIFIScanner.uml#_tSzQ4cfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_DS5MfZEeKj__JByXBSIg" label="+"/>
+      <cardinality xmi:id="_t_DS5cfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_t_DS5sfZEeKj__JByXBSIg" aggregationKind="NONE" name="textStatus" navigable="true">
+      <modelElement href="WIFIScanner.uml#_tP8KIcfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_DS58fZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_DS6MfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_t_D58MfZEeKj__JByXBSIg" source="_t_Nq8MfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tS1GEMfZEeKj__JByXBSIg"/>
+    <stereotypes xmi:id="_t_EhAMfZEeKj__JByXBSIg" name="Reference">
+      <modelElement href="WIFIScanner.uml#_tS2UMMfZEeKj__JByXBSIg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_t_EhAcfZEeKj__JByXBSIg" text=""/>
+    <sourceRole xmi:id="_t_EhAsfZEeKj__JByXBSIg" aggregationKind="NONE" name="">
+      <modelElement href="WIFIScanner.uml#_tS1GEcfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_EhA8fZEeKj__JByXBSIg" label="+"/>
+      <cardinality xmi:id="_t_EhBMfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_t_EhBcfZEeKj__JByXBSIg" aggregationKind="NONE" name="btnScanStart" navigable="true">
+      <modelElement href="WIFIScanner.uml#_tP8xMcfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_EhBsfZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_EhB8fZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_t_FIEMfZEeKj__JByXBSIg" source="_t_Nq8MfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tS27QMfZEeKj__JByXBSIg"/>
+    <stereotypes xmi:id="_t_FIEcfZEeKj__JByXBSIg" name="Reference">
+      <modelElement href="WIFIScanner.uml#_tS4JYMfZEeKj__JByXBSIg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_t_FIEsfZEeKj__JByXBSIg" text=""/>
+    <sourceRole xmi:id="_t_FIE8fZEeKj__JByXBSIg" aggregationKind="NONE" name="">
+      <modelElement href="WIFIScanner.uml#_tS27QcfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_FIFMfZEeKj__JByXBSIg" label="+"/>
+      <cardinality xmi:id="_t_FvIMfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_t_FvIcfZEeKj__JByXBSIg" aggregationKind="NONE" name="btnScanStop" navigable="true">
+      <modelElement href="WIFIScanner.uml#_tP9_UMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_FvIsfZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_FvI8fZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_t_G9QMfZEeKj__JByXBSIg" source="_t_Nq8MfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tS4JYcfZEeKj__JByXBSIg"/>
+    <stereotypes xmi:id="_t_G9QcfZEeKj__JByXBSIg" name="Reference">
+      <modelElement href="WIFIScanner.uml#_tS5XgMfZEeKj__JByXBSIg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_t_G9QsfZEeKj__JByXBSIg" text=""/>
+    <sourceRole xmi:id="_t_G9Q8fZEeKj__JByXBSIg" aggregationKind="NONE" name="">
+      <modelElement href="WIFIScanner.uml#_tS4JYsfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_G9RMfZEeKj__JByXBSIg" label="+"/>
+      <cardinality xmi:id="_t_G9RcfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_t_G9RsfZEeKj__JByXBSIg" aggregationKind="NONE" name="btnAvgFilterScanStart" navigable="true">
+      <modelElement href="WIFIScanner.uml#_tP-mYcfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_G9R8fZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_G9SMfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_t_ILYMfZEeKj__JByXBSIg" source="_t_Nq8MfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tS5-kMfZEeKj__JByXBSIg"/>
+    <stereotypes xmi:id="_t_ILYcfZEeKj__JByXBSIg" name="Reference">
+      <modelElement href="WIFIScanner.uml#_tS6loMfZEeKj__JByXBSIg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_t_ILYsfZEeKj__JByXBSIg" text=""/>
+    <sourceRole xmi:id="_t_ILY8fZEeKj__JByXBSIg" aggregationKind="NONE" name="">
+      <modelElement href="WIFIScanner.uml#_tS5-kcfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_ILZMfZEeKj__JByXBSIg" label="+"/>
+      <cardinality xmi:id="_t_ILZcfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_t_ILZsfZEeKj__JByXBSIg" aggregationKind="NONE" name="btnDropFilterScanStart" navigable="true">
+      <modelElement href="WIFIScanner.uml#_tP_0gMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_ILZ8fZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_ILaMfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_t_JZgMfZEeKj__JByXBSIg" source="_t_Nq8MfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tS7MsMfZEeKj__JByXBSIg"/>
+    <stereotypes xmi:id="_t_JZgcfZEeKj__JByXBSIg" name="Reference">
+      <modelElement href="WIFIScanner.uml#_tS8a0MfZEeKj__JByXBSIg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_t_JZgsfZEeKj__JByXBSIg" text=""/>
+    <sourceRole xmi:id="_t_JZg8fZEeKj__JByXBSIg" aggregationKind="NONE" name="">
+      <modelElement href="WIFIScanner.uml#_tS7MscfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_JZhMfZEeKj__JByXBSIg" label="+"/>
+      <cardinality xmi:id="_t_JZhcfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_t_JZhsfZEeKj__JByXBSIg" aggregationKind="NONE" name="osw" navigable="true">
+      <modelElement href="WIFIScanner.uml#_tQHJQcfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_JZh8fZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_JZiMfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_t_LOsMfZEeKj__JByXBSIg" source="_t_Nq8MfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tS8a0cfZEeKj__JByXBSIg"/>
+    <stereotypes xmi:id="_t_LOscfZEeKj__JByXBSIg" name="Reference">
+      <modelElement href="WIFIScanner.uml#_tS9o8MfZEeKj__JByXBSIg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_t_LOssfZEeKj__JByXBSIg" text=""/>
+    <sourceRole xmi:id="_t_LOs8fZEeKj__JByXBSIg" aggregationKind="NONE" name="">
+      <modelElement href="WIFIScanner.uml#_tS8a0sfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_LOtMfZEeKj__JByXBSIg" label="+"/>
+      <cardinality xmi:id="_t_LOtcfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_t_LOtsfZEeKj__JByXBSIg" aggregationKind="NONE" name="fOut" navigable="true">
+      <modelElement href="WIFIScanner.uml#_tQIXYMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_LOt8fZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_LOuMfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_t_L1wMfZEeKj__JByXBSIg" source="_t_Nq8MfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tS9o8cfZEeKj__JByXBSIg"/>
+    <stereotypes xmi:id="_t_L1wcfZEeKj__JByXBSIg" name="Reference">
+      <modelElement href="WIFIScanner.uml#_tS-3EMfZEeKj__JByXBSIg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_t_L1wsfZEeKj__JByXBSIg" text=""/>
+    <sourceRole xmi:id="_t_L1w8fZEeKj__JByXBSIg" aggregationKind="NONE" name="">
+      <modelElement href="WIFIScanner.uml#_tS9o8sfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_L1xMfZEeKj__JByXBSIg" label="+"/>
+      <cardinality xmi:id="_t_L1xcfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_t_L1xsfZEeKj__JByXBSIg" aggregationKind="NONE" name="mScanResult" navigable="true">
+      <modelElement href="WIFIScanner.uml#_tQI-ccfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_L1x8fZEeKj__JByXBSIg" label="-"/>
+      <cardinality xmi:id="_t_L1yMfZEeKj__JByXBSIg" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_t_ND4MfZEeKj__JByXBSIg" source="_t_Nq8MfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tTAFMcfZEeKj__JByXBSIg"/>
+    <stereotypes xmi:id="_t_ND4cfZEeKj__JByXBSIg" name="Reference">
+      <modelElement href="WIFIScanner.uml#_tTBTUMfZEeKj__JByXBSIg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_t_ND4sfZEeKj__JByXBSIg" text=""/>
+    <sourceRole xmi:id="_t_ND48fZEeKj__JByXBSIg" aggregationKind="NONE" name="">
+      <modelElement href="WIFIScanner.uml#_tTAsQMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_ND5MfZEeKj__JByXBSIg" label="+"/>
+      <cardinality xmi:id="_t_ND5cfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_t_ND5sfZEeKj__JByXBSIg" aggregationKind="NONE" name="mReceiver" navigable="true">
+      <modelElement href="WIFIScanner.uml#_tQLasMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_ND58fZEeKj__JByXBSIg" label="-"/>
+      <cardinality xmi:id="_t_ND6MfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_t9CgsMfZEeKj__JByXBSIg" sourceConnectionVisual="_t9Du0MfZEeKj__JByXBSIg" text="@return&#xD;&#xA;&#x9; * @uml.property  name=&quot;ssid&quot;" item="_t9XQ5sfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tRrPgMfZEeKj__JByXBSIg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_t9EV4MfZEeKj__JByXBSIg" sourceConnectionVisual="_t9EV4cfZEeKj__JByXBSIg" text="@return&#xD;&#xA;&#x9; * @uml.property  name=&quot;bssid&quot;" item="_t9XQ6sfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tRr2kMfZEeKj__JByXBSIg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_t9E88MfZEeKj__JByXBSIg" sourceConnectionVisual="_t9E88cfZEeKj__JByXBSIg" text="@return  the capabilities&#xD;&#xA;&#x9; * @uml.property  name=&quot;capabilities&quot;" item="_t9XQ7sfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tRr2kcfZEeKj__JByXBSIg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_t9FkAMfZEeKj__JByXBSIg" sourceConnectionVisual="_t9FkAcfZEeKj__JByXBSIg" text="@return  the rssi&#xD;&#xA;&#x9; * @uml.property  name=&quot;rssi&quot;" item="_t9XQ8sfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tRr2ksfZEeKj__JByXBSIg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_t9GLEMfZEeKj__JByXBSIg" sourceConnectionVisual="_t9GLEcfZEeKj__JByXBSIg" text="@return  the posX&#xD;&#xA;&#x9; * @uml.property  name=&quot;posX&quot;" item="_t9XQ9sfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tRr2k8fZEeKj__JByXBSIg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_t9GyIMfZEeKj__JByXBSIg" sourceConnectionVisual="_t9GyIcfZEeKj__JByXBSIg" text="@return  the posY&#xD;&#xA;&#x9; * @uml.property  name=&quot;posY&quot;" item="_t9XQ-sfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tRr2lMfZEeKj__JByXBSIg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_t9GyIsfZEeKj__JByXBSIg" sourceConnectionVisual="_t9HZMMfZEeKj__JByXBSIg" text="@param capabilities  the capabilities to set&#xD;&#xA;&#x9; * @uml.property  name=&quot;capabilities&quot;" item="_t9XQ_sfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tRr2lcfZEeKj__JByXBSIg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_t9HZMcfZEeKj__JByXBSIg" sourceConnectionVisual="_t9IAQMfZEeKj__JByXBSIg" text="@return  the frequency&#xD;&#xA;&#x9; * @uml.property  name=&quot;frequency&quot;" item="_t9XRAsfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tRsdoMfZEeKj__JByXBSIg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_t9IAQcfZEeKj__JByXBSIg" sourceConnectionVisual="_t9InUMfZEeKj__JByXBSIg" text="@return  the distance&#xD;&#xA;&#x9; * @uml.property  name=&quot;distance&quot;" item="_t9XRBsfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tRsdocfZEeKj__JByXBSIg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_t9InUcfZEeKj__JByXBSIg" sourceConnectionVisual="_t9InUsfZEeKj__JByXBSIg" text="@param frequency  the frequency to set&#xD;&#xA;&#x9; * @uml.property  name=&quot;frequency&quot;" item="_t9XRCsfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tRsdosfZEeKj__JByXBSIg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_t9JOYMfZEeKj__JByXBSIg" sourceConnectionVisual="_t9JOYcfZEeKj__JByXBSIg" text="@param bssid  the bssid to set&#xD;&#xA;&#x9; * @uml.property  name=&quot;bssid&quot;" item="_t9XRDsfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tRsdo8fZEeKj__JByXBSIg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_t9J1cMfZEeKj__JByXBSIg" sourceConnectionVisual="_t9J1ccfZEeKj__JByXBSIg" text="@param ssid  the ssid to set&#xD;&#xA;&#x9; * @uml.property  name=&quot;ssid&quot;" item="_t9XREsfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tRtEsMfZEeKj__JByXBSIg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_t9KcgMfZEeKj__JByXBSIg" sourceConnectionVisual="_t9KcgcfZEeKj__JByXBSIg" text="@param ssid  the rssi to set&#xD;&#xA;&#x9; * @uml.property  name=&quot;rssi&quot;" item="_t9XRFsfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tRtEscfZEeKj__JByXBSIg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_t9LDkMfZEeKj__JByXBSIg" sourceConnectionVisual="_t9LDkcfZEeKj__JByXBSIg" text="@param posX  the posX to set&#xD;&#xA;&#x9; * @uml.property  name=&quot;posX&quot;" item="_t9XRGsfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tRtEssfZEeKj__JByXBSIg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_t9LDksfZEeKj__JByXBSIg" sourceConnectionVisual="_t9LqoMfZEeKj__JByXBSIg" text="@param posY  the posY to set&#xD;&#xA;&#x9; * @uml.property  name=&quot;posY&quot;" item="_t9XRHsfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tRtEs8fZEeKj__JByXBSIg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_t9LqocfZEeKj__JByXBSIg" sourceConnectionVisual="_t9MRsMfZEeKj__JByXBSIg" text="@param posY  the posY to set&#xD;&#xA;&#x9; * @uml.property  name=&quot;posY&quot;" item="_t9XRIsfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tRtrwMfZEeKj__JByXBSIg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_t-w_AMfZEeKj__JByXBSIg" sourceConnectionVisual="_t-w_AcfZEeKj__JByXBSIg" text="WIFI Scanner&#xA;&#xA;@author NohSam&#xA; *" item="_t_Nq8MfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_tRtrwcfZEeKj__JByXBSIg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_t9WpwMfZEeKj__JByXBSIg" name="AccessPoint" associationsIn="_t-vJ0MfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_s6ih4MfZEeKj__JByXBSIg"/>
+    <visualProperties xmi:id="_t9WpwcfZEeKj__JByXBSIg" position="30.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_t9WpwsfZEeKj__JByXBSIg" label="+"/>
+    <attributes xmi:id="_t9Wpw8fZEeKj__JByXBSIg" name="bssid">
+      <modelElement href="WIFIScanner.uml#_tPmy8MfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t9WpxMfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tPnaAMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t9WpxcfZEeKj__JByXBSIg" label="#"/>
+      <cardinality xmi:id="_t9WpxsfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t9Wpx8fZEeKj__JByXBSIg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t9WpyMfZEeKj__JByXBSIg" name="ssid">
+      <modelElement href="WIFIScanner.uml#_tPoBEMfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t9WpycfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tPooIMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t9WpysfZEeKj__JByXBSIg" label="#"/>
+      <cardinality xmi:id="_t9Wpy8fZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t9WpzMfZEeKj__JByXBSIg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t9WpzcfZEeKj__JByXBSIg" name="capabilities">
+      <modelElement href="WIFIScanner.uml#_tPooIcfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t9WpzsfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tPpPMMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t9Wpz8fZEeKj__JByXBSIg" label="#"/>
+      <cardinality xmi:id="_t9Wp0MfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t9Wp0cfZEeKj__JByXBSIg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t9Wp0sfZEeKj__JByXBSIg" name="frequency">
+      <modelElement href="WIFIScanner.uml#_tPp2QMfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t9Wp08fZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tPqdUMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t9Wp1MfZEeKj__JByXBSIg" label="#"/>
+      <cardinality xmi:id="_t9Wp1cfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t9Wp1sfZEeKj__JByXBSIg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t9Wp18fZEeKj__JByXBSIg" name="rssi">
+      <modelElement href="WIFIScanner.uml#_tPrEYMfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t9Wp2MfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tPrrcMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t9Wp2cfZEeKj__JByXBSIg" label="#"/>
+      <cardinality xmi:id="_t9Wp2sfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t9Wp28fZEeKj__JByXBSIg" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t9Wp3MfZEeKj__JByXBSIg" name="posX">
+      <modelElement href="WIFIScanner.uml#_tPrrccfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t9Wp3cfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tPsSgMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t9Wp3sfZEeKj__JByXBSIg" label="#"/>
+      <cardinality xmi:id="_t9Wp38fZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t9Wp4MfZEeKj__JByXBSIg" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t9Wp4cfZEeKj__JByXBSIg" name="posY">
+      <modelElement href="WIFIScanner.uml#_tPs5kMfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t9Wp4sfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tPtgoMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t9Wp48fZEeKj__JByXBSIg" label="#"/>
+      <cardinality xmi:id="_t9Wp5MfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t9Wp5cfZEeKj__JByXBSIg" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t9Wp5sfZEeKj__JByXBSIg" name="distance">
+      <modelElement href="WIFIScanner.uml#_tPtgocfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t9Wp58fZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tPuHsMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t9Wp6MfZEeKj__JByXBSIg" label="#"/>
+      <cardinality xmi:id="_t9Wp6cfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t9Wp6sfZEeKj__JByXBSIg" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_t9Wp68fZEeKj__JByXBSIg" name="AccessPoint">
+      <modelElement href="WIFIScanner.uml#_s6oBcMfZEeKj__JByXBSIg"/>
+      <keywords xmi:id="_t9Wp7MfZEeKj__JByXBSIg" keyword="create"/>
+      <visibility xmi:id="_t9Wp7cfZEeKj__JByXBSIg" label="+"/>
+      <outParameters xmi:id="_t9XQ0MfZEeKj__JByXBSIg">
+        <modelElement href="WIFIScanner.uml#_s6pPk8fZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XQ0cfZEeKj__JByXBSIg" name="AccessPoint">
+          <modelElement href="WIFIScanner.uml#_s6ih4MfZEeKj__JByXBSIg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_t9XQ0sfZEeKj__JByXBSIg" name="bssid">
+        <modelElement href="WIFIScanner.uml#_s6oBccfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XQ08fZEeKj__JByXBSIg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_t9XQ1MfZEeKj__JByXBSIg" name="ssid">
+        <modelElement href="WIFIScanner.uml#_s6oBcsfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XQ1cfZEeKj__JByXBSIg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_t9XQ1sfZEeKj__JByXBSIg" name="capabilities">
+        <modelElement href="WIFIScanner.uml#_s6oogMfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XQ18fZEeKj__JByXBSIg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_t9XQ2MfZEeKj__JByXBSIg" name="frequency">
+        <modelElement href="WIFIScanner.uml#_s6oogcfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XQ2cfZEeKj__JByXBSIg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_t9XQ2sfZEeKj__JByXBSIg" name="rssi">
+        <modelElement href="WIFIScanner.uml#_s6oogsfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XQ28fZEeKj__JByXBSIg" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_t9XQ3MfZEeKj__JByXBSIg" name="posX">
+        <modelElement href="WIFIScanner.uml#_s6oog8fZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XQ3cfZEeKj__JByXBSIg" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_t9XQ3sfZEeKj__JByXBSIg" name="posY">
+        <modelElement href="WIFIScanner.uml#_s6pPkMfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XQ38fZEeKj__JByXBSIg" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t9XQ4MfZEeKj__JByXBSIg" name="AccessPoint">
+      <modelElement href="WIFIScanner.uml#_s6qdsMfZEeKj__JByXBSIg"/>
+      <keywords xmi:id="_t9XQ4cfZEeKj__JByXBSIg" keyword="create"/>
+      <stereotypes xmi:id="_t9XQ4sfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_s6rEwMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t9XQ48fZEeKj__JByXBSIg" label="+"/>
+      <outParameters xmi:id="_t9XQ5MfZEeKj__JByXBSIg">
+        <modelElement href="WIFIScanner.uml#_s6rEwcfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XQ5cfZEeKj__JByXBSIg" name="AccessPoint">
+          <modelElement href="WIFIScanner.uml#_s6ih4MfZEeKj__JByXBSIg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_t9XQ5sfZEeKj__JByXBSIg" comments="_t9CgsMfZEeKj__JByXBSIg" targetConnectionVisual="_t9Du0MfZEeKj__JByXBSIg" name="getSsid">
+      <modelElement href="WIFIScanner.uml#_s6rr0MfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t9XQ58fZEeKj__JByXBSIg" label="+"/>
+      <outParameters xmi:id="_t9XQ6MfZEeKj__JByXBSIg">
+        <modelElement href="WIFIScanner.uml#_s6sS4MfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XQ6cfZEeKj__JByXBSIg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_t9XQ6sfZEeKj__JByXBSIg" comments="_t9EV4MfZEeKj__JByXBSIg" targetConnectionVisual="_t9EV4cfZEeKj__JByXBSIg" name="getBssid">
+      <modelElement href="WIFIScanner.uml#_s6sS4cfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t9XQ68fZEeKj__JByXBSIg" label="+"/>
+      <outParameters xmi:id="_t9XQ7MfZEeKj__JByXBSIg">
+        <modelElement href="WIFIScanner.uml#_s6s58MfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XQ7cfZEeKj__JByXBSIg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_t9XQ7sfZEeKj__JByXBSIg" comments="_t9E88MfZEeKj__JByXBSIg" targetConnectionVisual="_t9E88cfZEeKj__JByXBSIg" name="getCapabilities">
+      <modelElement href="WIFIScanner.uml#_s6thAMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t9XQ78fZEeKj__JByXBSIg" label="+"/>
+      <outParameters xmi:id="_t9XQ8MfZEeKj__JByXBSIg">
+        <modelElement href="WIFIScanner.uml#_s6thAcfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XQ8cfZEeKj__JByXBSIg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_t9XQ8sfZEeKj__JByXBSIg" comments="_t9FkAMfZEeKj__JByXBSIg" targetConnectionVisual="_t9FkAcfZEeKj__JByXBSIg" name="getRssi">
+      <modelElement href="WIFIScanner.uml#_s6uIEMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t9XQ88fZEeKj__JByXBSIg" label="+"/>
+      <outParameters xmi:id="_t9XQ9MfZEeKj__JByXBSIg">
+        <modelElement href="WIFIScanner.uml#_s6uIEcfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XQ9cfZEeKj__JByXBSIg" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_t9XQ9sfZEeKj__JByXBSIg" comments="_t9GLEMfZEeKj__JByXBSIg" targetConnectionVisual="_t9GLEcfZEeKj__JByXBSIg" name="getPosX">
+      <modelElement href="WIFIScanner.uml#_s6uvIMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t9XQ98fZEeKj__JByXBSIg" label="+"/>
+      <outParameters xmi:id="_t9XQ-MfZEeKj__JByXBSIg">
+        <modelElement href="WIFIScanner.uml#_s6vWMMfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XQ-cfZEeKj__JByXBSIg" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_t9XQ-sfZEeKj__JByXBSIg" comments="_t9GyIMfZEeKj__JByXBSIg" targetConnectionVisual="_t9GyIcfZEeKj__JByXBSIg" name="getPosY">
+      <modelElement href="WIFIScanner.uml#_s6vWMcfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t9XQ-8fZEeKj__JByXBSIg" label="+"/>
+      <outParameters xmi:id="_t9XQ_MfZEeKj__JByXBSIg">
+        <modelElement href="WIFIScanner.uml#_s6v9QMfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XQ_cfZEeKj__JByXBSIg" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_t9XQ_sfZEeKj__JByXBSIg" comments="_t9GyIsfZEeKj__JByXBSIg" targetConnectionVisual="_t9HZMMfZEeKj__JByXBSIg" name="setCapabilities">
+      <modelElement href="WIFIScanner.uml#_s6wkUMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t9XQ_8fZEeKj__JByXBSIg" label="+"/>
+      <parameters xmi:id="_t9XRAMfZEeKj__JByXBSIg" name="capabilities">
+        <modelElement href="WIFIScanner.uml#_s6wkUcfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XRAcfZEeKj__JByXBSIg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t9XRAsfZEeKj__JByXBSIg" comments="_t9HZMcfZEeKj__JByXBSIg" targetConnectionVisual="_t9IAQMfZEeKj__JByXBSIg" name="getFrequency">
+      <modelElement href="WIFIScanner.uml#_s6xLYMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t9XRA8fZEeKj__JByXBSIg" label="+"/>
+      <outParameters xmi:id="_t9XRBMfZEeKj__JByXBSIg">
+        <modelElement href="WIFIScanner.uml#_s6xycMfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XRBcfZEeKj__JByXBSIg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_t9XRBsfZEeKj__JByXBSIg" comments="_t9IAQcfZEeKj__JByXBSIg" targetConnectionVisual="_t9InUMfZEeKj__JByXBSIg" name="getDistance">
+      <modelElement href="WIFIScanner.uml#_s6yZgMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t9XRB8fZEeKj__JByXBSIg" label="+"/>
+      <outParameters xmi:id="_t9XRCMfZEeKj__JByXBSIg">
+        <modelElement href="WIFIScanner.uml#_s6yZgcfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XRCcfZEeKj__JByXBSIg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_t9XRCsfZEeKj__JByXBSIg" comments="_t9InUcfZEeKj__JByXBSIg" targetConnectionVisual="_t9InUsfZEeKj__JByXBSIg" name="setFrequency">
+      <modelElement href="WIFIScanner.uml#_s6zAkMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t9XRC8fZEeKj__JByXBSIg" label="+"/>
+      <parameters xmi:id="_t9XRDMfZEeKj__JByXBSIg" name="frequency">
+        <modelElement href="WIFIScanner.uml#_s6znoMfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XRDcfZEeKj__JByXBSIg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t9XRDsfZEeKj__JByXBSIg" comments="_t9JOYMfZEeKj__JByXBSIg" targetConnectionVisual="_t9JOYcfZEeKj__JByXBSIg" name="setBssid">
+      <modelElement href="WIFIScanner.uml#_s601wMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t9XRD8fZEeKj__JByXBSIg" label="+"/>
+      <parameters xmi:id="_t9XREMfZEeKj__JByXBSIg" name="bssid">
+        <modelElement href="WIFIScanner.uml#_s601wcfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XREcfZEeKj__JByXBSIg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t9XREsfZEeKj__JByXBSIg" comments="_t9J1cMfZEeKj__JByXBSIg" targetConnectionVisual="_t9J1ccfZEeKj__JByXBSIg" name="setSsid">
+      <modelElement href="WIFIScanner.uml#_s61c0MfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t9XRE8fZEeKj__JByXBSIg" label="+"/>
+      <parameters xmi:id="_t9XRFMfZEeKj__JByXBSIg" name="ssid">
+        <modelElement href="WIFIScanner.uml#_s62D4MfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XRFcfZEeKj__JByXBSIg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t9XRFsfZEeKj__JByXBSIg" comments="_t9KcgMfZEeKj__JByXBSIg" targetConnectionVisual="_t9KcgcfZEeKj__JByXBSIg" name="setRssi">
+      <modelElement href="WIFIScanner.uml#_s63SAMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t9XRF8fZEeKj__JByXBSIg" label="+"/>
+      <parameters xmi:id="_t9XRGMfZEeKj__JByXBSIg" name="rssi">
+        <modelElement href="WIFIScanner.uml#_s63SAcfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XRGcfZEeKj__JByXBSIg" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t9XRGsfZEeKj__JByXBSIg" comments="_t9LDkMfZEeKj__JByXBSIg" targetConnectionVisual="_t9LDkcfZEeKj__JByXBSIg" name="setPosX">
+      <modelElement href="WIFIScanner.uml#_s635EMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t9XRG8fZEeKj__JByXBSIg" label="+"/>
+      <parameters xmi:id="_t9XRHMfZEeKj__JByXBSIg" name="posX">
+        <modelElement href="WIFIScanner.uml#_s635EcfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XRHcfZEeKj__JByXBSIg" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t9XRHsfZEeKj__JByXBSIg" comments="_t9LDksfZEeKj__JByXBSIg" targetConnectionVisual="_t9LqoMfZEeKj__JByXBSIg" name="setPosY">
+      <modelElement href="WIFIScanner.uml#_s65HMMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t9XRH8fZEeKj__JByXBSIg" label="+"/>
+      <parameters xmi:id="_t9XRIMfZEeKj__JByXBSIg" name="posY">
+        <modelElement href="WIFIScanner.uml#_s65HMcfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XRIcfZEeKj__JByXBSIg" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t9XRIsfZEeKj__JByXBSIg" comments="_t9LqocfZEeKj__JByXBSIg" targetConnectionVisual="_t9MRsMfZEeKj__JByXBSIg" name="setDistance">
+      <modelElement href="WIFIScanner.uml#_s66VUMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t9XRI8fZEeKj__JByXBSIg" label="+"/>
+      <parameters xmi:id="_t9XRJMfZEeKj__JByXBSIg" name="distance">
+        <modelElement href="WIFIScanner.uml#_s66VUcfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t9XRJcfZEeKj__JByXBSIg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_t-kKsMfZEeKj__JByXBSIg" name="TestReceiver">
+    <modelElement href="WIFIScanner.uml#_s7EGUMfZEeKj__JByXBSIg"/>
+    <visualProperties xmi:id="_t-kKscfZEeKj__JByXBSIg" position="476.0,914.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_t-kKssfZEeKj__JByXBSIg" label="+"/>
+    <attributes xmi:id="_t-kKs8fZEeKj__JByXBSIg" defaultValue="1000" name="NOTIFICATION_ID" staticAttribute="true">
+      <modelElement href="WIFIScanner.uml#_tPzAMMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t-kKtMfZEeKj__JByXBSIg" label="-"/>
+      <cardinality xmi:id="_t-kKtcfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t-kKtsfZEeKj__JByXBSIg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_t-kKt8fZEeKj__JByXBSIg" name="createNotification">
+      <modelElement href="WIFIScanner.uml#_s7GikMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t-kKuMfZEeKj__JByXBSIg" label="-"/>
+      <outParameters xmi:id="_t-kKucfZEeKj__JByXBSIg">
+        <modelElement href="WIFIScanner.uml#_tMB6gMfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t-kKusfZEeKj__JByXBSIg" name="Notification">
+          <modelElement href="WIFIScanner.uml#_tHagQMfZEeKj__JByXBSIg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_t-kKu8fZEeKj__JByXBSIg" name="onReceive">
+      <modelElement href="WIFIScanner.uml#_tL-3MMfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t-kKvMfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tMAFUMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t-kKvcfZEeKj__JByXBSIg" name="Annotations">
+        <modelElement href="WIFIScanner.uml#_tMAsYMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t-kKvsfZEeKj__JByXBSIg" label="+"/>
+      <parameters xmi:id="_t-kKv8fZEeKj__JByXBSIg" name="context">
+        <modelElement href="WIFIScanner.uml#_tL-3McfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t-kKwMfZEeKj__JByXBSIg" name="Context">
+          <modelElement href="WIFIScanner.uml#_tGaasMfZEeKj__JByXBSIg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_t-kKwcfZEeKj__JByXBSIg" name="intent">
+        <modelElement href="WIFIScanner.uml#_tL_eQMfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t-kKwsfZEeKj__JByXBSIg" name="Intent">
+          <modelElement href="WIFIScanner.uml#_tGbBwcfZEeKj__JByXBSIg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_t_Nq8MfZEeKj__JByXBSIg" comments="_t-w_AMfZEeKj__JByXBSIg" targetConnectionVisual="_t-w_AcfZEeKj__JByXBSIg" name="WIFIScanner" associationsOut="_t-vJ0MfZEeKj__JByXBSIg _t_CEwMfZEeKj__JByXBSIg _t_DS4MfZEeKj__JByXBSIg _t_D58MfZEeKj__JByXBSIg _t_FIEMfZEeKj__JByXBSIg _t_G9QMfZEeKj__JByXBSIg _t_ILYMfZEeKj__JByXBSIg _t_JZgMfZEeKj__JByXBSIg _t_LOsMfZEeKj__JByXBSIg _t_L1wMfZEeKj__JByXBSIg _t_ND4MfZEeKj__JByXBSIg">
+    <modelElement href="WIFIScanner.uml#_s7MCIMfZEeKj__JByXBSIg"/>
+    <visualProperties xmi:id="_t_Nq8cfZEeKj__JByXBSIg" position="876.0,619.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_t_Nq8sfZEeKj__JByXBSIg" label="+"/>
+    <attributes xmi:id="_t_Nq88fZEeKj__JByXBSIg" defaultValue="&quot;WIFIScanner&quot;" name="TAG" staticAttribute="true">
+      <modelElement href="WIFIScanner.uml#_tP1ccMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_Nq9MfZEeKj__JByXBSIg" label="-"/>
+      <cardinality xmi:id="_t_Nq9cfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_Nq9sfZEeKj__JByXBSIg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_Nq98fZEeKj__JByXBSIg" defaultValue="0" name="FILTER_AVG" staticAttribute="true">
+      <modelElement href="WIFIScanner.uml#_tP2DgcfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_Nq-MfZEeKj__JByXBSIg" label="-"/>
+      <cardinality xmi:id="_t_Nq-cfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_Nq-sfZEeKj__JByXBSIg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_Nq-8fZEeKj__JByXBSIg" defaultValue="1" name="FILTER_DROP" staticAttribute="true">
+      <modelElement href="WIFIScanner.uml#_tP2qkcfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_Nq_MfZEeKj__JByXBSIg" label="-"/>
+      <cardinality xmi:id="_t_Nq_cfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_Nq_sfZEeKj__JByXBSIg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_Nq_8fZEeKj__JByXBSIg" defaultValue="2" name="FILTER_NONE" staticAttribute="true">
+      <modelElement href="WIFIScanner.uml#_tP3RocfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_NrAMfZEeKj__JByXBSIg" label="-"/>
+      <cardinality xmi:id="_t_NrAcfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_NrAsfZEeKj__JByXBSIg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_NrA8fZEeKj__JByXBSIg" defaultValue="FILTER_NONE" name="filter">
+      <modelElement href="WIFIScanner.uml#_tP34scfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_NrBMfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tP5G0MfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_NrBcfZEeKj__JByXBSIg" label="-"/>
+      <cardinality xmi:id="_t_NrBsfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_NrB8fZEeKj__JByXBSIg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_NrCMfZEeKj__JByXBSIg" defaultValue="false" name="awclFlag">
+      <modelElement href="WIFIScanner.uml#_tP5G0cfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_NrCcfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tP5t4cfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_NrCsfZEeKj__JByXBSIg" label="-"/>
+      <cardinality xmi:id="_t_NrC8fZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_NrDMfZEeKj__JByXBSIg" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_NrDcfZEeKj__JByXBSIg" defaultValue="false" name="onlyScanFlag">
+      <modelElement href="WIFIScanner.uml#_tP6U8MfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_NrDsfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tP68AMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_NrD8fZEeKj__JByXBSIg" label="-"/>
+      <cardinality xmi:id="_t_NrEMfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_NrEcfZEeKj__JByXBSIg" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_NrEsfZEeKj__JByXBSIg" name="wifimanager">
+      <modelElement href="WIFIScanner.uml#_tP7jEMfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_NrE8fZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tP8KIMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t_NrFMfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tP8KIMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_NrFcfZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_NrFsfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_NrF8fZEeKj__JByXBSIg" name="WifiManager">
+        <modelElement href="WIFIScanner.uml#_tI340cfZEeKj__JByXBSIg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_NrGMfZEeKj__JByXBSIg" name="textStatus">
+      <modelElement href="WIFIScanner.uml#_tP8KIcfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_NrGcfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tP8xMMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t_NrGsfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tP8xMMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_NrG8fZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_NrHMfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_NrHcfZEeKj__JByXBSIg" name="TextView">
+        <modelElement href="WIFIScanner.uml#_tGt8sMfZEeKj__JByXBSIg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_NrHsfZEeKj__JByXBSIg" name="btnScanStart">
+      <modelElement href="WIFIScanner.uml#_tP8xMcfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_NrH8fZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tP9YQMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t_NrIMfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tP9YQMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_NrIcfZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_NrIsfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_NrI8fZEeKj__JByXBSIg" name="Button">
+        <modelElement href="WIFIScanner.uml#_tGnPAMfZEeKj__JByXBSIg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_NrJMfZEeKj__JByXBSIg" name="btnScanStop">
+      <modelElement href="WIFIScanner.uml#_tP9_UMfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_NrJcfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tP-mYMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t_NrJsfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tP-mYMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_NrJ8fZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_NrKMfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_NrKcfZEeKj__JByXBSIg" name="Button">
+        <modelElement href="WIFIScanner.uml#_tGnPAMfZEeKj__JByXBSIg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_NrKsfZEeKj__JByXBSIg" name="btnAvgFilterScanStart">
+      <modelElement href="WIFIScanner.uml#_tP-mYcfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_NrK8fZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tP_NcMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t_NrLMfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tP_NcMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_NrLcfZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_NrLsfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_NrL8fZEeKj__JByXBSIg" name="Button">
+        <modelElement href="WIFIScanner.uml#_tGnPAMfZEeKj__JByXBSIg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_NrMMfZEeKj__JByXBSIg" name="btnDropFilterScanStart">
+      <modelElement href="WIFIScanner.uml#_tP_0gMfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_NrMcfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tP_0gcfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t_NrMsfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tP_0gcfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_NrM8fZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_NrNMfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_NrNcfZEeKj__JByXBSIg" name="Button">
+        <modelElement href="WIFIScanner.uml#_tGnPAMfZEeKj__JByXBSIg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_NrNsfZEeKj__JByXBSIg" defaultValue="0" name="scanCount">
+      <modelElement href="WIFIScanner.uml#_tQAbkMfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_NrN8fZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tQBCoMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_NrOMfZEeKj__JByXBSIg" label="-"/>
+      <cardinality xmi:id="_t_NrOcfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_NrOsfZEeKj__JByXBSIg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_NrO8fZEeKj__JByXBSIg" defaultValue="&quot;&quot;" name="text">
+      <modelElement href="WIFIScanner.uml#_tQBCocfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_NrPMfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tQCQwMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_NrPcfZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_NrPsfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_NrP8fZEeKj__JByXBSIg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_NrQMfZEeKj__JByXBSIg" defaultValue="&quot;&quot;" name="result">
+      <modelElement href="WIFIScanner.uml#_tQCQwcfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_NrQcfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tQC30MfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_NrQsfZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_NrQ8fZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_NrRMfZEeKj__JByXBSIg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_NrRcfZEeKj__JByXBSIg" defaultValue="&quot;&quot;" name="fileName">
+      <modelElement href="WIFIScanner.uml#_tQDe4MfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_NrRsfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tQEF8MfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_NrR8fZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_NrSMfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_NrScfZEeKj__JByXBSIg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_NrSsfZEeKj__JByXBSIg" defaultValue="0" name="normCount">
+      <modelElement href="WIFIScanner.uml#_tQEtAMfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_NrS8fZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tQFUEMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_NrTMfZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_NrTcfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_NrTsfZEeKj__JByXBSIg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_NrT8fZEeKj__JByXBSIg" defaultValue="0" name="avgCount">
+      <modelElement href="WIFIScanner.uml#_tQFUEcfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_NrUMfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tQF7IcfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_NrUcfZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_NrUsfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_NrU8fZEeKj__JByXBSIg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_NrVMfZEeKj__JByXBSIg" defaultValue="0" name="dropCount">
+      <modelElement href="WIFIScanner.uml#_tQGiMMfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_NrVcfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tQHJQMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_NrVsfZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_NrV8fZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_NrWMfZEeKj__JByXBSIg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_NrWcfZEeKj__JByXBSIg" name="osw">
+      <modelElement href="WIFIScanner.uml#_tQHJQcfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_NrWsfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tQHwUMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t_NrW8fZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tQHwUMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_NrXMfZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_NrXcfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_NrXsfZEeKj__JByXBSIg" name="OutputStreamWriter">
+        <modelElement href="WIFIScanner.uml#_tIuu4MfZEeKj__JByXBSIg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_NrX8fZEeKj__JByXBSIg" name="fOut">
+      <modelElement href="WIFIScanner.uml#_tQIXYMfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_NrYMfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tQI-cMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t_NrYcfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tQI-cMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_OSAMfZEeKj__JByXBSIg" label="~"/>
+      <cardinality xmi:id="_t_OSAcfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_OSAsfZEeKj__JByXBSIg" name="FileOutputStream">
+        <modelElement href="WIFIScanner.uml#_tIrrkMfZEeKj__JByXBSIg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_OSA8fZEeKj__JByXBSIg" defaultValue="null" name="mScanResult">
+      <modelElement href="WIFIScanner.uml#_tQI-ccfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_OSBMfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tQJlgcfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t_OSBcfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tQJlgcfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_OSBsfZEeKj__JByXBSIg" label="-"/>
+      <cardinality xmi:id="_t_OSB8fZEeKj__JByXBSIg" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_t_OSCMfZEeKj__JByXBSIg" name="ScanResult">
+        <modelElement href="WIFIScanner.uml#_tI2qsMfZEeKj__JByXBSIg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_OSCcfZEeKj__JByXBSIg" defaultValue="new ArrayList&lt;AccessPoint>()" name="apList">
+      <modelElement href="WIFIScanner.uml#_tQKMkMfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_OSCsfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tQKzocfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t-9zUMfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tQKzocfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_OSC8fZEeKj__JByXBSIg" label="-"/>
+      <cardinality xmi:id="_t_OSDMfZEeKj__JByXBSIg" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_t_OSDcfZEeKj__JByXBSIg" name="AccessPoint">
+        <modelElement href="WIFIScanner.uml#_s6ih4MfZEeKj__JByXBSIg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_OSDsfZEeKj__JByXBSIg" defaultValue="new BroadcastReceiver() {&#xA;&#x9;&#x9;@Override&#xA;&#x9;&#x9;public void onReceive(Context context, Intent intent) {&#xA;&#x9;&#x9;&#x9;final String action = intent.getAction();&#xA;&#x9;&#x9;&#x9;if (action.equals(WifiManager.SCAN_RESULTS_AVAILABLE_ACTION)) {&#xA;&#x9;&#x9;&#x9;&#x9;if (onlyScanFlag == true) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;mScanResult = wifimanager.getScanResults();&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;getWIFIScanResult();&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;else {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;switch (filter) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;case FILTER_NONE:&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;mScanResult = wifimanager.getScanResults();&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;parseWIFIScanResult(); // get WIFISCanResult&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;break;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;case FILTER_AVG:&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;case FILTER_DROP:&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;scanCount++;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;if (scanCount == 1) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;mScanResult = wifimanager.getScanResults();&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;} else {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;mScanResult.addAll(wifimanager.getScanResults());&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;if (scanCount == 5) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;parseWIFIScanResult(); // get WIFISCanResult&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;scanCount = 0;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;mScanResult = null;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;break;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;default:&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;break;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;wifimanager.startScan(); // for refresh&#xA;&#x9;&#x9;&#x9;} else if (action.equals(WifiManager.NETWORK_STATE_CHANGED_ACTION)) {&#xA;&#x9;&#x9;&#x9;&#x9;sendBroadcast(new Intent(&quot;wifi.ON_NETWORK_STATE_CHANGED&quot;));&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;}" name="mReceiver">
+      <modelElement href="WIFIScanner.uml#_tQLasMfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_OSD8fZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tQMBwMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t_OSEMfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tQMBwMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_OSEcfZEeKj__JByXBSIg" label="-"/>
+      <cardinality xmi:id="_t_OSEsfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_OSE8fZEeKj__JByXBSIg" name="BroadcastReceiver">
+        <modelElement href="WIFIScanner.uml#_tHf_0cfZEeKj__JByXBSIg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_OSFMfZEeKj__JByXBSIg" defaultValue="false" name="scanFlag">
+      <modelElement href="WIFIScanner.uml#_tQMo0MfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_OSFcfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tQNP4MfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_OSFsfZEeKj__JByXBSIg" label="-"/>
+      <cardinality xmi:id="_t_OSF8fZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_OSGMfZEeKj__JByXBSIg" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t_OSGcfZEeKj__JByXBSIg" defaultValue="1.3f" name="g" staticAttribute="true">
+      <modelElement href="WIFIScanner.uml#_tQN28MfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_OSGsfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tQOeAMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_OSG8fZEeKj__JByXBSIg" label="#"/>
+      <cardinality xmi:id="_t_OSHMfZEeKj__JByXBSIg" label="1" max="1" min="1"/>
+      <type xmi:id="_t_OSHcfZEeKj__JByXBSIg" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_t_OSHsfZEeKj__JByXBSIg" name="parseWIFIScanResult">
+      <modelElement href="WIFIScanner.uml#_s7WaMMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_OSH8fZEeKj__JByXBSIg" label="+"/>
+    </operations>
+    <operations xmi:id="_t_OSIMfZEeKj__JByXBSIg" name="getWIFIScanResult">
+      <modelElement href="WIFIScanner.uml#_s7YPYMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_OSIcfZEeKj__JByXBSIg" label="+"/>
+    </operations>
+    <operations xmi:id="_t_OSIsfZEeKj__JByXBSIg" name="initWIFIScan">
+      <modelElement href="WIFIScanner.uml#_s7Y2cMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_OSI8fZEeKj__JByXBSIg" label="+"/>
+    </operations>
+    <operations xmi:id="_t_OSJMfZEeKj__JByXBSIg" name="printToast">
+      <modelElement href="WIFIScanner.uml#_s7aEkMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_OSJcfZEeKj__JByXBSIg" label="+"/>
+      <parameters xmi:id="_t_OSJsfZEeKj__JByXBSIg" name="messageToast">
+        <modelElement href="WIFIScanner.uml#_s7aEkcfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t_OSJ8fZEeKj__JByXBSIg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t_OSKMfZEeKj__JByXBSIg" name="processFile">
+      <modelElement href="WIFIScanner.uml#_s7aroMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_OSKcfZEeKj__JByXBSIg" label="+"/>
+    </operations>
+    <operations xmi:id="_t_OSKsfZEeKj__JByXBSIg" name="isExternalAndWriteable">
+      <modelElement href="WIFIScanner.uml#_s7du8MfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_OSK8fZEeKj__JByXBSIg" label="+"/>
+      <outParameters xmi:id="_t_OSLMfZEeKj__JByXBSIg">
+        <modelElement href="WIFIScanner.uml#_s7eWAMfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t_OSLcfZEeKj__JByXBSIg" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_t_OSLsfZEeKj__JByXBSIg" name="addAP">
+      <modelElement href="WIFIScanner.uml#_tMM5oMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_OSL8fZEeKj__JByXBSIg" label="+"/>
+      <parameters xmi:id="_t_OSMMfZEeKj__JByXBSIg" name="mResult">
+        <modelElement href="WIFIScanner.uml#_tMM5ocfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t_OSMcfZEeKj__JByXBSIg" name="ScanResult">
+          <modelElement href="WIFIScanner.uml#_tI2qsMfZEeKj__JByXBSIg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_t_OSMsfZEeKj__JByXBSIg" name="i">
+        <modelElement href="WIFIScanner.uml#_tMM5osfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t_OSM8fZEeKj__JByXBSIg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_t_OSNMfZEeKj__JByXBSIg" name="rssi">
+        <modelElement href="WIFIScanner.uml#_tMNgsMfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t_OSNcfZEeKj__JByXBSIg" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t_OSNsfZEeKj__JByXBSIg" name="onCreate">
+      <modelElement href="WIFIScanner.uml#_tMOu0MfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_OSN8fZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tMP88MfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t_OSOMfZEeKj__JByXBSIg" name="Annotations">
+        <modelElement href="WIFIScanner.uml#_tMQkAMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_OSOcfZEeKj__JByXBSIg" label="+"/>
+      <parameters xmi:id="_t_OSOsfZEeKj__JByXBSIg" name="savedInstanceState">
+        <modelElement href="WIFIScanner.uml#_tMOu0cfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t_OSO8fZEeKj__JByXBSIg" name="Bundle">
+          <modelElement href="WIFIScanner.uml#_tGesIcfZEeKj__JByXBSIg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t_OSPMfZEeKj__JByXBSIg" name="onClick">
+      <modelElement href="WIFIScanner.uml#_tMRyIMfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_OSPcfZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tMSZMMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t_OSPsfZEeKj__JByXBSIg" name="Annotations">
+        <modelElement href="WIFIScanner.uml#_tMTAQMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_OSP8fZEeKj__JByXBSIg" label="+"/>
+      <parameters xmi:id="_t_OSQMfZEeKj__JByXBSIg" name="v">
+        <modelElement href="WIFIScanner.uml#_tMRyIcfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t_OSQcfZEeKj__JByXBSIg" name="View">
+          <modelElement href="WIFIScanner.uml#_tGiWgcfZEeKj__JByXBSIg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t_OSQsfZEeKj__JByXBSIg" name="onCreateOptionsMenu">
+      <modelElement href="WIFIScanner.uml#_tMUOYMfZEeKj__JByXBSIg"/>
+      <stereotypes xmi:id="_t_OSQ8fZEeKj__JByXBSIg" name="LegacyStyledElement">
+        <modelElement href="WIFIScanner.uml#_tMU1cMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t_OSRMfZEeKj__JByXBSIg" name="Annotations">
+        <modelElement href="WIFIScanner.uml#_tMVcgMfZEeKj__JByXBSIg"/>
+      </stereotypes>
+      <visibility xmi:id="_t_OSRcfZEeKj__JByXBSIg" label="+"/>
+      <outParameters xmi:id="_t_OSRsfZEeKj__JByXBSIg">
+        <modelElement href="WIFIScanner.uml#_tMUOYsfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t_OSR8fZEeKj__JByXBSIg" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_t_OSSMfZEeKj__JByXBSIg" name="menu">
+        <modelElement href="WIFIScanner.uml#_tMUOYcfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t_OSScfZEeKj__JByXBSIg" name="Menu">
+          <modelElement href="WIFIScanner.uml#_tG4UwMfZEeKj__JByXBSIg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t_OSSsfZEeKj__JByXBSIg" name="onOptionsItemSelected">
+      <modelElement href="WIFIScanner.uml#_tMWDkMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_OSS8fZEeKj__JByXBSIg" label="+"/>
+      <outParameters xmi:id="_t_OSTMfZEeKj__JByXBSIg">
+        <modelElement href="WIFIScanner.uml#_tMWqoMfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t_OSTcfZEeKj__JByXBSIg" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_t_OSTsfZEeKj__JByXBSIg" name="item">
+        <modelElement href="WIFIScanner.uml#_tMWDkcfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t_OST8fZEeKj__JByXBSIg" name="MenuItem">
+          <modelElement href="WIFIScanner.uml#_tHvQYMfZEeKj__JByXBSIg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t_OSUMfZEeKj__JByXBSIg" name="doAWCL">
+      <modelElement href="WIFIScanner.uml#_tMXRsMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_OSUcfZEeKj__JByXBSIg" label="+"/>
+      <parameters xmi:id="_t_OSUsfZEeKj__JByXBSIg" name="apList">
+        <modelElement href="WIFIScanner.uml#_tMXRscfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t_OSU8fZEeKj__JByXBSIg" name="List">
+          <modelElement href="WIFIScanner.uml#_tGViMMfZEeKj__JByXBSIg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t_OSVMfZEeKj__JByXBSIg" name="calculateAccessPointPosition">
+      <modelElement href="WIFIScanner.uml#_tMaVAMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_t_OSVcfZEeKj__JByXBSIg" label="+"/>
+      <outParameters xmi:id="_t_OSVsfZEeKj__JByXBSIg">
+        <modelElement href="WIFIScanner.uml#_tMa8EcfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t_OSV8fZEeKj__JByXBSIg" name="AccessPoint">
+          <modelElement href="WIFIScanner.uml#_s6ih4MfZEeKj__JByXBSIg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_t_OSWMfZEeKj__JByXBSIg" name="apList">
+        <modelElement href="WIFIScanner.uml#_tMa8EMfZEeKj__JByXBSIg"/>
+        <type xmi:id="_t_OSWcfZEeKj__JByXBSIg" name="List">
+          <modelElement href="WIFIScanner.uml#_tGViMMfZEeKj__JByXBSIg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

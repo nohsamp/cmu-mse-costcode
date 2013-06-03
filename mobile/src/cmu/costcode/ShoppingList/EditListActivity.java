@@ -7,7 +7,6 @@ import java.util.Map;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.Bundle;
@@ -27,10 +26,6 @@ import cmu.costcode.ShoppingList.db.DatabaseAdaptor;
 import cmu.costcode.ShoppingList.objects.Customer;
 import cmu.costcode.ShoppingList.objects.Item;
 import cmu.costcode.ShoppingList.objects.ShoppingListItem;
-import android.net.wifi.WifiManager;
-import android.preference.Preference;
-import android.preference.PreferenceManager;
-import android.preference.PreferenceActivity;
 
 public class EditListActivity extends Activity {
 	
@@ -82,12 +77,7 @@ public class EditListActivity extends Activity {
 		LinearLayout itemList = generateEditListView(this, cust.getShoppingList());
 		scroll.addView(itemList);
 		
-		SharedPreferences prefs = getSharedPreferences("pref_general.xml", MODE_PRIVATE);
-		
-		String sss;
-		if((sss = prefs.getString("wifi_checkbox", "default")).equals("true")) {
-			WifiManager wifimanager = (WifiManager) getSystemService(WIFI_SERVICE);
-		}
+
 	}
 	
 	@Override

@@ -33,7 +33,6 @@ import cmu.costcode.ShoppingList.objects.ShoppingListItem;
 import cmu.costcode.Triangulation.TriangulationTask;
 
 public class ViewListActivity extends Activity  {
-
 	private final static String TAG = "ViewListActivity";
 
 	private DatabaseAdaptor db;

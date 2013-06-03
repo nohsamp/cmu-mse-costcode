@@ -30,6 +30,12 @@ public class AccessPoint {
 	protected float posY;
 	
 	protected double distance;
+	
+	/**
+	 * @uml.property name = "Description"
+	 * Categroy description in which the AP is located such as "Food", "Clothes"
+	 */
+	protected String description;
 
 	
 	public AccessPoint(String bssid, String ssid, String capabilities, int frequency, float rssi, float posX, float posY) {
@@ -94,6 +100,14 @@ public class AccessPoint {
 	 */
 	public float getPosY() {
 		return posY;
+	}
+	
+	/**
+	 * @return  description
+	 * @uml.property  name="description"
+	 */
+	public String getDescription() {
+		return description;
 	}
 
 	/**
@@ -175,4 +189,13 @@ public class AccessPoint {
 	public void setDistance(double distance) {
 		this.distance = distance;
 	}
+	
+	/**
+	 * @param description  category name to set
+	 * @uml.property  name="description"
+	 */
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	
 }

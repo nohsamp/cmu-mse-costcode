@@ -19,12 +19,12 @@ public class TriangulationTask extends AsyncTask<Void, Void, Void> {
 	private static final String TAG = "TriangulationTask";
 	private WifiManager wifiManager;
 	private WCL triangulation;
-	private Activity activity;
+	private Context context;
 	private Map<String, Object> initParams = new HashMap<String, Object>();
 	
-	public TriangulationTask(Activity callActivity) throws Exception {
-		this.activity = callActivity;
-		wifiManager = (WifiManager) activity.getSystemService(Context.WIFI_SERVICE);
+	public TriangulationTask(Context context) throws Exception {
+		this.context = context;
+		wifiManager = (WifiManager) this.context.getSystemService(Context.WIFI_SERVICE);
 		Log.d(TAG, "Setup WIfiManager getSystemService");
 
 		// Get preference and set the flags for triangulation
@@ -41,10 +41,9 @@ public class TriangulationTask extends AsyncTask<Void, Void, Void> {
 	
 	
 	private boolean setPreference() {
-		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(activity);
-		boolean wifiFlag =  prefs.getBoolean("wifi_checkbox", false);
+		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
 		if(!prefs.getBoolean("wifi_checkbox", false)) {
-			Toast.makeText(activity, "Make WiFi Triangulation enable" , Toast.LENGTH_SHORT).show();
+			Toast.makeText(context, "Make WiFi Triangulation enable" , Toast.LENGTH_SHORT).show();
 			return false;
 		}
 		else {
@@ -67,7 +66,7 @@ public class TriangulationTask extends AsyncTask<Void, Void, Void> {
 			if(ap != null) {
 				Intent intent = new Intent(ProximityIntentReceiver.PROXIMITY_ALERT);
 				intent.putExtra("category", "Food");
-				activity.sendBroadcast(intent);
+				context.sendBroadcast(intent);
 			}
 			try {
 				Thread.sleep(5000);

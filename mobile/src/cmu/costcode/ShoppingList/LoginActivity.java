@@ -12,12 +12,11 @@ import cmu.costcode.ShoppingList.R;
 import cmu.costcode.ShoppingList.db.DatabaseAdaptor;
 
 public class LoginActivity extends Activity {
-	
 	private DatabaseAdaptor dbHelper;
 	public final static String MEMBERID = "MEMBERID";
 	
 	private static final String TAG = "LoginActivity";
-
+	
     @Override
     public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -45,7 +44,8 @@ public class LoginActivity extends Activity {
         getMenuInflater().inflate(R.menu.activity_login, menu);
         return true;
     }
-    
+
+    // WiFi triangulation option menu load
     @Override
  	public boolean onOptionsItemSelected(MenuItem item) {
  		super.onOptionsItemSelected(item);
@@ -68,7 +68,6 @@ public class LoginActivity extends Activity {
 		
 		int memberId = validateUser(email, password);
 		if(memberId != -1) {
-			//TODO: Logging
 			intent.putExtra(MEMBERID, memberId);
 			startActivity(intent);
 		} else {
@@ -84,14 +83,13 @@ public class LoginActivity extends Activity {
     	 * - getCustomer with that ID
     	 * or - get the list 
     	 */
-    	createDummyInfo();
+    	createDummyInfo(); // TODO add verification function and remove this
     	return 1;
     	
 //    	return -1;
     }
     
-    
-    /**
+	/**
      * TODO: Temp method, intended to generate a few dummy values and test user
      */
     final int DUMMY_MEMBER_ID = 1;

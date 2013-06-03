@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_bVkMsMxiEeKCI6TvU50wYw">
+  <modelElement href="mobile.uml#_ssGdQMfZEeKj__JByXBSIg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_X13xscxtEeKCI6TvU50wYw" targetItem="_X16N8MxtEeKCI6TvU50wYw" sourceItem="_X13xsMxtEeKCI6TvU50wYw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_X15m4MxtEeKCI6TvU50wYw" source="_X16N8MxtEeKCI6TvU50wYw">
+    <modelElement href="mobile.uml#_XmEbIMxtEeKCI6TvU50wYw"/>
+    <stereotypes xmi:id="_X15m4cxtEeKCI6TvU50wYw" name="Reference">
+      <modelElement href="mobile.uml#_XmFCMMxtEeKCI6TvU50wYw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_X15m4sxtEeKCI6TvU50wYw" text=""/>
+    <sourceRole xmi:id="_X15m48xtEeKCI6TvU50wYw" aggregationKind="NONE" name="">
+      <modelElement href="mobile.uml#_XmEbIcxtEeKCI6TvU50wYw"/>
+      <visibility xmi:id="_X15m5MxtEeKCI6TvU50wYw" label="+"/>
+      <cardinality xmi:id="_X15m5cxtEeKCI6TvU50wYw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_X15m5sxtEeKCI6TvU50wYw" aggregationKind="NONE" name="apList" navigable="true">
+      <modelElement href="mobile.uml#_XmB-4MxtEeKCI6TvU50wYw"/>
+      <visibility xmi:id="_X15m58xtEeKCI6TvU50wYw" label="-"/>
+      <cardinality xmi:id="_X15m6MxtEeKCI6TvU50wYw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_X13xsMxtEeKCI6TvU50wYw" sourceConnectionVisual="_X13xscxtEeKCI6TvU50wYw" text="@author NohSam&#xA;Call web service for the access point locations" item="_X16N8MxtEeKCI6TvU50wYw">
+    <modelElement href="mobile.uml#_XmD0EMxtEeKCI6TvU50wYw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_X16N8MxtEeKCI6TvU50wYw" comments="_X13xsMxtEeKCI6TvU50wYw" targetConnectionVisual="_X13xscxtEeKCI6TvU50wYw" name="FloorPlan" associationsOut="_X15m4MxtEeKCI6TvU50wYw">
+    <modelElement href="mobile.uml#_Xl5cAMxtEeKCI6TvU50wYw"/>
+    <visualProperties xmi:id="_X16N8cxtEeKCI6TvU50wYw" position="138.0,229.0" size="270.0,150.0"/>
+    <visibility xmi:id="_X16N8sxtEeKCI6TvU50wYw" label="+"/>
+    <attributes xmi:id="_X16N88xtEeKCI6TvU50wYw" defaultValue="null" name="apList">
+      <modelElement href="mobile.uml#_XmB-4MxtEeKCI6TvU50wYw"/>
+      <stereotypes xmi:id="_X16N9MxtEeKCI6TvU50wYw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_XmDNAMxtEeKCI6TvU50wYw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_X16N9cxtEeKCI6TvU50wYw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_XmDNAMxtEeKCI6TvU50wYw"/>
+      </stereotypes>
+      <visibility xmi:id="_X16N9sxtEeKCI6TvU50wYw" label="-"/>
+      <cardinality xmi:id="_X16N98xtEeKCI6TvU50wYw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_X16N-MxtEeKCI6TvU50wYw" name="AccessPoint">
+        <modelElement href="mobile.uml#_s6ih4MfZEeKj__JByXBSIg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_X16N-cxtEeKCI6TvU50wYw" name="FloorPlan">
+      <modelElement href="mobile.uml#_Xl6qIsxtEeKCI6TvU50wYw"/>
+      <keywords xmi:id="_X16N-sxtEeKCI6TvU50wYw" keyword="create"/>
+      <stereotypes xmi:id="_X16N-8xtEeKCI6TvU50wYw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_Xl7RMsxtEeKCI6TvU50wYw"/>
+      </stereotypes>
+      <visibility xmi:id="_X16N_MxtEeKCI6TvU50wYw" label="+"/>
+      <outParameters xmi:id="_X16N_cxtEeKCI6TvU50wYw">
+        <modelElement href="mobile.uml#_Xl7RM8xtEeKCI6TvU50wYw"/>
+        <type xmi:id="_X16N_sxtEeKCI6TvU50wYw" name="FloorPlan">
+          <modelElement href="mobile.uml#_Xl5cAMxtEeKCI6TvU50wYw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_X16N_8xtEeKCI6TvU50wYw" name="getAccesspoints">
+      <modelElement href="mobile.uml#_Xl74QMxtEeKCI6TvU50wYw"/>
+      <visibility xmi:id="_X16OAMxtEeKCI6TvU50wYw" label="+"/>
+      <outParameters xmi:id="_X16OAcxtEeKCI6TvU50wYw">
+        <modelElement href="mobile.uml#_Xl74QcxtEeKCI6TvU50wYw"/>
+        <type xmi:id="_X16OAsxtEeKCI6TvU50wYw" name="AccessPoint">
+          <modelElement href="mobile.uml#_s6ih4MfZEeKj__JByXBSIg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_TSWAgMyLEeKCI6TvU50wYw" name="setAccessPoints">
+      <modelElement href="mobile.uml#_TSULUMyLEeKCI6TvU50wYw"/>
+      <stereotypes xmi:id="_TSWAgcyLEeKCI6TvU50wYw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_TSUyYMyLEeKCI6TvU50wYw"/>
+      </stereotypes>
+      <visibility xmi:id="_TSWAgsyLEeKCI6TvU50wYw" label="+"/>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

@@ -104,28 +104,30 @@ public final class R {
         public static final int loginEmailText=0x7f060006;
         public static final int loginPwordText=0x7f060007;
         public static final int menu_settings=0x7f060001;
-        public static final int pref_default_display_name=0x7f060019;
+        public static final int pref_default_display_name=0x7f06001b;
+        public static final int pref_description_bg_run=0x7f060019;
         public static final int pref_description_wifi_triangulation=0x7f060017;
         /**  Example settings for Data & Sync 
          */
-        public static final int pref_header_data_sync=0x7f06001c;
+        public static final int pref_header_data_sync=0x7f06001e;
         /**  Strings related to Settings 
  Example General settings 
          */
         public static final int pref_header_general=0x7f060015;
         /**  Example settings for Notifications 
          */
-        public static final int pref_header_notifications=0x7f06001f;
-        public static final int pref_ringtone_silent=0x7f060022;
-        public static final int pref_title_choose_wifi_triangulation=0x7f06001a;
-        public static final int pref_title_display_name=0x7f060018;
-        public static final int pref_title_new_message_notifications=0x7f060020;
-        public static final int pref_title_ringtone=0x7f060021;
-        public static final int pref_title_sync_frequency=0x7f06001d;
-        public static final int pref_title_system_sync_settings=0x7f06001e;
-        public static final int pref_title_vibrate=0x7f060023;
+        public static final int pref_header_notifications=0x7f060021;
+        public static final int pref_ringtone_silent=0x7f060024;
+        public static final int pref_title_bg_run=0x7f060018;
+        public static final int pref_title_choose_wifi_triangulation=0x7f06001c;
+        public static final int pref_title_display_name=0x7f06001a;
+        public static final int pref_title_new_message_notifications=0x7f060022;
+        public static final int pref_title_ringtone=0x7f060023;
+        public static final int pref_title_sync_frequency=0x7f06001f;
+        public static final int pref_title_system_sync_settings=0x7f060020;
+        public static final int pref_title_vibrate=0x7f060025;
         public static final int pref_title_wifi_triangulation=0x7f060016;
-        public static final int pref_wifi_data_number=0x7f06001b;
+        public static final int pref_wifi_data_number=0x7f06001d;
         public static final int title_activity_edit_list=0x7f060004;
         public static final int title_activity_login=0x7f060002;
         public static final int title_activity_notification=0x7f060011;

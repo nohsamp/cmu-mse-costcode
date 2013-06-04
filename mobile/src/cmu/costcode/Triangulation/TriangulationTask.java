@@ -22,6 +22,9 @@ public class TriangulationTask extends AsyncTask<Void, Void, Void> {
 	private Context context;
 	private Map<String, Object> initParams = new HashMap<String, Object>();
 	
+	private boolean runningFlag = false, bgrunFlag = true;
+	
+	
 	public TriangulationTask(Context context) throws Exception {
 		this.context = context;
 		wifiManager = (WifiManager) this.context.getSystemService(Context.WIFI_SERVICE);
@@ -47,20 +50,26 @@ public class TriangulationTask extends AsyncTask<Void, Void, Void> {
 			return false;
 		}
 		else {
+			bgrunFlag = prefs.getBoolean("bgrun_checkbox", true);
 			initParams.put(WCL.TRIANG_METHOD, prefs.getString("triangulation_list", "WCL"));
 			initParams.put(WCL.SCAN_NUMBER, Integer.valueOf(prefs.getString("wifi_scannum", "5")));
 		}
 		return true;
+	}
+	
+	@Override
+	protected void onPreExecute() {
+		runningFlag = true;
 	}
 
 
 	@Override
 	protected Void doInBackground(Void... params) {
 		if(triangulation == null) {
-			return null;//this.cancel(true);
+			return null;
 		}
 		
-		while(true) {
+		while(runningFlag) {
 			AccessPoint ap = triangulation.calculateAccessPointPosition();
 			
 			if(ap != null) {
@@ -74,6 +83,7 @@ public class TriangulationTask extends AsyncTask<Void, Void, Void> {
 			catch (InterruptedException e) {
 			}
 		}
+		return null;
 	}
 	
 	@Override
@@ -84,8 +94,15 @@ public class TriangulationTask extends AsyncTask<Void, Void, Void> {
 	
 	@Override
 	protected void onCancelled() {
+		runningFlag = false;
 		triangulation.clearApList();
 		super.onCancelled();
 	}
+
+
+	public boolean isBgrunFlag() {
+		return bgrunFlag;
+	}
+
 }
 

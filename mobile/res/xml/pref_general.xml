@@ -6,6 +6,12 @@
         android:summary="@string/pref_description_wifi_triangulation"
         android:title="@string/pref_title_wifi_triangulation" />
 
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="bgrun_checkbox"
+        android:summary="@string/pref_description_bg_run"
+        android:title="@string/pref_title_bg_run" />
+    
     <!-- NOTE: EditTextPreference accepts EditText attributes. -->
     <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code.
     <EditTextPreference

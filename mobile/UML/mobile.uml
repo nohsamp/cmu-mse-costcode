@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_reQxIMfZEeKj__JByXBSIg" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_reQxIcfZEeKj__JByXBSIg" source="codegen">
         <details xmi:id="_reQxIsfZEeKj__JByXBSIg" key="codegenDirectory" value="/WIFIScanner/gen"/>
-        <details xmi:id="_tuaO0MfZEeKj__JByXBSIg" key="AssociatedSourceCode" value="/WIFIScanner/gen/cmu/costcode/WIFIScanner/BuildConfig.java;663610238/1;/WIFIScanner/gen/cmu/costcode/WIFIScanner/R.java;1416285864/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/TestReceiver.java;3086906378/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/WIFIScanner.java;2516296769/1;/mobile/src/cmu/costcode/ProximityAlert/NotificationActivity.java;1616801587/1;/mobile/src/cmu/costcode/ProximityAlert/ProximityIntentReceiver.java;3718231935/1;/mobile/src/cmu/costcode/ProximityAlert/ShoppingListApplication.java;1913911324/1;/mobile/src/cmu/costcode/ShoppingList/EditListActivity.java;2438705698/1;/mobile/src/cmu/costcode/ShoppingList/LoginActivity.java;379368985/1;/mobile/src/cmu/costcode/ShoppingList/ViewListActivity.java;4014782807/1;/mobile/src/cmu/costcode/ShoppingList/WiFiScanSettingsActivity.java;1424938990/1;/mobile/src/cmu/costcode/WIFIScanner/AccessPoint.java;1134896105/1;/mobile/src/cmu/costcode/WIFIScanner/WiFiScanner.java;3594015468/1;/mobile/src/cmu/costcode/Triangulation/Triangulation.java;202435230/1;/mobile/src/cmu/costcode/Triangulation/TriangulationTask.java;3517851326/1;/mobile/src/cmu/costcode/Triangulation/WCL.java;3171581163/1;/mobile/src/cmu/costcode/ShoppingList/db/DatabaseAdaptor.java;1083346947/1;/WIFIScanner/gen/cmu/costcode/FloorPlan.java;3115562283/1;/mobile/src/cmu/costcode/FloorPlan/FloorPlan.java;3361529307/1;"/>
+        <details xmi:id="_tuaO0MfZEeKj__JByXBSIg" key="AssociatedSourceCode" value="/WIFIScanner/gen/cmu/costcode/WIFIScanner/BuildConfig.java;663610238/1;/WIFIScanner/gen/cmu/costcode/WIFIScanner/R.java;1416285864/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/TestReceiver.java;3086906378/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/WIFIScanner.java;2516296769/1;/mobile/src/cmu/costcode/ProximityAlert/NotificationActivity.java;2627982062/1;/mobile/src/cmu/costcode/ProximityAlert/ProximityIntentReceiver.java;3718231935/1;/mobile/src/cmu/costcode/ProximityAlert/ShoppingListApplication.java;1913911324/1;/mobile/src/cmu/costcode/ShoppingList/EditListActivity.java;2438705698/1;/mobile/src/cmu/costcode/ShoppingList/LoginActivity.java;379368985/1;/mobile/src/cmu/costcode/ShoppingList/ViewListActivity.java;3390478860/1;/mobile/src/cmu/costcode/ShoppingList/WiFiScanSettingsActivity.java;1424938990/1;/mobile/src/cmu/costcode/WIFIScanner/AccessPoint.java;1134896105/1;/mobile/src/cmu/costcode/WIFIScanner/WiFiScanner.java;3594015468/1;/mobile/src/cmu/costcode/Triangulation/Triangulation.java;202435230/1;/mobile/src/cmu/costcode/Triangulation/TriangulationTask.java;4153442453/1;/mobile/src/cmu/costcode/Triangulation/WCL.java;3171581163/1;/mobile/src/cmu/costcode/ShoppingList/db/DatabaseAdaptor.java;1083346947/1;/WIFIScanner/gen/cmu/costcode/FloorPlan.java;3115562283/1;/mobile/src/cmu/costcode/FloorPlan/FloorPlan.java;3361529307/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_s0u00MfZEeKj__JByXBSIg">
@@ -4735,6 +4735,18 @@ and NotificationReceiver objects.&#xD;
 		startActivity(intent);&#xD;
 	</body>
             </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_jzAH4My2EeKCI6TvU50wYw" name="onStop" specification="_jy9EkMy2EeKCI6TvU50wYw">
+              <language>java</language>
+              <body>super.onStop();&#xD;
+		if(tTask.getStatus() == Status.RUNNING)&#xD;
+			tTask.cancel(false);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_FDa_sMy3EeKCI6TvU50wYw" name="onPause" specification="_FDXVUMy3EeKCI6TvU50wYw">
+              <language>java</language>
+              <body>super.onPause();&#xD;
+	</body>
+            </ownedBehavior>
             <ownedOperation xmi:id="_5miNoMxeEeKgUcEu-gntqA" name="onResume" method="_5s1p8sxeEeKgUcEu-gntqA"/>
             <ownedOperation xmi:id="_5r4AoMxeEeKgUcEu-gntqA" name="onCreate" method="_5s1p8MxeEeKgUcEu-gntqA">
               <ownedParameter xmi:id="_5r4AocxeEeKgUcEu-gntqA" name="savedInstanceState" type="_tGesIcfZEeKj__JByXBSIg"/>
@@ -4792,6 +4804,8 @@ and NotificationReceiver objects.&#xD;
               </ownedComment>
               <ownedParameter xmi:id="_jUOKscx1EeKCI6TvU50wYw" name="view" type="_tGiWgcfZEeKj__JByXBSIg"/>
             </ownedOperation>
+            <ownedOperation xmi:id="_jy9EkMy2EeKCI6TvU50wYw" name="onStop" method="_jzAH4My2EeKCI6TvU50wYw"/>
+            <ownedOperation xmi:id="_FDXVUMy3EeKCI6TvU50wYw" name="onPause" method="_FDa_sMy3EeKCI6TvU50wYw"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_5lymwMxeEeKgUcEu-gntqA" name="EditListActivity">
             <eAnnotations xmi:id="_5lzN0MxeEeKgUcEu-gntqA" source="http://ns.yatta.de/umllab">
@@ -5406,9 +5420,6 @@ API Guide&lt;/a> for more information on developing a Settings UI.</body>
           <packagedElement xmi:type="uml:Association" xmi:id="_5tPSkcxeEeKgUcEu-gntqA" name="" memberEnd="_5tPSksxeEeKgUcEu-gntqA _5swKYMxeEeKgUcEu-gntqA">
             <ownedEnd xmi:id="_5tPSksxeEeKgUcEu-gntqA" name="" type="_5mxeMMxeEeKgUcEu-gntqA" association="_5tPSkcxeEeKgUcEu-gntqA"/>
           </packagedElement>
-          <packagedElement xmi:type="uml:Association" xmi:id="_QnIJgMxhEeKgUcEu-gntqA" name="&lt;&lt;startActivity>>" memberEnd="_QnIJgcxhEeKgUcEu-gntqA _QnIwkcxhEeKgUcEu-gntqA" navigableOwnedEnd="_QnIwkcxhEeKgUcEu-gntqA">
-            <ownedEnd xmi:id="_QnIwkcxhEeKgUcEu-gntqA" name="notificationActivity" type="_AGhlUMxeEeKgUcEu-gntqA" association="_QnIJgMxhEeKgUcEu-gntqA"/>
-          </packagedElement>
           <packagedElement xmi:type="uml:Dependency" xmi:id="_3xuGcMxxEeKCI6TvU50wYw" client="_AMBJUMxeEeKgUcEu-gntqA" supplier="_5rwr4sxeEeKgUcEu-gntqA"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Package" xmi:id="_AFNWsMxeEeKgUcEu-gntqA" name="ProximityAlert">
@@ -5443,10 +5454,6 @@ API Guide&lt;/a> for more information on developing a Settings UI.</body>
             <ownedAttribute xmi:id="_AM_ZscxeEeKgUcEu-gntqA" name="EXPIRATION" visibility="private" isLeaf="true" isReadOnly="true">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
               <defaultValue xmi:type="uml:LiteralString" xmi:id="_ANAAwMxeEeKgUcEu-gntqA" value="-1"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:id="_QnIJgcxhEeKgUcEu-gntqA" name="viewListActivity" type="_AMBJUMxeEeKgUcEu-gntqA" association="_QnIJgMxhEeKgUcEu-gntqA">
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QnIJgsxhEeKgUcEu-gntqA" value="1"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QnIwkMxhEeKgUcEu-gntqA" value="1"/>
             </ownedAttribute>
             <interfaceRealization xmi:id="_ALioMMxeEeKgUcEu-gntqA" client="_AGhlUMxeEeKgUcEu-gntqA" supplier="_tHFwIMfZEeKj__JByXBSIg" contract="_tHFwIMfZEeKj__JByXBSIg"/>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ANV_AMxeEeKgUcEu-gntqA" name="onCreate" specification="_ALngsMxeEeKgUcEu-gntqA">
@@ -5839,8 +5846,18 @@ and NotificationReceiver objects.&#xD;
               </qualifier>
               <defaultValue xmi:type="uml:LiteralString" xmi:id="_F0imIcxgEeKgUcEu-gntqA" value="new HashMap&lt;String, Object>()"/>
             </ownedAttribute>
+            <ownedAttribute xmi:id="_x5kLMMy8EeKCI6TvU50wYw" name="runningFlag" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_x5kyQMy8EeKCI6TvU50wYw" value="false"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mpnPAMy-EeKCI6TvU50wYw" name="bgrunFlag" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_mpodIMy-EeKCI6TvU50wYw" value="true"/>
+            </ownedAttribute>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_F0m3kMxgEeKgUcEu-gntqA" name="TriangulationTask" specification="_F0EFAMxgEeKgUcEu-gntqA">
-              <ownedParameter xmi:id="_4C_KsMxzEeKCI6TvU50wYw" type="_5r2LccxeEeKgUcEu-gntqA" direction="return"/>
+              <ownedParameter xmi:id="_4C_KsMxzEeKCI6TvU50wYw" type="_5r2LccxeEeKgUcEu-gntqA" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <ownedParameter xmi:id="_4C_KscxzEeKCI6TvU50wYw" name="context" type="_tGaasMfZEeKj__JByXBSIg"/>
               <language>java</language>
               <body>this.context = context;
@@ -5871,6 +5888,7 @@ and NotificationReceiver objects.&#xD;
 			return false;
 		}
 		else {
+			setBgrunFlag(prefs.getBoolean(&quot;bgrun_checkbox&quot;, true));
 			initParams.put(WCL.TRIANG_METHOD, prefs.getString(&quot;triangulation_list&quot;, &quot;WCL&quot;));
 			initParams.put(WCL.SCAN_NUMBER, Integer.valueOf(prefs.getString(&quot;wifi_scannum&quot;, &quot;5&quot;)));
 		}
@@ -5886,10 +5904,10 @@ and NotificationReceiver objects.&#xD;
               </ownedParameter>
               <language>java</language>
               <body>if(triangulation == null) {
-			return null;//this.cancel(true);
+			return null;
 		}
 		
-		while(true) {
+		while(runningFlag) {
 			AccessPoint ap = triangulation.calculateAccessPointPosition();
 			
 			if(ap != null) {
@@ -5903,6 +5921,7 @@ and NotificationReceiver objects.&#xD;
 			catch (InterruptedException e) {
 			}
 		}
+		return null;
 	</body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_F0nepsxgEeKgUcEu-gntqA" name="onPostExecute" specification="_F0Y1IMxgEeKgUcEu-gntqA">
@@ -5914,8 +5933,23 @@ and NotificationReceiver objects.&#xD;
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_F0oFsMxgEeKgUcEu-gntqA" name="onCancelled" specification="_FzHCwMxgEeKgUcEu-gntqA">
               <language>java</language>
-              <body>triangulation.clearApList();
+              <body>runningFlag = false;
+		triangulation.clearApList();
 		super.onCancelled();
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_x5lZUMy8EeKCI6TvU50wYw" name="onPreExecute" specification="_jiyIUMy7EeKCI6TvU50wYw">
+              <language>java</language>
+              <body>runningFlag = true;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_sEVyUMy-EeKCI6TvU50wYw" name="isBgrunFlag" specification="_sEBCMMy-EeKCI6TvU50wYw">
+              <ownedParameter xmi:id="_sEVyUcy-EeKCI6TvU50wYw" direction="return">
+                <name xsi:nil="true"/>
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return bgrunFlag;
 	</body>
             </ownedBehavior>
             <ownedOperation xmi:id="_FzGbsMxgEeKgUcEu-gntqA" name="setPreference" visibility="private" method="_F0neoMxgEeKgUcEu-gntqA">
@@ -5939,6 +5973,12 @@ and NotificationReceiver objects.&#xD;
             </ownedOperation>
             <ownedOperation xmi:id="_F0Y1IMxgEeKgUcEu-gntqA" name="onPostExecute" visibility="protected" method="_F0nepsxgEeKgUcEu-gntqA">
               <ownedParameter xmi:id="_F0Y1IcxgEeKgUcEu-gntqA" name="result" type="_F0PrMMxgEeKgUcEu-gntqA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_jiyIUMy7EeKCI6TvU50wYw" name="onPreExecute" visibility="protected" method="_x5lZUMy8EeKCI6TvU50wYw"/>
+            <ownedOperation xmi:id="_sEBCMMy-EeKCI6TvU50wYw" name="isBgrunFlag" method="_sEVyUMy-EeKCI6TvU50wYw">
+              <ownedParameter xmi:id="_sEMBUMy-EeKCI6TvU50wYw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
             </ownedOperation>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_Fy940MxgEeKgUcEu-gntqA" name="Triangulation" isAbstract="true">
@@ -6229,7 +6269,9 @@ Call web service for the access point locations</body>
         <packagedElement xmi:type="uml:Class" xmi:id="_tGesIcfZEeKj__JByXBSIg" name="Bundle"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_tI5uAcfZEeKj__JByXBSIg" name="Environment"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_5sFcAcxeEeKgUcEu-gntqA" name="Build"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_F0C24MxgEeKgUcEu-gntqA" name="AsyncTask"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_F0C24MxgEeKgUcEu-gntqA" name="AsyncTask">
+          <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_e_3BoMy5EeKCI6TvU50wYw" name="Status"/>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_snS1wcfZEeKj__JByXBSIg" name="speech">
         <packagedElement xmi:type="uml:Class" xmi:id="_tGf6QMfZEeKj__JByXBSIg" name="RecognizerIntent"/>
@@ -6923,4 +6965,20 @@ Call web service for the access point locations</body>
   <UMLLabProfile:Reference xmi:id="_sS-yQMxxEeKCI6TvU50wYw" base_Element="_sS-LMMxxEeKCI6TvU50wYw"/>
   <UMLLabProfile:Reference xmi:id="_rez4cMxzEeKCI6TvU50wYw" base_Element="_rezRYMxzEeKCI6TvU50wYw"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_TSUyYMyLEeKCI6TvU50wYw" base_Element="_TSULUMyLEeKCI6TvU50wYw"/>
+  <UMLLabProfile:Annotations xmi:id="_FDWHMMy3EeKCI6TvU50wYw" base_Element="_jy9EkMy2EeKCI6TvU50wYw">
+    <annotations xmi:id="_FDWHMcy3EeKCI6TvU50wYw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_FDX8YMy3EeKCI6TvU50wYw" base_Element="_FDXVUMy3EeKCI6TvU50wYw">
+    <annotations xmi:id="_FDX8Ycy3EeKCI6TvU50wYw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_FDZKgMy3EeKCI6TvU50wYw" base_Element="_FDXVUMy3EeKCI6TvU50wYw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_FDZKgcy3EeKCI6TvU50wYw" base_Element="_jy9EkMy2EeKCI6TvU50wYw"/>
+  <UMLLabProfile:Annotations xmi:id="_jiyvYMy7EeKCI6TvU50wYw" base_Element="_jiyIUMy7EeKCI6TvU50wYw">
+    <annotations xmi:id="_jiyvYcy7EeKCI6TvU50wYw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_jiz9gMy7EeKCI6TvU50wYw" base_Element="_jiyIUMy7EeKCI6TvU50wYw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_x5kyQcy8EeKCI6TvU50wYw" base_Element="_x5kLMMy8EeKCI6TvU50wYw"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_mphIYMy-EeKCI6TvU50wYw" base_Property="_x5kLMMy8EeKCI6TvU50wYw" siblings="_mpnPAMy-EeKCI6TvU50wYw" root="true"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_mpn2EMy-EeKCI6TvU50wYw" base_Property="_mpnPAMy-EeKCI6TvU50wYw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_mpn2Ecy-EeKCI6TvU50wYw" base_Element="_mpnPAMy-EeKCI6TvU50wYw"/>
 </xmi:XMI>

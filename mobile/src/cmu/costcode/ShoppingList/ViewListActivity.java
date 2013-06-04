@@ -14,6 +14,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Paint;
+import android.os.AsyncTask;
+import android.os.AsyncTask.Status;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -84,6 +86,18 @@ public class ViewListActivity extends Activity  {
 	public void onResume() {
 		super.onResume();
 		db.open();
+	}
+	
+	@Override
+	public void onPause() {
+		super.onPause();
+	}
+	
+	@Override
+	public void onStop() {
+		super.onStop();
+		if(!tTask.isBgrunFlag() && tTask.getStatus() == Status.RUNNING)
+			tTask.cancel(false);
 	}
 
 	

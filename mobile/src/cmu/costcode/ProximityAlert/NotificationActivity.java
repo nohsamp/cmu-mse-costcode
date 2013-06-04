@@ -28,24 +28,6 @@ import android.widget.Toast;
  *
  */
 public class NotificationActivity extends Activity implements LocationListener {
-/**
- * <pre>
- *           1..1     <<startActivity>>     1..1
- * NotificationActivity ------------------------- ViewListActivity
- *           notificationActivity        &lt;       viewListActivity
- * </pre>
- */
-	private ViewListActivity viewListActivity;
-	
-	public void setViewListActivity(ViewListActivity value) {
-	   this.viewListActivity = value;
-	}
-	
-	public ViewListActivity getViewListActivity() {
-	   return this.viewListActivity;
-	}
-
-
 	private LocationManager locationManager;
 	
 	private EditText lat;

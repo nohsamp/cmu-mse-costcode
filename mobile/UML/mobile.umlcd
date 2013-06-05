@@ -200,7 +200,7 @@
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_A8j1cMxeEeKgUcEu-gntqA" sourceAnchor="191.0,0.0" targetAnchor="0.0,190.0" target="_hJYa6cxhEeKgUcEu-gntqA" source="_A8j1ecxeEeKgUcEu-gntqA">
     <modelElement href="mobile.uml#_AOE-0cxeEeKgUcEu-gntqA"/>
-    <bendpoints xmi:id="_4GHpIMxxEeKCI6TvU50wYw" sourceX="-1" sourceY="-413" targetX="-668"/>
+    <bendpoints xmi:id="_NrJoMM4wEeKrBaw-sqCxfw" sourceX="-1" sourceY="-413" targetX="-668"/>
     <stereotypes xmi:id="_A8j1ccxeEeKgUcEu-gntqA" name="Reference">
       <modelElement href="mobile.uml#_AOHbEMxeEeKgUcEu-gntqA"/>
     </stereotypes>
@@ -362,7 +362,7 @@
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_59euAMxeEeKgUcEu-gntqA" sourceAnchor="0.0,124.0" targetAnchor="271.0,363.0" target="_hJYa6cxhEeKgUcEu-gntqA" source="_59jmgsxeEeKgUcEu-gntqA">
     <modelElement href="mobile.uml#_5tIk4cxeEeKgUcEu-gntqA"/>
-    <bendpoints xmi:id="_4GJeUMxxEeKCI6TvU50wYw" sourceX="-86" targetY="1012"/>
+    <bendpoints xmi:id="_NrK2UM4wEeKrBaw-sqCxfw" sourceX="-86" targetY="1012"/>
     <stereotypes xmi:id="_59iYY8xeEeKgUcEu-gntqA" name="Reference">
       <modelElement href="mobile.uml#_5tJL8MxeEeKgUcEu-gntqA"/>
     </stereotypes>
@@ -389,7 +389,7 @@
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_59hKQcxeEeKgUcEu-gntqA" targetItem="_59kNksxeEeKgUcEu-gntqA" sourceItem="_59hKQMxeEeKgUcEu-gntqA"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_59t-kMxeEeKgUcEu-gntqA" sourceAnchor="0.0,134.0" targetAnchor="161.0,116.0" target="_A8j1ecxeEeKgUcEu-gntqA" source="_595kwMxeEeKgUcEu-gntqA">
     <modelElement href="mobile.uml#_5tNdYMxeEeKgUcEu-gntqA"/>
-    <bendpoints xmi:id="_4GIQMMxxEeKCI6TvU50wYw" sourceX="-361" sourceY="-27" targetY="636"/>
+    <bendpoints xmi:id="_NrKPQM4wEeKrBaw-sqCxfw" sourceX="-361" sourceY="-27" targetY="636"/>
     <stereotypes xmi:id="_59vzwsxeEeKgUcEu-gntqA" name="Reference">
       <modelElement href="mobile.uml#_5tOEcMxeEeKgUcEu-gntqA"/>
     </stereotypes>
@@ -489,7 +489,7 @@
       </qualifierHelper>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5949sMxeEeKgUcEu-gntqA" sourceAnchor="0.0,164.0" targetAnchor="384.0,146.0" target="_GMZsgMxgEeKgUcEu-gntqA" source="_595kwMxeEeKgUcEu-gntqA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5949sMxeEeKgUcEu-gntqA" sourceAnchor="0.0,164.0" targetAnchor="370.0,146.0" target="_GMZsgMxgEeKgUcEu-gntqA" source="_595kwMxeEeKgUcEu-gntqA">
     <modelElement href="mobile.uml#_5tOrgMxeEeKgUcEu-gntqA"/>
     <stereotypes xmi:id="_5949scxeEeKgUcEu-gntqA" name="Reference">
       <modelElement href="mobile.uml#_5tPSkMxeEeKgUcEu-gntqA"/>
@@ -852,8 +852,88 @@
     </sourceRole>
     <targetRole xmi:id="_jkGW9sy7EeKCI6TvU50wYw" aggregationKind="NONE" name="context" navigable="true">
       <modelElement href="mobile.uml#_F0h_EcxgEeKgUcEu-gntqA"/>
+      <stereotypes xmi:id="_QjF8IM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_F0h_EsxgEeKgUcEu-gntqA"/>
+      </stereotypes>
       <visibility xmi:id="_jkGW98y7EeKCI6TvU50wYw" label="-"/>
       <cardinality xmi:id="_jkGW-My7EeKCI6TvU50wYw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_QjiBAM4kEeKrBaw-sqCxfw" subClass="_595kwMxeEeKgUcEu-gntqA">
+    <modelElement href="mobile.uml#_5r-HQMxeEeKgUcEu-gntqA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Qj_7EM4kEeKrBaw-sqCxfw" subClass="_A7F10MxeEeKgUcEu-gntqA">
+    <modelElement href="mobile.uml#_ALyf0MxeEeKgUcEu-gntqA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Wn4vIM4vEeKrBaw-sqCxfw" sourceAnchor="135.0,0.0" targetAnchor="373.0,591.0" target="_1Z28YMxfEeKgUcEu-gntqA" source="_Wn-1yc4vEeKrBaw-sqCxfw">
+    <modelElement href="mobile.uml#_XmEbIMxtEeKCI6TvU50wYw"/>
+    <stereotypes xmi:id="_Wn6kUM4vEeKrBaw-sqCxfw" name="Reference">
+      <modelElement href="mobile.uml#_XmFCMMxtEeKCI6TvU50wYw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Wn59Qc4vEeKrBaw-sqCxfw" text="">
+      <visualProperties xmi:id="_W8zPMc4vEeKrBaw-sqCxfw" position="1.9999999999999432,7.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_Wn59Qs4vEeKrBaw-sqCxfw" aggregationKind="NONE" name="">
+      <modelElement href="mobile.uml#_XmEbIcxtEeKCI6TvU50wYw"/>
+      <visualProperties xmi:id="_W8zPMM4vEeKrBaw-sqCxfw" position="2.0,-81.0"/>
+      <visibility xmi:id="_Wn9Akc4vEeKrBaw-sqCxfw" label="+"/>
+      <cardinality xmi:id="_Wn9AkM4vEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Wn59Q84vEeKrBaw-sqCxfw" aggregationKind="NONE" name="apList" navigable="true">
+      <modelElement href="mobile.uml#_XmB-4MxtEeKCI6TvU50wYw"/>
+      <visualProperties xmi:id="_W8z2QM4vEeKrBaw-sqCxfw" position="-50.0,39.0"/>
+      <visibility xmi:id="_Wn9Ak84vEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_Wn9Aks4vEeKrBaw-sqCxfw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Wn59QM4vEeKrBaw-sqCxfw" targetItem="_Wn-1yc4vEeKrBaw-sqCxfw" sourceItem="_Wn5WMM4vEeKrBaw-sqCxfw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Wn6kUs4vEeKrBaw-sqCxfw" targetItem="_Wn-13M4vEeKrBaw-sqCxfw" sourceItem="_Wn6kUc4vEeKrBaw-sqCxfw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Wn7LYc4vEeKrBaw-sqCxfw" targetItem="_Wn-14c4vEeKrBaw-sqCxfw" sourceItem="_Wn7LYM4vEeKrBaw-sqCxfw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Wn7ycM4vEeKrBaw-sqCxfw" targetItem="_Wn-15c4vEeKrBaw-sqCxfw" sourceItem="_Wn7LYs4vEeKrBaw-sqCxfw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Wn8ZgM4vEeKrBaw-sqCxfw" targetItem="_Wn-1784vEeKrBaw-sqCxfw" sourceItem="_Wn7ycc4vEeKrBaw-sqCxfw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Wn-1wM4vEeKrBaw-sqCxfw" sourceAnchor="147.0,155.0" targetAnchor="395.0,0.0" target="_HESB4M4wEeKrBaw-sqCxfw" source="_Wn-1yc4vEeKrBaw-sqCxfw">
+    <modelElement href="mobile.uml#_ixhmAM4lEeKrBaw-sqCxfw"/>
+    <stereotypes xmi:id="_Wn-1wc4vEeKrBaw-sqCxfw" name="Reference">
+      <modelElement href="mobile.uml#_ixi0IM4lEeKrBaw-sqCxfw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Wn-1ws4vEeKrBaw-sqCxfw" text="">
+      <visualProperties xmi:id="_Hf3KoM4wEeKrBaw-sqCxfw" position="-82.5,4.7999999999999545"/>
+    </nameVisual>
+    <sourceRole xmi:id="_Wn-1w84vEeKrBaw-sqCxfw" aggregationKind="NONE" name="">
+      <modelElement href="mobile.uml#_ixhmAc4lEeKrBaw-sqCxfw"/>
+      <visualProperties xmi:id="_Hf2jkM4wEeKrBaw-sqCxfw" position="-17.5,21.0"/>
+      <visibility xmi:id="_Wn-1xM4vEeKrBaw-sqCxfw" label="+"/>
+      <cardinality xmi:id="_Wn-1xc4vEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Wn-1xs4vEeKrBaw-sqCxfw" aggregationKind="NONE" name="webService" navigable="true">
+      <modelElement href="mobile.uml#_ixa4UM4lEeKrBaw-sqCxfw"/>
+      <visualProperties xmi:id="_Hf3Koc4wEeKrBaw-sqCxfw" position="2.5,-62.0"/>
+      <visibility xmi:id="_Wn-1x84vEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_Wn-1yM4vEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_veKFIM4vEeKrBaw-sqCxfw" sourceAnchor="389.0,383.0" targetAnchor="66.0,0.0" target="_Wn-1yc4vEeKrBaw-sqCxfw" source="_1aMTmcxfEeKgUcEu-gntqA">
+    <modelElement href="mobile.uml#_vJzlwM4vEeKrBaw-sqCxfw"/>
+    <stereotypes xmi:id="_veKFIc4vEeKrBaw-sqCxfw" name="Reference">
+      <modelElement href="mobile.uml#_vJ0M0M4vEeKrBaw-sqCxfw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_veKFIs4vEeKrBaw-sqCxfw" text="">
+      <visualProperties xmi:id="_D8298M4wEeKrBaw-sqCxfw" position="-88.0,-12.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_veKFI84vEeKrBaw-sqCxfw" aggregationKind="NONE" name="">
+      <modelElement href="mobile.uml#_vJzlwc4vEeKrBaw-sqCxfw"/>
+      <visualProperties xmi:id="_D82W4M4wEeKrBaw-sqCxfw" position="2.0,30.0"/>
+      <visibility xmi:id="_veKFJM4vEeKrBaw-sqCxfw" label="+"/>
+      <cardinality xmi:id="_veKFJc4vEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_veKFJs4vEeKrBaw-sqCxfw" aggregationKind="NONE" name="fp" navigable="true">
+      <modelElement href="mobile.uml#_vJwicM4vEeKrBaw-sqCxfw"/>
+      <visualProperties xmi:id="_D8298c4wEeKrBaw-sqCxfw" position="-29.0,-71.0"/>
+      <stereotypes xmi:id="_veWSYM4vEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_vJxJgM4vEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_veKFJ84vEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_veKFKM4vEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_A6rmIMxeEeKgUcEu-gntqA" sourceConnectionVisual="_A6sNMMxeEeKgUcEu-gntqA" text="Notification activity&#xD;&#xA;@author A.Samiyev&#xD;&#xA; *" item="_A7F10MxeEeKgUcEu-gntqA">
@@ -982,10 +1062,10 @@
     <visibility xmi:id="_GMNfQsxgEeKgUcEu-gntqA" label="+"/>
     <attributes xmi:id="_GMNfQ8xgEeKgUcEu-gntqA" name="apList">
       <modelElement href="mobile.uml#_F0cfgMxgEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_GMMRI8xgEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HH4LYMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_F0dGkcxgEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HH4LYMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_Qld6sM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_F0dGkcxgEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_GMNfRcxgEeKgUcEu-gntqA" label="#"/>
@@ -996,10 +1076,10 @@
     </attributes>
     <attributes xmi:id="_GMNfSMxgEeKgUcEu-gntqA" name="wifiScanner">
       <modelElement href="mobile.uml#_F0dtoMxgEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_GMM4MMxgEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HH5ZgMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_F0dtocxgEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HH5ZgMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlfI0M4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_F0dtocxgEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_GMNfSsxgEeKgUcEu-gntqA" label="#"/>
@@ -1090,7 +1170,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1aMTmcxfEeKgUcEu-gntqA" comments="_1aGM8MxfEeKgUcEu-gntqA" targetConnectionVisual="_1aGM8cxfEeKgUcEu-gntqA" name="WiFiScanner" associationsIn="_GMImwMxgEeKgUcEu-gntqA" associationsOut="_1aFl4MxfEeKgUcEu-gntqA _1aLsgMxfEeKgUcEu-gntqA _1aMTkMxfEeKgUcEu-gntqA">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1aMTmcxfEeKgUcEu-gntqA" comments="_1aGM8MxfEeKgUcEu-gntqA" targetConnectionVisual="_1aGM8cxfEeKgUcEu-gntqA" name="WiFiScanner" associationsIn="_GMImwMxgEeKgUcEu-gntqA" associationsOut="_1aFl4MxfEeKgUcEu-gntqA _1aLsgMxfEeKgUcEu-gntqA _1aMTkMxfEeKgUcEu-gntqA _veKFIM4vEeKrBaw-sqCxfw">
     <modelElement href="mobile.uml#_1JzuMMxfEeKgUcEu-gntqA"/>
     <visualProperties xmi:id="_1aMTmsxfEeKgUcEu-gntqA" position="-2.0,1052.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_1aMTm8xfEeKgUcEu-gntqA" label="+"/>
@@ -1142,10 +1222,10 @@
     </attributes>
     <attributes xmi:id="_1aMTssxfEeKgUcEu-gntqA" name="wifimanager">
       <modelElement href="mobile.uml#_1Kg40MxfEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_1aMTtMxfEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HH1vIMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_1Kg40cxfEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HH1vIMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlbecM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_1Kg40cxfEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_1aMTtcxfEeKgUcEu-gntqA" label="~"/>
@@ -1222,10 +1302,10 @@
     </attributes>
     <attributes xmi:id="_1aM6sMxfEeKgUcEu-gntqA" defaultValue="null" name="mScanResult">
       <modelElement href="mobile.uml#_1Kj8I8xfEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_1aM6ssxfEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HH29QMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_1KkjMsxfEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HH29QMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlcskM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_1KkjMsxfEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_1aM6s8xfEeKgUcEu-gntqA" label="-"/>
@@ -1234,18 +1314,29 @@
         <modelElement href="mobile.uml#_tI2qsMfZEeKj__JByXBSIg"/>
       </type>
     </attributes>
-    <attributes xmi:id="_1aM6tsxfEeKgUcEu-gntqA" defaultValue="new ArrayList&lt;AccessPoint>()" name="apList">
+    <attributes xmi:id="_1aM6tsxfEeKgUcEu-gntqA" name="apList">
       <modelElement href="mobile.uml#_1KkjM8xfEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_1aKeY8xfEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HH0hAMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_1KlKQsxfEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HH0hAMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlaQUM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_1KlKQsxfEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_1aM6uMxfEeKgUcEu-gntqA" label="-"/>
       <cardinality xmi:id="_1aM6ucxfEeKgUcEu-gntqA" label="1..*" max="-1" min="1"/>
       <type xmi:id="_1aM6usxfEeKgUcEu-gntqA" name="AccessPoint">
         <modelElement href="mobile.uml#_s6ih4MfZEeKj__JByXBSIg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_veTPEM4vEeKrBaw-sqCxfw" defaultValue="null" name="fp">
+      <modelElement href="mobile.uml#_vJwicM4vEeKrBaw-sqCxfw"/>
+      <stereotypes xmi:id="_veTPEc4vEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_vJxJgM4vEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_veTPE84vEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_veTPFM4vEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+      <type xmi:id="_veTPFc4vEeKrBaw-sqCxfw" name="FloorPlan">
+        <modelElement href="mobile.uml#_Xl5cAMxtEeKCI6TvU50wYw"/>
       </type>
     </attributes>
     <operations xmi:id="_1aM6u8xfEeKgUcEu-gntqA" name="scanStart">
@@ -1264,11 +1355,7 @@
     </operations>
     <operations xmi:id="_1aM6wcxfEeKgUcEu-gntqA" name="parseWIFIScanResult">
       <modelElement href="mobile.uml#_1J4msMxfEeKgUcEu-gntqA"/>
-      <visibility xmi:id="_1aM6wsxfEeKgUcEu-gntqA" label="+"/>
-    </operations>
-    <operations xmi:id="_1aM6w8xfEeKgUcEu-gntqA" name="getWIFIScanResult">
-      <modelElement href="mobile.uml#_1J5NwMxfEeKgUcEu-gntqA"/>
-      <visibility xmi:id="_1aM6xMxfEeKgUcEu-gntqA" label="+"/>
+      <visibility xmi:id="_1aM6wsxfEeKgUcEu-gntqA" label="-"/>
     </operations>
     <operations xmi:id="_1aM6xcxfEeKgUcEu-gntqA" name="WiFiScanner">
       <modelElement href="mobile.uml#_1KXu4MxfEeKgUcEu-gntqA"/>
@@ -1295,7 +1382,7 @@
     </operations>
     <operations xmi:id="_1aM6zsxfEeKgUcEu-gntqA" name="addAP">
       <modelElement href="mobile.uml#_1KYV8MxfEeKgUcEu-gntqA"/>
-      <visibility xmi:id="_1aM6z8xfEeKgUcEu-gntqA" label="+"/>
+      <visibility xmi:id="_1aM6z8xfEeKgUcEu-gntqA" label="-"/>
       <parameters xmi:id="_1aM60MxfEeKgUcEu-gntqA" name="mResult">
         <modelElement href="mobile.uml#_1KYV8cxfEeKgUcEu-gntqA"/>
         <type xmi:id="_1aM60cxfEeKgUcEu-gntqA" name="ScanResult">
@@ -1397,10 +1484,10 @@
     </attributes>
     <attributes xmi:id="_GMZsh8xgEeKgUcEu-gntqA" name="wifiManager">
       <modelElement href="mobile.uml#_F0gw8sxgEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_GMWpMsxgEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HH6noMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_F0hYAMxgEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HH6noMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlgW8M4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_F0hYAMxgEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_GMZsicxgEeKgUcEu-gntqA" label="-"/>
@@ -1411,10 +1498,10 @@
     </attributes>
     <attributes xmi:id="_GMZsjMxgEeKgUcEu-gntqA" name="triangulation">
       <modelElement href="mobile.uml#_F0hYAcxgEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_GMZsjsxgEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HH71wMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_F0h_EMxgEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HH71wMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlhlEM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_F0h_EMxgEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_GMZsj8xgEeKgUcEu-gntqA" label="-"/>
@@ -1425,13 +1512,13 @@
     </attributes>
     <attributes xmi:id="_GMZsksxgEeKgUcEu-gntqA" name="context">
       <modelElement href="mobile.uml#_F0h_EcxgEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_GMZslMxgEeKgUcEu-gntqA" name="LegacyStyledElement">
-        <modelElement href="mobile.uml#_F0h_EsxgEeKgUcEu-gntqA"/>
-      </stereotypes>
       <stereotypes xmi:id="_HH9D4MxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_F0h_EsxgEeKgUcEu-gntqA"/>
       </stereotypes>
       <stereotypes xmi:id="_jjyN4My7EeKCI6TvU50wYw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_F0h_EsxgEeKgUcEu-gntqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_QloSwM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_F0h_EsxgEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_GMZslcxgEeKgUcEu-gntqA" label="-"/>
@@ -1442,10 +1529,10 @@
     </attributes>
     <attributes xmi:id="_GMZsmMxgEeKgUcEu-gntqA" defaultValue="new HashMap&lt;String, Object>()" name="initParams">
       <modelElement href="mobile.uml#_F0imIMxgEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_GMZsmsxgEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HH-SAMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_F0imIsxgEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HH-SAMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlizMM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_F0imIsxgEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_GMZsm8xgEeKgUcEu-gntqA" label="-"/>
@@ -1600,10 +1687,10 @@
     </attributes>
     <attributes xmi:id="_A8j1hMxeEeKgUcEu-gntqA" name="db">
       <modelElement href="mobile.uml#_ANHVgcxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_wMmCwMxeEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HHfJ0MxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_ANIjoMxeEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HHfJ0MxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlGuUM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_ANIjoMxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_A8j1h8xeEeKgUcEu-gntqA" label="-"/>
@@ -1645,7 +1732,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_595kwMxeEeKgUcEu-gntqA" using="_3xwisMxxEeKCI6TvU50wYw" name="ViewListActivity" associationsOut="_59t-kMxeEeKgUcEu-gntqA _59vMsMxeEeKgUcEu-gntqA _59vMscxeEeKgUcEu-gntqA _594WoMxeEeKgUcEu-gntqA _5949sMxeEeKgUcEu-gntqA">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_595kwMxeEeKgUcEu-gntqA" using="_3xwisMxxEeKCI6TvU50wYw" name="ViewListActivity" associationsOut="_59t-kMxeEeKgUcEu-gntqA _59vMsMxeEeKgUcEu-gntqA _59vMscxeEeKgUcEu-gntqA _594WoMxeEeKgUcEu-gntqA _5949sMxeEeKgUcEu-gntqA" generalizations="_QjiBAM4kEeKrBaw-sqCxfw">
     <modelElement href="mobile.uml#_AMBJUMxeEeKgUcEu-gntqA"/>
     <visualProperties xmi:id="_595kwcxeEeKgUcEu-gntqA" position="1683.0,1702.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_595kwsxeEeKgUcEu-gntqA" label="+"/>
@@ -1662,10 +1749,10 @@
     </attributes>
     <attributes xmi:id="_595kyMxeEeKgUcEu-gntqA" name="db">
       <modelElement href="mobile.uml#_5srR4cxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_592hdMxeEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HHuaYMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5sr48MxeEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HHuaYMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlTioM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5sr48MxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_595kysxeEeKgUcEu-gntqA" label="-"/>
@@ -1676,10 +1763,10 @@
     </attributes>
     <attributes xmi:id="_595kzcxeEeKgUcEu-gntqA" name="cust">
       <modelElement href="mobile.uml#_5sr48cxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_593IgsxeEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HHvBcMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5ssgAMxeEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HHvBcMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlVX0M4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5ssgAMxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_595kz8xeEeKgUcEu-gntqA" label="-"/>
@@ -1690,10 +1777,10 @@
     </attributes>
     <attributes xmi:id="_595k0sxeEeKgUcEu-gntqA" defaultValue="new HashMap&lt;String, Location>()" name="categories" staticAttribute="true">
       <modelElement href="mobile.uml#_5ssgAcxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_595k1MxeEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HHwPkMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5stHEcxeEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HHwPkMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlWl8M4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5stHEcxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_595k1cxeEeKgUcEu-gntqA" label="-"/>
@@ -1704,10 +1791,10 @@
     </attributes>
     <attributes xmi:id="_595k2MxeEeKgUcEu-gntqA" defaultValue="null" name="pReceiver">
       <modelElement href="mobile.uml#_5stuIcxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_591TVsxeEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HHtMQMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5suVMMxeEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HHtMQMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlSUgM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5suVMMxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_595k2sxeEeKgUcEu-gntqA" label="-"/>
@@ -1718,10 +1805,10 @@
     </attributes>
     <attributes xmi:id="_595k3cxeEeKgUcEu-gntqA" defaultValue="null" name="tTask">
       <modelElement href="mobile.uml#_5suVMcxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_595k38xeEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HHyEwMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5su8QcxeEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HHyEwMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlX0EM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5su8QcxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_595k4MxeEeKgUcEu-gntqA" label="-"/>
@@ -1894,10 +1981,10 @@
     </attributes>
     <attributes xmi:id="_5-Jcb8xeEeKgUcEu-gntqA" defaultValue="new Preference.OnPreferenceChangeListener() {&#xA;&#x9;&#x9;@Override&#xA;&#x9;&#x9;public boolean onPreferenceChange(Preference preference, Object value) {&#xA;&#x9;&#x9;&#x9;String stringValue = value.toString();&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;if (preference instanceof ListPreference) {&#xA;&#x9;&#x9;&#x9;&#x9;// For list preferences, look up the correct display value in&#xA;&#x9;&#x9;&#x9;&#x9;// the preference's 'entries' list.&#xA;&#x9;&#x9;&#x9;&#x9;ListPreference listPreference = (ListPreference) preference;&#xA;&#x9;&#x9;&#x9;&#x9;int index = listPreference.findIndexOfValue(stringValue);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;// Set the summary to reflect the new value.&#xA;&#x9;&#x9;&#x9;&#x9;preference&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;.setSummary(index >= 0 ? listPreference.getEntries()[index]&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;: null);&#xA;&#xA;&#x9;&#x9;&#x9;} else if (preference instanceof RingtonePreference) {&#xA;&#x9;&#x9;&#x9;&#x9;// For ringtone preferences, look up the correct display value&#xA;&#x9;&#x9;&#x9;&#x9;// using RingtoneManager.&#xA;&#x9;&#x9;&#x9;&#x9;if (TextUtils.isEmpty(stringValue)) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;// Empty values correspond to 'silent' (no ringtone).&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;preference.setSummary(R.string.pref_ringtone_silent);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;} else {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Ringtone ringtone = RingtoneManager.getRingtone(&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;preference.getContext(), Uri.parse(stringValue));&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;if (ringtone == null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;// Clear the summary if there was a lookup error.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;preference.setSummary(null);&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;} else {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;// Set the summary to reflect the new ringtone display&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;// name.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;String name = ringtone&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;.getTitle(preference.getContext());&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;preference.setSummary(name);&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#xA;&#x9;&#x9;&#x9;} else {&#xA;&#x9;&#x9;&#x9;&#x9;// For all other preferences, set the summary to the value's&#xA;&#x9;&#x9;&#x9;&#x9;// simple string representation.&#xA;&#x9;&#x9;&#x9;&#x9;preference.setSummary(stringValue);&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;return true;&#xA;&#x9;&#x9;}&#xA;&#x9;}" name="sBindPreferenceSummaryToValueListener" staticAttribute="true">
       <modelElement href="mobile.uml#_5swKYMxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_5-JcccxeEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HHzS4MxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5swxcMxeEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HHzS4MxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlZCMM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5swxcMxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_5-JccsxeEeKgUcEu-gntqA" label="-"/>
@@ -2037,10 +2124,10 @@
     </attributes>
     <attributes xmi:id="_59PdgcxeEeKgUcEu-gntqA" name="addItemView">
       <modelElement href="mobile.uml#_5slLQcxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_59NoRMxeEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HHnFoMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5slyUMxeEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HHnFoMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlM08M4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5slyUMxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_59Pdg8xeEeKgUcEu-gntqA" label="-"/>
@@ -2051,10 +2138,10 @@
     </attributes>
     <attributes xmi:id="_59PdhsxeEeKgUcEu-gntqA" name="db">
       <modelElement href="mobile.uml#_5smZYMxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_59OPUsxeEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HHoTwMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5smZYcxeEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HHoTwMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlODEM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5smZYcxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_59PdiMxeEeKgUcEu-gntqA" label="-"/>
@@ -2065,10 +2152,10 @@
     </attributes>
     <attributes xmi:id="_59Pdi8xeEeKgUcEu-gntqA" name="cust">
       <modelElement href="mobile.uml#_5snAcMxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_59PdjcxeEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HHqI8MxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5snAccxeEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HHqI8MxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlPRMM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5snAccxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_59PdjsxeEeKgUcEu-gntqA" label="-"/>
@@ -2221,16 +2308,16 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_A7F10MxeEeKgUcEu-gntqA" comments="_A6rmIMxeEeKgUcEu-gntqA" targetConnectionVisual="_A6sNMMxeEeKgUcEu-gntqA" name="NotificationActivity" associationsOut="_A68r4MxeEeKgUcEu-gntqA _A696AMxeEeKgUcEu-gntqA _A6_IIMxeEeKgUcEu-gntqA _A6_vMMxeEeKgUcEu-gntqA _A7A9UMxeEeKgUcEu-gntqA _A7BkYMxeEeKgUcEu-gntqA _A7CygMxeEeKgUcEu-gntqA _A7FOwMxeEeKgUcEu-gntqA">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_A7F10MxeEeKgUcEu-gntqA" comments="_A6rmIMxeEeKgUcEu-gntqA" targetConnectionVisual="_A6sNMMxeEeKgUcEu-gntqA" name="NotificationActivity" associationsOut="_A68r4MxeEeKgUcEu-gntqA _A696AMxeEeKgUcEu-gntqA _A6_IIMxeEeKgUcEu-gntqA _A6_vMMxeEeKgUcEu-gntqA _A7A9UMxeEeKgUcEu-gntqA _A7BkYMxeEeKgUcEu-gntqA _A7CygMxeEeKgUcEu-gntqA _A7FOwMxeEeKgUcEu-gntqA" generalizations="_Qj_7EM4kEeKrBaw-sqCxfw">
     <modelElement href="mobile.uml#_AGhlUMxeEeKgUcEu-gntqA"/>
     <visualProperties xmi:id="_A7F10cxeEeKgUcEu-gntqA" position="1696.0,2139.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_A7F10sxeEeKgUcEu-gntqA" label="+"/>
     <attributes xmi:id="_A7F108xeEeKgUcEu-gntqA" name="locationManager">
       <modelElement href="mobile.uml#_AMtF0MxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_wMc40MxeEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HHFhMMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_AMuT8MxeEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HHFhMMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QkxXIM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_AMuT8MxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_A7F11sxeEeKgUcEu-gntqA" label="-"/>
@@ -2241,10 +2328,10 @@
     </attributes>
     <attributes xmi:id="_A7F12cxeEeKgUcEu-gntqA" name="lat">
       <modelElement href="mobile.uml#_AMuT8cxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_wMeG8MxeEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HHIkgMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_AMviEMxeEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HHIkgMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_Qk0acM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_AMviEMxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_A7F13MxeEeKgUcEu-gntqA" label="-"/>
@@ -2255,10 +2342,10 @@
     </attributes>
     <attributes xmi:id="_A7F138xeEeKgUcEu-gntqA" name="lon">
       <modelElement href="mobile.uml#_AMviEcxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_wMfVEMxeEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HHLAwMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_AMwJIMxeEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HHLAwMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_Qk4E0M4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_AMwJIMxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_A7F14sxeEeKgUcEu-gntqA" label="-"/>
@@ -2269,10 +2356,10 @@
     </attributes>
     <attributes xmi:id="_A7F15cxeEeKgUcEu-gntqA" name="alertName">
       <modelElement href="mobile.uml#_AMwwMMxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_wMf8IMxeEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HHOEEMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_AMxXQMxeEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HHOEEMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_Qk6hEM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_AMxXQMxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_A7F16MxeEeKgUcEu-gntqA" label="-"/>
@@ -2283,10 +2370,10 @@
     </attributes>
     <attributes xmi:id="_A7F168xeEeKgUcEu-gntqA" name="alertList">
       <modelElement href="mobile.uml#_AMxXQcxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_wMhKQMxeEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HHQgUMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_AMylYMxeEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HHQgUMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_Qk89UM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_AMylYMxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_A7F17sxeEeKgUcEu-gntqA" label="-"/>
@@ -2297,16 +2384,16 @@
     </attributes>
     <attributes xmi:id="_A7F18cxeEeKgUcEu-gntqA" name="list">
       <modelElement href="mobile.uml#_AMylYcxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_wMiYYMxeEeKgUcEu-gntqA" name="Generics">
-        <modelElement href="mobile.uml#_AM1BoMxeEeKgUcEu-gntqA"/>
-      </stereotypes>
-      <stereotypes xmi:id="_wMiYYcxeEeKgUcEu-gntqA" name="LegacyStyledElement">
-        <modelElement href="mobile.uml#_AM1osMxeEeKgUcEu-gntqA"/>
-      </stereotypes>
       <stereotypes xmi:id="_HHUKsMxiEeKCI6TvU50wYw" name="Generics">
         <modelElement href="mobile.uml#_AM1BoMxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <stereotypes xmi:id="_HHUKscxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_AM1osMxeEeKgUcEu-gntqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Qk_ZkM4kEeKrBaw-sqCxfw" name="Generics">
+        <modelElement href="mobile.uml#_AM1BoMxeEeKgUcEu-gntqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Qk_Zkc4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_AM1osMxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_A7F19sxeEeKgUcEu-gntqA" label="-"/>
@@ -2317,16 +2404,16 @@
     </attributes>
     <attributes xmi:id="_A7F1-cxeEeKgUcEu-gntqA" name="adapter">
       <modelElement href="mobile.uml#_AM2PwMxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_wMjmgMxeEeKgUcEu-gntqA" name="Generics">
-        <modelElement href="mobile.uml#_AM4sAMxeEeKgUcEu-gntqA"/>
-      </stereotypes>
-      <stereotypes xmi:id="_wMjmgcxeEeKgUcEu-gntqA" name="LegacyStyledElement">
-        <modelElement href="mobile.uml#_AM5TEMxeEeKgUcEu-gntqA"/>
-      </stereotypes>
       <stereotypes xmi:id="_HHX1EMxiEeKCI6TvU50wYw" name="Generics">
         <modelElement href="mobile.uml#_AM4sAMxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <stereotypes xmi:id="_HHYcIMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_AM5TEMxeEeKgUcEu-gntqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_QlB10M4kEeKrBaw-sqCxfw" name="Generics">
+        <modelElement href="mobile.uml#_AM4sAMxeEeKgUcEu-gntqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_QlB10c4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_AM5TEMxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_A7F1_sxeEeKgUcEu-gntqA" label="-"/>
@@ -2337,16 +2424,16 @@
     </attributes>
     <attributes xmi:id="_A7F2AcxeEeKgUcEu-gntqA" name="poi">
       <modelElement href="mobile.uml#_AM56IMxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_wMk0oMxeEeKgUcEu-gntqA" name="Generics">
-        <modelElement href="mobile.uml#_AM8WYMxeEeKgUcEu-gntqA"/>
-      </stereotypes>
-      <stereotypes xmi:id="_wMlbsMxeEeKgUcEu-gntqA" name="LegacyStyledElement">
-        <modelElement href="mobile.uml#_AM9kgMxeEeKgUcEu-gntqA"/>
-      </stereotypes>
       <stereotypes xmi:id="_HHbfcMxiEeKCI6TvU50wYw" name="Generics">
         <modelElement href="mobile.uml#_AM8WYMxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <stereotypes xmi:id="_HHcGgMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_AM9kgMxeEeKgUcEu-gntqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_QlESEM4kEeKrBaw-sqCxfw" name="Generics">
+        <modelElement href="mobile.uml#_AM8WYMxeEeKgUcEu-gntqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_QlESEc4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_AM9kgMxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_A7F2BsxeEeKgUcEu-gntqA" label="-"/>
@@ -2568,10 +2655,10 @@
     </attributes>
     <attributes xmi:id="_hJYa-MxhEeKgUcEu-gntqA" name="ctx">
       <modelElement href="mobile.uml#_gxbN48xhEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_hJWlssxhEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HIB8YMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_gxb08MxhEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HIB8YMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlkBUM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_gxb08MxhEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_hJYa-sxhEeKgUcEu-gntqA" label="-"/>
@@ -2582,10 +2669,10 @@
     </attributes>
     <attributes xmi:id="_hJYa_cxhEeKgUcEu-gntqA" name="dbHelper">
       <modelElement href="mobile.uml#_gxb08cxhEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_hJYa_8xhEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HIDKgMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_gxccAMxhEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HIDKgMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QllPcM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_gxccAMxhEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_hJYbAMxhEeKgUcEu-gntqA" label="-"/>
@@ -2596,10 +2683,10 @@
     </attributes>
     <attributes xmi:id="_hJYbA8xhEeKgUcEu-gntqA" name="db">
       <modelElement href="mobile.uml#_gxccAcxhEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_hJYbBcxhEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HIDxkMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_gxccAsxhEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HIDxkMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlnEoM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_gxccAsxhEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_hJYbBsxhEeKgUcEu-gntqA" label="-"/>
@@ -2990,7 +3077,7 @@
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_yaT94MxmEeKCI6TvU50wYw" sourceConnectionVisual="_yb1n4MxmEeKCI6TvU50wYw" text="@param description  category name to set&#xD;&#xA;&#x9; * @uml.property  name=&quot;description&quot;" item="_yb2O8MxmEeKCI6TvU50wYw">
     <modelElement href="mobile.uml#_yU55cMxmEeKCI6TvU50wYw"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1Z28YMxfEeKgUcEu-gntqA" name="AccessPoint" associationsIn="_1aFl4MxfEeKgUcEu-gntqA _GMH_sMxgEeKgUcEu-gntqA">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1Z28YMxfEeKgUcEu-gntqA" name="AccessPoint" associationsIn="_1aFl4MxfEeKgUcEu-gntqA _GMH_sMxgEeKgUcEu-gntqA _Wn4vIM4vEeKrBaw-sqCxfw">
     <modelElement href="mobile.uml#_s6ih4MfZEeKj__JByXBSIg"/>
     <visualProperties xmi:id="_1Z28YcxfEeKgUcEu-gntqA" position="83.0,122.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_1Z28YsxfEeKgUcEu-gntqA" label="+"/>
@@ -3347,10 +3434,10 @@
     <visibility xmi:id="_59jmhMxeEeKgUcEu-gntqA" label="+"/>
     <attributes xmi:id="_59jmhcxeEeKgUcEu-gntqA" name="dbHelper">
       <modelElement href="mobile.uml#_5snngMxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_59jmgcxeEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HHr-IMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5soOkMxeEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HHr-IMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlQfUM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5soOkMxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_59jmh8xeEeKgUcEu-gntqA" label="-"/>
@@ -3453,7 +3540,7 @@
     </operations>
     <operations xmi:id="_59jmsMxeEeKgUcEu-gntqA" supplying="_3xwisMxxEeKCI6TvU50wYw" name="onCreateOptionsMenu">
       <modelElement href="mobile.uml#_5rwr4sxeEeKgUcEu-gntqA"/>
-      <visualProperties xmi:id="_4GFz8MxxEeKCI6TvU50wYw" position="2382.0,1912.0" size="304.0,17.0"/>
+      <visualProperties xmi:id="_4GFz8MxxEeKCI6TvU50wYw" position="2382.0,1893.0" size="304.0,17.0"/>
       <stereotypes xmi:id="_59jmscxeEeKgUcEu-gntqA" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_5rxS8sxeEeKgUcEu-gntqA"/>
       </stereotypes>
@@ -3527,10 +3614,10 @@
     </attributes>
     <attributes xmi:id="_A8ztIMxeEeKgUcEu-gntqA" name="locationManager">
       <modelElement href="mobile.uml#_ANLm8MxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_wMn38MxeEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HHjbQMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_ANMOAMxeEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HHjbQMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlJxoM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_ANMOAMxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_A8ztIsxeEeKgUcEu-gntqA" label="-"/>
@@ -3541,10 +3628,10 @@
     </attributes>
     <attributes xmi:id="_A8ztJcxeEeKgUcEu-gntqA" name="notificationReceiver">
       <modelElement href="mobile.uml#_ANMOAcxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_wMnQ4MxeEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HHhmEMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_ANNcIMxeEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HHhmEMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlH8cM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_ANNcIMxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_A8ztJ8xeEeKgUcEu-gntqA" label="-"/>
@@ -3555,10 +3642,10 @@
     </attributes>
     <attributes xmi:id="_A8ztKsxeEeKgUcEu-gntqA" name="proxAlertIntents">
       <modelElement href="mobile.uml#_ANNcIcxeEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_wMpGEMxeEeKgUcEu-gntqA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_HHlQcMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_ANOqQMxeEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_HHlQcMxiEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_QlK_wM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_ANOqQMxeEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_A8ztLcxeEeKgUcEu-gntqA" label="-"/>
@@ -3618,6 +3705,294 @@
     <operations xmi:id="_A8ztQsxeEeKgUcEu-gntqA" comments="_A8u0ksxeEeKgUcEu-gntqA" targetConnectionVisual="_A8u0k8xeEeKgUcEu-gntqA" name="removeAllProximityAlerts">
       <modelElement href="mobile.uml#_AHnKcMxeEeKgUcEu-gntqA"/>
       <visibility xmi:id="_A8ztQ8xeEeKgUcEu-gntqA" label="+"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Wn5WMM4vEeKrBaw-sqCxfw" sourceConnectionVisual="_Wn59QM4vEeKrBaw-sqCxfw" text="@author NohSam&#xA;Call web service for the access point locations" item="_Wn-1yc4vEeKrBaw-sqCxfw">
+    <modelElement href="mobile.uml#_XmD0EMxtEeKCI6TvU50wYw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Wn6kUc4vEeKrBaw-sqCxfw" sourceConnectionVisual="_Wn6kUs4vEeKrBaw-sqCxfw" text="Constructor for floorplan&#xA;&#x9; *" item="_Wn-13M4vEeKrBaw-sqCxfw">
+    <modelElement href="mobile.uml#_uWk2MM4oEeKrBaw-sqCxfw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Wn7LYM4vEeKrBaw-sqCxfw" sourceConnectionVisual="_Wn7LYc4vEeKrBaw-sqCxfw" text="Get Access Points information&#xA;&#x9; * @return List&lt;AccessPoint>" item="_Wn-14c4vEeKrBaw-sqCxfw">
+    <modelElement href="mobile.uml#_BxArEM4oEeKrBaw-sqCxfw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Wn7LYs4vEeKrBaw-sqCxfw" sourceConnectionVisual="_Wn7ycM4vEeKrBaw-sqCxfw" text="Parse results and retrieve data&#xA;&#x9; * &#xA;&#x9; * @param soap The returned SOAP object" item="_Wn-15c4vEeKrBaw-sqCxfw">
+    <modelElement href="mobile.uml#_ixfw0M4lEeKrBaw-sqCxfw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Wn7ycc4vEeKrBaw-sqCxfw" sourceConnectionVisual="_Wn8ZgM4vEeKrBaw-sqCxfw" text="Set Web Service Inputs&#xA;&#x9; *" item="_Wn-1784vEeKrBaw-sqCxfw">
+    <modelElement href="mobile.uml#_ldri4M4oEeKrBaw-sqCxfw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Wn-1yc4vEeKrBaw-sqCxfw" comments="_Wn5WMM4vEeKrBaw-sqCxfw" targetConnectionVisual="_Wn59QM4vEeKrBaw-sqCxfw" name="FloorPlan" associationsIn="_veKFIM4vEeKrBaw-sqCxfw" associationsOut="_Wn4vIM4vEeKrBaw-sqCxfw _Wn-1wM4vEeKrBaw-sqCxfw">
+    <modelElement href="mobile.uml#_Xl5cAMxtEeKCI6TvU50wYw"/>
+    <visualProperties xmi:id="_Wn-1ys4vEeKrBaw-sqCxfw" position="321.0,1594.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Wn-1y84vEeKrBaw-sqCxfw" label="+"/>
+    <attributes xmi:id="_Wn-1zM4vEeKrBaw-sqCxfw" defaultValue="null" name="apList">
+      <modelElement href="mobile.uml#_XmB-4MxtEeKCI6TvU50wYw"/>
+      <stereotypes xmi:id="_Wn-1zc4vEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_XmDNAMxtEeKCI6TvU50wYw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Wn9noM4vEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_XmDNAMxtEeKCI6TvU50wYw"/>
+      </stereotypes>
+      <visibility xmi:id="_Wn-1zs4vEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_Wn-1z84vEeKrBaw-sqCxfw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_Wn-10M4vEeKrBaw-sqCxfw" name="AccessPoint">
+        <modelElement href="mobile.uml#_s6ih4MfZEeKj__JByXBSIg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Wn-10c4vEeKrBaw-sqCxfw" name="webService">
+      <modelElement href="mobile.uml#_ixa4UM4lEeKrBaw-sqCxfw"/>
+      <stereotypes xmi:id="_Wn-10s4vEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_ixbfYM4lEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Wn-1084vEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_ixbfYM4lEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_Wn-11M4vEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_Wn-11c4vEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+      <type xmi:id="_Wn-11s4vEeKrBaw-sqCxfw" name="WebService">
+        <modelElement href="mobile.uml#_jgRX0M4kEeKrBaw-sqCxfw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Wn-1184vEeKrBaw-sqCxfw" defaultValue="null" name="wsArguments">
+      <modelElement href="mobile.uml#_Bw9nwM4oEeKrBaw-sqCxfw"/>
+      <stereotypes xmi:id="_Wn-12M4vEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_Bw-O0M4oEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_Wn-12c4vEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_Wn-12s4vEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+      <type xmi:id="_Wn-1284vEeKrBaw-sqCxfw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Wn-13M4vEeKrBaw-sqCxfw" comments="_Wn6kUc4vEeKrBaw-sqCxfw" targetConnectionVisual="_Wn6kUs4vEeKrBaw-sqCxfw" name="FloorPlan">
+      <modelElement href="mobile.uml#_Xl6qIsxtEeKCI6TvU50wYw"/>
+      <keywords xmi:id="_Wn-13c4vEeKrBaw-sqCxfw" keyword="create"/>
+      <visibility xmi:id="_Wn-13s4vEeKrBaw-sqCxfw" label="+"/>
+      <outParameters xmi:id="_Wn-1384vEeKrBaw-sqCxfw">
+        <modelElement href="mobile.uml#_Xl7RM8xtEeKCI6TvU50wYw"/>
+        <type xmi:id="_Wn-14M4vEeKrBaw-sqCxfw" name="FloorPlan">
+          <modelElement href="mobile.uml#_Xl5cAMxtEeKCI6TvU50wYw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Wn-14c4vEeKrBaw-sqCxfw" comments="_Wn7LYM4vEeKrBaw-sqCxfw" targetConnectionVisual="_Wn7LYc4vEeKrBaw-sqCxfw" name="getAccessPoints">
+      <modelElement href="mobile.uml#_Xl74QMxtEeKCI6TvU50wYw"/>
+      <visibility xmi:id="_Wn-14s4vEeKrBaw-sqCxfw" label="+"/>
+      <outParameters xmi:id="_Wn-1484vEeKrBaw-sqCxfw">
+        <modelElement href="mobile.uml#_Bw26EM4oEeKrBaw-sqCxfw"/>
+        <type xmi:id="_Wn-15M4vEeKrBaw-sqCxfw" name="AccessPoint">
+          <modelElement href="mobile.uml#_s6ih4MfZEeKj__JByXBSIg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Wn-15c4vEeKrBaw-sqCxfw" comments="_Wn7LYs4vEeKrBaw-sqCxfw" targetConnectionVisual="_Wn7ycM4vEeKrBaw-sqCxfw" name="getAPsFromSoap">
+      <modelElement href="mobile.uml#_TSULUMyLEeKCI6TvU50wYw"/>
+      <stereotypes xmi:id="_Wn-15s4vEeKrBaw-sqCxfw" name="Array">
+        <modelElement href="mobile.uml#_ixRuYs4lEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_Wn-1584vEeKrBaw-sqCxfw" label="+"/>
+      <outParameters xmi:id="_Wn-16M4vEeKrBaw-sqCxfw">
+        <modelElement href="mobile.uml#_ixRuYM4lEeKrBaw-sqCxfw"/>
+      </outParameters>
+      <parameters xmi:id="_Wn-16c4vEeKrBaw-sqCxfw" name="soap">
+        <modelElement href="mobile.uml#_ixS8gM4lEeKrBaw-sqCxfw"/>
+        <type xmi:id="_Wn-16s4vEeKrBaw-sqCxfw" name="SoapObject">
+          <modelElement href="mobile.uml#_jhBlwc4kEeKrBaw-sqCxfw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Wn-1684vEeKrBaw-sqCxfw" name="run">
+      <modelElement href="mobile.uml#_LbvgcM4nEeKrBaw-sqCxfw"/>
+      <stereotypes xmi:id="_Wn-17M4vEeKrBaw-sqCxfw" name="Annotations">
+        <modelElement href="mobile.uml#_LbwHgM4nEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Wn-17c4vEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_Lbx8sM4nEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_Wn-17s4vEeKrBaw-sqCxfw" label="+"/>
+    </operations>
+    <operations xmi:id="_Wn-1784vEeKrBaw-sqCxfw" comments="_Wn7ycc4vEeKrBaw-sqCxfw" targetConnectionVisual="_Wn8ZgM4vEeKrBaw-sqCxfw" name="setWSInputs">
+      <modelElement href="mobile.uml#_Bw4vQM4oEeKrBaw-sqCxfw"/>
+      <visibility xmi:id="_Wn-18M4vEeKrBaw-sqCxfw" label="-"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_HESB4M4wEeKrBaw-sqCxfw" name="WebService" associationsIn="_Wn-1wM4vEeKrBaw-sqCxfw">
+    <modelElement href="mobile.uml#_jgRX0M4kEeKrBaw-sqCxfw"/>
+    <visualProperties xmi:id="_HESB4c4wEeKrBaw-sqCxfw" position="73.0,1872.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_HESB4s4wEeKrBaw-sqCxfw" label="+"/>
+    <attributes xmi:id="_HESB484wEeKrBaw-sqCxfw" name="nameSpace">
+      <modelElement href="mobile.uml#_jhbOYM4kEeKrBaw-sqCxfw"/>
+      <stereotypes xmi:id="_HESB5M4wEeKrBaw-sqCxfw" name="MultiDeclaration">
+        <modelElement href="mobile.uml#_jhb1cM4kEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_HESB5c4wEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_jhccgM4kEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_HESB5s4wEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_HESB584wEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+      <type xmi:id="_HESB6M4wEeKrBaw-sqCxfw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HESB6c4wEeKrBaw-sqCxfw" name="url">
+      <modelElement href="mobile.uml#_jh3TQM4kEeKrBaw-sqCxfw"/>
+      <stereotypes xmi:id="_HESB6s4wEeKrBaw-sqCxfw" name="MultiDeclaration">
+        <modelElement href="mobile.uml#_jh36UM4kEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_HESB684wEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_jh4hYM4kEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_HESB7M4wEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_HESB7c4wEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+      <type xmi:id="_HESB7s4wEeKrBaw-sqCxfw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HESB784wEeKrBaw-sqCxfw" name="methodName">
+      <modelElement href="mobile.uml#_jh4hYc4kEeKrBaw-sqCxfw"/>
+      <stereotypes xmi:id="_HESB8M4wEeKrBaw-sqCxfw" name="MultiDeclaration">
+        <modelElement href="mobile.uml#_jh5IcM4kEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_HESB8c4wEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_jh5Icc4kEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_HESB8s4wEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_HESB884wEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+      <type xmi:id="_HESB9M4wEeKrBaw-sqCxfw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HESB9c4wEeKrBaw-sqCxfw" name="soapAction">
+      <modelElement href="mobile.uml#_jh5Ics4kEeKrBaw-sqCxfw"/>
+      <stereotypes xmi:id="_HESB9s4wEeKrBaw-sqCxfw" name="MultiDeclaration">
+        <modelElement href="mobile.uml#_jh5vgM4kEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_HESB984wEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_jh6WkM4kEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_HESB-M4wEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_HESB-c4wEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+      <type xmi:id="_HESB-s4wEeKrBaw-sqCxfw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_HESB-84wEeKrBaw-sqCxfw" name="WebService">
+      <modelElement href="mobile.uml#_jgYFgM4kEeKrBaw-sqCxfw"/>
+      <keywords xmi:id="_HESB_M4wEeKrBaw-sqCxfw" keyword="create"/>
+      <visibility xmi:id="_HESB_c4wEeKrBaw-sqCxfw" label="+"/>
+      <outParameters xmi:id="_HESB_s4wEeKrBaw-sqCxfw">
+        <modelElement href="mobile.uml#_jgYskc4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_HESB_84wEeKrBaw-sqCxfw" name="WebService">
+          <modelElement href="mobile.uml#_jgRX0M4kEeKrBaw-sqCxfw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_HESCAM4wEeKrBaw-sqCxfw" name="WebService">
+      <modelElement href="mobile.uml#_jgahwM4kEeKrBaw-sqCxfw"/>
+      <keywords xmi:id="_HESCAc4wEeKrBaw-sqCxfw" keyword="create"/>
+      <visibility xmi:id="_HESCAs4wEeKrBaw-sqCxfw" label="+"/>
+      <outParameters xmi:id="_HESCA84wEeKrBaw-sqCxfw">
+        <modelElement href="mobile.uml#_jgbI0s4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_HESCBM4wEeKrBaw-sqCxfw" name="WebService">
+          <modelElement href="mobile.uml#_jgRX0M4kEeKrBaw-sqCxfw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_HESCBc4wEeKrBaw-sqCxfw" name="nameSpace">
+        <modelElement href="mobile.uml#_jgahwc4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_HESCBs4wEeKrBaw-sqCxfw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_HESCB84wEeKrBaw-sqCxfw" name="methodName">
+        <modelElement href="mobile.uml#_jgahws4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_HESCCM4wEeKrBaw-sqCxfw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_HESCCc4wEeKrBaw-sqCxfw" name="url">
+        <modelElement href="mobile.uml#_jgahw84kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_HESCCs4wEeKrBaw-sqCxfw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_HESCC84wEeKrBaw-sqCxfw" name="WebService">
+      <modelElement href="mobile.uml#_jgbv4M4kEeKrBaw-sqCxfw"/>
+      <keywords xmi:id="_HESCDM4wEeKrBaw-sqCxfw" keyword="create"/>
+      <visibility xmi:id="_HESCDc4wEeKrBaw-sqCxfw" label="+"/>
+      <outParameters xmi:id="_HESCDs4wEeKrBaw-sqCxfw">
+        <modelElement href="mobile.uml#_jgcW9M4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_HESCD84wEeKrBaw-sqCxfw" name="WebService">
+          <modelElement href="mobile.uml#_jgRX0M4kEeKrBaw-sqCxfw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_HESCEM4wEeKrBaw-sqCxfw" name="nameSpace">
+        <modelElement href="mobile.uml#_jgcW8M4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_HESCEc4wEeKrBaw-sqCxfw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_HESCEs4wEeKrBaw-sqCxfw" name="url">
+        <modelElement href="mobile.uml#_jgcW8c4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_HESCE84wEeKrBaw-sqCxfw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_HESCFM4wEeKrBaw-sqCxfw" name="invokeMethod">
+      <modelElement href="mobile.uml#_jhITcM4kEeKrBaw-sqCxfw"/>
+      <visibility xmi:id="_HESCFc4wEeKrBaw-sqCxfw" label="+"/>
+      <outParameters xmi:id="_HESCFs4wEeKrBaw-sqCxfw">
+        <modelElement href="mobile.uml#_jhVu0M4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_HESCF84wEeKrBaw-sqCxfw" name="SoapObject">
+          <modelElement href="mobile.uml#_jhBlwc4kEeKrBaw-sqCxfw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_HESCGM4wEeKrBaw-sqCxfw" name="methodName">
+        <modelElement href="mobile.uml#_jhITcc4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_HESCGc4wEeKrBaw-sqCxfw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_HESCGs4wEeKrBaw-sqCxfw" name="arguments">
+        <modelElement href="mobile.uml#_jhITcs4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_HESCG84wEeKrBaw-sqCxfw" name="Map">
+          <modelElement href="mobile.uml#_tGWwUcfZEeKj__JByXBSIg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_HESCHM4wEeKrBaw-sqCxfw" name="invokeMethod">
+      <modelElement href="mobile.uml#_jhL90M4kEeKrBaw-sqCxfw"/>
+      <visibility xmi:id="_HESCHc4wEeKrBaw-sqCxfw" label="+"/>
+      <outParameters xmi:id="_HESCHs4wEeKrBaw-sqCxfw">
+        <modelElement href="mobile.uml#_jhWV4M4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_HESCH84wEeKrBaw-sqCxfw" name="SoapObject">
+          <modelElement href="mobile.uml#_jhBlwc4kEeKrBaw-sqCxfw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_HESCIM4wEeKrBaw-sqCxfw" name="arguments">
+        <modelElement href="mobile.uml#_jhL90c4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_HESCIc4wEeKrBaw-sqCxfw" name="Map">
+          <modelElement href="mobile.uml#_tGWwUcfZEeKj__JByXBSIg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_HESCIs4wEeKrBaw-sqCxfw" name="makeCall">
+      <modelElement href="mobile.uml#_jhW88M4kEeKrBaw-sqCxfw"/>
+      <visibility xmi:id="_HESCI84wEeKrBaw-sqCxfw" label="-"/>
+      <outParameters xmi:id="_HESCJM4wEeKrBaw-sqCxfw">
+        <modelElement href="mobile.uml#_jhXkAc4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_HESCJc4wEeKrBaw-sqCxfw" name="SoapObject">
+          <modelElement href="mobile.uml#_jhBlwc4kEeKrBaw-sqCxfw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_HESCJs4wEeKrBaw-sqCxfw" name="envelope">
+        <modelElement href="mobile.uml#_jhXkAM4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_HESCJ84wEeKrBaw-sqCxfw" name="SoapSerializationEnvelope">
+          <modelElement href="mobile.uml#_jhDa8c4kEeKrBaw-sqCxfw"/>
+        </type>
+      </parameters>
     </operations>
   </nodes>
   <requiredModelsLocators xmi:id="_7U8ssMxdEeKgUcEu-gntqA" location="/mobile/mobile.uml"/>

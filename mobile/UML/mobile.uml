@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_reQxIMfZEeKj__JByXBSIg" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_reQxIcfZEeKj__JByXBSIg" source="codegen">
         <details xmi:id="_reQxIsfZEeKj__JByXBSIg" key="codegenDirectory" value="/WIFIScanner/gen"/>
-        <details xmi:id="_tuaO0MfZEeKj__JByXBSIg" key="AssociatedSourceCode" value="/WIFIScanner/gen/cmu/costcode/WIFIScanner/BuildConfig.java;663610238/1;/WIFIScanner/gen/cmu/costcode/WIFIScanner/R.java;1416285864/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/TestReceiver.java;3086906378/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/WIFIScanner.java;2516296769/1;/mobile/src/cmu/costcode/ProximityAlert/NotificationActivity.java;2627982062/1;/mobile/src/cmu/costcode/ProximityAlert/ProximityIntentReceiver.java;3718231935/1;/mobile/src/cmu/costcode/ProximityAlert/ShoppingListApplication.java;1913911324/1;/mobile/src/cmu/costcode/ShoppingList/EditListActivity.java;2438705698/1;/mobile/src/cmu/costcode/ShoppingList/LoginActivity.java;379368985/1;/mobile/src/cmu/costcode/ShoppingList/ViewListActivity.java;3390478860/1;/mobile/src/cmu/costcode/ShoppingList/WiFiScanSettingsActivity.java;1424938990/1;/mobile/src/cmu/costcode/WIFIScanner/AccessPoint.java;1134896105/1;/mobile/src/cmu/costcode/WIFIScanner/WiFiScanner.java;3594015468/1;/mobile/src/cmu/costcode/Triangulation/Triangulation.java;202435230/1;/mobile/src/cmu/costcode/Triangulation/TriangulationTask.java;4153442453/1;/mobile/src/cmu/costcode/Triangulation/WCL.java;3171581163/1;/mobile/src/cmu/costcode/ShoppingList/db/DatabaseAdaptor.java;1083346947/1;/WIFIScanner/gen/cmu/costcode/FloorPlan.java;3115562283/1;/mobile/src/cmu/costcode/FloorPlan/FloorPlan.java;3361529307/1;"/>
+        <details xmi:id="_tuaO0MfZEeKj__JByXBSIg" key="AssociatedSourceCode" value="/WIFIScanner/gen/cmu/costcode/WIFIScanner/BuildConfig.java;663610238/1;/WIFIScanner/gen/cmu/costcode/WIFIScanner/R.java;1416285864/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/TestReceiver.java;3086906378/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/WIFIScanner.java;2516296769/1;/mobile/src/cmu/costcode/ProximityAlert/NotificationActivity.java;2627982062/1;/mobile/src/cmu/costcode/ProximityAlert/ProximityIntentReceiver.java;3718231935/1;/mobile/src/cmu/costcode/ProximityAlert/ShoppingListApplication.java;1913911324/1;/mobile/src/cmu/costcode/ShoppingList/EditListActivity.java;2438705698/1;/mobile/src/cmu/costcode/ShoppingList/LoginActivity.java;379368985/1;/mobile/src/cmu/costcode/ShoppingList/ViewListActivity.java;3146878295/1;/mobile/src/cmu/costcode/ShoppingList/WiFiScanSettingsActivity.java;1424938990/1;/mobile/src/cmu/costcode/WIFIScanner/AccessPoint.java;1134896105/1;/mobile/src/cmu/costcode/WIFIScanner/WiFiScanner.java;4077114339/1;/mobile/src/cmu/costcode/Triangulation/Triangulation.java;202435230/1;/mobile/src/cmu/costcode/Triangulation/TriangulationTask.java;507222526/1;/mobile/src/cmu/costcode/Triangulation/WCL.java;3171581163/1;/mobile/src/cmu/costcode/ShoppingList/db/DatabaseAdaptor.java;1083346947/1;/WIFIScanner/gen/cmu/costcode/FloorPlan.java;3115562283/1;/mobile/src/cmu/costcode/FloorPlan/FloorPlan.java;3952012089/1;/mobile/src/cmu/costcode/FloorPlan/WebService.java;685388525/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_s0u00MfZEeKj__JByXBSIg">
@@ -3495,21 +3495,40 @@ and NotificationReceiver objects.&#xD;
             </ownedAttribute>
             <ownedAttribute xmi:id="_1KkjM8xfEeKgUcEu-gntqA" name="apList" visibility="private" type="_s6ih4MfZEeKj__JByXBSIg" isOrdered="true" association="_1KzzwcxfEeKgUcEu-gntqA">
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1KlKQMxfEeKgUcEu-gntqA" value="*"/>
-              <defaultValue xmi:type="uml:LiteralString" xmi:id="_1KlKQcxfEeKgUcEu-gntqA" value="new ArrayList&lt;AccessPoint>()"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_1KlKQcxfEeKgUcEu-gntqA">
+                <value xsi:nil="true"/>
+              </defaultValue>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_vJwicM4vEeKrBaw-sqCxfw" name="fp" visibility="private" type="_Xl5cAMxtEeKCI6TvU50wYw" association="_vJzlwM4vEeKrBaw-sqCxfw">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_vJwicc4vEeKrBaw-sqCxfw" value="null"/>
             </ownedAttribute>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_1KpbsMxfEeKgUcEu-gntqA" name="WiFiScanner" specification="_1KXu4MxfEeKgUcEu-gntqA">
               <ownedParameter xmi:id="_1KpbscxfEeKgUcEu-gntqA" name="wm" type="_tI340cfZEeKj__JByXBSIg"/>
               <ownedParameter xmi:id="_1KpbssxfEeKgUcEu-gntqA" name="scanNumber">
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
               </ownedParameter>
-              <ownedParameter xmi:id="_1Kpbs8xfEeKgUcEu-gntqA" type="_1JzuMMxfEeKgUcEu-gntqA" direction="return"/>
+              <ownedParameter xmi:id="_1Kpbs8xfEeKgUcEu-gntqA" type="_1JzuMMxfEeKgUcEu-gntqA" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>wifimanager = wm;
 		this.scanNumber = scanNumber;
+		
+		// Get the AP information
+		// Create thread
+		fp = new FloorPlan();
+		//fp.run(); // TODO Uncomment this line for the actual execution of web service
+		apList = fp.getAccessPoints();
+		
+		// TODO Remove the below part for the actual execution of web service
+		// mock the AP position data
+		if(apList == null)
+			apList = new ArrayList&lt;AccessPoint>(10);
 	</body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_1KqCwMxfEeKgUcEu-gntqA" name="scanStart" specification="_1J3YkMxfEeKgUcEu-gntqA">
               <ownedParameter xmi:id="_1KqCwcxfEeKgUcEu-gntqA" type="_s6ih4MfZEeKj__JByXBSIg" isOrdered="true" direction="return">
+                <name xsi:nil="true"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1KqCwsxfEeKgUcEu-gntqA" value="*"/>
               </ownedParameter>
               <language>java</language>
@@ -3524,7 +3543,7 @@ and NotificationReceiver objects.&#xD;
 			wifimanager.startScan();
 			mScanResult.addAll(wifimanager.getScanResults());
 		}
-
+		
 		parseWIFIScanResult(); // get WIFISCanResult
 		mScanResult = null;
 		
@@ -3538,13 +3557,13 @@ and NotificationReceiver objects.&#xD;
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_1KqCxMxfEeKgUcEu-gntqA" name="parseWIFIScanResult" specification="_1J4msMxfEeKgUcEu-gntqA">
               <language>java</language>
-              <body>Comparator&lt;ScanResult> comparator = new Comparator&lt;ScanResult>() {
-			@Override
-			public int compare(ScanResult s1, ScanResult s2) {
-				return (s1.BSSID.compareTo(s2.BSSID));
-			}
-		};
-		Collections.sort(mScanResult, comparator);
+              <body>//		Comparator&lt;ScanResult> comparator = new Comparator&lt;ScanResult>() {
+//			@Override
+//			public int compare(ScanResult s1, ScanResult s2) {
+//				return (s1.BSSID.compareTo(s2.BSSID));
+//			}
+//		};
+//		Collections.sort(mScanResult, comparator);
 
 		int rssi = 0;
 		int tCount = 0;
@@ -3553,9 +3572,7 @@ and NotificationReceiver objects.&#xD;
 		for (int i = 0; i &lt; mScanResult.size(); i++) {
 			newResult = mScanResult.get(i);
 			if (i > 0 &amp;&amp; oldResult.BSSID.compareTo(newResult.BSSID) != 0) {
-				// if(tCount > 0) {
 				addAP(oldResult, i, rssi / tCount);
-				// }
 				rssi = newResult.level;
 				tCount = 1;
 			} else {
@@ -3578,56 +3595,24 @@ and NotificationReceiver objects.&#xD;
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
               </ownedParameter>
               <language>java</language>
-              <body>// mock the AP position data
-		PointF mockAP = null;
-		//
-		// points[0] = new PointF(0, 0); // siruiptime
-		// points[1] = new PointF(11.3, -2.5); // siru=softap
-		// points[2] = new PointF(15, -8.8); // siru-mac
-		// points[3]
-		if (mResult.SSID.compareTo(&quot;siruiptime&quot;) == 0) {
-			mockAP = new PointF(0, 0);
-		} else if (mResult.SSID.compareTo(&quot;siru-softap&quot;) == 0) {
-			mockAP = new PointF((float) 11.3, (float) -2.5);
-		} else if (mResult.SSID.compareTo(&quot;siru-mac&quot;) == 0) {
-			mockAP = new PointF((float) 13, (float) -10); // inside the room
-															// -10.5, outside
-															// the room -10
-		} else if (mResult.SSID.compareTo(&quot;siru-sony&quot;) == 0) {
-			mockAP = new PointF((float) 2.3, (float) -10);
-		} else {
-			mockAP = new PointF((float) i, (float) i); // 다음 라인이랑
-														// alternate comment and
-														// uncomment
-//			return;
+              <body>for (Iterator&lt;AccessPoint> itd = apList.iterator(); itd.hasNext();) {
+			AccessPoint ap = itd.next();
+			if(ap.getSsid().equals(mResult.SSID)) {
+				ap.setBssid(mResult.BSSID);
+				ap.setCapabilities(mResult.capabilities);
+				ap.setFrequency(mResult.frequency);
+				ap.setRssi(rssi);
+			}
+			
 		}
+		
+		// TODO: delete the below part for the real WS call
+		PointF mockAP = null;
+		mockAP = new PointF((float) i, (float) i);
 		AccessPoint ap = new AccessPoint(mResult.BSSID, mResult.SSID,
 				mResult.capabilities, mResult.frequency, rssi, mockAP.x,
 				mockAP.y);
 		apList.add(ap);
-	</body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_1Kqp1MxfEeKgUcEu-gntqA" name="getWIFIScanResult" specification="_1J5NwMxfEeKgUcEu-gntqA">
-              <language>java</language>
-              <body>// mScanResult = wifimanager.getScanResults(); // ScanResult
-		Comparator&lt;ScanResult> comparator = new Comparator&lt;ScanResult>() {
-			@Override
-			public int compare(ScanResult s1, ScanResult s2) {
-				return (s1.level >= s2.level) ? -1 : 1;
-			}
-		};
-		Collections.sort(mScanResult, comparator);
-
-		// Scan count
-		// textStatus.setText(&quot;Scan count is \t&quot; + ++scanCount + &quot; times \n&quot;);
-
-//		textStatus.setText(&quot;=======================================\n&quot;);
-//		for (int i = 0; i &lt; mScanResult.size(); i++) {
-//			ScanResult result = mScanResult.get(i);
-//			textStatus.append((i + 1) + &quot;. SSID : &quot; + result.SSID.toString()
-//					+ &quot;\t\t RSSI : &quot; + result.level + &quot; dBm\n&quot;);
-//		}
-//		textStatus.append(&quot;=======================================\n&quot;);
 	</body>
             </ownedBehavior>
             <ownedOperation xmi:id="_1J3YkMxfEeKgUcEu-gntqA" name="scanStart" method="_1KqCwMxfEeKgUcEu-gntqA">
@@ -3636,8 +3621,7 @@ and NotificationReceiver objects.&#xD;
               </ownedParameter>
             </ownedOperation>
             <ownedOperation xmi:id="_1J3_ocxfEeKgUcEu-gntqA" name="scanStop" method="_1KqCw8xfEeKgUcEu-gntqA"/>
-            <ownedOperation xmi:id="_1J4msMxfEeKgUcEu-gntqA" name="parseWIFIScanResult" method="_1KqCxMxfEeKgUcEu-gntqA"/>
-            <ownedOperation xmi:id="_1J5NwMxfEeKgUcEu-gntqA" name="getWIFIScanResult" method="_1Kqp1MxfEeKgUcEu-gntqA"/>
+            <ownedOperation xmi:id="_1J4msMxfEeKgUcEu-gntqA" name="parseWIFIScanResult" visibility="private" method="_1KqCxMxfEeKgUcEu-gntqA"/>
             <ownedOperation xmi:id="_1KXu4MxfEeKgUcEu-gntqA" name="WiFiScanner" method="_1KpbsMxfEeKgUcEu-gntqA">
               <eAnnotations xmi:id="_1KXu48xfEeKgUcEu-gntqA" source="http://www.eclipse.org/uml2/2.0.0/UML">
                 <details xmi:id="_1KXu5MxfEeKgUcEu-gntqA" key="create"/>
@@ -3648,7 +3632,7 @@ and NotificationReceiver objects.&#xD;
               </ownedParameter>
               <ownedParameter xmi:id="_1KXu5cxfEeKgUcEu-gntqA" type="_1JzuMMxfEeKgUcEu-gntqA" direction="return"/>
             </ownedOperation>
-            <ownedOperation xmi:id="_1KYV8MxfEeKgUcEu-gntqA" name="addAP" method="_1Kqp0MxfEeKgUcEu-gntqA">
+            <ownedOperation xmi:id="_1KYV8MxfEeKgUcEu-gntqA" name="addAP" visibility="private" method="_1Kqp0MxfEeKgUcEu-gntqA">
               <ownedParameter xmi:id="_1KYV8cxfEeKgUcEu-gntqA" name="mResult" type="_tI2qsMfZEeKj__JByXBSIg"/>
               <ownedParameter xmi:id="_1KYV8sxfEeKgUcEu-gntqA" name="i">
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
@@ -3666,6 +3650,9 @@ and NotificationReceiver objects.&#xD;
           </packagedElement>
           <packagedElement xmi:type="uml:Association" xmi:id="_1KzzwcxfEeKgUcEu-gntqA" name="" memberEnd="_1KzzwsxfEeKgUcEu-gntqA _1KkjM8xfEeKgUcEu-gntqA">
             <ownedEnd xmi:id="_1KzzwsxfEeKgUcEu-gntqA" name="" type="_1JzuMMxfEeKgUcEu-gntqA" association="_1KzzwcxfEeKgUcEu-gntqA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_vJzlwM4vEeKrBaw-sqCxfw" name="" memberEnd="_vJzlwc4vEeKrBaw-sqCxfw _vJwicM4vEeKrBaw-sqCxfw">
+            <ownedEnd xmi:id="_vJzlwc4vEeKrBaw-sqCxfw" name="" type="_1JzuMMxfEeKgUcEu-gntqA" association="_vJzlwM4vEeKrBaw-sqCxfw"/>
           </packagedElement>
         </packagedElement>
         <packagedElement xmi:type="uml:Package" xmi:id="_AE50sMxeEeKgUcEu-gntqA" name="ShoppingList">
@@ -4738,7 +4725,7 @@ and NotificationReceiver objects.&#xD;
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_jzAH4My2EeKCI6TvU50wYw" name="onStop" specification="_jy9EkMy2EeKCI6TvU50wYw">
               <language>java</language>
               <body>super.onStop();&#xD;
-		if(tTask.getStatus() == Status.RUNNING)&#xD;
+		if(!tTask.isBgrunFlag() &amp;&amp; tTask.getStatus() == Status.RUNNING)&#xD;
 			tTask.cancel(false);&#xD;
 	</body>
             </ownedBehavior>
@@ -5888,7 +5875,7 @@ and NotificationReceiver objects.&#xD;
 			return false;
 		}
 		else {
-			setBgrunFlag(prefs.getBoolean(&quot;bgrun_checkbox&quot;, true));
+			bgrunFlag = prefs.getBoolean(&quot;bgrun_checkbox&quot;, true);
 			initParams.put(WCL.TRIANG_METHOD, prefs.getString(&quot;triangulation_list&quot;, &quot;WCL&quot;));
 			initParams.put(WCL.SCAN_NUMBER, Integer.valueOf(prefs.getString(&quot;wifi_scannum&quot;, &quot;5&quot;)));
 		}
@@ -6177,7 +6164,7 @@ and NotificationReceiver objects.&#xD;
           </packagedElement>
         </packagedElement>
         <packagedElement xmi:type="uml:Package" xmi:id="_Xl2YsMxtEeKCI6TvU50wYw" name="FloorPlan">
-          <packagedElement xmi:type="uml:Class" xmi:id="_Xl5cAMxtEeKCI6TvU50wYw" name="FloorPlan">
+          <packagedElement xmi:type="uml:Class" xmi:id="_Xl5cAMxtEeKCI6TvU50wYw" clientDependency="_Lb54gc4nEeKrBaw-sqCxfw" name="FloorPlan">
             <eAnnotations xmi:id="_Xl6DEMxtEeKCI6TvU50wYw" source="http://ns.yatta.de/umllab">
               <contents xmi:type="ecore:EAnnotation" xmi:id="_Xl6qIMxtEeKCI6TvU50wYw" source="codegen">
                 <details xmi:id="_Xl6qIcxtEeKCI6TvU50wYw" key="codegenDirectory" value="/mobile/src"/>
@@ -6191,7 +6178,16 @@ Call web service for the access point locations</body>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XmCl8MxtEeKCI6TvU50wYw" value="*"/>
               <defaultValue xmi:type="uml:LiteralString" xmi:id="_XmCl8cxtEeKCI6TvU50wYw" value="null"/>
             </ownedAttribute>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_XmDNAcxtEeKCI6TvU50wYw" name="getAccesspoints" specification="_Xl74QMxtEeKCI6TvU50wYw">
+            <ownedAttribute xmi:id="_ixa4UM4lEeKrBaw-sqCxfw" name="webService" visibility="private" type="_jgRX0M4kEeKrBaw-sqCxfw" association="_ixhmAM4lEeKrBaw-sqCxfw"/>
+            <ownedAttribute xmi:id="_Bw9nwM4oEeKrBaw-sqCxfw" name="wsArguments" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <qualifier xmi:id="_Bw-O0c4oEeKrBaw-sqCxfw">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </qualifier>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_hevBEM4oEeKrBaw-sqCxfw" value="null"/>
+            </ownedAttribute>
+            <interfaceRealization xmi:id="_Lb54gc4nEeKrBaw-sqCxfw" client="_Xl5cAMxtEeKCI6TvU50wYw" supplier="_Lb4qYM4nEeKrBaw-sqCxfw" contract="_Lb4qYM4nEeKrBaw-sqCxfw"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_XmDNAcxtEeKCI6TvU50wYw" name="getAccessPoints" specification="_Xl74QMxtEeKCI6TvU50wYw">
               <ownedParameter xmi:id="_XmDNAsxtEeKCI6TvU50wYw" type="_s6ih4MfZEeKj__JByXBSIg" isOrdered="true" direction="return">
                 <name xsi:nil="true"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XmDNA8xtEeKCI6TvU50wYw" value="*"/>
@@ -6200,21 +6196,258 @@ Call web service for the access point locations</body>
               <body>return apList;
 	</body>
             </ownedBehavior>
-            <ownedOperation xmi:id="_Xl6qIsxtEeKCI6TvU50wYw" name="FloorPlan">
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ixd7oM4lEeKrBaw-sqCxfw" name="FloorPlan" specification="_Xl6qIsxtEeKCI6TvU50wYw">
+              <ownedParameter xmi:id="_ixd7oc4lEeKrBaw-sqCxfw" type="_Xl5cAMxtEeKCI6TvU50wYw" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>String nameSpace =&quot;namespace&quot;;
+		String url = &quot;url&quot;;
+		webService = new WebService(nameSpace, url);
+		
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ixeisM4lEeKrBaw-sqCxfw" name="getAPsFromSoap" specification="_TSULUMyLEeKCI6TvU50wYw">
+              <ownedParameter xmi:id="_drGFcM4qEeKrBaw-sqCxfw" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_drGFcc4qEeKrBaw-sqCxfw" value="1"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_drGFcs4qEeKrBaw-sqCxfw" name="soap" type="_jhBlwc4kEeKrBaw-sqCxfw"/>
+              <language>java</language>
+              <body>apList = new ArrayList&lt;AccessPoint>(soap.getPropertyCount());
+		
+		for(int i=0; i&lt;soap.getPropertyCount(); i++) {
+			SoapObject pii = (SoapObject)soap.getProperty(i);
+			
+			// Making new AccessPoint object
+			AccessPoint ap = new AccessPoint();
+			ap.setBssid(pii.getPropertyAsString(0));
+			ap.setSsid(pii.getPropertyAsString(1));
+			ap.setPosX(Float.parseFloat(pii.getPropertyAsString(2)));
+			ap.setPosY(Float.parseFloat(pii.getPropertyAsString(3)));
+			apList.add(ap);
+		}
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Lb7GoM4nEeKrBaw-sqCxfw" name="run" specification="_LbvgcM4nEeKrBaw-sqCxfw">
+              <language>java</language>
+              <body>setWSInputs();
+		try {
+			getAPsFromSoap(webService.invokeMethod(&quot;methodName&quot;, wsArguments));
+		} catch (ConnectException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_BxAEAM4oEeKrBaw-sqCxfw" name="setWSInputs" specification="_Bw4vQM4oEeKrBaw-sqCxfw">
+              <language>java</language>
+              <body>wsArguments = new HashMap&lt;String, String>(1);
+		wsArguments.put(&quot;input1&quot;, &quot;value1&quot;);
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_Xl6qIsxtEeKCI6TvU50wYw" name="FloorPlan" method="_ixd7oM4lEeKrBaw-sqCxfw">
               <eAnnotations xmi:id="_Xl7RMMxtEeKCI6TvU50wYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
                 <details xmi:id="_Xl7RMcxtEeKCI6TvU50wYw" key="create"/>
               </eAnnotations>
+              <ownedComment xmi:id="_uWk2MM4oEeKrBaw-sqCxfw">
+                <body>Constructor for floorplan
+	 *</body>
+              </ownedComment>
               <ownedParameter xmi:id="_Xl7RM8xtEeKCI6TvU50wYw" type="_Xl5cAMxtEeKCI6TvU50wYw" direction="return"/>
             </ownedOperation>
-            <ownedOperation xmi:id="_Xl74QMxtEeKCI6TvU50wYw" name="getAccesspoints" method="_XmDNAcxtEeKCI6TvU50wYw">
-              <ownedParameter xmi:id="_Xl74QcxtEeKCI6TvU50wYw" type="_s6ih4MfZEeKj__JByXBSIg" isOrdered="true" direction="return">
-                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xl74QsxtEeKCI6TvU50wYw" value="*"/>
+            <ownedOperation xmi:id="_Xl74QMxtEeKCI6TvU50wYw" name="getAccessPoints" visibility="public" method="_XmDNAcxtEeKCI6TvU50wYw">
+              <ownedComment xmi:id="_BxArEM4oEeKrBaw-sqCxfw">
+                <body>Get Access Points information
+	 * @return List&lt;AccessPoint></body>
+              </ownedComment>
+              <ownedParameter xmi:id="_Bw26EM4oEeKrBaw-sqCxfw" type="_s6ih4MfZEeKj__JByXBSIg" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Bw26Ec4oEeKrBaw-sqCxfw" value="*"/>
               </ownedParameter>
             </ownedOperation>
-            <ownedOperation xmi:id="_TSULUMyLEeKCI6TvU50wYw" name="setAccessPoints"/>
+            <ownedOperation xmi:id="_TSULUMyLEeKCI6TvU50wYw" name="getAPsFromSoap" method="_ixeisM4lEeKrBaw-sqCxfw">
+              <ownedComment xmi:id="_ixfw0M4lEeKrBaw-sqCxfw">
+                <body>Parse results and retrieve data
+	 * 
+	 * @param soap The returned SOAP object</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_ixRuYM4lEeKrBaw-sqCxfw" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ixRuYc4lEeKrBaw-sqCxfw" value="1"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_ixS8gM4lEeKrBaw-sqCxfw" name="soap" type="_jhBlwc4kEeKrBaw-sqCxfw"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_LbvgcM4nEeKrBaw-sqCxfw" name="run" method="_Lb7GoM4nEeKrBaw-sqCxfw"/>
+            <ownedOperation xmi:id="_Bw4vQM4oEeKrBaw-sqCxfw" name="setWSInputs" visibility="private" method="_BxAEAM4oEeKrBaw-sqCxfw">
+              <ownedComment xmi:id="_ldri4M4oEeKrBaw-sqCxfw">
+                <body>Set Web Service Inputs
+	 *</body>
+              </ownedComment>
+            </ownedOperation>
           </packagedElement>
           <packagedElement xmi:type="uml:Association" xmi:id="_XmEbIMxtEeKCI6TvU50wYw" name="" memberEnd="_XmEbIcxtEeKCI6TvU50wYw _XmB-4MxtEeKCI6TvU50wYw">
             <ownedEnd xmi:id="_XmEbIcxtEeKCI6TvU50wYw" name="" type="_Xl5cAMxtEeKCI6TvU50wYw" association="_XmEbIMxtEeKCI6TvU50wYw"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_jgRX0M4kEeKrBaw-sqCxfw" name="WebService">
+            <eAnnotations xmi:id="_jgTNAM4kEeKrBaw-sqCxfw" source="http://ns.yatta.de/umllab">
+              <contents xmi:type="ecore:EAnnotation" xmi:id="_jgTNAc4kEeKrBaw-sqCxfw" source="codegen">
+                <details xmi:id="_jgTNAs4kEeKrBaw-sqCxfw" key="codegenDirectory" value="/mobile/src"/>
+              </contents>
+            </eAnnotations>
+            <ownedAttribute xmi:id="_jhbOYM4kEeKrBaw-sqCxfw" name="nameSpace" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_jh3TQM4kEeKrBaw-sqCxfw" name="url" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_jh4hYc4kEeKrBaw-sqCxfw" name="methodName" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_jh5Ics4kEeKrBaw-sqCxfw" name="soapAction" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_jhlmcM4kEeKrBaw-sqCxfw" name="WebService" specification="_jgYFgM4kEeKrBaw-sqCxfw">
+              <ownedParameter xmi:id="_jhlmcc4kEeKrBaw-sqCxfw" type="_jgRX0M4kEeKrBaw-sqCxfw" direction="return"/>
+              <language>java</language>
+              <body>nameSpace = &quot;http://costcode.mse.cmu.edu/&quot;;
+		url = &quot;http://shltestweb.appspot.com/shlappeng&quot;;	
+		methodName = &quot;sayHello&quot;;
+		soapAction = nameSpace + methodName;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_jhp34M4kEeKrBaw-sqCxfw" name="WebService" specification="_jgahwM4kEeKrBaw-sqCxfw">
+              <ownedParameter xmi:id="_jhqe8M4kEeKrBaw-sqCxfw" name="nameSpace">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_jhsUIM4kEeKrBaw-sqCxfw" name="methodName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_jhsUIc4kEeKrBaw-sqCxfw" name="url">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_jhsUIs4kEeKrBaw-sqCxfw" type="_jgRX0M4kEeKrBaw-sqCxfw" direction="return"/>
+              <language>java</language>
+              <body>this.nameSpace = nameSpace;
+		this.methodName = methodName;
+		this.url = url;
+		soapAction = nameSpace + methodName;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_jhtiQM4kEeKrBaw-sqCxfw" name="WebService" specification="_jgbv4M4kEeKrBaw-sqCxfw">
+              <ownedParameter xmi:id="_jhwlkM4kEeKrBaw-sqCxfw" name="nameSpace">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_jhwlkc4kEeKrBaw-sqCxfw" name="url">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_jhwlks4kEeKrBaw-sqCxfw" type="_jgRX0M4kEeKrBaw-sqCxfw" direction="return"/>
+              <language>java</language>
+              <body>this.nameSpace = nameSpace;
+		this.url = url;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_jhxzsM4kEeKrBaw-sqCxfw" name="invokeMethod" specification="_jhITcM4kEeKrBaw-sqCxfw">
+              <ownedParameter xmi:id="_jhxzsc4kEeKrBaw-sqCxfw" name="methodName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_jhxzss4kEeKrBaw-sqCxfw" name="arguments" type="_tGWwUcfZEeKj__JByXBSIg"/>
+              <ownedParameter xmi:id="_jhxzs84kEeKrBaw-sqCxfw" type="_jhBlwc4kEeKrBaw-sqCxfw" direction="return"/>
+              <language>java</language>
+              <body>this.methodName = methodName;
+		soapAction = nameSpace + methodName;
+		return invokeMethod(arguments);
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_jhyawM4kEeKrBaw-sqCxfw" name="invokeMethod" specification="_jhL90M4kEeKrBaw-sqCxfw">
+              <ownedParameter xmi:id="_jhyawc4kEeKrBaw-sqCxfw" name="arguments" type="_tGWwUcfZEeKj__JByXBSIg"/>
+              <ownedParameter xmi:id="_jhyaws4kEeKrBaw-sqCxfw" type="_jhBlwc4kEeKrBaw-sqCxfw" direction="return"/>
+              <language>java</language>
+              <body>SoapObject request = new SoapObject(nameSpace, methodName);
+		
+		// passing method arguments to SOAP request
+		for( Map.Entry&lt;String, String> entry : arguments.entrySet()) {
+			request.addProperty(entry.getKey().toString(), entry.getValue().toString());
+		}
+		
+		// get envelope
+		SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER12); 
+		envelope.setOutputSoapObject(request);
+		envelope.dotNet = false;
+		
+		return makeCall(envelope);
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_jhzo4M4kEeKrBaw-sqCxfw" name="makeCall" specification="_jhW88M4kEeKrBaw-sqCxfw">
+              <ownedParameter xmi:id="_jhzo4c4kEeKrBaw-sqCxfw" name="envelope" type="_jhDa8c4kEeKrBaw-sqCxfw"/>
+              <ownedParameter xmi:id="_jhzo4s4kEeKrBaw-sqCxfw" type="_jhBlwc4kEeKrBaw-sqCxfw" direction="return"/>
+              <language>java</language>
+              <body>SoapObject result; // Return object
+		
+		HttpTransportSE androidHttpTransport = new HttpTransportSE(url);
+
+		try {
+			androidHttpTransport.call(soapAction, envelope);
+			SoapObject resultsRequestSOAP = (SoapObject) envelope.bodyIn;
+			result = resultsRequestSOAP;
+		} catch (ConnectException e) {
+			throw e; 
+//			result.&quot;Network error. Check Internet&quot;, methodName);
+		} catch (Exception e) {
+			throw e;
+		}
+		return result;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_jgYFgM4kEeKrBaw-sqCxfw" name="WebService" method="_jhlmcM4kEeKrBaw-sqCxfw">
+              <eAnnotations xmi:id="_jgYFgc4kEeKrBaw-sqCxfw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_jgYskM4kEeKrBaw-sqCxfw" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_jgYskc4kEeKrBaw-sqCxfw" type="_jgRX0M4kEeKrBaw-sqCxfw" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_jgahwM4kEeKrBaw-sqCxfw" name="WebService" method="_jhp34M4kEeKrBaw-sqCxfw">
+              <eAnnotations xmi:id="_jgbI0M4kEeKrBaw-sqCxfw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_jgbI0c4kEeKrBaw-sqCxfw" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_jgahwc4kEeKrBaw-sqCxfw" name="nameSpace">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_jgahws4kEeKrBaw-sqCxfw" name="methodName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_jgahw84kEeKrBaw-sqCxfw" name="url">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_jgbI0s4kEeKrBaw-sqCxfw" type="_jgRX0M4kEeKrBaw-sqCxfw" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_jgbv4M4kEeKrBaw-sqCxfw" name="WebService" method="_jhtiQM4kEeKrBaw-sqCxfw">
+              <eAnnotations xmi:id="_jgcW8s4kEeKrBaw-sqCxfw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_jgcW884kEeKrBaw-sqCxfw" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_jgcW8M4kEeKrBaw-sqCxfw" name="nameSpace">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_jgcW8c4kEeKrBaw-sqCxfw" name="url">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_jgcW9M4kEeKrBaw-sqCxfw" type="_jgRX0M4kEeKrBaw-sqCxfw" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_jhITcM4kEeKrBaw-sqCxfw" name="invokeMethod" method="_jhxzsM4kEeKrBaw-sqCxfw" raisedException="_F0OdEMxgEeKgUcEu-gntqA">
+              <ownedParameter xmi:id="_jhITcc4kEeKrBaw-sqCxfw" name="methodName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_jhITcs4kEeKrBaw-sqCxfw" name="arguments" type="_tGWwUcfZEeKj__JByXBSIg"/>
+              <ownedParameter xmi:id="_jhVu0M4kEeKrBaw-sqCxfw" type="_jhBlwc4kEeKrBaw-sqCxfw" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_jhL90M4kEeKrBaw-sqCxfw" name="invokeMethod" method="_jhyawM4kEeKrBaw-sqCxfw" raisedException="_F0OdEMxgEeKgUcEu-gntqA">
+              <ownedParameter xmi:id="_jhL90c4kEeKrBaw-sqCxfw" name="arguments" type="_tGWwUcfZEeKj__JByXBSIg"/>
+              <ownedParameter xmi:id="_jhWV4M4kEeKrBaw-sqCxfw" type="_jhBlwc4kEeKrBaw-sqCxfw" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_jhW88M4kEeKrBaw-sqCxfw" name="makeCall" visibility="private" method="_jhzo4M4kEeKrBaw-sqCxfw" raisedException="_F0OdEMxgEeKgUcEu-gntqA">
+              <ownedParameter xmi:id="_jhXkAM4kEeKrBaw-sqCxfw" name="envelope" type="_jhDa8c4kEeKrBaw-sqCxfw"/>
+              <ownedParameter xmi:id="_jhXkAc4kEeKrBaw-sqCxfw" type="_jhBlwc4kEeKrBaw-sqCxfw" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_ixhmAM4lEeKrBaw-sqCxfw" name="" memberEnd="_ixhmAc4lEeKrBaw-sqCxfw _ixa4UM4lEeKrBaw-sqCxfw">
+            <ownedEnd xmi:id="_ixhmAc4lEeKrBaw-sqCxfw" name="" type="_Xl5cAMxtEeKCI6TvU50wYw" association="_ixhmAM4lEeKrBaw-sqCxfw"/>
           </packagedElement>
         </packagedElement>
       </packagedElement>
@@ -6240,6 +6473,10 @@ Call web service for the access point locations</body>
         <packagedElement xmi:type="uml:Class" xmi:id="_F0OdEMxgEeKgUcEu-gntqA" name="Exception"/>
         <packagedElement xmi:type="uml:DataType" xmi:id="_F0PrMMxgEeKgUcEu-gntqA" name="Void"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_sS-LMMxxEeKCI6TvU50wYw" name="Class"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_Lb4qYM4nEeKrBaw-sqCxfw" name="Runnable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_jf910M4kEeKrBaw-sqCxfw" name="net">
+        <packagedElement xmi:type="uml:Class" xmi:id="_jg64EM4kEeKrBaw-sqCxfw" name="ConnectException"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_snRnoMfZEeKj__JByXBSIg" name="android">
@@ -6355,6 +6592,18 @@ Call web service for the access point locations</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_5kNSYMxeEeKgUcEu-gntqA" name="Preference">
       <packagedElement xmi:type="uml:Interface" xmi:id="_5sQbJMxeEeKgUcEu-gntqA" name="OnPreferenceChangeListener"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_jf_D8M4kEeKrBaw-sqCxfw" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_jf_rAM4kEeKrBaw-sqCxfw" name="ksoap2">
+        <packagedElement xmi:type="uml:Package" xmi:id="_jf_rAc4kEeKrBaw-sqCxfw" name="serialization">
+          <packagedElement xmi:type="uml:Class" xmi:id="_jhBlwc4kEeKrBaw-sqCxfw" name="SoapObject"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_jhDa8c4kEeKrBaw-sqCxfw" name="SoapSerializationEnvelope"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_jgASEM4kEeKrBaw-sqCxfw" name="transport">
+          <packagedElement xmi:type="uml:Class" xmi:id="_jhFQIc4kEeKrBaw-sqCxfw" name="HttpTransportSE"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_jg_wkM4kEeKrBaw-sqCxfw" name="SoapEnvelope"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_reSmUMfZEeKj__JByXBSIg">
       <eAnnotations xmi:id="_reT0cMfZEeKj__JByXBSIg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -6959,12 +7208,10 @@ Call web service for the access point locations</body>
   <UMLLabProfile:Reference xmi:id="_gxxzMMxhEeKgUcEu-gntqA" base_Element="_gxxMI8xhEeKgUcEu-gntqA"/>
   <UMLLabProfile:Reference xmi:id="_gxyaQMxhEeKgUcEu-gntqA" base_Element="_gxxzMcxhEeKgUcEu-gntqA"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_izeL4MxmEeKCI6TvU50wYw" base_Element="_izdk0MxmEeKCI6TvU50wYw"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_Xl7RMsxtEeKCI6TvU50wYw" base_Element="_Xl6qIsxtEeKCI6TvU50wYw"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_XmDNAMxtEeKCI6TvU50wYw" base_Element="_XmB-4MxtEeKCI6TvU50wYw"/>
   <UMLLabProfile:Reference xmi:id="_XmFCMMxtEeKCI6TvU50wYw" base_Element="_XmEbIMxtEeKCI6TvU50wYw"/>
   <UMLLabProfile:Reference xmi:id="_sS-yQMxxEeKCI6TvU50wYw" base_Element="_sS-LMMxxEeKCI6TvU50wYw"/>
   <UMLLabProfile:Reference xmi:id="_rez4cMxzEeKCI6TvU50wYw" base_Element="_rezRYMxzEeKCI6TvU50wYw"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_TSUyYMyLEeKCI6TvU50wYw" base_Element="_TSULUMyLEeKCI6TvU50wYw"/>
   <UMLLabProfile:Annotations xmi:id="_FDWHMMy3EeKCI6TvU50wYw" base_Element="_jy9EkMy2EeKCI6TvU50wYw">
     <annotations xmi:id="_FDWHMcy3EeKCI6TvU50wYw" name="Override"/>
   </UMLLabProfile:Annotations>
@@ -6981,4 +7228,30 @@ Call web service for the access point locations</body>
   <UMLLabProfile:MultiDeclaration xmi:id="_mphIYMy-EeKCI6TvU50wYw" base_Property="_x5kLMMy8EeKCI6TvU50wYw" siblings="_mpnPAMy-EeKCI6TvU50wYw" root="true"/>
   <UMLLabProfile:MultiDeclaration xmi:id="_mpn2EMy-EeKCI6TvU50wYw" base_Property="_mpnPAMy-EeKCI6TvU50wYw"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_mpn2Ecy-EeKCI6TvU50wYw" base_Element="_mpnPAMy-EeKCI6TvU50wYw"/>
+  <UMLLabProfile:Reference xmi:id="_jg97YM4kEeKrBaw-sqCxfw" base_Element="_jg64EM4kEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:Reference xmi:id="_jhBlwM4kEeKrBaw-sqCxfw" base_Element="_jg_wkM4kEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:Reference xmi:id="_jhDa8M4kEeKrBaw-sqCxfw" base_Element="_jhBlwc4kEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:Reference xmi:id="_jhFQIM4kEeKrBaw-sqCxfw" base_Element="_jhDa8c4kEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:Reference xmi:id="_jhGeQM4kEeKrBaw-sqCxfw" base_Element="_jhFQIc4kEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:Generics xmi:id="_jhKvsM4kEeKrBaw-sqCxfw" genericsValue="String, String" base_Element="_jhITcs4kEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:Generics xmi:id="_jhNzAM4kEeKrBaw-sqCxfw" genericsValue="String, String" base_Element="_jhL90c4kEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_jhb1cM4kEeKrBaw-sqCxfw" base_Property="_jhbOYM4kEeKrBaw-sqCxfw" siblings="_jh3TQM4kEeKrBaw-sqCxfw _jh4hYc4kEeKrBaw-sqCxfw _jh5Ics4kEeKrBaw-sqCxfw" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_jhccgM4kEeKrBaw-sqCxfw" base_Element="_jhbOYM4kEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_jh36UM4kEeKrBaw-sqCxfw" base_Property="_jh3TQM4kEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_jh4hYM4kEeKrBaw-sqCxfw" base_Element="_jh3TQM4kEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_jh5IcM4kEeKrBaw-sqCxfw" base_Property="_jh4hYc4kEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_jh5Icc4kEeKrBaw-sqCxfw" base_Element="_jh4hYc4kEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_jh5vgM4kEeKrBaw-sqCxfw" base_Property="_jh5Ics4kEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_jh6WkM4kEeKrBaw-sqCxfw" base_Element="_jh5Ics4kEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:Array xmi:id="_ixRuYs4lEeKrBaw-sqCxfw" dimensions="1" base_Element="_TSULUMyLEeKCI6TvU50wYw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ixbfYM4lEeKrBaw-sqCxfw" base_Element="_ixa4UM4lEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:Reference xmi:id="_ixi0IM4lEeKrBaw-sqCxfw" base_Element="_ixhmAM4lEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:Annotations xmi:id="_LbwHgM4nEeKrBaw-sqCxfw" base_Element="_LbvgcM4nEeKrBaw-sqCxfw">
+    <annotations xmi:id="_LbwHgc4nEeKrBaw-sqCxfw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Lbx8sM4nEeKrBaw-sqCxfw" base_Element="_LbvgcM4nEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:Reference xmi:id="_Lb54gM4nEeKrBaw-sqCxfw" base_Element="_Lb4qYM4nEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Bw-O0M4oEeKrBaw-sqCxfw" base_Element="_Bw9nwM4oEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vJxJgM4vEeKrBaw-sqCxfw" base_Element="_vJwicM4vEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:Reference xmi:id="_vJ0M0M4vEeKrBaw-sqCxfw" base_Element="_vJzlwM4vEeKrBaw-sqCxfw"/>
 </xmi:XMI>

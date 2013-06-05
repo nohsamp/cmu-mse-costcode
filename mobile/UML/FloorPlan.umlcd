@@ -15,23 +15,252 @@
     </sourceRole>
     <targetRole xmi:id="_X15m5sxtEeKCI6TvU50wYw" aggregationKind="NONE" name="apList" navigable="true">
       <modelElement href="mobile.uml#_XmB-4MxtEeKCI6TvU50wYw"/>
+      <stereotypes xmi:id="_guwScM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_XmDNAMxtEeKCI6TvU50wYw"/>
+      </stereotypes>
       <visibility xmi:id="_X15m58xtEeKCI6TvU50wYw" label="-"/>
       <cardinality xmi:id="_X15m6MxtEeKCI6TvU50wYw" label="1..*" max="-1" min="1"/>
     </targetRole>
   </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_iy4Q4M4lEeKrBaw-sqCxfw" sourceAnchor="148.0,0.0" targetAnchor="244.0,230.0" target="_j4lKIM4kEeKrBaw-sqCxfw" source="_X16N8MxtEeKCI6TvU50wYw">
+    <modelElement href="mobile.uml#_ixhmAM4lEeKrBaw-sqCxfw"/>
+    <stereotypes xmi:id="_iy4Q4c4lEeKrBaw-sqCxfw" name="Reference">
+      <modelElement href="mobile.uml#_ixi0IM4lEeKrBaw-sqCxfw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_iy4Q4s4lEeKrBaw-sqCxfw" text="">
+      <visualProperties xmi:id="_70xgsM4oEeKrBaw-sqCxfw" position="-82.5,-0.2352941176470722"/>
+    </nameVisual>
+    <sourceRole xmi:id="_iy4Q484lEeKrBaw-sqCxfw" aggregationKind="NONE" name="">
+      <modelElement href="mobile.uml#_ixhmAc4lEeKrBaw-sqCxfw"/>
+      <visualProperties xmi:id="_70w5oM4oEeKrBaw-sqCxfw" position="2.5,-70.0"/>
+      <visibility xmi:id="_iy4Q5M4lEeKrBaw-sqCxfw" label="+"/>
+      <cardinality xmi:id="_iy4Q5c4lEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_iy4Q5s4lEeKrBaw-sqCxfw" aggregationKind="NONE" name="webService" navigable="true">
+      <modelElement href="mobile.uml#_ixa4UM4lEeKrBaw-sqCxfw"/>
+      <visualProperties xmi:id="_70xgsc4oEeKrBaw-sqCxfw" position="-76.5,29.00000000000003"/>
+      <stereotypes xmi:id="_iz_rMM4lEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_ixbfYM4lEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_iy4Q584lEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_iy4Q6M4lEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_izzd8M4lEeKrBaw-sqCxfw" targetItem="_TSWAgMyLEeKCI6TvU50wYw" sourceItem="_izxBsM4lEeKrBaw-sqCxfw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ByB-wM4oEeKrBaw-sqCxfw" targetItem="_X16N_8xtEeKCI6TvU50wYw" sourceItem="_ByAJkM4oEeKrBaw-sqCxfw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_lhNYAM4oEeKrBaw-sqCxfw" targetItem="_ByDz8M4oEeKrBaw-sqCxfw" sourceItem="_ldtYEM4oEeKrBaw-sqCxfw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ubZEwM4oEeKrBaw-sqCxfw" targetItem="_X16N-cxtEeKCI6TvU50wYw" sourceItem="_uWmrYM4oEeKrBaw-sqCxfw"/>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_X13xsMxtEeKCI6TvU50wYw" sourceConnectionVisual="_X13xscxtEeKCI6TvU50wYw" text="@author NohSam&#xA;Call web service for the access point locations" item="_X16N8MxtEeKCI6TvU50wYw">
     <modelElement href="mobile.uml#_XmD0EMxtEeKCI6TvU50wYw"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_X16N8MxtEeKCI6TvU50wYw" comments="_X13xsMxtEeKCI6TvU50wYw" targetConnectionVisual="_X13xscxtEeKCI6TvU50wYw" name="FloorPlan" associationsOut="_X15m4MxtEeKCI6TvU50wYw">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_j4xXYM4kEeKrBaw-sqCxfw" name="Exception">
+    <modelElement href="mobile.uml#_F0OdEMxgEeKgUcEu-gntqA"/>
+    <visualProperties xmi:id="_j4xXYc4kEeKrBaw-sqCxfw" position="731.0,-40.0" size="-1.0,-1.0" visible="false"/>
+    <stereotypes xmi:id="_j4xXYs4kEeKrBaw-sqCxfw" name="Reference">
+      <modelElement href="mobile.uml#_F0PEIMxgEeKgUcEu-gntqA"/>
+    </stereotypes>
+    <visibility xmi:id="_j4xXY84kEeKrBaw-sqCxfw" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_j4lKIM4kEeKrBaw-sqCxfw" name="WebService" associationsIn="_iy4Q4M4lEeKrBaw-sqCxfw">
+    <modelElement href="mobile.uml#_jgRX0M4kEeKrBaw-sqCxfw"/>
+    <visualProperties xmi:id="_j4lKIc4kEeKrBaw-sqCxfw" position="175.0,-161.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_j4lKIs4kEeKrBaw-sqCxfw" label="+"/>
+    <attributes xmi:id="_j4lKI84kEeKrBaw-sqCxfw" name="nameSpace">
+      <modelElement href="mobile.uml#_jhbOYM4kEeKrBaw-sqCxfw"/>
+      <stereotypes xmi:id="_j4lKJM4kEeKrBaw-sqCxfw" name="MultiDeclaration">
+        <modelElement href="mobile.uml#_jhb1cM4kEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_j4lKJc4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_jhccgM4kEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_j4lKJs4kEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_j4lKJ84kEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+      <type xmi:id="_j4lKKM4kEeKrBaw-sqCxfw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_j4lKKc4kEeKrBaw-sqCxfw" name="url">
+      <modelElement href="mobile.uml#_jh3TQM4kEeKrBaw-sqCxfw"/>
+      <stereotypes xmi:id="_j4lKKs4kEeKrBaw-sqCxfw" name="MultiDeclaration">
+        <modelElement href="mobile.uml#_jh36UM4kEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_j4lKK84kEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_jh4hYM4kEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_j4lKLM4kEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_j4lKLc4kEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+      <type xmi:id="_j4lKLs4kEeKrBaw-sqCxfw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_j4lKL84kEeKrBaw-sqCxfw" name="methodName">
+      <modelElement href="mobile.uml#_jh4hYc4kEeKrBaw-sqCxfw"/>
+      <stereotypes xmi:id="_j4lKMM4kEeKrBaw-sqCxfw" name="MultiDeclaration">
+        <modelElement href="mobile.uml#_jh5IcM4kEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_j4lKMc4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_jh5Icc4kEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_j4lKMs4kEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_j4lKM84kEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+      <type xmi:id="_j4lKNM4kEeKrBaw-sqCxfw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_j4lKNc4kEeKrBaw-sqCxfw" name="soapAction">
+      <modelElement href="mobile.uml#_jh5Ics4kEeKrBaw-sqCxfw"/>
+      <stereotypes xmi:id="_j4lKNs4kEeKrBaw-sqCxfw" name="MultiDeclaration">
+        <modelElement href="mobile.uml#_jh5vgM4kEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_j4lKN84kEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_jh6WkM4kEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_j4lKOM4kEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_j4lKOc4kEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+      <type xmi:id="_j4lKOs4kEeKrBaw-sqCxfw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_j4lKO84kEeKrBaw-sqCxfw" name="WebService">
+      <modelElement href="mobile.uml#_jgYFgM4kEeKrBaw-sqCxfw"/>
+      <keywords xmi:id="_j4lxMM4kEeKrBaw-sqCxfw" keyword="create"/>
+      <visibility xmi:id="_j4lxMc4kEeKrBaw-sqCxfw" label="+"/>
+      <outParameters xmi:id="_j4lxMs4kEeKrBaw-sqCxfw">
+        <modelElement href="mobile.uml#_jgYskc4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_j4lxM84kEeKrBaw-sqCxfw" name="WebService">
+          <modelElement href="mobile.uml#_jgRX0M4kEeKrBaw-sqCxfw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_j4lxNM4kEeKrBaw-sqCxfw" name="WebService">
+      <modelElement href="mobile.uml#_jgahwM4kEeKrBaw-sqCxfw"/>
+      <keywords xmi:id="_j4lxNc4kEeKrBaw-sqCxfw" keyword="create"/>
+      <visibility xmi:id="_j4lxNs4kEeKrBaw-sqCxfw" label="+"/>
+      <outParameters xmi:id="_j4lxN84kEeKrBaw-sqCxfw">
+        <modelElement href="mobile.uml#_jgbI0s4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_j4lxOM4kEeKrBaw-sqCxfw" name="WebService">
+          <modelElement href="mobile.uml#_jgRX0M4kEeKrBaw-sqCxfw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_j4lxOc4kEeKrBaw-sqCxfw" name="nameSpace">
+        <modelElement href="mobile.uml#_jgahwc4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_j4lxOs4kEeKrBaw-sqCxfw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_j4lxO84kEeKrBaw-sqCxfw" name="methodName">
+        <modelElement href="mobile.uml#_jgahws4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_j4lxPM4kEeKrBaw-sqCxfw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_j4lxPc4kEeKrBaw-sqCxfw" name="url">
+        <modelElement href="mobile.uml#_jgahw84kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_j4lxPs4kEeKrBaw-sqCxfw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_j4lxP84kEeKrBaw-sqCxfw" name="WebService">
+      <modelElement href="mobile.uml#_jgbv4M4kEeKrBaw-sqCxfw"/>
+      <keywords xmi:id="_j4lxQM4kEeKrBaw-sqCxfw" keyword="create"/>
+      <visibility xmi:id="_j4lxQc4kEeKrBaw-sqCxfw" label="+"/>
+      <outParameters xmi:id="_j4lxQs4kEeKrBaw-sqCxfw">
+        <modelElement href="mobile.uml#_jgcW9M4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_j4lxQ84kEeKrBaw-sqCxfw" name="WebService">
+          <modelElement href="mobile.uml#_jgRX0M4kEeKrBaw-sqCxfw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_j4lxRM4kEeKrBaw-sqCxfw" name="nameSpace">
+        <modelElement href="mobile.uml#_jgcW8M4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_j4lxRc4kEeKrBaw-sqCxfw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_j4lxRs4kEeKrBaw-sqCxfw" name="url">
+        <modelElement href="mobile.uml#_jgcW8c4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_j4lxR84kEeKrBaw-sqCxfw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_j4lxSM4kEeKrBaw-sqCxfw" name="invokeMethod">
+      <modelElement href="mobile.uml#_jhITcM4kEeKrBaw-sqCxfw"/>
+      <visibility xmi:id="_j4lxSc4kEeKrBaw-sqCxfw" label="+"/>
+      <outParameters xmi:id="_j4lxSs4kEeKrBaw-sqCxfw">
+        <modelElement href="mobile.uml#_jhVu0M4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_j4lxS84kEeKrBaw-sqCxfw" name="SoapObject">
+          <modelElement href="mobile.uml#_jhBlwc4kEeKrBaw-sqCxfw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_j4lxTM4kEeKrBaw-sqCxfw" name="methodName">
+        <modelElement href="mobile.uml#_jhITcc4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_j4lxTc4kEeKrBaw-sqCxfw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_j4lxTs4kEeKrBaw-sqCxfw" name="arguments">
+        <modelElement href="mobile.uml#_jhITcs4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_j4lxT84kEeKrBaw-sqCxfw" name="Map">
+          <modelElement href="mobile.uml#_tGWwUcfZEeKj__JByXBSIg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_j4lxUM4kEeKrBaw-sqCxfw" name="invokeMethod">
+      <modelElement href="mobile.uml#_jhL90M4kEeKrBaw-sqCxfw"/>
+      <visibility xmi:id="_j4lxUc4kEeKrBaw-sqCxfw" label="+"/>
+      <outParameters xmi:id="_j4lxUs4kEeKrBaw-sqCxfw">
+        <modelElement href="mobile.uml#_jhWV4M4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_j4lxU84kEeKrBaw-sqCxfw" name="SoapObject">
+          <modelElement href="mobile.uml#_jhBlwc4kEeKrBaw-sqCxfw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_j4lxVM4kEeKrBaw-sqCxfw" name="arguments">
+        <modelElement href="mobile.uml#_jhL90c4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_j4lxVc4kEeKrBaw-sqCxfw" name="Map">
+          <modelElement href="mobile.uml#_tGWwUcfZEeKj__JByXBSIg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_j4lxVs4kEeKrBaw-sqCxfw" name="makeCall">
+      <modelElement href="mobile.uml#_jhW88M4kEeKrBaw-sqCxfw"/>
+      <visibility xmi:id="_j4lxV84kEeKrBaw-sqCxfw" label="-"/>
+      <outParameters xmi:id="_j4lxWM4kEeKrBaw-sqCxfw">
+        <modelElement href="mobile.uml#_jhXkAc4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_j4lxWc4kEeKrBaw-sqCxfw" name="SoapObject">
+          <modelElement href="mobile.uml#_jhBlwc4kEeKrBaw-sqCxfw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_j4lxWs4kEeKrBaw-sqCxfw" name="envelope">
+        <modelElement href="mobile.uml#_jhXkAM4kEeKrBaw-sqCxfw"/>
+        <type xmi:id="_j4lxW84kEeKrBaw-sqCxfw" name="SoapSerializationEnvelope">
+          <modelElement href="mobile.uml#_jhDa8c4kEeKrBaw-sqCxfw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_izxBsM4lEeKrBaw-sqCxfw" sourceConnectionVisual="_izzd8M4lEeKrBaw-sqCxfw" text="Parse results and retrieve data&#xA;&#x9; * &#xA;&#x9; * @param soap The returned SOAP object" item="_TSWAgMyLEeKCI6TvU50wYw">
+    <modelElement href="mobile.uml#_ixfw0M4lEeKrBaw-sqCxfw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ByAJkM4oEeKrBaw-sqCxfw" sourceConnectionVisual="_ByB-wM4oEeKrBaw-sqCxfw" text="Get Access Points information&#xA;&#x9; * @return List&lt;AccessPoint>" item="_X16N_8xtEeKCI6TvU50wYw">
+    <modelElement href="mobile.uml#_BxArEM4oEeKrBaw-sqCxfw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ldtYEM4oEeKrBaw-sqCxfw" sourceConnectionVisual="_lhNYAM4oEeKrBaw-sqCxfw" text="Set Web Service Inputs&#xA;&#x9; *" item="_ByDz8M4oEeKrBaw-sqCxfw">
+    <modelElement href="mobile.uml#_ldri4M4oEeKrBaw-sqCxfw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_uWmrYM4oEeKrBaw-sqCxfw" sourceConnectionVisual="_ubZEwM4oEeKrBaw-sqCxfw" text="Constructor for floorplan&#xA;&#x9; *" item="_X16N-cxtEeKCI6TvU50wYw">
+    <modelElement href="mobile.uml#_uWk2MM4oEeKrBaw-sqCxfw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_X16N8MxtEeKCI6TvU50wYw" comments="_X13xsMxtEeKCI6TvU50wYw" targetConnectionVisual="_X13xscxtEeKCI6TvU50wYw" name="FloorPlan" associationsOut="_X15m4MxtEeKCI6TvU50wYw _iy4Q4M4lEeKrBaw-sqCxfw">
     <modelElement href="mobile.uml#_Xl5cAMxtEeKCI6TvU50wYw"/>
-    <visualProperties xmi:id="_X16N8cxtEeKCI6TvU50wYw" position="138.0,229.0" size="270.0,150.0"/>
+    <visualProperties xmi:id="_X16N8cxtEeKCI6TvU50wYw" position="271.0,280.0" size="270.0,150.0"/>
     <visibility xmi:id="_X16N8sxtEeKCI6TvU50wYw" label="+"/>
     <attributes xmi:id="_X16N88xtEeKCI6TvU50wYw" defaultValue="null" name="apList">
       <modelElement href="mobile.uml#_XmB-4MxtEeKCI6TvU50wYw"/>
-      <stereotypes xmi:id="_X16N9MxtEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_X16N9cxtEeKCI6TvU50wYw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_XmDNAMxtEeKCI6TvU50wYw"/>
       </stereotypes>
-      <stereotypes xmi:id="_X16N9cxtEeKCI6TvU50wYw" name="LegacyStyledElement">
+      <stereotypes xmi:id="_guyHoM4kEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_XmDNAMxtEeKCI6TvU50wYw"/>
       </stereotypes>
       <visibility xmi:id="_X16N9sxtEeKCI6TvU50wYw" label="-"/>
@@ -40,12 +269,31 @@
         <modelElement href="mobile.uml#_s6ih4MfZEeKj__JByXBSIg"/>
       </type>
     </attributes>
-    <operations xmi:id="_X16N-cxtEeKCI6TvU50wYw" name="FloorPlan">
+    <attributes xmi:id="_izOPIM4lEeKrBaw-sqCxfw" name="webService">
+      <modelElement href="mobile.uml#_ixa4UM4lEeKrBaw-sqCxfw"/>
+      <stereotypes xmi:id="_izOPIc4lEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_ixbfYM4lEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_izOPI84lEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_izOPJM4lEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+      <type xmi:id="_izOPJc4lEeKrBaw-sqCxfw" name="WebService">
+        <modelElement href="mobile.uml#_jgRX0M4kEeKrBaw-sqCxfw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ByGQMM4oEeKrBaw-sqCxfw" defaultValue="null" name="wsArguments">
+      <modelElement href="mobile.uml#_Bw9nwM4oEeKrBaw-sqCxfw"/>
+      <stereotypes xmi:id="_ByGQMc4oEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_Bw-O0M4oEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_ByGQMs4oEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_ByGQM84oEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+      <type xmi:id="_ByGQNM4oEeKrBaw-sqCxfw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_X16N-cxtEeKCI6TvU50wYw" comments="_uWmrYM4oEeKrBaw-sqCxfw" targetConnectionVisual="_ubZEwM4oEeKrBaw-sqCxfw" name="FloorPlan">
       <modelElement href="mobile.uml#_Xl6qIsxtEeKCI6TvU50wYw"/>
       <keywords xmi:id="_X16N-sxtEeKCI6TvU50wYw" keyword="create"/>
-      <stereotypes xmi:id="_X16N-8xtEeKCI6TvU50wYw" name="LegacyStyledElement">
-        <modelElement href="mobile.uml#_Xl7RMsxtEeKCI6TvU50wYw"/>
-      </stereotypes>
       <visibility xmi:id="_X16N_MxtEeKCI6TvU50wYw" label="+"/>
       <outParameters xmi:id="_X16N_cxtEeKCI6TvU50wYw">
         <modelElement href="mobile.uml#_Xl7RM8xtEeKCI6TvU50wYw"/>
@@ -54,22 +302,45 @@
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_X16N_8xtEeKCI6TvU50wYw" name="getAccesspoints">
+    <operations xmi:id="_X16N_8xtEeKCI6TvU50wYw" comments="_ByAJkM4oEeKrBaw-sqCxfw" targetConnectionVisual="_ByB-wM4oEeKrBaw-sqCxfw" name="getAccessPoints">
       <modelElement href="mobile.uml#_Xl74QMxtEeKCI6TvU50wYw"/>
       <visibility xmi:id="_X16OAMxtEeKCI6TvU50wYw" label="+"/>
-      <outParameters xmi:id="_X16OAcxtEeKCI6TvU50wYw">
-        <modelElement href="mobile.uml#_Xl74QcxtEeKCI6TvU50wYw"/>
-        <type xmi:id="_X16OAsxtEeKCI6TvU50wYw" name="AccessPoint">
+      <outParameters xmi:id="_Bx9tUM4oEeKrBaw-sqCxfw">
+        <modelElement href="mobile.uml#_Bw26EM4oEeKrBaw-sqCxfw"/>
+        <type xmi:id="_Bx9tUc4oEeKrBaw-sqCxfw" name="AccessPoint">
           <modelElement href="mobile.uml#_s6ih4MfZEeKj__JByXBSIg"/>
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_TSWAgMyLEeKCI6TvU50wYw" name="setAccessPoints">
+    <operations xmi:id="_TSWAgMyLEeKCI6TvU50wYw" comments="_izxBsM4lEeKrBaw-sqCxfw" targetConnectionVisual="_izzd8M4lEeKrBaw-sqCxfw" name="getAPsFromSoap">
       <modelElement href="mobile.uml#_TSULUMyLEeKCI6TvU50wYw"/>
-      <stereotypes xmi:id="_TSWAgcyLEeKCI6TvU50wYw" name="LegacyStyledElement">
-        <modelElement href="mobile.uml#_TSUyYMyLEeKCI6TvU50wYw"/>
+      <stereotypes xmi:id="_iz16MM4lEeKrBaw-sqCxfw" name="Array">
+        <modelElement href="mobile.uml#_ixRuYs4lEeKrBaw-sqCxfw"/>
       </stereotypes>
       <visibility xmi:id="_TSWAgsyLEeKCI6TvU50wYw" label="+"/>
+      <outParameters xmi:id="_izulcM4lEeKrBaw-sqCxfw">
+        <modelElement href="mobile.uml#_ixRuYM4lEeKrBaw-sqCxfw"/>
+      </outParameters>
+      <parameters xmi:id="_izvzkM4lEeKrBaw-sqCxfw" name="soap">
+        <modelElement href="mobile.uml#_ixS8gM4lEeKrBaw-sqCxfw"/>
+        <type xmi:id="_izvzkc4lEeKrBaw-sqCxfw" name="SoapObject">
+          <modelElement href="mobile.uml#_jhBlwc4kEeKrBaw-sqCxfw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_LcAmMM4nEeKrBaw-sqCxfw" name="run">
+      <modelElement href="mobile.uml#_LbvgcM4nEeKrBaw-sqCxfw"/>
+      <stereotypes xmi:id="_LcAmMc4nEeKrBaw-sqCxfw" name="Annotations">
+        <modelElement href="mobile.uml#_LbwHgM4nEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_LcAmMs4nEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_Lbx8sM4nEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_LcAmM84nEeKrBaw-sqCxfw" label="+"/>
+    </operations>
+    <operations xmi:id="_ByDz8M4oEeKrBaw-sqCxfw" comments="_ldtYEM4oEeKrBaw-sqCxfw" targetConnectionVisual="_lhNYAM4oEeKrBaw-sqCxfw" name="setWSInputs">
+      <modelElement href="mobile.uml#_Bw4vQM4oEeKrBaw-sqCxfw"/>
+      <visibility xmi:id="_ByDz8c4oEeKrBaw-sqCxfw" label="-"/>
     </operations>
   </nodes>
 </com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

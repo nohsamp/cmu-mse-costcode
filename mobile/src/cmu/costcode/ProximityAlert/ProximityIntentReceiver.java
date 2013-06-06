@@ -10,6 +10,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.location.LocationManager;
 import android.util.Log;
 import android.widget.Toast;
 import cmu.costcode.ShoppingList.R;
@@ -30,32 +31,40 @@ public class ProximityIntentReceiver extends BroadcastReceiver {
 	public void onReceive(Context context, Intent intent) {
 
 		String alert = intent.getAction();
-        
+		Boolean entering = intent.getBooleanExtra(LocationManager.KEY_PROXIMITY_ENTERING, false);
+		String category = null;
+
+		// Alert from WiFi triangulation
         if(alert.equals(PROXIMITY_ALERT)){
             // Get the section name (category)
-        	String category = intent.getStringExtra("category");
-			// Get the message from the intent
-			int memberId = intent.getIntExtra(LoginActivity.MEMBERID, 1);
-	
-			// Open database
-			db = new DatabaseAdaptor(context);
-			db.open();
-	
-			Map<String, ArrayList<ShoppingListItem>> shoppingList = db.dbGetShoppingListItems(memberId);
-			String uncheckedItems = " ";
-	
-			if (shoppingList != null && shoppingList.containsKey(category)) {
-	
-				for (ShoppingListItem listItem : shoppingList.get(category)) {
-	
-					if (!listItem.isChecked()) {
-						Item item = listItem.getItem();
-						uncheckedItems = uncheckedItems + item.getDescription();
-					}
-	
-				}
-			}
+        	category = intent.getStringExtra("category");
+        }
+        else {// Alert from addProximityAlert method, alert name is the category name
+        	category = alert;
+        }
+		// Get the message from the intent
+		int memberId = intent.getIntExtra(LoginActivity.MEMBERID, 1);
 
+		// Open database
+		db = new DatabaseAdaptor(context);
+		db.open();
+
+		Map<String, ArrayList<ShoppingListItem>> shoppingList = db.dbGetShoppingListItems(memberId);
+		String uncheckedItems = " ";
+
+		if (shoppingList != null && shoppingList.containsKey(category)) {
+
+			for (ShoppingListItem listItem : shoppingList.get(category)) {
+
+				if (!listItem.isChecked()) {
+					Item item = listItem.getItem();
+					uncheckedItems = uncheckedItems + item.getDescription();
+				}
+
+			}
+		}
+
+		if(entering) {
 			Log.d(getClass().getSimpleName(), "entering");
 			Toast.makeText(context, category + " section entering. Unchecked items: " + uncheckedItems,
 					Toast.LENGTH_LONG).show();
@@ -70,17 +79,13 @@ public class ProximityIntentReceiver extends BroadcastReceiver {
 			notification.setLatestEventInfo(context, category
 					+ " section entering. Unchecked items: " + uncheckedItems,
 					"You are entering your point of interest.", pendingIntent);
-			notificationManager.notify(NOTIFICATION_ID, notification);
-        }
-        
-//		if (entering) {
-//// do something
-//		} else {
-////			Log.d(getClass().getSimpleName(), "exiting");
-////			Toast.makeText(context, category + " section exiting.",
-////					Toast.LENGTH_LONG).show();
-//		}
-	}
+			notificationManager.notify(NOTIFICATION_ID, notification);	
+        } 
+		else {
+			Log.d(getClass().getSimpleName(), "exiting");
+			Toast.makeText(context, category + " section exiting.",	Toast.LENGTH_LONG).show();
+		}
+    }
 	
 	private Notification createNotification() {
 		Notification notification = new Notification();

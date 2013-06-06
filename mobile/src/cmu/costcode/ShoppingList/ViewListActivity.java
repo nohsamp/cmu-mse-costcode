@@ -96,7 +96,7 @@ public class ViewListActivity extends Activity  {
 	@Override
 	public void onStop() {
 		super.onStop();
-		if(!tTask.isBgrunFlag() && tTask.getStatus() == Status.RUNNING)
+		if(tTask != null && !tTask.isBgrunFlag() && tTask.getStatus() == Status.RUNNING)
 			tTask.cancel(false);
 	}
 

@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_reQxIMfZEeKj__JByXBSIg" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_reQxIcfZEeKj__JByXBSIg" source="codegen">
         <details xmi:id="_reQxIsfZEeKj__JByXBSIg" key="codegenDirectory" value="/WIFIScanner/gen"/>
-        <details xmi:id="_tuaO0MfZEeKj__JByXBSIg" key="AssociatedSourceCode" value="/WIFIScanner/gen/cmu/costcode/WIFIScanner/BuildConfig.java;663610238/1;/WIFIScanner/gen/cmu/costcode/WIFIScanner/R.java;1416285864/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/TestReceiver.java;3086906378/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/WIFIScanner.java;2516296769/1;/mobile/src/cmu/costcode/ProximityAlert/NotificationActivity.java;2627982062/1;/mobile/src/cmu/costcode/ProximityAlert/ProximityIntentReceiver.java;3718231935/1;/mobile/src/cmu/costcode/ProximityAlert/ShoppingListApplication.java;1913911324/1;/mobile/src/cmu/costcode/ShoppingList/EditListActivity.java;2438705698/1;/mobile/src/cmu/costcode/ShoppingList/LoginActivity.java;379368985/1;/mobile/src/cmu/costcode/ShoppingList/ViewListActivity.java;3146878295/1;/mobile/src/cmu/costcode/ShoppingList/WiFiScanSettingsActivity.java;1424938990/1;/mobile/src/cmu/costcode/WIFIScanner/AccessPoint.java;1134896105/1;/mobile/src/cmu/costcode/WIFIScanner/WiFiScanner.java;4077114339/1;/mobile/src/cmu/costcode/Triangulation/Triangulation.java;202435230/1;/mobile/src/cmu/costcode/Triangulation/TriangulationTask.java;507222526/1;/mobile/src/cmu/costcode/Triangulation/WCL.java;3171581163/1;/mobile/src/cmu/costcode/ShoppingList/db/DatabaseAdaptor.java;1083346947/1;/WIFIScanner/gen/cmu/costcode/FloorPlan.java;3115562283/1;/mobile/src/cmu/costcode/FloorPlan/FloorPlan.java;3952012089/1;/mobile/src/cmu/costcode/FloorPlan/WebService.java;685388525/1;"/>
+        <details xmi:id="_tuaO0MfZEeKj__JByXBSIg" key="AssociatedSourceCode" value="/WIFIScanner/gen/cmu/costcode/WIFIScanner/BuildConfig.java;663610238/1;/WIFIScanner/gen/cmu/costcode/WIFIScanner/R.java;1416285864/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/TestReceiver.java;3086906378/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/WIFIScanner.java;2516296769/1;/mobile/src/cmu/costcode/ProximityAlert/NotificationActivity.java;2627982062/1;/mobile/src/cmu/costcode/ProximityAlert/ProximityIntentReceiver.java;3594362122/1;/mobile/src/cmu/costcode/ProximityAlert/ShoppingListApplication.java;1913911324/1;/mobile/src/cmu/costcode/ShoppingList/EditListActivity.java;2438705698/1;/mobile/src/cmu/costcode/ShoppingList/LoginActivity.java;379368985/1;/mobile/src/cmu/costcode/ShoppingList/ViewListActivity.java;146919720/1;/mobile/src/cmu/costcode/ShoppingList/WiFiScanSettingsActivity.java;1424938990/1;/mobile/src/cmu/costcode/WIFIScanner/AccessPoint.java;1134896105/1;/mobile/src/cmu/costcode/WIFIScanner/WiFiScanner.java;4077114339/1;/mobile/src/cmu/costcode/Triangulation/Triangulation.java;202435230/1;/mobile/src/cmu/costcode/Triangulation/TriangulationTask.java;507222526/1;/mobile/src/cmu/costcode/Triangulation/WCL.java;3171581163/1;/mobile/src/cmu/costcode/ShoppingList/db/DatabaseAdaptor.java;1083346947/1;/WIFIScanner/gen/cmu/costcode/FloorPlan.java;3115562283/1;/mobile/src/cmu/costcode/FloorPlan/FloorPlan.java;3952012089/1;/mobile/src/cmu/costcode/FloorPlan/WebService.java;685388525/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_s0u00MfZEeKj__JByXBSIg">
@@ -4725,7 +4725,7 @@ and NotificationReceiver objects.&#xD;
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_jzAH4My2EeKCI6TvU50wYw" name="onStop" specification="_jy9EkMy2EeKCI6TvU50wYw">
               <language>java</language>
               <body>super.onStop();&#xD;
-		if(!tTask.isBgrunFlag() &amp;&amp; tTask.getStatus() == Status.RUNNING)&#xD;
+		if(tTask != null &amp;&amp; !tTask.isBgrunFlag() &amp;&amp; tTask.getStatus() == Status.RUNNING)&#xD;
 			tTask.cancel(false);&#xD;
 	</body>
             </ownedBehavior>
@@ -5588,7 +5588,9 @@ API Guide&lt;/a> for more information on developing a Settings UI.</body>
               <ownedParameter xmi:id="_ANcFosxeEeKgUcEu-gntqA" name="intent" type="_tGbBwcfZEeKj__JByXBSIg"/>
               <language>java</language>
               <body>String alert = intent.getAction();&#xD;
-     &#xD;
+		Boolean entering = intent.getBooleanExtra(LocationManager.KEY_PROXIMITY_ENTERING, false);&#xD;
+&#xD;
+		&#xD;
      if(alert.equals(PROXIMITY_ALERT)){&#xD;
          // Get the section name (category)&#xD;
      	String category = intent.getStringExtra(&quot;category&quot;);&#xD;
@@ -5614,34 +5616,34 @@ API Guide&lt;/a> for more information on developing a Settings UI.</body>
 				}&#xD;
 			}&#xD;
 &#xD;
-			Log.d(getClass().getSimpleName(), &quot;entering&quot;);&#xD;
-			Toast.makeText(context, category + &quot; section entering. Unchecked items: &quot; + uncheckedItems,&#xD;
-					Toast.LENGTH_LONG).show();&#xD;
+			if(entering) {&#xD;
+				Log.d(getClass().getSimpleName(), &quot;entering&quot;);&#xD;
+				Toast.makeText(context, category + &quot; section entering. Unchecked items: &quot; + uncheckedItems,&#xD;
+						Toast.LENGTH_LONG).show();&#xD;
 &#xD;
-			NotificationManager notificationManager = (NotificationManager) context&#xD;
-					.getSystemService(Context.NOTIFICATION_SERVICE);&#xD;
-			Notification notification = createNotification();&#xD;
+				NotificationManager notificationManager = (NotificationManager) context&#xD;
+						.getSystemService(Context.NOTIFICATION_SERVICE);&#xD;
+				Notification notification = createNotification();&#xD;
 &#xD;
-			Intent viewIntent = new Intent(context, ViewListActivity.class);&#xD;
-			PendingIntent pendingIntent = PendingIntent.getActivity(context, 0,&#xD;
-					viewIntent, PendingIntent.FLAG_CANCEL_CURRENT);&#xD;
-			notification.setLatestEventInfo(context, category&#xD;
-					+ &quot; section entering. Unchecked items: &quot; + uncheckedItems,&#xD;
-					&quot;You are entering your point of interest.&quot;, pendingIntent);&#xD;
-			notificationManager.notify(NOTIFICATION_ID, notification);&#xD;
+				Intent viewIntent = new Intent(context, ViewListActivity.class);&#xD;
+				PendingIntent pendingIntent = PendingIntent.getActivity(context, 0,&#xD;
+						viewIntent, PendingIntent.FLAG_CANCEL_CURRENT);&#xD;
+				notification.setLatestEventInfo(context, category&#xD;
+						+ &quot; section entering. Unchecked items: &quot; + uncheckedItems,&#xD;
+						&quot;You are entering your point of interest.&quot;, pendingIntent);&#xD;
+				notificationManager.notify(NOTIFICATION_ID, notification);	&#xD;
+	        } &#xD;
+			else {&#xD;
+				Log.d(getClass().getSimpleName(), &quot;exiting&quot;);&#xD;
+				Toast.makeText(context, category + &quot; section exiting.&quot;,	Toast.LENGTH_LONG).show();&#xD;
+			}&#xD;
      }&#xD;
-     &#xD;
-//		if (entering) {&#xD;
-//// do something&#xD;
-//		} else {&#xD;
-////			Log.d(getClass().getSimpleName(), &quot;exiting&quot;);&#xD;
-////			Toast.makeText(context, category + &quot; section exiting.&quot;,&#xD;
-////					Toast.LENGTH_LONG).show();&#xD;
-//		}&#xD;
 	</body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ANcssMxeEeKgUcEu-gntqA" name="createNotification" specification="_AHTocMxeEeKgUcEu-gntqA">
-              <ownedParameter xmi:id="_ANcsscxeEeKgUcEu-gntqA" type="_tHagQMfZEeKj__JByXBSIg" direction="return"/>
+              <ownedParameter xmi:id="_ANcsscxeEeKgUcEu-gntqA" type="_tHagQMfZEeKj__JByXBSIg" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>Notification notification = new Notification();&#xD;
 &#xD;

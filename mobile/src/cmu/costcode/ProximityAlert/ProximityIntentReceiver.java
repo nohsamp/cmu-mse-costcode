@@ -35,13 +35,14 @@ public class ProximityIntentReceiver extends BroadcastReceiver {
 		String category = null;
 
 		// Alert from WiFi triangulation
-        if(alert.equals(PROXIMITY_ALERT)){
-            // Get the section name (category)
-        	category = intent.getStringExtra("category");
-        }
-        else {// Alert from addProximityAlert method, alert name is the category name
-        	category = alert;
-        }
+		if(alert.equals(PROXIMITY_ALERT)){
+			// Get the section name (category)
+			category = intent.getStringExtra("category");
+		}
+		else {// Alert from addProximityAlert method, alert name is the category name
+			category = alert;
+		}
+		
 		// Get the message from the intent
 		int memberId = intent.getIntExtra(LoginActivity.MEMBERID, 1);
 
@@ -80,12 +81,12 @@ public class ProximityIntentReceiver extends BroadcastReceiver {
 					+ " section entering. Unchecked items: " + uncheckedItems,
 					"You are entering your point of interest.", pendingIntent);
 			notificationManager.notify(NOTIFICATION_ID, notification);	
-        } 
+		} 
 		else {
 			Log.d(getClass().getSimpleName(), "exiting");
 			Toast.makeText(context, category + " section exiting.",	Toast.LENGTH_LONG).show();
 		}
-    }
+	}
 	
 	private Notification createNotification() {
 		Notification notification = new Notification();

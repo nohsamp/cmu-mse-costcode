@@ -80,13 +80,13 @@ public class WiFiScanner {
 	}
 	
 	private void parseWIFIScanResult() {
-//		Comparator<ScanResult> comparator = new Comparator<ScanResult>() {
-//			@Override
-//			public int compare(ScanResult s1, ScanResult s2) {
-//				return (s1.BSSID.compareTo(s2.BSSID));
-//			}
-//		};
-//		Collections.sort(mScanResult, comparator);
+		Comparator<ScanResult> comparator = new Comparator<ScanResult>() {
+			@Override
+			public int compare(ScanResult s1, ScanResult s2) {
+				return (s1.BSSID.compareTo(s2.BSSID));
+			}
+		};
+		Collections.sort(mScanResult, comparator);
 
 		int rssi = 0;
 		int tCount = 0;

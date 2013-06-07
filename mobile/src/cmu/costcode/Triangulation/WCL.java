@@ -48,7 +48,7 @@ public class WCL extends Triangulation {
 	public AccessPoint calculateAccessPointPosition() {
 		apList = wifiScanner.scanStart();
 
-		if (apList.size() > 3) {
+		if (apList.size() >= 3) {
 			if (triangMethod.equals("AWCL")) {
 				doAWCL();
 			}

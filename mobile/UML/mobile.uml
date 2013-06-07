@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_reQxIMfZEeKj__JByXBSIg" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_reQxIcfZEeKj__JByXBSIg" source="codegen">
         <details xmi:id="_reQxIsfZEeKj__JByXBSIg" key="codegenDirectory" value="/WIFIScanner/gen"/>
-        <details xmi:id="_tuaO0MfZEeKj__JByXBSIg" key="AssociatedSourceCode" value="/WIFIScanner/gen/cmu/costcode/WIFIScanner/BuildConfig.java;663610238/1;/WIFIScanner/gen/cmu/costcode/WIFIScanner/R.java;1416285864/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/TestReceiver.java;3086906378/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/WIFIScanner.java;2516296769/1;/mobile/src/cmu/costcode/ProximityAlert/NotificationActivity.java;2627982062/1;/mobile/src/cmu/costcode/ProximityAlert/ProximityIntentReceiver.java;740949368/1;/mobile/src/cmu/costcode/ProximityAlert/ShoppingListApplication.java;1913911324/1;/mobile/src/cmu/costcode/ShoppingList/EditListActivity.java;2438705698/1;/mobile/src/cmu/costcode/ShoppingList/LoginActivity.java;379368985/1;/mobile/src/cmu/costcode/ShoppingList/ViewListActivity.java;2986913095/1;/mobile/src/cmu/costcode/ShoppingList/WiFiScanSettingsActivity.java;1424938990/1;/mobile/src/cmu/costcode/WIFIScanner/AccessPoint.java;3312948128/1;/mobile/src/cmu/costcode/WIFIScanner/WiFiScanner.java;3628395864/1;/mobile/src/cmu/costcode/Triangulation/Triangulation.java;3027960260/1;/mobile/src/cmu/costcode/Triangulation/TriangulationTask.java;236254763/1;/mobile/src/cmu/costcode/Triangulation/WCL.java;361062218/1;/mobile/src/cmu/costcode/ShoppingList/db/DatabaseAdaptor.java;393107540/1;/WIFIScanner/gen/cmu/costcode/FloorPlan.java;3115562283/1;/mobile/src/cmu/costcode/FloorPlan/FloorPlan.java;3857916346/1;/mobile/src/cmu/costcode/FloorPlan/WebService.java;507336965/1;/mobile/src/cmu/costcode/ShoppingList/db/DbContract.java;4167162960/1;"/>
+        <details xmi:id="_tuaO0MfZEeKj__JByXBSIg" key="AssociatedSourceCode" value="/WIFIScanner/gen/cmu/costcode/WIFIScanner/BuildConfig.java;663610238/1;/WIFIScanner/gen/cmu/costcode/WIFIScanner/R.java;1416285864/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/TestReceiver.java;3086906378/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/WIFIScanner.java;2516296769/1;/mobile/src/cmu/costcode/ProximityAlert/NotificationActivity.java;2627982062/1;/mobile/src/cmu/costcode/ProximityAlert/ProximityIntentReceiver.java;3826815267/1;/mobile/src/cmu/costcode/ProximityAlert/ShoppingListApplication.java;1913911324/1;/mobile/src/cmu/costcode/ShoppingList/EditListActivity.java;2438705698/1;/mobile/src/cmu/costcode/ShoppingList/LoginActivity.java;379368985/1;/mobile/src/cmu/costcode/ShoppingList/ViewListActivity.java;2986913095/1;/mobile/src/cmu/costcode/ShoppingList/WiFiScanSettingsActivity.java;1424938990/1;/mobile/src/cmu/costcode/WIFIScanner/AccessPoint.java;3312948128/1;/mobile/src/cmu/costcode/WIFIScanner/WiFiScanner.java;3628395864/1;/mobile/src/cmu/costcode/Triangulation/Triangulation.java;3027960260/1;/mobile/src/cmu/costcode/Triangulation/TriangulationTask.java;236254763/1;/mobile/src/cmu/costcode/Triangulation/WCL.java;361062218/1;/mobile/src/cmu/costcode/ShoppingList/db/DatabaseAdaptor.java;393107540/1;/WIFIScanner/gen/cmu/costcode/FloorPlan.java;3115562283/1;/mobile/src/cmu/costcode/FloorPlan/FloorPlan.java;3857916346/1;/mobile/src/cmu/costcode/FloorPlan/WebService.java;507336965/1;/mobile/src/cmu/costcode/ShoppingList/db/DbContract.java;4167162960/1;"/>
       </contents>
       <contents xmi:type="ecore:EAnnotation" xmi:id="_dPNCUM7oEeKjLNbOGolaIA" source="preferences">
         <contents xmi:type="ecore:EAnnotation" xmi:id="_dPNpYM7oEeKjLNbOGolaIA" source="com.yattasolutions.codegen.reverse">
@@ -5735,8 +5735,7 @@ API Guide&lt;/a> for more information on developing a Settings UI.</body>
 			Notification notification = createNotification();&#xD;
 &#xD;
 			Intent viewIntent = new Intent(context, ViewListActivity.class);&#xD;
-			PendingIntent pendingIntent = PendingIntent.getActivity(context, 0,&#xD;
-					viewIntent, PendingIntent.FLAG_CANCEL_CURRENT);&#xD;
+			PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, viewIntent, PendingIntent.FLAG_CANCEL_CURRENT);&#xD;
 			notification.setLatestEventInfo(context, category&#xD;
 					+ &quot; section entering. Unchecked items: &quot; + uncheckedItems,&#xD;
 					&quot;You are entering your point of interest.&quot;, pendingIntent);&#xD;
@@ -5760,8 +5759,10 @@ API Guide&lt;/a> for more information on developing a Settings UI.</body>
 &#xD;
 		notification.flags |= Notification.FLAG_AUTO_CANCEL;&#xD;
 		notification.flags |= Notification.FLAG_SHOW_LIGHTS;&#xD;
+		notification.flags |= Notification.FLAG_ONLY_ALERT_ONCE; //TODO: User choose this??&#xD;
 &#xD;
-		notification.defaults |= Notification.DEFAULT_VIBRATE;&#xD;
+//		notification.defaults |= Notification.DEFAULT_VIBRATE;&#xD;
+		notification.defaults |= Notification.DEFAULT_SOUND;&#xD;
 		notification.defaults |= Notification.DEFAULT_LIGHTS;&#xD;
 &#xD;
 		notification.ledARGB = Color.WHITE;&#xD;

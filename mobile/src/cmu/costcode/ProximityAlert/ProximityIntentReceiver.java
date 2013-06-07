@@ -76,8 +76,7 @@ public class ProximityIntentReceiver extends BroadcastReceiver {
 			Notification notification = createNotification();
 
 			Intent viewIntent = new Intent(context, ViewListActivity.class);
-			PendingIntent pendingIntent = PendingIntent.getActivity(context, 0,
-					viewIntent, PendingIntent.FLAG_CANCEL_CURRENT);
+			PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, viewIntent, PendingIntent.FLAG_CANCEL_CURRENT);
 			notification.setLatestEventInfo(context, category
 					+ " section entering. Unchecked items: " + uncheckedItems,
 					"You are entering your point of interest.", pendingIntent);
@@ -97,8 +96,10 @@ public class ProximityIntentReceiver extends BroadcastReceiver {
 
 		notification.flags |= Notification.FLAG_AUTO_CANCEL;
 		notification.flags |= Notification.FLAG_SHOW_LIGHTS;
+		notification.flags |= Notification.FLAG_ONLY_ALERT_ONCE; //TODO: User choose this??
 
-		notification.defaults |= Notification.DEFAULT_VIBRATE;
+//		notification.defaults |= Notification.DEFAULT_VIBRATE;
+		notification.defaults |= Notification.DEFAULT_SOUND;
 		notification.defaults |= Notification.DEFAULT_LIGHTS;
 
 		notification.ledARGB = Color.WHITE;

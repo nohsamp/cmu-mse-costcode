@@ -4,38 +4,38 @@ public class AccessPoint {
 	/**
 	 * @uml.property  name="bssid"
 	 */
-	protected String bssid;
+	private String bssid;
 	
 	/**
 	 * @uml.property  name="ssid"
 	 */
-	protected String ssid;
+	private String ssid;
 	
 	/**
 	 * @uml.property  name="capabilities"
 	 */
-	protected String capabilities;
+	private String capabilities;
 	
 	/**
 	 * @uml.property  name="frequency"
 	 */
-	protected int frequency;
+	private int frequency;
 	
 	/**
 	 * @uml.property  name="rssi"
 	 */
-	protected float rssi;
+	private float rssi;
 	
-	protected float posX;
-	protected float posY;
+	private float posX;
+	private float posY;
 	
-	protected double distance;
+	private double distance;
 	
 	/**
 	 * @uml.property name = "Description"
 	 * Categroy description in which the AP is located such as "Food", "Clothes"
 	 */
-	protected String description;
+	private String description;
 
 	
 	public AccessPoint(String bssid, String ssid, String capabilities, int frequency, float rssi, float posX, float posY) {

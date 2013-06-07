@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_reQxIMfZEeKj__JByXBSIg" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_reQxIcfZEeKj__JByXBSIg" source="codegen">
         <details xmi:id="_reQxIsfZEeKj__JByXBSIg" key="codegenDirectory" value="/WIFIScanner/gen"/>
-        <details xmi:id="_tuaO0MfZEeKj__JByXBSIg" key="AssociatedSourceCode" value="/WIFIScanner/gen/cmu/costcode/WIFIScanner/BuildConfig.java;663610238/1;/WIFIScanner/gen/cmu/costcode/WIFIScanner/R.java;1416285864/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/TestReceiver.java;3086906378/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/WIFIScanner.java;2516296769/1;/mobile/src/cmu/costcode/ProximityAlert/NotificationActivity.java;2627982062/1;/mobile/src/cmu/costcode/ProximityAlert/ProximityIntentReceiver.java;740949368/1;/mobile/src/cmu/costcode/ProximityAlert/ShoppingListApplication.java;1913911324/1;/mobile/src/cmu/costcode/ShoppingList/EditListActivity.java;2438705698/1;/mobile/src/cmu/costcode/ShoppingList/LoginActivity.java;379368985/1;/mobile/src/cmu/costcode/ShoppingList/ViewListActivity.java;2986913095/1;/mobile/src/cmu/costcode/ShoppingList/WiFiScanSettingsActivity.java;1424938990/1;/mobile/src/cmu/costcode/WIFIScanner/AccessPoint.java;1134896105/1;/mobile/src/cmu/costcode/WIFIScanner/WiFiScanner.java;3628395864/1;/mobile/src/cmu/costcode/Triangulation/Triangulation.java;3027960260/1;/mobile/src/cmu/costcode/Triangulation/TriangulationTask.java;236254763/1;/mobile/src/cmu/costcode/Triangulation/WCL.java;361062218/1;/mobile/src/cmu/costcode/ShoppingList/db/DatabaseAdaptor.java;393107540/1;/WIFIScanner/gen/cmu/costcode/FloorPlan.java;3115562283/1;/mobile/src/cmu/costcode/FloorPlan/FloorPlan.java;3857916346/1;/mobile/src/cmu/costcode/FloorPlan/WebService.java;507336965/1;/mobile/src/cmu/costcode/ShoppingList/db/DbContract.java;4167162960/1;"/>
+        <details xmi:id="_tuaO0MfZEeKj__JByXBSIg" key="AssociatedSourceCode" value="/WIFIScanner/gen/cmu/costcode/WIFIScanner/BuildConfig.java;663610238/1;/WIFIScanner/gen/cmu/costcode/WIFIScanner/R.java;1416285864/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/TestReceiver.java;3086906378/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/WIFIScanner.java;2516296769/1;/mobile/src/cmu/costcode/ProximityAlert/NotificationActivity.java;2627982062/1;/mobile/src/cmu/costcode/ProximityAlert/ProximityIntentReceiver.java;740949368/1;/mobile/src/cmu/costcode/ProximityAlert/ShoppingListApplication.java;1913911324/1;/mobile/src/cmu/costcode/ShoppingList/EditListActivity.java;2438705698/1;/mobile/src/cmu/costcode/ShoppingList/LoginActivity.java;379368985/1;/mobile/src/cmu/costcode/ShoppingList/ViewListActivity.java;2986913095/1;/mobile/src/cmu/costcode/ShoppingList/WiFiScanSettingsActivity.java;1424938990/1;/mobile/src/cmu/costcode/WIFIScanner/AccessPoint.java;3312948128/1;/mobile/src/cmu/costcode/WIFIScanner/WiFiScanner.java;3628395864/1;/mobile/src/cmu/costcode/Triangulation/Triangulation.java;3027960260/1;/mobile/src/cmu/costcode/Triangulation/TriangulationTask.java;236254763/1;/mobile/src/cmu/costcode/Triangulation/WCL.java;361062218/1;/mobile/src/cmu/costcode/ShoppingList/db/DatabaseAdaptor.java;393107540/1;/WIFIScanner/gen/cmu/costcode/FloorPlan.java;3115562283/1;/mobile/src/cmu/costcode/FloorPlan/FloorPlan.java;3857916346/1;/mobile/src/cmu/costcode/FloorPlan/WebService.java;507336965/1;/mobile/src/cmu/costcode/ShoppingList/db/DbContract.java;4167162960/1;"/>
       </contents>
       <contents xmi:type="ecore:EAnnotation" xmi:id="_dPNCUM7oEeKjLNbOGolaIA" source="preferences">
         <contents xmi:type="ecore:EAnnotation" xmi:id="_dPNpYM7oEeKjLNbOGolaIA" source="com.yattasolutions.codegen.reverse">
@@ -2367,31 +2367,31 @@ and NotificationReceiver objects.&#xD;
                 <details xmi:id="_s6jI8sfZEeKj__JByXBSIg" key="codegenDirectory" value="/mobile/src"/>
               </contents>
             </eAnnotations>
-            <ownedAttribute xmi:id="_tPmy8MfZEeKj__JByXBSIg" name="bssid" visibility="protected">
+            <ownedAttribute xmi:id="_tPmy8MfZEeKj__JByXBSIg" name="bssid" visibility="public">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_tPoBEMfZEeKj__JByXBSIg" name="ssid" visibility="protected">
+            <ownedAttribute xmi:id="_tPoBEMfZEeKj__JByXBSIg" name="ssid" visibility="public">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_tPooIcfZEeKj__JByXBSIg" name="capabilities" visibility="protected">
+            <ownedAttribute xmi:id="_tPooIcfZEeKj__JByXBSIg" name="capabilities" visibility="public">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_tPp2QMfZEeKj__JByXBSIg" name="frequency" visibility="protected">
+            <ownedAttribute xmi:id="_tPp2QMfZEeKj__JByXBSIg" name="frequency" visibility="public">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_tPrEYMfZEeKj__JByXBSIg" name="rssi" visibility="protected">
+            <ownedAttribute xmi:id="_tPrEYMfZEeKj__JByXBSIg" name="rssi" visibility="public">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_tPrrccfZEeKj__JByXBSIg" name="posX" visibility="protected">
+            <ownedAttribute xmi:id="_tPrrccfZEeKj__JByXBSIg" name="posX" visibility="public">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_tPs5kMfZEeKj__JByXBSIg" name="posY" visibility="protected">
+            <ownedAttribute xmi:id="_tPs5kMfZEeKj__JByXBSIg" name="posY" visibility="public">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_tPtgocfZEeKj__JByXBSIg" name="distance" visibility="protected">
+            <ownedAttribute xmi:id="_tPtgocfZEeKj__JByXBSIg" name="distance" visibility="public">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_izdk0MxmEeKCI6TvU50wYw" name="description" visibility="protected">
+            <ownedAttribute xmi:id="_izdk0MxmEeKCI6TvU50wYw" name="description" visibility="public">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedAttribute>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRH14MfZEeKj__JByXBSIg" name="AccessPoint" specification="_s6oBcMfZEeKj__JByXBSIg">
@@ -2430,158 +2430,6 @@ and NotificationReceiver objects.&#xD;
 		this.distance = 0.0F; &#xD;
 	</body>
             </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRIc8MfZEeKj__JByXBSIg" name="getSsid" specification="_s6rr0MfZEeKj__JByXBSIg">
-              <ownedParameter xmi:id="_tRIc8cfZEeKj__JByXBSIg" direction="return">
-                <name xsi:nil="true"/>
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>return this.ssid;&#xD;
-	</body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRJEAMfZEeKj__JByXBSIg" name="getBssid" specification="_s6sS4cfZEeKj__JByXBSIg">
-              <ownedParameter xmi:id="_tRJEAcfZEeKj__JByXBSIg" direction="return">
-                <name xsi:nil="true"/>
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>return this.bssid;&#xD;
-	</body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRJEAsfZEeKj__JByXBSIg" name="getCapabilities" specification="_s6thAMfZEeKj__JByXBSIg">
-              <ownedParameter xmi:id="_tRJEA8fZEeKj__JByXBSIg" direction="return">
-                <name xsi:nil="true"/>
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>return capabilities;&#xD;
-	</body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRJrEMfZEeKj__JByXBSIg" name="getRssi" specification="_s6uIEMfZEeKj__JByXBSIg">
-              <ownedParameter xmi:id="_tRJrEcfZEeKj__JByXBSIg" direction="return">
-                <name xsi:nil="true"/>
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>return rssi;&#xD;
-	</body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRKSIMfZEeKj__JByXBSIg" name="getPosX" specification="_s6uvIMfZEeKj__JByXBSIg">
-              <ownedParameter xmi:id="_tRKSIcfZEeKj__JByXBSIg" direction="return">
-                <name xsi:nil="true"/>
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>return posX;&#xD;
-	</body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRKSIsfZEeKj__JByXBSIg" name="getPosY" specification="_s6vWMcfZEeKj__JByXBSIg">
-              <ownedParameter xmi:id="_tRKSI8fZEeKj__JByXBSIg" direction="return">
-                <name xsi:nil="true"/>
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>return posY;&#xD;
-	</body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRK5MMfZEeKj__JByXBSIg" name="setCapabilities" specification="_s6wkUMfZEeKj__JByXBSIg">
-              <ownedParameter xmi:id="_tRK5McfZEeKj__JByXBSIg" name="capabilities">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>this.capabilities = capabilities;&#xD;
-	</body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRK5MsfZEeKj__JByXBSIg" name="getFrequency" specification="_s6xLYMfZEeKj__JByXBSIg">
-              <ownedParameter xmi:id="_tRK5M8fZEeKj__JByXBSIg" direction="return">
-                <name xsi:nil="true"/>
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>return frequency;&#xD;
-	</body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRLgQMfZEeKj__JByXBSIg" name="getDistance" specification="_s6yZgMfZEeKj__JByXBSIg">
-              <ownedParameter xmi:id="_tRLgQcfZEeKj__JByXBSIg" direction="return">
-                <name xsi:nil="true"/>
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>return distance;&#xD;
-	</body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRLgQsfZEeKj__JByXBSIg" name="setFrequency" specification="_s6zAkMfZEeKj__JByXBSIg">
-              <ownedParameter xmi:id="_tRLgQ8fZEeKj__JByXBSIg" name="frequency">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>this.frequency = frequency;&#xD;
-	</body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRMHUMfZEeKj__JByXBSIg" name="setBssid" specification="_s601wMfZEeKj__JByXBSIg">
-              <ownedParameter xmi:id="_tRMHUcfZEeKj__JByXBSIg" name="bssid">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>this.bssid = bssid;&#xD;
-	</body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRMHUsfZEeKj__JByXBSIg" name="setSsid" specification="_s61c0MfZEeKj__JByXBSIg">
-              <ownedParameter xmi:id="_tRMHU8fZEeKj__JByXBSIg" name="ssid">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>this.ssid = ssid;&#xD;
-	</body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRMuYMfZEeKj__JByXBSIg" name="setRssi" specification="_s63SAMfZEeKj__JByXBSIg">
-              <ownedParameter xmi:id="_tRMuYcfZEeKj__JByXBSIg" name="rssi">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>this.rssi = rssi;&#xD;
-	</body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRMuYsfZEeKj__JByXBSIg" name="setPosX" specification="_s635EMfZEeKj__JByXBSIg">
-              <ownedParameter xmi:id="_tRMuY8fZEeKj__JByXBSIg" name="posX">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>this.posX = posX;&#xD;
-	</body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRNVcMfZEeKj__JByXBSIg" name="setPosY" specification="_s65HMMfZEeKj__JByXBSIg">
-              <ownedParameter xmi:id="_tRNVccfZEeKj__JByXBSIg" name="posY">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>this.posY = posY;&#xD;
-	</body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRNVcsfZEeKj__JByXBSIg" name="setDistance" specification="_s66VUMfZEeKj__JByXBSIg">
-              <ownedParameter xmi:id="_tRNVc8fZEeKj__JByXBSIg" name="distance">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>this.distance = distance;&#xD;
-	</body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yU2PEMxmEeKCI6TvU50wYw" name="getDescription" specification="_yUitEMxmEeKCI6TvU50wYw">
-              <ownedParameter xmi:id="_yU2PEcxmEeKCI6TvU50wYw" direction="return">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>return description;&#xD;
-	</body>
-            </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_yU4EQMxmEeKCI6TvU50wYw" name="setDescription" specification="_yUxWkMxmEeKCI6TvU50wYw">
-              <ownedParameter xmi:id="_yU4EQcxmEeKCI6TvU50wYw" name="description">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedParameter>
-              <language>java</language>
-              <body>this.description = description;&#xD;
-	</body>
-            </ownedBehavior>
             <ownedOperation xmi:id="_s6oBcMfZEeKj__JByXBSIg" name="AccessPoint" method="_tRH14MfZEeKj__JByXBSIg">
               <eAnnotations xmi:id="_s6pPkcfZEeKj__JByXBSIg" source="http://www.eclipse.org/uml2/2.0.0/UML">
                 <details xmi:id="_s6pPksfZEeKj__JByXBSIg" key="create"/>
@@ -2609,173 +2457,11 @@ and NotificationReceiver objects.&#xD;
               </ownedParameter>
               <ownedParameter xmi:id="_s6pPk8fZEeKj__JByXBSIg" type="_s6ih4MfZEeKj__JByXBSIg" direction="return"/>
             </ownedOperation>
-            <ownedOperation xmi:id="_s6qdsMfZEeKj__JByXBSIg" name="AccessPoint">
-              <eAnnotations xmi:id="_s6qdscfZEeKj__JByXBSIg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                <details xmi:id="_s6qdssfZEeKj__JByXBSIg" key="create"/>
+            <ownedOperation xmi:id="__lursM-aEeKXYd-BNImTqQ" name="AccessPoint">
+              <eAnnotations xmi:id="__lursc-aEeKXYd-BNImTqQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="__lurss-aEeKXYd-BNImTqQ" key="create"/>
               </eAnnotations>
-              <ownedParameter xmi:id="_s6rEwcfZEeKj__JByXBSIg" type="_s6ih4MfZEeKj__JByXBSIg" direction="return"/>
-            </ownedOperation>
-            <ownedOperation xmi:id="_s6rr0MfZEeKj__JByXBSIg" name="getSsid" method="_tRIc8MfZEeKj__JByXBSIg">
-              <ownedComment xmi:id="_1KsfAMxfEeKgUcEu-gntqA">
-                <body>@return&#xD;
-	 * @uml.property  name=&quot;ssid&quot;</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_s6sS4MfZEeKj__JByXBSIg" direction="return">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedParameter>
-            </ownedOperation>
-            <ownedOperation xmi:id="_s6sS4cfZEeKj__JByXBSIg" name="getBssid" method="_tRJEAMfZEeKj__JByXBSIg">
-              <ownedComment xmi:id="_1KsfAcxfEeKgUcEu-gntqA">
-                <body>@return&#xD;
-	 * @uml.property  name=&quot;bssid&quot;</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_s6s58MfZEeKj__JByXBSIg" direction="return">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedParameter>
-            </ownedOperation>
-            <ownedOperation xmi:id="_s6thAMfZEeKj__JByXBSIg" name="getCapabilities" method="_tRJEAsfZEeKj__JByXBSIg">
-              <ownedComment xmi:id="_1KsfAsxfEeKgUcEu-gntqA">
-                <body>@return  the capabilities&#xD;
-	 * @uml.property  name=&quot;capabilities&quot;</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_s6thAcfZEeKj__JByXBSIg" direction="return">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedParameter>
-            </ownedOperation>
-            <ownedOperation xmi:id="_s6uIEMfZEeKj__JByXBSIg" name="getRssi" method="_tRJrEMfZEeKj__JByXBSIg">
-              <ownedComment xmi:id="_1KsfA8xfEeKgUcEu-gntqA">
-                <body>@return  the rssi&#xD;
-	 * @uml.property  name=&quot;rssi&quot;</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_s6uIEcfZEeKj__JByXBSIg" direction="return">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-              </ownedParameter>
-            </ownedOperation>
-            <ownedOperation xmi:id="_s6uvIMfZEeKj__JByXBSIg" name="getPosX" method="_tRKSIMfZEeKj__JByXBSIg">
-              <ownedComment xmi:id="_1KsfBMxfEeKgUcEu-gntqA">
-                <body>@return  the posX&#xD;
-	 * @uml.property  name=&quot;posX&quot;</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_s6vWMMfZEeKj__JByXBSIg" direction="return">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-              </ownedParameter>
-            </ownedOperation>
-            <ownedOperation xmi:id="_s6vWMcfZEeKj__JByXBSIg" name="getPosY" method="_tRKSIsfZEeKj__JByXBSIg">
-              <ownedComment xmi:id="_1KsfBcxfEeKgUcEu-gntqA">
-                <body>@return  the posY&#xD;
-	 * @uml.property  name=&quot;posY&quot;</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_s6v9QMfZEeKj__JByXBSIg" direction="return">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-              </ownedParameter>
-            </ownedOperation>
-            <ownedOperation xmi:id="_s6wkUMfZEeKj__JByXBSIg" name="setCapabilities" method="_tRK5MMfZEeKj__JByXBSIg">
-              <ownedComment xmi:id="_1KtGEMxfEeKgUcEu-gntqA">
-                <body>@param capabilities  the capabilities to set&#xD;
-	 * @uml.property  name=&quot;capabilities&quot;</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_s6wkUcfZEeKj__JByXBSIg" name="capabilities">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedParameter>
-            </ownedOperation>
-            <ownedOperation xmi:id="_s6xLYMfZEeKj__JByXBSIg" name="getFrequency" method="_tRK5MsfZEeKj__JByXBSIg">
-              <ownedComment xmi:id="_1KtGEcxfEeKgUcEu-gntqA">
-                <body>@return  the frequency&#xD;
-	 * @uml.property  name=&quot;frequency&quot;</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_s6xycMfZEeKj__JByXBSIg" direction="return">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-              </ownedParameter>
-            </ownedOperation>
-            <ownedOperation xmi:id="_s6yZgMfZEeKj__JByXBSIg" name="getDistance" method="_tRLgQMfZEeKj__JByXBSIg">
-              <ownedComment xmi:id="_1KtGEsxfEeKgUcEu-gntqA">
-                <body>@return  the distance&#xD;
-	 * @uml.property  name=&quot;distance&quot;</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_s6yZgcfZEeKj__JByXBSIg" direction="return">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-              </ownedParameter>
-            </ownedOperation>
-            <ownedOperation xmi:id="_s6zAkMfZEeKj__JByXBSIg" name="setFrequency" method="_tRLgQsfZEeKj__JByXBSIg">
-              <ownedComment xmi:id="_1KtGE8xfEeKgUcEu-gntqA">
-                <body>@param frequency  the frequency to set&#xD;
-	 * @uml.property  name=&quot;frequency&quot;</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_s6znoMfZEeKj__JByXBSIg" name="frequency">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-              </ownedParameter>
-            </ownedOperation>
-            <ownedOperation xmi:id="_s601wMfZEeKj__JByXBSIg" name="setBssid" method="_tRMHUMfZEeKj__JByXBSIg">
-              <ownedComment xmi:id="_1KtGFMxfEeKgUcEu-gntqA">
-                <body>@param bssid  the bssid to set&#xD;
-	 * @uml.property  name=&quot;bssid&quot;</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_s601wcfZEeKj__JByXBSIg" name="bssid">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedParameter>
-            </ownedOperation>
-            <ownedOperation xmi:id="_s61c0MfZEeKj__JByXBSIg" name="setSsid" method="_tRMHUsfZEeKj__JByXBSIg">
-              <ownedComment xmi:id="_1KtGFcxfEeKgUcEu-gntqA">
-                <body>@param ssid  the ssid to set&#xD;
-	 * @uml.property  name=&quot;ssid&quot;</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_s62D4MfZEeKj__JByXBSIg" name="ssid">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedParameter>
-            </ownedOperation>
-            <ownedOperation xmi:id="_s63SAMfZEeKj__JByXBSIg" name="setRssi" method="_tRMuYMfZEeKj__JByXBSIg">
-              <ownedComment xmi:id="_1KttIMxfEeKgUcEu-gntqA">
-                <body>@param ssid  the rssi to set&#xD;
-	 * @uml.property  name=&quot;rssi&quot;</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_s63SAcfZEeKj__JByXBSIg" name="rssi">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-              </ownedParameter>
-            </ownedOperation>
-            <ownedOperation xmi:id="_s635EMfZEeKj__JByXBSIg" name="setPosX" method="_tRMuYsfZEeKj__JByXBSIg">
-              <ownedComment xmi:id="_1KttIcxfEeKgUcEu-gntqA">
-                <body>@param posX  the posX to set&#xD;
-	 * @uml.property  name=&quot;posX&quot;</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_s635EcfZEeKj__JByXBSIg" name="posX">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-              </ownedParameter>
-            </ownedOperation>
-            <ownedOperation xmi:id="_s65HMMfZEeKj__JByXBSIg" name="setPosY" method="_tRNVcMfZEeKj__JByXBSIg">
-              <ownedComment xmi:id="_1KttIsxfEeKgUcEu-gntqA">
-                <body>@param posY  the posY to set&#xD;
-	 * @uml.property  name=&quot;posY&quot;</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_s65HMcfZEeKj__JByXBSIg" name="posY">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-              </ownedParameter>
-            </ownedOperation>
-            <ownedOperation xmi:id="_s66VUMfZEeKj__JByXBSIg" name="setDistance" method="_tRNVcsfZEeKj__JByXBSIg">
-              <ownedComment xmi:id="_1KttI8xfEeKgUcEu-gntqA">
-                <body>@param posY  the posY to set&#xD;
-	 * @uml.property  name=&quot;posY&quot;</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_s66VUcfZEeKj__JByXBSIg" name="distance">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-              </ownedParameter>
-            </ownedOperation>
-            <ownedOperation xmi:id="_yUitEMxmEeKCI6TvU50wYw" name="getDescription" method="_yU2PEMxmEeKCI6TvU50wYw">
-              <ownedComment xmi:id="_yU5SYMxmEeKCI6TvU50wYw">
-                <body>@return  description&#xD;
-	 * @uml.property  name=&quot;description&quot;</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_yUvhYMxmEeKCI6TvU50wYw" direction="return">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedParameter>
-            </ownedOperation>
-            <ownedOperation xmi:id="_yUxWkMxmEeKCI6TvU50wYw" name="setDescription" method="_yU4EQMxmEeKCI6TvU50wYw">
-              <ownedComment xmi:id="_yU55cMxmEeKCI6TvU50wYw">
-                <body>@param description  category name to set&#xD;
-	 * @uml.property  name=&quot;description&quot;</body>
-              </ownedComment>
-              <ownedParameter xmi:id="_yUx9oMxmEeKCI6TvU50wYw" name="description">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedParameter>
+              <ownedParameter xmi:id="__lurs8-aEeKXYd-BNImTqQ" type="_s6ih4MfZEeKj__JByXBSIg" direction="return"/>
             </ownedOperation>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_s7EGUMfZEeKj__JByXBSIg" name="TestReceiver">
@@ -7206,7 +6892,6 @@ Call web service for the access point locations</body>
   <UMLLabProfile:LegacyStyledElement xmi:id="_s4_CsMfZEeKj__JByXBSIg" base_Element="_s4-boMfZEeKj__JByXBSIg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_s5FJUMfZEeKj__JByXBSIg" base_Element="_s5D7MMfZEeKj__JByXBSIg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_s5KB0MfZEeKj__JByXBSIg" base_Element="_s5IzsMfZEeKj__JByXBSIg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_s6rEwMfZEeKj__JByXBSIg" base_Element="_s6qdsMfZEeKj__JByXBSIg"/>
   <UMLLabProfile:Reference xmi:id="_tGR30MfZEeKj__JByXBSIg" base_Element="_tGQpsMfZEeKj__JByXBSIg"/>
   <UMLLabProfile:Reference xmi:id="_tGWwUMfZEeKj__JByXBSIg" base_Element="_tGViMMfZEeKj__JByXBSIg"/>
   <UMLLabProfile:Reference xmi:id="_tGX-cMfZEeKj__JByXBSIg" base_Element="_tGWwUcfZEeKj__JByXBSIg"/>
@@ -7404,14 +7089,6 @@ Call web service for the access point locations</body>
   <UMLLabProfile:Generics xmi:id="_tPMjQMfZEeKj__JByXBSIg" genericsValue="String, ArrayList&lt;ShoppingListItem>" base_Element="_tPIR0sfZEeKj__JByXBSIg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_tPUfEMfZEeKj__JByXBSIg" base_Element="_tPT4AMfZEeKj__JByXBSIg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_tPYwgMfZEeKj__JByXBSIg" base_Element="_tPYJcMfZEeKj__JByXBSIg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_tPnaAMfZEeKj__JByXBSIg" base_Element="_tPmy8MfZEeKj__JByXBSIg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_tPooIMfZEeKj__JByXBSIg" base_Element="_tPoBEMfZEeKj__JByXBSIg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_tPpPMMfZEeKj__JByXBSIg" base_Element="_tPooIcfZEeKj__JByXBSIg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_tPqdUMfZEeKj__JByXBSIg" base_Element="_tPp2QMfZEeKj__JByXBSIg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_tPrrcMfZEeKj__JByXBSIg" base_Element="_tPrEYMfZEeKj__JByXBSIg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_tPsSgMfZEeKj__JByXBSIg" base_Element="_tPrrccfZEeKj__JByXBSIg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_tPtgoMfZEeKj__JByXBSIg" base_Element="_tPs5kMfZEeKj__JByXBSIg"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_tPuHsMfZEeKj__JByXBSIg" base_Element="_tPtgocfZEeKj__JByXBSIg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_tP5G0MfZEeKj__JByXBSIg" base_Element="_tP34scfZEeKj__JByXBSIg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_tP5t4cfZEeKj__JByXBSIg" base_Element="_tP5G0cfZEeKj__JByXBSIg"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_tP68AMfZEeKj__JByXBSIg" base_Element="_tP6U8MfZEeKj__JByXBSIg"/>
@@ -7760,7 +7437,6 @@ Call web service for the access point locations</body>
   <UMLLabProfile:Reference xmi:id="_gxxMIsxhEeKgUcEu-gntqA" base_Element="_gxxMIMxhEeKgUcEu-gntqA"/>
   <UMLLabProfile:Reference xmi:id="_gxxzMMxhEeKgUcEu-gntqA" base_Element="_gxxMI8xhEeKgUcEu-gntqA"/>
   <UMLLabProfile:Reference xmi:id="_gxyaQMxhEeKgUcEu-gntqA" base_Element="_gxxzMcxhEeKgUcEu-gntqA"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_izeL4MxmEeKCI6TvU50wYw" base_Element="_izdk0MxmEeKCI6TvU50wYw"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_XmDNAMxtEeKCI6TvU50wYw" base_Element="_XmB-4MxtEeKCI6TvU50wYw"/>
   <UMLLabProfile:Reference xmi:id="_XmFCMMxtEeKCI6TvU50wYw" base_Element="_XmEbIMxtEeKCI6TvU50wYw"/>
   <UMLLabProfile:Reference xmi:id="_sS-yQMxxEeKCI6TvU50wYw" base_Element="_sS-LMMxxEeKCI6TvU50wYw"/>
@@ -7847,4 +7523,5 @@ Call web service for the access point locations</body>
   <UMLLabProfile:StyledElement xmi:id="_jhNy8c7oEeKjLNbOGolaIA" base_Element="_jhNL5M7oEeKjLNbOGolaIA"/>
   <UMLLabProfile:StyledElement xmi:id="_jhOaAM7oEeKjLNbOGolaIA" base_Element="_jhNy8s7oEeKjLNbOGolaIA"/>
   <UMLLabProfile:StyledElement xmi:id="_jhOaA87oEeKjLNbOGolaIA" base_Element="_jhOaAc7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__lwg4M-aEeKXYd-BNImTqQ" base_Element="__lursM-aEeKXYd-BNImTqQ"/>
 </xmi:XMI>

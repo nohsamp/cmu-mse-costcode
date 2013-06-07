@@ -19,7 +19,7 @@ public class WCL extends Triangulation {
 		super(wm, initParams, context);
 	}
 	
-	public void doAWCL() {
+	private void doAWCL() {
 		Comparator<AccessPoint> comparator = new Comparator<AccessPoint>() {
 			@Override
 			public int compare(AccessPoint s1, AccessPoint s2) {

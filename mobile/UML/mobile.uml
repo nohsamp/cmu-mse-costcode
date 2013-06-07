@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_reQxIMfZEeKj__JByXBSIg" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_reQxIcfZEeKj__JByXBSIg" source="codegen">
         <details xmi:id="_reQxIsfZEeKj__JByXBSIg" key="codegenDirectory" value="/WIFIScanner/gen"/>
-        <details xmi:id="_tuaO0MfZEeKj__JByXBSIg" key="AssociatedSourceCode" value="/WIFIScanner/gen/cmu/costcode/WIFIScanner/BuildConfig.java;663610238/1;/WIFIScanner/gen/cmu/costcode/WIFIScanner/R.java;1416285864/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/TestReceiver.java;3086906378/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/WIFIScanner.java;2516296769/1;/mobile/src/cmu/costcode/ProximityAlert/NotificationActivity.java;2627982062/1;/mobile/src/cmu/costcode/ProximityAlert/ProximityIntentReceiver.java;740949368/1;/mobile/src/cmu/costcode/ProximityAlert/ShoppingListApplication.java;1913911324/1;/mobile/src/cmu/costcode/ShoppingList/EditListActivity.java;2438705698/1;/mobile/src/cmu/costcode/ShoppingList/LoginActivity.java;379368985/1;/mobile/src/cmu/costcode/ShoppingList/ViewListActivity.java;2986913095/1;/mobile/src/cmu/costcode/ShoppingList/WiFiScanSettingsActivity.java;1424938990/1;/mobile/src/cmu/costcode/WIFIScanner/AccessPoint.java;1134896105/1;/mobile/src/cmu/costcode/WIFIScanner/WiFiScanner.java;2882942109/1;/mobile/src/cmu/costcode/Triangulation/Triangulation.java;3027960260/1;/mobile/src/cmu/costcode/Triangulation/TriangulationTask.java;236254763/1;/mobile/src/cmu/costcode/Triangulation/WCL.java;3946502578/1;/mobile/src/cmu/costcode/ShoppingList/db/DatabaseAdaptor.java;393107540/1;/WIFIScanner/gen/cmu/costcode/FloorPlan.java;3115562283/1;/mobile/src/cmu/costcode/FloorPlan/FloorPlan.java;3857916346/1;/mobile/src/cmu/costcode/FloorPlan/WebService.java;507336965/1;/mobile/src/cmu/costcode/ShoppingList/db/DbContract.java;4167162960/1;"/>
+        <details xmi:id="_tuaO0MfZEeKj__JByXBSIg" key="AssociatedSourceCode" value="/WIFIScanner/gen/cmu/costcode/WIFIScanner/BuildConfig.java;663610238/1;/WIFIScanner/gen/cmu/costcode/WIFIScanner/R.java;1416285864/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/TestReceiver.java;3086906378/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/WIFIScanner.java;2516296769/1;/mobile/src/cmu/costcode/ProximityAlert/NotificationActivity.java;2627982062/1;/mobile/src/cmu/costcode/ProximityAlert/ProximityIntentReceiver.java;740949368/1;/mobile/src/cmu/costcode/ProximityAlert/ShoppingListApplication.java;1913911324/1;/mobile/src/cmu/costcode/ShoppingList/EditListActivity.java;2438705698/1;/mobile/src/cmu/costcode/ShoppingList/LoginActivity.java;379368985/1;/mobile/src/cmu/costcode/ShoppingList/ViewListActivity.java;2986913095/1;/mobile/src/cmu/costcode/ShoppingList/WiFiScanSettingsActivity.java;1424938990/1;/mobile/src/cmu/costcode/WIFIScanner/AccessPoint.java;1134896105/1;/mobile/src/cmu/costcode/WIFIScanner/WiFiScanner.java;3628395864/1;/mobile/src/cmu/costcode/Triangulation/Triangulation.java;3027960260/1;/mobile/src/cmu/costcode/Triangulation/TriangulationTask.java;236254763/1;/mobile/src/cmu/costcode/Triangulation/WCL.java;361062218/1;/mobile/src/cmu/costcode/ShoppingList/db/DatabaseAdaptor.java;393107540/1;/WIFIScanner/gen/cmu/costcode/FloorPlan.java;3115562283/1;/mobile/src/cmu/costcode/FloorPlan/FloorPlan.java;3857916346/1;/mobile/src/cmu/costcode/FloorPlan/WebService.java;507336965/1;/mobile/src/cmu/costcode/ShoppingList/db/DbContract.java;4167162960/1;"/>
       </contents>
       <contents xmi:type="ecore:EAnnotation" xmi:id="_dPNCUM7oEeKjLNbOGolaIA" source="preferences">
         <contents xmi:type="ecore:EAnnotation" xmi:id="_dPNpYM7oEeKjLNbOGolaIA" source="com.yattasolutions.codegen.reverse">
@@ -3028,7 +3028,7 @@ and NotificationReceiver objects.&#xD;
 		} else if (mResult.SSID.compareTo(&quot;siru-sony&quot;) == 0) {
 			mockAP = new PointF((float) 2.3, (float) -10);
 		} else {
-			mockAP = new PointF((float) i, (float) i); // ¥Ÿ¿Ω ∂Û¿Œ¿Ã∂˚
+			mockAP = new PointF((float) i, (float) i); // ??¿Ω ∂?¿Œ¿?∂˚
 														// alternate comment and
 														// uncomment
 //			return;
@@ -3213,6 +3213,7 @@ and NotificationReceiver objects.&#xD;
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRUDIsfZEeKj__JByXBSIg" name="onCreateOptionsMenu" specification="_tMUOYMfZEeKj__JByXBSIg">
               <ownedParameter xmi:id="_tRUDI8fZEeKj__JByXBSIg" name="menu" type="_tG4UwMfZEeKj__JByXBSIg"/>
               <ownedParameter xmi:id="_tRUDJMfZEeKj__JByXBSIg" direction="return">
+                <name xsi:nil="true"/>
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
               </ownedParameter>
               <language>java</language>
@@ -3227,6 +3228,7 @@ and NotificationReceiver objects.&#xD;
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRUqMMfZEeKj__JByXBSIg" name="onOptionsItemSelected" specification="_tMWDkMfZEeKj__JByXBSIg">
               <ownedParameter xmi:id="_tRUqMcfZEeKj__JByXBSIg" name="item" type="_tHvQYMfZEeKj__JByXBSIg"/>
               <ownedParameter xmi:id="_tRUqMsfZEeKj__JByXBSIg" direction="return">
+                <name xsi:nil="true"/>
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
               </ownedParameter>
               <language>java</language>
@@ -3276,7 +3278,9 @@ and NotificationReceiver objects.&#xD;
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRVRQsfZEeKj__JByXBSIg" name="calculateAccessPointPosition" specification="_tMaVAMfZEeKj__JByXBSIg">
               <ownedParameter xmi:id="_tRVRQ8fZEeKj__JByXBSIg" name="apList" type="_tGViMMfZEeKj__JByXBSIg"/>
-              <ownedParameter xmi:id="_tRVRRMfZEeKj__JByXBSIg" type="_s6ih4MfZEeKj__JByXBSIg" direction="return"/>
+              <ownedParameter xmi:id="_tRVRRMfZEeKj__JByXBSIg" type="_s6ih4MfZEeKj__JByXBSIg" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>if (apList.size() > 3) {
 			if (awclFlag == true) {
@@ -3335,8 +3339,9 @@ and NotificationReceiver objects.&#xD;
 		}
 	</body>
             </ownedBehavior>
-            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRV4UMfZEeKj__JByXBSIg" name="isExternalAvailableAndWriteable" specification="_s7du8MfZEeKj__JByXBSIg">
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tRV4UMfZEeKj__JByXBSIg" name="isExternalAndWriteable" specification="_s7du8MfZEeKj__JByXBSIg">
               <ownedParameter xmi:id="_tRV4UcfZEeKj__JByXBSIg" direction="return">
+                <name xsi:nil="true"/>
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
               </ownedParameter>
               <language>java</language>
@@ -3526,8 +3531,6 @@ and NotificationReceiver objects.&#xD;
 		// Create thread
 		fp = new FloorPlan(context);
 		fp.run();
-		apList = fp.getAccessPoints();
-		
 	</body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_1KqCwMxfEeKgUcEu-gntqA" name="scanStart" specification="_1J3YkMxfEeKgUcEu-gntqA">
@@ -3540,7 +3543,10 @@ and NotificationReceiver objects.&#xD;
 		if (scanFlag == false) {
 			scanFlag = true;
 		}
-		
+		List&lt;AccessPoint> tempList = fp.getAccessPoints(); // get Floor plan information
+		apList = new ArrayList&lt;AccessPoint>(tempList.size());
+		apList.addAll(tempList);
+
 		wifimanager.startScan();
 		mScanResult = wifimanager.getScanResults();
 		for(int i=0; i&lt;scanNumber-2; i++) {
@@ -3550,7 +3556,7 @@ and NotificationReceiver objects.&#xD;
 		
 		parseWIFIScanResult(); // get WIFISCanResult
 		mScanResult = null;
-		
+
 		return apList;
 	</body>
             </ownedBehavior>
@@ -3561,13 +3567,13 @@ and NotificationReceiver objects.&#xD;
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_1KqCxMxfEeKgUcEu-gntqA" name="parseWIFIScanResult" specification="_1J4msMxfEeKgUcEu-gntqA">
               <language>java</language>
-              <body>//		Comparator&lt;ScanResult> comparator = new Comparator&lt;ScanResult>() {
-//			@Override
-//			public int compare(ScanResult s1, ScanResult s2) {
-//				return (s1.BSSID.compareTo(s2.BSSID));
-//			}
-//		};
-//		Collections.sort(mScanResult, comparator);
+              <body>Comparator&lt;ScanResult> comparator = new Comparator&lt;ScanResult>() {
+			@Override
+			public int compare(ScanResult s1, ScanResult s2) {
+				return (s1.BSSID.compareTo(s2.BSSID));
+			}
+		};
+		Collections.sort(mScanResult, comparator);
 
 		int rssi = 0;
 		int tCount = 0;
@@ -3586,6 +3592,13 @@ and NotificationReceiver objects.&#xD;
 			oldResult = newResult;
 			if (i == mScanResult.size() - 1) {
 				addAP(oldResult, i, rssi / tCount);
+			}
+		}
+		
+		// Remove AP which doesn't have rssi
+		for(int i=apList.size()-1; i>=0;i--) {
+			if(apList.get(i).getRssi() == 0) {
+				apList.remove(i);
 			}
 		}
 	</body>
@@ -6458,7 +6471,9 @@ and NotificationReceiver objects.&#xD;
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_F0oswMxgEeKgUcEu-gntqA" name="WCL" specification="_F0I9gMxgEeKgUcEu-gntqA">
               <ownedParameter xmi:id="_ZBslcM77EeKjLNbOGolaIA" name="wm" type="_tI340cfZEeKj__JByXBSIg"/>
               <ownedParameter xmi:id="_ZBslcc77EeKjLNbOGolaIA" name="initParams" type="_tGWwUcfZEeKj__JByXBSIg"/>
-              <ownedParameter xmi:id="_ZBslcs77EeKjLNbOGolaIA" type="_FzOXgMxgEeKgUcEu-gntqA" direction="return"/>
+              <ownedParameter xmi:id="_ZBslcs77EeKjLNbOGolaIA" type="_FzOXgMxgEeKgUcEu-gntqA" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <ownedParameter xmi:id="_ZBslc877EeKjLNbOGolaIA" name="context" type="_tGaasMfZEeKj__JByXBSIg"/>
               <language>java</language>
               <body>super(wm, initParams, context);
@@ -6492,7 +6507,7 @@ and NotificationReceiver objects.&#xD;
               <language>java</language>
               <body>apList = wifiScanner.scanStart();
 
-		if (apList.size() > 3) {
+		if (apList.size() >= 3) {
 			if (triangMethod.equals(&quot;AWCL&quot;)) {
 				doAWCL();
 			}
@@ -6549,7 +6564,7 @@ and NotificationReceiver objects.&#xD;
 		}
 	</body>
             </ownedBehavior>
-            <ownedOperation xmi:id="_FzPloMxgEeKgUcEu-gntqA" name="doAWCL" method="_F0osxMxgEeKgUcEu-gntqA"/>
+            <ownedOperation xmi:id="_FzPloMxgEeKgUcEu-gntqA" name="doAWCL" visibility="private" method="_F0osxMxgEeKgUcEu-gntqA"/>
             <ownedOperation xmi:id="_FzQMsMxgEeKgUcEu-gntqA" name="calculateAccessPointPosition" method="_F0osxcxgEeKgUcEu-gntqA">
               <ownedParameter xmi:id="_F0KLocxgEeKgUcEu-gntqA" type="_s6ih4MfZEeKj__JByXBSIg" direction="return"/>
             </ownedOperation>

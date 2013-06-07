@@ -39,7 +39,7 @@ public class TriangulationTask extends AsyncTask<Void, Void, Void> {
 			wifiManager.setWifiEnabled(true);
 		
 		// Create Triangulation
-		triangulation = new WCL(wifiManager, initParams);
+		triangulation = new WCL(wifiManager, initParams, context);
 	}
 	
 	
@@ -74,7 +74,7 @@ public class TriangulationTask extends AsyncTask<Void, Void, Void> {
 			
 			if(ap != null) {
 				Intent intent = new Intent(ProximityIntentReceiver.PROXIMITY_ALERT);
-				intent.putExtra("category", "Food");
+				intent.putExtra("category", "Food"); // TODO: change food...
 				context.sendBroadcast(intent);
 			}
 			try {

@@ -38,6 +38,7 @@ public class ProximityIntentReceiver extends BroadcastReceiver {
 		if(alert.equals(PROXIMITY_ALERT)){
 			// Get the section name (category)
 			category = intent.getStringExtra("category");
+			entering = true;
 		}
 		else {// Alert from addProximityAlert method, alert name is the category name
 			category = alert;

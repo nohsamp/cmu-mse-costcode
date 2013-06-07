@@ -75,7 +75,7 @@ public class ViewListActivity extends Activity  {
 		// Load Customer and shoppingList from DB
 		cust = db.dbGetCustomer(memberId);
 		cust.setShoppingList(db.dbGetShoppingListItems(memberId));
-
+		
 		// Add list of ShoppingListItems
 		ScrollView scroll = (ScrollView)findViewById(R.id.viewListScroll);
 		LinearLayout itemList = generateListView(this, cust.getShoppingList());

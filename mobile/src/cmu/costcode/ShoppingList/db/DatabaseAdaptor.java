@@ -2,6 +2,7 @@ package cmu.costcode.ShoppingList.db;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import android.content.ContentValues;
@@ -14,6 +15,7 @@ import android.util.Log;
 import cmu.costcode.ShoppingList.objects.Customer;
 import cmu.costcode.ShoppingList.objects.Item;
 import cmu.costcode.ShoppingList.objects.ShoppingListItem;
+import cmu.costcode.WIFIScanner.AccessPoint;
 
 public class DatabaseAdaptor {
 	
@@ -65,6 +67,24 @@ public class DatabaseAdaptor {
 			    DbContract.CategoryEntry.CATEGORY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
 			    DbContract.CategoryEntry.CAT_NAME + TEXT_TYPE +
 			    " )";
+		
+		private static final String SQL_CREATE_AP =
+			    "CREATE TABLE IF NOT EXISTS " + DbContract.AccessPointEntry.TABLE_NAME + " (" +
+			    DbContract.AccessPointEntry.AP_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+			    DbContract.AccessPointEntry.BSSID + " TEXT, " +
+			    DbContract.AccessPointEntry.SSID + " TEXT, " +
+			    DbContract.AccessPointEntry.POSX + " FLOAT, " +
+			    DbContract.AccessPointEntry.POSY + " FLOAT, " +
+			    DbContract.AccessPointEntry.DESC + " TEXT" +
+			    " )";
+		
+		private static final String SQL_CREATE_VERSION =
+			    "CREATE TABLE IF NOT EXISTS " + DbContract.InfoVersionEntry.TABLE_NAME + " (" +
+			    DbContract.InfoVersionEntry.INFOVERSION_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+			    DbContract.InfoVersionEntry.INFO_NAME + " TEXT, " +
+			    DbContract.InfoVersionEntry.INFO_VERSION + " TEXT, " +
+			    DbContract.InfoVersionEntry.INFO_DESC + " TEXT" +
+			    " )";
 	
 		//TODO: doesn't work
 		private static final String SQL_DELETE_ENTRIES =
@@ -72,9 +92,9 @@ public class DatabaseAdaptor {
 				DbContract.CustomerEntry.TABLE_NAME + COMMA_SEP +
 				DbContract.ListItemEntry.TABLE_NAME + COMMA_SEP +
 				DbContract.ItemEntry.TABLE_NAME + COMMA_SEP +
-				DbContract.CategoryEntry.TABLE_NAME;
-	
-		
+				DbContract.CategoryEntry.TABLE_NAME + COMMA_SEP +
+				DbContract.AccessPointEntry.TABLE_NAME + COMMA_SEP +
+				DbContract.InfoVersionEntry.TABLE_NAME;
 		
 		/** Constructor*/
 		public DatabaseHelper(Context context) {
@@ -90,6 +110,8 @@ public class DatabaseAdaptor {
 			db.execSQL(SQL_CREATE_LISTITEM);
 			db.execSQL(SQL_CREATE_ITEM);
 			db.execSQL(SQL_CREATE_CATEGORY);
+			db.execSQL(SQL_CREATE_AP);
+			db.execSQL(SQL_CREATE_VERSION);
 		}
 	
 		/**
@@ -291,6 +313,67 @@ public class DatabaseAdaptor {
 	}
 	
 	
+	
+	/**
+	 * Return list of access point
+	 * @return 
+	 */
+	public List<AccessPoint> dbGetAccessPoint() {
+		db.execSQL(DatabaseHelper.SQL_CREATE_AP);
+		// Return cursor location of row with matching memberId
+		Cursor mCursor = db.query(true, DbContract.AccessPointEntry.TABLE_NAME, 
+				new String[] {
+					DbContract.AccessPointEntry.BSSID,
+					DbContract.AccessPointEntry.SSID,
+					DbContract.AccessPointEntry.POSX,
+					DbContract.AccessPointEntry.POSY,
+				}, null, null,
+				null, null, null, null);
+		if (mCursor != null && mCursor.getCount() > 0) {
+			mCursor.moveToFirst();
+			Log.d(TAG, "Read list of AccessPoint. Found " + mCursor.getCount() + " matches.");
+		} else {
+			// No matches found
+			Log.d(TAG, "No AccessPoint found.");
+			return null;
+		}
+		
+
+		// Create the list of AccessPoint
+		List<AccessPoint> apList = 
+				new ArrayList<AccessPoint>(mCursor.getCount());
+		
+		// Iterate through all AccessPoint list
+		for(int i=0; i<mCursor.getCount(); i++) {
+			// Read AccessPoint properties
+			AccessPoint ap = new AccessPoint();
+			ap.setBssid(mCursor.getString(
+					mCursor.getColumnIndexOrThrow(DbContract.AccessPointEntry.BSSID)
+					)
+			);
+			ap.setSsid(mCursor.getString(
+					mCursor.getColumnIndexOrThrow(DbContract.AccessPointEntry.SSID)
+					)
+			);
+			ap.setPosX(mCursor.getFloat(
+					mCursor.getColumnIndexOrThrow(DbContract.AccessPointEntry.POSX)
+					)
+			);
+			ap.setPosY(mCursor.getFloat(
+					mCursor.getColumnIndexOrThrow(DbContract.AccessPointEntry.POSY)
+					)
+			);
+			apList.add(ap);
+			
+			mCursor.moveToNext();
+		}
+		
+		Log.i(TAG, "Reading from DB: APlist with " + apList.size() + " APs");
+		return apList;
+	}
+	
+	
+	
 //		##### DB CREATE METHODS #####
 	
 	/**
@@ -347,6 +430,26 @@ public class DatabaseAdaptor {
 		return (int)db.insert(DbContract.ItemEntry.TABLE_NAME, null, values);
 	}
 	
+	/**
+	 * Create a new row in the AccessPoint db; returns BSSID of AccessPoint
+	 * @param description
+	 * @param category
+	 * @return
+	 */
+	public void dbCreateAccessPoint(AccessPoint ap) {
+		db.execSQL(DatabaseHelper.SQL_CREATE_AP);
+		// Create a new map of values, where column names are the keys
+		ContentValues values = new ContentValues();
+		values.put(DbContract.AccessPointEntry.BSSID, ap.getBssid());
+		values.put(DbContract.AccessPointEntry.SSID, ap.getSsid());
+		values.put(DbContract.AccessPointEntry.POSX, ap.getPosX());
+		values.put(DbContract.AccessPointEntry.POSY, ap.getPosY());
+		values.put(DbContract.AccessPointEntry.DESC, ap.getDescription());
+		
+		// Insert the new row, returning the primary key value of the new row (itemId)
+		db.insert(DbContract.AccessPointEntry.TABLE_NAME, null, values);
+	}
+	
 	
 //		##### UPDATE DB METHODS #####
 	
@@ -400,5 +503,67 @@ public class DatabaseAdaptor {
 		
 		return (int)db.update(DbContract.ItemEntry.TABLE_NAME, values, selection, null);
 	}
-    
+	
+	/**
+	 * Delete all of data in AccessPoint Table
+	 * @return The number of deleted rows
+	 */
+	public int dbDeleteAccessPoint() {
+		return (int) db.delete(DbContract.AccessPointEntry.TABLE_NAME, null, null);
+	}
+
+	/**
+	 * Get Version information
+	 * @param The information name
+	 * @return The version of information
+	 */
+	public String dbGetVersion(String infoName) {
+		db.execSQL(DatabaseHelper.SQL_CREATE_VERSION);
+		// Return cursor location of row with matching memberId
+		Cursor mCursor = db.query(DbContract.InfoVersionEntry.TABLE_NAME, 
+				new String[] {
+					DbContract.InfoVersionEntry.INFO_VERSION,
+				}, DbContract.InfoVersionEntry.INFO_NAME + "= '" + infoName + "'", null,
+				null, null, null, null);
+		
+		if (mCursor != null && mCursor.getCount() > 0) {
+			mCursor.moveToFirst();
+			Log.d(TAG, "Read floorplan version. Found " + mCursor.getCount() + " matches.");
+			// Create new Customer object, return it
+			return mCursor.getString(mCursor.getColumnIndexOrThrow(DbContract.InfoVersionEntry.INFO_VERSION));
+		} else {
+			// No matches found
+			Log.d(TAG, "No floorplan version found.");
+			return null;
+		}
+		
+		
+	}
+
+	/**
+	 * Insert or update version information
+	 * @param infoName The name of information
+	 * @param version The version of information
+	 * @param description Description about the information
+	 * @return The number of affected rows
+	 */
+	public int dbSetVersion(String infoName, String version, String description) {
+		ContentValues values = new ContentValues(3);
+		values.put(DbContract.InfoVersionEntry.INFO_NAME, infoName);
+		values.put(DbContract.InfoVersionEntry.INFO_VERSION, version);
+		values.put(DbContract.InfoVersionEntry.INFO_DESC, description);
+		
+		// Insert if no data
+		if(dbGetVersion(infoName) == null) {
+			// insert
+			return (int)db.insert(DbContract.InfoVersionEntry.TABLE_NAME, null, values);
+		}
+		// else update data
+		else {
+			// Which row to update, based on the infoName
+			String selection = DbContract.InfoVersionEntry.INFO_NAME + "= '" + infoName + "'";
+			
+			return (int)db.update(DbContract.InfoVersionEntry.TABLE_NAME, values, selection, null);
+		}
+	}
 }

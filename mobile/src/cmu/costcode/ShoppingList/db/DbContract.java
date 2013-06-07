@@ -40,5 +40,25 @@ public class DbContract {
 		public static final String CATEGORY_ID = "category_id";
 		public static final String CAT_NAME = "cat_name";
 	}
+	
+	/** Constants for AccessPoint table in DB */
+	public static abstract class AccessPointEntry implements BaseColumns {
+		public static final String TABLE_NAME = "accesspoint";
+		public static final String AP_ID = "ap_id";
+		public static final String BSSID = "bssid";
+		public static final String SSID = "ssid";
+		public static final String POSX = "posx";
+		public static final String POSY = "posy";
+		public static final String DESC = "description";
+	}
+	
+	/** Constants for InfoVersion table in DB */
+	public static abstract class InfoVersionEntry implements BaseColumns {
+		public static final String TABLE_NAME = "infoversion";
+		public static final String INFOVERSION_ID = "version_id";
+		public static final String INFO_NAME = "info_name";
+		public static final String INFO_VERSION = "version";
+		public static final String INFO_DESC = "description";
+	}
 
 }

@@ -83,7 +83,7 @@ public class WebService {
 	 * @throws Exception 
 	 */
 	private SoapObject makeCall(SoapSerializationEnvelope envelope) throws Exception {
-		SoapObject result; // Return object
+		SoapObject result = null; // Return object
 		
 		HttpTransportSE androidHttpTransport = new HttpTransportSE(url);
 

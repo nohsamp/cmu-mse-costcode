@@ -3,6 +3,7 @@ package cmu.costcode.Triangulation;
 import java.util.List;
 import java.util.Map;
 
+import android.content.Context;
 import android.net.wifi.WifiManager;
 
 import cmu.costcode.WIFIScanner.AccessPoint;
@@ -19,10 +20,10 @@ public abstract class Triangulation {
 	protected String triangMethod = "WCL";	// triangulation method: WCL, AWCL
 	protected int scanNumber = 5;				// number of wifi scan results
 	
-	public Triangulation(WifiManager wm, Map<String, Object> initParams) {
+	public Triangulation(WifiManager wm, Map<String, Object> initParams, Context context) {
 		triangMethod = (String) initParams.get(TRIANG_METHOD);
 		scanNumber = (Integer) initParams.get(SCAN_NUMBER);
-		wifiScanner = new WiFiScanner(wm, scanNumber);
+		wifiScanner = new WiFiScanner(wm, scanNumber, context);
 	}
 	
 	public AccessPoint calculateAccessPointPosition() {

@@ -4,7 +4,14 @@
     <eAnnotations xmi:id="_reQxIMfZEeKj__JByXBSIg" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_reQxIcfZEeKj__JByXBSIg" source="codegen">
         <details xmi:id="_reQxIsfZEeKj__JByXBSIg" key="codegenDirectory" value="/WIFIScanner/gen"/>
-        <details xmi:id="_tuaO0MfZEeKj__JByXBSIg" key="AssociatedSourceCode" value="/WIFIScanner/gen/cmu/costcode/WIFIScanner/BuildConfig.java;663610238/1;/WIFIScanner/gen/cmu/costcode/WIFIScanner/R.java;1416285864/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/TestReceiver.java;3086906378/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/WIFIScanner.java;2516296769/1;/mobile/src/cmu/costcode/ProximityAlert/NotificationActivity.java;2627982062/1;/mobile/src/cmu/costcode/ProximityAlert/ProximityIntentReceiver.java;3594362122/1;/mobile/src/cmu/costcode/ProximityAlert/ShoppingListApplication.java;1913911324/1;/mobile/src/cmu/costcode/ShoppingList/EditListActivity.java;2438705698/1;/mobile/src/cmu/costcode/ShoppingList/LoginActivity.java;379368985/1;/mobile/src/cmu/costcode/ShoppingList/ViewListActivity.java;146919720/1;/mobile/src/cmu/costcode/ShoppingList/WiFiScanSettingsActivity.java;1424938990/1;/mobile/src/cmu/costcode/WIFIScanner/AccessPoint.java;1134896105/1;/mobile/src/cmu/costcode/WIFIScanner/WiFiScanner.java;4077114339/1;/mobile/src/cmu/costcode/Triangulation/Triangulation.java;202435230/1;/mobile/src/cmu/costcode/Triangulation/TriangulationTask.java;507222526/1;/mobile/src/cmu/costcode/Triangulation/WCL.java;3171581163/1;/mobile/src/cmu/costcode/ShoppingList/db/DatabaseAdaptor.java;1083346947/1;/WIFIScanner/gen/cmu/costcode/FloorPlan.java;3115562283/1;/mobile/src/cmu/costcode/FloorPlan/FloorPlan.java;3952012089/1;/mobile/src/cmu/costcode/FloorPlan/WebService.java;685388525/1;"/>
+        <details xmi:id="_tuaO0MfZEeKj__JByXBSIg" key="AssociatedSourceCode" value="/WIFIScanner/gen/cmu/costcode/WIFIScanner/BuildConfig.java;663610238/1;/WIFIScanner/gen/cmu/costcode/WIFIScanner/R.java;1416285864/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/TestReceiver.java;3086906378/1;/WIFIScanner/src/cmu/costcode/WIFIScanner/WIFIScanner.java;2516296769/1;/mobile/src/cmu/costcode/ProximityAlert/NotificationActivity.java;2627982062/1;/mobile/src/cmu/costcode/ProximityAlert/ProximityIntentReceiver.java;740949368/1;/mobile/src/cmu/costcode/ProximityAlert/ShoppingListApplication.java;1913911324/1;/mobile/src/cmu/costcode/ShoppingList/EditListActivity.java;2438705698/1;/mobile/src/cmu/costcode/ShoppingList/LoginActivity.java;379368985/1;/mobile/src/cmu/costcode/ShoppingList/ViewListActivity.java;2986913095/1;/mobile/src/cmu/costcode/ShoppingList/WiFiScanSettingsActivity.java;1424938990/1;/mobile/src/cmu/costcode/WIFIScanner/AccessPoint.java;1134896105/1;/mobile/src/cmu/costcode/WIFIScanner/WiFiScanner.java;2882942109/1;/mobile/src/cmu/costcode/Triangulation/Triangulation.java;3027960260/1;/mobile/src/cmu/costcode/Triangulation/TriangulationTask.java;236254763/1;/mobile/src/cmu/costcode/Triangulation/WCL.java;3946502578/1;/mobile/src/cmu/costcode/ShoppingList/db/DatabaseAdaptor.java;393107540/1;/WIFIScanner/gen/cmu/costcode/FloorPlan.java;3115562283/1;/mobile/src/cmu/costcode/FloorPlan/FloorPlan.java;3857916346/1;/mobile/src/cmu/costcode/FloorPlan/WebService.java;507336965/1;/mobile/src/cmu/costcode/ShoppingList/db/DbContract.java;4167162960/1;"/>
+      </contents>
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_dPNCUM7oEeKjLNbOGolaIA" source="preferences">
+        <contents xmi:type="ecore:EAnnotation" xmi:id="_dPNpYM7oEeKjLNbOGolaIA" source="com.yattasolutions.codegen.reverse">
+          <details xmi:id="_dPNpYc7oEeKjLNbOGolaIA" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerNewFiles" value="true"/>
+          <details xmi:id="_dPNpYs7oEeKjLNbOGolaIA" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerChangedFiles" value="true"/>
+          <details xmi:id="_dPNpY87oEeKjLNbOGolaIA" key="com.yattasolutions.codegen.reverse.roundtrip.RemoveDeletedFiles" value="true"/>
+        </contents>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_s0u00MfZEeKj__JByXBSIg">
@@ -3503,27 +3510,24 @@ and NotificationReceiver objects.&#xD;
               <defaultValue xmi:type="uml:LiteralString" xmi:id="_vJwicc4vEeKrBaw-sqCxfw" value="null"/>
             </ownedAttribute>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_1KpbsMxfEeKgUcEu-gntqA" name="WiFiScanner" specification="_1KXu4MxfEeKgUcEu-gntqA">
-              <ownedParameter xmi:id="_1KpbscxfEeKgUcEu-gntqA" name="wm" type="_tI340cfZEeKj__JByXBSIg"/>
-              <ownedParameter xmi:id="_1KpbssxfEeKgUcEu-gntqA" name="scanNumber">
+              <ownedParameter xmi:id="_QDrhkM77EeKjLNbOGolaIA" name="wm" type="_tI340cfZEeKj__JByXBSIg"/>
+              <ownedParameter xmi:id="_QDrhkc77EeKjLNbOGolaIA" name="scanNumber">
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
               </ownedParameter>
-              <ownedParameter xmi:id="_1Kpbs8xfEeKgUcEu-gntqA" type="_1JzuMMxfEeKgUcEu-gntqA" direction="return">
+              <ownedParameter xmi:id="_QDrhks77EeKjLNbOGolaIA" type="_1JzuMMxfEeKgUcEu-gntqA" direction="return">
                 <name xsi:nil="true"/>
               </ownedParameter>
+              <ownedParameter xmi:id="_QDrhk877EeKjLNbOGolaIA" name="context" type="_tGaasMfZEeKj__JByXBSIg"/>
               <language>java</language>
               <body>wifimanager = wm;
 		this.scanNumber = scanNumber;
 		
 		// Get the AP information
 		// Create thread
-		fp = new FloorPlan();
-		//fp.run(); // TODO Uncomment this line for the actual execution of web service
+		fp = new FloorPlan(context);
+		fp.run();
 		apList = fp.getAccessPoints();
 		
-		// TODO Remove the below part for the actual execution of web service
-		// mock the AP position data
-		if(apList == null)
-			apList = new ArrayList&lt;AccessPoint>(10);
 	</body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_1KqCwMxfEeKgUcEu-gntqA" name="scanStart" specification="_1J3YkMxfEeKgUcEu-gntqA">
@@ -3603,16 +3607,7 @@ and NotificationReceiver objects.&#xD;
 				ap.setFrequency(mResult.frequency);
 				ap.setRssi(rssi);
 			}
-			
 		}
-		
-		// TODO: delete the below part for the real WS call
-		PointF mockAP = null;
-		mockAP = new PointF((float) i, (float) i);
-		AccessPoint ap = new AccessPoint(mResult.BSSID, mResult.SSID,
-				mResult.capabilities, mResult.frequency, rssi, mockAP.x,
-				mockAP.y);
-		apList.add(ap);
 	</body>
             </ownedBehavior>
             <ownedOperation xmi:id="_1J3YkMxfEeKgUcEu-gntqA" name="scanStart" method="_1KqCwMxfEeKgUcEu-gntqA">
@@ -3631,6 +3626,7 @@ and NotificationReceiver objects.&#xD;
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
               </ownedParameter>
               <ownedParameter xmi:id="_1KXu5cxfEeKgUcEu-gntqA" type="_1JzuMMxfEeKgUcEu-gntqA" direction="return"/>
+              <ownedParameter xmi:id="_QDnQIM77EeKjLNbOGolaIA" name="context" type="_tGaasMfZEeKj__JByXBSIg"/>
             </ownedOperation>
             <ownedOperation xmi:id="_1KYV8MxfEeKgUcEu-gntqA" name="addAP" visibility="private" method="_1Kqp0MxfEeKgUcEu-gntqA">
               <ownedParameter xmi:id="_1KYV8cxfEeKgUcEu-gntqA" name="mResult" type="_tI2qsMfZEeKj__JByXBSIg"/>
@@ -3680,13 +3676,17 @@ and NotificationReceiver objects.&#xD;
               <ownedAttribute xmi:id="_gxccAcxhEeKgUcEu-gntqA" name="db" visibility="private" type="_tIKuMcfZEeKj__JByXBSIg" association="_gxxzMcxhEeKgUcEu-gntqA"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gxhUgMxhEeKgUcEu-gntqA" name="DatabaseAdaptor" specification="_gxVuUMxhEeKgUcEu-gntqA">
                 <ownedParameter xmi:id="_gxhUgcxhEeKgUcEu-gntqA" name="ctx" type="_tGaasMfZEeKj__JByXBSIg"/>
-                <ownedParameter xmi:id="_gxhUgsxhEeKgUcEu-gntqA" type="_AMC-gcxeEeKgUcEu-gntqA" direction="return"/>
+                <ownedParameter xmi:id="_gxhUgsxhEeKgUcEu-gntqA" type="_AMC-gcxeEeKgUcEu-gntqA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>this.ctx = ctx;
 	</body>
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gxhUg8xhEeKgUcEu-gntqA" name="open" specification="_gv8nMMxhEeKgUcEu-gntqA">
-                <ownedParameter xmi:id="_gxhUhMxhEeKgUcEu-gntqA" type="_AMC-gcxeEeKgUcEu-gntqA" direction="return"/>
+                <ownedParameter xmi:id="_gxhUhMxhEeKgUcEu-gntqA" type="_AMC-gcxeEeKgUcEu-gntqA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>dbHelper = new DatabaseHelper(ctx);
 		if(db == null || !db.isOpen()) {
@@ -3704,7 +3704,9 @@ and NotificationReceiver objects.&#xD;
                 <ownedParameter xmi:id="_gxhUh8xhEeKgUcEu-gntqA" name="memberId">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_gxhUiMxhEeKgUcEu-gntqA" type="_5ripcMxeEeKgUcEu-gntqA" direction="return"/>
+                <ownedParameter xmi:id="_gxhUiMxhEeKgUcEu-gntqA" type="_5ripcMxeEeKgUcEu-gntqA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>// Return cursor location of row with matching memberId
 		Cursor mCursor = db.query(true, DbContract.CustomerEntry.TABLE_NAME, 
@@ -3744,7 +3746,9 @@ and NotificationReceiver objects.&#xD;
                 <ownedParameter xmi:id="_gxh7kcxhEeKgUcEu-gntqA" name="memberId">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_gxh7ksxhEeKgUcEu-gntqA" type="_tGWwUcfZEeKj__JByXBSIg" direction="return"/>
+                <ownedParameter xmi:id="_gxh7ksxhEeKgUcEu-gntqA" type="_tGWwUcfZEeKj__JByXBSIg" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>// Return cursor location of row with matching memberId
 		Cursor mCursor = db.query(true, DbContract.ListItemEntry.TABLE_NAME, 
@@ -3808,7 +3812,9 @@ and NotificationReceiver objects.&#xD;
                 <ownedParameter xmi:id="_gxh7lMxhEeKgUcEu-gntqA" name="itemId">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_gxh7lcxhEeKgUcEu-gntqA" type="_AMFawcxeEeKgUcEu-gntqA" direction="return"/>
+                <ownedParameter xmi:id="_gxh7lcxhEeKgUcEu-gntqA" type="_AMFawcxeEeKgUcEu-gntqA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>// Return cursor location of row with matching memberId
 		Cursor mCursor = db.query(true, DbContract.ItemEntry.TABLE_NAME, 
@@ -3853,6 +3859,7 @@ and NotificationReceiver objects.&#xD;
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <ownedParameter xmi:id="_gxh7msxhEeKgUcEu-gntqA" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
                 <language>java</language>
@@ -3880,6 +3887,7 @@ and NotificationReceiver objects.&#xD;
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
                 <ownedParameter xmi:id="_gxiipcxhEeKgUcEu-gntqA" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
                 <language>java</language>
@@ -3902,6 +3910,7 @@ and NotificationReceiver objects.&#xD;
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <ownedParameter xmi:id="_gxiiqcxhEeKgUcEu-gntqA" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
                 <language>java</language>
@@ -3925,6 +3934,7 @@ and NotificationReceiver objects.&#xD;
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
                 </ownedParameter>
                 <ownedParameter xmi:id="_gxiirsxhEeKgUcEu-gntqA" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
                 <language>java</language>
@@ -3947,6 +3957,7 @@ and NotificationReceiver objects.&#xD;
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
                 <ownedParameter xmi:id="_gxjJs8xhEeKgUcEu-gntqA" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
                 <language>java</language>
@@ -3967,6 +3978,7 @@ and NotificationReceiver objects.&#xD;
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <ownedParameter xmi:id="_gxjJuMxhEeKgUcEu-gntqA" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
                 <language>java</language>
@@ -3979,6 +3991,155 @@ and NotificationReceiver objects.&#xD;
 		String selection = DbContract.ItemEntry.ITEM_ID + &quot;=&quot; + itemId;
 		
 		return (int)db.update(DbContract.ItemEntry.TABLE_NAME, values, selection, null);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_eGaXIM7oEeKjLNbOGolaIA" name="dbCreateAccessPoint" specification="_eEu8IM7oEeKjLNbOGolaIA">
+                <ownedParameter xmi:id="_eGaXIc7oEeKjLNbOGolaIA" name="ap" type="_s6ih4MfZEeKj__JByXBSIg"/>
+                <language>java</language>
+                <body>db.execSQL(DatabaseHelper.SQL_CREATE_AP);
+		// Create a new map of values, where column names are the keys
+		ContentValues values = new ContentValues();
+		values.put(DbContract.AccessPointEntry.BSSID, ap.getBssid());
+		values.put(DbContract.AccessPointEntry.SSID, ap.getSsid());
+		values.put(DbContract.AccessPointEntry.POSX, ap.getPosX());
+		values.put(DbContract.AccessPointEntry.POSY, ap.getPosY());
+		values.put(DbContract.AccessPointEntry.DESC, ap.getDescription());
+		
+		// Insert the new row, returning the primary key value of the new row (itemId)
+		db.insert(DbContract.AccessPointEntry.TABLE_NAME, null, values);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_eGblQM7oEeKjLNbOGolaIA" name="dbDeleteAccessPoint" specification="_eEvjMM7oEeKjLNbOGolaIA">
+                <ownedParameter xmi:id="_eGblQc7oEeKjLNbOGolaIA" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return (int) db.delete(DbContract.AccessPointEntry.TABLE_NAME, null, null);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_eGblQs7oEeKjLNbOGolaIA" name="dbGetVersion" specification="_eFqJMM7oEeKjLNbOGolaIA">
+                <ownedParameter xmi:id="_eGblQ87oEeKjLNbOGolaIA" name="infoName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_eGblRM7oEeKjLNbOGolaIA" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>db.execSQL(DatabaseHelper.SQL_CREATE_VERSION);
+		// Return cursor location of row with matching memberId
+		Cursor mCursor = db.query(DbContract.InfoVersionEntry.TABLE_NAME, 
+				new String[] {
+					DbContract.InfoVersionEntry.INFO_VERSION,
+				}, DbContract.InfoVersionEntry.INFO_NAME + &quot;= '&quot; + infoName + &quot;'&quot;, null,
+				null, null, null, null);
+		
+		if (mCursor != null &amp;&amp; mCursor.getCount() > 0) {
+			mCursor.moveToFirst();
+			Log.d(TAG, &quot;Read floorplan version. Found &quot; + mCursor.getCount() + &quot; matches.&quot;);
+			// Create new Customer object, return it
+			return mCursor.getString(mCursor.getColumnIndexOrThrow(DbContract.InfoVersionEntry.INFO_VERSION));
+		} else {
+			// No matches found
+			Log.d(TAG, &quot;No floorplan version found.&quot;);
+			return null;
+		}
+		
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_eGcMUM7oEeKjLNbOGolaIA" name="dbSetVersion" specification="_eFr-YM7oEeKjLNbOGolaIA">
+                <ownedParameter xmi:id="_eGcMUc7oEeKjLNbOGolaIA" name="infoName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_eGcMUs7oEeKjLNbOGolaIA" name="version">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_eGcMU87oEeKjLNbOGolaIA" name="description">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_eGcMVM7oEeKjLNbOGolaIA" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>ContentValues values = new ContentValues(3);
+		values.put(DbContract.InfoVersionEntry.INFO_NAME, infoName);
+		values.put(DbContract.InfoVersionEntry.INFO_VERSION, version);
+		values.put(DbContract.InfoVersionEntry.INFO_DESC, description);
+		
+		// Insert if no data
+		if(dbGetVersion(infoName) == null) {
+			// insert
+			return (int)db.insert(DbContract.InfoVersionEntry.TABLE_NAME, null, values);
+		}
+		// else update data
+		else {
+			// Which row to update, based on the infoName
+			String selection = DbContract.InfoVersionEntry.INFO_NAME + &quot;= '&quot; + infoName + &quot;'&quot;;
+			
+			return (int)db.update(DbContract.InfoVersionEntry.TABLE_NAME, values, selection, null);
+		}
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_bZA-8M73EeKjLNbOGolaIA" name="dbGetAccessPoint" specification="_bY3N8M73EeKjLNbOGolaIA">
+                <ownedParameter xmi:id="_bZA-8c73EeKjLNbOGolaIA" type="_s6ih4MfZEeKj__JByXBSIg" isOrdered="true" direction="return">
+                  <name xsi:nil="true"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bZA-8s73EeKjLNbOGolaIA" value="*"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>db.execSQL(DatabaseHelper.SQL_CREATE_AP);
+		// Return cursor location of row with matching memberId
+		Cursor mCursor = db.query(true, DbContract.AccessPointEntry.TABLE_NAME, 
+				new String[] {
+					DbContract.AccessPointEntry.BSSID,
+					DbContract.AccessPointEntry.SSID,
+					DbContract.AccessPointEntry.POSX,
+					DbContract.AccessPointEntry.POSY,
+				}, null, null,
+				null, null, null, null);
+		if (mCursor != null &amp;&amp; mCursor.getCount() > 0) {
+			mCursor.moveToFirst();
+			Log.d(TAG, &quot;Read list of AccessPoint. Found &quot; + mCursor.getCount() + &quot; matches.&quot;);
+		} else {
+			// No matches found
+			Log.d(TAG, &quot;No AccessPoint found.&quot;);
+			return null;
+		}
+		
+
+		// Create the list of AccessPoint
+		List&lt;AccessPoint> apList = 
+				new ArrayList&lt;AccessPoint>(mCursor.getCount());
+		
+		// Iterate through all AccessPoint list
+		for(int i=0; i&lt;mCursor.getCount(); i++) {
+			// Read AccessPoint properties
+			AccessPoint ap = new AccessPoint();
+			ap.setBssid(mCursor.getString(
+					mCursor.getColumnIndexOrThrow(DbContract.AccessPointEntry.BSSID)
+					)
+			);
+			ap.setSsid(mCursor.getString(
+					mCursor.getColumnIndexOrThrow(DbContract.AccessPointEntry.SSID)
+					)
+			);
+			ap.setPosX(mCursor.getFloat(
+					mCursor.getColumnIndexOrThrow(DbContract.AccessPointEntry.POSX)
+					)
+			);
+			ap.setPosY(mCursor.getFloat(
+					mCursor.getColumnIndexOrThrow(DbContract.AccessPointEntry.POSY)
+					)
+			);
+			apList.add(ap);
+			
+			mCursor.moveToNext();
+		}
+		
+		Log.i(TAG, &quot;Reading from DB: APlist with &quot; + apList.size() + &quot; APs&quot;);
+		return apList;
 	</body>
               </ownedBehavior>
               <ownedOperation xmi:id="_gv8nMMxhEeKgUcEu-gntqA" name="open" method="_gxhUg8xhEeKgUcEu-gntqA" raisedException="_tII5AcfZEeKj__JByXBSIg">
@@ -4166,6 +4327,67 @@ and NotificationReceiver objects.&#xD;
                 <ownedParameter xmi:id="_gxWVYMxhEeKgUcEu-gntqA" name="ctx" type="_tGaasMfZEeKj__JByXBSIg"/>
                 <ownedParameter xmi:id="_gxWVY8xhEeKgUcEu-gntqA" type="_AMC-gcxeEeKgUcEu-gntqA" direction="return"/>
               </ownedOperation>
+              <ownedOperation xmi:id="_eEu8IM7oEeKjLNbOGolaIA" name="dbCreateAccessPoint" method="_eGaXIM7oEeKjLNbOGolaIA">
+                <ownedComment xmi:id="_eGmkYM7oEeKjLNbOGolaIA">
+                  <body>Create a new row in the AccessPoint db; returns BSSID of AccessPoint
+	 * @param description
+	 * @param category
+	 * @return</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_eEu8Ic7oEeKjLNbOGolaIA" name="ap" type="_s6ih4MfZEeKj__JByXBSIg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_eEvjMM7oEeKjLNbOGolaIA" name="dbDeleteAccessPoint" method="_eGblQM7oEeKjLNbOGolaIA">
+                <ownedComment xmi:id="_eGmkYc7oEeKjLNbOGolaIA">
+                  <body>Delete all of data in AccessPoint Table
+	 * @return The number of deleted rows</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_bY-isM73EeKjLNbOGolaIA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_eFqJMM7oEeKjLNbOGolaIA" name="dbGetVersion" method="_eGblQs7oEeKjLNbOGolaIA">
+                <ownedComment xmi:id="_eGnLcM7oEeKjLNbOGolaIA">
+                  <body>Get Version information
+	 * @param The information name
+	 * @return The version of information</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_eFqJMc7oEeKjLNbOGolaIA" name="infoName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_eFqwQM7oEeKjLNbOGolaIA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_eFr-YM7oEeKjLNbOGolaIA" name="dbSetVersion" method="_eGcMUM7oEeKjLNbOGolaIA">
+                <ownedComment xmi:id="_eGnLcc7oEeKjLNbOGolaIA">
+                  <body>Insert or update version information
+	 * @param infoName The name of information
+	 * @param version The version of information
+	 * @param description Description about the information
+	 * @return The number of affected rows</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_eFr-Yc7oEeKjLNbOGolaIA" name="infoName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_eFr-Ys7oEeKjLNbOGolaIA" name="version">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_eFr-Y87oEeKjLNbOGolaIA" name="description">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_eFslcM7oEeKjLNbOGolaIA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_bY3N8M73EeKjLNbOGolaIA" name="dbGetAccessPoint" method="_bZA-8M73EeKjLNbOGolaIA">
+                <ownedComment xmi:id="_bZCNEM73EeKjLNbOGolaIA">
+                  <body>Return list of access point
+	 * @return</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_bY3N8c73EeKjLNbOGolaIA" type="_s6ih4MfZEeKj__JByXBSIg" isOrdered="true" direction="return">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bY3N8s73EeKjLNbOGolaIA" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
               <nestedClassifier xmi:type="uml:Class" xmi:id="_gv480MxhEeKgUcEu-gntqA" name="DatabaseHelper" visibility="private">
                 <eAnnotations xmi:id="_gv5j4MxhEeKgUcEu-gntqA" source="http://www.eclipse.org/uml2/2.0.0/UML">
                   <details xmi:id="_gv5j4cxhEeKgUcEu-gntqA" key="static"/>
@@ -4206,11 +4428,21 @@ and NotificationReceiver objects.&#xD;
                 </ownedAttribute>
                 <ownedAttribute xmi:id="_gxe4QsxhEeKgUcEu-gntqA" name="SQL_DELETE_ENTRIES" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_gxe4Q8xhEeKgUcEu-gntqA" value="&quot;DROP TABLE IF EXISTS &quot; +&#xA;&#x9;&#x9;&#x9;&#x9;DbContract.CustomerEntry.TABLE_NAME + COMMA_SEP +&#xA;&#x9;&#x9;&#x9;&#x9;DbContract.ListItemEntry.TABLE_NAME + COMMA_SEP +&#xA;&#x9;&#x9;&#x9;&#x9;DbContract.ItemEntry.TABLE_NAME + COMMA_SEP +&#xA;&#x9;&#x9;&#x9;&#x9;DbContract.CategoryEntry.TABLE_NAME"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_gxe4Q8xhEeKgUcEu-gntqA" value="&quot;DROP TABLE IF EXISTS &quot; +&#xA;&#x9;&#x9;&#x9;&#x9;DbContract.CustomerEntry.TABLE_NAME + COMMA_SEP +&#xA;&#x9;&#x9;&#x9;&#x9;DbContract.ListItemEntry.TABLE_NAME + COMMA_SEP +&#xA;&#x9;&#x9;&#x9;&#x9;DbContract.ItemEntry.TABLE_NAME + COMMA_SEP +&#xA;&#x9;&#x9;&#x9;&#x9;DbContract.CategoryEntry.TABLE_NAME + COMMA_SEP +&#xA;&#x9;&#x9;&#x9;&#x9;DbContract.AccessPointEntry.TABLE_NAME + COMMA_SEP +&#xA;&#x9;&#x9;&#x9;&#x9;DbContract.InfoVersionEntry.TABLE_NAME"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_eGGOEM7oEeKjLNbOGolaIA" name="SQL_CREATE_AP" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_eGGOEc7oEeKjLNbOGolaIA" value="&quot;CREATE TABLE IF NOT EXISTS &quot; + DbContract.AccessPointEntry.TABLE_NAME + &quot; (&quot; +&#xA;&#x9;&#x9;&#x9;    DbContract.AccessPointEntry.AP_ID + &quot; INTEGER PRIMARY KEY AUTOINCREMENT,&quot; +&#xA;&#x9;&#x9;&#x9;    DbContract.AccessPointEntry.BSSID + &quot; TEXT, &quot; +&#xA;&#x9;&#x9;&#x9;    DbContract.AccessPointEntry.SSID + &quot; TEXT, &quot; +&#xA;&#x9;&#x9;&#x9;    DbContract.AccessPointEntry.POSX + &quot; FLOAT, &quot; +&#xA;&#x9;&#x9;&#x9;    DbContract.AccessPointEntry.POSY + &quot; FLOAT, &quot; +&#xA;&#x9;&#x9;&#x9;    DbContract.AccessPointEntry.DESC + &quot; TEXT&quot; +&#xA;&#x9;&#x9;&#x9;    &quot; )&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_eGG1IM7oEeKjLNbOGolaIA" name="SQL_CREATE_VERSION" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_eGG1Ic7oEeKjLNbOGolaIA" value="&quot;CREATE TABLE IF NOT EXISTS &quot; + DbContract.InfoVersionEntry.TABLE_NAME + &quot; (&quot; +&#xA;&#x9;&#x9;&#x9;    DbContract.InfoVersionEntry.INFOVERSION_ID + &quot; INTEGER PRIMARY KEY AUTOINCREMENT,&quot; +&#xA;&#x9;&#x9;&#x9;    DbContract.InfoVersionEntry.INFO_NAME + &quot; TEXT, &quot; +&#xA;&#x9;&#x9;&#x9;    DbContract.InfoVersionEntry.INFO_VERSION + &quot; TEXT, &quot; +&#xA;&#x9;&#x9;&#x9;    DbContract.InfoVersionEntry.INFO_DESC + &quot; TEXT&quot; +&#xA;&#x9;&#x9;&#x9;    &quot; )&quot;"/>
                 </ownedAttribute>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gxgtcMxhEeKgUcEu-gntqA" name="DatabaseHelper" specification="_gxSrAMxhEeKgUcEu-gntqA">
                   <ownedParameter xmi:id="_gxgtccxhEeKgUcEu-gntqA" name="context" type="_tGaasMfZEeKj__JByXBSIg"/>
-                  <ownedParameter xmi:id="_gxgtcsxhEeKgUcEu-gntqA" type="_gv480MxhEeKgUcEu-gntqA" direction="return"/>
+                  <ownedParameter xmi:id="_gxgtcsxhEeKgUcEu-gntqA" type="_gv480MxhEeKgUcEu-gntqA" direction="return">
+                    <name xsi:nil="true"/>
+                  </ownedParameter>
                   <language>java</language>
                   <body>super(context, DATABASE_NAME, null, DATABASE_VERSION);
 		</body>
@@ -4222,6 +4454,8 @@ and NotificationReceiver objects.&#xD;
 			db.execSQL(SQL_CREATE_LISTITEM);
 			db.execSQL(SQL_CREATE_ITEM);
 			db.execSQL(SQL_CREATE_CATEGORY);
+			db.execSQL(SQL_CREATE_AP);
+			db.execSQL(SQL_CREATE_VERSION);
 		</body>
                 </ownedBehavior>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gxgtdcxhEeKgUcEu-gntqA" name="onUpgrade" specification="_gxUgMMxhEeKgUcEu-gntqA">
@@ -4271,6 +4505,175 @@ and NotificationReceiver objects.&#xD;
             </packagedElement>
             <packagedElement xmi:type="uml:Association" xmi:id="_gxxzMcxhEeKgUcEu-gntqA" name="" memberEnd="_gxxzMsxhEeKgUcEu-gntqA _gxccAcxhEeKgUcEu-gntqA">
               <ownedEnd xmi:id="_gxxzMsxhEeKgUcEu-gntqA" name="" type="_AMC-gcxeEeKgUcEu-gntqA" association="_gxxzMcxhEeKgUcEu-gntqA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_jf9OsM7oEeKjLNbOGolaIA" name="DbContract">
+              <eAnnotations xmi:id="_jf91wM7oEeKjLNbOGolaIA" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_jf91wc7oEeKjLNbOGolaIA" source="codegen">
+                  <details xmi:id="_jf91ws7oEeKjLNbOGolaIA" key="codegenDirectory" value="/mobile/src"/>
+                </contents>
+              </eAnnotations>
+              <ownedOperation xmi:id="_jf-c0M7oEeKjLNbOGolaIA" name="DbContract" visibility="private">
+                <eAnnotations xmi:id="_jf-c0c7oEeKjLNbOGolaIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_jf_D4M7oEeKjLNbOGolaIA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_jf_D4s7oEeKjLNbOGolaIA" type="_jf9OsM7oEeKjLNbOGolaIA" direction="return"/>
+              </ownedOperation>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_jgASAM7oEeKjLNbOGolaIA" clientDependency="_jg0xYM7oEeKjLNbOGolaIA" name="CustomerEntry" isAbstract="true">
+                <eAnnotations xmi:id="_jgASAc7oEeKjLNbOGolaIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_jgASAs7oEeKjLNbOGolaIA" key="static"/>
+                </eAnnotations>
+                <ownedAttribute xmi:id="_jg_wgM7oEeKjLNbOGolaIA" name="TABLE_NAME" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhAXkM7oEeKjLNbOGolaIA" value="&quot;customers&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhA-oM7oEeKjLNbOGolaIA" name="MEMBER_ID" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhA-oc7oEeKjLNbOGolaIA" value="&quot;member_id&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhA-o87oEeKjLNbOGolaIA" name="NAME_FIRST" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhBlsM7oEeKjLNbOGolaIA" value="&quot;name_first&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhBlss7oEeKjLNbOGolaIA" name="NAME_LAST" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhBls87oEeKjLNbOGolaIA" value="&quot;name_last&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhCMwc7oEeKjLNbOGolaIA" name="ADDRESS" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhCMws7oEeKjLNbOGolaIA" value="&quot;address&quot;"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:id="_jg0xYM7oEeKjLNbOGolaIA" client="_jgASAM7oEeKjLNbOGolaIA" supplier="_tIW7cMfZEeKj__JByXBSIg" contract="_tIW7cMfZEeKj__JByXBSIg"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_jgCuQM7oEeKjLNbOGolaIA" clientDependency="_jg1YcM7oEeKjLNbOGolaIA" name="ListItemEntry" isAbstract="true">
+                <eAnnotations xmi:id="_jgDVUM7oEeKjLNbOGolaIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_jgDVUc7oEeKjLNbOGolaIA" key="static"/>
+                </eAnnotations>
+                <ownedAttribute xmi:id="_jhCz0M7oEeKjLNbOGolaIA" name="TABLE_NAME" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhCz0c7oEeKjLNbOGolaIA" value="&quot;list_items&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhDa4c7oEeKjLNbOGolaIA" name="ROW_KEY" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhDa4s7oEeKjLNbOGolaIA" value="&quot;row_key&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhDa5M7oEeKjLNbOGolaIA" name="MEMBER_ID" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhEB8M7oEeKjLNbOGolaIA" value="&quot;member_id&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhEB8s7oEeKjLNbOGolaIA" name="ITEM_ID" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhEB887oEeKjLNbOGolaIA" value="&quot;list_id&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhEpAc7oEeKjLNbOGolaIA" name="CHECKED" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhEpAs7oEeKjLNbOGolaIA" value="&quot;checked&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhFQEM7oEeKjLNbOGolaIA" name="POSITION" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhFQEc7oEeKjLNbOGolaIA" value="&quot;position&quot;"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:id="_jg1YcM7oEeKjLNbOGolaIA" client="_jgCuQM7oEeKjLNbOGolaIA" supplier="_tIW7cMfZEeKj__JByXBSIg" contract="_tIW7cMfZEeKj__JByXBSIg"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_jgFxkM7oEeKjLNbOGolaIA" clientDependency="_jg2mkM7oEeKjLNbOGolaIA" name="ItemEntry" isAbstract="true">
+                <eAnnotations xmi:id="_jgFxkc7oEeKjLNbOGolaIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_jgGYoM7oEeKjLNbOGolaIA" key="static"/>
+                </eAnnotations>
+                <ownedAttribute xmi:id="_jhF3IM7oEeKjLNbOGolaIA" name="TABLE_NAME" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhF3Ic7oEeKjLNbOGolaIA" value="&quot;items&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhF3I87oEeKjLNbOGolaIA" name="ITEM_ID" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhGeMM7oEeKjLNbOGolaIA" value="&quot;item_id&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhGeMs7oEeKjLNbOGolaIA" name="DESCRIPTION" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhHFQM7oEeKjLNbOGolaIA" value="&quot;description&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhHFQs7oEeKjLNbOGolaIA" name="CATEGORY_NAME" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhHFQ87oEeKjLNbOGolaIA" value="&quot;category_name&quot;"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:id="_jg2mkM7oEeKjLNbOGolaIA" client="_jgFxkM7oEeKjLNbOGolaIA" supplier="_tIW7cMfZEeKj__JByXBSIg" contract="_tIW7cMfZEeKj__JByXBSIg"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_jgIN0M7oEeKjLNbOGolaIA" clientDependency="_jg3NoM7oEeKjLNbOGolaIA" name="CategoryEntry" isAbstract="true">
+                <eAnnotations xmi:id="_jgIN0c7oEeKjLNbOGolaIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_jgIN0s7oEeKjLNbOGolaIA" key="static"/>
+                </eAnnotations>
+                <ownedAttribute xmi:id="_jhHsUc7oEeKjLNbOGolaIA" name="TABLE_NAME" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhHsUs7oEeKjLNbOGolaIA" value="&quot;categories&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhITYc7oEeKjLNbOGolaIA" name="CATEGORY_ID" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhITYs7oEeKjLNbOGolaIA" value="&quot;category_id&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhI6cM7oEeKjLNbOGolaIA" name="CAT_NAME" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhI6cc7oEeKjLNbOGolaIA" value="&quot;cat_name&quot;"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:id="_jg3NoM7oEeKjLNbOGolaIA" client="_jgIN0M7oEeKjLNbOGolaIA" supplier="_tIW7cMfZEeKj__JByXBSIg" contract="_tIW7cMfZEeKj__JByXBSIg"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_jgKqEM7oEeKjLNbOGolaIA" clientDependency="_jg30sM7oEeKjLNbOGolaIA" name="AccessPointEntry" isAbstract="true">
+                <eAnnotations xmi:id="_jgKqEc7oEeKjLNbOGolaIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_jgKqEs7oEeKjLNbOGolaIA" key="static"/>
+                </eAnnotations>
+                <ownedAttribute xmi:id="_jhJhgM7oEeKjLNbOGolaIA" name="TABLE_NAME" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhJhgc7oEeKjLNbOGolaIA" value="&quot;accesspoint&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhJhg87oEeKjLNbOGolaIA" name="AP_ID" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhKIkM7oEeKjLNbOGolaIA" value="&quot;ap_id&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhKIks7oEeKjLNbOGolaIA" name="BSSID" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhKIk87oEeKjLNbOGolaIA" value="&quot;bssid&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhKvoc7oEeKjLNbOGolaIA" name="SSID" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhKvos7oEeKjLNbOGolaIA" value="&quot;ssid&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhLWsM7oEeKjLNbOGolaIA" name="POSX" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhLWsc7oEeKjLNbOGolaIA" value="&quot;posx&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhLWs87oEeKjLNbOGolaIA" name="POSY" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhL9wM7oEeKjLNbOGolaIA" value="&quot;posy&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhL9ws7oEeKjLNbOGolaIA" name="DESC" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhL9w87oEeKjLNbOGolaIA" value="&quot;description&quot;"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:id="_jg30sM7oEeKjLNbOGolaIA" client="_jgKqEM7oEeKjLNbOGolaIA" supplier="_tIW7cMfZEeKj__JByXBSIg" contract="_tIW7cMfZEeKj__JByXBSIg"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_jgNGUM7oEeKjLNbOGolaIA" clientDependency="_jg5C0M7oEeKjLNbOGolaIA" name="InfoVersionEntry" isAbstract="true">
+                <eAnnotations xmi:id="_jgNtYM7oEeKjLNbOGolaIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_jgNtYc7oEeKjLNbOGolaIA" key="static"/>
+                </eAnnotations>
+                <ownedAttribute xmi:id="_jhMk0c7oEeKjLNbOGolaIA" name="TABLE_NAME" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhMk0s7oEeKjLNbOGolaIA" value="&quot;infoversion&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhNL4c7oEeKjLNbOGolaIA" name="INFOVERSION_ID" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhNL4s7oEeKjLNbOGolaIA" value="&quot;version_id&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhNL5M7oEeKjLNbOGolaIA" name="INFO_NAME" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhNy8M7oEeKjLNbOGolaIA" value="&quot;info_name&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhNy8s7oEeKjLNbOGolaIA" name="INFO_VERSION" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhNy887oEeKjLNbOGolaIA" value="&quot;version&quot;"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_jhOaAc7oEeKjLNbOGolaIA" name="INFO_DESC" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_jhOaAs7oEeKjLNbOGolaIA" value="&quot;description&quot;"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:id="_jg5C0M7oEeKjLNbOGolaIA" client="_jgNGUM7oEeKjLNbOGolaIA" supplier="_tIW7cMfZEeKj__JByXBSIg" contract="_tIW7cMfZEeKj__JByXBSIg"/>
+              </nestedClassifier>
             </packagedElement>
           </packagedElement>
           <packagedElement xmi:type="uml:Package" xmi:id="_AFYV0MxeEeKgUcEu-gntqA" name="objects">
@@ -4510,7 +4913,7 @@ and NotificationReceiver objects.&#xD;
 		// Load Customer and shoppingList from DB&#xD;
 		cust = db.dbGetCustomer(memberId);&#xD;
 		cust.setShoppingList(db.dbGetShoppingListItems(memberId));&#xD;
-&#xD;
+		&#xD;
 		// Add list of ShoppingListItems&#xD;
 		ScrollView scroll = (ScrollView)findViewById(R.id.viewListScroll);&#xD;
 		LinearLayout itemList = generateListView(this, cust.getShoppingList());&#xD;
@@ -5589,55 +5992,61 @@ API Guide&lt;/a> for more information on developing a Settings UI.</body>
               <language>java</language>
               <body>String alert = intent.getAction();&#xD;
 		Boolean entering = intent.getBooleanExtra(LocationManager.KEY_PROXIMITY_ENTERING, false);&#xD;
+		String category = null;&#xD;
 &#xD;
+		// Alert from WiFi triangulation&#xD;
+		if(alert.equals(PROXIMITY_ALERT)){&#xD;
+			// Get the section name (category)&#xD;
+			category = intent.getStringExtra(&quot;category&quot;);&#xD;
+			entering = true;&#xD;
+		}&#xD;
+		else {// Alert from addProximityAlert method, alert name is the category name&#xD;
+			category = alert;&#xD;
+		}&#xD;
 		&#xD;
-     if(alert.equals(PROXIMITY_ALERT)){&#xD;
-         // Get the section name (category)&#xD;
-     	String category = intent.getStringExtra(&quot;category&quot;);&#xD;
-			// Get the message from the intent&#xD;
-			int memberId = intent.getIntExtra(LoginActivity.MEMBERID, 1);&#xD;
-	&#xD;
-			// Open database&#xD;
-			db = new DatabaseAdaptor(context);&#xD;
-			db.open();&#xD;
-	&#xD;
-			Map&lt;String, ArrayList&lt;ShoppingListItem>> shoppingList = db.dbGetShoppingListItems(memberId);&#xD;
-			String uncheckedItems = &quot; &quot;;&#xD;
-	&#xD;
-			if (shoppingList != null &amp;&amp; shoppingList.containsKey(category)) {&#xD;
-	&#xD;
-				for (ShoppingListItem listItem : shoppingList.get(category)) {&#xD;
-	&#xD;
-					if (!listItem.isChecked()) {&#xD;
-						Item item = listItem.getItem();&#xD;
-						uncheckedItems = uncheckedItems + item.getDescription();&#xD;
-					}&#xD;
-	&#xD;
+		// Get the message from the intent&#xD;
+		int memberId = intent.getIntExtra(LoginActivity.MEMBERID, 1);&#xD;
+&#xD;
+		// Open database&#xD;
+		db = new DatabaseAdaptor(context);&#xD;
+		db.open();&#xD;
+&#xD;
+		Map&lt;String, ArrayList&lt;ShoppingListItem>> shoppingList = db.dbGetShoppingListItems(memberId);&#xD;
+		String uncheckedItems = &quot; &quot;;&#xD;
+&#xD;
+		if (shoppingList != null &amp;&amp; shoppingList.containsKey(category)) {&#xD;
+&#xD;
+			for (ShoppingListItem listItem : shoppingList.get(category)) {&#xD;
+&#xD;
+				if (!listItem.isChecked()) {&#xD;
+					Item item = listItem.getItem();&#xD;
+					uncheckedItems = uncheckedItems + item.getDescription();&#xD;
 				}&#xD;
+&#xD;
 			}&#xD;
+		}&#xD;
 &#xD;
-			if(entering) {&#xD;
-				Log.d(getClass().getSimpleName(), &quot;entering&quot;);&#xD;
-				Toast.makeText(context, category + &quot; section entering. Unchecked items: &quot; + uncheckedItems,&#xD;
-						Toast.LENGTH_LONG).show();&#xD;
+		if(entering) {&#xD;
+			Log.d(getClass().getSimpleName(), &quot;entering&quot;);&#xD;
+			Toast.makeText(context, category + &quot; section entering. Unchecked items: &quot; + uncheckedItems,&#xD;
+					Toast.LENGTH_LONG).show();&#xD;
 &#xD;
-				NotificationManager notificationManager = (NotificationManager) context&#xD;
-						.getSystemService(Context.NOTIFICATION_SERVICE);&#xD;
-				Notification notification = createNotification();&#xD;
+			NotificationManager notificationManager = (NotificationManager) context&#xD;
+					.getSystemService(Context.NOTIFICATION_SERVICE);&#xD;
+			Notification notification = createNotification();&#xD;
 &#xD;
-				Intent viewIntent = new Intent(context, ViewListActivity.class);&#xD;
-				PendingIntent pendingIntent = PendingIntent.getActivity(context, 0,&#xD;
-						viewIntent, PendingIntent.FLAG_CANCEL_CURRENT);&#xD;
-				notification.setLatestEventInfo(context, category&#xD;
-						+ &quot; section entering. Unchecked items: &quot; + uncheckedItems,&#xD;
-						&quot;You are entering your point of interest.&quot;, pendingIntent);&#xD;
-				notificationManager.notify(NOTIFICATION_ID, notification);	&#xD;
-	        } &#xD;
-			else {&#xD;
-				Log.d(getClass().getSimpleName(), &quot;exiting&quot;);&#xD;
-				Toast.makeText(context, category + &quot; section exiting.&quot;,	Toast.LENGTH_LONG).show();&#xD;
-			}&#xD;
-     }&#xD;
+			Intent viewIntent = new Intent(context, ViewListActivity.class);&#xD;
+			PendingIntent pendingIntent = PendingIntent.getActivity(context, 0,&#xD;
+					viewIntent, PendingIntent.FLAG_CANCEL_CURRENT);&#xD;
+			notification.setLatestEventInfo(context, category&#xD;
+					+ &quot; section entering. Unchecked items: &quot; + uncheckedItems,&#xD;
+					&quot;You are entering your point of interest.&quot;, pendingIntent);&#xD;
+			notificationManager.notify(NOTIFICATION_ID, notification);	&#xD;
+		} &#xD;
+		else {&#xD;
+			Log.d(getClass().getSimpleName(), &quot;exiting&quot;);&#xD;
+			Toast.makeText(context, category + &quot; section exiting.&quot;,	Toast.LENGTH_LONG).show();&#xD;
+		}&#xD;
 	</body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ANcssMxeEeKgUcEu-gntqA" name="createNotification" specification="_AHTocMxeEeKgUcEu-gntqA">
@@ -5862,7 +6271,7 @@ and NotificationReceiver objects.&#xD;
 			wifiManager.setWifiEnabled(true);
 		
 		// Create Triangulation
-		triangulation = new WCL(wifiManager, initParams);
+		triangulation = new WCL(wifiManager, initParams, context);
 	</body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_F0neoMxgEeKgUcEu-gntqA" name="setPreference" specification="_FzGbsMxgEeKgUcEu-gntqA">
@@ -5901,7 +6310,7 @@ and NotificationReceiver objects.&#xD;
 			
 			if(ap != null) {
 				Intent intent = new Intent(ProximityIntentReceiver.PROXIMITY_ALERT);
-				intent.putExtra(&quot;category&quot;, &quot;Food&quot;);
+				intent.putExtra(&quot;category&quot;, &quot;Food&quot;); // TODO: change food...
 				context.sendBroadcast(intent);
 			}
 			try {
@@ -5997,17 +6406,20 @@ and NotificationReceiver objects.&#xD;
               <defaultValue xmi:type="uml:LiteralString" xmi:id="_F0fi08xgEeKgUcEu-gntqA" value="5"/>
             </ownedAttribute>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_F0lpcMxgEeKgUcEu-gntqA" name="Triangulation" specification="_Fz_MgMxgEeKgUcEu-gntqA">
-              <ownedParameter xmi:id="_F0lpccxgEeKgUcEu-gntqA" name="wm" type="_tI340cfZEeKj__JByXBSIg"/>
-              <ownedParameter xmi:id="_F0lpcsxgEeKgUcEu-gntqA" name="initParams" type="_tGWwUcfZEeKj__JByXBSIg"/>
-              <ownedParameter xmi:id="_F0lpc8xgEeKgUcEu-gntqA" type="_Fy940MxgEeKgUcEu-gntqA" direction="return"/>
+              <ownedParameter xmi:id="_PvqZYM77EeKjLNbOGolaIA" name="wm" type="_tI340cfZEeKj__JByXBSIg"/>
+              <ownedParameter xmi:id="_PvqZYc77EeKjLNbOGolaIA" name="initParams" type="_tGWwUcfZEeKj__JByXBSIg"/>
+              <ownedParameter xmi:id="_PvqZYs77EeKjLNbOGolaIA" type="_Fy940MxgEeKgUcEu-gntqA" direction="return"/>
+              <ownedParameter xmi:id="_PvqZY877EeKjLNbOGolaIA" name="context" type="_tGaasMfZEeKj__JByXBSIg"/>
               <language>java</language>
               <body>triangMethod = (String) initParams.get(TRIANG_METHOD);
 		scanNumber = (Integer) initParams.get(SCAN_NUMBER);
-		wifiScanner = new WiFiScanner(wm, scanNumber);
+		wifiScanner = new WiFiScanner(wm, scanNumber, context);
 	</body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_F0mQgMxgEeKgUcEu-gntqA" name="calculateAccessPointPosition" specification="_FzAVEMxgEeKgUcEu-gntqA">
-              <ownedParameter xmi:id="_F0mQgcxgEeKgUcEu-gntqA" type="_s6ih4MfZEeKj__JByXBSIg" direction="return"/>
+              <ownedParameter xmi:id="_F0mQgcxgEeKgUcEu-gntqA" type="_s6ih4MfZEeKj__JByXBSIg" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>apList = wifiScanner.scanStart();
 		return apList.get(0);
@@ -6029,6 +6441,7 @@ and NotificationReceiver objects.&#xD;
               <ownedParameter xmi:id="_Fz_zkMxgEeKgUcEu-gntqA" name="wm" type="_tI340cfZEeKj__JByXBSIg"/>
               <ownedParameter xmi:id="_Fz_zkcxgEeKgUcEu-gntqA" name="initParams" type="_tGWwUcfZEeKj__JByXBSIg"/>
               <ownedParameter xmi:id="_Fz_zlMxgEeKgUcEu-gntqA" type="_Fy940MxgEeKgUcEu-gntqA" direction="return"/>
+              <ownedParameter xmi:id="_Pvn9IM77EeKjLNbOGolaIA" name="context" type="_tGaasMfZEeKj__JByXBSIg"/>
             </ownedOperation>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_FzOXgMxgEeKgUcEu-gntqA" name="WCL">
@@ -6043,11 +6456,12 @@ and NotificationReceiver objects.&#xD;
               <defaultValue xmi:type="uml:LiteralString" xmi:id="_F0kbUMxgEeKgUcEu-gntqA" value="1.3f"/>
             </ownedAttribute>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_F0oswMxgEeKgUcEu-gntqA" name="WCL" specification="_F0I9gMxgEeKgUcEu-gntqA">
-              <ownedParameter xmi:id="_F0oswcxgEeKgUcEu-gntqA" name="wm" type="_tI340cfZEeKj__JByXBSIg"/>
-              <ownedParameter xmi:id="_F0oswsxgEeKgUcEu-gntqA" name="initParams" type="_tGWwUcfZEeKj__JByXBSIg"/>
-              <ownedParameter xmi:id="_F0osw8xgEeKgUcEu-gntqA" type="_FzOXgMxgEeKgUcEu-gntqA" direction="return"/>
+              <ownedParameter xmi:id="_ZBslcM77EeKjLNbOGolaIA" name="wm" type="_tI340cfZEeKj__JByXBSIg"/>
+              <ownedParameter xmi:id="_ZBslcc77EeKjLNbOGolaIA" name="initParams" type="_tGWwUcfZEeKj__JByXBSIg"/>
+              <ownedParameter xmi:id="_ZBslcs77EeKjLNbOGolaIA" type="_FzOXgMxgEeKgUcEu-gntqA" direction="return"/>
+              <ownedParameter xmi:id="_ZBslc877EeKjLNbOGolaIA" name="context" type="_tGaasMfZEeKj__JByXBSIg"/>
               <language>java</language>
-              <body>super(wm, initParams);
+              <body>super(wm, initParams, context);
 	</body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_F0osxMxgEeKgUcEu-gntqA" name="doAWCL" specification="_FzPloMxgEeKgUcEu-gntqA">
@@ -6072,7 +6486,9 @@ and NotificationReceiver objects.&#xD;
 	</body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_F0osxcxgEeKgUcEu-gntqA" name="calculateAccessPointPosition" specification="_FzQMsMxgEeKgUcEu-gntqA">
-              <ownedParameter xmi:id="_F0osxsxgEeKgUcEu-gntqA" type="_s6ih4MfZEeKj__JByXBSIg" direction="return"/>
+              <ownedParameter xmi:id="_F0osxsxgEeKgUcEu-gntqA" type="_s6ih4MfZEeKj__JByXBSIg" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>apList = wifiScanner.scanStart();
 
@@ -6144,6 +6560,7 @@ and NotificationReceiver objects.&#xD;
               <ownedParameter xmi:id="_F0I9gcxgEeKgUcEu-gntqA" name="wm" type="_tI340cfZEeKj__JByXBSIg"/>
               <ownedParameter xmi:id="_F0I9gsxgEeKgUcEu-gntqA" name="initParams" type="_tGWwUcfZEeKj__JByXBSIg"/>
               <ownedParameter xmi:id="_F0I9hcxgEeKgUcEu-gntqA" type="_FzOXgMxgEeKgUcEu-gntqA" direction="return"/>
+              <ownedParameter xmi:id="_ZBqwQM77EeKjLNbOGolaIA" name="context" type="_tGaasMfZEeKj__JByXBSIg"/>
             </ownedOperation>
           </packagedElement>
           <packagedElement xmi:type="uml:Association" xmi:id="_F0sXIMxgEeKgUcEu-gntqA" name="" memberEnd="_F0sXIcxgEeKgUcEu-gntqA _F0cfgMxgEeKgUcEu-gntqA">
@@ -6188,6 +6605,11 @@ Call web service for the access point locations</body>
               </qualifier>
               <defaultValue xmi:type="uml:LiteralString" xmi:id="_hevBEM4oEeKrBaw-sqCxfw" value="null"/>
             </ownedAttribute>
+            <ownedAttribute xmi:id="_eGAHcM7oEeKjLNbOGolaIA" name="db" visibility="private" type="_AMC-gcxeEeKgUcEu-gntqA" association="_eGt5IM7oEeKjLNbOGolaIA"/>
+            <ownedAttribute xmi:id="_eGB8oM7oEeKjLNbOGolaIA" name="INFO_NAME" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_eGB8oc7oEeKjLNbOGolaIA" value="&quot;floorplan&quot;"/>
+            </ownedAttribute>
             <interfaceRealization xmi:id="_Lb54gc4nEeKrBaw-sqCxfw" client="_Xl5cAMxtEeKCI6TvU50wYw" supplier="_Lb4qYM4nEeKrBaw-sqCxfw" contract="_Lb4qYM4nEeKrBaw-sqCxfw"/>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_XmDNAcxtEeKCI6TvU50wYw" name="getAccessPoints" specification="_Xl74QMxtEeKCI6TvU50wYw">
               <ownedParameter xmi:id="_XmDNAsxtEeKCI6TvU50wYw" type="_s6ih4MfZEeKj__JByXBSIg" isOrdered="true" direction="return">
@@ -6195,27 +6617,58 @@ Call web service for the access point locations</body>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XmDNA8xtEeKCI6TvU50wYw" value="*"/>
               </ownedParameter>
               <language>java</language>
-              <body>return apList;
+              <body>if(apList == null) {
+			db.open();
+			apList = db.dbGetAccessPoint();
+			db.close();
+		}
+		return apList;
 	</body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ixd7oM4lEeKrBaw-sqCxfw" name="FloorPlan" specification="_Xl6qIsxtEeKCI6TvU50wYw">
-              <ownedParameter xmi:id="_ixd7oc4lEeKrBaw-sqCxfw" type="_Xl5cAMxtEeKCI6TvU50wYw" direction="return">
+              <ownedParameter xmi:id="_QhjwYM77EeKjLNbOGolaIA" type="_Xl5cAMxtEeKCI6TvU50wYw" direction="return">
                 <name xsi:nil="true"/>
               </ownedParameter>
+              <ownedParameter xmi:id="_QhjwYc77EeKjLNbOGolaIA" name="context" type="_tGaasMfZEeKj__JByXBSIg"/>
               <language>java</language>
               <body>String nameSpace =&quot;namespace&quot;;
 		String url = &quot;url&quot;;
 		webService = new WebService(nameSpace, url);
-		
+		db = new DatabaseAdaptor(context);
 	</body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ixeisM4lEeKrBaw-sqCxfw" name="getAPsFromSoap" specification="_TSULUMyLEeKCI6TvU50wYw">
               <ownedParameter xmi:id="_drGFcM4qEeKrBaw-sqCxfw" direction="return">
+                <name xsi:nil="true"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_drGFcc4qEeKrBaw-sqCxfw" value="1"/>
               </ownedParameter>
               <ownedParameter xmi:id="_drGFcs4qEeKrBaw-sqCxfw" name="soap" type="_jhBlwc4kEeKrBaw-sqCxfw"/>
               <language>java</language>
-              <body>apList = new ArrayList&lt;AccessPoint>(soap.getPropertyCount());
+              <body>if(soap == null) {
+//			apList = null;
+//			return;
+		// TODO: delete the below part and uncomment the above
+			
+			// make dummy AP information
+			soap = new SoapObject();
+			String[] ssid = {&quot;CMU&quot;, &quot;CMU-SECURE&quot;, &quot;PSC&quot;, &quot;LINKCISCO&quot;};
+			for(int i=0;i&lt;4;i++) {
+				SoapObject sp = new SoapObject();
+				sp.addProperty(&quot;BSSID&quot;, &quot;some value&quot;);
+				sp.addProperty(&quot;SSID&quot;, ssid[i]);
+				sp.addProperty(&quot;POSX&quot;, String.valueOf(i).concat(&quot;.0&quot;));
+				sp.addProperty(&quot;POSY&quot;, String.valueOf(i).concat(&quot;.0&quot;));
+				
+				soap.addSoapObject(sp);
+			}
+		}
+		
+		// Delete the existing AP information
+		db.open();
+		db.dbDeleteAccessPoint();
+		db.close();
+		
+		apList = new ArrayList&lt;AccessPoint>(soap.getPropertyCount());
 		
 		for(int i=0; i&lt;soap.getPropertyCount(); i++) {
 			SoapObject pii = (SoapObject)soap.getProperty(i);
@@ -6228,17 +6681,26 @@ Call web service for the access point locations</body>
 			ap.setPosY(Float.parseFloat(pii.getPropertyAsString(3)));
 			apList.add(ap);
 		}
+		
+		saveAccessPoints();
 	</body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Lb7GoM4nEeKrBaw-sqCxfw" name="run" specification="_LbvgcM4nEeKrBaw-sqCxfw">
               <language>java</language>
               <body>setWSInputs();
 		try {
-			getAPsFromSoap(webService.invokeMethod(&quot;methodName&quot;, wsArguments));
-		} catch (ConnectException e) {
-			e.printStackTrace();
+//			if(!checkFloorplanVersion(webService.invokeMethod(&quot;checkVersion&quot;, wsArguments))) {
+//				getAPsFromSoap(webService.invokeMethod(&quot;methodName&quot;, wsArguments));
+//			}
+			//TODO: change the above with the below 
+			if(!checkFloorplanVersion(null)) {
+				getAPsFromSoap(null);
+			}
+//		} catch (ConnectException e) {
+//			e.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();
+			
 		}
 	</body>
             </ownedBehavior>
@@ -6246,6 +6708,53 @@ Call web service for the access point locations</body>
               <language>java</language>
               <body>wsArguments = new HashMap&lt;String, String>(1);
 		wsArguments.put(&quot;input1&quot;, &quot;value1&quot;);
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_eGSbUM7oEeKjLNbOGolaIA" name="saveAccessPoints" specification="_eD0WIM7oEeKjLNbOGolaIA">
+              <language>java</language>
+              <body>// Open database
+		db.open();
+		
+		// Insert apList into db
+		for(Iterator&lt;AccessPoint> itr = apList.iterator(); itr.hasNext(); ) {
+			AccessPoint ap = itr.next();
+			db.dbCreateAccessPoint(ap);
+		}
+		
+		// Close database
+		db.close();
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_eGTCYM7oEeKjLNbOGolaIA" name="checkFloorplanVersion" specification="_eD09MM7oEeKjLNbOGolaIA">
+              <ownedParameter xmi:id="_eGTCYc7oEeKjLNbOGolaIA" name="soapObject" type="_jhBlwc4kEeKrBaw-sqCxfw"/>
+              <ownedParameter xmi:id="_eGTCYs7oEeKjLNbOGolaIA" direction="return">
+                <name xsi:nil="true"/>
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>if(soapObject == null) {
+//			return true; // use the existing version of floor plan regardless of error
+		// TODO: delete the below part and uncomment the above
+			// make dummy version information
+			soapObject = new SoapObject();
+			soapObject.addProperty(&quot;Version&quot;, &quot;1.0&quot;);
+		}
+		
+		db.open();
+		String oldVersion = db.dbGetVersion(INFO_NAME);
+		
+		// Check version
+		boolean result = false;
+		if(oldVersion != null) {
+			result = oldVersion.equals(soapObject.getPropertyAsString(&quot;Version&quot;));
+		}
+		// If not equal
+		if(!result) {
+			// insert or update
+			db.dbSetVersion(INFO_NAME, soapObject.getPropertyAsString(&quot;Version&quot;), &quot;Floorplan Information Version&quot;);
+		}
+		db.close();
+		return result;
 	</body>
             </ownedBehavior>
             <ownedOperation xmi:id="_Xl6qIsxtEeKCI6TvU50wYw" name="FloorPlan" method="_ixd7oM4lEeKrBaw-sqCxfw">
@@ -6257,6 +6766,7 @@ Call web service for the access point locations</body>
 	 *</body>
               </ownedComment>
               <ownedParameter xmi:id="_Xl7RM8xtEeKCI6TvU50wYw" type="_Xl5cAMxtEeKCI6TvU50wYw" direction="return"/>
+              <ownedParameter xmi:id="_QhgtEM77EeKjLNbOGolaIA" name="context" type="_tGaasMfZEeKj__JByXBSIg"/>
             </ownedOperation>
             <ownedOperation xmi:id="_Xl74QMxtEeKCI6TvU50wYw" name="getAccessPoints" visibility="public" method="_XmDNAcxtEeKCI6TvU50wYw">
               <ownedComment xmi:id="_BxArEM4oEeKrBaw-sqCxfw">
@@ -6267,7 +6777,7 @@ Call web service for the access point locations</body>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Bw26Ec4oEeKrBaw-sqCxfw" value="*"/>
               </ownedParameter>
             </ownedOperation>
-            <ownedOperation xmi:id="_TSULUMyLEeKCI6TvU50wYw" name="getAPsFromSoap" method="_ixeisM4lEeKrBaw-sqCxfw">
+            <ownedOperation xmi:id="_TSULUMyLEeKCI6TvU50wYw" name="getAPsFromSoap" visibility="private" method="_ixeisM4lEeKrBaw-sqCxfw">
               <ownedComment xmi:id="_ixfw0M4lEeKrBaw-sqCxfw">
                 <body>Parse results and retrieve data
 	 * 
@@ -6284,6 +6794,17 @@ Call web service for the access point locations</body>
                 <body>Set Web Service Inputs
 	 *</body>
               </ownedComment>
+            </ownedOperation>
+            <ownedOperation xmi:id="_eD0WIM7oEeKjLNbOGolaIA" name="saveAccessPoints" visibility="private" method="_eGSbUM7oEeKjLNbOGolaIA">
+              <ownedComment xmi:id="_eGkIIM7oEeKjLNbOGolaIA">
+                <body>Save Access Points information to the DB</body>
+              </ownedComment>
+            </ownedOperation>
+            <ownedOperation xmi:id="_eD09MM7oEeKjLNbOGolaIA" name="checkFloorplanVersion" visibility="private" method="_eGTCYM7oEeKjLNbOGolaIA">
+              <ownedParameter xmi:id="_eD1kQM7oEeKjLNbOGolaIA" name="soapObject" type="_jhBlwc4kEeKrBaw-sqCxfw"/>
+              <ownedParameter xmi:id="_eFdU4M7oEeKjLNbOGolaIA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
             </ownedOperation>
           </packagedElement>
           <packagedElement xmi:type="uml:Association" xmi:id="_XmEbIMxtEeKCI6TvU50wYw" name="" memberEnd="_XmEbIcxtEeKCI6TvU50wYw _XmB-4MxtEeKCI6TvU50wYw">
@@ -6308,7 +6829,9 @@ Call web service for the access point locations</body>
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedAttribute>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_jhlmcM4kEeKrBaw-sqCxfw" name="WebService" specification="_jgYFgM4kEeKrBaw-sqCxfw">
-              <ownedParameter xmi:id="_jhlmcc4kEeKrBaw-sqCxfw" type="_jgRX0M4kEeKrBaw-sqCxfw" direction="return"/>
+              <ownedParameter xmi:id="_jhlmcc4kEeKrBaw-sqCxfw" type="_jgRX0M4kEeKrBaw-sqCxfw" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>nameSpace = &quot;http://costcode.mse.cmu.edu/&quot;;
 		url = &quot;http://shltestweb.appspot.com/shlappeng&quot;;	
@@ -6326,7 +6849,9 @@ Call web service for the access point locations</body>
               <ownedParameter xmi:id="_jhsUIc4kEeKrBaw-sqCxfw" name="url">
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
               </ownedParameter>
-              <ownedParameter xmi:id="_jhsUIs4kEeKrBaw-sqCxfw" type="_jgRX0M4kEeKrBaw-sqCxfw" direction="return"/>
+              <ownedParameter xmi:id="_jhsUIs4kEeKrBaw-sqCxfw" type="_jgRX0M4kEeKrBaw-sqCxfw" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>this.nameSpace = nameSpace;
 		this.methodName = methodName;
@@ -6341,7 +6866,9 @@ Call web service for the access point locations</body>
               <ownedParameter xmi:id="_jhwlkc4kEeKrBaw-sqCxfw" name="url">
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
               </ownedParameter>
-              <ownedParameter xmi:id="_jhwlks4kEeKrBaw-sqCxfw" type="_jgRX0M4kEeKrBaw-sqCxfw" direction="return"/>
+              <ownedParameter xmi:id="_jhwlks4kEeKrBaw-sqCxfw" type="_jgRX0M4kEeKrBaw-sqCxfw" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>this.nameSpace = nameSpace;
 		this.url = url;
@@ -6352,7 +6879,9 @@ Call web service for the access point locations</body>
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
               </ownedParameter>
               <ownedParameter xmi:id="_jhxzss4kEeKrBaw-sqCxfw" name="arguments" type="_tGWwUcfZEeKj__JByXBSIg"/>
-              <ownedParameter xmi:id="_jhxzs84kEeKrBaw-sqCxfw" type="_jhBlwc4kEeKrBaw-sqCxfw" direction="return"/>
+              <ownedParameter xmi:id="_jhxzs84kEeKrBaw-sqCxfw" type="_jhBlwc4kEeKrBaw-sqCxfw" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>this.methodName = methodName;
 		soapAction = nameSpace + methodName;
@@ -6361,7 +6890,9 @@ Call web service for the access point locations</body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_jhyawM4kEeKrBaw-sqCxfw" name="invokeMethod" specification="_jhL90M4kEeKrBaw-sqCxfw">
               <ownedParameter xmi:id="_jhyawc4kEeKrBaw-sqCxfw" name="arguments" type="_tGWwUcfZEeKj__JByXBSIg"/>
-              <ownedParameter xmi:id="_jhyaws4kEeKrBaw-sqCxfw" type="_jhBlwc4kEeKrBaw-sqCxfw" direction="return"/>
+              <ownedParameter xmi:id="_jhyaws4kEeKrBaw-sqCxfw" type="_jhBlwc4kEeKrBaw-sqCxfw" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>SoapObject request = new SoapObject(nameSpace, methodName);
 		
@@ -6380,9 +6911,11 @@ Call web service for the access point locations</body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_jhzo4M4kEeKrBaw-sqCxfw" name="makeCall" specification="_jhW88M4kEeKrBaw-sqCxfw">
               <ownedParameter xmi:id="_jhzo4c4kEeKrBaw-sqCxfw" name="envelope" type="_jhDa8c4kEeKrBaw-sqCxfw"/>
-              <ownedParameter xmi:id="_jhzo4s4kEeKrBaw-sqCxfw" type="_jhBlwc4kEeKrBaw-sqCxfw" direction="return"/>
+              <ownedParameter xmi:id="_jhzo4s4kEeKrBaw-sqCxfw" type="_jhBlwc4kEeKrBaw-sqCxfw" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
-              <body>SoapObject result; // Return object
+              <body>SoapObject result = null; // Return object
 		
 		HttpTransportSE androidHttpTransport = new HttpTransportSE(url);
 
@@ -6450,6 +6983,9 @@ Call web service for the access point locations</body>
           </packagedElement>
           <packagedElement xmi:type="uml:Association" xmi:id="_ixhmAM4lEeKrBaw-sqCxfw" name="" memberEnd="_ixhmAc4lEeKrBaw-sqCxfw _ixa4UM4lEeKrBaw-sqCxfw">
             <ownedEnd xmi:id="_ixhmAc4lEeKrBaw-sqCxfw" name="" type="_Xl5cAMxtEeKCI6TvU50wYw" association="_ixhmAM4lEeKrBaw-sqCxfw"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_eGt5IM7oEeKjLNbOGolaIA" name="" memberEnd="_eGt5Ic7oEeKjLNbOGolaIA _eGAHcM7oEeKjLNbOGolaIA">
+            <ownedEnd xmi:id="_eGt5Ic7oEeKjLNbOGolaIA" name="" type="_Xl5cAMxtEeKCI6TvU50wYw" association="_eGt5IM7oEeKjLNbOGolaIA"/>
           </packagedElement>
         </packagedElement>
       </packagedElement>
@@ -7256,4 +7792,44 @@ Call web service for the access point locations</body>
   <UMLLabProfile:LegacyStyledElement xmi:id="_Bw-O0M4oEeKrBaw-sqCxfw" base_Element="_Bw9nwM4oEeKrBaw-sqCxfw"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_vJxJgM4vEeKrBaw-sqCxfw" base_Element="_vJwicM4vEeKrBaw-sqCxfw"/>
   <UMLLabProfile:Reference xmi:id="_vJ0M0M4vEeKrBaw-sqCxfw" base_Element="_vJzlwM4vEeKrBaw-sqCxfw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_eGAugM7oEeKjLNbOGolaIA" base_Element="_eGAHcM7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_eGCjsM7oEeKjLNbOGolaIA" base_Element="_eGB8oM7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:Reference xmi:id="_eGvHQM7oEeKjLNbOGolaIA" base_Element="_eGt5IM7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_jf_D4c7oEeKjLNbOGolaIA" base_Element="_jf-c0M7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_jgASA87oEeKjLNbOGolaIA" base_Element="_jgASAM7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_jgD8YM7oEeKjLNbOGolaIA" base_Element="_jgCuQM7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_jgGYoc7oEeKjLNbOGolaIA" base_Element="_jgFxkM7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_jgI04M7oEeKjLNbOGolaIA" base_Element="_jgIN0M7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_jgKqE87oEeKjLNbOGolaIA" base_Element="_jgKqEM7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_jgNtYs7oEeKjLNbOGolaIA" base_Element="_jgNGUM7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhAXkc7oEeKjLNbOGolaIA" base_Element="_jg_wgM7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhA-os7oEeKjLNbOGolaIA" base_Element="_jhA-oM7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhBlsc7oEeKjLNbOGolaIA" base_Element="_jhA-o87oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhCMwM7oEeKjLNbOGolaIA" base_Element="_jhBlss7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhCMw87oEeKjLNbOGolaIA" base_Element="_jhCMwc7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhDa4M7oEeKjLNbOGolaIA" base_Element="_jhCz0M7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhDa487oEeKjLNbOGolaIA" base_Element="_jhDa4c7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhEB8c7oEeKjLNbOGolaIA" base_Element="_jhDa5M7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhEpAM7oEeKjLNbOGolaIA" base_Element="_jhEB8s7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhEpA87oEeKjLNbOGolaIA" base_Element="_jhEpAc7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhFQEs7oEeKjLNbOGolaIA" base_Element="_jhFQEM7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhF3Is7oEeKjLNbOGolaIA" base_Element="_jhF3IM7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhGeMc7oEeKjLNbOGolaIA" base_Element="_jhF3I87oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhHFQc7oEeKjLNbOGolaIA" base_Element="_jhGeMs7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhHsUM7oEeKjLNbOGolaIA" base_Element="_jhHFQs7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhITYM7oEeKjLNbOGolaIA" base_Element="_jhHsUc7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhITY87oEeKjLNbOGolaIA" base_Element="_jhITYc7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhI6cs7oEeKjLNbOGolaIA" base_Element="_jhI6cM7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhJhgs7oEeKjLNbOGolaIA" base_Element="_jhJhgM7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhKIkc7oEeKjLNbOGolaIA" base_Element="_jhJhg87oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhKvoM7oEeKjLNbOGolaIA" base_Element="_jhKIks7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhKvo87oEeKjLNbOGolaIA" base_Element="_jhKvoc7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhLWss7oEeKjLNbOGolaIA" base_Element="_jhLWsM7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhL9wc7oEeKjLNbOGolaIA" base_Element="_jhLWs87oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhMk0M7oEeKjLNbOGolaIA" base_Element="_jhL9ws7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhNL4M7oEeKjLNbOGolaIA" base_Element="_jhMk0c7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhNL487oEeKjLNbOGolaIA" base_Element="_jhNL4c7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhNy8c7oEeKjLNbOGolaIA" base_Element="_jhNL5M7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhOaAM7oEeKjLNbOGolaIA" base_Element="_jhNy8s7oEeKjLNbOGolaIA"/>
+  <UMLLabProfile:StyledElement xmi:id="_jhOaA87oEeKjLNbOGolaIA" base_Element="_jhOaAc7oEeKjLNbOGolaIA"/>
 </xmi:XMI>

@@ -8,6 +8,7 @@ import java.util.List;
 
 import cmu.costcode.FloorPlan.FloorPlan;
 
+import android.content.Context;
 import android.graphics.PointF;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiManager;
@@ -42,20 +43,14 @@ public class WiFiScanner {
 	private List<AccessPoint> apList;
 	private FloorPlan fp = null;
 	
-	public WiFiScanner(WifiManager wm, int scanNumber) {
+	public WiFiScanner(WifiManager wm, int scanNumber, Context context) {
 		wifimanager = wm;
 		this.scanNumber = scanNumber;
 		
 		// Get the AP information
 		// Create thread
-		fp = new FloorPlan();
-		//fp.run(); // TODO Uncomment this line for the actual execution of web service
-		apList = fp.getAccessPoints();
-		
-		// TODO Remove the below part for the actual execution of web service
-		// mock the AP position data
-		if(apList == null)
-			apList = new ArrayList<AccessPoint>(10);
+		fp = new FloorPlan(context);
+		fp.run();
 	}
 	
 	public List<AccessPoint> scanStart() {
@@ -63,7 +58,10 @@ public class WiFiScanner {
 		if (scanFlag == false) {
 			scanFlag = true;
 		}
-		
+		List<AccessPoint> tempList = fp.getAccessPoints(); // get Floor plan information
+		apList = new ArrayList<AccessPoint>(tempList.size());
+		apList.addAll(tempList);
+
 		wifimanager.startScan();
 		mScanResult = wifimanager.getScanResults();
 		for(int i=0; i<scanNumber-2; i++) {
@@ -73,7 +71,7 @@ public class WiFiScanner {
 		
 		parseWIFIScanResult(); // get WIFISCanResult
 		mScanResult = null;
-		
+
 		return apList;
 	}
 	
@@ -109,9 +107,17 @@ public class WiFiScanner {
 				addAP(oldResult, i, rssi / tCount);
 			}
 		}
+		
+		// Remove AP which doesn't have rssi
+		for(int i=apList.size()-1; i>=0;i--) {
+			if(apList.get(i).getRssi() == 0) {
+				apList.remove(i);
+			}
+		}
 	}
 		
 	private void addAP(ScanResult mResult, int i, float rssi) {
+
 		for (Iterator<AccessPoint> itd = apList.iterator(); itd.hasNext();) {
 			AccessPoint ap = itd.next();
 			if(ap.getSsid().equals(mResult.SSID)) {
@@ -120,16 +126,7 @@ public class WiFiScanner {
 				ap.setFrequency(mResult.frequency);
 				ap.setRssi(rssi);
 			}
-			
 		}
-		
-		// TODO: delete the below part for the real WS call
-		PointF mockAP = null;
-		mockAP = new PointF((float) i, (float) i);
-		AccessPoint ap = new AccessPoint(mResult.BSSID, mResult.SSID,
-				mResult.capabilities, mResult.frequency, rssi, mockAP.x,
-				mockAP.y);
-		apList.add(ap);
 	}
 
 //	private void getWIFIScanResult() {

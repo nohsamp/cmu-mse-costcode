@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.Map;
 
+import android.content.Context;
 import android.net.wifi.WifiManager;
 
 import cmu.costcode.WIFIScanner.AccessPoint;
@@ -14,8 +15,8 @@ public class WCL extends Triangulation {
 
 	private static float g = 1.3f;
 	
-	public WCL(WifiManager wm, Map<String, Object> initParams) {
-		super(wm, initParams);
+	public WCL(WifiManager wm, Map<String, Object> initParams, Context context) {
+		super(wm, initParams, context);
 	}
 	
 	public void doAWCL() {

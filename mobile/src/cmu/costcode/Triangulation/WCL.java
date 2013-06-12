@@ -1,3 +1,4 @@
+
 package cmu.costcode.Triangulation;
 
 import java.util.Collections;
@@ -9,7 +10,6 @@ import android.content.Context;
 import android.net.wifi.WifiManager;
 
 import cmu.costcode.WIFIScanner.AccessPoint;
-import cmu.costcode.WIFIScanner.WiFiScanner;
 
 public class WCL extends Triangulation {
 

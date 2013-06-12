@@ -5,8 +5,10 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 import cmu.costcode.FloorPlan.FloorPlan;
+import cmu.costcode.Triangulation.Triangulation;
 
 import android.content.Context;
 import android.graphics.PointF;
@@ -28,6 +30,7 @@ public class WiFiScanner {
 
 	private int scanNumber = 5;
 	private boolean scanFlag = false;
+	private boolean noiseFilterFlag = true;
 
 	// WifiManager variable
 	WifiManager wifimanager;
@@ -38,14 +41,16 @@ public class WiFiScanner {
 	int normCount = 0;
 	int avgCount = 0;
 	int dropCount = 0;
-
+	
 	private List<ScanResult> mScanResult = null; // ScanResult List
 	private List<AccessPoint> apList;
 	private FloorPlan fp = null;
 	
-	public WiFiScanner(WifiManager wm, int scanNumber, Context context) {
+	public WiFiScanner(WifiManager wm, Map<String, Object> initParams, Context context) {
 		wifimanager = wm;
-		this.scanNumber = scanNumber;
+		
+		scanNumber = (Integer) initParams.get(Triangulation.SCAN_NUMBER);
+		noiseFilterFlag = (Boolean) initParams.get(Triangulation.NOISE_FILTER);
 		
 		// Get the AP information
 		// Create thread
@@ -64,7 +69,7 @@ public class WiFiScanner {
 
 		wifimanager.startScan();
 		mScanResult = wifimanager.getScanResults();
-		for(int i=0; i<scanNumber-2; i++) {
+		for(int i=0; i<scanNumber-1; i++) {
 			wifimanager.startScan();
 			mScanResult.addAll(wifimanager.getScanResults());
 		}
@@ -95,7 +100,11 @@ public class WiFiScanner {
 		for (int i = 0; i < mScanResult.size(); i++) {
 			newResult = mScanResult.get(i);
 			if (i > 0 && oldResult.BSSID.compareTo(newResult.BSSID) != 0) {
-				addAP(oldResult, i, rssi / tCount);
+				// if noiseFilterFlag is true and tCount is less than scanNumber, 
+   				// drop info from AP
+   				if(!noiseFilterFlag || tCount == scanNumber) {  
+   					addAP(oldResult, i, rssi / tCount);
+   				}
 				rssi = newResult.level;
 				tCount = 1;
 			} else {
@@ -104,7 +113,11 @@ public class WiFiScanner {
 			}
 			oldResult = newResult;
 			if (i == mScanResult.size() - 1) {
-				addAP(oldResult, i, rssi / tCount);
+				// if noiseFilterFlag is true and tCount is less than scanNumber, 
+   				// drop info from AP
+   				if(!noiseFilterFlag || tCount == scanNumber) {  
+   					addAP(oldResult, i, rssi / tCount);
+   				}
 			}
 		}
 		
@@ -128,14 +141,4 @@ public class WiFiScanner {
 			}
 		}
 	}
-
-//	private void getWIFIScanResult() {
-//		Comparator<ScanResult> comparator = new Comparator<ScanResult>() {
-//			@Override
-//			public int compare(ScanResult s1, ScanResult s2) {
-//				return (s1.level >= s2.level) ? -1 : 1;
-//			}
-//		};
-//		Collections.sort(mScanResult, comparator);
-//	}
 }

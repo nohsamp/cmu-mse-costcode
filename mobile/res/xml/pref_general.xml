@@ -45,5 +45,11 @@
         android:negativeButtonText="@null"
         android:positiveButtonText="@null"
         android:title="@string/pref_wifi_data_number" />
+    
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="noise_filter_checkbox"
+        android:summary="@string/pref_description_noise_filter"
+        android:title="@string/pref_title_noise_filter" />
 
 </PreferenceScreen>

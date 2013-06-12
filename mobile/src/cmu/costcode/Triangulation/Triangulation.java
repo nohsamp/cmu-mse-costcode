@@ -15,15 +15,17 @@ public abstract class Triangulation {
 	
 	public static String TRIANG_METHOD = "TRIANG_METHOD";
 	public static String SCAN_NUMBER = "SCAN_NUMBER"; 
+	public static String NOISE_FILTER = "NOISE_FILTER";
 	
 	// Parameters for WiFi scanning
 	protected String triangMethod = "WCL";	// triangulation method: WCL, AWCL
 	protected int scanNumber = 5;				// number of wifi scan results
+	protected boolean noiseFilterFlag = true;	// Filter for dropping AP with noise data
 	
 	public Triangulation(WifiManager wm, Map<String, Object> initParams, Context context) {
 		triangMethod = (String) initParams.get(TRIANG_METHOD);
-		scanNumber = (Integer) initParams.get(SCAN_NUMBER);
-		wifiScanner = new WiFiScanner(wm, scanNumber, context);
+		
+		wifiScanner = new WiFiScanner(wm, initParams, context);
 	}
 	
 	public AccessPoint calculateAccessPointPosition() {

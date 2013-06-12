@@ -53,6 +53,7 @@ public class TriangulationTask extends AsyncTask<Void, Void, Void> {
 			bgrunFlag = prefs.getBoolean("bgrun_checkbox", true);
 			initParams.put(WCL.TRIANG_METHOD, prefs.getString("triangulation_list", "WCL"));
 			initParams.put(WCL.SCAN_NUMBER, Integer.valueOf(prefs.getString("wifi_scannum", "5")));
+			initParams.put(WCL.NOISE_FILTER, prefs.getBoolean("noise_filter_checkbox", true));
 		}
 		return true;
 	}
@@ -74,7 +75,8 @@ public class TriangulationTask extends AsyncTask<Void, Void, Void> {
 			
 			if(ap != null) {
 				Intent intent = new Intent(ProximityIntentReceiver.PROXIMITY_ALERT);
-				intent.putExtra("category", "Food"); // TODO: change food...
+				// Add category information with AP's SSID as Extra data
+				intent.putExtra("category", ap.getSsid()); 
 				context.sendBroadcast(intent);
 			}
 			try {

@@ -1,5 +1,4 @@
 package cmu.costcode.ProximityAlert;
-import cmu.costcode.ShoppingList.ViewListActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,7 +14,6 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;

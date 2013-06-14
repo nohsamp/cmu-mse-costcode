@@ -11,11 +11,11 @@ import org.ksoap2.transport.HttpTransportSE;
 public class WebService {
 	private String nameSpace, url, methodName, soapAction;
 	
-	/** Default constructor
-	 * 
+	/**
+	 * Default constructor with sample interface definitions
 	 */
 	public WebService() {
-		nameSpace = "http://costcode.mse.cmu.edu/";
+		nameSpace = "http://ws.biz.ws.cc.mse.cmu.edu/";
 		url = "http://shltestweb.appspot.com/shlappeng";	
 		methodName = "sayHello";
 		soapAction = nameSpace + methodName;
@@ -65,8 +65,10 @@ public class WebService {
 		SoapObject request = new SoapObject(nameSpace, methodName);
 		
 		// passing method arguments to SOAP request
-		for( Map.Entry<String, String> entry : arguments.entrySet()) {
-			request.addProperty(entry.getKey().toString(), entry.getValue().toString());
+		if(arguments != null) {
+			for( Map.Entry<String, String> entry : arguments.entrySet()) {
+				request.addProperty(entry.getKey().toString(), entry.getValue().toString());
+			}
 		}
 		
 		// get envelope

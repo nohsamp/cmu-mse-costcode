@@ -96,8 +96,11 @@ public class ViewListActivity extends Activity  {
 	@Override
 	public void onStop() {
 		super.onStop();
-		if(tTask != null && !tTask.isBgrunFlag() && tTask.getStatus() == Status.RUNNING)
+		if(tTask != null && !tTask.isBgrunFlag() && tTask.getStatus() == Status.RUNNING) {
+			// Unregister Broadcaster receiver for proximity alert 
+			unregisterReceiver(pReceiver);	// stop ProximityAlert
 			tTask.cancel(false);
+		}
 	}
 
 	

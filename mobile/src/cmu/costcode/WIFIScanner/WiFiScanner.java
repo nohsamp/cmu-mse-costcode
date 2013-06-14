@@ -64,6 +64,11 @@ public class WiFiScanner {
 			scanFlag = true;
 		}
 		List<AccessPoint> tempList = fp.getAccessPoints(); // get Floor plan information
+		// if there is no floor plan, return null
+		if(tempList == null || tempList.size() == 0) {
+			return null;
+		}
+		// otherwise copy floor plan to the new access point list
 		apList = new ArrayList<AccessPoint>(tempList.size());
 		apList.addAll(tempList);
 

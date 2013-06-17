@@ -55,7 +55,7 @@ public class WiFiScanner {
 		// Get the AP information
 		// Create thread
 		fp = new FloorPlan(context);
-		fp.run();
+		fp.start();
 	}
 	
 	public List<AccessPoint> scanStart() {

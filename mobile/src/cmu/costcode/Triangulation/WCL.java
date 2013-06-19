@@ -13,8 +13,16 @@ import cmu.costcode.WIFIScanner.AccessPoint;
 
 public class WCL extends Triangulation {
 
-	private static float g = 1.3f;
+	private static float g = 0.6f;
 	
+	public static float getG() {
+		return g;
+	}
+
+	public static void setG(float g) {
+		WCL.g = g;
+	}
+
 	public WCL(WifiManager wm, Map<String, Object> initParams, Context context) {
 		super(wm, initParams, context);
 	}
@@ -57,8 +65,8 @@ public class WCL extends Triangulation {
 		}
 
 		AccessPoint nearestAP = null;
-		float sumRssi = 0;
-
+		float sumRssi = 0; // sum of Rssi for g = 0.6f
+		
 		for (Iterator<AccessPoint> it = apList.iterator(); it.hasNext();) {
 			AccessPoint dataSet = it.next();
 
@@ -66,22 +74,23 @@ public class WCL extends Triangulation {
 					Math.pow(10, dataSet.getRssi() / 20), g); // RSSI: level
 																// of AP
 			sumRssi += newRssi;
-			dataSet.setRssi(newRssi); // calculate weight and set Rssi to
-										// weight
-			// getX, getY: location of AP --> mock data
+			dataSet.setRssi(newRssi); // calculate weight and set Rssi to weight
+			
+			newRssi = (float) Math.pow(
+					Math.pow(10, dataSet.getRssi() / 20), 2.7); // RSSI: level
 		}
 
 		float x = 0;
 		float y = 0;
-
-		for (Iterator<AccessPoint> itd = apList.iterator(); itd.hasNext();) {
-			AccessPoint dataSet = itd.next();
+		
+		for (Iterator<AccessPoint> it = apList.iterator(); it.hasNext();) {
+			AccessPoint dataSet = it.next();
 
 			float weight = dataSet.getRssi() / sumRssi;
 			x += dataSet.getPosX() * weight;
 			y += dataSet.getPosY() * weight;
 		}
-
+		
 		double oldDist = Double.MAX_VALUE;
 		double newDist = Double.MAX_VALUE;
 		for (Iterator<AccessPoint> itd = apList.iterator(); itd.hasNext();) {

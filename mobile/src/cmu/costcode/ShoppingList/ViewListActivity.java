@@ -27,6 +27,7 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 import cmu.costcode.ShoppingList.db.DatabaseAdaptor;
 import cmu.costcode.ShoppingList.objects.Category.Location;
@@ -39,28 +40,17 @@ public class ViewListActivity extends Activity  {
 
 	private DatabaseAdaptor db;
 	private Customer cust;
-	
+
 	//TODO: do something real (this is kinda dumb). Make the Category object do something. Map {CategoryName->Loc}
 	private static Map<String, Location> categories = new HashMap<String, Location>(); 
-	
+
 	private ProximityIntentReceiver pReceiver = null;
 	private TriangulationTask tTask = null;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
-		//TODO: do something real (this is kinda dumb). Also doesn't handle any other cases
-		// Near CMU
-//		categories.put("Electronics", new Location(40.44563, -79.948727));	// Chinese food place
-//		categories.put("Clothing", new Location(40.445375, -79.94866));		// Corner across Quiznos
-//		categories.put("Food", new Location(40.444697, -79.94862));			// Pizza Guy
-		// Test locations for Seattle's Costco HQ
-		categories.put("Electronics", new Location(47.551336, -122.065294));
-		categories.put("Clothing", new Location(47.551604, -122.065369));
-		categories.put("Food", new Location(47.551376, -122.065149));
 
-		
 		// Set the text view as the activity layout
 		setContentView(R.layout.activity_view_list);
 
@@ -75,24 +65,24 @@ public class ViewListActivity extends Activity  {
 		// Load Customer and shoppingList from DB
 		cust = db.dbGetCustomer(memberId);
 		cust.setShoppingList(db.dbGetShoppingListItems(memberId));
-		
+
 		// Add list of ShoppingListItems
 		ScrollView scroll = (ScrollView)findViewById(R.id.viewListScroll);
 		LinearLayout itemList = generateListView(this, cust.getShoppingList());
 		scroll.addView(itemList);
 	}
-	
+
 	@Override
 	public void onResume() {
 		super.onResume();
 		db.open();
 	}
-	
+
 	@Override
 	public void onPause() {
 		super.onPause();
 	}
-	
+
 	@Override
 	public void onStop() {
 		super.onStop();
@@ -103,7 +93,7 @@ public class ViewListActivity extends Activity  {
 		}
 	}
 
-	
+
 	/**
 	 * Generate an Android View to display the ShoppingList
 	 * 
@@ -207,25 +197,25 @@ public class ViewListActivity extends Activity  {
 	// Add an item into the shopping list
 	public boolean onOptionsItemSelected(MenuItem item) {
 		super.onOptionsItemSelected(item);
-		
-		if (item.getItemId() == R.id.menu_proximityalert) {
+
+		if (item.getItemId() == R.id.AddProximityAlert) {
 			Intent intent = new Intent(this, NotificationActivity.class);
 			startActivity(intent);
 		}
 		else if (item.getItemId() == R.id.menu_wifitriangulation) {
 			if(!item.getTitle().equals("WiFi Triangulation Stop")) {
-				
+
 				// Register Broadcaster receiver for proximity alert 
 				IntentFilter proximityFilter = new IntentFilter();
 				proximityFilter.addAction(ProximityIntentReceiver.PROXIMITY_ALERT);
 				pReceiver = new ProximityIntentReceiver();
 				registerReceiver(pReceiver, proximityFilter);
-				
+
 				// Debugging Code
-//				Intent intent = new Intent(ProximityIntentReceiver.PROXIMITY_ALERT);
-//				intent.putExtra("category", "Food");
-//				sendBroadcast(intent);
-				
+				//				Intent intent = new Intent(ProximityIntentReceiver.PROXIMITY_ALERT);
+				//				intent.putExtra("category", "Food");
+				//				sendBroadcast(intent);
+
 				// Create Background Triangulation Task --> asynchronous thread
 				// create new since app has to reload the preference every time
 				try {
@@ -238,63 +228,105 @@ public class ViewListActivity extends Activity  {
 			}
 			else {
 				item.setTitle("WiFi Triangulation Start");
-				
+
 				// Unregister Broadcaster receiver for proximity alert 
 				unregisterReceiver(pReceiver);	// stop ProximityAlert
-				
+
 				if(tTask != null) 
 					tTask.cancel(true);
 			}
 		}
-		
+
 		return true;
 	}
-	
+
+	/**
+	 * Creates a pretty comma-separated list of items in a given category as a string
+	 * @param category
+	 * @param items
+	 * @return
+	 */
+	private String printListReminder(String category, List<ShoppingListItem> items) {
+		String itemText = "";
+		// Create a nice comma-separated list of items with an 'and' at the end; TODO: make cleaner
+		if(items == null || items.isEmpty()) {
+			itemText = "something";
+		} else if(items.size() == 1) {
+			itemText = items.get(0).getItem().getDescription();
+		} else if(items.size() == 2) {
+			itemText = items.get(0).getItem().getDescription()
+					+ " and " + items.get(1).getItem().getDescription();
+		} else {
+			for(int i=0; i<items.size()-1; i++) {
+				itemText += items.get(i).getItem().getDescription() + ", ";
+			}
+			itemText += "and " + items.get(items.size()-1).getItem().getDescription();
+		}
+		String message = "You are near the " + category + " section. Don't forget to buy " + itemText + "!";
+		return message;
+	}
+
+	/**
+	 * Create test locations in the DB
+	 */
+	private void createDummyAlerts() {
+		//Near CMU
+		db.dbCreateAlert("Electronics", 40.44563, -79.948727);	// Chinese food place
+		db.dbCreateAlert("Clothing", 40.445375, -79.94866);	// Corner across Quiznos
+		db.dbCreateAlert("Food", 40.444697, -79.94862);	// Pizza Guy
+
+		//Test locations for Seattle's Costco HQ
+		//db.dbCreateAlert("Electronics", 47.551336, -122.065294);
+		//db.dbCreateAlert("Clothing", 47.551604, -122.065369);
+		//db.dbCreateAlert("Food", 47.551376, -122.065149);
+	}
+
+
 	/**
 	 * Toggle list Proximity Alerts on/off
 	 * @param view
 	 */
 	public void toggleProximityAlerts(View view) {
 		//TODO: register if toggle is on or off, some kind of persistent state
-		
+
 		// Is the toggle on?
 		boolean proxAlertsOn = ((ToggleButton) view).isChecked();
-		
-		// Retrieve the customer's shopping list
+
+		// Retrieve the customer's shopping list and proximity alerts
 		Map<String, ArrayList<ShoppingListItem>> shoppingList = cust.getShoppingList();
-		
-		if (proxAlertsOn) {
+		Map<String, Location> proximityAlerts = db.dbGetProxAlerts();
+
+		// Make dummy alerts if you need to
+		if(proximityAlerts.isEmpty()) {
+			Log.i("proxalert", "No Proximity Alerts were present, creating dummy alerts.");
+			createDummyAlerts();
+			shoppingList = cust.getShoppingList();
+		}
+
+		if(proxAlertsOn) {
 			// Add proximity alerts for every category on the user's list
-			for (String category : shoppingList.keySet()) {
-				Log.i(TAG, "Adding proximity alert for " + category + " at (" 
-						+ categories.get(category).getLat() + ", " + categories.get(category).getLon() + ").");
-				
+			for (String category : proximityAlerts.keySet()) {
+				Log.i(TAG, "Adding proximity alert for " + category + " at ("
+						+ proximityAlerts.get(category).getLat() + ", " + proximityAlerts.get(category).getLon() + ").");
+
 				// Build a message string
 				List<ShoppingListItem> items = shoppingList.get(category);
-				String itemText = "";
-				// Create a nice comma-separated list of items with an 'and' at the end; TODO: make cleaner
-				if(items.size() == 1) itemText = items.get(0).getItem().getDescription();
-					else if(items.size() == 2) itemText = items.get(0).getItem().getDescription()
-							+ " and " + items.get(1).getItem().getDescription();
-					else {
-						for(int i=0; i<items.size()-1; i++) {
-							itemText += items.get(i).getItem().getDescription() + ", ";
-						}
-						itemText += "and " + items.get(items.size()-1).getItem().getDescription();
-					}
-				String message = "You are near the " + category + " section. Don't forget to buy " + itemText + "!";
-				
+				String message = printListReminder(category, items);
+
 				// Add the proximity alert
-				Location categoryLoc = categories.get(category);
+				Location categoryLoc = proximityAlerts.get(category);
 				ShoppingListApplication application = (ShoppingListApplication)getApplication();
 				application.addProximityAlert(categoryLoc.getLat(), categoryLoc.getLon(), 15, -1, message);
 			}
+			Toast.makeText(this, "Activated " + proximityAlerts.size() + " proximity alerts.",
+					Toast.LENGTH_LONG).show();
 		} else {
 			// Remove proximity alerts for every category on the user's list
 			ShoppingListApplication application = (ShoppingListApplication)getApplication();
 			application.removeAllProximityAlerts();
+			Toast.makeText(this, "Deactivated all proximity alerts.", Toast.LENGTH_LONG).show();
 		}
 
 	}
-    
+
 }

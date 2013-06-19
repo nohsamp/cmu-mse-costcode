@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">Costco Shopping List</string>
@@ -10,13 +9,15 @@
     <string name="loginEmailText">Email:</string>
     <string name="loginPwordText">Password:</string>
     <string name="viewListEditButtonText">Edit List</string>
-    <string name="editListDelete">Delete</string>
+    <string name="editListDelete">X</string>
     <string name="editListAddButtonText">New Item</string>
     <string name="editListSaveButtonText">Save List</string>
     <string name="editListCategory">Category</string>
     <string name="editListCatPrompt">Select a Category:</string>
     <string name="editListVoiceButton">Voice</string>
     <string name="toggleProxAlertLabel">Toggle Proximity Alerts:</string>
+    <string name="manageProxAlertMenuLabel">Manage Proximity Alert</string>
+    <string name="action_settings">Settings</string>
 
     <string-array name="categories">
         <item>Appliances</item>
@@ -40,7 +41,5 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_notification">NotificationActivity</string>
-    <string name="title_activity_wi_fi_scan">WiFiScanActivity</string>
-    <string name="action_settings">Settings</string>
 
 </resources>

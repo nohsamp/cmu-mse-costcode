@@ -18,56 +18,73 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/alertName"
+        android:layout_below="@+id/alertCategory"
         android:text="Location" />
-
+    
     <EditText
         android:id="@+id/Latitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/Longitude"
-        android:layout_alignBottom="@+id/Longitude"
-        android:layout_toRightOf="@+id/Longitude"
+        android:layout_below="@+id/alertCategory"
+        android:layout_toRightOf="@+id/textView2"
         android:ems="7"
-        android:text="37.422006" >
-
-        <requestFocus />
+        android:hint="Latitude" >
     </EditText>
-
-    <EditText
-        android:id="@+id/alertName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/Latitude"
-        android:ems="10"
-        android:text="Alert Name" />
 
     <EditText
         android:id="@+id/Longitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/alertName"
-        android:layout_toRightOf="@+id/textView2"
+        android:layout_alignBaseline="@+id/Latitude"
+        android:layout_alignBottom="@+id/Latitude"
+        android:layout_toRightOf="@+id/Latitude"
         android:ems="7"
-        android:text="122.084095" />
+        android:hint="Longitude" >
+    </EditText>
 
-    <Button
-        android:id="@+id/btnAddAlert"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Latitude"
-        android:layout_centerHorizontal="true"
-        android:onClick="alertOnClick"
-        android:text="Add Alert" />
+<!-- <EditText
+android:id="@+id/alertName"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentTop="true"
+android:layout_alignRight="@+id/Latitude"
+android:ems="10"
+android:text="Alert Name" /> -->
     
-    <ListView
+    <LinearLayout
         android:id="@+id/alertList"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_below="@+id/btnAddAlert"
         android:horizontalSpacing="10dp"
-        android:stretchMode="columnWidth" />
+        android:stretchMode="columnWidth"
+        android:orientation="vertical" />
 
+    <Spinner
+        android:id="@+id/alertCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btnAddAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/getLocationButton"
+        android:layout_alignBottom="@+id/getLocationButton"
+        android:layout_toRightOf="@+id/getLocationButton"
+        android:onClick="alertOnClick"
+        android:text="Add Alert" />
+
+    <Button
+        android:id="@+id/getLocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Latitude"
+        android:layout_toRightOf="@+id/textView2"
+        android:onClick="getCurrentLocation"
+        android:text="Get Location" />
 
 </RelativeLayout>

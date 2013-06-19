@@ -13,6 +13,7 @@ import java.util.Map;
 import org.ksoap2.serialization.SoapObject;
 
 import android.content.Context;
+import android.os.AsyncTask;
 
 import cmu.costcode.ShoppingList.db.DatabaseAdaptor;
 import cmu.costcode.WIFIScanner.AccessPoint;
@@ -21,7 +22,7 @@ import cmu.costcode.WIFIScanner.AccessPoint;
  * @author NohSam
  * Call web service for the access point locations
  */
-public class FloorPlan implements Runnable {
+public class FloorPlan extends Thread {
 	private List<AccessPoint> apList = null;
 	private WebService webService;				// Web Service Class for getting floor plan
 	private Map<String, String> wsArguments = null;	// Web Service Input parameters
@@ -32,8 +33,8 @@ public class FloorPlan implements Runnable {
 	 * 
 	 */
 	public FloorPlan(Context context) {
-		String nameSpace ="namespace";
-		String url = "url";
+		String nameSpace ="http://ws.biz.slh.cc.mse.cmu.edu/";
+		String url = "http://slhwsapp-costcode.rhcloud.com:80/FloorPlanWS";
 		webService = new WebService(nameSpace, url);
 		db = new DatabaseAdaptor(context);
 	}
@@ -74,7 +75,7 @@ public class FloorPlan implements Runnable {
 		if(soap == null) {
 //			apList = null;
 //			return;
-		// TODO: delete the below part and uncomment the above
+		// TODO: delete the next part and uncomment the above
 			
 			// make dummy AP information
 			soap = new SoapObject();
@@ -95,6 +96,10 @@ public class FloorPlan implements Runnable {
 		db.dbDeleteAccessPoint();
 		db.close();
 		
+		// TODO: uncomment the next line
+//		parseXML(soap.getPrimitivePropertyAsString("APsLocation"));
+		
+		// TODO: comment the next part before saveAccessPoints()
 		apList = new ArrayList<AccessPoint>(soap.getPropertyCount());
 		
 		for(int i=0; i<soap.getPropertyCount(); i++) {
@@ -112,12 +117,45 @@ public class FloorPlan implements Runnable {
 		saveAccessPoints();
 	}
 
+	private void parseXML(String result) {
+		String[] splits = result.replaceAll("<", "").replaceAll("/", ">").split(">");
+		int index = 0;
+		
+		apList = new ArrayList<AccessPoint>();
+		
+		AccessPoint ap = null;
+		while(true) {
+        	if(splits[index].equals("ssid")) {
+        		if(ap != null) // if the ap is not the first, add AP to the list
+        			apList.add(ap);
+        		ap = new AccessPoint(); // then create new AP
+        		ap.setSsid(splits[++index]);
+        		index += 2; // skip next xml tag: <ssid>CMU</ssid>
+        	}
+        	if(splits[index].equals("posx")) {
+        		ap.setPosX(Float.parseFloat(splits[++index]));
+        		index += 2; // skip next xml tag: <ssid>CMU</ssid>
+
+        	}
+        	if(splits[index].equals("posy")) {
+        		ap.setPosY(Float.parseFloat(splits[++index]));
+        		index += 2; // skip next xml tag: <ssid>CMU</ssid>
+
+        	}
+        	if(index >= splits.length)
+        		break;
+        }
+		
+		
+		
+	}
+
 	/** Set Web Service Inputs
 	 * 
 	 */
 	private void setWSInputs() {
 		wsArguments = new HashMap<String, String>(1);
-		wsArguments.put("input1", "value1");
+		wsArguments.put("warehouseID", "1");
 	}
 	
 	private boolean checkFloorplanVersion(SoapObject soapObject) {
@@ -126,7 +164,7 @@ public class FloorPlan implements Runnable {
 		// TODO: delete the below part and uncomment the above
 			// make dummy version information
 			soapObject = new SoapObject();
-			soapObject.addProperty("Version", "1.0");
+			soapObject.addProperty("version", "1.0");
 		}
 		
 		db.open();
@@ -135,25 +173,29 @@ public class FloorPlan implements Runnable {
 		// Check version
 		boolean result = false;
 		if(oldVersion != null) {
-			result = oldVersion.equals(soapObject.getPropertyAsString("Version"));
+			result = oldVersion.equals(soapObject.getPropertyAsString("version"));
 		}
 		// If not equal
 		if(!result) {
 			// insert or update
-			db.dbSetVersion(INFO_NAME, soapObject.getPropertyAsString("Version"), "Floorplan Information Version");
+			db.dbSetVersion(INFO_NAME, soapObject.getPropertyAsString("version"), "Floorplan Information Version");
 		}
 		db.close();
 		return result;
 	}
 	
+	
 	@Override
 	public void run() {
+		// set warehouse ID as web service input
 		setWSInputs();
+
 		try {
+			//TODO: uncomment the next
 //			if(!checkFloorplanVersion(webService.invokeMethod("checkVersion", wsArguments))) {
-//				getAPsFromSoap(webService.invokeMethod("methodName", wsArguments));
+//				getAPsFromSoap(webService.invokeMethod("APsLocation", wsArguments));
 //			}
-			//TODO: change the above with the below 
+			//TODO: comment the next part
 			if(!checkFloorplanVersion(null)) {
 				getAPsFromSoap(null);
 			}
@@ -161,7 +203,6 @@ public class FloorPlan implements Runnable {
 //			e.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();
-			
 		}
 	}
 

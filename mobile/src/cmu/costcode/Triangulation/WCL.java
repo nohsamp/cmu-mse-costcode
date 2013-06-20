@@ -54,7 +54,8 @@ public class WCL extends Triangulation {
 	// Calculate the distance from AP using RSSI and the position of AP (posX, posY)
 	// The position of APs is known already.
 	public AccessPoint calculateAccessPointPosition() {
-		apList = wifiScanner.scanStart();
+		wifiScanner.scanStart();
+		apList = wifiScanner.getApList();
 
 		if (apList == null || apList.size() < 3) {
 			return null;

@@ -43,7 +43,8 @@ public class WiFiScanner {
 	int dropCount = 0;
 	
 	private List<ScanResult> mScanResult = null; // ScanResult List
-	private List<AccessPoint> apList;
+	private List<AccessPoint> apList;		// Access Point List
+	
 	private FloorPlan fp = null;
 	
 	public WiFiScanner(WifiManager wm, Map<String, Object> initParams, Context context) {
@@ -58,7 +59,7 @@ public class WiFiScanner {
 		fp.start();
 	}
 	
-	public List<AccessPoint> scanStart() {
+	public void scanStart() {
 		Log.d(TAG, "WIFI Scan start");
 		if (scanFlag == false) {
 			scanFlag = true;
@@ -66,7 +67,7 @@ public class WiFiScanner {
 		List<AccessPoint> tempList = fp.getAccessPoints(); // get Floor plan information
 		// if there is no floor plan, return null
 		if(tempList == null || tempList.size() == 0) {
-			return null;
+			return;
 		}
 		// otherwise copy floor plan to the new access point list
 		apList = new ArrayList<AccessPoint>(tempList.size());
@@ -81,14 +82,21 @@ public class WiFiScanner {
 		
 		parseWIFIScanResult(); // get WIFISCanResult
 		mScanResult = null;
-
-		return apList;
 	}
 	
 	public void scanStop() {
 		scanFlag = false;
 	}
 	
+	public List<AccessPoint> getApList() {
+		return apList;
+	}
+
+	// Return Category position List (use the same object with AccessPoint)
+	public List<AccessPoint> getCategoryList() {
+		return fp.getCategories();
+	}
+
 	private void parseWIFIScanResult() {
 		Comparator<ScanResult> comparator = new Comparator<ScanResult>() {
 			@Override

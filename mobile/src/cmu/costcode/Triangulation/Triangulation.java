@@ -29,7 +29,8 @@ public abstract class Triangulation {
 	}
 	
 	public AccessPoint calculateAccessPointPosition() {
-		apList = wifiScanner.scanStart();
+		wifiScanner.scanStart();
+		apList = wifiScanner.getApList();
 		return apList.get(0);
 	}
 	

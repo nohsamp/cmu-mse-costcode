@@ -22,7 +22,7 @@ public class TriangulationTask extends AsyncTask<Void, Void, Void> {
 	private Context context;
 	private Map<String, Object> initParams = new HashMap<String, Object>();
 	
-	private boolean runningFlag = false, bgrunFlag = true;
+	private boolean bgrunFlag = true;
 	
 	
 	public TriangulationTask(Context context) throws Exception {
@@ -45,7 +45,7 @@ public class TriangulationTask extends AsyncTask<Void, Void, Void> {
 	
 	private boolean setPreference() {
 		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-		if(!prefs.getBoolean("wifi_checkbox", false)) {
+		if(!prefs.getBoolean("wifi_checkbox", true)) {
 			Toast.makeText(context, "Make WiFi Triangulation enable" , Toast.LENGTH_SHORT).show();
 			return false;
 		}
@@ -54,29 +54,27 @@ public class TriangulationTask extends AsyncTask<Void, Void, Void> {
 			initParams.put(WCL.TRIANG_METHOD, prefs.getString("triangulation_list", "WCL"));
 			initParams.put(WCL.SCAN_NUMBER, Integer.valueOf(prefs.getString("wifi_scannum", "5")));
 			initParams.put(WCL.NOISE_FILTER, prefs.getBoolean("noise_filter_checkbox", true));
+			initParams.put("DUMMY", prefs.getBoolean("dummy", false)); //TODO: test purpose, remove it later
 		}
 		return true;
 	}
 	
-	@Override
-	protected void onPreExecute() {
-		runningFlag = true;
-	}
-
-
 	@Override
 	protected Void doInBackground(Void... params) {
 		if(triangulation == null) {
 			return null;
 		}
 		
-		while(runningFlag) {
+		while(true) {
+			if(isCancelled())
+				break;
 			AccessPoint ap = triangulation.calculateAccessPointPosition();
+			String category = null;
 			
-			if(ap != null) {
+			if(ap != null && (category = triangulation.getNearestCategory(ap.getPosX(), ap.getPosY())) != null) {
 				Intent intent = new Intent(ProximityIntentReceiver.PROXIMITY_ALERT);
 				// Add category information with AP's SSID as Extra data
-				intent.putExtra("category", ap.getSsid()); 
+				intent.putExtra("category", category); 
 				context.sendBroadcast(intent);
 			}
 			try {
@@ -90,15 +88,14 @@ public class TriangulationTask extends AsyncTask<Void, Void, Void> {
 	
 	@Override
 	protected void onPostExecute(Void result) {
-		triangulation.clearApList();
+		triangulation.clearList();
 		super.onPostExecute(result);
 	}
 	
 	@Override
 	protected void onCancelled() {
-		runningFlag = false;
-		triangulation.clearApList();
 		super.onCancelled();
+		triangulation.clearList();
 	}
 
 

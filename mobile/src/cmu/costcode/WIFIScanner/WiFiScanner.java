@@ -29,7 +29,6 @@ public class WiFiScanner {
 	public static final int FILTER_NONE = 2;
 
 	private int scanNumber = 5;
-	private boolean scanFlag = false;
 	private boolean noiseFilterFlag = true;
 
 	// WifiManager variable
@@ -45,6 +44,8 @@ public class WiFiScanner {
 	private List<ScanResult> mScanResult = null; // ScanResult List
 	private List<AccessPoint> apList;		// Access Point List
 	
+	private boolean dummyFlag = false;		// TODO: Test purpose
+	
 	private FloorPlan fp = null;
 	
 	public WiFiScanner(WifiManager wm, Map<String, Object> initParams, Context context) {
@@ -52,6 +53,8 @@ public class WiFiScanner {
 		
 		scanNumber = (Integer) initParams.get(Triangulation.SCAN_NUMBER);
 		noiseFilterFlag = (Boolean) initParams.get(Triangulation.NOISE_FILTER);
+		
+		dummyFlag = (Boolean)initParams.get("DUMMY");
 		
 		// Get the AP information
 		// Create thread
@@ -61,9 +64,13 @@ public class WiFiScanner {
 	
 	public void scanStart() {
 		Log.d(TAG, "WIFI Scan start");
-		if (scanFlag == false) {
-			scanFlag = true;
+		
+		// TODO: DUMMY THINGS FOR TEST
+		if(dummyFlag) {
+			apList = DummyResults.parseDummyResult(scanNumber);
+			return;
 		}
+		
 		List<AccessPoint> tempList = fp.getAccessPoints(); // get Floor plan information
 		// if there is no floor plan, return null
 		if(tempList == null || tempList.size() == 0) {
@@ -85,7 +92,8 @@ public class WiFiScanner {
 	}
 	
 	public void scanStop() {
-		scanFlag = false;
+		Log.d(TAG, "WIFI Scan stop");
+		wifimanager = null;
 	}
 	
 	public List<AccessPoint> getApList() {

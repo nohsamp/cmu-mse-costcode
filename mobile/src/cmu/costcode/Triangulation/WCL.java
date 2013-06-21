@@ -114,4 +114,39 @@ public class WCL extends Triangulation {
 
 		return nearestAP;
 	}
+	
+	@Override
+	public String getNearestCategory(double x, double y) {
+		double thresholdDistance = 30.0; // Distance threshold value for finding category (meter)
+		
+		categoryList = wifiScanner.getCategoryList();
+		if(categoryList == null)
+			return null;
+		
+		String categoryName = null; // Result category
+		
+		double oldDist = Double.MAX_VALUE;
+		double newDist = Double.MAX_VALUE;
+		
+		for (Iterator<AccessPoint> itd = categoryList.iterator(); itd.hasNext();) {
+			AccessPoint category = itd.next();
+
+			newDist = Math.sqrt((category.getPosX() - x)
+					* (category.getPosX() - x) + (category.getPosY() - y)
+					* (category.getPosY() - y));
+			// If distance is greater than threshold, ignore it
+			if(newDist >= thresholdDistance)
+				continue;
+			
+			if (oldDist > newDist) { // If new distance between device (x,
+										// y) and AP is shorter than old
+										// one,
+				oldDist = newDist; // Keep the shortest distance, i.e., new
+									// distance
+				categoryName = category.getSsid();
+			}
+		}
+		
+		return categoryName;
+	}
 }

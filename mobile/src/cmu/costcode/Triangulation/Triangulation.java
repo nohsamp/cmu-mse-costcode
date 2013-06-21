@@ -10,7 +10,7 @@ import cmu.costcode.WIFIScanner.AccessPoint;
 import cmu.costcode.WIFIScanner.WiFiScanner;
 
 public abstract class Triangulation {
-	protected List<AccessPoint> apList;
+	protected List<AccessPoint> apList, categoryList;
 	protected WiFiScanner wifiScanner; 
 	
 	public static String TRIANG_METHOD = "TRIANG_METHOD";
@@ -28,14 +28,32 @@ public abstract class Triangulation {
 		wifiScanner = new WiFiScanner(wm, initParams, context);
 	}
 	
+	/**
+	 * Find the nearest Access Point and set the current position
+	 * @return The nearest Access Point with the current position
+	 */
 	public AccessPoint calculateAccessPointPosition() {
 		wifiScanner.scanStart();
 		apList = wifiScanner.getApList();
 		return apList.get(0);
 	}
 	
-	public void clearApList() {
-		apList.clear();
+	public void clearList() {
+		wifiScanner.scanStop();
+		if(apList != null)
+			apList.clear();
+		if(categoryList != null)
+			categoryList.clear();
+	}
+	
+	/**
+	 * Find the nearest category using the current position
+	 * @param x X coordinate of the current position
+	 * @param y Y coordinate of the current position 
+	 * @return Category name for notification
+	 */
+	public String getNearestCategory(double x, double y) {
+		return null;
 	}
 
 }

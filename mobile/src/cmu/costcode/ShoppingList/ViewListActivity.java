@@ -13,10 +13,13 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.graphics.Paint;
 import android.os.AsyncTask;
 import android.os.AsyncTask.Status;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -34,13 +37,18 @@ import cmu.costcode.ShoppingList.objects.Category.Location;
 import cmu.costcode.ShoppingList.objects.Customer;
 import cmu.costcode.ShoppingList.objects.ShoppingListItem;
 import cmu.costcode.Triangulation.TriangulationTask;
+import cmu.costcode.Triangulation.WCL;
 
 public class ViewListActivity extends Activity  {
 	private final static String TAG = "ViewListActivity";
 
 	private DatabaseAdaptor db;
 	private Customer cust;
-
+	
+	private static String TRIANGULATION_START;
+	private static String TRIANGULATION_STOP;
+	boolean isTaskStop = true; // flag for task start/stop
+	
 	//TODO: do something real (this is kinda dumb). Make the Category object do something. Map {CategoryName->Loc}
 	private static Map<String, Location> categories = new HashMap<String, Location>(); 
 
@@ -70,11 +78,29 @@ public class ViewListActivity extends Activity  {
 		ScrollView scroll = (ScrollView)findViewById(R.id.viewListScroll);
 		LinearLayout itemList = generateListView(this, cust.getShoppingList());
 		scroll.addView(itemList);
+		TRIANGULATION_START = getString(R.string.triangulation_start);
+		TRIANGULATION_STOP = getString(R.string.triangulation_stop);
 	}
 
 	@Override
 	public void onResume() {
 		super.onResume();
+		if(tTask != null && !tTask.isBgrunFlag() && tTask.isCancelled() && !isTaskStop) {
+			// Register Broadcaster receiver for proximity alert 
+			IntentFilter proximityFilter = new IntentFilter();
+			proximityFilter.addAction(ProximityIntentReceiver.PROXIMITY_ALERT);
+			pReceiver = new ProximityIntentReceiver();
+			registerReceiver(pReceiver, proximityFilter);
+
+			// Create Background Triangulation Task --> asynchronous thread
+			// create new since app has to reload the preference every time
+			try {
+				tTask = new TriangulationTask(this);
+			} catch (Exception e) {
+				return;
+			}
+			tTask.execute();
+        }
 		db.open();
 	}
 
@@ -86,11 +112,16 @@ public class ViewListActivity extends Activity  {
 	@Override
 	public void onStop() {
 		super.onStop();
-		if(tTask != null && !tTask.isBgrunFlag() && tTask.getStatus() == Status.RUNNING) {
+		if(tTask != null && !tTask.isBgrunFlag() && !tTask.isCancelled()) {
+			tTask.cancel(true);
+			// wait till task is cancelled
+			while(!tTask.isCancelled())
+				;
+
 			// Unregister Broadcaster receiver for proximity alert 
 			unregisterReceiver(pReceiver);	// stop ProximityAlert
-			tTask.cancel(false);
 		}
+		db.close();
 	}
 
 
@@ -193,28 +224,48 @@ public class ViewListActivity extends Activity  {
 		getMenuInflater().inflate(R.menu.activity_proximityalert, menu);
 		return true;
 	}
+	
+	 @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        super.onPrepareOptionsMenu(menu);
+
+//        if(tTask != null && !tTask.isBgrunFlag() && tTask.isCancelled()) {
+//	        MenuItem someMenuItem = menu.findItem(R.id.menu_wifitriangulation);
+//	        someMenuItem.setTitle(TRIANGULATION_START);
+//        }
+        return true;
+    }
 
 	// Add an item into the shopping list
 	public boolean onOptionsItemSelected(MenuItem item) {
 		super.onOptionsItemSelected(item);
-
-		if (item.getItemId() == R.id.AddProximityAlert) {
-			Intent intent = new Intent(this, NotificationActivity.class);
-			startActivity(intent);
-		}
-		else if (item.getItemId() == R.id.menu_wifitriangulation) {
-			if(!item.getTitle().equals("WiFi Triangulation Stop")) {
+		
+//		if (item.getItemId() == R.id.AddProximityAlert) {
+//			Intent intent = new Intent(this, NotificationActivity.class);
+//			startActivity(intent);
+//		}
+//		else 
+		
+		
+		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+		Resources res = getResources();
+		
+		String remindMethod = prefs.getString("reminder_list", res.getStringArray(R.array.pref_reminder_list_values)[0]);
+		
+		if (item.getItemId() == R.id.menu_wifitriangulation) {
+			// the second item in the array: GPS
+			if(remindMethod.equals(res.getStringArray(R.array.pref_reminder_list_values)[1])) {
+				// start another activity
+				Intent intent = new Intent(this, NotificationActivity.class);
+				startActivity(intent);
+			}
+			else if(!item.getTitle().equals(TRIANGULATION_STOP)) {
 
 				// Register Broadcaster receiver for proximity alert 
 				IntentFilter proximityFilter = new IntentFilter();
 				proximityFilter.addAction(ProximityIntentReceiver.PROXIMITY_ALERT);
 				pReceiver = new ProximityIntentReceiver();
 				registerReceiver(pReceiver, proximityFilter);
-
-				// Debugging Code
-				//				Intent intent = new Intent(ProximityIntentReceiver.PROXIMITY_ALERT);
-				//				intent.putExtra("category", "Food");
-				//				sendBroadcast(intent);
 
 				// Create Background Triangulation Task --> asynchronous thread
 				// create new since app has to reload the preference every time
@@ -224,16 +275,21 @@ public class ViewListActivity extends Activity  {
 					return false;
 				}
 				tTask.execute();
-				item.setTitle("WiFi Triangulation Stop");
+				isTaskStop = false;
+
+				item.setTitle(TRIANGULATION_STOP);
 			}
 			else {
-				item.setTitle("WiFi Triangulation Start");
+				item.setTitle(TRIANGULATION_START);
 
 				// Unregister Broadcaster receiver for proximity alert 
 				unregisterReceiver(pReceiver);	// stop ProximityAlert
 
-				if(tTask != null) 
+				if(tTask != null) {
 					tTask.cancel(true);
+					isTaskStop = true;
+
+				}
 			}
 		}
 

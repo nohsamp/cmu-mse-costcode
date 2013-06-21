@@ -8,8 +8,5 @@
     <header
         android:fragment="cmu.costcode.WIFIScanner.WiFiScanSettingsActivity$NotificationPreferenceFragment"
         android:title="@string/pref_header_notifications" />
-    <header
-        android:fragment="cmu.costcode.WIFIScanner.WiFiScanSettingsActivity$DataSyncPreferenceFragment"
-        android:title="@string/pref_header_data_sync" />
 
 </preference-headers>

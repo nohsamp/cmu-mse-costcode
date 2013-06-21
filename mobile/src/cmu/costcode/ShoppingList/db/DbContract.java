@@ -39,6 +39,9 @@ public class DbContract {
 		public static final String TABLE_NAME = "categories";
 		public static final String CATEGORY_ID = "category_id";
 		public static final String CAT_NAME = "cat_name";
+		public static final String POSX = "posx";
+		public static final String POSY = "posy";
+		public static final String DESC = "description";
 	}
 	
 	/** Constants for AccessPoint table in DB */

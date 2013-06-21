@@ -14,6 +14,7 @@ import org.ksoap2.serialization.SoapObject;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.util.Log;
 
 import cmu.costcode.ShoppingList.db.DatabaseAdaptor;
 import cmu.costcode.WIFIScanner.AccessPoint;
@@ -23,7 +24,12 @@ import cmu.costcode.WIFIScanner.AccessPoint;
  * Call web service for the access point locations
  */
 public class FloorPlan extends Thread {
+	
+	private static final String TAG = "FloorPlan";
+	
 	private List<AccessPoint> apList = null;
+	private List<AccessPoint> categoryList = null; // This is not Access point, but use the same object
+	
 	private WebService webService;				// Web Service Class for getting floor plan
 	private Map<String, String> wsArguments = null;	// Web Service Input parameters
 	private DatabaseAdaptor db;
@@ -67,80 +73,150 @@ public class FloorPlan extends Thread {
 		db.close();
 	}
 	
-	/** Parse results and retrieve data
+	/** Get Category information
+	 * @return List<AccessPoint>
+	 */
+	public List<AccessPoint> getCategories() {
+		if(categoryList == null) {
+			db.open();
+			categoryList = db.dbGetCategory();
+			db.close();
+		}
+		return categoryList;
+	}
+	
+	/** Save Categories information to the DB
+	 */
+	private void saveCategories() {
+		// Open database
+		db.open();
+		
+		// Insert apList into db
+		for(Iterator<AccessPoint> itr = categoryList.iterator(); itr.hasNext(); ) {
+			AccessPoint category = itr.next();
+			db.dbCreateCategory(category);
+		}
+		
+		// Close database
+		db.close();
+	}
+	
+	/** Parse results and retrieve Access Point data
 	 * 
 	 * @param soap The returned SOAP object
 	 */
 	private void getAPsFromSoap(SoapObject soap) {
 		if(soap == null) {
-//			apList = null;
-//			return;
-		// TODO: delete the next part and uncomment the above
-			
-			// make dummy AP information
-			soap = new SoapObject();
-			String[] ssid = {"CMU", "CMU-SECURE", "PSC", "LINKCISCO"};
-			for(int i=0;i<4;i++) {
-				SoapObject sp = new SoapObject();
-				sp.addProperty("BSSID", "some value");
-				sp.addProperty("SSID", ssid[i]);
-				sp.addProperty("POSX", String.valueOf(i).concat(".0"));
-				sp.addProperty("POSY", String.valueOf(i).concat(".0"));
-				
-				soap.addSoapObject(sp);
-			}
+			apList = null;
+			return;
 		}
 		
-		// Delete the existing AP information
+//		 Delete the existing AP information
 		db.open();
 		db.dbDeleteAccessPoint();
 		db.close();
 		
 		// TODO: uncomment the next line
-//		parseXML(soap.getPrimitivePropertyAsString("APsLocation"));
+//		if(soap == null) {
+//			String testString = "<ssid>food</ssid><posx>0.0</posx><posy>0.0</posy><ssid>CMU-SECURE</ssid><posx>20.0</posx><posy>0.5</posy>" +
+//					"<ssid>PSC</ssid><posx>20.5</posx><posy>-20</posy><ssid>CMU</ssid><posx>0</posx><posy>-20.4</posy>";
+//			parseXML(testString);
+//		}
+		parseXML(soap.getPrimitivePropertyAsString("APsLocation"));
 		
-		// TODO: comment the next part before saveAccessPoints()
-		apList = new ArrayList<AccessPoint>(soap.getPropertyCount());
-		
-		for(int i=0; i<soap.getPropertyCount(); i++) {
-			SoapObject pii = (SoapObject)soap.getProperty(i);
-			
-			// Making new AccessPoint object
-			AccessPoint ap = new AccessPoint();
-			ap.setBssid(pii.getPropertyAsString(0));
-			ap.setSsid(pii.getPropertyAsString(1));
-			ap.setPosX(Float.parseFloat(pii.getPropertyAsString(2)));
-			ap.setPosY(Float.parseFloat(pii.getPropertyAsString(3)));
-			apList.add(ap);
+		// after parse, insert into DB
+		if(apList != null) {
+			saveAccessPoints();
+		}
+	}
+	
+	/** Parse results and retrieve category data
+	 * 
+	 * @param soap The returned SOAP object
+	 */
+	private void getCategoriesFromSoap(SoapObject soap) {
+		if(soap == null) {
+			categoryList =null;
+			return;
 		}
 		
-		saveAccessPoints();
+//		 Delete the existing category information
+		db.open();
+		db.dbDeleteCategory();
+		db.close();
+		
+		// TODO: uncomment the next line
+//		if(soap == null) {
+//			String testString = "<category>food</category><posx>5.3</posx><posy>-3.5</posy>" +
+//					"<category>electronics</category><posx>13</posx><posy>-7.3</posy>" +
+//					"<category>furniture</category><posx>13</posx><posy>-7.3</posy>" +
+//					"<category>clothes</category><posx>18</posx><posy>-15</posy>";
+//			parseXML(testString);
+//		}
+		parseXML(soap.getPrimitivePropertyAsString("SectionsLocation"));
+		
+		// after parse, insert into DB
+		if(categoryList != null) {
+			saveCategories();
+		}
 	}
 
+	
 	private void parseXML(String result) {
+		// Result format
+		// <ssid>name</ssid><posx>x</posx><posy>y</posy><category>name</ssid><posx>x</posx><posy>y</posy>
+		
 		String[] splits = result.replaceAll("<", "").replaceAll("/", ">").split(">");
 		int index = 0;
 		
 		apList = new ArrayList<AccessPoint>();
 		
+		categoryList = new ArrayList<AccessPoint>(); // use the same object in Category
+		
 		AccessPoint ap = null;
+		AccessPoint category = null;
+		boolean ssidFlag = true;
+		
 		while(true) {
-        	if(splits[index].equals("ssid")) {
-        		if(ap != null) // if the ap is not the first, add AP to the list
-        			apList.add(ap);
-        		ap = new AccessPoint(); // then create new AP
-        		ap.setSsid(splits[++index]);
+        	if(splits[index].toLowerCase().equals("ssid")) {
+        		ssidFlag = true; // Data is AP
+        		
+        		ap = new AccessPoint(); // create new AP
+        		ap.setSsid(splits[++index]); // set the name of AP
         		index += 2; // skip next xml tag: <ssid>CMU</ssid>
         	}
-        	if(splits[index].equals("posx")) {
-        		ap.setPosX(Float.parseFloat(splits[++index]));
-        		index += 2; // skip next xml tag: <ssid>CMU</ssid>
+        	else if(splits[index].toLowerCase().equals("sid")) {
+//        	else if(splits[index].toLowerCase().equals("category")) {
+        		ssidFlag = false; // Data is category
+        		
+        		category = new AccessPoint(); // create new AP
+        		category.setSsid(splits[++index]); // set the name of category
+        		index += 2; // skip next xml tag: <category>food</category>
+        	}
+        	else if(splits[index].toLowerCase().equals("posx")) {
+        		if(ssidFlag) { // if data is AP
+	        		ap.setPosX(Float.parseFloat(splits[++index]));
+        		}
+        		else { // if data is category
+        			category.setPosX(Float.parseFloat(splits[++index]));
+        		}
+	        		index += 2; // skip next xml tag
 
         	}
-        	if(splits[index].equals("posy")) {
-        		ap.setPosY(Float.parseFloat(splits[++index]));
-        		index += 2; // skip next xml tag: <ssid>CMU</ssid>
+        	else if(splits[index].toLowerCase().equals("posy")) {
+        		if(ssidFlag) { // if data is AP
+	        		ap.setPosY(Float.parseFloat(splits[++index]));
+	        		apList.add(ap);
+        		}
+        		else { // if data is category
+        			category.setPosY(Float.parseFloat(splits[++index]));
+        			categoryList.add(category);
+        		}
 
+        		index += 2; // skip next xml tag: <ssid>CMU</ssid>
+        	}
+        	else {
+        		index++;
         	}
         	if(index >= splits.length)
         		break;
@@ -155,16 +231,15 @@ public class FloorPlan extends Thread {
 	 */
 	private void setWSInputs() {
 		wsArguments = new HashMap<String, String>(1);
-		wsArguments.put("warehouseID", "1");
+		wsArguments.put("warehouseID", "2");
 	}
 	
 	private boolean checkFloorplanVersion(SoapObject soapObject) {
 		if(soapObject == null) {
-//			return true; // use the existing version of floor plan regardless of error
-		// TODO: delete the below part and uncomment the above
+			return true; // use the existing version of floor plan regardless of error
 			// make dummy version information
-			soapObject = new SoapObject();
-			soapObject.addProperty("version", "1.0");
+//			soapObject = new SoapObject();
+//			soapObject.addProperty("version", "1.0");
 		}
 		
 		db.open();
@@ -184,7 +259,6 @@ public class FloorPlan extends Thread {
 		return result;
 	}
 	
-	
 	@Override
 	public void run() {
 		// set warehouse ID as web service input
@@ -192,17 +266,18 @@ public class FloorPlan extends Thread {
 
 		try {
 			//TODO: uncomment the next
-//			if(!checkFloorplanVersion(webService.invokeMethod("checkVersion", wsArguments))) {
-//				getAPsFromSoap(webService.invokeMethod("APsLocation", wsArguments));
-//			}
-			//TODO: comment the next part
-			if(!checkFloorplanVersion(null)) {
-				getAPsFromSoap(null);
+			if(!checkFloorplanVersion(webService.invokeMethod("checkVersion", wsArguments))) {
+				getAPsFromSoap(webService.invokeMethod("APsLocation", wsArguments));
+				getCategoriesFromSoap(webService.invokeMethod("SectionsLocation", wsArguments));
 			}
-//		} catch (ConnectException e) {
-//			e.printStackTrace();
+			//TODO: comment the next part
+//			if(!checkFloorplanVersion(null)) {
+//				getAPsFromSoap(null);
+//			}
+		} catch (ConnectException e) {
+			Log.d(TAG, e.getMessage());
 		} catch (Exception e) {
-			e.printStackTrace();
+			Log.d(TAG, e.getMessage());
 		}
 	}
 

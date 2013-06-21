@@ -67,7 +67,10 @@ public class DatabaseAdaptor {
 		private static final String SQL_CREATE_CATEGORY =
 			    "CREATE TABLE " + DbContract.CategoryEntry.TABLE_NAME + " (" +
 			    DbContract.CategoryEntry.CATEGORY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
-			    DbContract.CategoryEntry.CAT_NAME + TEXT_TYPE +
+			    DbContract.CategoryEntry.CAT_NAME + TEXT_TYPE + COMMA_SEP +
+			    DbContract.CategoryEntry.POSX + " FLOAT, " +
+			    DbContract.CategoryEntry.POSY + " FLOAT, " +
+			    DbContract.CategoryEntry.DESC + " TEXT" +
 			    " )";
 		
 		private static final String SQL_CREATE_AP =
@@ -384,6 +387,64 @@ public class DatabaseAdaptor {
 		return apList;
 	}
 	
+	/**
+	 * Return list of category
+	 * @return categoryList
+	 */
+	public List<AccessPoint> dbGetCategory() {
+		// Return cursor location of row with matching memberId
+		Cursor mCursor = db.query(true, DbContract.CategoryEntry.TABLE_NAME, 
+				new String[] {
+					DbContract.CategoryEntry.CATEGORY_ID,
+					DbContract.CategoryEntry.CAT_NAME,
+					DbContract.CategoryEntry.POSX,
+					DbContract.CategoryEntry.POSY,
+					DbContract.CategoryEntry.DESC
+				}, null, null,
+				null, null, null, null);
+		if (mCursor != null && mCursor.getCount() > 0) {
+			mCursor.moveToFirst();
+			Log.d(TAG, "Read list of Category. Found " + mCursor.getCount() + " matches.");
+		} else {
+			// No matches found
+			Log.d(TAG, "No Category found.");
+			return null;
+		}
+		
+
+		// Create the list of AccessPoint for categoryList
+		List<AccessPoint> categoryList = 
+				new ArrayList<AccessPoint>(mCursor.getCount());
+		
+		// Iterate through all AccessPoint list
+		for(int i=0; i<mCursor.getCount(); i++) {
+			// Read AccessPoint properties
+			AccessPoint category = new AccessPoint();
+			category.setBssid(mCursor.getString(
+					mCursor.getColumnIndexOrThrow(DbContract.CategoryEntry.CATEGORY_ID)
+					)
+			);
+			category.setSsid(mCursor.getString(
+					mCursor.getColumnIndexOrThrow(DbContract.CategoryEntry.CAT_NAME)
+					)
+			);
+			category.setPosX(mCursor.getFloat(
+					mCursor.getColumnIndexOrThrow(DbContract.CategoryEntry.POSX)
+					)
+			);
+			category.setPosY(mCursor.getFloat(
+					mCursor.getColumnIndexOrThrow(DbContract.CategoryEntry.POSY)
+					)
+			);
+			categoryList.add(category);
+			
+			mCursor.moveToNext();
+		}
+		
+		Log.i(TAG, "Reading from DB: Category list with " + categoryList.size() + " categories");
+		return categoryList;
+	}
+	
 	
 	
 //		##### DB CREATE METHODS #####
@@ -445,7 +506,6 @@ public class DatabaseAdaptor {
 	/**
 	 * Create a new row in the AccessPoint db; returns BSSID of AccessPoint
 	 * @param description
-	 * @param category
 	 * @return
 	 */
 	public void dbCreateAccessPoint(AccessPoint ap) {
@@ -460,6 +520,24 @@ public class DatabaseAdaptor {
 		
 		// Insert the new row, returning the primary key value of the new row (itemId)
 		db.insert(DbContract.AccessPointEntry.TABLE_NAME, null, values);
+	}
+	
+	/**
+	 * Create a new row in the category db; returns category_id of category
+	 * @param category
+	 * @return
+	 */
+	public void dbCreateCategory(AccessPoint category) {
+		// Create a new map of values, where column names are the keys
+		ContentValues values = new ContentValues();
+		values.put(DbContract.CategoryEntry.CATEGORY_ID, category.getBssid());
+		values.put(DbContract.CategoryEntry.CAT_NAME, category.getSsid());
+		values.put(DbContract.CategoryEntry.POSX, category.getPosX());
+		values.put(DbContract.CategoryEntry.POSY, category.getPosY());
+		values.put(DbContract.CategoryEntry.DESC, category.getDescription());
+		
+		// Insert the new row, returning the primary key value of the new row (itemId)
+		db.insert(DbContract.CategoryEntry.TABLE_NAME, null, values);
 	}
 	
 	
@@ -522,6 +600,14 @@ public class DatabaseAdaptor {
 	 */
 	public int dbDeleteAccessPoint() {
 		return (int) db.delete(DbContract.AccessPointEntry.TABLE_NAME, null, null);
+	}
+	
+	/**
+	 * Delete all of data in Category Table
+	 * @return The number of deleted rows
+	 */
+	public int dbDeleteCategory() {
+		return (int) db.delete(DbContract.CategoryEntry.TABLE_NAME, null, null);
 	}
 
 	/**

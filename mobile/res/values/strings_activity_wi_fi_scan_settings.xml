@@ -9,8 +9,6 @@
     <string name="pref_header_general">General</string>
     <string name="pref_title_reminder">Reminder Method</string>
     <string name="pref_description_reminder">Choose Reminder Method</string>
-    <string name="pref_title_wifi_triangulation">Wi-Fi Triangulation</string>
-    <string name="pref_description_wifi_triangulation">Use of Wi-Fi triangulation for indoor positioning</string>
     <string name="pref_title_bg_run">Wi-Fi Background Service</string>
     <string name="pref_description_bg_run">Use of background running of Wi-Fi triangulation</string>
     <string name="pref_title_display_name">Display name</string>

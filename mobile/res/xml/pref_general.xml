@@ -8,11 +8,6 @@
         android:positiveButtonText="@null"
         android:title="@string/pref_title_reminder" /> 
 
-    <CheckBoxPreference
-        android:defaultValue="true"
-        android:key="wifi_checkbox"
-        android:summary="@string/pref_description_wifi_triangulation"
-        android:title="@string/pref_title_wifi_triangulation" />
 
     <CheckBoxPreference
         android:defaultValue="true"

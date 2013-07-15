@@ -22,23 +22,23 @@
       <cardinality xmi:id="_X15m6MxtEeKCI6TvU50wYw" label="1..*" max="-1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_iy4Q4M4lEeKrBaw-sqCxfw" sourceAnchor="148.0,0.0" targetAnchor="244.0,250.0" target="_j4lKIM4kEeKrBaw-sqCxfw" source="_X16N8MxtEeKCI6TvU50wYw">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_iy4Q4M4lEeKrBaw-sqCxfw" sourceAnchor="152.0,0.0" targetAnchor="244.0,250.0" target="_j4lKIM4kEeKrBaw-sqCxfw" source="_X16N8MxtEeKCI6TvU50wYw">
     <modelElement href="mobile.uml#_ixhmAM4lEeKrBaw-sqCxfw"/>
     <stereotypes xmi:id="_iy4Q4c4lEeKrBaw-sqCxfw" name="Reference">
       <modelElement href="mobile.uml#_ixi0IM4lEeKrBaw-sqCxfw"/>
     </stereotypes>
     <nameVisual xmi:id="_iy4Q4s4lEeKrBaw-sqCxfw" text="">
-      <visualProperties xmi:id="_70xgsM4oEeKrBaw-sqCxfw" position="2.0,-12.0"/>
+      <visualProperties xmi:id="_70xgsM4oEeKrBaw-sqCxfw" position="2.0,-6.5"/>
     </nameVisual>
     <sourceRole xmi:id="_iy4Q484lEeKrBaw-sqCxfw" aggregationKind="NONE" name="">
       <modelElement href="mobile.uml#_ixhmAc4lEeKrBaw-sqCxfw"/>
-      <visualProperties xmi:id="_70w5oM4oEeKrBaw-sqCxfw" position="2.0,-72.0"/>
+      <visualProperties xmi:id="_70w5oM4oEeKrBaw-sqCxfw" position="2.0,-73.5"/>
       <visibility xmi:id="_iy4Q5M4lEeKrBaw-sqCxfw" label="+"/>
       <cardinality xmi:id="_iy4Q5c4lEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
     </sourceRole>
     <targetRole xmi:id="_iy4Q5s4lEeKrBaw-sqCxfw" aggregationKind="NONE" name="webService" navigable="true">
       <modelElement href="mobile.uml#_ixa4UM4lEeKrBaw-sqCxfw"/>
-      <visualProperties xmi:id="_70xgsc4oEeKrBaw-sqCxfw" position="-77.0,30.0"/>
+      <visualProperties xmi:id="_70xgsc4oEeKrBaw-sqCxfw" position="-77.0,32.5"/>
       <stereotypes xmi:id="_iz_rMM4lEeKrBaw-sqCxfw" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_ixbfYM4lEeKrBaw-sqCxfw"/>
       </stereotypes>
@@ -51,23 +51,23 @@
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_lhNYAM4oEeKrBaw-sqCxfw" targetItem="_ByDz8M4oEeKrBaw-sqCxfw" sourceItem="_ldtYEM4oEeKrBaw-sqCxfw"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ubZEwM4oEeKrBaw-sqCxfw" targetItem="_X16N-cxtEeKCI6TvU50wYw" sourceItem="_uWmrYM4oEeKrBaw-sqCxfw"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_eG1N4M7oEeKjLNbOGolaIA" targetItem="_eG108M7oEeKjLNbOGolaIA" sourceItem="_eG0m0M7oEeKjLNbOGolaIA"/>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_eLTeMM7oEeKjLNbOGolaIA" sourceAnchor="254.0,189.0" targetAnchor="0.0,229.0" target="_jsw7oM7oEeKjLNbOGolaIA" source="_X16N8MxtEeKCI6TvU50wYw">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_eLTeMM7oEeKjLNbOGolaIA" sourceAnchor="257.0,214.0" targetAnchor="0.0,295.0" target="_jsw7oM7oEeKjLNbOGolaIA" source="_X16N8MxtEeKCI6TvU50wYw">
     <modelElement href="mobile.uml#_eGt5IM7oEeKjLNbOGolaIA"/>
     <stereotypes xmi:id="_eLTeMc7oEeKjLNbOGolaIA" name="Reference">
       <modelElement href="mobile.uml#_eGvHQM7oEeKjLNbOGolaIA"/>
     </stereotypes>
     <nameVisual xmi:id="_eLTeMs7oEeKjLNbOGolaIA" text="">
-      <visualProperties xmi:id="_nl7lkM7oEeKjLNbOGolaIA" position="-58.33333333333337,2.0"/>
+      <visualProperties xmi:id="_nl7lkM7oEeKjLNbOGolaIA" position="-22.0,-14.5"/>
     </nameVisual>
     <sourceRole xmi:id="_eLTeM87oEeKjLNbOGolaIA" aggregationKind="NONE" name="">
       <modelElement href="mobile.uml#_eGt5Ic7oEeKjLNbOGolaIA"/>
-      <visualProperties xmi:id="_nl6-gM7oEeKjLNbOGolaIA" position="15.333333333333371,-43.0"/>
+      <visualProperties xmi:id="_nl6-gM7oEeKjLNbOGolaIA" position="15.416666666666629,2.5"/>
       <visibility xmi:id="_eLTeNM7oEeKjLNbOGolaIA" label="+"/>
       <cardinality xmi:id="_eLTeNc7oEeKjLNbOGolaIA" label="1" max="1" min="1"/>
     </sourceRole>
     <targetRole xmi:id="_eLTeNs7oEeKjLNbOGolaIA" aggregationKind="NONE" name="db" navigable="true">
       <modelElement href="mobile.uml#_eGAHcM7oEeKjLNbOGolaIA"/>
-      <visualProperties xmi:id="_nl8MoM7oEeKjLNbOGolaIA" position="-53.571428571428555,2.0"/>
+      <visualProperties xmi:id="_nl8MoM7oEeKjLNbOGolaIA" position="-53.71428571428578,2.5"/>
       <stereotypes xmi:id="_eM7O0M7oEeKjLNbOGolaIA" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_eGAugM7oEeKjLNbOGolaIA"/>
       </stereotypes>
@@ -152,10 +152,36 @@
     </targetRole>
   </edges>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_bZaAgM73EeKjLNbOGolaIA" targetItem="_bZaAgc73EeKjLNbOGolaIA" sourceItem="_bZYyYM73EeKjLNbOGolaIA"/>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_X13xsMxtEeKCI6TvU50wYw" sourceConnectionVisual="_X13xscxtEeKCI6TvU50wYw" text="@author NohSam&#xA;Call web service for the access point locations" item="_X16N8MxtEeKCI6TvU50wYw">
-    <modelElement href="mobile.uml#_XmD0EMxtEeKCI6TvU50wYw"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_izxBsM4lEeKrBaw-sqCxfw" sourceConnectionVisual="_izzd8M4lEeKrBaw-sqCxfw" text="Parse results and retrieve data&#xA;&#x9; * &#xA;&#x9; * @param soap The returned SOAP object" item="_TSWAgMyLEeKCI6TvU50wYw">
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_zw3sINqTEeKedpUACvKwew" targetItem="_zw-Z0NqTEeKedpUACvKwew" sourceItem="_zvZsgNqTEeKedpUACvKwew"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_zyigENqTEeKedpUACvKwew" targetItem="_zyjHINqTEeKedpUACvKwew" sourceItem="_zxAPANqTEeKedpUACvKwew"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_z0C78NqTEeKedpUACvKwew" targetItem="_z0C78dqTEeKedpUACvKwew" sourceItem="_zykVQNqTEeKedpUACvKwew"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_z5k8MNqTEeKedpUACvKwew" source="_X16N8MxtEeKCI6TvU50wYw">
+    <modelElement href="mobile.uml#_zu9noNqTEeKedpUACvKwew"/>
+    <stereotypes xmi:id="_z5k8MdqTEeKedpUACvKwew" name="Reference">
+      <modelElement href="mobile.uml#_zu-1wNqTEeKedpUACvKwew"/>
+    </stereotypes>
+    <nameVisual xmi:id="_z5k8MtqTEeKedpUACvKwew" text=""/>
+    <sourceRole xmi:id="_z5k8M9qTEeKedpUACvKwew" aggregationKind="NONE" name="">
+      <modelElement href="mobile.uml#_zu9nodqTEeKedpUACvKwew"/>
+      <visibility xmi:id="_z5k8NNqTEeKedpUACvKwew" label="+"/>
+      <cardinality xmi:id="_z5k8NdqTEeKedpUACvKwew" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_z5k8NtqTEeKedpUACvKwew" aggregationKind="NONE" name="categoryList" navigable="true">
+      <modelElement href="mobile.uml#_zt7F0NqTEeKedpUACvKwew"/>
+      <stereotypes xmi:id="_0J86gNqTEeKedpUACvKwew" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_zt7s4tqTEeKedpUACvKwew"/>
+      </stereotypes>
+      <visibility xmi:id="_z5k8N9qTEeKedpUACvKwew" label="-"/>
+      <cardinality xmi:id="_z5k8ONqTEeKedpUACvKwew" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_z65K0NqTEeKedpUACvKwew" targetItem="_z7KQkNqTEeKedpUACvKwew" sourceItem="_z6zEMNqTEeKedpUACvKwew"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_z9tOQNqTEeKedpUACvKwew" targetItem="_z-U5UNqTEeKedpUACvKwew" sourceItem="_z7MFwNqTEeKedpUACvKwew"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_0BDdMNqTEeKedpUACvKwew" targetItem="_0BEEQNqTEeKedpUACvKwew" sourceItem="_z-1PoNqTEeKedpUACvKwew"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_0DK9ENqTEeKedpUACvKwew" targetItem="_0DLkINqTEeKedpUACvKwew" sourceItem="_0BGggNqTEeKedpUACvKwew"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_0FiUkNqTEeKedpUACvKwew" targetItem="_0Fi7oNqTEeKedpUACvKwew" sourceItem="_0DOncNqTEeKedpUACvKwew"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_0HpNYNqTEeKedpUACvKwew" targetItem="_0HpNYdqTEeKedpUACvKwew" sourceItem="_0FlX4NqTEeKedpUACvKwew"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_izxBsM4lEeKrBaw-sqCxfw" sourceConnectionVisual="_izzd8M4lEeKrBaw-sqCxfw" text="Parse results and retrieve Access Point data&#xA;&#x9; * &#xA;&#x9; * @param soap The returned SOAP object" item="_TSWAgMyLEeKCI6TvU50wYw">
     <modelElement href="mobile.uml#_ixfw0M4lEeKrBaw-sqCxfw"/>
   </nodes>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ByAJkM4oEeKrBaw-sqCxfw" sourceConnectionVisual="_ByB-wM4oEeKrBaw-sqCxfw" text="Get Access Points information&#xA;&#x9; * @return List&lt;AccessPoint>" item="_X16N_8xtEeKCI6TvU50wYw">
@@ -206,7 +232,7 @@
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_jskuYM7oEeKjLNbOGolaIA" sourceConnectionVisual="_jskuYc7oEeKjLNbOGolaIA" text="Constructor - takes the context to allow the database to be&#xA;&#x9; * opened/created&#xA;&#x9; * &#xA;&#x9; * @param ctx the Context within which to work" item="_jsxjDc7oEeKjLNbOGolaIA">
     <modelElement href="mobile.uml#_gxuv4sxhEeKgUcEu-gntqA"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_jslVcM7oEeKjLNbOGolaIA" sourceConnectionVisual="_jslVcc7oEeKjLNbOGolaIA" text="Create a new row in the AccessPoint db; returns BSSID of AccessPoint&#xA;&#x9; * @param description&#xA;&#x9; * @param category&#xA;&#x9; * @return" item="_jsxjFM7oEeKjLNbOGolaIA">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_jslVcM7oEeKjLNbOGolaIA" sourceConnectionVisual="_jslVcc7oEeKjLNbOGolaIA" text="Create a new row in the AccessPoint db; returns BSSID of AccessPoint&#xA;&#x9; * @param description&#xA;&#x9; * @return" item="_jsxjFM7oEeKjLNbOGolaIA">
     <modelElement href="mobile.uml#_eGmkYM7oEeKjLNbOGolaIA"/>
   </nodes>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_jsl8gM7oEeKjLNbOGolaIA" sourceConnectionVisual="_jsl8gc7oEeKjLNbOGolaIA" text="Delete all of data in AccessPoint Table&#xA;&#x9; * @return The number of deleted rows" item="_jsxjGM7oEeKjLNbOGolaIA">
@@ -248,10 +274,10 @@
     </attributes>
     <attributes xmi:id="_jsw7r87oEeKjLNbOGolaIA" name="ctx">
       <modelElement href="mobile.uml#_gxbN48xhEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_jsw7sc7oEeKjLNbOGolaIA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_I8XyINHkEeKQwN3yFBUQ8w" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_gxb08MxhEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_I8XyINHkEeKQwN3yFBUQ8w" name="LegacyStyledElement">
+      <stereotypes xmi:id="_w4kpUNqTEeKedpUACvKwew" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_gxb08MxhEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_jsw7ss7oEeKjLNbOGolaIA" label="-"/>
@@ -262,10 +288,10 @@
     </attributes>
     <attributes xmi:id="_jsw7tc7oEeKjLNbOGolaIA" name="dbHelper">
       <modelElement href="mobile.uml#_gxb08cxhEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_jsxisM7oEeKjLNbOGolaIA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_I8aOYNHkEeKQwN3yFBUQ8w" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_gxccAMxhEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_I8aOYNHkEeKQwN3yFBUQ8w" name="LegacyStyledElement">
+      <stereotypes xmi:id="_w4megNqTEeKedpUACvKwew" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_gxccAMxhEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_jsxisc7oEeKjLNbOGolaIA" label="-"/>
@@ -276,10 +302,10 @@
     </attributes>
     <attributes xmi:id="_jsxitM7oEeKjLNbOGolaIA" name="db">
       <modelElement href="mobile.uml#_gxccAcxhEeKgUcEu-gntqA"/>
-      <stereotypes xmi:id="_jsxits7oEeKjLNbOGolaIA" name="LegacyStyledElement">
+      <stereotypes xmi:id="_I8cqoNHkEeKQwN3yFBUQ8w" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_gxccAsxhEeKgUcEu-gntqA"/>
       </stereotypes>
-      <stereotypes xmi:id="_I8cqoNHkEeKQwN3yFBUQ8w" name="LegacyStyledElement">
+      <stereotypes xmi:id="_w4oTsNqTEeKedpUACvKwew" name="LegacyStyledElement">
         <modelElement href="mobile.uml#_gxccAsxhEeKgUcEu-gntqA"/>
       </stereotypes>
       <visibility xmi:id="_jsxit87oEeKjLNbOGolaIA" label="-"/>
@@ -606,156 +632,108 @@
         </type>
       </outParameters>
     </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_bZYyYM73EeKjLNbOGolaIA" sourceConnectionVisual="_bZaAgM73EeKjLNbOGolaIA" text="Return list of access point&#xA;&#x9; * @return" item="_bZaAgc73EeKjLNbOGolaIA">
-    <modelElement href="mobile.uml#_bZCNEM73EeKjLNbOGolaIA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_X16N8MxtEeKCI6TvU50wYw" comments="_X13xsMxtEeKCI6TvU50wYw" targetConnectionVisual="_X13xscxtEeKCI6TvU50wYw" name="FloorPlan" associationsOut="_X15m4MxtEeKCI6TvU50wYw _iy4Q4M4lEeKrBaw-sqCxfw _eLTeMM7oEeKjLNbOGolaIA">
-    <modelElement href="mobile.uml#_Xl5cAMxtEeKCI6TvU50wYw"/>
-    <visualProperties xmi:id="_X16N8cxtEeKCI6TvU50wYw" position="271.0,280.0" size="254.0,245.0"/>
-    <visibility xmi:id="_X16N8sxtEeKCI6TvU50wYw" label="+"/>
-    <attributes xmi:id="_X16N88xtEeKCI6TvU50wYw" defaultValue="null" name="apList">
-      <modelElement href="mobile.uml#_XmB-4MxtEeKCI6TvU50wYw"/>
-      <stereotypes xmi:id="_YXH5EM7oEeKjLNbOGolaIA" name="LegacyStyledElement">
-        <modelElement href="mobile.uml#_XmDNAMxtEeKCI6TvU50wYw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_I8REcNHkEeKQwN3yFBUQ8w" name="LegacyStyledElement">
-        <modelElement href="mobile.uml#_XmDNAMxtEeKCI6TvU50wYw"/>
-      </stereotypes>
-      <visibility xmi:id="_X16N9sxtEeKCI6TvU50wYw" label="-"/>
-      <cardinality xmi:id="_X16N98xtEeKCI6TvU50wYw" label="1..*" max="-1" min="1"/>
-      <type xmi:id="_X16N-MxtEeKCI6TvU50wYw" name="AccessPoint">
-        <modelElement href="mobile.uml#_s6ih4MfZEeKj__JByXBSIg"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_izOPIM4lEeKrBaw-sqCxfw" name="webService">
-      <modelElement href="mobile.uml#_ixa4UM4lEeKrBaw-sqCxfw"/>
-      <stereotypes xmi:id="_I8TgsNHkEeKQwN3yFBUQ8w" name="LegacyStyledElement">
-        <modelElement href="mobile.uml#_ixbfYM4lEeKrBaw-sqCxfw"/>
-      </stereotypes>
-      <visibility xmi:id="_izOPI84lEeKrBaw-sqCxfw" label="-"/>
-      <cardinality xmi:id="_izOPJM4lEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
-      <type xmi:id="_izOPJc4lEeKrBaw-sqCxfw" name="WebService">
-        <modelElement href="mobile.uml#_jgRX0M4kEeKrBaw-sqCxfw"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_ByGQMM4oEeKrBaw-sqCxfw" defaultValue="null" name="wsArguments">
-      <modelElement href="mobile.uml#_Bw9nwM4oEeKrBaw-sqCxfw"/>
-      <stereotypes xmi:id="_ByGQMc4oEeKrBaw-sqCxfw" name="LegacyStyledElement">
-        <modelElement href="mobile.uml#_Bw-O0M4oEeKrBaw-sqCxfw"/>
-      </stereotypes>
-      <visibility xmi:id="_ByGQMs4oEeKrBaw-sqCxfw" label="-"/>
-      <cardinality xmi:id="_ByGQM84oEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
-      <type xmi:id="_ByGQNM4oEeKrBaw-sqCxfw" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_eH0sYM7oEeKjLNbOGolaIA" name="db">
-      <modelElement href="mobile.uml#_eGAHcM7oEeKjLNbOGolaIA"/>
-      <stereotypes xmi:id="_I8VV4NHkEeKQwN3yFBUQ8w" name="LegacyStyledElement">
-        <modelElement href="mobile.uml#_eGAugM7oEeKjLNbOGolaIA"/>
-      </stereotypes>
-      <visibility xmi:id="_eH0sYs7oEeKjLNbOGolaIA" label="-"/>
-      <cardinality xmi:id="_eH0sY87oEeKjLNbOGolaIA" label="1" max="1" min="1"/>
-      <type xmi:id="_eH0sZM7oEeKjLNbOGolaIA" name="DatabaseAdaptor">
-        <modelElement href="mobile.uml#_AMC-gcxeEeKgUcEu-gntqA"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_eH0sZc7oEeKjLNbOGolaIA" defaultValue="&quot;floorplan&quot;" name="INFO_NAME" staticAttribute="true">
-      <modelElement href="mobile.uml#_eGB8oM7oEeKjLNbOGolaIA"/>
-      <stereotypes xmi:id="_eH0sZs7oEeKjLNbOGolaIA" name="LegacyStyledElement">
-        <modelElement href="mobile.uml#_eGCjsM7oEeKjLNbOGolaIA"/>
-      </stereotypes>
-      <visibility xmi:id="_eH0sZ87oEeKjLNbOGolaIA" label="-"/>
-      <cardinality xmi:id="_eH0saM7oEeKjLNbOGolaIA" label="1" max="1" min="1"/>
-      <type xmi:id="_eH0sac7oEeKjLNbOGolaIA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_X16N-cxtEeKCI6TvU50wYw" comments="_uWmrYM4oEeKrBaw-sqCxfw" targetConnectionVisual="_ubZEwM4oEeKrBaw-sqCxfw" name="FloorPlan">
-      <modelElement href="mobile.uml#_Xl6qIsxtEeKCI6TvU50wYw"/>
-      <visualProperties xmi:id="_yiuqUM7oEeKjLNbOGolaIA"/>
-      <keywords xmi:id="_X16N-sxtEeKCI6TvU50wYw" keyword="create"/>
-      <visibility xmi:id="_X16N_MxtEeKCI6TvU50wYw" label="+"/>
-      <outParameters xmi:id="_X16N_cxtEeKCI6TvU50wYw">
-        <modelElement href="mobile.uml#_Xl7RM8xtEeKCI6TvU50wYw"/>
-        <type xmi:id="_X16N_sxtEeKCI6TvU50wYw" name="FloorPlan">
-          <modelElement href="mobile.uml#_Xl5cAMxtEeKCI6TvU50wYw"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_QhmzsM77EeKjLNbOGolaIA" name="context">
-        <modelElement href="mobile.uml#_QhgtEM77EeKjLNbOGolaIA"/>
-        <type xmi:id="_Qhmzsc77EeKjLNbOGolaIA" name="Context">
-          <modelElement href="mobile.uml#_tGaasMfZEeKj__JByXBSIg"/>
+    <operations xmi:id="_z7KQkNqTEeKedpUACvKwew" comments="_z6zEMNqTEeKedpUACvKwew" targetConnectionVisual="_z65K0NqTEeKedpUACvKwew" name="dbCreateCategory">
+      <modelElement href="mobile.uml#_tMOu0MfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_z7KQkdqTEeKedpUACvKwew" label="+"/>
+      <parameters xmi:id="_z7KQktqTEeKedpUACvKwew" name="category">
+        <modelElement href="mobile.uml#_zpAJkNqTEeKedpUACvKwew"/>
+        <type xmi:id="_z7KQk9qTEeKedpUACvKwew" name="AccessPoint">
+          <modelElement href="mobile.uml#_s6ih4MfZEeKj__JByXBSIg"/>
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_X16N_8xtEeKCI6TvU50wYw" comments="_ByAJkM4oEeKrBaw-sqCxfw" targetConnectionVisual="_ByB-wM4oEeKrBaw-sqCxfw" name="getAccessPoints">
-      <modelElement href="mobile.uml#_Xl74QMxtEeKCI6TvU50wYw"/>
-      <visualProperties xmi:id="_yiuqUc7oEeKjLNbOGolaIA"/>
-      <visibility xmi:id="_X16OAMxtEeKCI6TvU50wYw" label="+"/>
-      <outParameters xmi:id="_Bx9tUM4oEeKrBaw-sqCxfw">
-        <modelElement href="mobile.uml#_Bw26EM4oEeKrBaw-sqCxfw"/>
-        <type xmi:id="_Bx9tUc4oEeKrBaw-sqCxfw" name="AccessPoint">
+    <operations xmi:id="_z-U5UNqTEeKedpUACvKwew" comments="_z7MFwNqTEeKedpUACvKwew" targetConnectionVisual="_z9tOQNqTEeKedpUACvKwew" name="dbDeleteCategory">
+      <modelElement href="mobile.uml#_tMWDkMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_z-VgYNqTEeKedpUACvKwew" label="+"/>
+      <outParameters xmi:id="_z-VgYdqTEeKedpUACvKwew">
+        <modelElement href="mobile.uml#_zsBoYNqTEeKedpUACvKwew"/>
+        <type xmi:id="_z-VgYtqTEeKedpUACvKwew" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_0BEEQNqTEeKedpUACvKwew" comments="_z-1PoNqTEeKedpUACvKwew" targetConnectionVisual="_0BDdMNqTEeKedpUACvKwew" name="dbCreateAlert">
+      <modelElement href="mobile.uml#_5sUskMxeEeKgUcEu-gntqA"/>
+      <visibility xmi:id="_0BEEQdqTEeKedpUACvKwew" label="+"/>
+      <outParameters xmi:id="_0BEEQtqTEeKedpUACvKwew">
+        <modelElement href="mobile.uml#_zsCPcNqTEeKedpUACvKwew"/>
+        <type xmi:id="_0BEEQ9qTEeKedpUACvKwew" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_0BEERNqTEeKedpUACvKwew" name="category">
+        <modelElement href="mobile.uml#_5s5UU8xeEeKgUcEu-gntqA"/>
+        <type xmi:id="_0BEERdqTEeKedpUACvKwew" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_0BEERtqTEeKedpUACvKwew" name="latitude">
+        <modelElement href="mobile.uml#_zsCPcdqTEeKedpUACvKwew"/>
+        <type xmi:id="_0BEER9qTEeKedpUACvKwew" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_0BEESNqTEeKedpUACvKwew" name="longitude">
+        <modelElement href="mobile.uml#_zsCPctqTEeKedpUACvKwew"/>
+        <type xmi:id="_0BEESdqTEeKedpUACvKwew" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_0DLkINqTEeKedpUACvKwew" comments="_0BGggNqTEeKedpUACvKwew" targetConnectionVisual="_0DK9ENqTEeKedpUACvKwew" name="dbDeleteProxAlert">
+      <modelElement href="mobile.uml#_s7du8MfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_0DLkIdqTEeKedpUACvKwew" label="+"/>
+      <outParameters xmi:id="_0DLkItqTEeKedpUACvKwew">
+        <modelElement href="mobile.uml#_zsC2gNqTEeKedpUACvKwew"/>
+        <type xmi:id="_0DLkI9qTEeKedpUACvKwew" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_0DLkJNqTEeKedpUACvKwew" name="category">
+        <modelElement href="mobile.uml#_zsC2gdqTEeKedpUACvKwew"/>
+        <type xmi:id="_0DLkJdqTEeKedpUACvKwew" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_0DLkJtqTEeKedpUACvKwew" name="latitude">
+        <modelElement href="mobile.uml#_zsC2gtqTEeKedpUACvKwew"/>
+        <type xmi:id="_0DLkJ9qTEeKedpUACvKwew" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_0DLkKNqTEeKedpUACvKwew" name="longitude">
+        <modelElement href="mobile.uml#_zsDdkNqTEeKedpUACvKwew"/>
+        <type xmi:id="_0DLkKdqTEeKedpUACvKwew" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_0Fi7oNqTEeKedpUACvKwew" comments="_0DOncNqTEeKedpUACvKwew" targetConnectionVisual="_0FiUkNqTEeKedpUACvKwew" name="dbGetCategory">
+      <modelElement href="mobile.uml#_zpCl0NqTEeKedpUACvKwew"/>
+      <visibility xmi:id="_0Fi7odqTEeKedpUACvKwew" label="+"/>
+      <outParameters xmi:id="_0Fi7otqTEeKedpUACvKwew">
+        <modelElement href="mobile.uml#_zpDM4NqTEeKedpUACvKwew"/>
+        <type xmi:id="_0Fi7o9qTEeKedpUACvKwew" name="AccessPoint">
           <modelElement href="mobile.uml#_s6ih4MfZEeKj__JByXBSIg"/>
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_TSWAgMyLEeKCI6TvU50wYw" comments="_izxBsM4lEeKrBaw-sqCxfw" targetConnectionVisual="_izzd8M4lEeKrBaw-sqCxfw" name="getAPsFromSoap">
-      <modelElement href="mobile.uml#_TSULUMyLEeKCI6TvU50wYw"/>
-      <visualProperties xmi:id="_yivRYM7oEeKjLNbOGolaIA"/>
-      <stereotypes xmi:id="_iz16MM4lEeKrBaw-sqCxfw" name="Array">
-        <modelElement href="mobile.uml#_ixRuYs4lEeKrBaw-sqCxfw"/>
+    <operations xmi:id="_0HpNYdqTEeKedpUACvKwew" comments="_0FlX4NqTEeKedpUACvKwew" targetConnectionVisual="_0HpNYNqTEeKedpUACvKwew" name="dbGetProxAlerts">
+      <modelElement href="mobile.uml#_zpEbANqTEeKedpUACvKwew"/>
+      <stereotypes xmi:id="_0HpNYtqTEeKedpUACvKwew" name="Generics">
+        <modelElement href="mobile.uml#_zpFpINqTEeKedpUACvKwew"/>
       </stereotypes>
-      <visibility xmi:id="_TSWAgsyLEeKCI6TvU50wYw" label="-"/>
-      <outParameters xmi:id="_izulcM4lEeKrBaw-sqCxfw">
-        <modelElement href="mobile.uml#_ixRuYM4lEeKrBaw-sqCxfw"/>
-      </outParameters>
-      <parameters xmi:id="_izvzkM4lEeKrBaw-sqCxfw" name="soap">
-        <modelElement href="mobile.uml#_ixS8gM4lEeKrBaw-sqCxfw"/>
-        <type xmi:id="_izvzkc4lEeKrBaw-sqCxfw" name="SoapObject">
-          <modelElement href="mobile.uml#_jhBlwc4kEeKrBaw-sqCxfw"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_LcAmMM4nEeKrBaw-sqCxfw" name="run">
-      <modelElement href="mobile.uml#_LbvgcM4nEeKrBaw-sqCxfw"/>
-      <visualProperties xmi:id="_yivRYc7oEeKjLNbOGolaIA"/>
-      <stereotypes xmi:id="_LcAmMc4nEeKrBaw-sqCxfw" name="Annotations">
-        <modelElement href="mobile.uml#_LbwHgM4nEeKrBaw-sqCxfw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_LcAmMs4nEeKrBaw-sqCxfw" name="LegacyStyledElement">
-        <modelElement href="mobile.uml#_Lbx8sM4nEeKrBaw-sqCxfw"/>
-      </stereotypes>
-      <visibility xmi:id="_LcAmM84nEeKrBaw-sqCxfw" label="+"/>
-    </operations>
-    <operations xmi:id="_ByDz8M4oEeKrBaw-sqCxfw" comments="_ldtYEM4oEeKrBaw-sqCxfw" targetConnectionVisual="_lhNYAM4oEeKrBaw-sqCxfw" name="setWSInputs">
-      <modelElement href="mobile.uml#_Bw4vQM4oEeKrBaw-sqCxfw"/>
-      <visualProperties xmi:id="_yiv4cM7oEeKjLNbOGolaIA"/>
-      <visibility xmi:id="_ByDz8c4oEeKrBaw-sqCxfw" label="-"/>
-    </operations>
-    <operations xmi:id="_eG108M7oEeKjLNbOGolaIA" comments="_eG0m0M7oEeKjLNbOGolaIA" targetConnectionVisual="_eG1N4M7oEeKjLNbOGolaIA" name="saveAccessPoints">
-      <modelElement href="mobile.uml#_eD0WIM7oEeKjLNbOGolaIA"/>
-      <visualProperties xmi:id="_yiwfgM7oEeKjLNbOGolaIA"/>
-      <visibility xmi:id="_eG108c7oEeKjLNbOGolaIA" label="-"/>
-    </operations>
-    <operations xmi:id="_eG4RMM7oEeKjLNbOGolaIA" name="checkFloorplanVersion">
-      <modelElement href="mobile.uml#_eD09MM7oEeKjLNbOGolaIA"/>
-      <visualProperties xmi:id="_yiwfgc7oEeKjLNbOGolaIA"/>
-      <visibility xmi:id="_eG4RMc7oEeKjLNbOGolaIA" label="-"/>
-      <outParameters xmi:id="_eG4RMs7oEeKjLNbOGolaIA">
-        <modelElement href="mobile.uml#_eFdU4M7oEeKjLNbOGolaIA"/>
-        <type xmi:id="_eG4RM87oEeKjLNbOGolaIA" name="boolean">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      <visibility xmi:id="_0HpNY9qTEeKedpUACvKwew" label="+"/>
+      <outParameters xmi:id="_0HpNZNqTEeKedpUACvKwew">
+        <modelElement href="mobile.uml#_zpFCENqTEeKedpUACvKwew"/>
+        <type xmi:id="_0HpNZdqTEeKedpUACvKwew" name="Map">
+          <modelElement href="mobile.uml#_tGWwUcfZEeKj__JByXBSIg"/>
         </type>
       </outParameters>
-      <parameters xmi:id="_eG4RNM7oEeKjLNbOGolaIA" name="soapObject">
-        <modelElement href="mobile.uml#_eD1kQM7oEeKjLNbOGolaIA"/>
-        <type xmi:id="_eG4RNc7oEeKjLNbOGolaIA" name="SoapObject">
-          <modelElement href="mobile.uml#_jhBlwc4kEeKrBaw-sqCxfw"/>
-        </type>
-      </parameters>
     </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_bZYyYM73EeKjLNbOGolaIA" sourceConnectionVisual="_bZaAgM73EeKjLNbOGolaIA" text="Return list of access point&#xA;&#x9; * @return" item="_bZaAgc73EeKjLNbOGolaIA">
+    <modelElement href="mobile.uml#_bZCNEM73EeKjLNbOGolaIA"/>
   </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_j4lKIM4kEeKrBaw-sqCxfw" name="WebService" associationsIn="_iy4Q4M4lEeKrBaw-sqCxfw">
     <modelElement href="mobile.uml#_jgRX0M4kEeKrBaw-sqCxfw"/>
@@ -931,6 +909,240 @@
         <modelElement href="mobile.uml#_jhXkAM4kEeKrBaw-sqCxfw"/>
         <type xmi:id="_j4lxW84kEeKrBaw-sqCxfw" name="SoapSerializationEnvelope">
           <modelElement href="mobile.uml#_jhDa8c4kEeKrBaw-sqCxfw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_zvZsgNqTEeKedpUACvKwew" sourceConnectionVisual="_zw3sINqTEeKedpUACvKwew" text="Get Category information&#xA;&#x9; * @return List&lt;AccessPoint>" item="_zw-Z0NqTEeKedpUACvKwew">
+    <modelElement href="mobile.uml#_zuhiwNqTEeKedpUACvKwew"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_zxAPANqTEeKedpUACvKwew" sourceConnectionVisual="_zyigENqTEeKedpUACvKwew" text="Save Categories information to the DB" item="_zyjHINqTEeKedpUACvKwew">
+    <modelElement href="mobile.uml#_zuhiwdqTEeKedpUACvKwew"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_zykVQNqTEeKedpUACvKwew" sourceConnectionVisual="_z0C78NqTEeKedpUACvKwew" text="Parse results and retrieve category data&#xA;&#x9; * &#xA;&#x9; * @param soap The returned SOAP object" item="_z0C78dqTEeKedpUACvKwew">
+    <modelElement href="mobile.uml#_zuhiwtqTEeKedpUACvKwew"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_z6zEMNqTEeKedpUACvKwew" sourceConnectionVisual="_z65K0NqTEeKedpUACvKwew" text="Create a new row in the category db; returns category_id of category&#xA;&#x9; * @param category&#xA;&#x9; * @return" item="_z7KQkNqTEeKedpUACvKwew">
+    <modelElement href="mobile.uml#_zumbQdqTEeKedpUACvKwew"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_z7MFwNqTEeKedpUACvKwew" sourceConnectionVisual="_z9tOQNqTEeKedpUACvKwew" text="Delete all of data in Category Table&#xA;&#x9; * @return The number of deleted rows" item="_z-U5UNqTEeKedpUACvKwew">
+    <modelElement href="mobile.uml#_zumbQtqTEeKedpUACvKwew"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_z-1PoNqTEeKedpUACvKwew" sourceConnectionVisual="_0BDdMNqTEeKedpUACvKwew" text="Create a new proximity alert with name 'category' at location (latitude, longitude)&#xA;&#x9; * @param category&#xA;&#x9; * @param latitude&#xA;&#x9; * @param longitude&#xA;&#x9; * @return" item="_0BEEQNqTEeKedpUACvKwew">
+    <modelElement href="mobile.uml#_zunCUNqTEeKedpUACvKwew"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_0BGggNqTEeKedpUACvKwew" sourceConnectionVisual="_0DK9ENqTEeKedpUACvKwew" text="Delete a proximity alert of a given category from the DB&#xA;&#x9; * @param category" item="_0DLkINqTEeKedpUACvKwew">
+    <modelElement href="mobile.uml#_zunCUdqTEeKedpUACvKwew"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_0DOncNqTEeKedpUACvKwew" sourceConnectionVisual="_0FiUkNqTEeKedpUACvKwew" text="Return list of category&#xA;&#x9; * @return categoryList" item="_0Fi7oNqTEeKedpUACvKwew">
+    <modelElement href="mobile.uml#_zumbQNqTEeKedpUACvKwew"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_0FlX4NqTEeKedpUACvKwew" sourceConnectionVisual="_0HpNYNqTEeKedpUACvKwew" text="Return a map of all proximity alerts, tying category name to GPS coordinates&#xA;&#x9; * @param memberId&#xA;&#x9; * @return" item="_0HpNYdqTEeKedpUACvKwew">
+    <modelElement href="mobile.uml#_zumbQ9qTEeKedpUACvKwew"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_X13xsMxtEeKCI6TvU50wYw" sourceConnectionVisual="_X13xscxtEeKCI6TvU50wYw" text="@author NohSam&#xA;Call web service for the access point locations" item="_X16N8MxtEeKCI6TvU50wYw">
+    <modelElement href="mobile.uml#_XmD0EMxtEeKCI6TvU50wYw"/>
+    <visualProperties xmi:id="_6cP_ANqTEeKedpUACvKwew" position="545.0,300.0" size="200.0,150.0" visible="false"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_X16N8MxtEeKCI6TvU50wYw" comments="_X13xsMxtEeKCI6TvU50wYw" targetConnectionVisual="_X13xscxtEeKCI6TvU50wYw" name="FloorPlan" associationsOut="_X15m4MxtEeKCI6TvU50wYw _iy4Q4M4lEeKrBaw-sqCxfw _eLTeMM7oEeKjLNbOGolaIA _z5k8MNqTEeKedpUACvKwew">
+    <modelElement href="mobile.uml#_Xl5cAMxtEeKCI6TvU50wYw"/>
+    <visualProperties xmi:id="_X16N8cxtEeKCI6TvU50wYw" position="267.0,321.0" size="257.0,371.0"/>
+    <stereotypes xmi:id="_4nn_sNqTEeKedpUACvKwew" name="Patch">
+      <modelElement href="mobile.uml#_4ndnoNqTEeKedpUACvKwew"/>
+    </stereotypes>
+    <visibility xmi:id="_X16N8sxtEeKCI6TvU50wYw" label="+"/>
+    <attributes xmi:id="_X16N88xtEeKCI6TvU50wYw" defaultValue="null" name="apList">
+      <modelElement href="mobile.uml#_XmB-4MxtEeKCI6TvU50wYw"/>
+      <stereotypes xmi:id="_I8REcNHkEeKQwN3yFBUQ8w" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_XmDNAMxtEeKCI6TvU50wYw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_w4fw0NqTEeKedpUACvKwew" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_XmDNAMxtEeKCI6TvU50wYw"/>
+      </stereotypes>
+      <visibility xmi:id="_X16N9sxtEeKCI6TvU50wYw" label="-"/>
+      <cardinality xmi:id="_X16N98xtEeKCI6TvU50wYw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_X16N-MxtEeKCI6TvU50wYw" name="AccessPoint">
+        <modelElement href="mobile.uml#_s6ih4MfZEeKj__JByXBSIg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_izOPIM4lEeKrBaw-sqCxfw" name="webService">
+      <modelElement href="mobile.uml#_ixa4UM4lEeKrBaw-sqCxfw"/>
+      <stereotypes xmi:id="_w4hmANqTEeKedpUACvKwew" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_ixbfYM4lEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_izOPI84lEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_izOPJM4lEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+      <type xmi:id="_izOPJc4lEeKrBaw-sqCxfw" name="WebService">
+        <modelElement href="mobile.uml#_jgRX0M4kEeKrBaw-sqCxfw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ByGQMM4oEeKrBaw-sqCxfw" defaultValue="null" name="wsArguments">
+      <modelElement href="mobile.uml#_Bw9nwM4oEeKrBaw-sqCxfw"/>
+      <stereotypes xmi:id="_ByGQMc4oEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_Bw-O0M4oEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_ByGQMs4oEeKrBaw-sqCxfw" label="-"/>
+      <cardinality xmi:id="_ByGQM84oEeKrBaw-sqCxfw" label="1" max="1" min="1"/>
+      <type xmi:id="_ByGQNM4oEeKrBaw-sqCxfw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_eH0sYM7oEeKjLNbOGolaIA" name="db">
+      <modelElement href="mobile.uml#_eGAHcM7oEeKjLNbOGolaIA"/>
+      <stereotypes xmi:id="_w4jbMNqTEeKedpUACvKwew" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_eGAugM7oEeKjLNbOGolaIA"/>
+      </stereotypes>
+      <visibility xmi:id="_eH0sYs7oEeKjLNbOGolaIA" label="-"/>
+      <cardinality xmi:id="_eH0sY87oEeKjLNbOGolaIA" label="1" max="1" min="1"/>
+      <type xmi:id="_eH0sZM7oEeKjLNbOGolaIA" name="DatabaseAdaptor">
+        <modelElement href="mobile.uml#_AMC-gcxeEeKgUcEu-gntqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_eH0sZc7oEeKjLNbOGolaIA" defaultValue="&quot;floorplan&quot;" name="INFO_NAME" staticAttribute="true">
+      <modelElement href="mobile.uml#_eGB8oM7oEeKjLNbOGolaIA"/>
+      <stereotypes xmi:id="_eH0sZs7oEeKjLNbOGolaIA" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_eGCjsM7oEeKjLNbOGolaIA"/>
+      </stereotypes>
+      <visibility xmi:id="_eH0sZ87oEeKjLNbOGolaIA" label="-"/>
+      <cardinality xmi:id="_eH0saM7oEeKjLNbOGolaIA" label="1" max="1" min="1"/>
+      <type xmi:id="_eH0sac7oEeKjLNbOGolaIA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_z0FYMNqTEeKedpUACvKwew" defaultValue="&quot;FloorPlan&quot;" name="TAG" staticAttribute="true">
+      <modelElement href="mobile.uml#_tP1ccMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_z0FYMdqTEeKedpUACvKwew" label="-"/>
+      <cardinality xmi:id="_z0FYMtqTEeKedpUACvKwew" label="1" max="1" min="1"/>
+      <type xmi:id="_z0FYM9qTEeKedpUACvKwew" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_z0FYNNqTEeKedpUACvKwew" defaultValue="null" name="categoryList">
+      <modelElement href="mobile.uml#_zt7F0NqTEeKedpUACvKwew"/>
+      <stereotypes xmi:id="_z0FYNdqTEeKedpUACvKwew" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_zt7s4tqTEeKedpUACvKwew"/>
+      </stereotypes>
+      <visibility xmi:id="_z0FYNtqTEeKedpUACvKwew" label="-"/>
+      <cardinality xmi:id="_z0FYN9qTEeKedpUACvKwew" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_z0FYONqTEeKedpUACvKwew" name="AccessPoint">
+        <modelElement href="mobile.uml#_s6ih4MfZEeKj__JByXBSIg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_X16N-cxtEeKCI6TvU50wYw" comments="_uWmrYM4oEeKrBaw-sqCxfw" targetConnectionVisual="_ubZEwM4oEeKrBaw-sqCxfw" name="FloorPlan">
+      <modelElement href="mobile.uml#_Xl6qIsxtEeKCI6TvU50wYw"/>
+      <visualProperties xmi:id="_yiuqUM7oEeKjLNbOGolaIA"/>
+      <keywords xmi:id="_X16N-sxtEeKCI6TvU50wYw" keyword="create"/>
+      <visibility xmi:id="_X16N_MxtEeKCI6TvU50wYw" label="+"/>
+      <outParameters xmi:id="_X16N_cxtEeKCI6TvU50wYw">
+        <modelElement href="mobile.uml#_Xl7RM8xtEeKCI6TvU50wYw"/>
+        <type xmi:id="_X16N_sxtEeKCI6TvU50wYw" name="FloorPlan">
+          <modelElement href="mobile.uml#_Xl5cAMxtEeKCI6TvU50wYw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_QhmzsM77EeKjLNbOGolaIA" name="context">
+        <modelElement href="mobile.uml#_QhgtEM77EeKjLNbOGolaIA"/>
+        <type xmi:id="_Qhmzsc77EeKjLNbOGolaIA" name="Context">
+          <modelElement href="mobile.uml#_tGaasMfZEeKj__JByXBSIg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_X16N_8xtEeKCI6TvU50wYw" comments="_ByAJkM4oEeKrBaw-sqCxfw" targetConnectionVisual="_ByB-wM4oEeKrBaw-sqCxfw" name="getAccessPoints">
+      <modelElement href="mobile.uml#_Xl74QMxtEeKCI6TvU50wYw"/>
+      <visualProperties xmi:id="_yiuqUc7oEeKjLNbOGolaIA"/>
+      <visibility xmi:id="_X16OAMxtEeKCI6TvU50wYw" label="+"/>
+      <outParameters xmi:id="_Bx9tUM4oEeKrBaw-sqCxfw">
+        <modelElement href="mobile.uml#_Bw26EM4oEeKrBaw-sqCxfw"/>
+        <type xmi:id="_Bx9tUc4oEeKrBaw-sqCxfw" name="AccessPoint">
+          <modelElement href="mobile.uml#_s6ih4MfZEeKj__JByXBSIg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_TSWAgMyLEeKCI6TvU50wYw" comments="_izxBsM4lEeKrBaw-sqCxfw" targetConnectionVisual="_izzd8M4lEeKrBaw-sqCxfw" name="getAPsFromSoap">
+      <modelElement href="mobile.uml#_TSULUMyLEeKCI6TvU50wYw"/>
+      <visualProperties xmi:id="_yivRYM7oEeKjLNbOGolaIA"/>
+      <stereotypes xmi:id="_iz16MM4lEeKrBaw-sqCxfw" name="Array">
+        <modelElement href="mobile.uml#_ixRuYs4lEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_TSWAgsyLEeKCI6TvU50wYw" label="-"/>
+      <outParameters xmi:id="_izulcM4lEeKrBaw-sqCxfw">
+        <modelElement href="mobile.uml#_ixRuYM4lEeKrBaw-sqCxfw"/>
+      </outParameters>
+      <parameters xmi:id="_izvzkM4lEeKrBaw-sqCxfw" name="soap">
+        <modelElement href="mobile.uml#_ixS8gM4lEeKrBaw-sqCxfw"/>
+        <type xmi:id="_izvzkc4lEeKrBaw-sqCxfw" name="SoapObject">
+          <modelElement href="mobile.uml#_jhBlwc4kEeKrBaw-sqCxfw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_LcAmMM4nEeKrBaw-sqCxfw" name="run">
+      <modelElement href="mobile.uml#_LbvgcM4nEeKrBaw-sqCxfw"/>
+      <visualProperties xmi:id="_yivRYc7oEeKjLNbOGolaIA"/>
+      <stereotypes xmi:id="_LcAmMc4nEeKrBaw-sqCxfw" name="Annotations">
+        <modelElement href="mobile.uml#_LbwHgM4nEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_LcAmMs4nEeKrBaw-sqCxfw" name="LegacyStyledElement">
+        <modelElement href="mobile.uml#_Lbx8sM4nEeKrBaw-sqCxfw"/>
+      </stereotypes>
+      <visibility xmi:id="_LcAmM84nEeKrBaw-sqCxfw" label="+"/>
+    </operations>
+    <operations xmi:id="_ByDz8M4oEeKrBaw-sqCxfw" comments="_ldtYEM4oEeKrBaw-sqCxfw" targetConnectionVisual="_lhNYAM4oEeKrBaw-sqCxfw" name="setWSInputs">
+      <modelElement href="mobile.uml#_Bw4vQM4oEeKrBaw-sqCxfw"/>
+      <visualProperties xmi:id="_yiv4cM7oEeKjLNbOGolaIA"/>
+      <visibility xmi:id="_ByDz8c4oEeKrBaw-sqCxfw" label="-"/>
+    </operations>
+    <operations xmi:id="_eG108M7oEeKjLNbOGolaIA" comments="_eG0m0M7oEeKjLNbOGolaIA" targetConnectionVisual="_eG1N4M7oEeKjLNbOGolaIA" name="saveAccessPoints">
+      <modelElement href="mobile.uml#_eD0WIM7oEeKjLNbOGolaIA"/>
+      <visualProperties xmi:id="_yiwfgM7oEeKjLNbOGolaIA"/>
+      <visibility xmi:id="_eG108c7oEeKjLNbOGolaIA" label="-"/>
+    </operations>
+    <operations xmi:id="_eG4RMM7oEeKjLNbOGolaIA" name="checkFloorplanVersion">
+      <modelElement href="mobile.uml#_eD09MM7oEeKjLNbOGolaIA"/>
+      <visualProperties xmi:id="_yiwfgc7oEeKjLNbOGolaIA"/>
+      <visibility xmi:id="_eG4RMc7oEeKjLNbOGolaIA" label="-"/>
+      <outParameters xmi:id="_eG4RMs7oEeKjLNbOGolaIA">
+        <modelElement href="mobile.uml#_eFdU4M7oEeKjLNbOGolaIA"/>
+        <type xmi:id="_eG4RM87oEeKjLNbOGolaIA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_eG4RNM7oEeKjLNbOGolaIA" name="soapObject">
+        <modelElement href="mobile.uml#_eD1kQM7oEeKjLNbOGolaIA"/>
+        <type xmi:id="_eG4RNc7oEeKjLNbOGolaIA" name="SoapObject">
+          <modelElement href="mobile.uml#_jhBlwc4kEeKrBaw-sqCxfw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_zvM4MNqTEeKedpUACvKwew" name="parseXML">
+      <modelElement href="mobile.uml#_s7WaMMfZEeKj__JByXBSIg"/>
+      <visibility xmi:id="_zvM4MdqTEeKedpUACvKwew" label="-"/>
+      <parameters xmi:id="_zvM4MtqTEeKedpUACvKwew" name="result">
+        <modelElement href="mobile.uml#_tMM5ocfZEeKj__JByXBSIg"/>
+        <type xmi:id="_zvM4M9qTEeKedpUACvKwew" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_zw-Z0NqTEeKedpUACvKwew" comments="_zvZsgNqTEeKedpUACvKwew" targetConnectionVisual="_zw3sINqTEeKedpUACvKwew" name="getCategories">
+      <modelElement href="mobile.uml#_znjYENqTEeKedpUACvKwew"/>
+      <visibility xmi:id="_zw-Z0dqTEeKedpUACvKwew" label="+"/>
+      <outParameters xmi:id="_zw-Z0tqTEeKedpUACvKwew">
+        <modelElement href="mobile.uml#_znkmMNqTEeKedpUACvKwew"/>
+        <type xmi:id="_zw-Z09qTEeKedpUACvKwew" name="AccessPoint">
+          <modelElement href="mobile.uml#_s6ih4MfZEeKj__JByXBSIg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_zyjHINqTEeKedpUACvKwew" comments="_zxAPANqTEeKedpUACvKwew" targetConnectionVisual="_zyigENqTEeKedpUACvKwew" name="saveCategories">
+      <modelElement href="mobile.uml#_znrT4NqTEeKedpUACvKwew"/>
+      <visibility xmi:id="_zyjHIdqTEeKedpUACvKwew" label="-"/>
+    </operations>
+    <operations xmi:id="_z0C78dqTEeKedpUACvKwew" comments="_zykVQNqTEeKedpUACvKwew" targetConnectionVisual="_z0C78NqTEeKedpUACvKwew" name="getCategoriesFromSoap">
+      <modelElement href="mobile.uml#_znrT4dqTEeKedpUACvKwew"/>
+      <visibility xmi:id="_z0C78tqTEeKedpUACvKwew" label="-"/>
+      <parameters xmi:id="_z0C789qTEeKedpUACvKwew" name="soap">
+        <modelElement href="mobile.uml#_znrT4tqTEeKedpUACvKwew"/>
+        <type xmi:id="_z0C79NqTEeKedpUACvKwew" name="SoapObject">
+          <modelElement href="mobile.uml#_jhBlwc4kEeKrBaw-sqCxfw"/>
         </type>
       </parameters>
     </operations>

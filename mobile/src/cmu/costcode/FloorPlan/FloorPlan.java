@@ -13,10 +13,11 @@ import java.util.Map;
 import org.ksoap2.serialization.SoapObject;
 
 import android.content.Context;
-import android.os.AsyncTask;
 import android.util.Log;
 
 import cmu.costcode.ShoppingList.db.DatabaseAdaptor;
+import cmu.costcode.ShoppingList.objects.Category;
+import cmu.costcode.ShoppingList.objects.Category.Location;
 import cmu.costcode.WIFIScanner.AccessPoint;
 
 /**
@@ -28,7 +29,7 @@ public class FloorPlan extends Thread {
 	private static final String TAG = "FloorPlan";
 	
 	private List<AccessPoint> apList = null;
-	private List<AccessPoint> categoryList = null; // This is not Access point, but use the same object
+	private List<Category> categoryList = null;
 	
 	private WebService webService;				// Web Service Class for getting floor plan
 	private Map<String, String> wsArguments = null;	// Web Service Input parameters
@@ -76,7 +77,7 @@ public class FloorPlan extends Thread {
 	/** Get Category information
 	 * @return List<AccessPoint>
 	 */
-	public List<AccessPoint> getCategories() {
+	public List<Category> getCategories() {
 		if(categoryList == null) {
 			db.open();
 			categoryList = db.dbGetCategory();
@@ -92,8 +93,8 @@ public class FloorPlan extends Thread {
 		db.open();
 		
 		// Insert apList into db
-		for(Iterator<AccessPoint> itr = categoryList.iterator(); itr.hasNext(); ) {
-			AccessPoint category = itr.next();
+		for(Iterator<Category> itr = categoryList.iterator(); itr.hasNext(); ) {
+			Category category = itr.next();
 			db.dbCreateCategory(category);
 		}
 		
@@ -147,10 +148,10 @@ public class FloorPlan extends Thread {
 		
 		// TODO: uncomment the next line
 //		if(soap == null) {
-//			String testString = "<category>food</category><posx>5.3</posx><posy>-3.5</posy>" +
-//					"<category>electronics</category><posx>13</posx><posy>-7.3</posy>" +
-//					"<category>furniture</category><posx>13</posx><posy>-7.3</posy>" +
-//					"<category>clothes</category><posx>18</posx><posy>-15</posy>";
+//			String testString = "<sid>food</sid><posx>5.3</posx><posy>-3.5</posy>" +
+//					"<sid>electronics</sid><posx>13</posx><posy>-7.3</posy>" +
+//					"<sid>furniture</sid><posx>13</posx><posy>-7.3</posy>" +
+//					"<sid>clothes</sid><posx>18</posx><posy>-15</posy>";
 //			parseXML(testString);
 //		}
 		parseXML(soap.getPrimitivePropertyAsString("SectionsLocation"));
@@ -171,13 +172,16 @@ public class FloorPlan extends Thread {
 		
 		apList = new ArrayList<AccessPoint>();
 		
-		categoryList = new ArrayList<AccessPoint>(); // use the same object in Category
+		categoryList = new ArrayList<Category>();
 		
 		AccessPoint ap = null;
-		AccessPoint category = null;
+		Category category = null;
 		boolean ssidFlag = true;
 		
+		String categoryName = null;
+		double posx=0, posy=0;
 		while(true) {
+
         	if(splits[index].toLowerCase().equals("ssid")) {
         		ssidFlag = true; // Data is AP
         		
@@ -189,8 +193,7 @@ public class FloorPlan extends Thread {
 //        	else if(splits[index].toLowerCase().equals("category")) {
         		ssidFlag = false; // Data is category
         		
-        		category = new AccessPoint(); // create new AP
-        		category.setSsid(splits[++index]); // set the name of category
+        		categoryName = splits[++index];
         		index += 2; // skip next xml tag: <category>food</category>
         	}
         	else if(splits[index].toLowerCase().equals("posx")) {
@@ -198,7 +201,7 @@ public class FloorPlan extends Thread {
 	        		ap.setPosX(Float.parseFloat(splits[++index]));
         		}
         		else { // if data is category
-        			category.setPosX(Float.parseFloat(splits[++index]));
+        			posx = Double.parseDouble(splits[++index]);
         		}
 	        		index += 2; // skip next xml tag
 
@@ -209,8 +212,8 @@ public class FloorPlan extends Thread {
 	        		apList.add(ap);
         		}
         		else { // if data is category
-        			category.setPosY(Float.parseFloat(splits[++index]));
-        			categoryList.add(category);
+        			posy = Double.parseDouble(splits[++index]);
+        			categoryList.add(new Category(categoryName, new Location(posx, posy)));
         		}
 
         		index += 2; // skip next xml tag: <ssid>CMU</ssid>
@@ -273,9 +276,10 @@ public class FloorPlan extends Thread {
 			//TODO: comment the next part
 //			if(!checkFloorplanVersion(null)) {
 //				getAPsFromSoap(null);
+//				getCategoriesFromSoap(null);
 //			}
-		} catch (ConnectException e) {
-			Log.d(TAG, e.getMessage());
+//		} catch (ConnectException e) {
+//			Log.d(TAG, e.getMessage());
 		} catch (Exception e) {
 			Log.d(TAG, e.getMessage());
 		}

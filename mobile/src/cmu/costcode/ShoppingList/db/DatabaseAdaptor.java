@@ -12,6 +12,7 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+import cmu.costcode.ShoppingList.objects.Category;
 import cmu.costcode.ShoppingList.objects.Customer;
 import cmu.costcode.ShoppingList.objects.Item;
 import cmu.costcode.ShoppingList.objects.ShoppingListItem;
@@ -224,6 +225,58 @@ public class DatabaseAdaptor {
 	}
 	
 	
+	public ArrayList<ShoppingListItem> dbGetItemList(int memberId) {
+		// Return cursor location of row with matching memberId
+		Cursor mCursor = db.query(true, DbContract.ListItemEntry.TABLE_NAME, 
+				new String[] {
+					DbContract.ListItemEntry.ITEM_ID,
+					DbContract.ListItemEntry.CHECKED,
+					DbContract.ListItemEntry.POSITION
+				}, DbContract.ListItemEntry.MEMBER_ID + "=" + memberId, null,
+				null, null, null, null);
+		if (mCursor != null && mCursor.getCount() > 0) {
+			mCursor.moveToFirst();
+			Log.d(TAG, "Read list of ShoppingListItems for memberId " + memberId 
+					+ ". Found " + mCursor.getCount() + " matches.");
+		} else {
+			// No matches found
+			Log.d(TAG, "No ListItems with memberId " + memberId + " found.");
+			return null;
+		}
+		
+
+		// Create Customer's list of ListItems mapped to category
+		ArrayList<ShoppingListItem> shoppingList = 
+				new ArrayList<ShoppingListItem>();
+		
+		// Iterate through all ShoppingListItems
+		for(int i=0; i<mCursor.getCount(); i++) {
+			// Read ShoppingListItem properties
+			int itemId = mCursor.getInt(
+				    mCursor.getColumnIndexOrThrow(DbContract.ListItemEntry.ITEM_ID)
+					);
+			
+			boolean checked = mCursor.getInt(
+					mCursor.getColumnIndexOrThrow(DbContract.ListItemEntry.CHECKED)
+					) > 0;
+			int position = mCursor.getInt(
+				    mCursor.getColumnIndexOrThrow(DbContract.ListItemEntry.POSITION)
+					);
+			
+			// Get Item object from DB
+			Item item = dbGetItemById(itemId);
+			String category = item.getCategory();
+			
+			// Get list of items for current ListItem category
+			shoppingList.add(new ShoppingListItem(itemId, checked, position, item));
+			mCursor.moveToNext();
+		}
+		
+		Log.i(TAG, "Reading from DB: ShoppingList with " + shoppingList.size() + " items");
+		return shoppingList;
+	}
+	
+	
 	/**
 	 * Return an ShoppingListItem corresponding to MemberId
 	 * @param memberId
@@ -391,7 +444,7 @@ public class DatabaseAdaptor {
 	 * Return list of category
 	 * @return categoryList
 	 */
-	public List<AccessPoint> dbGetCategory() {
+	public List<Category> dbGetCategory() {
 		// Return cursor location of row with matching memberId
 		Cursor mCursor = db.query(true, DbContract.CategoryEntry.TABLE_NAME, 
 				new String[] {
@@ -413,29 +466,18 @@ public class DatabaseAdaptor {
 		
 
 		// Create the list of AccessPoint for categoryList
-		List<AccessPoint> categoryList = 
-				new ArrayList<AccessPoint>(mCursor.getCount());
+		List<Category> categoryList = 
+				new ArrayList<Category>(mCursor.getCount());
 		
 		// Iterate through all AccessPoint list
 		for(int i=0; i<mCursor.getCount(); i++) {
 			// Read AccessPoint properties
-			AccessPoint category = new AccessPoint();
-			category.setBssid(mCursor.getString(
-					mCursor.getColumnIndexOrThrow(DbContract.CategoryEntry.CATEGORY_ID)
-					)
-			);
-			category.setSsid(mCursor.getString(
-					mCursor.getColumnIndexOrThrow(DbContract.CategoryEntry.CAT_NAME)
-					)
-			);
-			category.setPosX(mCursor.getFloat(
-					mCursor.getColumnIndexOrThrow(DbContract.CategoryEntry.POSX)
-					)
-			);
-			category.setPosY(mCursor.getFloat(
-					mCursor.getColumnIndexOrThrow(DbContract.CategoryEntry.POSY)
-					)
-			);
+			
+			String name = mCursor.getString(mCursor.getColumnIndexOrThrow(DbContract.CategoryEntry.CAT_NAME));
+			double x = mCursor.getFloat(mCursor.getColumnIndexOrThrow(DbContract.CategoryEntry.POSX));
+			double y = mCursor.getFloat(mCursor.getColumnIndexOrThrow(DbContract.CategoryEntry.POSY));
+			Category category = new Category(name, new Location(x, y));
+			
 			categoryList.add(category);
 			
 			mCursor.moveToNext();
@@ -527,14 +569,12 @@ public class DatabaseAdaptor {
 	 * @param category
 	 * @return
 	 */
-	public void dbCreateCategory(AccessPoint category) {
+	public void dbCreateCategory(Category category) {
 		// Create a new map of values, where column names are the keys
 		ContentValues values = new ContentValues();
-		values.put(DbContract.CategoryEntry.CATEGORY_ID, category.getBssid());
-		values.put(DbContract.CategoryEntry.CAT_NAME, category.getSsid());
-		values.put(DbContract.CategoryEntry.POSX, category.getPosX());
-		values.put(DbContract.CategoryEntry.POSY, category.getPosY());
-		values.put(DbContract.CategoryEntry.DESC, category.getDescription());
+		values.put(DbContract.CategoryEntry.CAT_NAME, category.getName());
+		values.put(DbContract.CategoryEntry.POSX, category.getLocation().getLat()); // posx
+		values.put(DbContract.CategoryEntry.POSY, category.getLocation().getLon()); // posy
 		
 		// Insert the new row, returning the primary key value of the new row (itemId)
 		db.insert(DbContract.CategoryEntry.TABLE_NAME, null, values);

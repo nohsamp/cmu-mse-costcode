@@ -10,10 +10,9 @@ package cmu.costcode.ShoppingList;
 public final class R {
     public static final class array {
         public static final int categories=0x7f070000;
-        public static final int pref_sync_frequency_titles=0x7f070005;
-        public static final int pref_sync_frequency_values=0x7f070006;
-        public static final int pref_wifi_data_number_list_titles=0x7f070003;
-        public static final int pref_wifi_data_number_list_values=0x7f070004;
+        public static final int pref_reminder_list_values=0x7f070003;
+        public static final int pref_wifi_data_number_list_titles=0x7f070004;
+        public static final int pref_wifi_data_number_list_values=0x7f070005;
         public static final int pref_wifi_triangulation_list_titles=0x7f070001;
         public static final int pref_wifi_triangulation_list_values=0x7f070002;
     }
@@ -33,7 +32,6 @@ public final class R {
         public static final int icon=0x7f020000;
     }
     public static final class id {
-        public static final int AddProximityAlert=0x7f0a002b;
         public static final int Latitude=0x7f0a0016;
         public static final int Longitude=0x7f0a0017;
         public static final int RelativeLayout1=0x7f0a0013;
@@ -65,8 +63,9 @@ public final class R {
         public static final int loginEmailLabel=0x7f0a0011;
         public static final int loginPwordInput=0x7f0a000f;
         public static final int loginPwordLabel=0x7f0a0010;
+        public static final int menu_nfc=0x7f0a002c;
         public static final int menu_settings=0x7f0a002a;
-        public static final int menu_wifitriangulation=0x7f0a002c;
+        public static final int menu_wifitriangulation=0x7f0a002b;
         public static final int proxAlertDelete=0x7f0a001c;
         public static final int proxAlertRow=0x7f0a001b;
         public static final int proxAlertText=0x7f0a001d;
@@ -97,7 +96,9 @@ public final class R {
         public static final int wi_fi_scan=0x7f090003;
     }
     public static final class string {
-        public static final int action_settings=0x7f060011;
+        /**      <string name="manageProxAlertMenuLabel">Manage Proximity Alert</string> 
+         */
+        public static final int action_settings=0x7f060010;
         public static final int app_name=0x7f060000;
         public static final int editListAddButtonText=0x7f06000a;
         public static final int editListCatPrompt=0x7f06000d;
@@ -105,53 +106,49 @@ public final class R {
         public static final int editListDelete=0x7f060009;
         public static final int editListSaveButtonText=0x7f06000b;
         public static final int editListVoiceButton=0x7f06000e;
-        public static final int hello_world=0x7f060012;
+        public static final int hello_world=0x7f060013;
         public static final int login=0x7f060005;
         public static final int loginEmailText=0x7f060006;
         public static final int loginPwordText=0x7f060007;
-        public static final int manageProxAlertMenuLabel=0x7f060010;
         public static final int menu_settings=0x7f060001;
-        public static final int pref_default_display_name=0x7f06001b;
-        public static final int pref_description_bg_run=0x7f060019;
-        public static final int pref_description_noise_filter=0x7f06001e;
-        public static final int pref_description_wifi_triangulation=0x7f060017;
-        /**  Example settings for Data & Sync 
-         */
-        public static final int pref_header_data_sync=0x7f060020;
+        public static final int pref_default_display_name=0x7f06001d;
+        public static final int pref_description_bg_run=0x7f06001b;
+        public static final int pref_description_noise_filter=0x7f060020;
+        public static final int pref_description_reminder=0x7f060019;
         /**  Strings related to Settings 
  Example General settings 
          */
-        public static final int pref_header_general=0x7f060015;
+        public static final int pref_header_general=0x7f060017;
         /**  Example settings for Notifications 
          */
-        public static final int pref_header_notifications=0x7f060023;
-        public static final int pref_ringtone_silent=0x7f060026;
-        public static final int pref_title_bg_run=0x7f060018;
-        public static final int pref_title_choose_wifi_triangulation=0x7f06001c;
-        public static final int pref_title_display_name=0x7f06001a;
-        public static final int pref_title_new_message_notifications=0x7f060024;
-        public static final int pref_title_noise_filter=0x7f06001d;
-        public static final int pref_title_ringtone=0x7f060025;
-        public static final int pref_title_sync_frequency=0x7f060021;
-        public static final int pref_title_system_sync_settings=0x7f060022;
-        public static final int pref_title_vibrate=0x7f060027;
-        public static final int pref_title_wifi_triangulation=0x7f060016;
-        public static final int pref_wifi_data_number=0x7f06001f;
+        public static final int pref_header_notifications=0x7f060022;
+        public static final int pref_ringtone_silent=0x7f060025;
+        public static final int pref_title_bg_run=0x7f06001a;
+        public static final int pref_title_choose_wifi_triangulation=0x7f06001e;
+        public static final int pref_title_display_name=0x7f06001c;
+        public static final int pref_title_new_message_notifications=0x7f060023;
+        public static final int pref_title_noise_filter=0x7f06001f;
+        public static final int pref_title_reminder=0x7f060018;
+        public static final int pref_title_ringtone=0x7f060024;
+        public static final int pref_title_vibrate=0x7f060026;
+        public static final int pref_wifi_data_number=0x7f060021;
+        public static final int send_sl_nfc=0x7f060015;
         public static final int title_activity_edit_list=0x7f060004;
         public static final int title_activity_login=0x7f060002;
-        public static final int title_activity_notification=0x7f060013;
+        public static final int title_activity_notification=0x7f060014;
         public static final int title_activity_view_list=0x7f060003;
-        public static final int title_activity_wi_fi_scan_settings=0x7f060014;
+        public static final int title_activity_wi_fi_scan_settings=0x7f060016;
         public static final int toggleProxAlertLabel=0x7f06000f;
+        public static final int triangulation_start=0x7f060011;
+        public static final int triangulation_stop=0x7f060012;
         public static final int viewListEditButtonText=0x7f060008;
     }
     public static final class style {
         public static final int AppTheme=0x7f080000;
     }
     public static final class xml {
-        public static final int pref_data_sync=0x7f040000;
-        public static final int pref_general=0x7f040001;
-        public static final int pref_headers=0x7f040002;
-        public static final int pref_notification=0x7f040003;
+        public static final int pref_general=0x7f040000;
+        public static final int pref_headers=0x7f040001;
+        public static final int pref_notification=0x7f040002;
     }
 }

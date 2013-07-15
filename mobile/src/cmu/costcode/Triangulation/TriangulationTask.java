@@ -5,7 +5,6 @@ import java.util.Map;
 
 import cmu.costcode.ProximityAlert.ProximityIntentReceiver;
 import cmu.costcode.WIFIScanner.AccessPoint;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;

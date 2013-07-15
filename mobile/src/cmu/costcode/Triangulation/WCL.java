@@ -9,6 +9,7 @@ import java.util.Map;
 import android.content.Context;
 import android.net.wifi.WifiManager;
 
+import cmu.costcode.ShoppingList.objects.Category;
 import cmu.costcode.WIFIScanner.AccessPoint;
 
 public class WCL extends Triangulation {
@@ -128,12 +129,12 @@ public class WCL extends Triangulation {
 		double oldDist = Double.MAX_VALUE;
 		double newDist = Double.MAX_VALUE;
 		
-		for (Iterator<AccessPoint> itd = categoryList.iterator(); itd.hasNext();) {
-			AccessPoint category = itd.next();
+		for (Iterator<Category> itd = categoryList.iterator(); itd.hasNext();) {
+			Category category = itd.next();
 
-			newDist = Math.sqrt((category.getPosX() - x)
-					* (category.getPosX() - x) + (category.getPosY() - y)
-					* (category.getPosY() - y));
+			newDist = Math.sqrt((category.getLocation().getLat() - x)
+					* (category.getLocation().getLat() - x) + (category.getLocation().getLon() - y)
+					* (category.getLocation().getLon() - y));
 			// If distance is greater than threshold, ignore it
 			if(newDist >= thresholdDistance)
 				continue;
@@ -143,7 +144,7 @@ public class WCL extends Triangulation {
 										// one,
 				oldDist = newDist; // Keep the shortest distance, i.e., new
 									// distance
-				categoryName = category.getSsid();
+				categoryName = category.getName();
 			}
 		}
 		

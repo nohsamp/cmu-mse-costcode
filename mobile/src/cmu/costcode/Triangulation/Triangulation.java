@@ -6,11 +6,13 @@ import java.util.Map;
 import android.content.Context;
 import android.net.wifi.WifiManager;
 
+import cmu.costcode.ShoppingList.objects.Category;
 import cmu.costcode.WIFIScanner.AccessPoint;
 import cmu.costcode.WIFIScanner.WiFiScanner;
 
 public abstract class Triangulation {
-	protected List<AccessPoint> apList, categoryList;
+	protected List<AccessPoint> apList;
+	protected List<Category> categoryList;
 	protected WiFiScanner wifiScanner; 
 	
 	public static String TRIANG_METHOD = "TRIANG_METHOD";

@@ -1,11 +1,13 @@
 package cmu.costcode.ShoppingList.objects;
 
+import java.io.Serializable;
+
 /**
  * @author kevin
  *
  */
-public class Item {
-
+public class Item implements Serializable {
+	private static final long serialVersionUID = 1L;
 	private int itemId;
 	private String description;
 	private String category;
@@ -38,6 +40,11 @@ public class Item {
 
 	public void setCategory(String category) {
 		this.category = category;
+	}
+	
+	@Override
+	public String toString() {
+		return "Item Id: " + itemId + ", Description: " + description + ", Category: " + category;
 	}
 
 }

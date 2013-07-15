@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Map;
 
 import cmu.costcode.FloorPlan.FloorPlan;
+import cmu.costcode.ShoppingList.objects.Category;
 import cmu.costcode.Triangulation.Triangulation;
 
 import android.content.Context;
-import android.graphics.PointF;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiManager;
 import android.util.Log;
@@ -101,7 +101,7 @@ public class WiFiScanner {
 	}
 
 	// Return Category position List (use the same object with AccessPoint)
-	public List<AccessPoint> getCategoryList() {
+	public List<Category> getCategoryList() {
 		return fp.getCategories();
 	}
 

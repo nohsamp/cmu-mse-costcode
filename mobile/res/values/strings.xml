@@ -5,6 +5,7 @@
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_view_list">ViewListActivity</string>
     <string name="title_activity_edit_list">EditListActivity</string>
+    <string name="title_activity_sc_qr">ScanItemActivity</string>
     <string name="login">Login</string>
     <string name="loginEmailText">Email:</string>
     <string name="loginPwordText">Password:</string>
@@ -43,6 +44,8 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_notification">NotificationActivity</string>
-    <string name="send_sl_nfc">Send to cashier</string>
+    <string name="send_sl_nfc">Send list to cashier</string>
+    <string name="scanItemButtonText">Scan Item</string>
+    
 
 </resources>

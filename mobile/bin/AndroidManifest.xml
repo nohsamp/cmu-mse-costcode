@@ -16,6 +16,16 @@
     
     <uses-permission android:name="android.permission.NFC" />
     <uses-feature android:name="android.hardware.nfc" android:required="true" />
+    
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
 
     <application
         android:name="cmu.costcode.ProximityAlert.ShoppingListApplication"
@@ -55,6 +65,13 @@
         <activity
             android:name="cmu.costcode.ProximityAlert.NotificationActivity"
             android:label="@string/title_activity_notification" >
+        </activity>
+         <activity
+            android:name="cmu.costcode.simplifiedcheckout.qr.ScanditScanActivity"
+            android:label="@string/title_activity_sc_qr" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ViewListActivity" />
         </activity>
     </application>
 

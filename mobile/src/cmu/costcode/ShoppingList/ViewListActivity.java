@@ -32,9 +32,11 @@ import android.widget.ToggleButton;
 import cmu.costcode.ShoppingList.db.DatabaseAdaptor;
 import cmu.costcode.ShoppingList.objects.Category.Location;
 import cmu.costcode.ShoppingList.objects.Customer;
+import cmu.costcode.ShoppingList.objects.Item;
 import cmu.costcode.ShoppingList.objects.ShoppingListItem;
 import cmu.costcode.Triangulation.TriangulationTask;
 import cmu.costcode.simplifiedcheckout.nfc.CustomerNFC;
+import cmu.costcode.simplifiedcheckout.qr.ScanditScanActivity;
 
 public class ViewListActivity extends Activity  {
 	private final static String TAG = "ViewListActivity";
@@ -51,6 +53,8 @@ public class ViewListActivity extends Activity  {
 
 	private ProximityIntentReceiver pReceiver = null;
 	private TriangulationTask tTask = null;
+	
+	private ScrollView scroll;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -72,7 +76,7 @@ public class ViewListActivity extends Activity  {
 		cust.setShoppingList(db.dbGetShoppingListItems(memberId));
 
 		// Add list of ShoppingListItems
-		ScrollView scroll = (ScrollView)findViewById(R.id.viewListScroll);
+		scroll = (ScrollView)findViewById(R.id.viewListScroll);
 		LinearLayout itemList = generateListView(this, cust.getShoppingList());
 		scroll.addView(itemList);
 		TRIANGULATION_START = getString(R.string.triangulation_start);
@@ -202,7 +206,7 @@ public class ViewListActivity extends Activity  {
 
 		return checkbox;
 	}
-
+	
 	/**
 	 * Switch to EditList activity
 	 * 
@@ -380,5 +384,54 @@ public class ViewListActivity extends Activity  {
 		}
 
 	}
-
+	
+	/**
+	 * Scan item using Scandit API
+	 * @param view
+	 */
+	public void scanItem(View view) {
+		Intent intent = new Intent(this, ScanditScanActivity.class);
+		startActivityForResult(intent, 0);
+	}
+	
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data)
+	{
+	    super.onActivityResult(requestCode, resultCode, data);
+	    
+	    if(resultCode == RESULT_OK && data != null)
+	    {
+	        String barcode = data.getStringExtra("barcode");
+	        try {
+		        String[] splits = barcode.split("/");
+		        addItem(splits[0], splits[1]);
+	        }
+	        catch(Exception e) {
+	        	Toast.makeText(this, "Scan fail: not an item." + barcode, Toast.LENGTH_SHORT).show();
+	        }
+		}
+	    else if(resultCode == RESULT_CANCELED)
+	    {
+	    	Toast.makeText(this, "Scan Item Canceled", Toast.LENGTH_LONG).show();
+	    }
+	}
+	
+	private void addItem(String category, String desc) {
+		// Add new item to database and ShoppingList
+		int newItemId = db.dbCreateItem(desc, category);
+		db.dbCreateShoppingListItem(newItemId, cust.getMemberId(), false, 0);
+		
+		Item newItem = new Item(newItemId, desc, category);
+		Map<String, ArrayList<ShoppingListItem>> newShoppingList = cust.getShoppingList();
+		ArrayList<ShoppingListItem> addedItem = newShoppingList.get(category);
+		if(addedItem == null) {
+			addedItem = new ArrayList<ShoppingListItem>();
+		}
+		addedItem.add(new ShoppingListItem(newItemId, false, 0, newItem));
+		newShoppingList.put(category, addedItem);
+		cust.setShoppingList(newShoppingList);
+		
+		scroll.removeAllViewsInLayout();
+		scroll.addView(this.generateListView(this,newShoppingList));
+	}
 }

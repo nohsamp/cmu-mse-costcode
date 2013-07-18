@@ -24,44 +24,61 @@
     
     
     <!-- Bottom Divider -->
+
 	<View
 		android:layout_width="fill_parent"
 		android:layout_height="1dp"
 		android:background="@android:color/darker_gray"/>
     
-	<!-- Toggle Proximity Alerts -->
-    <LinearLayout
+	<!-- Toggle Proximity Alerts
+    <RelativeLinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="match_parent" >
 		<TextView
 			android:id="@+id/textView1"
-			android:layout_width="wrap_content"
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:text="@string/toggleProxAlertLabel"
 			android:textAppearance="?android:attr/textAppearanceMedium" />
 		<ToggleButton
 			android:id="@+id/toggleButton1"
-			android:layout_width="wrap_content"
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content" 
 			android:onClick="toggleProximityAlerts" />
-	</LinearLayout>
+	</RelativeLinearLayout>
+	-->
     
 
     <!-- Bottom Button: Edit List -->
-    <LinearLayout
+
+    <RelativeLayout
         android:id="@+id/viewListButtonBar"
         style="@android:style/ButtonBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_gravity="bottom"
         android:orientation="vertical" >
 
         <Button
-            android:id="@+id/viewListEditButton"
-            android:layout_width="match_parent"
+            android:id="@+id/scanItemButton"
+            android:layout_width="157dp"
             android:layout_height="wrap_content"
+            android:onClick="scanItem"
+            android:text="@string/scanItemButtonText" />
+
+        <Button
+            android:id="@+id/viewListEditButton"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/scanItemButton"
+            android:layout_alignBottom="@+id/scanItemButton"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/scanItemButton"
             android:onClick="editList"
             android:text="@string/viewListEditButtonText" />
-    </LinearLayout>
+
+    </RelativeLayout>
+
+    
 
 </LinearLayout>

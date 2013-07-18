@@ -22,8 +22,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-public class CustomerNFC implements CreateNdefMessageCallback, 
-		OnNdefPushCompleteCallback {
+public class CustomerNFC implements CreateNdefMessageCallback, OnNdefPushCompleteCallback {
 
 	private final static String TAG = "CustomerNFC";
 	NfcAdapter nfcAdapter;
@@ -52,13 +51,6 @@ public class CustomerNFC implements CreateNdefMessageCallback,
 	}
 	
 	/**
-	 * Set up the {@link android.app.ActionBar}.
-	 */
-//	private void setupActionBar() {
-//		getActionBar().setDisplayHomeAsUpEnabled(true);
-//	}
-
-	/**
 	 * Convert a serializable object 
 	 * @param object
 	 * @return
@@ -80,14 +72,6 @@ public class CustomerNFC implements CreateNdefMessageCallback,
 		return serialized;
 	}
 	
-	/**
-	 * Called when Send to Cashier button is pressed; activates NFC transmit
-	 * @param view
-	 */
-	public void broadcastShoppingList(View view) {
-		Toast.makeText(context, "This doesn't really do anything yet. :/", Toast.LENGTH_LONG).show();
-	}
-
 // NDEF Stuff
 	
 	/**

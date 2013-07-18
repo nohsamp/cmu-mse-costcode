@@ -37,6 +37,7 @@ import cmu.costcode.ShoppingList.objects.ShoppingListItem;
 import cmu.costcode.Triangulation.TriangulationTask;
 import cmu.costcode.simplifiedcheckout.nfc.CustomerNFC;
 import cmu.costcode.simplifiedcheckout.qr.ScanditScanActivity;
+import cmu.costcode.simplifiedcheckout.web.CustomerWeb;
 
 public class ViewListActivity extends Activity  {
 	private final static String TAG = "ViewListActivity";
@@ -81,6 +82,9 @@ public class ViewListActivity extends Activity  {
 		scroll.addView(itemList);
 		TRIANGULATION_START = getString(R.string.triangulation_start);
 		TRIANGULATION_STOP = getString(R.string.triangulation_stop);
+		
+		// Prepare NFC for sending shopping list to the cashier
+		CustomerNFC customer = new CustomerNFC(ViewListActivity.this, this, db.dbGetItemList(cust.getMemberId()));
 	}
 
 	@Override
@@ -242,8 +246,8 @@ public class ViewListActivity extends Activity  {
 		super.onOptionsItemSelected(item);
 		
 		if (item.getItemId() == R.id.menu_nfc) {
-			CustomerNFC customer = new CustomerNFC(ViewListActivity.this, this, db.dbGetItemList(cust.getMemberId()));
-			customer.broadcastShoppingList(getCurrentFocus());
+			CustomerWeb customerWeb = new CustomerWeb(this, cust.getMemberId(), db.dbGetItemList(cust.getMemberId()));
+			customerWeb.broadcastShoppingList(getCurrentFocus());
 		}
 		else {
 			SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
@@ -297,104 +301,19 @@ public class ViewListActivity extends Activity  {
 	}
 
 	/**
-	 * Creates a pretty comma-separated list of items in a given category as a string
-	 * @param category
-	 * @param items
-	 * @return
-	 */
-	private String printListReminder(String category, List<ShoppingListItem> items) {
-		String itemText = "";
-		// Create a nice comma-separated list of items with an 'and' at the end; TODO: make cleaner
-		if(items == null || items.isEmpty()) {
-			itemText = "something";
-		} else if(items.size() == 1) {
-			itemText = items.get(0).getItem().getDescription();
-		} else if(items.size() == 2) {
-			itemText = items.get(0).getItem().getDescription()
-					+ " and " + items.get(1).getItem().getDescription();
-		} else {
-			for(int i=0; i<items.size()-1; i++) {
-				itemText += items.get(i).getItem().getDescription() + ", ";
-			}
-			itemText += "and " + items.get(items.size()-1).getItem().getDescription();
-		}
-		String message = "You are near the " + category + " section. Don't forget to buy " + itemText + "!";
-		return message;
-	}
-
-	/**
-	 * Create test locations in the DB
-	 */
-	private void createDummyAlerts() {
-		//Near CMU
-		db.dbCreateAlert("Electronics", 40.44563, -79.948727);	// Chinese food place
-		db.dbCreateAlert("Clothing", 40.445375, -79.94866);	// Corner across Quiznos
-		db.dbCreateAlert("Food", 40.444697, -79.94862);	// Pizza Guy
-
-		//Test locations for Seattle's Costco HQ
-		//db.dbCreateAlert("Electronics", 47.551336, -122.065294);
-		//db.dbCreateAlert("Clothing", 47.551604, -122.065369);
-		//db.dbCreateAlert("Food", 47.551376, -122.065149);
-	}
-
-
-	/**
-	 * Toggle list Proximity Alerts on/off
-	 * @param view
-	 */
-	public void toggleProximityAlerts(View view) {
-		//TODO: register if toggle is on or off, some kind of persistent state
-
-		// Is the toggle on?
-		boolean proxAlertsOn = ((ToggleButton) view).isChecked();
-
-		// Retrieve the customer's shopping list and proximity alerts
-		Map<String, ArrayList<ShoppingListItem>> shoppingList = cust.getShoppingList();
-		Map<String, Location> proximityAlerts = db.dbGetProxAlerts();
-
-		// Make dummy alerts if you need to
-		if(proximityAlerts.isEmpty()) {
-			Log.i("proxalert", "No Proximity Alerts were present, creating dummy alerts.");
-			createDummyAlerts();
-			shoppingList = cust.getShoppingList();
-		}
-
-		if(proxAlertsOn) {
-			// Add proximity alerts for every category on the user's list
-			for (String category : proximityAlerts.keySet()) {
-				Log.i(TAG, "Adding proximity alert for " + category + " at ("
-						+ proximityAlerts.get(category).getLat() + ", " + proximityAlerts.get(category).getLon() + ").");
-
-				// Build a message string
-				List<ShoppingListItem> items = shoppingList.get(category);
-				String message = printListReminder(category, items);
-
-				// Add the proximity alert
-				Location categoryLoc = proximityAlerts.get(category);
-				ShoppingListApplication application = (ShoppingListApplication)getApplication();
-				application.addProximityAlert(categoryLoc.getLat(), categoryLoc.getLon(), 15, -1, message);
-			}
-			Toast.makeText(this, "Activated " + proximityAlerts.size() + " proximity alerts.",
-					Toast.LENGTH_LONG).show();
-		} else {
-			// Remove proximity alerts for every category on the user's list
-			ShoppingListApplication application = (ShoppingListApplication)getApplication();
-			application.removeAllProximityAlerts();
-			Toast.makeText(this, "Deactivated all proximity alerts.", Toast.LENGTH_LONG).show();
-		}
-
-	}
-	
-	/**
 	 * Scan item using Scandit API
 	 * @param view
 	 */
 	public void scanItem(View view) {
 		Intent intent = new Intent(this, ScanditScanActivity.class);
+		// Expect the activity to return results
 		startActivityForResult(intent, 0);
 	}
 	
 	@Override
+	/**
+	 * Post-activity with returned results
+	 */
 	protected void onActivityResult(int requestCode, int resultCode, Intent data)
 	{
 	    super.onActivityResult(requestCode, resultCode, data);
@@ -403,7 +322,9 @@ public class ViewListActivity extends Activity  {
 	    {
 	        String barcode = data.getStringExtra("barcode");
 	        try {
+	        	// barcode format should be "category/item description"
 		        String[] splits = barcode.split("/");
+		        // parameters: category, desc
 		        addItem(splits[0], splits[1]);
 	        }
 	        catch(Exception e) {

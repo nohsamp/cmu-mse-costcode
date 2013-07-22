@@ -121,7 +121,7 @@ public class ViewListActivity extends Activity  {
 			tTask.cancel(true);
 			// wait till task is cancelled
 			while(!tTask.isCancelled())
-				;
+				;		//TODO: is this locking?
 
 			// Unregister Broadcaster receiver for proximity alert 
 			unregisterReceiver(pReceiver);	// stop ProximityAlert
@@ -326,9 +326,14 @@ public class ViewListActivity extends Activity  {
 		        String[] splits = barcode.split("/");
 		        // parameters: category, desc
 		        addItem(splits[0], splits[1]);
+		        
+		        ADD NEW ITEM HERE; DONT CHECK FOR CATEGORY;
+		        SEND BARCODE TO WEB SERVICE (MAKE ASYNC METHOD TO SIMPLIFY SENDING REQUESTS?)
+		        RECEIVE PRODUCT NAME/PRICE, ADD TO LIST
 	        }
 	        catch(Exception e) {
 	        	Toast.makeText(this, "Scan fail: not an item." + barcode, Toast.LENGTH_SHORT).show();
+	        	Log.e(TAG, "Item scan failed; Exception=" + e.toString());
 	        }
 		}
 	    else if(resultCode == RESULT_CANCELED)

@@ -1,13 +1,11 @@
 package cmu.costcode.ShoppingList;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
-import cmu.costcode.ShoppingList.R;
-import cmu.costcode.ProximityAlert.NotificationActivity;
-import cmu.costcode.ProximityAlert.ProximityIntentReceiver;
-import cmu.costcode.ProximityAlert.ShoppingListApplication;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -15,6 +13,7 @@ import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Paint;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
@@ -28,9 +27,9 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.ToggleButton;
+import cmu.costcode.ProximityAlert.NotificationActivity;
+import cmu.costcode.ProximityAlert.ProximityIntentReceiver;
 import cmu.costcode.ShoppingList.db.DatabaseAdaptor;
-import cmu.costcode.ShoppingList.objects.Category.Location;
 import cmu.costcode.ShoppingList.objects.Customer;
 import cmu.costcode.ShoppingList.objects.Item;
 import cmu.costcode.ShoppingList.objects.ShoppingListItem;
@@ -48,6 +47,9 @@ public class ViewListActivity extends Activity  {
 	private static String TRIANGULATION_START;
 	private static String TRIANGULATION_STOP;
 	boolean isTaskStop = true; // flag for task start/stop
+	
+	final static String SERVER_URL = "http://cmu-mse-costco.herokuapp.com"; // "http://128.237.231.17:5000";
+	private final String API_GET_PRODUCT = "/costco/api/product/";
 	
 	//TODO: do something real (this is kinda dumb). Make the Category object do something. Map {CategoryName->Loc}
 //	private static Map<String, Location> categories = new HashMap<String, Location>(); 
@@ -322,14 +324,14 @@ public class ViewListActivity extends Activity  {
 	    {
 	        String barcode = data.getStringExtra("barcode");
 	        try {
-	        	// barcode format should be "category/item description"
-		        String[] splits = barcode.split("/");
-		        // parameters: category, desc
-		        addItem(splits[0], splits[1]);
+	        	// Send barcode to server to be processed
+	        	String requestUrl = SERVER_URL + API_GET_PRODUCT + barcode;
+	        	Log.i(TAG, "Getting barcode from server at: " + requestUrl);
+		        sendAsyncGetRequest(requestUrl, this);
 		        
-		        ADD NEW ITEM HERE; DONT CHECK FOR CATEGORY;
-		        SEND BARCODE TO WEB SERVICE (MAKE ASYNC METHOD TO SIMPLIFY SENDING REQUESTS?)
-		        RECEIVE PRODUCT NAME/PRICE, ADD TO LIST
+		        //TODO:
+//		        SEND BARCODE TO WEB SERVICE (MAKE ASYNC METHOD TO SIMPLIFY SENDING REQUESTS?)
+//		        RECEIVE PRODUCT NAME/PRICE, ADD TO LIST
 	        }
 	        catch(Exception e) {
 	        	Toast.makeText(this, "Scan fail: not an item." + barcode, Toast.LENGTH_SHORT).show();
@@ -342,12 +344,60 @@ public class ViewListActivity extends Activity  {
 	    }
 	}
 	
-	private void addItem(String category, String desc) {
+	/**
+	 * Call an asynchronous GET request to the server to retrieve product information
+	 * @param requestUrl
+	 * @param ctx
+	 */
+	private void sendAsyncGetRequest(String requestUrl, final Context ctx) {
+		new AsyncTask<String, Void, JSONObject>() {
+		    @Override
+		    protected JSONObject doInBackground(String... urls) {
+				JSONObject jsonObjRecv = cmu.costcode.simplifiedcheckout.web.HttpJsonClient.SendHttpGet(urls[0]);
+				return jsonObjRecv;
+		    }
+		
+		    @Override
+		    protected void onPostExecute(JSONObject jsonObjRecv) {
+		    	if(jsonObjRecv == null) {
+		    		// Fail
+		    		Toast.makeText(ctx, "Something broked. :( \nCheck the looogs.", Toast.LENGTH_LONG).show();
+		    	} else {
+		    		// Success
+		    		//TODO: check to see if successful get; response code 201 in HttpJsonClient
+		    		//TODO: catch exceptions
+			    	Log.i(TAG, "Flask Server Response!: " + jsonObjRecv.toString());
+			    	
+			    	try {
+				    	// Pull out parameters from JSON
+				    	String name = jsonObjRecv.getString("name");
+				    	String category = jsonObjRecv.getString("category");
+				    	float price = (float)jsonObjRecv.getDouble("price");
+				    	String upc = jsonObjRecv.getString("upc");
+				    	// Create new item
+				    	addItem(name, category, price, upc);
+				    	Toast.makeText(ctx, "Added new item ", Toast.LENGTH_LONG).show();
+			    	} catch(JSONException e) {
+			    		Toast.makeText(ctx, "Invalid response; did not add item. :(", Toast.LENGTH_LONG).show();
+			    		Log.e(TAG, "Error adding item from server:" + e.toString());
+			    	}
+		    	}
+		    }
+		}.execute(requestUrl);
+	}
+	
+	
+	/**
+	 * Add a new item to the customer's shopping list
+	 * @param category
+	 * @param name
+	 */
+	private void addItem(String name, String category, float price, String upc) {
 		// Add new item to database and ShoppingList
-		int newItemId = db.dbCreateItem(desc, category);
+		int newItemId = db.dbCreateItem(name, category, price, upc);
 		db.dbCreateShoppingListItem(newItemId, cust.getMemberId(), false, 0);
 		
-		Item newItem = new Item(newItemId, desc, category);
+		Item newItem = new Item(newItemId, name, category, price, upc);
 		Map<String, ArrayList<ShoppingListItem>> newShoppingList = cust.getShoppingList();
 		ArrayList<ShoppingListItem> addedItem = newShoppingList.get(category);
 		if(addedItem == null) {

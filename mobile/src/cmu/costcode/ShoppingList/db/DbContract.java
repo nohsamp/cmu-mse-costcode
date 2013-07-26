@@ -32,6 +32,8 @@ public class DbContract {
 		public static final String ITEM_ID = "item_id";
 		public static final String DESCRIPTION = "description";
 		public static final String CATEGORY_NAME = "category_name";
+		public static final String PRICE = "price";
+		public static final String UPC = "upc";
 	}
 	
 	/** Constants for Category table in DB */

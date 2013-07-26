@@ -25,6 +25,7 @@
     <string-array name="categories">
         <item>Appliances</item>
         <item>Baby/Toys</item>
+        <item>Books/Magazines</item>
         <item>Clothing</item>
         <item>Computers</item>
         <item>Electronics</item>

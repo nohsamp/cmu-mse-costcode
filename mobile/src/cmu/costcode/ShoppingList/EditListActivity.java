@@ -173,7 +173,8 @@ public class EditListActivity extends Activity {
 				// Add item to the new shopping list under previous category
 				EditText itemTextView = (EditText)listItem.findViewById(R.id.editItemText);
 				int itemId = (Integer)listItem.getTag();
-				db.dbUpdateItem(itemId, category, itemTextView.getText().toString());
+				//TODO: change this pronto; user shouldn't have to enter prices or UPCs
+				db.dbUpdateItem(itemId, category, itemTextView.getText().toString(), 0.0f, "111222333444");
 			}
 		}
 	}
@@ -190,6 +191,8 @@ public class EditListActivity extends Activity {
 		// Convert the views into strings
 		String newItemDesc = prevItemDescView.getText().toString();
 		String newItemCat = prevItemCatView.getSelectedItem().toString();
+		float newItemPrice = 0.0f;
+		String newItemUpc = "111222333444";
 		
 		// Skip this item if no description filled in
 		if(newItemDesc == null || newItemDesc.length() == 0) {
@@ -197,11 +200,11 @@ public class EditListActivity extends Activity {
 		}
 		
 		// Add new item to database and ShoppingList
-		int newItemId = db.dbCreateItem(newItemDesc, newItemCat);
+		int newItemId = db.dbCreateItem(newItemDesc, newItemCat, newItemPrice, newItemUpc);
 		db.dbCreateShoppingListItem(newItemId, cust.getMemberId(), false, 0);
-		Log.i(TAG, "ADDDDINNNNGGGG=("+newItemDesc+", "+newItemCat+" ("+newItemId+") )");
+		Log.i(TAG, "Adding item=("+newItemDesc+", "+newItemCat+" ("+newItemId+") )");
 		
-		Item newItem = new Item(newItemId, newItemDesc, newItemCat);
+		Item newItem = new Item(newItemId, newItemDesc, newItemCat, newItemPrice, newItemUpc);
 		Map<String, ArrayList<ShoppingListItem>> newShoppingList = cust.getShoppingList();
 		ArrayList<ShoppingListItem> addedItem = newShoppingList.get(newItemCat);
 		if(addedItem == null) {

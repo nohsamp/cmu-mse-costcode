@@ -23,7 +23,7 @@ public class CustomerWeb {
 	private final static String TAG = "CustomerWeb";
 	private ArrayList<ShoppingListItem> shoppingList;
 	private String customerName;
-	final static String SERVER_IP = "cmu-mse-costco.herokuapp.com/";
+	final static String SERVER_IP = "cmu-mse-costco.herokuapp.com";
 	private final String API_POST_LOCATION = "/costco/api/order";
 	
 	private Context context;
@@ -49,6 +49,7 @@ public class CustomerWeb {
 		String apiPostAddress = "http://" + SERVER_IP + API_POST_LOCATION; 
 		try {
 			JSONObject jsonObjSend = getJsonObjectFromMap(orderMap);
+			Log.i(TAG, "Sending shopping list to server: " + jsonObjSend.toString());
 			sendAsyncShoppingListRequest(apiPostAddress, jsonObjSend, this.context);
 		} catch(Exception e) {
 			e.printStackTrace();
@@ -66,10 +67,10 @@ public class CustomerWeb {
 		for(int i=0; i<list.size(); i++) {
 			JSONObject jsonItemMap = new JSONObject();
 			try {
-				jsonItemMap.put("upc", list.get(i).getItemId());
+				jsonItemMap.put("upc", list.get(i).getItem().getUpc());
 				jsonItemMap.put("quantity", 1);
+				//TODO: Account for item quantity? In ShoppingListItem perhaps. 
 			} catch (JSONException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 	        jsonListArray.put(jsonItemMap);

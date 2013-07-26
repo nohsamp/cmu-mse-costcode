@@ -99,15 +99,15 @@ public class LoginActivity extends Activity {
 			memberId = 1;
 			Log.d(TAG, "Created Dummy member Kevin with memberId " + memberId + ".");
 			
-			int itemId1 = dbHelper.dbCreateItem("Milk", "Food");
+			int itemId1 = dbHelper.dbCreateItem("Harry Potter, Book 3", "Books/Magazines", 17.50f, "0038332164718");
 			dbHelper.dbCreateShoppingListItem(itemId1, memberId, false, 1);
 			Log.d(TAG, "Created dummy item Milk with itemId " + itemId1 + ".");
 			
-			int itemId2 = dbHelper.dbCreateItem("Cheez-its", "Food");
+			int itemId2 = dbHelper.dbCreateItem("Uncrustables", "Food", 5.37f, "0051500048160");
 			dbHelper.dbCreateShoppingListItem(itemId2, memberId, false, 2);
 			Log.d(TAG, "Created dummy item Cheez-its with itemId " + itemId2 + ".");
 			
-			int itemId3 = dbHelper.dbCreateItem("New Jacket", "Clothing");
+			int itemId3 = dbHelper.dbCreateItem("North Face Denali jacket", "Clothing", 124, "0032546198033");
 			dbHelper.dbCreateShoppingListItem(itemId3, memberId, false, 3);
 			Log.d(TAG, "Created dummy item New Jacket with itemId " + itemId3 + ".");
 		}

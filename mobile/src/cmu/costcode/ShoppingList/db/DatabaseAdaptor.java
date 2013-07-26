@@ -62,7 +62,9 @@ public class DatabaseAdaptor {
 			    "CREATE TABLE " + DbContract.ItemEntry.TABLE_NAME + " (" +
 			    DbContract.ItemEntry.ITEM_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
 			    DbContract.ItemEntry.DESCRIPTION + TEXT_TYPE + COMMA_SEP +
-			    DbContract.ItemEntry.CATEGORY_NAME + TEXT_TYPE + 
+			    DbContract.ItemEntry.CATEGORY_NAME + TEXT_TYPE + COMMA_SEP +
+			    DbContract.ItemEntry.PRICE + " FLOAT, " +
+			    DbContract.ItemEntry.UPC + TEXT_TYPE +
 			    " )";
 		
 		private static final String SQL_CREATE_CATEGORY =
@@ -353,7 +355,9 @@ public class DatabaseAdaptor {
 				new String[] {
 					DbContract.ItemEntry.ITEM_ID,
 					DbContract.ItemEntry.DESCRIPTION,
-					DbContract.ItemEntry.CATEGORY_NAME
+					DbContract.ItemEntry.CATEGORY_NAME,
+					DbContract.ItemEntry.PRICE,
+					DbContract.ItemEntry.UPC
 				}, DbContract.ItemEntry.ITEM_ID + "=" + itemId, null,
 				null, null, null, null);
 		if (mCursor != null && mCursor.getCount() > 0) {
@@ -373,11 +377,17 @@ public class DatabaseAdaptor {
 		String category = mCursor.getString(
 			    mCursor.getColumnIndexOrThrow(DbContract.ItemEntry.CATEGORY_NAME)
 				);
+		float price = mCursor.getFloat(
+			    mCursor.getColumnIndexOrThrow(DbContract.ItemEntry.PRICE)
+				);
+		String upc = mCursor.getString(
+			    mCursor.getColumnIndexOrThrow(DbContract.ItemEntry.UPC)
+				);
 		
 		// Create Item object and return it
 		Log.i(TAG, "Reading from DB: Item (id " + itemId + ") in category '" 
 				+ category + "': '" + description + "'");
-		return new Item(itemId, description, category);
+		return new Item(itemId, description, category, price, upc);
 	}
 	
 	
@@ -535,11 +545,13 @@ public class DatabaseAdaptor {
 	 * @param category
 	 * @return
 	 */
-	public int dbCreateItem(String description, String category) {
+	public int dbCreateItem(String description, String category, float price, String upc) {
 		// Create a new map of values, where column names are the keys
 		ContentValues values = new ContentValues();
 		values.put(DbContract.ItemEntry.DESCRIPTION, description);
 		values.put(DbContract.ItemEntry.CATEGORY_NAME, category);
+		values.put(DbContract.ItemEntry.PRICE, price);
+		values.put(DbContract.ItemEntry.UPC, upc);
 		
 		// Insert the new row, returning the primary key value of the new row (itemId)
 		return (int)db.insert(DbContract.ItemEntry.TABLE_NAME, null, values);
@@ -622,11 +634,13 @@ public class DatabaseAdaptor {
 	 * @param description
 	 * @return
 	 */
-	public int dbUpdateItem(int itemId, String category, String description) {
+	public int dbUpdateItem(int itemId, String category, String description, float price, String upc) {
 		// Create a new map of values, where column names are the keys
 		ContentValues values = new ContentValues();
 		values.put(DbContract.ItemEntry.CATEGORY_NAME, category);
 		values.put(DbContract.ItemEntry.DESCRIPTION, description);
+		values.put(DbContract.ItemEntry.PRICE, price);
+		values.put(DbContract.ItemEntry.UPC, upc);
 
 		// Which row to update, based on the ID
 		String selection = DbContract.ItemEntry.ITEM_ID + "=" + itemId;

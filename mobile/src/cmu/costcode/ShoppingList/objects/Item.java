@@ -11,11 +11,15 @@ public class Item implements Serializable {
 	private int itemId;
 	private String description;
 	private String category;
+	private float price;
+	private String upc;
 	
-	public Item(int itemId, String description, String category) {
+	public Item(int itemId, String description, String category, float price, String upc) {
 		this.itemId = itemId;
 		this.description = description;
 		this.category = category;
+		this.price = price;
+		this.upc = upc;
 	}
 
 	public int getItemId() {
@@ -40,6 +44,22 @@ public class Item implements Serializable {
 
 	public void setCategory(String category) {
 		this.category = category;
+	}
+	
+	public float getPrice() {
+		return price;
+	}
+	
+	public void setPrice(float price) {
+		this.price = price;
+	}
+	
+	public String getUpc() {
+		return upc;
+	}
+	
+	public void setUpc(String upc) {
+		this.upc = upc;
 	}
 	
 	@Override

@@ -37,6 +37,7 @@ import cmu.costcode.Triangulation.TriangulationTask;
 import cmu.costcode.simplifiedcheckout.nfc.CustomerNFC;
 import cmu.costcode.simplifiedcheckout.qr.ScanditScanActivity;
 import cmu.costcode.simplifiedcheckout.web.CustomerWeb;
+import cmu.costcode.simplifiedcheckout.web.HttpJsonClient;
 
 public class ViewListActivity extends Activity  {
 	private final static String TAG = "ViewListActivity";
@@ -353,7 +354,7 @@ public class ViewListActivity extends Activity  {
 		new AsyncTask<String, Void, JSONObject>() {
 		    @Override
 		    protected JSONObject doInBackground(String... urls) {
-				JSONObject jsonObjRecv = cmu.costcode.simplifiedcheckout.web.HttpJsonClient.SendHttpGet(urls[0]);
+				JSONObject jsonObjRecv = HttpJsonClient.SendHttpGet(urls[0]);
 				return jsonObjRecv;
 		    }
 		

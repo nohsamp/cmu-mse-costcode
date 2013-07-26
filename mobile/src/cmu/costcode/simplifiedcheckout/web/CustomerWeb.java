@@ -10,13 +10,14 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import cmu.costcode.ShoppingList.objects.ShoppingListItem;
-
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
+import cmu.costcode.ShoppingList.ListQRDisplayActivity;
+import cmu.costcode.ShoppingList.objects.ShoppingListItem;
 
 public class CustomerWeb {
 
@@ -106,6 +107,17 @@ public class CustomerWeb {
 		    		//TODO: check to see if successful post; response code 201 in HttpJsonClient
 			    	Log.i(TAG, "Flask Server Response!: " + jsonObjRecv.toString());
 					Toast.makeText(ctx, "Successfully sent shopping list to server!", Toast.LENGTH_SHORT).show();
+					Intent intent = new Intent(ctx, ListQRDisplayActivity.class);
+					
+					// Get new customer ID
+					try {
+						int customerId = jsonObjRecv.getInt("customer_id");
+						intent.putExtra("CustomerID", customerId);
+						ctx.startActivity(intent);
+					} catch (JSONException e) {
+						e.printStackTrace();
+						Toast.makeText(ctx, "Server sent back an invalid response. :(", Toast.LENGTH_SHORT).show();
+					}
 		    	}
 		    }
 		}.execute(requestUrl);

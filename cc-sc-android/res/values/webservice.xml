@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ws_error_noconnection">Application cannot continue. No Internet connection is active</string>
+    <string name="ws_method_status">method-status</string>
+    
+    <!-- Web Service: Activation -->
+    
+    <string name="ws_activation_url">http://slhwsapp-costcode.rhcloud.com:80/MemberWS</string>
+    <string name="ws_activation_namespace">http://ws.biz.slh.cc.mse.cmu.edu/</string>
+    
+    <string name="ws_activation_method_validate">validateMembership</string>
+    <string name="ws_activation_property_validity">validity</string>
+    <string name="ws_activation_property_memberId">member-id</string>
+    
+    <!-- Web Service: Item Category -->
+    
+    <string name="ws_category_url">http://slhwsapp-costcode.rhcloud.com:80/MemberWS</string>
+    <string name="ws_category_namespace">http://ws.biz.slh.cc.mse.cmu.edu/</string>
+    
+    <string name="ws_category_method_retrieveVersion">retrieveCategoryVersion</string>
+    <string name="ws_category_method_retrieveCategories">retrieveCategories</string>
+    
+    <string name="ws_category_property_version">category-version</string>
+    <string name="ws_category_property_categories">categories</string>
+    <string name="ws_category_property_id">id</string>
+    <string name="ws_category_property_name">name</string>
+    <string name="ws_category_property_desc">description</string>
+    
+    <!-- Web Service: Shopping List  -->
+    
+    <string name="ws_sl_url">http://slhwsapp-costcode.rhcloud.com:80/MemberWS</string>
+    <string name="ws_sl_namespace">http://ws.biz.slh.cc.mse.cmu.edu/</string>
+    
+    <string name="ws_sl_method_retrieveMemberVersion">retrieveMemberVersion</string>
+    <string name="ws_sl_method_retrieveSLs">retrieveShoppingLists</string>
+    <string name="ws_sl_method_saveSL">saveShoppingList</string>
+    <string name="ws_sl_method_deleteSL">deleteShoppingList</string>
+    
+    <string name="ws_sl_property_memberVersion">member-version</string>
+    <string name="ws_sl_property_sl">sl</string>
+    <string name="ws_sl_property_id">id</string>
+    <string name="ws_sl_property_name">name</string>
+    <string name="ws_sl_property_date">date</string>
+    <string name="ws_sl_property_desc">description</string>
+    <string name="ws_sl_property_version">sl-version</string>
+    <string name="ws_sl_property_items">items</string>
+    
+    <!-- Web Service: Shopping List Item  -->
+    
+    <string name="ws_sl_item_method_saveSLItem">saveShoppingListItem</string>
+    <string name="ws_sl_item_method_deleteSLItem">deleteShoppingListItem</string>
+    
+    <string name="ws_sl_item_property_id">id</string>
+    <string name="ws_sl_item_property_sl">shoppinglist-id</string>
+    <string name="ws_sl_item_property_category">category-id</string>
+    <string name="ws_sl_item_property_name">name</string>
+    <string name="ws_sl_item_property_quantity">quantity</string>
+    <string name="ws_sl_item_property_price">price</string>
+    <string name="ws_sl_item_property_unit">unit-id</string>
+    <string name="ws_sl_item_property_desc">description</string>
+    
+    <!-- Web Service: Warehouse -->
+    
+    <string name="ws_warehouse_url">http://slhwsapp-costcode.rhcloud.com:80/MemberWS</string>
+    <string name="ws_warehouse_namespace">http://ws.biz.slh.cc.mse.cmu.edu/</string>
+    
+    <string name="ws_warehouse_method_retrieveWarehousesVersion">retrieveWarehousesVersion</string>
+    <string name="ws_warehouse_method_retrieveWarehouses">retrieveWarehouses</string>
+    <string name="ws_warehouse_method_retrieveVersion">retrieveWarehouseVersion</string>
+    
+    <string name="ws_warehouse_property_warehouses">warehouses</string>
+    <string name="ws_warehouse_property_id">id</string>
+    <string name="ws_warehouse_property_name">name</string>
+    <string name="ws_warehouse_property_version">version</string>
+    
+    <!-- Web Service: Section -->
+    
+    <string name="ws_section_method_retrieveSections">retrieveSections</string>
+    
+    <string name="ws_section_property_sections">sections</string>
+    <string name="ws_section_property_section">section</string>
+    <string name="ws_section_property_id">id</string>
+    <string name="ws_section_property_posx">posx</string>
+    <string name="ws_section_property_posy">posy</string>
+    
+    <!-- Web Service: Floor Plan -->
+    
+    <string name="ws_floorplan_url">http://slhwsapp-costcode.rhcloud.com:80/FloorPlanWS</string>
+    <string name="ws_floorplan_namespace">http://ws.biz.slh.cc.mse.cmu.edu/</string>
+    
+    <string name="ws_floorplan_warehouseid">warehouseID</string>
+    
+    
+</resources>

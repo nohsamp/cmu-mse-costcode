@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Shopping list Item: Fields-->
+    
+    <string name="sl_item_category">Category</string>
+    <string name="sl_item_name">Name</string>
+    <string name="sl_item_quantity">Quantity</string>
+    <string name="sl_item_unit">Unit</string>
+    <string name="sl_item_price">Price</string>
+    <string name="sl_item_comment">Comment</string>
+    
+    <string name="sl_item_category_empty">--Select Category--</string>
+    <string name="sl_item_unit_empty">--Select Unit--</string>
+    
+    <!-- Shopping list Item: Buttons-->
+    
+    <string name="sl_item_add">Add new item</string>
+    <string name="sl_item_delete">Delete item</string>
+    <string name="sl_item_save">Save</string>
+    <string name="sl_item_cancel">Cancel</string>
+    
+    <!-- Shopping list Item: Dialogs-->
+    
+    <string name="sl_item_title">Shopping List Item</string>
+    
+    <string name="sl_item_loading">Loading items. Please wait&#8230;</string>
+    <string name="sl_item_saving">Saving item. Please wait&#8230;</string>
+    <string name="sl_item_deleting">Deleting item. Please wait&#8230;</string>
+    
+    <string name="sl_item_save_success">Item was saved</string>
+    <string name="sl_item_save_failed">Cannot save the item.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    
+    <string name="sl_item_delete_title">Deleting shopping list item</string>
+    <string name="sl_item_delete_message">Are you sure to delete this item?\n All the date of the item \"%1$s\" will be permanently removed</string>
+    <string name="sl_item_delete_success">Item was deleted</string>
+    
+    <string name="sl_item_error_fetch">Shopping list items fetching failed.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    
+    <string name="sl_item_save_invalidFields">Cannot save. Fields are not correctly filled!</string>
+    
+    <!-- Shopping list Item: Others-->
+    
+    <string name="sl_item_mark">&#8226;</string>
+    
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Shopping list -->
+    
+    <string name="sl_title">Shopping List Details</string>
+    
+    <string name="sl_name">Name</string>
+    <string name="sl_date">Date</string>
+    <string name="sl_comment">Comments</string>
+    
+    <!-- Shopping list: commands -->
+    <string name="sl_delete">Delete</string>
+    <string name="sl_items_edit">Edit items</string>
+    <string name="sl_save">Save</string>
+    <string name="sl_cancel">Cancel</string>
+    <string name="sl_show_summary">Show summary</string>
+    
+    <string name="sl_save_success">Shopping list was added</string>
+    <string name="sl_save_invalidFields">Cannot save. Fields are not correctly filled!</string>
+    <string name="sl_save_failed">Cannot save shopping list.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    
+    <string name="sl_delete_title">Deleting shopping list</string>
+    <string name="sl_delete_message">Are you sure to delete this shopping list?\n All the date of the shopping list \"%1$s\" will be permanently removed</string>
+    <string name="sl_delete_success">Shopping list was deleted</string>
+    
+    <string name="sl_active_error_persist">Cannot store active shopping list.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    <string name="sl_active_error_retrieve">Cannot retrieve active shopping list.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    
+</resources>

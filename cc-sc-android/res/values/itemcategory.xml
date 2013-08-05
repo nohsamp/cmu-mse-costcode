@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Item Category -->
+    
+    <string name="itemcategory_error_versionPersist">Cannot store Item Category version.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    <string name="itemcategory_error_versionRetrieve">Cannot retrieve Item Category version.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    
+</resources>

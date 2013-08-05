@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="validation_membership">
+        \&#34;%1$s\&#34; must start with (1, 3, or 8) and contain 12 digits in total
+    </string>
+    
+    <string name="validation_name">
+        \&#34;%1$s\&#34; should contain between 3 and 20 characters
+    </string>
+    
+    <string name="validation_comment">
+        \&#34;%1$s\&#34; should contain no more than 100 characters
+    </string>
+    
+    <string name="validation_quantity">
+        \&#34;%1$s\&#34; should not contain negative number
+    </string>
+    
+    <string name="validation_money">
+        \&#34;%1$s\&#34; is not a valid money expression
+    </string>
+    
+</resources>

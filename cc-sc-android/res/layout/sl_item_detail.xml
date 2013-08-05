@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1"
+    android:shrinkColumns="0">
+    
+    <!-- HEADER -->
+    
+    <TableRow>
+        <TextView
+            style="@style/formHeader"
+            android:layout_span="2"
+            android:text="@string/sl_item_title" />
+    </TableRow>
+    
+    <!-- SEPARATOR -->
+    
+    <View 
+        android:layout_width="fill_parent" 
+        android:layout_height="4sp" />
+    
+    <!-- CATEGORY -->
+    
+    <TableRow>
+        <TextView 
+            style="@style/formFieldLabel" 
+            android:text="@string/sl_item_category" />
+        <edu.cmu.cc.sc.view.ItemCategorySpinner
+            android:id="@+id/sp_sl_item_category"
+            style="@style/formField.spinner" />
+    </TableRow>
+    
+    <!-- NAME -->
+    
+    <TableRow>
+        <TextView 
+            style="@style/formFieldLabel" 
+            android:text="@string/sl_item_name" />
+        <edu.cmu.cc.android.view.ValidatingEditText 
+        	android:id="@+id/et_sl_item_name"
+        	style="@style/formField.text" />
+    </TableRow>
+    
+    <!-- QUANTITY -->
+    
+    <TableRow>
+        <TextView 
+            style="@style/formFieldLabel" 
+            android:paddingTop="10dip"
+            android:text="@string/sl_item_quantity" />
+        
+        <LinearLayout
+            android:orientation="horizontal"
+            style="@style/formField">
+            
+            <edu.cmu.cc.android.view.ValidatingEditText
+        		android:id="@+id/et_sl_item_quantity"
+        		style="@style/formField.text"/>
+            
+            <edu.cmu.cc.sc.view.UnitSpinner
+            	android:id="@+id/sp_sl_item_unit"
+            	style="@style/formField.spinner" />
+        </LinearLayout>
+    </TableRow>
+    
+    <!-- PRICE -->
+    
+    <TableRow>
+        <TextView 
+            style="@style/formFieldLabel" 
+            android:text="@string/sl_item_price" />
+        <edu.cmu.cc.android.view.ValidatingEditText 
+        	android:id="@+id/et_sl_item_price"
+        	style="@style/formField.text" />
+    </TableRow>
+    
+    <!-- COMMENT -->
+    
+    <TableRow>
+        <TextView 
+            style="@style/formFieldLabel" 
+            android:text="@string/sl_item_comment" />
+        <edu.cmu.cc.android.view.ValidatingEditText 
+        	android:id="@+id/et_sl_item_comment"
+        	style="@style/formField.text" />
+    </TableRow>
+    
+</TableLayout>

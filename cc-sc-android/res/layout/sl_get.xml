@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+    <!-- HEADER -->
+    
+    <View 
+        android:layout_width="fill_parent" 
+        android:layout_height="4sp" />
+    
+    <TextView 
+        android:id="@+id/allshoppinglists_title" 
+        android:text="@string/sl_get_title"
+        style="@style/formHeader"/>
+    
+    <View 
+        android:layout_width="fill_parent" 
+        android:layout_height="3sp" />
+
+    <Button
+        android:id="@+id/btnGetQR"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:onClick="scanItem"
+        android:text="@string/sl_get_qr" />
+
+    <TextView
+        android:id="@id/android:empty"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:text="@string/sl_get_enter" />
+    
+    <EditText
+        android:id="@+id/sl_get_customerId"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnGetWeb"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:onClick="retrieveShoppingList"
+        android:text="@string/sl_get_web" />
+
+</LinearLayout>

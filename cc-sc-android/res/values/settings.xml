@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="settings_triangulation_onOff">Turn on/off location tracking</string>
+    
+    <!-- Setting: Wifi triangulation status -->
+    <string name="settings_wifi_status_enable">Enable WiFi Triangulation</string>
+    
+    <string name="settings_wifi_status_error_persist">Cannot store WiFi status.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    <string name="settings_wifi_status_error_retrieve">Cannot retrieve WiFi status.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    
+    <!-- Setting: Background scanning -->
+    <string name="settings_bckgscan_status_error_persist">Cannot store Background scanning status.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    <string name="settings_bckgscan_status_error_retrieve">Cannot retrieve Background scanning status.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    
+    <!-- Setting: Warehouse -->
+    <string name="settings_warehouse_error_persist">Cannot store selected Warehouse.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    <string name="settings_warehouse_error_retrieve">Cannot retrieve selected Warehouse.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    
+</resources>

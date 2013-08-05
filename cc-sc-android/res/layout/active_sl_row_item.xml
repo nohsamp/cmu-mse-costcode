@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    android:shrinkColumns="*">
+    		 
+    <TableRow>
+        
+        <TextView 
+            android:id="@+id/tv_active_sl_row_item_mark" 
+            android:text="@string/sl_item_mark"
+            android:layout_width="10dip"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5sp"
+            android:gravity="left"/>
+        
+        <TextView 
+            android:id="@+id/tv_active_sl_row_item_name" 
+            android:text="@string/sl_item_name"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5sp"
+            android:gravity="left"/>
+        
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:paddingRight="5sp" 
+            android:paddingLeft="25sp"
+            android:gravity="right"
+            android:layout_gravity="right">
+  			
+  			<ImageView
+  			    android:id="@+id/btn_active_sl_row_item_delete"
+  			    android:layout_width="wrap_content" 
+  			    android:layout_height="wrap_content"
+  			    android:src="@drawable/delete"
+  			    android:paddingLeft="1sp"
+  			    android:contentDescription="@string/sl_item_delete"
+  			    android:layout_gravity="right"/>
+  			
+  		</LinearLayout>
+        
+    </TableRow>
+    
+    <TableRow>
+        
+        <TextView 
+            android:id="@+id/tv_active_sl_row_item_details" 
+            android:layout_width="0dip" 
+            android:layout_height="wrap_content" 
+            android:text="@string/sl_item_quantity" 
+            android:textStyle="italic" 
+            android:paddingLeft="30sp" 
+            android:layout_span="4"
+            android:gravity="left"/> 
+        
+    </TableRow>
+    
+</TableLayout>

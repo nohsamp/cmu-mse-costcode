@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global Application Sources -->
+    
+    <string name="app_name">Costco SC Cashier</string>
+    <string name="image_logo">Logo</string>
+    <string name="error_unspecified">Unspecified error.</string>
+    
+    <string name="tab_sl_all">ALL LISTS</string>
+    <string name="tab_sl_active">ACTIVE LIST</string>
+    <string name="tab_sl_settings">SETTINGS</string>
+    <string name="tab_sl_get">GET LIST</string>
+	
+</resources>

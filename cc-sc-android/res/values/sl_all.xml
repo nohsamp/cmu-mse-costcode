@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Shopping lists -->
+    
+    <string name="sl_all_title">Shopping lists</string>
+    <string name="sl_all_error_versionPersist">Cannot store shopping lists version.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    <string name="sl_all_error_versionRetrieve">Cannot retrieve shopping lists version.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    <string name="sl_all_error_fetch">Shopping lists fetching failed.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    
+    <string name="sl_all_add">Add new shopping list</string>
+    
+    <string name="sl_all_loading">Loading shopping lists. Please wait&#8230;</string>
+    <string name="sl_all_saving">Saving shopping list. Please wait&#8230;</string>
+    <string name="sl_all_deleting">Deleting shopping list. Please wait&#8230;</string>
+    
+</resources>

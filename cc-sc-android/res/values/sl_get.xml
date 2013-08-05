@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Shopping lists -->
+    
+    <string name="sl_get_title">Get Shopping Lists</string>
+    <string name="sl_get_error_versionPersist">Cannot store shopping lists version.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    <string name="sl_get_error_versionRetrieve">Cannot retrieve shopping lists version.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    <string name="sl_get_error_fetch">Shopping lists fetching failed.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    
+    <string name="sl_get_qr">Scan QR code.</string>
+    <string name="sl_get_enter">Enter Customer ID</string>
+    <string name="sl_get_web">Get List</string>
+    
+    <string name="sl_get_loading">Loading shopping lists. Please wait&#8230;</string>
+    <string name="sl_get_saving">Saving shopping list. Please wait&#8230;</string>
+    <string name="sl_get_deleting">Deleting shopping list. Please wait&#8230;</string>
+    
+</resources>

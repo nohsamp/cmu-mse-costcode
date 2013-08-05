@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+    <!-- HEADER -->
+    
+    
+    <View 
+        android:layout_width="fill_parent" 
+        android:layout_height="4sp" />
+    
+    <TextView 
+        android:id="@+id/tv_active_sl_title" 
+        style="@style/formHeader"/>
+    
+    <View 
+        android:layout_width="fill_parent" 
+        android:layout_height="3sp" />
+    
+    <!-- LIST -->
+    
+    <ListView 
+        android:id="@+id/android:list" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" />
+    
+    <TextView 
+        android:id="@id/android:empty" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:text=""/>
+    
+    
+    
+</LinearLayout>

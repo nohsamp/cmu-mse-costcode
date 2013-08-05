@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Item Category -->
+    
+    <string name="warehouse_error_versionPersist">Cannot store Warehouses version.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    <string name="warehouse_error_versionRetrieve">Cannot retrieve Warehouses version.\n\nError details have been logged.\n\nError message: \"%1$s\"\n\n</string>
+    
+</resources>

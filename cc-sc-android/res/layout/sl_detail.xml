@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1"
+    android:shrinkColumns="0">
+    
+    <!-- HEADER -->
+    
+    <TableRow>
+        <TextView
+            style="@style/formHeader"
+            android:layout_span="2"
+            android:text="@string/sl_title" />
+    </TableRow>
+    
+    <!-- SEPARATOR -->
+    
+    <View 
+        android:layout_width="fill_parent" 
+        android:layout_height="4sp" />
+    
+    <!-- NAME -->
+    
+    <TableRow>
+        <TextView 
+            style="@style/formFieldLabel" 
+            android:text="@string/sl_name" />
+        <edu.cmu.cc.android.view.ValidatingEditText 
+        	android:id="@+id/et_sl_name"
+        	style="@style/formField.text" />
+    </TableRow>
+    
+    <!-- DATE -->
+    
+    <TableRow>
+        <TextView 
+            style="@style/formFieldLabel" 
+            android:text="@string/sl_date" />
+        
+        <TextView 
+            android:id="@+id/tv_sl_date"
+            style="@style/formField.text" 
+            android:text="@string/sl_date" />
+    </TableRow>
+    
+    <!-- COMMENT -->
+    
+    <TableRow>
+        <TextView 
+            style="@style/formFieldLabel" 
+            android:text="@string/sl_comment" />
+        <edu.cmu.cc.android.view.ValidatingEditText 
+        	android:id="@+id/et_sl_comment"
+        	style="@style/formField.text" />
+    </TableRow>
+    
+</TableLayout>

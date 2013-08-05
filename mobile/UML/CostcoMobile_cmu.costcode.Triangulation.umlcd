@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_3kFNoP32EeK2vZLmiNaijw">
+  <modelElement href="CostcoMobile.uml#_1v7IYP32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_8N_YAP32EeK2vZLmiNaijw" source="_8OBNMP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2q7YEP32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_8OcrAP32EeK2vZLmiNaijw" position="110.0,110.0"/>
+    <stereotypes xmi:id="_8N_YAf32EeK2vZLmiNaijw" name="Reference">
+      <modelElement href="CostcoMobile.uml#_2q7YEv32EeK2vZLmiNaijw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_8N_YAv32EeK2vZLmiNaijw" text=""/>
+    <sourceRole xmi:id="_8N_YA_32EeK2vZLmiNaijw" aggregationKind="NONE" name="">
+      <modelElement href="CostcoMobile.uml#_2q7YEf32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_8N_YBP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_8N_YBf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_8N_YBv32EeK2vZLmiNaijw" aggregationKind="NONE" name="apList" navigable="true">
+      <modelElement href="CostcoMobile.uml#_2lWUgP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_8N_YB_32EeK2vZLmiNaijw" label="#"/>
+      <cardinality xmi:id="_8N_YCP32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_8N__EP32EeK2vZLmiNaijw" source="_8OBNMP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2q7YE_32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_8OcrAf32EeK2vZLmiNaijw" position="130.0,130.0"/>
+    <stereotypes xmi:id="_8N__Ef32EeK2vZLmiNaijw" name="Reference">
+      <modelElement href="CostcoMobile.uml#_2q7_IP32EeK2vZLmiNaijw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_8N__Ev32EeK2vZLmiNaijw" text=""/>
+    <sourceRole xmi:id="_8N__E_32EeK2vZLmiNaijw" aggregationKind="NONE" name="">
+      <modelElement href="CostcoMobile.uml#_2q7YFP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_8N__FP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_8N__Ff32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_8N__Fv32EeK2vZLmiNaijw" aggregationKind="NONE" name="categoryList" navigable="true">
+      <modelElement href="CostcoMobile.uml#_2lYJsP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_8N__F_32EeK2vZLmiNaijw" label="#"/>
+      <cardinality xmi:id="_8N__GP32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_8OAmIP32EeK2vZLmiNaijw" source="_8OBNMP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2q7_If32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_8OdSEP32EeK2vZLmiNaijw" position="150.0,150.0"/>
+    <stereotypes xmi:id="_8OAmIf32EeK2vZLmiNaijw" name="Reference">
+      <modelElement href="CostcoMobile.uml#_2q8mMP32EeK2vZLmiNaijw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_8OAmIv32EeK2vZLmiNaijw" text=""/>
+    <sourceRole xmi:id="_8OAmI_32EeK2vZLmiNaijw" aggregationKind="NONE" name="">
+      <modelElement href="CostcoMobile.uml#_2q7_Iv32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_8OAmJP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_8OAmJf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_8OAmJv32EeK2vZLmiNaijw" aggregationKind="NONE" name="wifiScanner" navigable="true">
+      <modelElement href="CostcoMobile.uml#_2lZX0P32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_8OAmJ_32EeK2vZLmiNaijw" label="#"/>
+      <cardinality xmi:id="_8OAmKP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_8OJwEP32EeK2vZLmiNaijw" source="_8OP2sP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2q8mMf32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_8OdSEf32EeK2vZLmiNaijw" position="170.0,170.0"/>
+    <stereotypes xmi:id="_8OMMU_32EeK2vZLmiNaijw" name="Reference">
+      <modelElement href="CostcoMobile.uml#_2q9NQP32EeK2vZLmiNaijw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_8OMMUP32EeK2vZLmiNaijw" text=""/>
+    <sourceRole xmi:id="_8OMMUf32EeK2vZLmiNaijw" aggregationKind="NONE" name="">
+      <modelElement href="CostcoMobile.uml#_2q8mMv32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_8OMzYv32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_8OMzYf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_8OMMUv32EeK2vZLmiNaijw" aggregationKind="NONE" name="wifiManager" navigable="true">
+      <modelElement href="CostcoMobile.uml#_2ljI0P32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_8ONacP32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_8OMzY_32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_8OJwEf32EeK2vZLmiNaijw" source="_8OP2sP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2q90Uf32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_8OdSE_32EeK2vZLmiNaijw" position="210.0,210.0"/>
+    <stereotypes xmi:id="_8OMzYP32EeK2vZLmiNaijw" name="Reference">
+      <modelElement href="CostcoMobile.uml#_2q-bYP32EeK2vZLmiNaijw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_8OMMVP32EeK2vZLmiNaijw" text=""/>
+    <sourceRole xmi:id="_8OMMVf32EeK2vZLmiNaijw" aggregationKind="NONE" name="">
+      <modelElement href="CostcoMobile.uml#_2q90Uv32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_8ONac_32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_8ONacv32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_8OMMVv32EeK2vZLmiNaijw" aggregationKind="NONE" name="context" navigable="true">
+      <modelElement href="CostcoMobile.uml#_2lkW8f32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_8ONadf32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_8ONadP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_8OOokP32EeK2vZLmiNaijw" sourceAnchor="185.0,0.0" targetAnchor="420.0,77.0" target="_8OXygP32EeK2vZLmiNaijw" source="_8OP2sP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2q9NQf32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_8OdSEv32EeK2vZLmiNaijw" position="190.0,190.0"/>
+    <bendpoints xmi:id="_8pMGQP32EeK2vZLmiNaijw" sourceY="-132" targetX="252"/>
+    <stereotypes xmi:id="_8OOokf32EeK2vZLmiNaijw" name="Reference">
+      <modelElement href="CostcoMobile.uml#_2q90UP32EeK2vZLmiNaijw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_8OOokv32EeK2vZLmiNaijw" text="">
+      <visualProperties xmi:id="_8pNUYP32EeK2vZLmiNaijw" position="-122.0,1.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_8OOok_32EeK2vZLmiNaijw" aggregationKind="NONE" name="">
+      <modelElement href="CostcoMobile.uml#_2q9NQv32EeK2vZLmiNaijw"/>
+      <visualProperties xmi:id="_8pMtUf32EeK2vZLmiNaijw" position="-18.0,-42.0"/>
+      <visibility xmi:id="_8OOolP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_8OOolf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_8OOolv32EeK2vZLmiNaijw" aggregationKind="NONE" name="triangulation" navigable="true">
+      <modelElement href="CostcoMobile.uml#_2ljv4f32EeK2vZLmiNaijw"/>
+      <visualProperties xmi:id="_8pNUYf32EeK2vZLmiNaijw" position="1.0,-43.0"/>
+      <visibility xmi:id="_8OOol_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_8OOomP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_8OPPoP32EeK2vZLmiNaijw" source="_8OP2sP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2q-bYf32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_8OdSFP32EeK2vZLmiNaijw" position="230.0,230.0"/>
+    <stereotypes xmi:id="_8OPPof32EeK2vZLmiNaijw" name="Reference">
+      <modelElement href="CostcoMobile.uml#_2q_CcP32EeK2vZLmiNaijw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_8OPPov32EeK2vZLmiNaijw" text=""/>
+    <sourceRole xmi:id="_8OPPo_32EeK2vZLmiNaijw" aggregationKind="NONE" name="">
+      <modelElement href="CostcoMobile.uml#_2q-bYv32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_8OPPpP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_8OPPpf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_8OPPpv32EeK2vZLmiNaijw" aggregationKind="NONE" name="initParams" navigable="true">
+      <modelElement href="CostcoMobile.uml#_2lllEP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_8OPPp_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_8OPPqP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <qualifierHelper xmi:id="_8OPPqf32EeK2vZLmiNaijw">
+        <qualifiers xmi:id="_8OPPqv32EeK2vZLmiNaijw">
+          <modelElement href="CostcoMobile.uml#_2lmzMP32EeK2vZLmiNaijw"/>
+          <visibility xmi:id="_8OPPq_32EeK2vZLmiNaijw" label="+"/>
+          <cardinality xmi:id="_8OPPrP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+          <type xmi:id="_8OPPrf32EeK2vZLmiNaijw" name="String">
+            <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </type>
+        </qualifiers>
+      </qualifierHelper>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_8OVWQP32EeK2vZLmiNaijw" sourceAnchor="0.0,77.0" targetAnchor="259.0,287.0" superClass="_8OBNMP32EeK2vZLmiNaijw" subClass="_8OXygP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2gBIkP32EeK2vZLmiNaijw"/>
+    <bendpoints xmi:id="_8pMtUP32EeK2vZLmiNaijw" sourceX="-310" targetY="132"/>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_8OBNMP32EeK2vZLmiNaijw" name="Triangulation" abstractClass="true" associationsOut="_8N_YAP32EeK2vZLmiNaijw _8N__EP32EeK2vZLmiNaijw _8OAmIP32EeK2vZLmiNaijw" subclassedBy="_8OVWQP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2Qb0cP32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_8OBNMf32EeK2vZLmiNaijw" position="50.0,50.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_8OBNMv32EeK2vZLmiNaijw" label="+"/>
+    <attributes xmi:id="_8OBNM_32EeK2vZLmiNaijw" name="apList">
+      <modelElement href="CostcoMobile.uml#_2lWUgP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OBNNP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2lXioP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_8OBNNf32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2lXioP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OBNNv32EeK2vZLmiNaijw" label="#"/>
+      <cardinality xmi:id="_8OBNN_32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_8OBNOP32EeK2vZLmiNaijw" name="AccessPoint">
+        <modelElement href="CostcoMobile.uml#_2Q35UP32EeK2vZLmiNaijw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_8OBNOf32EeK2vZLmiNaijw" name="categoryList">
+      <modelElement href="CostcoMobile.uml#_2lYJsP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OBNOv32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2lYwwP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_8OBNO_32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2lYwwP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OBNPP32EeK2vZLmiNaijw" label="#"/>
+      <cardinality xmi:id="_8OBNPf32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_8OBNPv32EeK2vZLmiNaijw" name="Category">
+        <modelElement href="CostcoMobile.uml#_2PqYYP32EeK2vZLmiNaijw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_8OBNP_32EeK2vZLmiNaijw" name="wifiScanner">
+      <modelElement href="CostcoMobile.uml#_2lZX0P32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OBNQP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2lZ-4P32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_8OBNQf32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2lZ-4P32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OBNQv32EeK2vZLmiNaijw" label="#"/>
+      <cardinality xmi:id="_8OBNQ_32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_8OBNRP32EeK2vZLmiNaijw" name="WiFiScanner">
+        <modelElement href="CostcoMobile.uml#_2RrKkP32EeK2vZLmiNaijw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_8OBNRf32EeK2vZLmiNaijw" defaultValue="&quot;TRIANG_METHOD&quot;" name="TRIANG_METHOD" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2lZ-4f32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OBNRv32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2lbNAP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OBNR_32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_8OBNSP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_8OBNSf32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_8OBNSv32EeK2vZLmiNaijw" defaultValue="&quot;SCAN_NUMBER&quot;" name="SCAN_NUMBER" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2lbNAf32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OBNS_32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2lb0Ef32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OBNTP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_8OBNTf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_8OBNTv32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_8OBNT_32EeK2vZLmiNaijw" defaultValue="&quot;NOISE_FILTER&quot;" name="NOISE_FILTER" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2lcbIP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OBNUP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2ldCMP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OBNUf32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_8OBNUv32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_8OBNU_32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_8OBNVP32EeK2vZLmiNaijw" defaultValue="&quot;WCL&quot;" name="triangMethod">
+      <modelElement href="CostcoMobile.uml#_2ldCMf32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OBNVf32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2leQUP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OBNVv32EeK2vZLmiNaijw" label="#"/>
+      <cardinality xmi:id="_8OBNV_32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_8OBNWP32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_8OBNWf32EeK2vZLmiNaijw" defaultValue="5" name="scanNumber">
+      <modelElement href="CostcoMobile.uml#_2leQUf32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OBNWv32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2lfecP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OBNW_32EeK2vZLmiNaijw" label="#"/>
+      <cardinality xmi:id="_8OBNXP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_8OBNXf32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_8OBNXv32EeK2vZLmiNaijw" defaultValue="true" name="noiseFilterFlag">
+      <modelElement href="CostcoMobile.uml#_2lgFgP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OBNX_32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2lgskP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OBNYP32EeK2vZLmiNaijw" label="#"/>
+      <cardinality xmi:id="_8OBNYf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_8OBNYv32EeK2vZLmiNaijw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_8OBNY_32EeK2vZLmiNaijw" name="calculateAccessPointPosition">
+      <modelElement href="CostcoMobile.uml#_2Qfe0P32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_8OBNZP32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_8OBNZf32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2f5z0P32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OBNZv32EeK2vZLmiNaijw" name="AccessPoint">
+          <modelElement href="CostcoMobile.uml#_2Q35UP32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_8OBNZ_32EeK2vZLmiNaijw" name="clearList">
+      <modelElement href="CostcoMobile.uml#_2Qfe0f32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_8OBNaP32EeK2vZLmiNaijw" label="+"/>
+    </operations>
+    <operations xmi:id="_8OBNaf32EeK2vZLmiNaijw" name="getNearestCategory">
+      <modelElement href="CostcoMobile.uml#_2QgF4P32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_8OBNav32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_8OBNa_32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2Qgs8f32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OBNbP32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_8OBNbf32EeK2vZLmiNaijw" name="x">
+        <modelElement href="CostcoMobile.uml#_2QgF4f32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OBNbv32EeK2vZLmiNaijw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_8OBNb_32EeK2vZLmiNaijw" name="y">
+        <modelElement href="CostcoMobile.uml#_2Qgs8P32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OBNcP32EeK2vZLmiNaijw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_8OBNcf32EeK2vZLmiNaijw" name="Triangulation">
+      <modelElement href="CostcoMobile.uml#_2inwoP32EeK2vZLmiNaijw"/>
+      <keywords xmi:id="_8OBNcv32EeK2vZLmiNaijw" keyword="create"/>
+      <visibility xmi:id="_8OBNc_32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_8OBNdP32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2ioXs_32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OBNdf32EeK2vZLmiNaijw" name="Triangulation">
+          <modelElement href="CostcoMobile.uml#_2Qb0cP32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_8OBNdv32EeK2vZLmiNaijw" name="wm">
+        <modelElement href="CostcoMobile.uml#_2inwof32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OBNd_32EeK2vZLmiNaijw" name="WifiManager">
+          <modelElement href="CostcoMobile.uml#_2f4lsP32EeK2vZLmiNaijw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_8OBNeP32EeK2vZLmiNaijw" name="initParams">
+        <modelElement href="CostcoMobile.uml#_2inwov32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OBNef32EeK2vZLmiNaijw" name="Map">
+          <modelElement href="CostcoMobile.uml#_2d96IP32EeK2vZLmiNaijw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_8OBNev32EeK2vZLmiNaijw" name="context">
+        <modelElement href="CostcoMobile.uml#_2ioXsP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OBNe_32EeK2vZLmiNaijw" name="Context">
+          <modelElement href="CostcoMobile.uml#_2d_vUf32EeK2vZLmiNaijw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_8OP2sP32EeK2vZLmiNaijw" name="TriangulationTask" associationsOut="_8OJwEP32EeK2vZLmiNaijw _8OJwEf32EeK2vZLmiNaijw _8OOokP32EeK2vZLmiNaijw _8OPPoP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2QllcP32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_8OP2sf32EeK2vZLmiNaijw" position="1106.0,601.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_8OP2sv32EeK2vZLmiNaijw" label="+"/>
+    <attributes xmi:id="_8OP2s_32EeK2vZLmiNaijw" defaultValue="&quot;TriangulationTask&quot;" name="TAG" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2lihwP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_8OP2tP32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_8OP2tf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_8OP2tv32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_8OP2t_32EeK2vZLmiNaijw" name="wifiManager">
+      <modelElement href="CostcoMobile.uml#_2ljI0P32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OP2uP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2ljv4P32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_8ONacf32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2ljv4P32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OP2uf32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_8OP2uv32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_8OP2u_32EeK2vZLmiNaijw" name="WifiManager">
+        <modelElement href="CostcoMobile.uml#_2f4lsP32EeK2vZLmiNaijw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_8OP2vP32EeK2vZLmiNaijw" name="triangulation">
+      <modelElement href="CostcoMobile.uml#_2ljv4f32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OP2vf32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2lkW8P32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_8OP2vv32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2lkW8P32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OP2v_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_8OP2wP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_8OP2wf32EeK2vZLmiNaijw" name="WCL">
+        <modelElement href="CostcoMobile.uml#_2QuIUP32EeK2vZLmiNaijw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_8OP2wv32EeK2vZLmiNaijw" name="context">
+      <modelElement href="CostcoMobile.uml#_2lkW8f32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OP2w_32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2lk-AP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_8ONadv32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2lk-AP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OP2xP32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_8OP2xf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_8OP2xv32EeK2vZLmiNaijw" name="Context">
+        <modelElement href="CostcoMobile.uml#_2d_vUf32EeK2vZLmiNaijw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_8OP2x_32EeK2vZLmiNaijw" defaultValue="new HashMap&lt;String, Object>()" name="initParams">
+      <modelElement href="CostcoMobile.uml#_2lllEP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OP2yP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2lmMIP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_8OP2yf32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2lmMIP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OP2yv32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_8OP2y_32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_8OP2zP32EeK2vZLmiNaijw" name="Object">
+        <modelElement href="CostcoMobile.uml#_2iqM4P32EeK2vZLmiNaijw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_8OP2zf32EeK2vZLmiNaijw" defaultValue="true" name="bgrunFlag">
+      <modelElement href="CostcoMobile.uml#_2lmzMf32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_8OP2zv32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_8OP2z_32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_8OP20P32EeK2vZLmiNaijw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_8OP20f32EeK2vZLmiNaijw" name="setPreference">
+      <modelElement href="CostcoMobile.uml#_2QnaoP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_8OP20v32EeK2vZLmiNaijw" label="-"/>
+      <outParameters xmi:id="_8OP20_32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2Qnaof32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OP21P32EeK2vZLmiNaijw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_8OP21f32EeK2vZLmiNaijw" name="onCancelled">
+      <modelElement href="CostcoMobile.uml#_2QoBsP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OP21v32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2QoowP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_8OP21_32EeK2vZLmiNaijw" name="Annotations">
+        <modelElement href="CostcoMobile.uml#_2QpP0P32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OP22P32EeK2vZLmiNaijw" label="#"/>
+    </operations>
+    <operations xmi:id="_8OP22f32EeK2vZLmiNaijw" name="TriangulationTask">
+      <modelElement href="CostcoMobile.uml#_2iqz8f32EeK2vZLmiNaijw"/>
+      <keywords xmi:id="_8OP22v32EeK2vZLmiNaijw" keyword="create"/>
+      <visibility xmi:id="_8OP22_32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_8OP23P32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2irbAv32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OP23f32EeK2vZLmiNaijw" name="TriangulationTask">
+          <modelElement href="CostcoMobile.uml#_2QllcP32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_8OP23v32EeK2vZLmiNaijw" name="context">
+        <modelElement href="CostcoMobile.uml#_2iqz8v32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OP23_32EeK2vZLmiNaijw" name="Context">
+          <modelElement href="CostcoMobile.uml#_2d_vUf32EeK2vZLmiNaijw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_8OP24P32EeK2vZLmiNaijw" name="doInBackground">
+      <modelElement href="CostcoMobile.uml#_2isCEf32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OP24f32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2ispIv32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_8OP24v32EeK2vZLmiNaijw" name="Annotations">
+        <modelElement href="CostcoMobile.uml#_2itQMf32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OP24_32EeK2vZLmiNaijw" label="#"/>
+      <outParameters xmi:id="_8OP25P32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2ispIf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OP25f32EeK2vZLmiNaijw" name="Void">
+          <modelElement href="CostcoMobile.uml#_2irbA_32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_8OP25v32EeK2vZLmiNaijw" name="params">
+        <modelElement href="CostcoMobile.uml#_2ispIP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OP25_32EeK2vZLmiNaijw" name="Void">
+          <modelElement href="CostcoMobile.uml#_2irbA_32EeK2vZLmiNaijw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_8OP26P32EeK2vZLmiNaijw" name="onPostExecute">
+      <modelElement href="CostcoMobile.uml#_2it3QP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OP26f32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2it3Qv32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_8OP26v32EeK2vZLmiNaijw" name="Annotations">
+        <modelElement href="CostcoMobile.uml#_2it3Q_32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OP26_32EeK2vZLmiNaijw" label="#"/>
+      <parameters xmi:id="_8OP27P32EeK2vZLmiNaijw" name="result">
+        <modelElement href="CostcoMobile.uml#_2it3Qf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OP27f32EeK2vZLmiNaijw" name="Void">
+          <modelElement href="CostcoMobile.uml#_2irbA_32EeK2vZLmiNaijw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_8OXygP32EeK2vZLmiNaijw" name="WCL" associationsIn="_8OOokP32EeK2vZLmiNaijw" generalizations="_8OVWQP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2QuIUP32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_8OXygf32EeK2vZLmiNaijw" position="619.0,392.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_8OXygv32EeK2vZLmiNaijw" label="+"/>
+    <attributes xmi:id="_8OXyg_32EeK2vZLmiNaijw" defaultValue="0.6f" name="g" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2looYP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OXyhP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2lpPcP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OXyhf32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_8OXyhv32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_8OXyh_32EeK2vZLmiNaijw" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_8OXyiP32EeK2vZLmiNaijw" name="dummyFlag">
+      <modelElement href="CostcoMobile.uml#_2lsSwP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OXyif32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2ls50P32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OXyiv32EeK2vZLmiNaijw" label="~"/>
+      <cardinality xmi:id="_8OXyi_32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_8OXyjP32EeK2vZLmiNaijw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_8OXyjf32EeK2vZLmiNaijw" name="doAWCL">
+      <modelElement href="CostcoMobile.uml#_2QwkkP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_8OXyjv32EeK2vZLmiNaijw" label="-"/>
+    </operations>
+    <operations xmi:id="_8OXyj_32EeK2vZLmiNaijw" name="calculateAccessPointPosition">
+      <modelElement href="CostcoMobile.uml#_2QxLoP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OXykP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2QxysP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_8OYZkP32EeK2vZLmiNaijw" name="Annotations">
+        <modelElement href="CostcoMobile.uml#_2QyZwP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OYZkf32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_8OYZkv32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2gAhgP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OYZk_32EeK2vZLmiNaijw" name="AccessPoint">
+          <modelElement href="CostcoMobile.uml#_2Q35UP32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_8OYZlP32EeK2vZLmiNaijw" name="getNearestCategory">
+      <modelElement href="CostcoMobile.uml#_2QzA0P32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_8OYZlf32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2Qzn4f32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_8OYZlv32EeK2vZLmiNaijw" name="Annotations">
+        <modelElement href="CostcoMobile.uml#_2Q0O8P32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_8OYZl_32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_8OYZmP32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2Qzn4P32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OYZmf32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_8OYZmv32EeK2vZLmiNaijw" name="x">
+        <modelElement href="CostcoMobile.uml#_2QzA0f32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OYZm_32EeK2vZLmiNaijw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_8OYZnP32EeK2vZLmiNaijw" name="y">
+        <modelElement href="CostcoMobile.uml#_2QzA0v32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OYZnf32EeK2vZLmiNaijw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_8OYZnv32EeK2vZLmiNaijw" name="WCL">
+      <modelElement href="CostcoMobile.uml#_2iwTgP32EeK2vZLmiNaijw"/>
+      <keywords xmi:id="_8OYZn_32EeK2vZLmiNaijw" keyword="create"/>
+      <visibility xmi:id="_8OYZoP32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_8OYZof32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2iw6kf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OYZov32EeK2vZLmiNaijw" name="WCL">
+          <modelElement href="CostcoMobile.uml#_2QuIUP32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_8OYZo_32EeK2vZLmiNaijw" name="wm">
+        <modelElement href="CostcoMobile.uml#_2iwTgf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OYZpP32EeK2vZLmiNaijw" name="WifiManager">
+          <modelElement href="CostcoMobile.uml#_2f4lsP32EeK2vZLmiNaijw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_8OYZpf32EeK2vZLmiNaijw" name="initParams">
+        <modelElement href="CostcoMobile.uml#_2iwTgv32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OYZpv32EeK2vZLmiNaijw" name="Map">
+          <modelElement href="CostcoMobile.uml#_2d96IP32EeK2vZLmiNaijw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_8OYZp_32EeK2vZLmiNaijw" name="context">
+        <modelElement href="CostcoMobile.uml#_2iwTg_32EeK2vZLmiNaijw"/>
+        <type xmi:id="_8OYZqP32EeK2vZLmiNaijw" name="Context">
+          <modelElement href="CostcoMobile.uml#_2d_vUf32EeK2vZLmiNaijw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

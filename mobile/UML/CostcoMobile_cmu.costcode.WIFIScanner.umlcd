@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_3j5AYP32EeK2vZLmiNaijw">
+  <modelElement href="CostcoMobile.uml#_1r91cf32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_6bxMcP32EeK2vZLmiNaijw" sourceAnchor="169.0,0.0" targetAnchor="564.0,249.0" target="_6bpQoP32EeK2vZLmiNaijw" source="_6b8Lmf32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2q_pgf32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_6c7DAP32EeK2vZLmiNaijw" position="130.0,130.0"/>
+    <stereotypes xmi:id="_6byakv32EeK2vZLmiNaijw" name="Reference">
+      <modelElement href="CostcoMobile.uml#_2q_pg_32EeK2vZLmiNaijw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_6bxzgP32EeK2vZLmiNaijw" text="">
+      <visualProperties xmi:id="_6yNWgP32EeK2vZLmiNaijw" position="-82.5,-13.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_6byakP32EeK2vZLmiNaijw" aggregationKind="NONE" name="">
+      <modelElement href="CostcoMobile.uml#_2q_pgv32EeK2vZLmiNaijw"/>
+      <visualProperties xmi:id="_6yMIYP32EeK2vZLmiNaijw" position="-17.5,-42.0"/>
+      <visibility xmi:id="_6b6WYf32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6b6WYP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_6byakf32EeK2vZLmiNaijw" aggregationKind="NONE" name="apList" navigable="true">
+      <modelElement href="CostcoMobile.uml#_2mgLEf32EeK2vZLmiNaijw"/>
+      <visualProperties xmi:id="_6yNWgf32EeK2vZLmiNaijw" position="2.5,1.0"/>
+      <visibility xmi:id="_6b6WY_32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6b6WYv32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_6b8LkP32EeK2vZLmiNaijw" source="_6b8Lmf32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2q_Ccf32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_6c6b8P32EeK2vZLmiNaijw" position="110.0,110.0"/>
+    <stereotypes xmi:id="_6b8Lkf32EeK2vZLmiNaijw" name="Reference">
+      <modelElement href="CostcoMobile.uml#_2q_pgP32EeK2vZLmiNaijw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_6b8Lkv32EeK2vZLmiNaijw" text=""/>
+    <sourceRole xmi:id="_6b8Lk_32EeK2vZLmiNaijw" aggregationKind="NONE" name="">
+      <modelElement href="CostcoMobile.uml#_2q_Ccv32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6b8LlP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6b8Llf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_6b8Llv32EeK2vZLmiNaijw" aggregationKind="NONE" name="dummyList" navigable="true">
+      <modelElement href="CostcoMobile.uml#_2me88P32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6b8Ll_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8LmP32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_6clr0P32EeK2vZLmiNaijw" sourceAnchor="251.0,0.0" targetAnchor="746.0,124.0" target="_6bpQoP32EeK2vZLmiNaijw" source="_6cu1wP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2rBesf32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_6c84MP32EeK2vZLmiNaijw" position="210.0,210.0"/>
+    <bendpoints xmi:id="_6yLhUP32EeK2vZLmiNaijw" sourceY="-180" targetX="335"/>
+    <stereotypes xmi:id="_6cnhAv32EeK2vZLmiNaijw" name="Reference">
+      <modelElement href="CostcoMobile.uml#_2rCFwP32EeK2vZLmiNaijw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_6cm58v32EeK2vZLmiNaijw" text="">
+      <visualProperties xmi:id="_6yOkoP32EeK2vZLmiNaijw" position="-249.83333333333326,-14.500000000000085"/>
+    </nameVisual>
+    <sourceRole xmi:id="_6cnhAP32EeK2vZLmiNaijw" aggregationKind="NONE" name="">
+      <modelElement href="CostcoMobile.uml#_2rBesv32EeK2vZLmiNaijw"/>
+      <visualProperties xmi:id="_6yN9kP32EeK2vZLmiNaijw" position="-17.5,-42.0"/>
+      <visibility xmi:id="_6crLYf32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6crLYP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_6cnhAf32EeK2vZLmiNaijw" aggregationKind="NONE" name="apList" navigable="true">
+      <modelElement href="CostcoMobile.uml#_2m83AP32EeK2vZLmiNaijw"/>
+      <visualProperties xmi:id="_6yOkof32EeK2vZLmiNaijw" position="1.0,-42.50000000000003"/>
+      <visibility xmi:id="_6crycf32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6crycP32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_6cm58f32EeK2vZLmiNaijw" targetItem="_6cu1wP32EeK2vZLmiNaijw" sourceItem="_6cm58P32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_6ctAkP32EeK2vZLmiNaijw" source="_6cu1wP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2rA3oP32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_6c8RK_32EeK2vZLmiNaijw" position="170.0,170.0"/>
+    <stereotypes xmi:id="_6ctAkf32EeK2vZLmiNaijw" name="Reference">
+      <modelElement href="CostcoMobile.uml#_2rA3ov32EeK2vZLmiNaijw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_6ctAkv32EeK2vZLmiNaijw" text=""/>
+    <sourceRole xmi:id="_6ctAk_32EeK2vZLmiNaijw" aggregationKind="NONE" name="">
+      <modelElement href="CostcoMobile.uml#_2rA3of32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6ctAlP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6ctAlf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_6ctAlv32EeK2vZLmiNaijw" aggregationKind="NONE" name="wifimanager" navigable="true">
+      <modelElement href="CostcoMobile.uml#_2mx34P32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6ctAl_32EeK2vZLmiNaijw" label="~"/>
+      <cardinality xmi:id="_6ctAmP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_6ctnoP32EeK2vZLmiNaijw" source="_6cu1wP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2rA3o_32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_6c8RLP32EeK2vZLmiNaijw" position="190.0,190.0"/>
+    <stereotypes xmi:id="_6ctnof32EeK2vZLmiNaijw" name="Reference">
+      <modelElement href="CostcoMobile.uml#_2rBesP32EeK2vZLmiNaijw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_6ctnov32EeK2vZLmiNaijw" text=""/>
+    <sourceRole xmi:id="_6ctno_32EeK2vZLmiNaijw" aggregationKind="NONE" name="">
+      <modelElement href="CostcoMobile.uml#_2rA3pP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6ctnpP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6ctnpf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_6ctnpv32EeK2vZLmiNaijw" aggregationKind="NONE" name="mScanResult" navigable="true">
+      <modelElement href="CostcoMobile.uml#_2m7o4P32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6ctnp_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6ctnqP32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_6cuOsP32EeK2vZLmiNaijw" source="_6cu1wP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2rCFwf32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_6c84Mf32EeK2vZLmiNaijw" position="230.0,230.0"/>
+    <stereotypes xmi:id="_6cuOsf32EeK2vZLmiNaijw" name="Reference">
+      <modelElement href="CostcoMobile.uml#_2rCs0P32EeK2vZLmiNaijw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_6cuOsv32EeK2vZLmiNaijw" text=""/>
+    <sourceRole xmi:id="_6cuOs_32EeK2vZLmiNaijw" aggregationKind="NONE" name="">
+      <modelElement href="CostcoMobile.uml#_2rCFwv32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6cuOtP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6cuOtf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_6cuOtv32EeK2vZLmiNaijw" aggregationKind="NONE" name="fp" navigable="true">
+      <modelElement href="CostcoMobile.uml#_2m-FIP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6cuOt_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6cuOuP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_6c7qEP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2rAQkP32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_6c8RIP32EeK2vZLmiNaijw" position="150.0,150.0"/>
+    <stereotypes xmi:id="_6c8RIf32EeK2vZLmiNaijw" name="Reference">
+      <modelElement href="CostcoMobile.uml#_2rAQkv32EeK2vZLmiNaijw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_6c8RIv32EeK2vZLmiNaijw" text=""/>
+    <sourceRole xmi:id="_6c8RI_32EeK2vZLmiNaijw" aggregationKind="NONE" name="">
+      <modelElement href="CostcoMobile.uml#_2rAQkf32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6c8RJP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6c8RJf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_6c8RJv32EeK2vZLmiNaijw" aggregationKind="NONE" name="dummy" navigable="true">
+      <modelElement href="CostcoMobile.uml#_2mkcgP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6c8RJ_32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2mlDkP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6c8RKP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mlqoP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6c8RKf32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6c8RKv32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_6cm58P32EeK2vZLmiNaijw" sourceConnectionVisual="_6cm58f32EeK2vZLmiNaijw" text="WIFI Scanner&#xA;&#xA;@author NohSam&#xA; *" item="_6cu1wP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p9uwP32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_6bpQoP32EeK2vZLmiNaijw" name="AccessPoint" associationsIn="_6bxMcP32EeK2vZLmiNaijw _6clr0P32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2Q35UP32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_6bpQof32EeK2vZLmiNaijw" position="50.0,50.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_6bpQov32EeK2vZLmiNaijw" label="+"/>
+    <attributes xmi:id="_6bpQo_32EeK2vZLmiNaijw" name="bssid">
+      <modelElement href="CostcoMobile.uml#_2luvAP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6bpQpP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6bpQpf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6bpQpv32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6bpQp_32EeK2vZLmiNaijw" name="ssid">
+      <modelElement href="CostcoMobile.uml#_2lvWEP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6bpQqP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6bpQqf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6bpQqv32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6bpQq_32EeK2vZLmiNaijw" name="capabilities">
+      <modelElement href="CostcoMobile.uml#_2lvWEf32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6bpQrP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6bpQrf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6bpQrv32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6bpQr_32EeK2vZLmiNaijw" name="frequency">
+      <modelElement href="CostcoMobile.uml#_2lv9IP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6bpQsP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6bpQsf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6bpQsv32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6bpQs_32EeK2vZLmiNaijw" name="rssi">
+      <modelElement href="CostcoMobile.uml#_2lv9If32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6bpQtP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6bpQtf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6bp3sP32EeK2vZLmiNaijw" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6bp3sf32EeK2vZLmiNaijw" name="posX">
+      <modelElement href="CostcoMobile.uml#_2lwkMP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6bp3sv32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6bp3s_32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6bp3tP32EeK2vZLmiNaijw" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6bp3tf32EeK2vZLmiNaijw" name="posY">
+      <modelElement href="CostcoMobile.uml#_2lxLQP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6bp3tv32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6bp3t_32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6bp3uP32EeK2vZLmiNaijw" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6bp3uf32EeK2vZLmiNaijw" name="distance">
+      <modelElement href="CostcoMobile.uml#_2lxLQf32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6bp3uv32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6bp3u_32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6bp3vP32EeK2vZLmiNaijw" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6bp3vf32EeK2vZLmiNaijw" name="description">
+      <modelElement href="CostcoMobile.uml#_2lxyUP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6bp3vv32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6bp3v_32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6bp3wP32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_6bp3wf32EeK2vZLmiNaijw" name="AccessPoint">
+      <modelElement href="CostcoMobile.uml#_2Q6VkP32EeK2vZLmiNaijw"/>
+      <keywords xmi:id="_6bp3wv32EeK2vZLmiNaijw" keyword="create"/>
+      <visibility xmi:id="_6bp3w_32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_6bp3xP32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2Q7js_32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6bp3xf32EeK2vZLmiNaijw" name="AccessPoint">
+          <modelElement href="CostcoMobile.uml#_2Q35UP32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_6bp3xv32EeK2vZLmiNaijw" name="bssid">
+        <modelElement href="CostcoMobile.uml#_2Q6Vkf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6bp3x_32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6bp3yP32EeK2vZLmiNaijw" name="ssid">
+        <modelElement href="CostcoMobile.uml#_2Q68oP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6bp3yf32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6bp3yv32EeK2vZLmiNaijw" name="capabilities">
+        <modelElement href="CostcoMobile.uml#_2Q68of32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6bp3y_32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6bp3zP32EeK2vZLmiNaijw" name="frequency">
+        <modelElement href="CostcoMobile.uml#_2Q68ov32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6bp3zf32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6bp3zv32EeK2vZLmiNaijw" name="rssi">
+        <modelElement href="CostcoMobile.uml#_2Q68o_32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6bp3z_32EeK2vZLmiNaijw" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6bp30P32EeK2vZLmiNaijw" name="posX">
+        <modelElement href="CostcoMobile.uml#_2Q68pP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6bp30f32EeK2vZLmiNaijw" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6bp30v32EeK2vZLmiNaijw" name="posY">
+        <modelElement href="CostcoMobile.uml#_2Q7jsP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6bp30_32EeK2vZLmiNaijw" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6bp31P32EeK2vZLmiNaijw" name="AccessPoint">
+      <modelElement href="CostcoMobile.uml#_2Q8KwP32EeK2vZLmiNaijw"/>
+      <keywords xmi:id="_6bp31f32EeK2vZLmiNaijw" keyword="create"/>
+      <stereotypes xmi:id="_6bp31v32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2Q8x0v32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6bp31_32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_6bp32P32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2Q9Y4P32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6bp32f32EeK2vZLmiNaijw" name="AccessPoint">
+          <modelElement href="CostcoMobile.uml#_2Q35UP32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_6b8Lmf32EeK2vZLmiNaijw" name="DummyResults" associationsOut="_6bxMcP32EeK2vZLmiNaijw _6b8LkP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2RAcMP32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_6b8Lmv32EeK2vZLmiNaijw" position="445.0,483.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_6b8Lm_32EeK2vZLmiNaijw" label="+"/>
+    <attributes xmi:id="_6b8LnP32EeK2vZLmiNaijw" defaultValue="{&quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;}" name="ssid1" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2lzngP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8Lnf32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2l01oP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8Lnv32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2l1csP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8Ln_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8LoP32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8Lof32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8yoP32EeK2vZLmiNaijw" defaultValue="{-38, -53, -58, -62, -38, -53, -59, -63, -38, -53, -59, -63, -36, -51, -59, -62, -35, -50, -60, -60, -35, -50, -60, -60, -35, -50, -60, -60, -35, -50, -60, -60, -35, -50, -60, -60, -35, -50, -60, -60, -35, -50, -60, -60, -35, -50, -60, -60, -35, -50, -60, -60, -35, -50, -60, -61, -36, -50, -60, -64, -36, -51, -60, -64, -35, -51, -60, -64, -35, -51, -60, -64, -36, -51, -60, -64, -36, -51, -60, -64, -36, -51, -60, -64, -36, -52, -60, -64, -36, -52, -61, -64, -36, -53, -61, -63, -36, -52, -61, -63, -36, -52, -61, -63, -36, -52, -61, -63, -36, -55, -61, -62, -36, -53, -61, -62, -36, -52, -61, -62, -36, -52, -61, -62, -36, -54, -61, -62, -36, -54, -61, -62, -36, -53, -61, -62, -36, -53, -61, -62, -36, -53, -61, -62, -36, -53, -61, -62, -36, -53, -61, -62, -36, -53, -61, -62, -36, -53, -61, -62, -36, -52, -61, -63, -35, -51, -61, -61, -35, -51, -61, -61, -35, -51, -61, -62, -36, -51, -61, -63, -36, -51, -61, -63, -36, -52, -61, -63, -36, -52, -61, -63, -36, -52, -60, -64, -36, -53, -59, -64, -36, -54, -62, -64, -32, -54, -59, -59, -33, -51, -56, -58}" name="rssi1" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2l1csf32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8yof32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2l2Dwf32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8yov32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2l2q0P32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8yo_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8ypP32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8ypf32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8ypv32EeK2vZLmiNaijw" defaultValue="{&quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;}" name="ssid2" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2l2q0f32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8yp_32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2l3R4f32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8yqP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2l4gAP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8yqf32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8yqv32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8yq_32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8yrP32EeK2vZLmiNaijw" defaultValue="{-46, -49, -55, -56, -46, -53, -55, -56, -46, -53, -55, -57, -46, -53, -55, -57, -46, -53, -55, -57, -46, -53, -54, -57, -46, -53, -54, -57, -46, -53, -54, -56, -46, -52, -54, -56, -46, -52, -55, -56, -46, -50, -54, -55, -46, -50, -54, -55, -46, -52, -54, -56, -46, -52, -56, -56, -46, -52, -56, -56, -46, -52, -56, -56, -46, -52, -55, -57, -46, -52, -54, -57, -46, -52, -54, -57, -47, -50, -54, -55, -44, -50, -53, -55, -45, -48, -54, -55, -42, -48, -53, -56, -43, -48, -53, -55, -43, -48, -53, -55, -43, -48, -53, -55, -44, -47, -54, -55, -43, -47, -54, -55, -43, -47, -54, -55, -43, -47, -54, -55, -43, -46, -53, -55, -43, -47, -53, -55, -43, -47, -53, -55, -43, -47, -53, -55, -43, -47, -53, -55, -43, -47, -53, -56, -44, -47, -53, -56, -44, -47, -53, -56, -44, -47, -53, -55, -44, -47, -53, -55, -44, -47, -53, -54, -44, -47, -54, -54, -44, -47, -53, -54, -44, -48, -52, -56, -43, -50, -52, -57, -43, -49, -52, -57, -43, -49, -54, -57, -38, -45, -49, -52, -40, -45, -51, -52, -41, -48, -54, -56, -44, -48, -53, -54, -44, -48, -52, -54, -43, -48, -52, -55}" name="rssi2" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2l5HEP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8yrf32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2l5HEv32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8yrv32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2l5uIf32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8yr_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8ysP32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8ysf32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8ysv32EeK2vZLmiNaijw" defaultValue="{&quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;}" name="ssid3" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2l6VMP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8ys_32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2l68QP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8ytP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2l7jUP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8ytf32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8ytv32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8yt_32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8yuP32EeK2vZLmiNaijw" defaultValue="{-42, -54, -55, -56, -42, -52, -55, -57, -42, -52, -55, -58, -42, -52, -55, -58, -42, -52, -55, -58, -42, -52, -55, -58, -42, -52, -55, -56, -42, -55, -55, -56, -11, -42, -55, -56, -42, -45, -55, -56, -42, -53, -55, -56, -42, -54, -55, -56, -42, -54, -55, -57, -42, -54, -56, -57, -42, -54, -56, -56, -42, -54, -56, -57, -42, -54, -56, -57, -42, -54, -55, -56, -42, -54, -56, -56, -42, -55, -55, -56, -42, -55, -55, -56, -42, -55, -55, -56, -42, -52, -53, -56, -40, -50, -53, -57, -39, -50, -53, -57, -37, -52, -53, -54, -40, -52, -54, -55, -40, -52, -52, -56, -40, -51, -52, -56, -40, -51, -53, -56, -40, -51, -53, -57, -40, -52, -54, -57, -40, -54, -55, -57, -40, -54, -55, -57, -40, -53, -55, -57, -40, -53, -55, -57, -40, -53, -55, -57, -40, -53, -55, -56, -40, -53, -55, -56, -39, -53, -55, -56, -38, -53, -55, -56, -38, -54, -55, -55, -38, -54, -55, -55, -38, -54, -54, -55, -38, -54, -55, -55, -38, -54, -55, -55, -38, -54, -55, -55, -38, -54, -55, -55, -38, -54, -55, -55, -38, -54, -55, -55, -38, -54, -55, -55, -38, -54, -55, -55, -38, -54, -55, -56, -54, -55, -55, -56, -41, -54, -55, -56, -38, -54, -55, -56, -38, -53, -55, -56, -38, -53, -55, -56, -38, -53, -55, -56, -38, -53, -55, -56, -38, -55, -56, -58, -38, -54, -55, -56, -38, -54, -55, -56, -38, -54, -55, -56, -38, -54, -55, -56, -38, -54, -55, -56, -38, -54, -55, -56, -38, -54, -55, -55, -38, -54, -55, -55, -38, -54, -55, -55, -38, -54, -55, -55, -38, -54, -55, -55, -38, -54, -55, -56, -38, -54, -54, -56, -38, -54, -54, -55, -38, -54, -54, -55, -38, -54, -55, -58, -38, -54, -54, -55, -38, -51, -54, -54, -38, -51, -54, -54, -38, -51, -54, -54, -38, -51, -54, -54, -38, -51, -54, -54, -38, -51, -54, -54, -38, -51, -54, -54, -38, -51, -54, -55, -38, -50, -54, -55, -38, -50, -55, -55, -38, -50, -55, -55}" name="rssi3" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2l7jUf32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8yuf32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2l8KYf32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8yuv32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2l9YgP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8yu_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8yvP32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8yvf32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8yvv32EeK2vZLmiNaijw" defaultValue="{&quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;}" name="ssid4" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2l9Ygf32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8yv_32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2l9_kf32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8ywP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2l-mof32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8ywf32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8ywv32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8yw_32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8yxP32EeK2vZLmiNaijw" defaultValue="{-48, -48, -51, -52, -48, -48, -50, -51, -48, -48, -49, -51, -48, -48, -51, -52, -48, -48, -52, -54, -47, -48, -52, -54, -47, -48, -52, -54, -47, -48, -52, -54, -47, -48, -52, -54, -47, -48, -52, -54, -47, -48, -52, -54, -47, -48, -52, -54, -9, -48, -52, -54, -39, -48, -51, -54, -46, -50, -53, -56, -48, -50, -53, -56, -48, -50, -53, -56, -46, -49, -53, -55, -46, -51, -54, -54, -49, -50, -50, -54, -49, -50, -51, -52, -48, -51, -52, -55, -50, -52, -54, -54, -50, -52, -53, -57, -48, -51, -53, -57, -48, -52, -55, -57, -48, -51, -51, -59, -48, -51, -54, -62, -48, -51, -52, -61, -48, -51, -52, -61, -48, -51, -51, -61, -48, -50, -51, -58, -48, -50, -51, -58, -48, -50, -51, -58, -48, -50, -51, -59, -48, -50, -51, -56, -50, -52, -54, -58, -49, -52, -55, -55, -49, -49, -51, -57, -49, -51, -53, -54, -45, -49, -54, -56, -48, -51, -53, -54, -47, -48, -49, -51, -48, -48, -49, -50, -48, -48, -49, -49, -48, -48, -49, -49, -47, -48, -49, -49, -47, -48, -49, -50, -48, -48, -49, -49, -47, -48, -49, -49, -47, -49, -49, -50, -46, -49, -50, -50, -46, -50, -50, -50, -46, -50, -50, -50, -46, -50, -50, -50, -46, -48, -50, -50, -9, -48, -50, -50, -40, -48, -49, -50, -45, -48, -49, -50, -47, -48, -48, -50, -47, -48, -48, -50, -47, -48, -48, -50, -47, -48, -48, -50, -47, -48, -48, -50, -47, -48, -48, -50, -47, -48, -48, -50, -47, -48, -48, -50, -47, -48, -48, -50, -47, -48, -49, -50, -47, -48, -49, -50, -47, -48, -49, -51, -49, -51, -52, -54, -46, -48, -51, -55, -45, -46, -49, -53, -9, -46, -48, -53, -1, -47, -48, -51, -36, -46, -47, -52, -47, -47, -48, -52, -48, -50, -50, -52}" name="rssi4" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2l_NsP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8yxf32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2l_0wP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8yxv32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mAb0P32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8yx_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8yyP32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8yyf32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8yyv32EeK2vZLmiNaijw" defaultValue="{&quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;}" name="ssid5" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2mAb0f32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8yy_32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2mBC4f32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8yzP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mBp8P32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8yzf32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8yzv32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8yz_32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8y0P32EeK2vZLmiNaijw" defaultValue="{-44, -48, -50, -54, -43, -49, -50, -51, -43, -49, -50, -51, -43, -49, -51, -51, -43, -49, -51, -53, -43, -49, -51, -53, -43, -49, -51, -53, -43, -49, -51, -53, -43, -49, -52, -53, -43, -50, -52, -53, -43, -50, -52, -53, -43, -50, -52, -53, -42, -50, -53, -53, -42, -51, -53, -53, -42, -49, -53, -53, -42, -49, -52, -52, -42, -49, -52, -53, -42, -48, -52, -53, -42, -48, -52, -53, -41, -47, -52, -52, -41, -48, -51, -53, -41, -49, -51, -54, -43, -47, -49, -49, -47, -49, -49, -51, -44, -51, -51, -52, -44, -47, -49, -51, -47, -49, -50, -51, -41, -49, -54, -54, -40, -47, -50, -53, -40, -48, -48, -53, -40, -47, -50, -53, -42, -49, -50, -54, -40, -49, -49, -62, -40, -48, -49, -57, -40, -48, -50, -55, -40, -47, -50, -53, -41, -48, -53, -53, -40, -48, -50, -54, -40, -48, -51, -60, -40, -48, -50, -56, -40, -48, -50, -58, -40, -48, -50, -55, -42, -48, -50, -57, -43, -52, -54, -59, -40, -48, -52, -54, -10, -44, -48, -55, -8, -46, -51, -51, -36, -51, -51, -52, -44, -47, -51, -52, -45, -47, -51, -52, -46, -47, -50, -52, -46, -50, -50, -52, -43, -51, -54, -54, -45, -49, -50, -50, -43, -49, -49, -51, -43, -49, -49, -51, -42, -48, -49, -51, -42, -48, -49, -51, -42, -50, -51, -55, -42, -51, -53, -54, -44, -52, -53, -55, -44, -53, -55, -56, -44, -50, -53, -53, -44, -52, -55, -57, -44, -53, -57, -59, -44, -53, -57, -59, -44, -52, -55, -57, -40, -48, -49, -56, -42, -50, -53, -56, -42, -50, -52, -54, -43, -48, -50, -54}" name="rssi5" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2mCRAP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8y0f32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2mCRAv32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8y0v32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mC4Ef32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8y0_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8y1P32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8y1f32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8y1v32EeK2vZLmiNaijw" defaultValue="{&quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;}" name="ssid6" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2mDfIP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8y1_32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2mDfIv32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8y2P32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mEGMf32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8y2f32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8y2v32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8y2_32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8y3P32EeK2vZLmiNaijw" defaultValue="{-46, -52, -53, -58, -46, -51, -53, -59, -46, -51, -53, -58, -46, -53, -54, -57, -53, -53, -53, -54, -50, -50, -53, -57, -51, -51, -52, -55, -49, -51, -52, -53, -50, -51, -54, -54, -49, -51, -54, -55, -48, -50, -54, -56, -48, -50, -54, -56, -49, -50, -54, -56, -48, -50, -54, -55, -48, -50, -54, -55, -52, -52, -53, -54, -51, -51, -51, -53, -49, -51, -53, -55, -52, -52, -53, -53, -52, -53, -53, -53, -52, -53, -53, -54, -50, -52, -53, -55, -49, -52, -53, -59, -49, -52, -53, -59, -49, -52, -53, -63, -49, -52, -53, -62, -49, -51, -53, -62, -49, -51, -53, -61, -49, -51, -53, -60, -49, -51, -53, -59, -49, -51, -53, -59, -49, -51, -53, -58, -49, -51, -53, -58, -49, -51, -53, -58, -49, -51, -54, -57, -48, -49, -53, -55, -50, -53, -55, -57, -49, -53, -53, -58, -50, -53, -54, -57, -51, -53, -54, -56, -52, -53, -54, -56, -52, -53, -54, -54, -52, -52, -54, -55, -51, -52, -54, -55, -51, -52, -54, -55, -50, -52, -53, -53, -50, -52, -52, -53, -51, -52, -52, -54, -51, -51, -53, -54, -51, -53, -53, -55, -51, -51, -53, -54, -47, -48, -49, -50, -47, -48, -48, -48, -45, -47, -48, -48, -46, -47, -49, -51, -45, -46, -51, -54, -45, -46, -51, -51}" name="rssi6" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2mEtQP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8y3f32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2mFUUP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8y3v32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mF7YP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8y3_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8y4P32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8y4f32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8y4v32EeK2vZLmiNaijw" defaultValue="{&quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;}" name="ssid7" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2mF7Yf32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8y4_32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2mGicf32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8y5P32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mHJgf32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8y5f32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8y5v32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8y5_32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8y6P32EeK2vZLmiNaijw" defaultValue="{-44, -45, -47, -50, -44, -44, -45, -48, -44, -44, -45, -50, -44, -44, -45, -49, -44, -44, -45, -49, -44, -44, -46, -50, -44, -44, -46, -50, -43, -44, -46, -48, -43, -44, -46, -48, -43, -44, -46, -48, -43, -44, -47, -49, -43, -44, -47, -50, -43, -44, -47, -50, -43, -44, -47, -50, -44, -45, -47, -48, -44, -44, -46, -49, -43, -44, -46, -49, -43, -44, -46, -50, -43, -46, -46, -50, -43, -45, -46, -50, -43, -45, -46, -50, -43, -45, -46, -50, -43, -45, -46, -50, -43, -45, -46, -50, -43, -45, -46, -50, -44, -45, -46, -51, -43, -44, -45, -51, -43, -44, -45, -49, -43, -44, -45, -50, -44, -44, -45, -52, -43, -43, -45, -50, -43, -43, -45, -51, -43, -44, -46, -51, -44, -44, -46, -50, -44, -44, -45, -51, -44, -44, -45, -52, -44, -44, -45, -51, -44, -44, -45, -51, -44, -44, -45, -51, -44, -44, -45, -50, -44, -44, -47, -50, -44, -45, -47, -50, -44, -45, -47, -49, -44, -45, -48, -49, -44, -45, -47, -51, -44, -45, -47, -51, -44, -45, -47, -51, -44, -44, -47, -51, -44, -44, -47, -51, -44, -44, -47, -52, -44, -44, -47, -52, -44, -44, -47, -52, -43, -44, -47, -52, -43, -44, -47, -52, -43, -44, -47, -51, -43, -44, -47, -51, -43, -44, -47, -51, -43, -44, -47, -51, -43, -44, -47, -51, -43, -44, -47, -51, -43, -44, -47, -51, -43, -44, -47, -51, -44, -44, -47, -52}" name="rssi7" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2mHwkP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8y6f32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2mIXof32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8y6v32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mI-sP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8y6_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8y7P32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8y7f32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8y7v32EeK2vZLmiNaijw" defaultValue="{&quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;}" name="ssid8" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2mJlwP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8y7_32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2mKM0f32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8y8P32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mLa8P32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8y8f32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8y8v32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8y8_32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8y9P32EeK2vZLmiNaijw" defaultValue="{-43, -49, -51, -53, -43, -47, -49, -53, -43, -47, -49, -53, -43, -47, -49, -53, -43, -48, -49, -53, -44, -47, -49, -53, -44, -48, -49, -52, -44, -48, -50, -52, -44, -48, -50, -51, -44, -50, -51, -53, -44, -48, -51, -53, -44, -49, -49, -52, -44, -49, -50, -52, -44, -49, -50, -52, -44, -49, -51, -52, -44, -48, -51, -52, -44, -48, -49, -54, -44, -48, -50, -54, -44, -50, -51, -53, -43, -47, -49, -53, -43, -49, -49, -53, -43, -49, -49, -53, -43, -49, -49, -53, -43, -49, -50, -53, -43, -51, -53, -58, -42, -52, -53, -58, -43, -52, -53, -54, -43, -51, -52, -52, -43, -47, -51, -52, -43, -48, -51, -53, -43, -48, -50, -53, -43, -48, -50, -53, -43, -48, -50, -53, -43, -48, -50, -53, -43, -48, -50, -53, -43, -48, -50, -53, -43, -48, -50, -54, -43, -49, -50, -54, -43, -49, -50, -54, -43, -49, -50, -54, -43, -49, -50, -53, -43, -50, -51, -53, -44, -50, -54, -55, -44, -50, -54, -54, -44, -51, -54, -54, -44, -51, -54, -54, -44, -51, -54, -54, -44, -51, -54, -54, -44, -51, -53, -55, -44, -52, -53, -55, -44, -52, -53, -55, -44, -50, -51, -55, -43, -50, -51, -53, -43, -50, -51, -54, -43, -48, -50, -53}" name="rssi8" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2mMCAP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8y9f32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2mMpEf32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8y9v32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mN3MP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8y9_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8y-P32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8y-f32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8y-v32EeK2vZLmiNaijw" defaultValue="{&quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;}" name="ssid9" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2mOeQP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8y-_32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2mPFUP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8y_P32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mPsYP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8y_f32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8y_v32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8y__32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8zAP32EeK2vZLmiNaijw" defaultValue="{-41, -44, -49, -57, -41, -45, -50, -56, -37, -45, -49, -54, -37, -45, -52, -54, -37, -45, -51, -55, -37, -45, -52, -55, -37, -44, -51, -55, -36, -44, -50, -55, -36, -44, -50, -55, -37, -44, -49, -55, -37, -44, -49, -55, -37, -44, -49, -55, -37, -44, -50, -55, -37, -44, -51, -55, -37, -44, -51, -55, -37, -44, -51, -55, -37, -44, -51, -55, -37, -44, -51, -55, -37, -45, -51, -55, -37, -45, -50, -55, -37, -45, -50, -55, -37, -45, -50, -56, -37, -45, -50, -56, -37, -45, -50, -56, -37, -45, -50, -56, -37, -45, -50, -56, -37, -45, -50, -56, -37, -45, -50, -56, -37, -45, -50, -56, -37, -45, -50, -56, -37, -45, -50, -56, -37, -45, -50, -56, -37, -45, -50, -56, -37, -45, -50, -56, -37, -45, -50, -56, -37, -45, -50, -56, -37, -45, -50, -56, -37, -45, -50, -56, -37, -45, -50, -55, -37, -45, -48, -55, -37, -45, -48, -55, -37, -45, -48, -55, -37, -45, -48, -55, -37, -45, -48, -55, -37, -45, -48, -55, -37, -45, -48, -55, -37, -45, -48, -55, -37, -45, -48, -55, -37, -45, -48, -55, -37, -45, -48, -55, -37, -45, -48, -55, -37, -45, -47, -55, -37, -45, -48, -56, -37, -45, -48, -55, -38, -45, -48, -55, -42, -48, -48, -57, -42, -48, -48, -57, -42, -47, -48, -57, -41, -47, -48, -55, -41, -46, -50, -56, -41, -46, -51, -55}" name="rssi9" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2mQTcP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8zAf32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2mRhkP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8zAv32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mSvsP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8zA_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8zBP32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8zBf32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8zBv32EeK2vZLmiNaijw" defaultValue="{&quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;clothes&quot;, &quot;jewelry&quot;}" name="ssid10" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2mTWwP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8zB_32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2mT90P32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8zCP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mVL8P32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8zCf32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8zCv32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8zC_32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8zDP32EeK2vZLmiNaijw" defaultValue="{-45, -50, -51, -55, -42, -49, -51, -55, -40, -49, -51, -55, -42, -51, -51, -57, -42, -50, -51, -55, -42, -50, -51, -55, -42, -49, -52, -55, -41, -50, -53, -57, -41, -49, -52, -57, -42, -50, -52, -57, -42, -50, -53, -57, -42, -50, -53, -56, -42, -50, -53, -56, -42, -50, -53, -55, -42, -50, -53, -55, -42, -49, -53, -55, -42, -49, -54, -55, -41, -48, -54, -56, -41, -48, -54, -56, -41, -48, -54, -56, -41, -48, -54, -56, -41, -48, -54, -56, -41, -48, -53, -55, -41, -48, -53, -55, -41, -48, -53, -55, -41, -48, -53, -55, -41, -48, -53, -55, -41, -48, -53, -55, -41, -48, -53, -55, -41, -48, -53, -55, -41, -48, -53, -55, -41, -48, -54, -55, -41, -48, -54, -54, -41, -48, -54, -54, -41, -48, -54, -54, -41, -48, -54, -54, -41, -48, -54, -54, -41, -48, -54, -54, -41, -48, -54, -54, -41, -48, -54, -54, -41, -48, -54, -54, -41, -49, -53, -55, -41, -50, -53, -57, -41, -50, -53, -57, -41, -50, -52, -56, -43, -50, -52, -55, -43, -50, -52, -55, -41, -50, -52, -55, -41, -50, -52, -55, -41, -50, -52, -55, -41, -50, -52, -55, -41, -50, -52, -55, -42, -50, -53, -54, -42, -50, -53, -54, -43, -50, -53, -54, -43, -49, -53, -55, -43, -49, -53, -55, -43, -49, -53, -55, -43, -49, -53, -55, -43, -49, -53, -54, -42, -49, -53, -54, -42, -49, -53, -54, -42, -50, -52, -54, -42, -50, -52, -54, -42, -50, -52, -55, -42, -50, -52, -55, -42, -50, -52, -55, -40, -50, -52, -56, -40, -50, -52, -55, -40, -50, -53, -55, -40, -50, -53, -55, -40, -50, -53, -59, -40, -50, -53, -55, -40, -50, -53, -55, -40, -50, -53, -55, -40, -50, -53, -54, -40, -50, -53, -54, -40, -50, -54, -54, -40, -50, -53, -54, -40, -50, -53, -54, -40, -50, -53, -54, -41, -51, -53, -54, -41, -50, -54, -54, -41, -50, -53, -54, -41, -51, -53, -54, -41, -51, -54, -54, -41, -50, -54, -54, -41, -50, -53, -54, -41, -50, -51, -54, -41, -50, -51, -54, -41, -51, -54, -58}" name="rssi10" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2mVzAP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8zDf32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2mWaEP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8zDv32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mXoMP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8zD_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8zEP32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8zEf32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8zEv32EeK2vZLmiNaijw" defaultValue="{&quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;jewelry&quot;}" name="ssid11" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2mXoMf32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8zE_32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2mY2UP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8zFP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mZdYP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8zFf32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8zFv32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8zF_32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8zGP32EeK2vZLmiNaijw" defaultValue="{-32, -52, -59, -59, -33, -54, -59, -60, -32, -55, -59, -59, -32, -55, -59, -59, -32, -55, -60, -60, -32, -55, -60, -60, -33, -55, -59, -60, -33, -55, -59, -60, -32, -55, -59, -60, -33, -55, -59, -60, -33, -55, -59, -60, -32, -55, -59, -60, -33, -55, -59, -60, -33, -55, -59, -60, -33, -55, -59, -60, -33, -55, -59, -60, -33, -55, -59, -60, -33, -55, -59, -60, -33, -55, -59, -60, -33, -55, -59, -60, -33, -55, -59, -60, -33, -55, -59, -60, -33, -55, -60, -60, -33, -55, -60, -60, -33, -55, -60, -60, -32, -55, -60, -60, -33, -55, -60, -60, -33, -55, -61, -61, -33, -55, -61, -61, -33, -55, -60, -61, -33, -55, -60, -61, -33, -55, -60, -60, -33, -55, -60, -60, -33, -56, -60, -60, -33, -56, -60, -60, -33, -56, -60, -60, -33, -56, -60, -60, -33, -56, -60, -60, -33, -56, -60, -60, -33, -56, -60, -60, -33, -56, -60, -60, -6, -56, -60, -60, -26, -56, -60, -60, -32, -56, -60, -60, -33, -56, -60, -60, -33, -56, -60, -60, -33, -56, -60, -60, -33, -56, -60, -60, -32, -56, -60, -60, -33, -56, -60, -60, -33, -56, -60, -60, -33, -56, -60, -60, -33, -56, -60, -60, -33, -56, -60, -60, -33, -56, -60, -60, -32, -56, -60, -60, -32, -56, -60, -60, -33, -56, -60, -60, -33, -56, -60, -60, -33, -56, -60, -61, -33, -56, -60, -61, -33, -56, -60, -61, -33, -56, -60, -61, -33, -56, -60, -61, -33, -56, -60, -61, -33, -56, -60, -61, -33, -56, -60, -61, -33, -56, -60, -61, -33, -56, -60, -61, -33, -56, -60, -61, -33, -55, -60, -61, -33, -54, -58, -58, -32, -54, -56, -58, -33, -54, -56, -58, -33, -54, -56, -59, -32, -53, -56, -59, -33, -52, -56, -58, -33, -52, -56, -58, -33, -53, -56, -58, -33, -53, -56, -58, -33, -53, -56, -58, -33, -54, -57, -58, -32, -54, -57, -58, -33, -54, -57, -58, -33, -54, -57, -58, -32, -54, -57, -57, -33, -52, -57, -59, -33, -53, -57, -59, -33, -53, -57, -59, -33, -54, -57, -59, -33, -53, -57, -59}" name="rssi11" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2maEcP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8zGf32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2margP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8zGv32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mbSkP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8zG_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8zHP32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8zHf32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8zHv32EeK2vZLmiNaijw" defaultValue="{&quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;furniture&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;furniture&quot;, &quot;electronics&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;, &quot;electronics&quot;, &quot;furniture&quot;, &quot;jewelry&quot;, &quot;clothes&quot;}" name="ssid12" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2mbSkf32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8zH_32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2mb5of32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8zIP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mcgsf32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8zIf32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8zIv32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8zI_32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8zJP32EeK2vZLmiNaijw" defaultValue="{-43, -47, -53, -56, -43, -47, -53, -56, -43, -44, -53, -56, -43, -44, -52, -57, -43, -44, -52, -60, -43, -44, -52, -62, -43, -44, -52, -61, -43, -44, -52, -62, -42, -44, -52, -62, -42, -44, -51, -63, -42, -44, -51, -61, -43, -44, -51, -61, -43, -44, -51, -61, -43, -44, -51, -61, -43, -44, -51, -61, -43, -44, -51, -61, -43, -44, -51, -61, -43, -44, -51, -61, -43, -44, -51, -61, -43, -44, -51, -61, -43, -44, -51, -61, -43, -44, -51, -60, -43, -44, -51, -60, -43, -44, -51, -60, -43, -44, -51, -60, -43, -44, -51, -60, -43, -43, -51, -60, -43, -43, -52, -60, -43, -44, -52, -60, -43, -44, -52, -62, -43, -45, -52, -60, -43, -45, -52, -62, -43, -45, -52, -62, -43, -45, -52, -62, -43, -45, -52, -62, -43, -45, -52, -63, -42, -45, -52, -63, -42, -45, -52, -63, -42, -44, -52, -63, -42, -44, -52, -63, -42, -44, -52, -63, -42, -44, -52, -63, -42, -44, -52, -61, -42, -44, -52, -59, -42, -44, -52, -59, -42, -44, -52, -59, -42, -44, -53, -59, -42, -44, -53, -59, -42, -46, -53, -59, -42, -45, -53, -59, -42, -44, -53, -58, -42, -44, -53, -59, -45, -46, -52, -60, -45, -46, -51, -60, -45, -47, -51, -59, -45, -49, -51, -59, -45, -50, -52, -59, -45, -50, -52, -60, -50, -52, -57, -60, -50, -52, -57, -60, -47, -50, -52, -60, -47, -50, -52, -61, -46, -50, -52, -62, -46, -50, -52, -62, -46, -50, -52, -62, -45, -50, -52, -61, -45, -46, -52, -59, -44, -45, -51, -58, -44, -45, -50, -58, -44, -45, -50, -58, -43, -44, -51, -58, -43, -44, -51, -60}" name="rssi12" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2mdHwP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8zJf32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2mdu0f32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8zJv32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2meV4f32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8zJ_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8zKP32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8zKf32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8zKv32EeK2vZLmiNaijw" name="dummyList" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2me88P32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8zK_32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2mfkAP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8zLP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mgLEP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8zLf32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2mfkAP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b8zLv32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mgLEP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8zL_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8zMP32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8zMf32EeK2vZLmiNaijw" name="Dummy">
+        <modelElement href="CostcoMobile.uml#_2RJmIP32EeK2vZLmiNaijw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8zMv32EeK2vZLmiNaijw" defaultValue="new ArrayList&lt;AccessPoint>(5)" name="apList" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2mgLEf32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8zM_32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mhZMP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6b6WZP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mhZMP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8zNP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6b8zNf32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6b8zNv32EeK2vZLmiNaijw" name="AccessPoint">
+        <modelElement href="CostcoMobile.uml#_2Q35UP32EeK2vZLmiNaijw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6b8zN_32EeK2vZLmiNaijw" defaultValue="0" name="dummyIndex" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2miAQP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8zOP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2minUP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8zOf32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6b8zOv32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6b8zO_32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_6b8zPP32EeK2vZLmiNaijw" name="makeDummy" staticOperation="true">
+      <modelElement href="CostcoMobile.uml#_2RFUsP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6b8zPf32EeK2vZLmiNaijw" name="Array">
+        <modelElement href="CostcoMobile.uml#_2RF7wv32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6b8zPv32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_6b8zP_32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2RF7wP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6b8zQP32EeK2vZLmiNaijw" name="Dummy">
+          <modelElement href="CostcoMobile.uml#_2RJmIP32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_6b8zQf32EeK2vZLmiNaijw" name="position">
+        <modelElement href="CostcoMobile.uml#_2RFUsf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6b8zQv32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6b8zQ_32EeK2vZLmiNaijw" name="makeScanResults" staticOperation="true">
+      <modelElement href="CostcoMobile.uml#_2RHJ4P32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6b8zRP32EeK2vZLmiNaijw" label="-"/>
+      <outParameters xmi:id="_6b8zRf32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2RHw8P32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6b8zRv32EeK2vZLmiNaijw" name="Dummy">
+          <modelElement href="CostcoMobile.uml#_2RJmIP32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_6b8zR_32EeK2vZLmiNaijw" name="count">
+        <modelElement href="CostcoMobile.uml#_2RHJ4f32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6b8zSP32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6b8zSf32EeK2vZLmiNaijw" name="parseDummyResult" staticOperation="true">
+      <modelElement href="CostcoMobile.uml#_2RIYAP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6b8zSv32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_6b8zS_32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2RIYAv32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6b8zTP32EeK2vZLmiNaijw" name="AccessPoint">
+          <modelElement href="CostcoMobile.uml#_2Q35UP32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_6b8zTf32EeK2vZLmiNaijw" name="count">
+        <modelElement href="CostcoMobile.uml#_2RIYAf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6b8zTv32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6b8zT_32EeK2vZLmiNaijw" name="addDummyAP" staticOperation="true">
+      <modelElement href="CostcoMobile.uml#_2gFaAP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6b8zUP32EeK2vZLmiNaijw" label="-"/>
+      <parameters xmi:id="_6b8zUf32EeK2vZLmiNaijw" name="mResult">
+        <modelElement href="CostcoMobile.uml#_2gFaAf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6b8zUv32EeK2vZLmiNaijw" name="Dummy">
+          <modelElement href="CostcoMobile.uml#_2RJmIP32EeK2vZLmiNaijw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6b8zU_32EeK2vZLmiNaijw" name="i">
+        <modelElement href="CostcoMobile.uml#_2gFaAv32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6b8zVP32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6b8zVf32EeK2vZLmiNaijw" name="rssi">
+        <modelElement href="CostcoMobile.uml#_2gGBEP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6b8zVv32EeK2vZLmiNaijw" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_6cu1wP32EeK2vZLmiNaijw" comments="_6cm58P32EeK2vZLmiNaijw" targetConnectionVisual="_6cm58f32EeK2vZLmiNaijw" name="WiFiScanner" associationsOut="_6clr0P32EeK2vZLmiNaijw _6ctAkP32EeK2vZLmiNaijw _6ctnoP32EeK2vZLmiNaijw _6cuOsP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2RrKkP32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_6cu1wf32EeK2vZLmiNaijw" position="880.0,354.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_6cu1wv32EeK2vZLmiNaijw" label="+"/>
+    <attributes xmi:id="_6cu1w_32EeK2vZLmiNaijw" defaultValue="&quot;WIFIScanner&quot;" name="TAG" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2mtmcP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6cu1xP32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6cu1xf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6cu1xv32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6cu1x_32EeK2vZLmiNaijw" defaultValue="1" name="FILTER_AVG" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2muNgf32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6cu1yP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6cu1yf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6cu1yv32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6cu1y_32EeK2vZLmiNaijw" defaultValue="2" name="FILTER_NONE" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2mu0kP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6cu1zP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6cu1zf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6cu1zv32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6cu1z_32EeK2vZLmiNaijw" defaultValue="5" name="scanNumber">
+      <modelElement href="CostcoMobile.uml#_2mvboP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6cu10P32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mwCsP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6cu10f32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6cu10v32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6cu10_32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6cu11P32EeK2vZLmiNaijw" defaultValue="true" name="noiseFilterFlag">
+      <modelElement href="CostcoMobile.uml#_2mwpwP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6cu11f32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mxQ0P32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6cu11v32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6cu11_32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6cu12P32EeK2vZLmiNaijw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6cu12f32EeK2vZLmiNaijw" name="wifimanager">
+      <modelElement href="CostcoMobile.uml#_2mx34P32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6cu12v32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mye8P32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6cu12_32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2mye8P32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6cu13P32EeK2vZLmiNaijw" label="~"/>
+      <cardinality xmi:id="_6cu13f32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6cu13v32EeK2vZLmiNaijw" name="WifiManager">
+        <modelElement href="CostcoMobile.uml#_2f4lsP32EeK2vZLmiNaijw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6cu13_32EeK2vZLmiNaijw" defaultValue="&quot;&quot;" name="text">
+      <modelElement href="CostcoMobile.uml#_2mzGAP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6cu14P32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2m0UIP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6cu14f32EeK2vZLmiNaijw" label="~"/>
+      <cardinality xmi:id="_6cu14v32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6cu14_32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6cu15P32EeK2vZLmiNaijw" defaultValue="&quot;&quot;" name="result">
+      <modelElement href="CostcoMobile.uml#_2m0UIf32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6cu15f32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2m1iQP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6cu15v32EeK2vZLmiNaijw" label="~"/>
+      <cardinality xmi:id="_6cu15_32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6cu16P32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6cu16f32EeK2vZLmiNaijw" defaultValue="&quot;&quot;" name="fileName">
+      <modelElement href="CostcoMobile.uml#_2m2JUP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6cu16v32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2m2wYP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6cu16_32EeK2vZLmiNaijw" label="~"/>
+      <cardinality xmi:id="_6cu17P32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6cu17f32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6cu17v32EeK2vZLmiNaijw" defaultValue="0" name="normCount">
+      <modelElement href="CostcoMobile.uml#_2m3XcP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6cu17_32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2m4lkP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6cu18P32EeK2vZLmiNaijw" label="~"/>
+      <cardinality xmi:id="_6cu18f32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6cu18v32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6cu18_32EeK2vZLmiNaijw" defaultValue="0" name="avgCount">
+      <modelElement href="CostcoMobile.uml#_2m5MoP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6cu19P32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2m5zsP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6cu19f32EeK2vZLmiNaijw" label="~"/>
+      <cardinality xmi:id="_6cu19v32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6cu19_32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6cu1-P32EeK2vZLmiNaijw" defaultValue="0" name="dropCount">
+      <modelElement href="CostcoMobile.uml#_2m6awP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6cu1-f32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2m7B0f32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6cu1-v32EeK2vZLmiNaijw" label="~"/>
+      <cardinality xmi:id="_6cu1-_32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6cu1_P32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6cu1_f32EeK2vZLmiNaijw" defaultValue="null" name="mScanResult">
+      <modelElement href="CostcoMobile.uml#_2m7o4P32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6cu1_v32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2m8P8f32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6cu1__32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2m8P8f32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6cu2AP32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6cu2Af32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6cu2Av32EeK2vZLmiNaijw" name="ScanResult">
+        <modelElement href="CostcoMobile.uml#_2gJrcP32EeK2vZLmiNaijw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6cu2A_32EeK2vZLmiNaijw" name="apList">
+      <modelElement href="CostcoMobile.uml#_2m83AP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6cu2BP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_6cu2Bf32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_6cu2Bv32EeK2vZLmiNaijw" name="AccessPoint">
+        <modelElement href="CostcoMobile.uml#_2Q35UP32EeK2vZLmiNaijw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6cu2B_32EeK2vZLmiNaijw" defaultValue="false" name="dummyFlag">
+      <modelElement href="CostcoMobile.uml#_2m9eEP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6cu2CP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2m9eEv32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6cu2Cf32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6cu2Cv32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6cu2C_32EeK2vZLmiNaijw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6cu2DP32EeK2vZLmiNaijw" defaultValue="null" name="fp">
+      <modelElement href="CostcoMobile.uml#_2m-FIP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_6cu2Df32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2m-sMP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6cu2Dv32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2m-sMP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_6cu2D_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_6cu2EP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_6cu2Ef32EeK2vZLmiNaijw" name="FloorPlan">
+        <modelElement href="CostcoMobile.uml#_2IkR4P32EeK2vZLmiNaijw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_6cu2Ev32EeK2vZLmiNaijw" name="scanStart">
+      <modelElement href="CostcoMobile.uml#_2RyfUP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6cu2E_32EeK2vZLmiNaijw" label="+"/>
+    </operations>
+    <operations xmi:id="_6cu2FP32EeK2vZLmiNaijw" name="scanStop">
+      <modelElement href="CostcoMobile.uml#_2RzGYP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6cu2Ff32EeK2vZLmiNaijw" label="+"/>
+    </operations>
+    <operations xmi:id="_6cu2Fv32EeK2vZLmiNaijw" name="getCategoryList">
+      <modelElement href="CostcoMobile.uml#_2RztcP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6cu2F_32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_6cu2GP32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2R0UgP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6cu2Gf32EeK2vZLmiNaijw" name="Category">
+          <modelElement href="CostcoMobile.uml#_2PqYYP32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_6cu2Gv32EeK2vZLmiNaijw" name="parseWIFIScanResult">
+      <modelElement href="CostcoMobile.uml#_2R07kP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6cu2G_32EeK2vZLmiNaijw" label="-"/>
+    </operations>
+    <operations xmi:id="_6cu2HP32EeK2vZLmiNaijw" name="WiFiScanner">
+      <modelElement href="CostcoMobile.uml#_2iz94P32EeK2vZLmiNaijw"/>
+      <keywords xmi:id="_6cu2Hf32EeK2vZLmiNaijw" keyword="create"/>
+      <visibility xmi:id="_6cu2Hv32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_6cu2H_32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2i0k9P32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6cu2IP32EeK2vZLmiNaijw" name="WiFiScanner">
+          <modelElement href="CostcoMobile.uml#_2RrKkP32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_6cu2If32EeK2vZLmiNaijw" name="wm">
+        <modelElement href="CostcoMobile.uml#_2iz94f32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6cu2Iv32EeK2vZLmiNaijw" name="WifiManager">
+          <modelElement href="CostcoMobile.uml#_2f4lsP32EeK2vZLmiNaijw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6cu2I_32EeK2vZLmiNaijw" name="initParams">
+        <modelElement href="CostcoMobile.uml#_2i0k8P32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6cu2JP32EeK2vZLmiNaijw" name="Map">
+          <modelElement href="CostcoMobile.uml#_2d96IP32EeK2vZLmiNaijw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6cu2Jf32EeK2vZLmiNaijw" name="context">
+        <modelElement href="CostcoMobile.uml#_2i0k8f32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6cu2Jv32EeK2vZLmiNaijw" name="Context">
+          <modelElement href="CostcoMobile.uml#_2d_vUf32EeK2vZLmiNaijw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6cu2J_32EeK2vZLmiNaijw" name="addAP">
+      <modelElement href="CostcoMobile.uml#_2i1zEP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_6cu2KP32EeK2vZLmiNaijw" label="-"/>
+      <parameters xmi:id="_6cu2Kf32EeK2vZLmiNaijw" name="mResult">
+        <modelElement href="CostcoMobile.uml#_2i1zEf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6cu2Kv32EeK2vZLmiNaijw" name="ScanResult">
+          <modelElement href="CostcoMobile.uml#_2gJrcP32EeK2vZLmiNaijw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6cu2K_32EeK2vZLmiNaijw" name="i">
+        <modelElement href="CostcoMobile.uml#_2i1zEv32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6cu2LP32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6cu2Lf32EeK2vZLmiNaijw" name="rssi">
+        <modelElement href="CostcoMobile.uml#_2i1zE_32EeK2vZLmiNaijw"/>
+        <type xmi:id="_6cu2Lv32EeK2vZLmiNaijw" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

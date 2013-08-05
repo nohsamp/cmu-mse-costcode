@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_3jeJoP32EeK2vZLmiNaijw">
+  <modelElement href="CostcoMobile.uml#_z4yAkP32EeK2vZLmiNaijw"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_31VVsP32EeK2vZLmiNaijw" name="cmu">
+    <modelElement href="CostcoMobile.uml#_1pmd8P32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_31VVsf32EeK2vZLmiNaijw" position="50.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_316kgP32EeK2vZLmiNaijw" name="java">
+    <modelElement href="CostcoMobile.uml#_1r6yIP32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_316kgf32EeK2vZLmiNaijw" position="-115.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_318ZsP32EeK2vZLmiNaijw" name="org">
+    <modelElement href="CostcoMobile.uml#_1r8AQP32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_318Zsf32EeK2vZLmiNaijw" position="200.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_319n0P32EeK2vZLmiNaijw" name="android">
+    <modelElement href="CostcoMobile.uml#_1r8nUP32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_319n0f32EeK2vZLmiNaijw" position="350.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_31_dAP32EeK2vZLmiNaijw" name="Category">
+    <modelElement href="CostcoMobile.uml#_1s7ewP32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_31_dAf32EeK2vZLmiNaijw" position="-280.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_32ArIP32EeK2vZLmiNaijw" name="edu">
+    <modelElement href="CostcoMobile.uml#_1trssP32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_32ArIf32EeK2vZLmiNaijw" position="500.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_32B5QP32EeK2vZLmiNaijw" name="Preference">
+    <modelElement href="CostcoMobile.uml#_1xSaUP32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_32B5Qf32EeK2vZLmiNaijw" position="-445.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_32DHYP32EeK2vZLmiNaijw" name="com">
+    <modelElement href="CostcoMobile.uml#_18ioEP32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_32DHYf32EeK2vZLmiNaijw" position="650.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

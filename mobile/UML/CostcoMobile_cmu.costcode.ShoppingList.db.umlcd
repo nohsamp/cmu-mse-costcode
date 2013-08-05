@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_3juoUP32EeK2vZLmiNaijw">
+  <modelElement href="CostcoMobile.uml#_1r9OYP32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5k_Vcf32EeK2vZLmiNaijw" targetItem="_5lSQiv32EeK2vZLmiNaijw" sourceItem="_5k_VcP32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5k_Vc_32EeK2vZLmiNaijw" targetItem="_5lSQjv32EeK2vZLmiNaijw" sourceItem="_5k_Vcv32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5k_8gf32EeK2vZLmiNaijw" targetItem="_5lSQkP32EeK2vZLmiNaijw" sourceItem="_5k_8gP32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lAjkf32EeK2vZLmiNaijw" targetItem="_5lSQnP32EeK2vZLmiNaijw" sourceItem="_5lAjkP32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lBKof32EeK2vZLmiNaijw" targetItem="_5lSQo_32EeK2vZLmiNaijw" sourceItem="_5lBKoP32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lBxsf32EeK2vZLmiNaijw" targetItem="_5lSQqf32EeK2vZLmiNaijw" sourceItem="_5lBxsP32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lCYwf32EeK2vZLmiNaijw" targetItem="_5lSQrf32EeK2vZLmiNaijw" sourceItem="_5lCYwP32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lC_0f32EeK2vZLmiNaijw" targetItem="_5lSQsf32EeK2vZLmiNaijw" sourceItem="_5lC_0P32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lDm4f32EeK2vZLmiNaijw" targetItem="_5lSQu_32EeK2vZLmiNaijw" sourceItem="_5lDm4P32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lE1Af32EeK2vZLmiNaijw" targetItem="_5lSQx_32EeK2vZLmiNaijw" sourceItem="_5lE1AP32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lFcEf32EeK2vZLmiNaijw" targetItem="_5lS3c_32EeK2vZLmiNaijw" sourceItem="_5lFcEP32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lGDIf32EeK2vZLmiNaijw" targetItem="_5lS3ff32EeK2vZLmiNaijw" sourceItem="_5lGDIP32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lHRQP32EeK2vZLmiNaijw" targetItem="_5lS3hf32EeK2vZLmiNaijw" sourceItem="_5lGqMP32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lHRQv32EeK2vZLmiNaijw" targetItem="_5lS3lf32EeK2vZLmiNaijw" sourceItem="_5lHRQf32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lH4Uf32EeK2vZLmiNaijw" targetItem="_5lS3mf32EeK2vZLmiNaijw" sourceItem="_5lH4UP32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lIfYf32EeK2vZLmiNaijw" targetItem="_5lS3nf32EeK2vZLmiNaijw" sourceItem="_5lIfYP32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lJGcf32EeK2vZLmiNaijw" targetItem="_5lS3o_32EeK2vZLmiNaijw" sourceItem="_5lJGcP32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lJGc_32EeK2vZLmiNaijw" targetItem="_5lS3rf32EeK2vZLmiNaijw" sourceItem="_5lJGcv32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lKUkf32EeK2vZLmiNaijw" targetItem="_5lS3sv32EeK2vZLmiNaijw" sourceItem="_5lKUkP32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lK7of32EeK2vZLmiNaijw" targetItem="_5lS3vP32EeK2vZLmiNaijw" sourceItem="_5lK7oP32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lLisP32EeK2vZLmiNaijw" targetItem="_5lS3xv32EeK2vZLmiNaijw" sourceItem="_5lK7ov32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lLisv32EeK2vZLmiNaijw" targetItem="_5lS3yv32EeK2vZLmiNaijw" sourceItem="_5lLisf32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_5lMJwf32EeK2vZLmiNaijw" targetItem="_5lS31P32EeK2vZLmiNaijw" sourceItem="_5lMJwP32EeK2vZLmiNaijw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5lQbMP32EeK2vZLmiNaijw" source="_5lSQaf32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2q4Uwf32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_5lxYkP32EeK2vZLmiNaijw" position="90.0,90.0"/>
+    <stereotypes xmi:id="_5lQbMf32EeK2vZLmiNaijw" name="Reference">
+      <modelElement href="CostcoMobile.uml#_2q470P32EeK2vZLmiNaijw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5lQbMv32EeK2vZLmiNaijw" text=""/>
+    <sourceRole xmi:id="_5lQbM_32EeK2vZLmiNaijw" aggregationKind="NONE" name="">
+      <modelElement href="CostcoMobile.uml#_2q4Uwv32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lQbNP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_5lQbNf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5lQbNv32EeK2vZLmiNaijw" aggregationKind="NONE" name="ctx" navigable="true">
+      <modelElement href="CostcoMobile.uml#_2kq_E_32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lQbN_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_5lQbOP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5lRCQP32EeK2vZLmiNaijw" source="_5lSQaf32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2q470f32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_5lxYkf32EeK2vZLmiNaijw" position="110.0,110.0"/>
+    <stereotypes xmi:id="_5lRCQf32EeK2vZLmiNaijw" name="Reference">
+      <modelElement href="CostcoMobile.uml#_2q5i4P32EeK2vZLmiNaijw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5lRCQv32EeK2vZLmiNaijw" text=""/>
+    <sourceRole xmi:id="_5lRCQ_32EeK2vZLmiNaijw" aggregationKind="NONE" name="">
+      <modelElement href="CostcoMobile.uml#_2q470v32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lRCRP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_5lRCRf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5lRCRv32EeK2vZLmiNaijw" aggregationKind="NONE" name="dbHelper" navigable="true">
+      <modelElement href="CostcoMobile.uml#_2krmIf32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lRCR_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_5lRCSP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_5lSQYP32EeK2vZLmiNaijw" source="_5lSQaf32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2q5i4f32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_5lxYkv32EeK2vZLmiNaijw" position="130.0,130.0"/>
+    <stereotypes xmi:id="_5lSQYf32EeK2vZLmiNaijw" name="Reference">
+      <modelElement href="CostcoMobile.uml#_2q6J8P32EeK2vZLmiNaijw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_5lSQYv32EeK2vZLmiNaijw" text=""/>
+    <sourceRole xmi:id="_5lSQY_32EeK2vZLmiNaijw" aggregationKind="NONE" name="">
+      <modelElement href="CostcoMobile.uml#_2q5i4v32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lSQZP32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_5lSQZf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_5lSQZv32EeK2vZLmiNaijw" aggregationKind="NONE" name="db" navigable="true">
+      <modelElement href="CostcoMobile.uml#_2ksNMf32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lSQZ_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_5lSQaP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5k_VcP32EeK2vZLmiNaijw" sourceConnectionVisual="_5k_Vcf32EeK2vZLmiNaijw" text="Open the notes database. If it cannot be opened, try to create a new&#xA;&#x9; * instance of the database. If it cannot be created, throw an exception to&#xA;&#x9; * signal the failure&#xA;&#x9; * &#xA;&#x9; * @return this (self reference, allowing this to be chained in an&#xA;&#x9; *         initialization call)&#xA;&#x9; * @throws SQLException if the database could be neither opened or created" item="_5lSQiv32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p1y8v32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5k_Vcv32EeK2vZLmiNaijw" sourceConnectionVisual="_5k_Vc_32EeK2vZLmiNaijw" text="Close DatabaseHelper, freeing its resources" item="_5lSQjv32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p1y8_32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5k_8gP32EeK2vZLmiNaijw" sourceConnectionVisual="_5k_8gf32EeK2vZLmiNaijw" text="Return a new Customer object, created from DB data in 'customers' table with 'memberId'&#xA;&#x9; * @param memberId&#xA;&#x9; * @return" item="_5lSQkP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p1y9P32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lAjkP32EeK2vZLmiNaijw" sourceConnectionVisual="_5lAjkf32EeK2vZLmiNaijw" text="Return an ShoppingListItem corresponding to MemberId&#xA;&#x9; * @param memberId&#xA;&#x9; * @return" item="_5lSQnP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p1y9f32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lBKoP32EeK2vZLmiNaijw" sourceConnectionVisual="_5lBKof32EeK2vZLmiNaijw" text="Returns an Item object by its itemId&#xA;&#x9; * @param listId&#xA;&#x9; * @return" item="_5lSQo_32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p1y9v32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lBxsP32EeK2vZLmiNaijw" sourceConnectionVisual="_5lBxsf32EeK2vZLmiNaijw" text="Return list of access point&#xA;&#x9; * @return" item="_5lSQqf32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p2aAP32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lCYwP32EeK2vZLmiNaijw" sourceConnectionVisual="_5lCYwf32EeK2vZLmiNaijw" text="Return list of category&#xA;&#x9; * @return categoryList" item="_5lSQrf32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p2aAf32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lC_0P32EeK2vZLmiNaijw" sourceConnectionVisual="_5lC_0f32EeK2vZLmiNaijw" text="Create a new row in the Customers db&#xA;&#x9; * @param firstName&#xA;&#x9; * @param lastName&#xA;&#x9; * @param address&#xA;&#x9; * @return new memberId" item="_5lSQsf32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p2aAv32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lDm4P32EeK2vZLmiNaijw" sourceConnectionVisual="_5lDm4f32EeK2vZLmiNaijw" text="Create a new row in the ShoppingListItem db; returns memberId&#xA;&#x9; * @param newItemId&#xA;&#x9; * @param memberId&#xA;&#x9; * @param checked&#xA;&#x9; * @param position&#xA;&#x9; * @return" item="_5lSQu_32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p2aA_32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lE1AP32EeK2vZLmiNaijw" sourceConnectionVisual="_5lE1Af32EeK2vZLmiNaijw" text="Create a new row in the Item db; returns new itemId&#xA;&#x9; * @param description&#xA;&#x9; * @param category&#xA;&#x9; * @return" item="_5lSQx_32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p2aBP32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lFcEP32EeK2vZLmiNaijw" sourceConnectionVisual="_5lFcEf32EeK2vZLmiNaijw" text="Sets checked status of a ListItem to 'checked'&#xA;&#x9; * @param memberId&#xA;&#x9; * @param itemId&#xA;&#x9; * @param checked&#xA;&#x9; * @return" item="_5lS3c_32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p3BEP32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lGDIP32EeK2vZLmiNaijw" sourceConnectionVisual="_5lGDIf32EeK2vZLmiNaijw" text="Delete a row from ListItem db for selected member, &#xA;&#x9; * @param memberId&#xA;&#x9; * @param itemId&#xA;&#x9; * @return" item="_5lS3ff32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p3BEf32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lGqMP32EeK2vZLmiNaijw" sourceConnectionVisual="_5lHRQP32EeK2vZLmiNaijw" text="Update a row in the Item db with new category/description&#xA;&#x9; * @param itemId&#xA;&#x9; * @param category&#xA;&#x9; * @param description&#xA;&#x9; * @return" item="_5lS3hf32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p3BEv32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lHRQf32EeK2vZLmiNaijw" sourceConnectionVisual="_5lHRQv32EeK2vZLmiNaijw" text="Delete all of data in AccessPoint Table&#xA;&#x9; * @return The number of deleted rows" item="_5lS3lf32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p3BE_32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lH4UP32EeK2vZLmiNaijw" sourceConnectionVisual="_5lH4Uf32EeK2vZLmiNaijw" text="Delete all of data in Category Table&#xA;&#x9; * @return The number of deleted rows" item="_5lS3mf32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p3BFP32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lIfYP32EeK2vZLmiNaijw" sourceConnectionVisual="_5lIfYf32EeK2vZLmiNaijw" text="Get Version information&#xA;&#x9; * @param The information name&#xA;&#x9; * @return The version of information" item="_5lS3nf32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p3BFf32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lJGcP32EeK2vZLmiNaijw" sourceConnectionVisual="_5lJGcf32EeK2vZLmiNaijw" text="Insert or update version information&#xA;&#x9; * @param infoName The name of information&#xA;&#x9; * @param version The version of information&#xA;&#x9; * @param description Description about the information&#xA;&#x9; * @return The number of affected rows" item="_5lS3o_32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p3BFv32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lJGcv32EeK2vZLmiNaijw" sourceConnectionVisual="_5lJGc_32EeK2vZLmiNaijw" text="Return a map of all proximity alerts, tying category name to GPS coordinates&#xA;&#x9; * @param memberId&#xA;&#x9; * @return" item="_5lS3rf32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p3BF_32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lKUkP32EeK2vZLmiNaijw" sourceConnectionVisual="_5lKUkf32EeK2vZLmiNaijw" text="Create a new proximity alert with name 'category' at location (latitude, longitude)&#xA;&#x9; * @param category&#xA;&#x9; * @param latitude&#xA;&#x9; * @param longitude&#xA;&#x9; * @return" item="_5lS3sv32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p3oIP32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lK7oP32EeK2vZLmiNaijw" sourceConnectionVisual="_5lK7of32EeK2vZLmiNaijw" text="Delete a proximity alert of a given category from the DB&#xA;&#x9; * @param category" item="_5lS3vP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p3oIf32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lK7ov32EeK2vZLmiNaijw" sourceConnectionVisual="_5lLisP32EeK2vZLmiNaijw" text="Create a new row in the AccessPoint db; returns BSSID of AccessPoint&#xA;&#x9; * @param description&#xA;&#x9; * @return" item="_5lS3xv32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p2aBf32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lLisf32EeK2vZLmiNaijw" sourceConnectionVisual="_5lLisv32EeK2vZLmiNaijw" text="Create a new row in the category db; returns category_id of category&#xA;&#x9; * @param category&#xA;&#x9; * @return" item="_5lS3yv32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p2aBv32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_5lMJwP32EeK2vZLmiNaijw" sourceConnectionVisual="_5lMJwf32EeK2vZLmiNaijw" text="Constructor - takes the context to allow the database to be&#xA;&#x9; * opened/created&#xA;&#x9; * &#xA;&#x9; * @param ctx the Context within which to work" item="_5lS31P32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2p1y8f32EeK2vZLmiNaijw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5lSQaf32EeK2vZLmiNaijw" name="DatabaseAdaptor" associationsOut="_5lQbMP32EeK2vZLmiNaijw _5lRCQP32EeK2vZLmiNaijw _5lSQYP32EeK2vZLmiNaijw">
+    <modelElement href="CostcoMobile.uml#_2NSZ0P32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_5lSQav32EeK2vZLmiNaijw" position="50.0,50.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_5lSQa_32EeK2vZLmiNaijw" label="+"/>
+    <attributes xmi:id="_5lSQbP32EeK2vZLmiNaijw" defaultValue="1" name="DATABASE_VERSION" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2kqYAP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lSQbf32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_5lSQbv32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_5lSQb_32EeK2vZLmiNaijw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5lSQcP32EeK2vZLmiNaijw" defaultValue="&quot;ShoppingList.db&quot;" name="DATABASE_NAME" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2kqYAv32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lSQcf32EeK2vZLmiNaijw" label="+"/>
+      <cardinality xmi:id="_5lSQcv32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_5lSQc_32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5lSQdP32EeK2vZLmiNaijw" defaultValue="&quot;DatabaseAdaptor&quot;" name="TAG" staticAttribute="true">
+      <modelElement href="CostcoMobile.uml#_2kq_Ef32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lSQdf32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_5lSQdv32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_5lSQd_32EeK2vZLmiNaijw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5lSQeP32EeK2vZLmiNaijw" name="ctx">
+      <modelElement href="CostcoMobile.uml#_2kq_E_32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_5lSQef32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2krmIP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5lSQev32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2krmIP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_5lSQe_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_5lSQfP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_5lSQff32EeK2vZLmiNaijw" name="Context">
+        <modelElement href="CostcoMobile.uml#_2d_vUf32EeK2vZLmiNaijw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5lSQfv32EeK2vZLmiNaijw" name="dbHelper">
+      <modelElement href="CostcoMobile.uml#_2krmIf32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_5lSQf_32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2ksNMP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5lSQgP32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2ksNMP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_5lSQgf32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_5lSQgv32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_5lSQg_32EeK2vZLmiNaijw" name="DatabaseHelper">
+        <modelElement href="CostcoMobile.uml#_2NWrQP32EeK2vZLmiNaijw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5lSQhP32EeK2vZLmiNaijw" name="db">
+      <modelElement href="CostcoMobile.uml#_2ksNMf32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_5lSQhf32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2ksNMv32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_5lSQhv32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2ksNMv32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_5lSQh_32EeK2vZLmiNaijw" label="-"/>
+      <cardinality xmi:id="_5lSQiP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
+      <type xmi:id="_5lSQif32EeK2vZLmiNaijw" name="SQLiteDatabase">
+        <modelElement href="CostcoMobile.uml#_2ffkIf32EeK2vZLmiNaijw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_5lSQiv32EeK2vZLmiNaijw" comments="_5k_VcP32EeK2vZLmiNaijw" targetConnectionVisual="_5k_Vcf32EeK2vZLmiNaijw" name="open">
+      <modelElement href="CostcoMobile.uml#_2Nmi4P32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lSQi_32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lSQjP32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2fiAYP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQjf32EeK2vZLmiNaijw" name="DatabaseAdaptor">
+          <modelElement href="CostcoMobile.uml#_2NSZ0P32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5lSQjv32EeK2vZLmiNaijw" comments="_5k_Vcv32EeK2vZLmiNaijw" targetConnectionVisual="_5k_Vc_32EeK2vZLmiNaijw" name="close">
+      <modelElement href="CostcoMobile.uml#_2NoYEP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lSQj_32EeK2vZLmiNaijw" label="+"/>
+    </operations>
+    <operations xmi:id="_5lSQkP32EeK2vZLmiNaijw" comments="_5k_8gP32EeK2vZLmiNaijw" targetConnectionVisual="_5k_8gf32EeK2vZLmiNaijw" name="dbGetCustomer">
+      <modelElement href="CostcoMobile.uml#_2NpmMP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lSQkf32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lSQkv32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2fincP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQk_32EeK2vZLmiNaijw" name="Customer">
+          <modelElement href="CostcoMobile.uml#_2P0JYP32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5lSQlP32EeK2vZLmiNaijw" name="memberId">
+        <modelElement href="CostcoMobile.uml#_2NpmMf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQlf32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5lSQlv32EeK2vZLmiNaijw" name="dbGetItemList">
+      <modelElement href="CostcoMobile.uml#_2NrbYP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lSQl_32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lSQmP32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2fincf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQmf32EeK2vZLmiNaijw" name="ShoppingList">
+          <modelElement href="CostcoMobile.uml#_2Tsj0P32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5lSQmv32EeK2vZLmiNaijw" name="memberId">
+        <modelElement href="CostcoMobile.uml#_2NrbYf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQm_32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5lSQnP32EeK2vZLmiNaijw" comments="_5lAjkP32EeK2vZLmiNaijw" targetConnectionVisual="_5lAjkf32EeK2vZLmiNaijw" name="dbGetShoppingList">
+      <modelElement href="CostcoMobile.uml#_2NtQkP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_5lSQnf32EeK2vZLmiNaijw" name="Generics">
+        <modelElement href="CostcoMobile.uml#_2NvFwP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_5lSQnv32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lSQn_32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2iWq4P32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQoP32EeK2vZLmiNaijw" name="Map">
+          <modelElement href="CostcoMobile.uml#_2d96IP32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5lSQof32EeK2vZLmiNaijw" name="memberId">
+        <modelElement href="CostcoMobile.uml#_2NtQkf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQov32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5lSQo_32EeK2vZLmiNaijw" comments="_5lBKoP32EeK2vZLmiNaijw" targetConnectionVisual="_5lBKof32EeK2vZLmiNaijw" name="dbGetItemById">
+      <modelElement href="CostcoMobile.uml#_2Nw68P32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lSQpP32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lSQpf32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2fincv32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQpv32EeK2vZLmiNaijw" name="Item">
+          <modelElement href="CostcoMobile.uml#_2TJxQP32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5lSQp_32EeK2vZLmiNaijw" name="itemId">
+        <modelElement href="CostcoMobile.uml#_2Nw68f32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQqP32EeK2vZLmiNaijw" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5lSQqf32EeK2vZLmiNaijw" comments="_5lBxsP32EeK2vZLmiNaijw" targetConnectionVisual="_5lBxsf32EeK2vZLmiNaijw" name="dbGetAccessPoint">
+      <modelElement href="CostcoMobile.uml#_2NyJEP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lSQqv32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lSQq_32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2NywIP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQrP32EeK2vZLmiNaijw" name="AccessPoint">
+          <modelElement href="CostcoMobile.uml#_2Q35UP32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5lSQrf32EeK2vZLmiNaijw" comments="_5lCYwP32EeK2vZLmiNaijw" targetConnectionVisual="_5lCYwf32EeK2vZLmiNaijw" name="dbGetCategory">
+      <modelElement href="CostcoMobile.uml#_2Nz-QP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lSQrv32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lSQr_32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2Nz-Qf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQsP32EeK2vZLmiNaijw" name="Category">
+          <modelElement href="CostcoMobile.uml#_2PqYYP32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5lSQsf32EeK2vZLmiNaijw" comments="_5lC_0P32EeK2vZLmiNaijw" targetConnectionVisual="_5lC_0f32EeK2vZLmiNaijw" name="dbCreateCustomer">
+      <modelElement href="CostcoMobile.uml#_2N1zcP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lSQsv32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lSQs_32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2N2agf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQtP32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5lSQtf32EeK2vZLmiNaijw" name="firstName">
+        <modelElement href="CostcoMobile.uml#_2N1zcf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQtv32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lSQt_32EeK2vZLmiNaijw" name="lastName">
+        <modelElement href="CostcoMobile.uml#_2N1zcv32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQuP32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lSQuf32EeK2vZLmiNaijw" name="address">
+        <modelElement href="CostcoMobile.uml#_2N2agP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQuv32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5lSQu_32EeK2vZLmiNaijw" comments="_5lDm4P32EeK2vZLmiNaijw" targetConnectionVisual="_5lDm4f32EeK2vZLmiNaijw" name="dbCreateShoppingListItem">
+      <modelElement href="CostcoMobile.uml#_2N4PsP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lSQvP32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lSQvf32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2N42wv32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQvv32EeK2vZLmiNaijw" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5lSQv_32EeK2vZLmiNaijw" name="newItemId">
+        <modelElement href="CostcoMobile.uml#_2N4Psf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQwP32EeK2vZLmiNaijw" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lSQwf32EeK2vZLmiNaijw" name="memberId">
+        <modelElement href="CostcoMobile.uml#_2N4Psv32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQwv32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lSQw_32EeK2vZLmiNaijw" name="checked">
+        <modelElement href="CostcoMobile.uml#_2N42wP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQxP32EeK2vZLmiNaijw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lSQxf32EeK2vZLmiNaijw" name="position">
+        <modelElement href="CostcoMobile.uml#_2N42wf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQxv32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5lSQx_32EeK2vZLmiNaijw" comments="_5lE1AP32EeK2vZLmiNaijw" targetConnectionVisual="_5lE1Af32EeK2vZLmiNaijw" name="dbCreateItem">
+      <modelElement href="CostcoMobile.uml#_2N7TAP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lSQyP32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lSQyf32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2N9IMP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQyv32EeK2vZLmiNaijw" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5lSQy_32EeK2vZLmiNaijw" name="name">
+        <modelElement href="CostcoMobile.uml#_2N76EP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQzP32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lSQzf32EeK2vZLmiNaijw" name="category">
+        <modelElement href="CostcoMobile.uml#_2N76Ef32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQzv32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lSQz_32EeK2vZLmiNaijw" name="quantity">
+        <modelElement href="CostcoMobile.uml#_2N76Ev32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lSQ0P32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lSQ0f32EeK2vZLmiNaijw" name="price">
+        <modelElement href="CostcoMobile.uml#_2N8hIP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3cP32EeK2vZLmiNaijw" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lS3cf32EeK2vZLmiNaijw" name="upc">
+        <modelElement href="CostcoMobile.uml#_2N8hIf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3cv32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5lS3c_32EeK2vZLmiNaijw" comments="_5lFcEP32EeK2vZLmiNaijw" targetConnectionVisual="_5lFcEf32EeK2vZLmiNaijw" name="dbSetItemChecked">
+      <modelElement href="CostcoMobile.uml#_2N_kcP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lS3dP32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lS3df32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2OALgv32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3dv32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5lS3d_32EeK2vZLmiNaijw" name="memberId">
+        <modelElement href="CostcoMobile.uml#_2N_kcf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3eP32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lS3ef32EeK2vZLmiNaijw" name="itemId">
+        <modelElement href="CostcoMobile.uml#_2OALgP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3ev32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lS3e_32EeK2vZLmiNaijw" name="checked">
+        <modelElement href="CostcoMobile.uml#_2OALgf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3fP32EeK2vZLmiNaijw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5lS3ff32EeK2vZLmiNaijw" comments="_5lGDIP32EeK2vZLmiNaijw" targetConnectionVisual="_5lGDIf32EeK2vZLmiNaijw" name="dbDeleteItemRow">
+      <modelElement href="CostcoMobile.uml#_2OCAsP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lS3fv32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lS3f_32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2OCnwP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3gP32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5lS3gf32EeK2vZLmiNaijw" name="memberId">
+        <modelElement href="CostcoMobile.uml#_2OCAsf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3gv32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lS3g_32EeK2vZLmiNaijw" name="itemId">
+        <modelElement href="CostcoMobile.uml#_2OCAsv32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3hP32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5lS3hf32EeK2vZLmiNaijw" comments="_5lGqMP32EeK2vZLmiNaijw" targetConnectionVisual="_5lHRQP32EeK2vZLmiNaijw" name="dbUpdateItem">
+      <modelElement href="CostcoMobile.uml#_2OEc8P32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lS3hv32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lS3h_32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2OFrEP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3iP32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5lS3if32EeK2vZLmiNaijw" name="itemId">
+        <modelElement href="CostcoMobile.uml#_2OEc8f32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3iv32EeK2vZLmiNaijw" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lS3i_32EeK2vZLmiNaijw" name="category">
+        <modelElement href="CostcoMobile.uml#_2OFEAP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3jP32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lS3jf32EeK2vZLmiNaijw" name="name">
+        <modelElement href="CostcoMobile.uml#_2OFEAf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3jv32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lS3j_32EeK2vZLmiNaijw" name="quantity">
+        <modelElement href="CostcoMobile.uml#_2OFEAv32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3kP32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lS3kf32EeK2vZLmiNaijw" name="price">
+        <modelElement href="CostcoMobile.uml#_2OFEA_32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3kv32EeK2vZLmiNaijw" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lS3k_32EeK2vZLmiNaijw" name="upc">
+        <modelElement href="CostcoMobile.uml#_2OFEBP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3lP32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5lS3lf32EeK2vZLmiNaijw" comments="_5lHRQf32EeK2vZLmiNaijw" targetConnectionVisual="_5lHRQv32EeK2vZLmiNaijw" name="dbDeleteAccessPoint">
+      <modelElement href="CostcoMobile.uml#_2OG5MP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lS3lv32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lS3l_32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2OG5Mf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3mP32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5lS3mf32EeK2vZLmiNaijw" comments="_5lH4UP32EeK2vZLmiNaijw" targetConnectionVisual="_5lH4Uf32EeK2vZLmiNaijw" name="dbDeleteCategory">
+      <modelElement href="CostcoMobile.uml#_2OHgQP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lS3mv32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lS3m_32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2OIHUP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3nP32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5lS3nf32EeK2vZLmiNaijw" comments="_5lIfYP32EeK2vZLmiNaijw" targetConnectionVisual="_5lIfYf32EeK2vZLmiNaijw" name="dbGetVersion">
+      <modelElement href="CostcoMobile.uml#_2OIuYP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lS3nv32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lS3n_32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2OJVcP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3oP32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5lS3of32EeK2vZLmiNaijw" name="infoName">
+        <modelElement href="CostcoMobile.uml#_2OIuYf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3ov32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5lS3o_32EeK2vZLmiNaijw" comments="_5lJGcP32EeK2vZLmiNaijw" targetConnectionVisual="_5lJGcf32EeK2vZLmiNaijw" name="dbSetVersion">
+      <modelElement href="CostcoMobile.uml#_2OKjkP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lS3pP32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lS3pf32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2OLKoP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3pv32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5lS3p_32EeK2vZLmiNaijw" name="infoName">
+        <modelElement href="CostcoMobile.uml#_2OKjkf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3qP32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lS3qf32EeK2vZLmiNaijw" name="version">
+        <modelElement href="CostcoMobile.uml#_2OKjkv32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3qv32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lS3q_32EeK2vZLmiNaijw" name="description">
+        <modelElement href="CostcoMobile.uml#_2OKjk_32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3rP32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5lS3rf32EeK2vZLmiNaijw" comments="_5lJGcv32EeK2vZLmiNaijw" targetConnectionVisual="_5lJGc_32EeK2vZLmiNaijw" name="dbGetProxAlerts">
+      <modelElement href="CostcoMobile.uml#_2OMYwP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_5lS3rv32EeK2vZLmiNaijw" name="Generics">
+        <modelElement href="CostcoMobile.uml#_2ONm4P32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_5lS3r_32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lS3sP32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2iWq4f32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3sf32EeK2vZLmiNaijw" name="Map">
+          <modelElement href="CostcoMobile.uml#_2d96IP32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_5lS3sv32EeK2vZLmiNaijw" comments="_5lKUkP32EeK2vZLmiNaijw" targetConnectionVisual="_5lKUkf32EeK2vZLmiNaijw" name="dbCreateAlert">
+      <modelElement href="CostcoMobile.uml#_2OO1AP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lS3s_32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lS3tP32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2OQDIP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3tf32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5lS3tv32EeK2vZLmiNaijw" name="category">
+        <modelElement href="CostcoMobile.uml#_2OPcEP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3t_32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lS3uP32EeK2vZLmiNaijw" name="latitude">
+        <modelElement href="CostcoMobile.uml#_2OPcEf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3uf32EeK2vZLmiNaijw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lS3uv32EeK2vZLmiNaijw" name="longitude">
+        <modelElement href="CostcoMobile.uml#_2OPcEv32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3u_32EeK2vZLmiNaijw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5lS3vP32EeK2vZLmiNaijw" comments="_5lK7oP32EeK2vZLmiNaijw" targetConnectionVisual="_5lK7of32EeK2vZLmiNaijw" name="dbDeleteProxAlert">
+      <modelElement href="CostcoMobile.uml#_2ORRQP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lS3vf32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lS3vv32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2OR4Uf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3v_32EeK2vZLmiNaijw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5lS3wP32EeK2vZLmiNaijw" name="category">
+        <modelElement href="CostcoMobile.uml#_2ORRQf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3wf32EeK2vZLmiNaijw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lS3wv32EeK2vZLmiNaijw" name="latitude">
+        <modelElement href="CostcoMobile.uml#_2ORRQv32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3w_32EeK2vZLmiNaijw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_5lS3xP32EeK2vZLmiNaijw" name="longitude">
+        <modelElement href="CostcoMobile.uml#_2OR4UP32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3xf32EeK2vZLmiNaijw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5lS3xv32EeK2vZLmiNaijw" comments="_5lK7ov32EeK2vZLmiNaijw" targetConnectionVisual="_5lLisP32EeK2vZLmiNaijw" name="dbCreateAccessPoint">
+      <modelElement href="CostcoMobile.uml#_2fjOgP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lS3x_32EeK2vZLmiNaijw" label="+"/>
+      <parameters xmi:id="_5lS3yP32EeK2vZLmiNaijw" name="ap">
+        <modelElement href="CostcoMobile.uml#_2fjOgf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3yf32EeK2vZLmiNaijw" name="AccessPoint">
+          <modelElement href="CostcoMobile.uml#_2Q35UP32EeK2vZLmiNaijw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5lS3yv32EeK2vZLmiNaijw" comments="_5lLisf32EeK2vZLmiNaijw" targetConnectionVisual="_5lLisv32EeK2vZLmiNaijw" name="dbCreateCategory">
+      <modelElement href="CostcoMobile.uml#_2fj1kP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lS3y_32EeK2vZLmiNaijw" label="+"/>
+      <parameters xmi:id="_5lS3zP32EeK2vZLmiNaijw" name="category">
+        <modelElement href="CostcoMobile.uml#_2fj1kf32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS3zf32EeK2vZLmiNaijw" name="Category">
+          <modelElement href="CostcoMobile.uml#_2PqYYP32EeK2vZLmiNaijw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5lS3zv32EeK2vZLmiNaijw" name="dbGetShoppingListItem">
+      <modelElement href="CostcoMobile.uml#_2fkcoP32EeK2vZLmiNaijw"/>
+      <visibility xmi:id="_5lS3z_32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lS30P32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2fkcov32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS30f32EeK2vZLmiNaijw" name="ShoppingListItem">
+          <modelElement href="CostcoMobile.uml#_2QWU4P32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5lS30v32EeK2vZLmiNaijw" name="item">
+        <modelElement href="CostcoMobile.uml#_2fkcof32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS30_32EeK2vZLmiNaijw" name="Item">
+          <modelElement href="CostcoMobile.uml#_2TJxQP32EeK2vZLmiNaijw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_5lS31P32EeK2vZLmiNaijw" comments="_5lMJwP32EeK2vZLmiNaijw" targetConnectionVisual="_5lMJwf32EeK2vZLmiNaijw" name="DatabaseAdaptor">
+      <modelElement href="CostcoMobile.uml#_2iWD0P32EeK2vZLmiNaijw"/>
+      <keywords xmi:id="_5lS31f32EeK2vZLmiNaijw" keyword="create"/>
+      <visibility xmi:id="_5lS31v32EeK2vZLmiNaijw" label="+"/>
+      <outParameters xmi:id="_5lS31_32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2iWD1P32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS32P32EeK2vZLmiNaijw" name="DatabaseAdaptor">
+          <modelElement href="CostcoMobile.uml#_2NSZ0P32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_5lS32f32EeK2vZLmiNaijw" name="ctx">
+        <modelElement href="CostcoMobile.uml#_2iWD0f32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lS32v32EeK2vZLmiNaijw" name="Context">
+          <modelElement href="CostcoMobile.uml#_2d_vUf32EeK2vZLmiNaijw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_5lwKcP32EeK2vZLmiNaijw" name="DbContract">
+    <modelElement href="CostcoMobile.uml#_2OyOoP32EeK2vZLmiNaijw"/>
+    <visualProperties xmi:id="_5lwKcf32EeK2vZLmiNaijw" position="754.0,627.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_5lwKcv32EeK2vZLmiNaijw" label="+"/>
+    <operations xmi:id="_5lwKc_32EeK2vZLmiNaijw" name="DbContract">
+      <modelElement href="CostcoMobile.uml#_2Oy1sP32EeK2vZLmiNaijw"/>
+      <keywords xmi:id="_5lwKdP32EeK2vZLmiNaijw" keyword="create"/>
+      <stereotypes xmi:id="_5lwKdf32EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2Ozcwv32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <visibility xmi:id="_5lwKdv32EeK2vZLmiNaijw" label="-"/>
+      <outParameters xmi:id="_5lwKd_32EeK2vZLmiNaijw">
+        <modelElement href="CostcoMobile.uml#_2O0D0P32EeK2vZLmiNaijw"/>
+        <type xmi:id="_5lwKeP32EeK2vZLmiNaijw" name="DbContract">
+          <modelElement href="CostcoMobile.uml#_2OyOoP32EeK2vZLmiNaijw"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

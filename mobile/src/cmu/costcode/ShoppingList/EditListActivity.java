@@ -22,6 +22,7 @@ import android.widget.NumberPicker;
 import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import cmu.costcode.R;
 import cmu.costcode.ShoppingList.db.DatabaseAdaptor;
 import cmu.costcode.ShoppingList.objects.Customer;
 import edu.cmu.cc.sc.model.Item;
@@ -187,7 +188,7 @@ public class EditListActivity extends Activity {
 		// Find the description and category views
 		EditText prevItemDescView = (EditText)newItemView.findViewById(R.id.editNewItemDescription);
 		Spinner prevItemCatView = (Spinner)newItemView.findViewById(R.id.editNewItemCategories);
-		NumberPicker numpicQtyView = (NumberPicker)newItemView.findViewById(R.id.numPickerPrice);
+		NumberPicker numpicQtyView = (NumberPicker)newItemView.findViewById(R.id.numPickerQuantity);
 		NumberPicker numpicPriceView = (NumberPicker)newItemView.findViewById(R.id.numPickerPrice);
 		
 		// Convert the views into strings
@@ -205,7 +206,7 @@ public class EditListActivity extends Activity {
 		// Add new item to database and ShoppingList
 		long newItemId = db.dbCreateItem(newItemDesc, newItemCat, newItemQty, newItemPrice, newItemUpc);
 		db.dbCreateShoppingListItem(newItemId, cust.getMemberId(), false, 0);
-		Log.i(TAG, "ADDDDINNNNGGGG=("+newItemDesc+", "+newItemCat+" ("+newItemId+") )");
+		Log.i(TAG, "Adding item=("+newItemDesc+", "+newItemCat+" ("+newItemId+") )");
 		
 		Item newItem = new Item(newItemId, newItemCat, newItemDesc, newItemQty, newItemPrice, 0, newItemDesc, newItemUpc);
 		Map<String, ShoppingList> newShoppingList = cust.getShoppingList();

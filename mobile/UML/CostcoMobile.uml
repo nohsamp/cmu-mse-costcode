@@ -4,7 +4,14 @@
     <eAnnotations xmi:id="_z5qxYP32EeK2vZLmiNaijw" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_z5qxYf32EeK2vZLmiNaijw" source="codegen">
         <details xmi:id="_z5qxYv32EeK2vZLmiNaijw" key="codegenDirectory" value="/CostcoMobile/src"/>
-        <details xmi:id="_3jPgIP32EeK2vZLmiNaijw" key="AssociatedSourceCode" value="/CostcoMobile/gen/cmu/costcode/ShoppingList/BuildConfig.java;3721666968/1;/CostcoMobile/gen/cmu/costcode/ShoppingList/R.java;3825240724/1;/CostcoMobile/src/cmu/costcode/FloorPlan/FloorPlan.java;3928551407/1;/CostcoMobile/src/cmu/costcode/FloorPlan/WebService.java;2740022181/1;/CostcoMobile/src/cmu/costcode/ProximityAlert/NotificationActivity.java;2713470239/1;/CostcoMobile/src/cmu/costcode/ProximityAlert/ProximityIntentReceiver.java;461820608/1;/CostcoMobile/src/cmu/costcode/ProximityAlert/ShoppingListApplication.java;1913911324/1;/CostcoMobile/src/cmu/costcode/ShoppingList/EditListActivity.java;1225372184/1;/CostcoMobile/src/cmu/costcode/ShoppingList/ListQRDisplayActivity.java;3802675069/1;/CostcoMobile/src/cmu/costcode/ShoppingList/LoginActivity.java;1702058269/1;/CostcoMobile/src/cmu/costcode/ShoppingList/ViewListActivity.java;1864883838/1;/CostcoMobile/src/cmu/costcode/ShoppingList/WiFiScanSettingsActivity.java;2818803960/1;/CostcoMobile/src/cmu/costcode/ShoppingList/db/DatabaseAdaptor.java;1934843120/1;/CostcoMobile/src/cmu/costcode/ShoppingList/db/DbContract.java;2101258537/1;/CostcoMobile/src/cmu/costcode/ShoppingList/objects/Category.java;2577946981/1;/CostcoMobile/src/cmu/costcode/ShoppingList/objects/Customer.java;1318569616/1;/CostcoMobile/src/cmu/costcode/ShoppingList/objects/Item.java;3572481064/1;/CostcoMobile/src/cmu/costcode/ShoppingList/objects/ShoppingListItem.java;1461870577/1;/CostcoMobile/src/cmu/costcode/Triangulation/Triangulation.java;3686414003/1;/CostcoMobile/src/cmu/costcode/Triangulation/TriangulationTask.java;1425192566/1;/CostcoMobile/src/cmu/costcode/Triangulation/WCL.java;1193993515/1;/CostcoMobile/src/cmu/costcode/WIFIScanner/AccessPoint.java;3312948128/1;/CostcoMobile/src/cmu/costcode/WIFIScanner/DummyResults.java;1675970496/1;/CostcoMobile/src/cmu/costcode/WIFIScanner/WiFiScanner.java;3271258285/1;/CostcoMobile/src/cmu/costcode/simplifiedcheckout/nfc/CustomerNFC.java;2723221821/1;/CostcoMobile/src/cmu/costcode/simplifiedcheckout/qr/ScanditScanActivity.java;4097849895/1;/CostcoMobile/src/cmu/costcode/simplifiedcheckout/web/CustomerWeb.java;1802676302/1;/CostcoMobile/src/cmu/costcode/simplifiedcheckout/web/HttpJsonClient.java;990864560/1;/CostcoMobile/src/edu/cmu/cc/sc/model/BaseEntity.java;2375410499/1;/CostcoMobile/src/edu/cmu/cc/sc/model/Item.java;206304264/1;/CostcoMobile/src/edu/cmu/cc/sc/model/ShoppingList.java;724420244/1;"/>
+        <details xmi:id="_3jPgIP32EeK2vZLmiNaijw" key="AssociatedSourceCode" value="/CostcoMobile/src/cmu/costcode/FloorPlan/FloorPlan.java;3928551407/1;/CostcoMobile/src/cmu/costcode/FloorPlan/WebService.java;2740022181/1;/CostcoMobile/src/cmu/costcode/ProximityAlert/NotificationActivity.java;846322335/1;/CostcoMobile/src/cmu/costcode/ProximityAlert/ProximityIntentReceiver.java;3182921589/1;/CostcoMobile/src/cmu/costcode/ProximityAlert/ShoppingListApplication.java;1913911324/1;/CostcoMobile/src/cmu/costcode/ShoppingList/EditListActivity.java;274786426/1;/CostcoMobile/src/cmu/costcode/ShoppingList/ListQRDisplayActivity.java;2358702000/1;/CostcoMobile/src/cmu/costcode/ShoppingList/LoginActivity.java;3512369366/1;/CostcoMobile/src/cmu/costcode/ShoppingList/ViewListActivity.java;4112142687/1;/CostcoMobile/src/cmu/costcode/ShoppingList/WiFiScanSettingsActivity.java;1740243322/1;/CostcoMobile/src/cmu/costcode/ShoppingList/db/DatabaseAdaptor.java;1934843120/1;/CostcoMobile/src/cmu/costcode/ShoppingList/db/DbContract.java;2101258537/1;/CostcoMobile/src/cmu/costcode/ShoppingList/objects/Category.java;2577946981/1;/CostcoMobile/src/cmu/costcode/ShoppingList/objects/Customer.java;1318569616/1;/CostcoMobile/src/cmu/costcode/ShoppingList/objects/Item.java;3572481064/1;/CostcoMobile/src/cmu/costcode/ShoppingList/objects/ShoppingListItem.java;1461870577/1;/CostcoMobile/src/cmu/costcode/Triangulation/Triangulation.java;3686414003/1;/CostcoMobile/src/cmu/costcode/Triangulation/TriangulationTask.java;1425192566/1;/CostcoMobile/src/cmu/costcode/Triangulation/WCL.java;1193993515/1;/CostcoMobile/src/cmu/costcode/WIFIScanner/AccessPoint.java;3312948128/1;/CostcoMobile/src/cmu/costcode/WIFIScanner/DummyResults.java;1675970496/1;/CostcoMobile/src/cmu/costcode/WIFIScanner/WiFiScanner.java;3271258285/1;/CostcoMobile/src/cmu/costcode/simplifiedcheckout/nfc/CustomerNFC.java;2723221821/1;/CostcoMobile/src/cmu/costcode/simplifiedcheckout/qr/ScanditScanActivity.java;4097849895/1;/CostcoMobile/src/cmu/costcode/simplifiedcheckout/web/CustomerWeb.java;1802676302/1;/CostcoMobile/src/cmu/costcode/simplifiedcheckout/web/HttpJsonClient.java;990864560/1;/CostcoMobile/src/edu/cmu/cc/sc/model/BaseEntity.java;2375410499/1;/CostcoMobile/src/edu/cmu/cc/sc/model/Item.java;206304264/1;/CostcoMobile/src/edu/cmu/cc/sc/model/ShoppingList.java;724420244/1;"/>
+      </contents>
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_XgDJEP35EeK2vZLmiNaijw" source="preferences">
+        <contents xmi:type="ecore:EAnnotation" xmi:id="_XgDwIP35EeK2vZLmiNaijw" source="com.yattasolutions.codegen.reverse">
+          <details xmi:id="_XgEXMP35EeK2vZLmiNaijw" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerNewFiles" value="true"/>
+          <details xmi:id="_XgEXMf35EeK2vZLmiNaijw" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerChangedFiles" value="true"/>
+          <details xmi:id="_XgEXMv35EeK2vZLmiNaijw" key="com.yattasolutions.codegen.reverse.roundtrip.RemoveDeletedFiles" value="true"/>
+        </contents>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_1s5CgP32EeK2vZLmiNaijw">
@@ -2001,562 +2008,6 @@
               <ownedEnd xmi:id="_2q6xAf32EeK2vZLmiNaijw" name="" type="_2P0JYP32EeK2vZLmiNaijw" association="_2q6xAP32EeK2vZLmiNaijw"/>
             </packagedElement>
           </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_2Gkt0P32EeK2vZLmiNaijw" name="BuildConfig" isLeaf="true">
-            <eAnnotations xmi:id="_2Gl78P32EeK2vZLmiNaijw" source="http://ns.yatta.de/umllab">
-              <contents xmi:type="ecore:EAnnotation" xmi:id="_2Gl78f32EeK2vZLmiNaijw" source="codegen">
-                <details xmi:id="_2Gl78v32EeK2vZLmiNaijw" key="codegenDirectory" value="/CostcoMobile/gen"/>
-              </contents>
-            </eAnnotations>
-            <ownedAttribute xmi:id="_2jXXgP32EeK2vZLmiNaijw" name="DEBUG" isLeaf="true" isStatic="true" isReadOnly="true">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
-              <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jZMsP32EeK2vZLmiNaijw" value="true"/>
-            </ownedAttribute>
-          </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_2Go_QP32EeK2vZLmiNaijw" name="R" isLeaf="true">
-            <eAnnotations xmi:id="_2GpmUP32EeK2vZLmiNaijw" source="http://ns.yatta.de/umllab">
-              <contents xmi:type="ecore:EAnnotation" xmi:id="_2GpmUf32EeK2vZLmiNaijw" source="codegen">
-                <details xmi:id="_2GpmUv32EeK2vZLmiNaijw" key="codegenDirectory" value="/CostcoMobile/gen"/>
-              </contents>
-            </eAnnotations>
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_2Gq0cP32EeK2vZLmiNaijw" name="array" isLeaf="true">
-              <eAnnotations xmi:id="_2Gq0cf32EeK2vZLmiNaijw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                <details xmi:id="_2Gq0cv32EeK2vZLmiNaijw" key="static"/>
-              </eAnnotations>
-              <ownedAttribute xmi:id="_2jZzwP32EeK2vZLmiNaijw" name="categories" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jZzwf32EeK2vZLmiNaijw" value="0x7f070000"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jaa0P32EeK2vZLmiNaijw" name="pref_reminder_list_values" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jaa0f32EeK2vZLmiNaijw" value="0x7f070003"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jaa0v32EeK2vZLmiNaijw" name="pref_wifi_data_number_list_titles" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jaa0_32EeK2vZLmiNaijw" value="0x7f070004"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jbB4P32EeK2vZLmiNaijw" name="pref_wifi_data_number_list_values" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jbB4f32EeK2vZLmiNaijw" value="0x7f070005"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jbB4v32EeK2vZLmiNaijw" name="pref_wifi_triangulation_list_titles" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jbB4_32EeK2vZLmiNaijw" value="0x7f070001"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jbo8P32EeK2vZLmiNaijw" name="pref_wifi_triangulation_list_values" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jbo8f32EeK2vZLmiNaijw" value="0x7f070002"/>
-              </ownedAttribute>
-            </nestedClassifier>
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_2GtQsP32EeK2vZLmiNaijw" name="attr" isLeaf="true">
-              <eAnnotations xmi:id="_2Gt3wP32EeK2vZLmiNaijw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                <details xmi:id="_2Gt3wf32EeK2vZLmiNaijw" key="static"/>
-              </eAnnotations>
-            </nestedClassifier>
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_2Gt3wv32EeK2vZLmiNaijw" name="dimen" isLeaf="true">
-              <eAnnotations xmi:id="_2Gue0P32EeK2vZLmiNaijw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                <details xmi:id="_2Gue0f32EeK2vZLmiNaijw" key="static"/>
-              </eAnnotations>
-              <ownedAttribute xmi:id="_2jbo8v32EeK2vZLmiNaijw" name="activity_horizontal_margin" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jcQAP32EeK2vZLmiNaijw" value="0x7f050000"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jcQAf32EeK2vZLmiNaijw" name="activity_vertical_margin" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jcQAv32EeK2vZLmiNaijw" value="0x7f050001"/>
-              </ownedAttribute>
-            </nestedClassifier>
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_2Gvs8P32EeK2vZLmiNaijw" name="drawable" isLeaf="true">
-              <eAnnotations xmi:id="_2Gvs8f32EeK2vZLmiNaijw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                <details xmi:id="_2Gvs8v32EeK2vZLmiNaijw" key="static"/>
-              </eAnnotations>
-              <ownedAttribute xmi:id="_2jc3EP32EeK2vZLmiNaijw" name="ic_launcher" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jc3Ef32EeK2vZLmiNaijw" value="0x7f020000"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jc3Ev32EeK2vZLmiNaijw" name="icon" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jc3E_32EeK2vZLmiNaijw" value="0x7f020001"/>
-              </ownedAttribute>
-            </nestedClassifier>
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_2Gw7EP32EeK2vZLmiNaijw" name="id" isLeaf="true">
-              <eAnnotations xmi:id="_2Gw7Ef32EeK2vZLmiNaijw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                <details xmi:id="_2Gw7Ev32EeK2vZLmiNaijw" key="static"/>
-              </eAnnotations>
-              <ownedAttribute xmi:id="_2jdeIP32EeK2vZLmiNaijw" name="Latitude" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jeFMP32EeK2vZLmiNaijw" value="0x7f0a001c"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jeFMf32EeK2vZLmiNaijw" name="Longitude" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jeFMv32EeK2vZLmiNaijw" value="0x7f0a001d"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jeFM_32EeK2vZLmiNaijw" name="RelativeLayout1" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jesQP32EeK2vZLmiNaijw" value="0x7f0a0019"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jesQf32EeK2vZLmiNaijw" name="ScrollView01" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jesQv32EeK2vZLmiNaijw" value="0x7f0a002e"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jfTUP32EeK2vZLmiNaijw" name="action_settings" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jfTUf32EeK2vZLmiNaijw" value="0x7f0a0033"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jfTUv32EeK2vZLmiNaijw" name="alertCategory" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jf6YP32EeK2vZLmiNaijw" value="0x7f0a001b"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jf6Yf32EeK2vZLmiNaijw" name="alertList" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jghcP32EeK2vZLmiNaijw" value="0x7f0a001e"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jghcf32EeK2vZLmiNaijw" name="btnAddAlert" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jghcv32EeK2vZLmiNaijw" value="0x7f0a001f"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jghc_32EeK2vZLmiNaijw" name="btnAvgFilterScanStart" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jhIgP32EeK2vZLmiNaijw" value="0x7f0a002c"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jhIgf32EeK2vZLmiNaijw" name="btnDropFilterScanStart" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jhIgv32EeK2vZLmiNaijw" value="0x7f0a002d"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jhvkP32EeK2vZLmiNaijw" name="btnScanStart" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jhvkf32EeK2vZLmiNaijw" value="0x7f0a002a"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jhvkv32EeK2vZLmiNaijw" name="btnScanStop" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jhvk_32EeK2vZLmiNaijw" value="0x7f0a002b"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jiWoP32EeK2vZLmiNaijw" name="editAddItem" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jiWof32EeK2vZLmiNaijw" value="0x7f0a0005"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jiWov32EeK2vZLmiNaijw" name="editItemDelete" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2ji9sP32EeK2vZLmiNaijw" value="0x7f0a000f"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2ji9sf32EeK2vZLmiNaijw" name="editItemRow" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2ji9sv32EeK2vZLmiNaijw" value="0x7f0a000e"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2ji9s_32EeK2vZLmiNaijw" name="editItemText" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jjkwP32EeK2vZLmiNaijw" value="0x7f0a0010"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jjkwf32EeK2vZLmiNaijw" name="editListAddButton" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jjkwv32EeK2vZLmiNaijw" value="0x7f0a0003"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jkL0P32EeK2vZLmiNaijw" name="editListButtonBar" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jkL0f32EeK2vZLmiNaijw" value="0x7f0a0002"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jkL0v32EeK2vZLmiNaijw" name="editListHeader" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jkL0_32EeK2vZLmiNaijw" value="0x7f0a0000"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jky4P32EeK2vZLmiNaijw" name="editListSaveButton" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jky4f32EeK2vZLmiNaijw" value="0x7f0a0004"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jky4v32EeK2vZLmiNaijw" name="editListScroll" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jlZ8P32EeK2vZLmiNaijw" value="0x7f0a0001"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jlZ8f32EeK2vZLmiNaijw" name="editNewItemCatHeader" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jlZ8v32EeK2vZLmiNaijw" value="0x7f0a000c"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jlZ8_32EeK2vZLmiNaijw" name="editNewItemCategories" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jmBAP32EeK2vZLmiNaijw" value="0x7f0a000d"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jmBAf32EeK2vZLmiNaijw" name="editNewItemDescription" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jmBAv32EeK2vZLmiNaijw" value="0x7f0a0007"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jmoEP32EeK2vZLmiNaijw" name="editNewItemVoiceButton" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jmoEf32EeK2vZLmiNaijw" value="0x7f0a000b"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jmoEv32EeK2vZLmiNaijw" name="getLocationButton" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jmoE_32EeK2vZLmiNaijw" value="0x7f0a0020"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jnPIP32EeK2vZLmiNaijw" name="loginButton" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jnPIf32EeK2vZLmiNaijw" value="0x7f0a0014"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jnPIv32EeK2vZLmiNaijw" name="loginEmailInput" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jnPI_32EeK2vZLmiNaijw" value="0x7f0a0015"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jn2MP32EeK2vZLmiNaijw" name="loginEmailLabel" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jn2Mf32EeK2vZLmiNaijw" value="0x7f0a0018"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jn2Mv32EeK2vZLmiNaijw" name="loginPwordInput" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jodQP32EeK2vZLmiNaijw" value="0x7f0a0016"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jodQf32EeK2vZLmiNaijw" name="loginPwordLabel" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jodQv32EeK2vZLmiNaijw" value="0x7f0a0017"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jodQ_32EeK2vZLmiNaijw" name="menu_settings" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jpEUP32EeK2vZLmiNaijw" value="0x7f0a0030"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jpEUf32EeK2vZLmiNaijw" name="menu_web" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jpEUv32EeK2vZLmiNaijw" value="0x7f0a0032"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jprYP32EeK2vZLmiNaijw" name="menu_wifitriangulation" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jprYf32EeK2vZLmiNaijw" value="0x7f0a0031"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jprYv32EeK2vZLmiNaijw" name="numPickerPrice" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jprY_32EeK2vZLmiNaijw" value="0x7f0a0009"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jqScP32EeK2vZLmiNaijw" name="numPickerQuantity" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jqScf32EeK2vZLmiNaijw" value="0x7f0a000a"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jqScv32EeK2vZLmiNaijw" name="proxAlertDelete" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jq5gP32EeK2vZLmiNaijw" value="0x7f0a0022"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jq5gf32EeK2vZLmiNaijw" name="proxAlertRow" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jq5gv32EeK2vZLmiNaijw" value="0x7f0a0021"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jq5g_32EeK2vZLmiNaijw" name="proxAlertText" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jrgkP32EeK2vZLmiNaijw" value="0x7f0a0023"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jrgkf32EeK2vZLmiNaijw" name="qrImageView" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jrgkv32EeK2vZLmiNaijw" value="0x7f0a0012"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jrgk_32EeK2vZLmiNaijw" name="qrTextView" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jsHoP32EeK2vZLmiNaijw" value="0x7f0a0013"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jsHof32EeK2vZLmiNaijw" name="scanItemButton" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jsHov32EeK2vZLmiNaijw" value="0x7f0a0027"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jsusP32EeK2vZLmiNaijw" name="tableLayout1" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jsusf32EeK2vZLmiNaijw" value="0x7f0a0029"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jsusv32EeK2vZLmiNaijw" name="textStatus" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jtVwP32EeK2vZLmiNaijw" value="0x7f0a002f"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jtVwf32EeK2vZLmiNaijw" name="textView1" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jtVwv32EeK2vZLmiNaijw" value="0x7f0a0011"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jtVw_32EeK2vZLmiNaijw" name="textView2" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jt80P32EeK2vZLmiNaijw" value="0x7f0a001a"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jt80f32EeK2vZLmiNaijw" name="txtPrice" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jt80v32EeK2vZLmiNaijw" value="0x7f0a0008"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2juj4P32EeK2vZLmiNaijw" name="txtQuantity" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2juj4f32EeK2vZLmiNaijw" value="0x7f0a0006"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2juj4v32EeK2vZLmiNaijw" name="viewListButtonBar" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2juj4_32EeK2vZLmiNaijw" value="0x7f0a0026"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jvK8P32EeK2vZLmiNaijw" name="viewListEditButton" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jvK8f32EeK2vZLmiNaijw" value="0x7f0a0028"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jvK8v32EeK2vZLmiNaijw" name="viewListHeader" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jvyAP32EeK2vZLmiNaijw" value="0x7f0a0024"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jvyAf32EeK2vZLmiNaijw" name="viewListScroll" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jvyAv32EeK2vZLmiNaijw" value="0x7f0a0025"/>
-              </ownedAttribute>
-            </nestedClassifier>
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_2HDO8P32EeK2vZLmiNaijw" name="layout" isLeaf="true">
-              <eAnnotations xmi:id="_2HD2AP32EeK2vZLmiNaijw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                <details xmi:id="_2HD2Af32EeK2vZLmiNaijw" key="static"/>
-              </eAnnotations>
-              <ownedAttribute xmi:id="_2jwZEP32EeK2vZLmiNaijw" name="activity_edit_list" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jwZEf32EeK2vZLmiNaijw" value="0x7f030000"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jwZEv32EeK2vZLmiNaijw" name="activity_edit_list_new" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jxAIP32EeK2vZLmiNaijw" value="0x7f030001"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jxAIf32EeK2vZLmiNaijw" name="activity_edit_list_row" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jxAIv32EeK2vZLmiNaijw" value="0x7f030002"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jxAI_32EeK2vZLmiNaijw" name="activity_list_qrdisplay" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jxnMP32EeK2vZLmiNaijw" value="0x7f030003"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jxnMf32EeK2vZLmiNaijw" name="activity_login" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jyOQP32EeK2vZLmiNaijw" value="0x7f030004"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jyOQf32EeK2vZLmiNaijw" name="activity_notification" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jy1UP32EeK2vZLmiNaijw" value="0x7f030005"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jy1Uf32EeK2vZLmiNaijw" name="activity_prox_alert_row" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jy1Uv32EeK2vZLmiNaijw" value="0x7f030006"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jzcYP32EeK2vZLmiNaijw" name="activity_view_list" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jzcYf32EeK2vZLmiNaijw" value="0x7f030007"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2jzcYv32EeK2vZLmiNaijw" name="activity_wifiscan" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2jzcY_32EeK2vZLmiNaijw" value="0x7f030008"/>
-              </ownedAttribute>
-            </nestedClassifier>
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_2HJVkP32EeK2vZLmiNaijw" name="menu" isLeaf="true">
-              <eAnnotations xmi:id="_2HJ8oP32EeK2vZLmiNaijw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                <details xmi:id="_2HJ8of32EeK2vZLmiNaijw" key="static"/>
-              </eAnnotations>
-              <ownedAttribute xmi:id="_2j0DcP32EeK2vZLmiNaijw" name="activity_login" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j0Dcf32EeK2vZLmiNaijw" value="0x7f090000"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j0Dcv32EeK2vZLmiNaijw" name="activity_notification" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j0qgP32EeK2vZLmiNaijw" value="0x7f090001"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j0qgf32EeK2vZLmiNaijw" name="activity_proximityalert" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j0qgv32EeK2vZLmiNaijw" value="0x7f090002"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j0qg_32EeK2vZLmiNaijw" name="list_qrdisplay" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j1RkP32EeK2vZLmiNaijw" value="0x7f090003"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j1Rkf32EeK2vZLmiNaijw" name="wi_fi_scan" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j1Rkv32EeK2vZLmiNaijw" value="0x7f090004"/>
-              </ownedAttribute>
-            </nestedClassifier>
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_2HNnAP32EeK2vZLmiNaijw" name="string" isLeaf="true">
-              <eAnnotations xmi:id="_2HNnAf32EeK2vZLmiNaijw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                <details xmi:id="_2HNnAv32EeK2vZLmiNaijw" key="static"/>
-              </eAnnotations>
-              <ownedAttribute xmi:id="_2j14oP32EeK2vZLmiNaijw" name="action_settings" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j14of32EeK2vZLmiNaijw" value="0x7f060011"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j2fsP32EeK2vZLmiNaijw" name="app_name" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j2fsf32EeK2vZLmiNaijw" value="0x7f060000"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j2fsv32EeK2vZLmiNaijw" name="editListAddButtonText" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j2fs_32EeK2vZLmiNaijw" value="0x7f06000b"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j3GwP32EeK2vZLmiNaijw" name="editListCatPrompt" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j3Gwf32EeK2vZLmiNaijw" value="0x7f06000e"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j3Gwv32EeK2vZLmiNaijw" name="editListCategory" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j3t0P32EeK2vZLmiNaijw" value="0x7f06000d"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j3t0f32EeK2vZLmiNaijw" name="editListDelete" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j3t0v32EeK2vZLmiNaijw" value="0x7f06000a"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j4U4P32EeK2vZLmiNaijw" name="editListSaveButtonText" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j4U4f32EeK2vZLmiNaijw" value="0x7f06000c"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j4U4v32EeK2vZLmiNaijw" name="editListVoiceButton" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j4U4_32EeK2vZLmiNaijw" value="0x7f06000f"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j478P32EeK2vZLmiNaijw" name="hello_world" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j478f32EeK2vZLmiNaijw" value="0x7f060014"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j478v32EeK2vZLmiNaijw" name="login" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j5jAP32EeK2vZLmiNaijw" value="0x7f060006"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j5jAf32EeK2vZLmiNaijw" name="loginEmailText" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j5jAv32EeK2vZLmiNaijw" value="0x7f060007"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j5jA_32EeK2vZLmiNaijw" name="loginPwordText" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j6KEP32EeK2vZLmiNaijw" value="0x7f060008"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j6KEf32EeK2vZLmiNaijw" name="menu_settings" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j6KEv32EeK2vZLmiNaijw" value="0x7f060001"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j6xIP32EeK2vZLmiNaijw" name="pref_default_display_name" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j6xIf32EeK2vZLmiNaijw" value="0x7f060020"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j6xIv32EeK2vZLmiNaijw" name="pref_description_bg_run" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j6xI_32EeK2vZLmiNaijw" value="0x7f06001e"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j7YMP32EeK2vZLmiNaijw" name="pref_description_noise_filter" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j7YMf32EeK2vZLmiNaijw" value="0x7f060023"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j7YMv32EeK2vZLmiNaijw" name="pref_description_reminder" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j7YM_32EeK2vZLmiNaijw" value="0x7f06001c"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j7_QP32EeK2vZLmiNaijw" name="pref_header_general" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j7_Qf32EeK2vZLmiNaijw" value="0x7f06001a"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j7_Qv32EeK2vZLmiNaijw" name="pref_header_notifications" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j8mUP32EeK2vZLmiNaijw" value="0x7f060025"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j8mUf32EeK2vZLmiNaijw" name="pref_ringtone_silent" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j8mUv32EeK2vZLmiNaijw" value="0x7f060028"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j8mU_32EeK2vZLmiNaijw" name="pref_title_bg_run" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j9NYP32EeK2vZLmiNaijw" value="0x7f06001d"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j9NYf32EeK2vZLmiNaijw" name="pref_title_choose_wifi_triangulation" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j9NYv32EeK2vZLmiNaijw" value="0x7f060021"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j90cP32EeK2vZLmiNaijw" name="pref_title_display_name" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j90cf32EeK2vZLmiNaijw" value="0x7f06001f"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j90cv32EeK2vZLmiNaijw" name="pref_title_new_message_notifications" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j-bgP32EeK2vZLmiNaijw" value="0x7f060026"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j-bgf32EeK2vZLmiNaijw" name="pref_title_noise_filter" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j-bgv32EeK2vZLmiNaijw" value="0x7f060022"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j-bg_32EeK2vZLmiNaijw" name="pref_title_reminder" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j_CkP32EeK2vZLmiNaijw" value="0x7f06001b"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j_Ckf32EeK2vZLmiNaijw" name="pref_title_ringtone" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j_Ckv32EeK2vZLmiNaijw" value="0x7f060027"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j_poP32EeK2vZLmiNaijw" name="pref_title_vibrate" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j_pof32EeK2vZLmiNaijw" value="0x7f060029"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2j_pov32EeK2vZLmiNaijw" name="pref_wifi_data_number" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2j_po_32EeK2vZLmiNaijw" value="0x7f060024"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2kAQsP32EeK2vZLmiNaijw" name="scanItemButtonText" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2kAQsf32EeK2vZLmiNaijw" value="0x7f060017"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2kAQsv32EeK2vZLmiNaijw" name="send_sl_web" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2kA3wP32EeK2vZLmiNaijw" value="0x7f060016"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2kA3wf32EeK2vZLmiNaijw" name="title_activity_edit_list" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2kA3wv32EeK2vZLmiNaijw" value="0x7f060004"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2kBe0P32EeK2vZLmiNaijw" name="title_activity_list_qrdisplay" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2kBe0f32EeK2vZLmiNaijw" value="0x7f060018"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2kBe0v32EeK2vZLmiNaijw" name="title_activity_login" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2kCF4P32EeK2vZLmiNaijw" value="0x7f060002"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2kCF4f32EeK2vZLmiNaijw" name="title_activity_notification" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2kCF4v32EeK2vZLmiNaijw" value="0x7f060015"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2kCF4_32EeK2vZLmiNaijw" name="title_activity_sc_qr" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2kCs8P32EeK2vZLmiNaijw" value="0x7f060005"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2kCs8f32EeK2vZLmiNaijw" name="title_activity_view_list" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2kCs8v32EeK2vZLmiNaijw" value="0x7f060003"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2kDUAP32EeK2vZLmiNaijw" name="title_activity_wi_fi_scan_settings" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2kDUAf32EeK2vZLmiNaijw" value="0x7f060019"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2kDUAv32EeK2vZLmiNaijw" name="toggleProxAlertLabel" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2kD7EP32EeK2vZLmiNaijw" value="0x7f060010"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2kD7Ef32EeK2vZLmiNaijw" name="triangulation_start" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2kD7Ev32EeK2vZLmiNaijw" value="0x7f060012"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2kEiIP32EeK2vZLmiNaijw" name="triangulation_stop" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2kEiIf32EeK2vZLmiNaijw" value="0x7f060013"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2kEiIv32EeK2vZLmiNaijw" name="viewListEditButtonText" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2kEiI_32EeK2vZLmiNaijw" value="0x7f060009"/>
-              </ownedAttribute>
-            </nestedClassifier>
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_2HlacP32EeK2vZLmiNaijw" name="style" isLeaf="true">
-              <eAnnotations xmi:id="_2HmBgP32EeK2vZLmiNaijw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                <details xmi:id="_2HmBgf32EeK2vZLmiNaijw" key="static"/>
-              </eAnnotations>
-              <ownedAttribute xmi:id="_2kFJMP32EeK2vZLmiNaijw" name="AppTheme" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2kFJMf32EeK2vZLmiNaijw" value="0x7f080000"/>
-              </ownedAttribute>
-            </nestedClassifier>
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_2HnPoP32EeK2vZLmiNaijw" name="xml" isLeaf="true">
-              <eAnnotations xmi:id="_2HnPof32EeK2vZLmiNaijw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                <details xmi:id="_2HnPov32EeK2vZLmiNaijw" key="static"/>
-              </eAnnotations>
-              <ownedAttribute xmi:id="_2kFwQP32EeK2vZLmiNaijw" name="pref_general" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2kFwQf32EeK2vZLmiNaijw" value="0x7f040000"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2kFwQv32EeK2vZLmiNaijw" name="pref_headers" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2kGXUP32EeK2vZLmiNaijw" value="0x7f040001"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_2kGXUf32EeK2vZLmiNaijw" name="pref_notification" isLeaf="true" isStatic="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                <defaultValue xmi:type="uml:LiteralString" xmi:id="_2kGXUv32EeK2vZLmiNaijw" value="0x7f040002"/>
-              </ownedAttribute>
-            </nestedClassifier>
-          </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_2KvcIP32EeK2vZLmiNaijw" name="EditListActivity">
             <generalization xmi:id="_2h0fYP32EeK2vZLmiNaijw" general="_2eOY0P32EeK2vZLmiNaijw"/>
             <ownedAttribute xmi:id="_2kXdEf32EeK2vZLmiNaijw" name="TAG" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
@@ -2622,7 +2073,9 @@
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2oUwAf32EeK2vZLmiNaijw" name="generateEditListView" specification="_2hsjkP32EeK2vZLmiNaijw">
               <ownedParameter xmi:id="_2oUwAv32EeK2vZLmiNaijw" name="ctx" type="_2d_vUf32EeK2vZLmiNaijw"/>
               <ownedParameter xmi:id="_2oUwA_32EeK2vZLmiNaijw" name="shoppingList" type="_2d96IP32EeK2vZLmiNaijw"/>
-              <ownedParameter xmi:id="_2oUwBP32EeK2vZLmiNaijw" type="_2ebNIf32EeK2vZLmiNaijw" direction="return"/>
+              <ownedParameter xmi:id="_2oUwBP32EeK2vZLmiNaijw" type="_2ebNIf32EeK2vZLmiNaijw" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>// Create the view that will be returned&#xD;
 		LinearLayout view = new LinearLayout(ctx);&#xD;
@@ -2654,7 +2107,9 @@
                   <details xmi:id="_2oVXFP32EeK2vZLmiNaijw" key="final"/>
                 </eAnnotations>
               </ownedParameter>
-              <ownedParameter xmi:id="_2oVXFf32EeK2vZLmiNaijw" type="_2eVGgP32EeK2vZLmiNaijw" direction="return"/>
+              <ownedParameter xmi:id="_2oVXFf32EeK2vZLmiNaijw" type="_2eVGgP32EeK2vZLmiNaijw" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>// Create the view that will be returned&#xD;
      View view = getLayoutInflater().inflate(R.layout.activity_edit_list_row, null);&#xD;
@@ -2720,7 +2175,7 @@
               <body>// Find the description and category views&#xD;
 		EditText prevItemDescView = (EditText)newItemView.findViewById(R.id.editNewItemDescription);&#xD;
 		Spinner prevItemCatView = (Spinner)newItemView.findViewById(R.id.editNewItemCategories);&#xD;
-		NumberPicker numpicQtyView = (NumberPicker)newItemView.findViewById(R.id.numPickerPrice);&#xD;
+		NumberPicker numpicQtyView = (NumberPicker)newItemView.findViewById(R.id.numPickerQuantity);&#xD;
 		NumberPicker numpicPriceView = (NumberPicker)newItemView.findViewById(R.id.numPickerPrice);&#xD;
 		&#xD;
 		// Convert the views into strings&#xD;
@@ -2738,7 +2193,7 @@
 		// Add new item to database and ShoppingList&#xD;
 		long newItemId = db.dbCreateItem(newItemDesc, newItemCat, newItemQty, newItemPrice, newItemUpc);&#xD;
 		db.dbCreateShoppingListItem(newItemId, cust.getMemberId(), false, 0);&#xD;
-		Log.i(TAG, &quot;ADDDDINNNNGGGG=(&quot;+newItemDesc+&quot;, &quot;+newItemCat+&quot; (&quot;+newItemId+&quot;) )&quot;);&#xD;
+		Log.i(TAG, &quot;Adding item=(&quot;+newItemDesc+&quot;, &quot;+newItemCat+&quot; (&quot;+newItemId+&quot;) )&quot;);&#xD;
 		&#xD;
 		Item newItem = new Item(newItemId, newItemCat, newItemDesc, newItemQty, newItemPrice, 0, newItemDesc, newItemUpc);&#xD;
 		Map&lt;String, ShoppingList> newShoppingList = cust.getShoppingList();&#xD;
@@ -2937,6 +2392,7 @@
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2oXzUf32EeK2vZLmiNaijw" name="onCreateOptionsMenu" specification="_2h27ov32EeK2vZLmiNaijw">
               <ownedParameter xmi:id="_2oXzUv32EeK2vZLmiNaijw" name="menu" type="_2eT4YP32EeK2vZLmiNaijw"/>
               <ownedParameter xmi:id="_2oXzU_32EeK2vZLmiNaijw" direction="return">
+                <name xsi:nil="true"/>
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
               </ownedParameter>
               <language>java</language>
@@ -2947,6 +2403,7 @@
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2oYaYP32EeK2vZLmiNaijw" name="onOptionsItemSelected" specification="_2h4Jwf32EeK2vZLmiNaijw">
               <ownedParameter xmi:id="_2oYaYf32EeK2vZLmiNaijw" name="item" type="_2e8xkf32EeK2vZLmiNaijw"/>
               <ownedParameter xmi:id="_2oYaYv32EeK2vZLmiNaijw" direction="return">
+                <name xsi:nil="true"/>
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
               </ownedParameter>
               <language>java</language>
@@ -3074,6 +2531,7 @@
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2oZogv32EeK2vZLmiNaijw" name="onCreateOptionsMenu" specification="_2h70Iv32EeK2vZLmiNaijw">
               <ownedParameter xmi:id="_2oZog_32EeK2vZLmiNaijw" name="menu" type="_2eT4YP32EeK2vZLmiNaijw"/>
               <ownedParameter xmi:id="_2oZohP32EeK2vZLmiNaijw" direction="return">
+                <name xsi:nil="true"/>
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
               </ownedParameter>
               <language>java</language>
@@ -3084,6 +2542,7 @@
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2oaPkP32EeK2vZLmiNaijw" name="onOptionsItemSelected" specification="_2h9CQv32EeK2vZLmiNaijw">
               <ownedParameter xmi:id="_2oaPkf32EeK2vZLmiNaijw" name="item" type="_2e8xkf32EeK2vZLmiNaijw"/>
               <ownedParameter xmi:id="_2oaPkv32EeK2vZLmiNaijw" direction="return">
+                <name xsi:nil="true"/>
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
               </ownedParameter>
               <language>java</language>
@@ -3123,6 +2582,7 @@
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
               </ownedParameter>
               <ownedParameter xmi:id="_2oa2o_32EeK2vZLmiNaijw" direction="return">
+                <name xsi:nil="true"/>
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
               </ownedParameter>
               <language>java</language>
@@ -3308,7 +2768,9 @@
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2ocEw_32EeK2vZLmiNaijw" name="generateListView" specification="_2iBTsP32EeK2vZLmiNaijw">
               <ownedParameter xmi:id="_2ocExP32EeK2vZLmiNaijw" name="ctx" type="_2d_vUf32EeK2vZLmiNaijw"/>
               <ownedParameter xmi:id="_2ocExf32EeK2vZLmiNaijw" name="shoppingList" type="_2d96IP32EeK2vZLmiNaijw"/>
-              <ownedParameter xmi:id="_2ocExv32EeK2vZLmiNaijw" type="_2ebNIf32EeK2vZLmiNaijw" direction="return"/>
+              <ownedParameter xmi:id="_2ocExv32EeK2vZLmiNaijw" type="_2ebNIf32EeK2vZLmiNaijw" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>// Create the view that will be returned&#xD;
 		LinearLayout view = new LinearLayout(ctx);&#xD;
@@ -3353,7 +2815,9 @@
                   <details xmi:id="_2ocr1P32EeK2vZLmiNaijw" key="final"/>
                 </eAnnotations>
               </ownedParameter>
-              <ownedParameter xmi:id="_2ocr1f32EeK2vZLmiNaijw" type="_2eVGgP32EeK2vZLmiNaijw" direction="return"/>
+              <ownedParameter xmi:id="_2ocr1f32EeK2vZLmiNaijw" type="_2eVGgP32EeK2vZLmiNaijw" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>// Get ShoppingListItem object for input &quot;item&quot;&#xD;
 		final ShoppingListItem listItem = db.dbGetShoppingListItem(inputItem);&#xD;
@@ -3400,6 +2864,7 @@
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2odS4v32EeK2vZLmiNaijw" name="onCreateOptionsMenu" specification="_2iEXAP32EeK2vZLmiNaijw">
               <ownedParameter xmi:id="_2odS4_32EeK2vZLmiNaijw" name="menu" type="_2eT4YP32EeK2vZLmiNaijw"/>
               <ownedParameter xmi:id="_2odS5P32EeK2vZLmiNaijw" direction="return">
+                <name xsi:nil="true"/>
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
               </ownedParameter>
               <language>java</language>
@@ -3410,6 +2875,7 @@
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2od58P32EeK2vZLmiNaijw" name="onPrepareOptionsMenu" specification="_2iE-Ev32EeK2vZLmiNaijw">
               <ownedParameter xmi:id="_2od58f32EeK2vZLmiNaijw" name="menu" type="_2eT4YP32EeK2vZLmiNaijw"/>
               <ownedParameter xmi:id="_2od58v32EeK2vZLmiNaijw" direction="return">
+                <name xsi:nil="true"/>
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
               </ownedParameter>
               <language>java</language>
@@ -3425,6 +2891,7 @@
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2od58_32EeK2vZLmiNaijw" name="onOptionsItemSelected" specification="_2iGMMv32EeK2vZLmiNaijw">
               <ownedParameter xmi:id="_2od59P32EeK2vZLmiNaijw" name="item" type="_2e8xkf32EeK2vZLmiNaijw"/>
               <ownedParameter xmi:id="_2od59f32EeK2vZLmiNaijw" direction="return">
+                <name xsi:nil="true"/>
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
               </ownedParameter>
               <language>java</language>
@@ -3779,6 +3246,7 @@ API Guide&lt;/a> for more information on developing a Settings UI.</body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2ohkUf32EeK2vZLmiNaijw" name="onIsMultiPane" specification="_2M1G0P32EeK2vZLmiNaijw">
               <ownedParameter xmi:id="_2ohkUv32EeK2vZLmiNaijw" direction="return">
+                <name xsi:nil="true"/>
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
               </ownedParameter>
               <language>java</language>
@@ -3788,6 +3256,7 @@ API Guide&lt;/a> for more information on developing a Settings UI.</body>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2oiLYP32EeK2vZLmiNaijw" name="isXLargeTablet" specification="_2iLrwv32EeK2vZLmiNaijw">
               <ownedParameter xmi:id="_2oiLYf32EeK2vZLmiNaijw" name="context" type="_2d_vUf32EeK2vZLmiNaijw"/>
               <ownedParameter xmi:id="_2oiLYv32EeK2vZLmiNaijw" direction="return">
+                <name xsi:nil="true"/>
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
               </ownedParameter>
               <language>java</language>
@@ -3797,6 +3266,7 @@ API Guide&lt;/a> for more information on developing a Settings UI.</body>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2oiLY_32EeK2vZLmiNaijw" name="isSimplePreferences" specification="_2iMS0f32EeK2vZLmiNaijw">
               <ownedParameter xmi:id="_2oiLZP32EeK2vZLmiNaijw" name="context" type="_2d_vUf32EeK2vZLmiNaijw"/>
               <ownedParameter xmi:id="_2oiLZf32EeK2vZLmiNaijw" direction="return">
+                <name xsi:nil="true"/>
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
               </ownedParameter>
               <language>java</language>
@@ -5306,7 +4776,9 @@ Call web service for the access point locations</body>
                   <details xmi:id="_2oPQef32EeK2vZLmiNaijw" key="final"/>
                 </eAnnotations>
               </ownedParameter>
-              <ownedParameter xmi:id="_2oPQev32EeK2vZLmiNaijw" type="_2eVGgP32EeK2vZLmiNaijw" direction="return"/>
+              <ownedParameter xmi:id="_2oPQev32EeK2vZLmiNaijw" type="_2eVGgP32EeK2vZLmiNaijw" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>// Create the view that will be returned&#xD;
 		View view = getLayoutInflater().inflate(R.layout.activity_prox_alert_row, null);&#xD;
@@ -5344,6 +4816,7 @@ Call web service for the access point locations</body>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2oP3gf32EeK2vZLmiNaijw" name="onCreateOptionsMenu" specification="_2hiLgP32EeK2vZLmiNaijw">
               <ownedParameter xmi:id="_2oP3gv32EeK2vZLmiNaijw" name="menu" type="_2eT4YP32EeK2vZLmiNaijw"/>
               <ownedParameter xmi:id="_2oP3g_32EeK2vZLmiNaijw" direction="return">
+                <name xsi:nil="true"/>
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
               </ownedParameter>
               <language>java</language>
@@ -5354,6 +4827,7 @@ Call web service for the access point locations</body>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2oQekP32EeK2vZLmiNaijw" name="alertOnClick" specification="_2hjZoP32EeK2vZLmiNaijw">
               <ownedParameter xmi:id="_2oQekf32EeK2vZLmiNaijw" name="v" type="_2eVGgP32EeK2vZLmiNaijw"/>
               <ownedParameter xmi:id="_2oQekv32EeK2vZLmiNaijw" direction="return">
+                <name xsi:nil="true"/>
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
               </ownedParameter>
               <language>java</language>
@@ -5568,7 +5042,9 @@ Call web service for the access point locations</body>
 	</body>
             </ownedBehavior>
             <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2oSTw_32EeK2vZLmiNaijw" name="createNotification" specification="_2KJmQP32EeK2vZLmiNaijw">
-              <ownedParameter xmi:id="_2oSTxP32EeK2vZLmiNaijw" type="_2ellMP32EeK2vZLmiNaijw" direction="return"/>
+              <ownedParameter xmi:id="_2oSTxP32EeK2vZLmiNaijw" type="_2ellMP32EeK2vZLmiNaijw" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
               <language>java</language>
               <body>Notification notification = new Notification();&#xD;
 &#xD;
@@ -6783,6 +6259,7 @@ and NotificationReceiver objects.&#xD;
             </packagedElement>
           </packagedElement>
         </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Es_AwP37EeK2vZLmiNaijw" name="R"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_1r6yIP32EeK2vZLmiNaijw" name="java">
@@ -7904,7 +7381,6 @@ and NotificationReceiver objects.&#xD;
   <UMLLabProfile:Annotations xmi:id="_2jGRwf32EeK2vZLmiNaijw" base_Element="_2jFqsP32EeK2vZLmiNaijw">
     <annotations xmi:id="_2jGRwv32EeK2vZLmiNaijw" name="Override"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_2jZMsf32EeK2vZLmiNaijw" base_Element="_2jXXgP32EeK2vZLmiNaijw"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_2kIMgP32EeK2vZLmiNaijw" base_Element="_2kHlcf32EeK2vZLmiNaijw"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_2kIzkf32EeK2vZLmiNaijw" base_Element="_2kIMgf32EeK2vZLmiNaijw"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_2kJaoP32EeK2vZLmiNaijw" base_Element="_2kIzkv32EeK2vZLmiNaijw"/>
@@ -8228,4 +7704,5 @@ and NotificationReceiver objects.&#xD;
   <UMLLabProfile:Reference xmi:id="_2rG-QP32EeK2vZLmiNaijw" base_Element="_2rGXM_32EeK2vZLmiNaijw"/>
   <UMLLabProfile:Reference xmi:id="_2rHlUP32EeK2vZLmiNaijw" base_Element="_2rG-Qf32EeK2vZLmiNaijw"/>
   <UMLLabProfile:Reference xmi:id="_2rIMYP32EeK2vZLmiNaijw" base_Element="_2rHlUf32EeK2vZLmiNaijw"/>
+  <UMLLabProfile:Reference xmi:id="_Es_n0P37EeK2vZLmiNaijw" base_Element="_Es_AwP37EeK2vZLmiNaijw"/>
 </xmi:XMI>

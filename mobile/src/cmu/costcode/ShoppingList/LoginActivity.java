@@ -8,7 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import cmu.costcode.ShoppingList.R;
+import cmu.costcode.R;
 import cmu.costcode.ShoppingList.db.DatabaseAdaptor;
 
 public class LoginActivity extends Activity {

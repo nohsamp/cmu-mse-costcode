@@ -18,6 +18,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import cmu.costcode.R;
+
+
 public class ListQRDisplayActivity extends Activity {
 
 	protected static final String TAG = "ListQRDisplayActivity";

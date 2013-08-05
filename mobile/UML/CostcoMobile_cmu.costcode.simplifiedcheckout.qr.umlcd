@@ -17,6 +17,9 @@
     </sourceRole>
     <targetRole xmi:id="_9gI8Zv32EeK2vZLmiNaijw" aggregationKind="NONE" name="mBarcodePicker" navigable="true">
       <modelElement href="CostcoMobile.uml#_2nNVsP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_UXhR4P35EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2nN8wP32EeK2vZLmiNaijw"/>
+      </stereotypes>
       <visibility xmi:id="_9gI8Z_32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_9gI8aP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
     </targetRole>
@@ -35,6 +38,9 @@
     </sourceRole>
     <targetRole xmi:id="_9gJjdv32EeK2vZLmiNaijw" aggregationKind="NONE" name="scanButton" navigable="true">
       <modelElement href="CostcoMobile.uml#_2nOj0P32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_UX3QIP35EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2nPK4P32EeK2vZLmiNaijw"/>
+      </stereotypes>
       <visibility xmi:id="_9gJjd_32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_9gJjeP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
     </targetRole>
@@ -53,6 +59,9 @@
     </sourceRole>
     <targetRole xmi:id="_9gKKhv32EeK2vZLmiNaijw" aggregationKind="NONE" name="resultTextView" navigable="true">
       <modelElement href="CostcoMobile.uml#_2nPK4f32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_UYMnUP35EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2nPx8P32EeK2vZLmiNaijw"/>
+      </stereotypes>
       <visibility xmi:id="_9gKKh_32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_9gKKiP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
     </targetRole>
@@ -80,9 +89,6 @@
       <stereotypes xmi:id="_9gKKkf32EeK2vZLmiNaijw" name="LegacyStyledElement">
         <modelElement href="CostcoMobile.uml#_2nN8wP32EeK2vZLmiNaijw"/>
       </stereotypes>
-      <stereotypes xmi:id="_9gKKkv32EeK2vZLmiNaijw" name="LegacyStyledElement">
-        <modelElement href="CostcoMobile.uml#_2nN8wP32EeK2vZLmiNaijw"/>
-      </stereotypes>
       <visibility xmi:id="_9gKKk_32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_9gKKlP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
       <type xmi:id="_9gKKlf32EeK2vZLmiNaijw" name="ScanditSDKBarcodePicker">
@@ -94,9 +100,6 @@
       <stereotypes xmi:id="_9gKKl_32EeK2vZLmiNaijw" name="LegacyStyledElement">
         <modelElement href="CostcoMobile.uml#_2nPK4P32EeK2vZLmiNaijw"/>
       </stereotypes>
-      <stereotypes xmi:id="_9gKKmP32EeK2vZLmiNaijw" name="LegacyStyledElement">
-        <modelElement href="CostcoMobile.uml#_2nPK4P32EeK2vZLmiNaijw"/>
-      </stereotypes>
       <visibility xmi:id="_9gKKmf32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_9gKKmv32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
       <type xmi:id="_9gKKm_32EeK2vZLmiNaijw" name="Button">
@@ -106,9 +109,6 @@
     <attributes xmi:id="_9gKKnP32EeK2vZLmiNaijw" name="resultTextView">
       <modelElement href="CostcoMobile.uml#_2nPK4f32EeK2vZLmiNaijw"/>
       <stereotypes xmi:id="_9gKKnf32EeK2vZLmiNaijw" name="LegacyStyledElement">
-        <modelElement href="CostcoMobile.uml#_2nPx8P32EeK2vZLmiNaijw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_9gKKnv32EeK2vZLmiNaijw" name="LegacyStyledElement">
         <modelElement href="CostcoMobile.uml#_2nPx8P32EeK2vZLmiNaijw"/>
       </stereotypes>
       <visibility xmi:id="_9gKKn_32EeK2vZLmiNaijw" label="-"/>

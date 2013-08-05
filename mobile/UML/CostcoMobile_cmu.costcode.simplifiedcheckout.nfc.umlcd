@@ -16,6 +16,9 @@
     </sourceRole>
     <targetRole xmi:id="_897AJv32EeK2vZLmiNaijw" aggregationKind="NONE" name="nfcAdapter" navigable="true">
       <modelElement href="CostcoMobile.uml#_2nDksf32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_ULoK8P35EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2nELwP32EeK2vZLmiNaijw"/>
+      </stereotypes>
       <visibility xmi:id="_897AJ_32EeK2vZLmiNaijw" label="~"/>
       <cardinality xmi:id="_897AKP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
     </targetRole>
@@ -34,6 +37,9 @@
     </sourceRole>
     <targetRole xmi:id="_897nNv32EeK2vZLmiNaijw" aggregationKind="NONE" name="shoppingList" navigable="true">
       <modelElement href="CostcoMobile.uml#_2nFZ4f32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_UNoWEP35EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2nGA8P32EeK2vZLmiNaijw"/>
+      </stereotypes>
       <visibility xmi:id="_897nN_32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_897nOP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
     </targetRole>
@@ -52,6 +58,9 @@
     </sourceRole>
     <targetRole xmi:id="_898ORv32EeK2vZLmiNaijw" aggregationKind="NONE" name="context" navigable="true">
       <modelElement href="CostcoMobile.uml#_2nGoAP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_UPpvUP35EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2nHPEP32EeK2vZLmiNaijw"/>
+      </stereotypes>
       <visibility xmi:id="_898OR_32EeK2vZLmiNaijw" label="~"/>
       <cardinality xmi:id="_898OSP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
     </targetRole>
@@ -70,6 +79,12 @@
     </sourceRole>
     <targetRole xmi:id="_8981Vv32EeK2vZLmiNaijw" aggregationKind="NONE" name="mHandler" navigable="true">
       <modelElement href="CostcoMobile.uml#_2nH2IP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_URwBEP35EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2nJEQP32EeK2vZLmiNaijw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_UTXKoP35EeK2vZLmiNaijw" name="Annotations">
+        <modelElement href="CostcoMobile.uml#_2nJEQf32EeK2vZLmiNaijw"/>
+      </stereotypes>
       <visibility xmi:id="_8981V_32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_8981WP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
     </targetRole>
@@ -97,9 +112,6 @@
       <stereotypes xmi:id="_8981Yv32EeK2vZLmiNaijw" name="LegacyStyledElement">
         <modelElement href="CostcoMobile.uml#_2nELwP32EeK2vZLmiNaijw"/>
       </stereotypes>
-      <stereotypes xmi:id="_8981Y_32EeK2vZLmiNaijw" name="LegacyStyledElement">
-        <modelElement href="CostcoMobile.uml#_2nELwP32EeK2vZLmiNaijw"/>
-      </stereotypes>
       <visibility xmi:id="_8981ZP32EeK2vZLmiNaijw" label="~"/>
       <cardinality xmi:id="_8981Zf32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
       <type xmi:id="_8981Zv32EeK2vZLmiNaijw" name="NfcAdapter">
@@ -119,9 +131,6 @@
       <stereotypes xmi:id="_8981bP32EeK2vZLmiNaijw" name="LegacyStyledElement">
         <modelElement href="CostcoMobile.uml#_2nGA8P32EeK2vZLmiNaijw"/>
       </stereotypes>
-      <stereotypes xmi:id="_8981bf32EeK2vZLmiNaijw" name="LegacyStyledElement">
-        <modelElement href="CostcoMobile.uml#_2nGA8P32EeK2vZLmiNaijw"/>
-      </stereotypes>
       <visibility xmi:id="_8981bv32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_8981b_32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
       <type xmi:id="_8981cP32EeK2vZLmiNaijw" name="ShoppingList">
@@ -131,9 +140,6 @@
     <attributes xmi:id="_8981cf32EeK2vZLmiNaijw" name="context">
       <modelElement href="CostcoMobile.uml#_2nGoAP32EeK2vZLmiNaijw"/>
       <stereotypes xmi:id="_8981cv32EeK2vZLmiNaijw" name="LegacyStyledElement">
-        <modelElement href="CostcoMobile.uml#_2nHPEP32EeK2vZLmiNaijw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_8981c_32EeK2vZLmiNaijw" name="LegacyStyledElement">
         <modelElement href="CostcoMobile.uml#_2nHPEP32EeK2vZLmiNaijw"/>
       </stereotypes>
       <visibility xmi:id="_8981dP32EeK2vZLmiNaijw" label="~"/>
@@ -148,12 +154,6 @@
         <modelElement href="CostcoMobile.uml#_2nJEQP32EeK2vZLmiNaijw"/>
       </stereotypes>
       <stereotypes xmi:id="_8981ef32EeK2vZLmiNaijw" name="Annotations">
-        <modelElement href="CostcoMobile.uml#_2nJEQf32EeK2vZLmiNaijw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_8981ev32EeK2vZLmiNaijw" name="LegacyStyledElement">
-        <modelElement href="CostcoMobile.uml#_2nJEQP32EeK2vZLmiNaijw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_8981e_32EeK2vZLmiNaijw" name="Annotations">
         <modelElement href="CostcoMobile.uml#_2nJEQf32EeK2vZLmiNaijw"/>
       </stereotypes>
       <visibility xmi:id="_8981fP32EeK2vZLmiNaijw" label="-"/>

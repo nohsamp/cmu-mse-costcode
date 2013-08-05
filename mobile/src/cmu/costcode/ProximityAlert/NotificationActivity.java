@@ -4,7 +4,7 @@ package cmu.costcode.ProximityAlert;
 import java.util.HashMap;
 import java.util.Map;
 
-import cmu.costcode.ShoppingList.R;
+import cmu.costcode.R;
 import cmu.costcode.ShoppingList.db.DatabaseAdaptor;
 import cmu.costcode.ShoppingList.objects.Category;
 

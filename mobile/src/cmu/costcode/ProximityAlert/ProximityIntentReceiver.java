@@ -12,7 +12,7 @@ import android.graphics.Color;
 import android.location.LocationManager;
 import android.util.Log;
 import android.widget.Toast;
-import cmu.costcode.ShoppingList.R;
+import cmu.costcode.R;
 import cmu.costcode.ShoppingList.LoginActivity;
 import cmu.costcode.ShoppingList.ViewListActivity;
 import cmu.costcode.ShoppingList.db.DatabaseAdaptor;

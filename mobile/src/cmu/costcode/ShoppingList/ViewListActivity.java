@@ -5,7 +5,7 @@ import java.util.Map;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import cmu.costcode.ShoppingList.R;
+import cmu.costcode.R;
 import cmu.costcode.ProximityAlert.NotificationActivity;
 import cmu.costcode.ProximityAlert.ProximityIntentReceiver;
 import android.app.Activity;

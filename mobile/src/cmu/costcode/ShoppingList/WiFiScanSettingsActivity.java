@@ -18,7 +18,7 @@ import android.text.TextUtils;
 
 import java.util.List;
 
-import cmu.costcode.ShoppingList.R;
+import cmu.costcode.R;
 
 /**
  * A {@link PreferenceActivity} that presents a set of application settings. On

@@ -18,6 +18,9 @@
     </sourceRole>
     <targetRole xmi:id="_-B4-lf32EeK2vZLmiNaijw" aggregationKind="NONE" name="shoppingList" navigable="true">
       <modelElement href="CostcoMobile.uml#_2nUDYP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_UYosMP35EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2nUqcP32EeK2vZLmiNaijw"/>
+      </stereotypes>
       <visibility xmi:id="_-B4-lv32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_-B4-l_32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
     </targetRole>
@@ -36,6 +39,9 @@
     </sourceRole>
     <targetRole xmi:id="_-B5lov32EeK2vZLmiNaijw" aggregationKind="NONE" name="context" navigable="true">
       <modelElement href="CostcoMobile.uml#_2nXtwf32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_UZAfoP35EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2nYU0P32EeK2vZLmiNaijw"/>
+      </stereotypes>
       <visibility xmi:id="_-B5lo_32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_-B5lpP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
     </targetRole>
@@ -67,9 +73,6 @@
     <attributes xmi:id="_-B5lrf32EeK2vZLmiNaijw" name="shoppingList">
       <modelElement href="CostcoMobile.uml#_2nUDYP32EeK2vZLmiNaijw"/>
       <stereotypes xmi:id="_-B5lrv32EeK2vZLmiNaijw" name="LegacyStyledElement">
-        <modelElement href="CostcoMobile.uml#_2nUqcP32EeK2vZLmiNaijw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_-B5lr_32EeK2vZLmiNaijw" name="LegacyStyledElement">
         <modelElement href="CostcoMobile.uml#_2nUqcP32EeK2vZLmiNaijw"/>
       </stereotypes>
       <visibility xmi:id="_-B5lsP32EeK2vZLmiNaijw" label="-"/>
@@ -114,9 +117,6 @@
     <attributes xmi:id="_-B5lwv32EeK2vZLmiNaijw" name="context">
       <modelElement href="CostcoMobile.uml#_2nXtwf32EeK2vZLmiNaijw"/>
       <stereotypes xmi:id="_-B5lw_32EeK2vZLmiNaijw" name="LegacyStyledElement">
-        <modelElement href="CostcoMobile.uml#_2nYU0P32EeK2vZLmiNaijw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_-B5lxP32EeK2vZLmiNaijw" name="LegacyStyledElement">
         <modelElement href="CostcoMobile.uml#_2nYU0P32EeK2vZLmiNaijw"/>
       </stereotypes>
       <visibility xmi:id="_-B5lxf32EeK2vZLmiNaijw" label="-"/>

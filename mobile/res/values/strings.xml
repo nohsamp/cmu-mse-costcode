@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">Costco Mobile App</string>
@@ -17,14 +18,15 @@
     <string name="editListCatPrompt">Select a Category:</string>
     <string name="editListVoiceButton">Voice</string>
     <string name="toggleProxAlertLabel">Toggle Proximity Alerts:</string>
-<!--     <string name="manageProxAlertMenuLabel">Manage Proximity Alert</string> -->
+    <!-- <string name="manageProxAlertMenuLabel">Manage Proximity Alert</string> -->
     <string name="action_settings">Settings</string>
     <string name="triangulation_start">Reminder Start</string>
     <string name="triangulation_stop">Reminder Stop</string>
-    
+
     <string-array name="categories">
         <item>Appliances</item>
         <item>Baby/Toys</item>
+        <item>Books/Magazines</item>
         <item>Clothing</item>
         <item>Computers</item>
         <item>Electronics</item>

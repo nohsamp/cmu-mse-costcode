@@ -18,6 +18,9 @@
     </sourceRole>
     <targetRole xmi:id="_7s75Zv32EeK2vZLmiNaijw" aggregationKind="NONE" name="locationManager" navigable="true">
       <modelElement href="CostcoMobile.uml#_2kOTIP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_UDydkP35EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2kO6MP32EeK2vZLmiNaijw"/>
+      </stereotypes>
       <visibility xmi:id="_7s75Z_32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_7s75aP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
     </targetRole>
@@ -36,6 +39,9 @@
     </sourceRole>
     <targetRole xmi:id="_7s8gdv32EeK2vZLmiNaijw" aggregationKind="NONE" name="alertListView" navigable="true">
       <modelElement href="CostcoMobile.uml#_2kO6Mf32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_UEvf0P35EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2kO6Mv32EeK2vZLmiNaijw"/>
+      </stereotypes>
       <visibility xmi:id="_7s8gd_32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_7s8geP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
     </targetRole>
@@ -54,6 +60,9 @@
     </sourceRole>
     <targetRole xmi:id="_7s9ulv32EeK2vZLmiNaijw" aggregationKind="NONE" name="poi" navigable="true">
       <modelElement href="CostcoMobile.uml#_2kPhQP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_UFYZAP35EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2kPhQf32EeK2vZLmiNaijw"/>
+      </stereotypes>
       <visibility xmi:id="_7s9ul_32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_7s9umP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
       <qualifierHelper xmi:id="_7s9umf32EeK2vZLmiNaijw">
@@ -82,6 +91,9 @@
     </sourceRole>
     <targetRole xmi:id="_7s-Vpv32EeK2vZLmiNaijw" aggregationKind="NONE" name="db" navigable="true">
       <modelElement href="CostcoMobile.uml#_2kSkkP32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_UF7yoP35EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2kSkkf32EeK2vZLmiNaijw"/>
+      </stereotypes>
       <visibility xmi:id="_7s-Vp_32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_7s-VqP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
     </targetRole>
@@ -100,6 +112,9 @@
     </sourceRole>
     <targetRole xmi:id="_7tLJ8f32EeK2vZLmiNaijw" aggregationKind="NONE" name="db" navigable="true">
       <modelElement href="CostcoMobile.uml#_2kUZwf32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_UGhBcP35EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2kUZwv32EeK2vZLmiNaijw"/>
+      </stereotypes>
       <visibility xmi:id="_7tLxAf32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_7tLxAP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
     </targetRole>
@@ -122,6 +137,9 @@
     <targetRole xmi:id="_7tQpgv32EeK2vZLmiNaijw" aggregationKind="NONE" name="notificationReceiver" navigable="true">
       <modelElement href="CostcoMobile.uml#_2kWO8f32EeK2vZLmiNaijw"/>
       <visualProperties xmi:id="_76UOEf32EeK2vZLmiNaijw" position="2.0,0.9999999999999929"/>
+      <stereotypes xmi:id="_UGyHMP35EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2kW2AP32EeK2vZLmiNaijw"/>
+      </stereotypes>
       <visibility xmi:id="_7tTs0P32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_7tTFxv32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
     </targetRole>
@@ -141,6 +159,9 @@
     </sourceRole>
     <targetRole xmi:id="_7tTFwv32EeK2vZLmiNaijw" aggregationKind="NONE" name="locationManager" navigable="true">
       <modelElement href="CostcoMobile.uml#_2kVn4f32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_UGt1wP35EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2kWO8P32EeK2vZLmiNaijw"/>
+      </stereotypes>
       <visibility xmi:id="_7tUT4v32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_7tUT4f32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
     </targetRole>
@@ -161,6 +182,9 @@
     </sourceRole>
     <targetRole xmi:id="_7tU69v32EeK2vZLmiNaijw" aggregationKind="NONE" name="proxAlertIntents" navigable="true">
       <modelElement href="CostcoMobile.uml#_2kW2Af32EeK2vZLmiNaijw"/>
+      <stereotypes xmi:id="_UHM98P35EeK2vZLmiNaijw" name="LegacyStyledElement">
+        <modelElement href="CostcoMobile.uml#_2kXdEP32EeK2vZLmiNaijw"/>
+      </stereotypes>
       <visibility xmi:id="_7tU69_32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_7tU6-P32EeK2vZLmiNaijw" label="1..*" max="-1" min="1"/>
     </targetRole>
@@ -192,9 +216,6 @@
       <stereotypes xmi:id="_7s-Vrf32EeK2vZLmiNaijw" name="LegacyStyledElement">
         <modelElement href="CostcoMobile.uml#_2kO6MP32EeK2vZLmiNaijw"/>
       </stereotypes>
-      <stereotypes xmi:id="_7s-Vrv32EeK2vZLmiNaijw" name="LegacyStyledElement">
-        <modelElement href="CostcoMobile.uml#_2kO6MP32EeK2vZLmiNaijw"/>
-      </stereotypes>
       <visibility xmi:id="_7s-Vr_32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_7s-VsP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
       <type xmi:id="_7s-Vsf32EeK2vZLmiNaijw" name="LocationManager">
@@ -206,9 +227,6 @@
       <stereotypes xmi:id="_7s-Vs_32EeK2vZLmiNaijw" name="LegacyStyledElement">
         <modelElement href="CostcoMobile.uml#_2kO6Mv32EeK2vZLmiNaijw"/>
       </stereotypes>
-      <stereotypes xmi:id="_7s-VtP32EeK2vZLmiNaijw" name="LegacyStyledElement">
-        <modelElement href="CostcoMobile.uml#_2kO6Mv32EeK2vZLmiNaijw"/>
-      </stereotypes>
       <visibility xmi:id="_7s-Vtf32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_7s-Vtv32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
       <type xmi:id="_7s-Vt_32EeK2vZLmiNaijw" name="LinearLayout">
@@ -218,9 +236,6 @@
     <attributes xmi:id="_7s-VuP32EeK2vZLmiNaijw" name="poi">
       <modelElement href="CostcoMobile.uml#_2kPhQP32EeK2vZLmiNaijw"/>
       <stereotypes xmi:id="_7s-Vuf32EeK2vZLmiNaijw" name="LegacyStyledElement">
-        <modelElement href="CostcoMobile.uml#_2kPhQf32EeK2vZLmiNaijw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_7s-Vuv32EeK2vZLmiNaijw" name="LegacyStyledElement">
         <modelElement href="CostcoMobile.uml#_2kPhQf32EeK2vZLmiNaijw"/>
       </stereotypes>
       <visibility xmi:id="_7s-Vu_32EeK2vZLmiNaijw" label="-"/>
@@ -276,9 +291,6 @@
     <attributes xmi:id="_7s-V0v32EeK2vZLmiNaijw" name="db">
       <modelElement href="CostcoMobile.uml#_2kSkkP32EeK2vZLmiNaijw"/>
       <stereotypes xmi:id="_7s-V0_32EeK2vZLmiNaijw" name="LegacyStyledElement">
-        <modelElement href="CostcoMobile.uml#_2kSkkf32EeK2vZLmiNaijw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_7s-V1P32EeK2vZLmiNaijw" name="LegacyStyledElement">
         <modelElement href="CostcoMobile.uml#_2kSkkf32EeK2vZLmiNaijw"/>
       </stereotypes>
       <visibility xmi:id="_7s-V1f32EeK2vZLmiNaijw" label="-"/>
@@ -494,9 +506,6 @@
       <stereotypes xmi:id="_7tMYFv32EeK2vZLmiNaijw" name="LegacyStyledElement">
         <modelElement href="CostcoMobile.uml#_2kUZwv32EeK2vZLmiNaijw"/>
       </stereotypes>
-      <stereotypes xmi:id="_7tLxAv32EeK2vZLmiNaijw" name="LegacyStyledElement">
-        <modelElement href="CostcoMobile.uml#_2kUZwv32EeK2vZLmiNaijw"/>
-      </stereotypes>
       <visibility xmi:id="_7tMYF_32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_7tMYGP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
       <type xmi:id="_7tMYGf32EeK2vZLmiNaijw" name="DatabaseAdaptor">
@@ -556,9 +565,6 @@
       <stereotypes xmi:id="_7tViCf32EeK2vZLmiNaijw" name="LegacyStyledElement">
         <modelElement href="CostcoMobile.uml#_2kWO8P32EeK2vZLmiNaijw"/>
       </stereotypes>
-      <stereotypes xmi:id="_7tUT4_32EeK2vZLmiNaijw" name="LegacyStyledElement">
-        <modelElement href="CostcoMobile.uml#_2kWO8P32EeK2vZLmiNaijw"/>
-      </stereotypes>
       <visibility xmi:id="_7tViCv32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_7tViC_32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
       <type xmi:id="_7tViDP32EeK2vZLmiNaijw" name="LocationManager">
@@ -570,9 +576,6 @@
       <stereotypes xmi:id="_7tViDv32EeK2vZLmiNaijw" name="LegacyStyledElement">
         <modelElement href="CostcoMobile.uml#_2kW2AP32EeK2vZLmiNaijw"/>
       </stereotypes>
-      <stereotypes xmi:id="_7tTs0f32EeK2vZLmiNaijw" name="LegacyStyledElement">
-        <modelElement href="CostcoMobile.uml#_2kW2AP32EeK2vZLmiNaijw"/>
-      </stereotypes>
       <visibility xmi:id="_7tViD_32EeK2vZLmiNaijw" label="-"/>
       <cardinality xmi:id="_7tViEP32EeK2vZLmiNaijw" label="1" max="1" min="1"/>
       <type xmi:id="_7tViEf32EeK2vZLmiNaijw" name="ProximityIntentReceiver">
@@ -582,9 +585,6 @@
     <attributes xmi:id="_7tViEv32EeK2vZLmiNaijw" name="proxAlertIntents">
       <modelElement href="CostcoMobile.uml#_2kW2Af32EeK2vZLmiNaijw"/>
       <stereotypes xmi:id="_7tViE_32EeK2vZLmiNaijw" name="LegacyStyledElement">
-        <modelElement href="CostcoMobile.uml#_2kXdEP32EeK2vZLmiNaijw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_7tViFP32EeK2vZLmiNaijw" name="LegacyStyledElement">
         <modelElement href="CostcoMobile.uml#_2kXdEP32EeK2vZLmiNaijw"/>
       </stereotypes>
       <visibility xmi:id="_7tViFf32EeK2vZLmiNaijw" label="-"/>

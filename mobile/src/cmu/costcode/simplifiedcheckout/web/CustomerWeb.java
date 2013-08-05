@@ -116,6 +116,7 @@ public class CustomerWeb {
 					try {
 						int customerId = jsonObjRecv.getInt("customer_id");
 						intent.putExtra("CustomerID", customerId);
+						intent.putExtra("ShoppingList", jsonObjSend.toString());	//TODO: change to real ShoppingList object
 						ctx.startActivity(intent);
 					} catch (JSONException e) {
 						e.printStackTrace();

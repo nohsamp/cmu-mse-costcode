@@ -1,6 +1,5 @@
 package cmu.costcode.FloorPlan;
 
-import java.net.ConnectException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -11,7 +10,6 @@ import org.ksoap2.serialization.SoapObject;
 
 import android.content.Context;
 import android.util.Log;
-
 import cmu.costcode.ShoppingList.db.DatabaseAdaptor;
 import cmu.costcode.ShoppingList.objects.Category;
 import cmu.costcode.ShoppingList.objects.Category.Location;

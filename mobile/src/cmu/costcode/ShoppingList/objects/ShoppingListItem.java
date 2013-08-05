@@ -61,5 +61,16 @@ public class ShoppingListItem implements Serializable {
 	public String toString() {
 		return item.toString();
 	}
+	
+	/*
+	 * TODO: Put this all back later, laziness prevails
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+	*/
 
 }

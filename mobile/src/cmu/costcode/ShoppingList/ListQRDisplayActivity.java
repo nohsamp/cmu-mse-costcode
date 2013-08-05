@@ -5,6 +5,13 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import cmu.costcode.ShoppingList.objects.ShoppingList;
+import cmu.costcode.ShoppingList.objects.StoreItem;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -28,6 +35,7 @@ public class ListQRDisplayActivity extends Activity {
 	private String urlToCall;
 	protected ImageView imgView;
 	protected TextView urlTextView;
+	private ShoppingList shoppingList;	//TODO: change to real ShoppingList object
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +49,21 @@ public class ListQRDisplayActivity extends Activity {
 		int customerId = intent.getIntExtra("CustomerID", 1);
 		urlToCall = ViewListActivity.SERVER_URL + SHOPPING_LIST_URL + customerId;
 		String safeUrlToCall = urlToCall.replace(":", "%3A").replace("/", "%2F");
+		
+		// Get shopping list extra and set to display receipt
+		try {
+			JSONObject shoppingListJson = new JSONObject(intent.getStringExtra("ShoppingList"));
+			shoppingList = createShoppingListFromJson(shoppingListJson);
+		} catch (JSONException e) {
+			Toast.makeText(this, "Invalid shopping list. :(", Toast.LENGTH_SHORT).show();
+			e.printStackTrace();
+		}
+		TextView receiptView = (TextView)findViewById(R.id.qrTextReceipt);
+		if(shoppingList != null) {
+    		receiptView.setText(shoppingList.toString());
+    		Toast.makeText(this, "Successfully retrieved shopping list from server!", Toast.LENGTH_SHORT).show();
+    		//TODO: Test that this works Kevin
+    	}
 		
 		// Load view resources
 		imgView = (ImageView)findViewById(R.id.qrImageView);
@@ -108,5 +131,33 @@ public class ListQRDisplayActivity extends Activity {
 		    	}
 		    }
 		}.execute(requestUrl);
+	}
+	
+	
+	/**
+	 * Convert the values in a JSONObject to a real ShoppingList
+	 * @param jsonResponse
+	 * @return
+	 */
+	private ShoppingList createShoppingListFromJson(JSONObject jsonResponse) {
+		ShoppingList shoppingList = null;
+		try {
+			String customerName = jsonResponse.getString("customer");
+			shoppingList = new ShoppingList(customerName);
+			
+			JSONArray orders = jsonResponse.getJSONArray("order");
+			for(int i=0; i< orders.length(); i++) {
+				JSONObject order = orders.getJSONObject(i);
+				String name = order.getString("name");
+				String upc = order.getString("upc");
+				double price = order.getDouble("price");
+				int quantity = order.getInt("quantity");
+				shoppingList.addItem(new StoreItem(name, upc, price, quantity));
+			}
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		
+		return shoppingList;
 	}
 }

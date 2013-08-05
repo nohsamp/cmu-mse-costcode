@@ -1,8 +1,9 @@
 package cmu.costcode.ShoppingList.objects;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+
+import edu.cmu.cc.sc.model.ShoppingList;
 
 /**
  * @author kevin
@@ -14,7 +15,7 @@ public class Customer {
 	private String firstName;
 	private String lastName;
 	private String address;
-	private Map<String, ArrayList<ShoppingListItem>> shoppingList;
+	private Map<String, ShoppingList> shoppingList;
 	
 	public Customer() {
 		// TODO Auto-generated constructor stub
@@ -25,19 +26,19 @@ public class Customer {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.address = address;
-		shoppingList = new HashMap<String, ArrayList<ShoppingListItem>>();
+		shoppingList = new HashMap<String, ShoppingList>();
 	}
 	
 	
 // ##### GETTERS AND SETTERS #####
 	
-	public void setShoppingList(Map<String, ArrayList<ShoppingListItem>> shoppingList) {
+	public void setShoppingList(Map<String, ShoppingList> shoppingList) {
 		this.shoppingList = shoppingList;
 	}
 	
-	public Map<String, ArrayList<ShoppingListItem>> getShoppingList() {
+	public Map<String, ShoppingList> getShoppingList() {
 		if(shoppingList == null) {
-			return new HashMap<String, ArrayList<ShoppingListItem>>();
+			return new HashMap<String, ShoppingList>();
 		} else {
 			return shoppingList;
 		}

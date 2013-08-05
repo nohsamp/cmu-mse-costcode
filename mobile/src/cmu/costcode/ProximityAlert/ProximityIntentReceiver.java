@@ -1,6 +1,5 @@
 package cmu.costcode.ProximityAlert;
 
-import java.util.ArrayList;
 import java.util.Map;
 
 import android.app.Notification;
@@ -17,8 +16,8 @@ import cmu.costcode.ShoppingList.R;
 import cmu.costcode.ShoppingList.LoginActivity;
 import cmu.costcode.ShoppingList.ViewListActivity;
 import cmu.costcode.ShoppingList.db.DatabaseAdaptor;
-import cmu.costcode.ShoppingList.objects.Item;
-import cmu.costcode.ShoppingList.objects.ShoppingListItem;
+import edu.cmu.cc.sc.model.Item;
+import edu.cmu.cc.sc.model.ShoppingList;
 
 public class ProximityIntentReceiver extends BroadcastReceiver {
 
@@ -51,16 +50,15 @@ public class ProximityIntentReceiver extends BroadcastReceiver {
 		db = new DatabaseAdaptor(context);
 		db.open();
 
-		Map<String, ArrayList<ShoppingListItem>> shoppingList = db.dbGetShoppingListItems(memberId);
+		Map<String, ShoppingList> shoppingList = db.dbGetShoppingList(memberId);
 		String uncheckedItems = " ";
 
 		if (shoppingList != null && shoppingList.containsKey(category)) {
 
-			for (ShoppingListItem listItem : shoppingList.get(category)) {
-
-				if (!listItem.isChecked()) {
-					Item item = listItem.getItem();
-					uncheckedItems = uncheckedItems + item.getDescription();
+			for (Item listItem : shoppingList.get(category).getItems()) {
+				if (!db.dbGetShoppingListItem(listItem).isChecked()) {
+					Item item = listItem;
+					uncheckedItems = uncheckedItems + item.getName();
 				}
 
 			}
@@ -98,7 +96,7 @@ public class ProximityIntentReceiver extends BroadcastReceiver {
 		notification.flags |= Notification.FLAG_SHOW_LIGHTS;
 		notification.flags |= Notification.FLAG_ONLY_ALERT_ONCE; //TODO: User choose this??
 
-//		notification.defaults |= Notification.DEFAULT_VIBRATE;
+		notification.defaults |= Notification.DEFAULT_VIBRATE;
 		notification.defaults |= Notification.DEFAULT_SOUND;
 		notification.defaults |= Notification.DEFAULT_LIGHTS;
 

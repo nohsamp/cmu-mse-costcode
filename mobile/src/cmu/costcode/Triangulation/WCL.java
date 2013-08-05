@@ -1,6 +1,7 @@
 
 package cmu.costcode.Triangulation;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
@@ -10,11 +11,13 @@ import android.content.Context;
 import android.net.wifi.WifiManager;
 
 import cmu.costcode.ShoppingList.objects.Category;
+import cmu.costcode.ShoppingList.objects.Category.Location;
 import cmu.costcode.WIFIScanner.AccessPoint;
 
 public class WCL extends Triangulation {
 
 	private static float g = 0.6f;
+	boolean dummyFlag;
 	
 	public static float getG() {
 		return g;
@@ -26,6 +29,7 @@ public class WCL extends Triangulation {
 
 	public WCL(WifiManager wm, Map<String, Object> initParams, Context context) {
 		super(wm, initParams, context);
+		dummyFlag = (Boolean)initParams.get("DUMMY");
 	}
 	
 	private void doAWCL() {
@@ -120,7 +124,15 @@ public class WCL extends Triangulation {
 	public String getNearestCategory(double x, double y) {
 		double thresholdDistance = 30.0; // Distance threshold value for finding category (meter)
 		
-		categoryList = wifiScanner.getCategoryList();
+		if(dummyFlag) {
+			categoryList = new ArrayList<Category>(4);
+			categoryList.add(new Category("Food", new Location(5.3, -3.5)));
+			categoryList.add(new Category("Electronics", new Location(13, -7.3)));
+			categoryList.add(new Category("Appliances", new Location(10, 7.3)));
+			categoryList.add(new Category("Clothing", new Location(18, -15)));
+		}
+		else categoryList = wifiScanner.getCategoryList();
+		
 		if(categoryList == null)
 			return null;
 		

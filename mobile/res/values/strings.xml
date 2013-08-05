@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">Costco Shopping List</string>
+    <string name="app_name">Costco Mobile App</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_view_list">ViewListActivity</string>
@@ -44,8 +44,8 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_notification">NotificationActivity</string>
-    <string name="send_sl_nfc">Send list to cashier</string>
+    <string name="send_sl_web">Send list to cashier</string>
     <string name="scanItemButtonText">Scan Item</string>
-    
+    <string name="title_activity_list_qrdisplay">ListQRDisplayActivity</string>
 
 </resources>

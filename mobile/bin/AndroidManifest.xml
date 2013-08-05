@@ -29,7 +29,7 @@
 
     <application
         android:name="cmu.costcode.ProximityAlert.ShoppingListApplication"
-        android:icon="@drawable/icon"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
             android:name="cmu.costcode.ShoppingList.WiFiScanSettingsActivity"
@@ -72,6 +72,14 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ViewListActivity" />
+        </activity>
+        <activity
+            android:name="cmu.costcode.ShoppingList.ListQRDisplayActivity"
+            android:label="@string/title_activity_list_qrdisplay"
+            android:parentActivityName="cmu.costcode.ShoppingList.ViewListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cmu.costcode.ShoppingList.ViewListActivity" />
         </activity>
     </application>
 

@@ -4,9 +4,9 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutput;
 import java.io.ObjectOutputStream;
-import java.util.ArrayList;
 
-import cmu.costcode.ShoppingList.objects.ShoppingListItem;
+import edu.cmu.cc.sc.model.ShoppingList;
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
@@ -19,7 +19,6 @@ import android.nfc.NfcEvent;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
-import android.view.View;
 import android.widget.Toast;
 
 public class CustomerNFC implements CreateNdefMessageCallback, OnNdefPushCompleteCallback {
@@ -27,12 +26,12 @@ public class CustomerNFC implements CreateNdefMessageCallback, OnNdefPushComplet
 	private final static String TAG = "CustomerNFC";
 	NfcAdapter nfcAdapter;
 	private static final int MESSAGE_SENT = 1;
-	private ArrayList<ShoppingListItem> shoppingList;
+	private ShoppingList shoppingList;
 	Context context;
 	
 	// Constructor
 	// The caller should pass Activity using ActivityName.this
-	public CustomerNFC(Activity sourceActivity, Context context, ArrayList<ShoppingListItem> shoppingList) {
+	public CustomerNFC(Activity sourceActivity, Context context, ShoppingList shoppingList) {
 		this.shoppingList = shoppingList;
 		this.context = context;
 		
@@ -106,10 +105,8 @@ public class CustomerNFC implements CreateNdefMessageCallback, OnNdefPushComplet
 	private final Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
-            switch (msg.what) {
-            case MESSAGE_SENT:
+            if(msg.what == MESSAGE_SENT) {
                 Toast.makeText(context, "Message sent!", Toast.LENGTH_LONG).show();
-                break;
             }
         }
     };

@@ -18,14 +18,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.NumberPicker;
 import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
-import cmu.costcode.ShoppingList.R;
 import cmu.costcode.ShoppingList.db.DatabaseAdaptor;
 import cmu.costcode.ShoppingList.objects.Customer;
-import cmu.costcode.ShoppingList.objects.Item;
-import cmu.costcode.ShoppingList.objects.ShoppingListItem;
+import edu.cmu.cc.sc.model.Item;
+import edu.cmu.cc.sc.model.ShoppingList;
 
 public class EditListActivity extends Activity {
 	
@@ -59,7 +59,7 @@ public class EditListActivity extends Activity {
 		
 		// Load Customer and shoppingList from DB
 		cust = db.dbGetCustomer(memberId);
-		cust.setShoppingList(db.dbGetShoppingListItems(memberId));
+		cust.setShoppingList(db.dbGetShoppingList(memberId));
 		
 		// Prepare AddItem view; Inflate XML layout for adding new item, add to scrolling list
 		addItemView = getLayoutInflater().inflate(R.layout.activity_edit_list_new, null);
@@ -87,7 +87,7 @@ public class EditListActivity extends Activity {
 	}
 	
 	
-	private LinearLayout generateEditListView(Context ctx, Map<String, ArrayList<ShoppingListItem>> shoppingList) {
+	private LinearLayout generateEditListView(Context ctx, Map<String, ShoppingList> shoppingList) {
 		// Create the view that will be returned
 		LinearLayout view = new LinearLayout(ctx);
 		view.setOrientation(LinearLayout.VERTICAL);
@@ -102,8 +102,8 @@ public class EditListActivity extends Activity {
 			view.addView(catRow);
 			
 			// Iterate through each item within the category
-			for(final ShoppingListItem item : shoppingList.get(category)) {
-				Log.i(TAG, "    Item: " + item.getItem().getDescription() + " - " + item.isChecked());
+			for(final Item item : shoppingList.get(category).getItems()) {
+				Log.i(TAG, "    Item: " + item.getName() + " - ");
 				view.addView(createEditRow(ctx, item));
 			}
 		}
@@ -117,18 +117,18 @@ public class EditListActivity extends Activity {
 	 * @param item
 	 * @return EditItemRow view
 	 */
-	private View createEditRow(Context ctx, final ShoppingListItem item) {
+	private View createEditRow(Context ctx, final Item item) {
 		// Create the view that will be returned
         View view = getLayoutInflater().inflate(R.layout.activity_edit_list_row, null);
-        view.setTag(item.getItemId());
+        view.setTag(item.getId());
         
         // Add Delete Item listener
         Button deleteButton = (Button)view.findViewById(R.id.editItemDelete);
         deleteButton.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Log.i(TAG, "Deleting ListItem id " + item.getItemId() + " from shopping list");
-				db.dbDeleteItemRow(cust.getMemberId(), item.getItemId());
+				Log.i(TAG, "Deleting ListItem id " + item.getId() + " from shopping list");
+				db.dbDeleteItemRow(cust.getMemberId(), (int)item.getId());
 				updateList();
 				((ViewGroup)v.getParent()).removeAllViews();
 			}
@@ -136,7 +136,7 @@ public class EditListActivity extends Activity {
 
         // Fill row with item text
         EditText text = (EditText)view.findViewById(R.id.editItemText);
-		text.setText(item.getItem().getDescription());
+		text.setText(item.getName());
 		
 		// Return the generated row view
 		return view;
@@ -172,8 +172,9 @@ public class EditListActivity extends Activity {
 				
 				// Add item to the new shopping list under previous category
 				EditText itemTextView = (EditText)listItem.findViewById(R.id.editItemText);
-				int itemId = (Integer)listItem.getTag();
-				db.dbUpdateItem(itemId, category, itemTextView.getText().toString());
+				long itemId = (Long)listItem.getTag();
+				//TODO: change this pronto; user shouldn't have to enter prices or UPCs
+				db.dbUpdateItem(itemId, category, itemTextView.getText().toString(), 1, 0.0f, "111222333444"); 
 			}
 		}
 	}
@@ -186,10 +187,15 @@ public class EditListActivity extends Activity {
 		// Find the description and category views
 		EditText prevItemDescView = (EditText)newItemView.findViewById(R.id.editNewItemDescription);
 		Spinner prevItemCatView = (Spinner)newItemView.findViewById(R.id.editNewItemCategories);
+		NumberPicker numpicQtyView = (NumberPicker)newItemView.findViewById(R.id.numPickerPrice);
+		NumberPicker numpicPriceView = (NumberPicker)newItemView.findViewById(R.id.numPickerPrice);
 		
 		// Convert the views into strings
 		String newItemDesc = prevItemDescView.getText().toString();
 		String newItemCat = prevItemCatView.getSelectedItem().toString();
+		int newItemQty = numpicQtyView.getValue();
+		float newItemPrice = (float)numpicPriceView.getValue();
+		String newItemUpc = "1112222333444"; // TODO: layout change for UPC
 		
 		// Skip this item if no description filled in
 		if(newItemDesc == null || newItemDesc.length() == 0) {
@@ -197,17 +203,17 @@ public class EditListActivity extends Activity {
 		}
 		
 		// Add new item to database and ShoppingList
-		int newItemId = db.dbCreateItem(newItemDesc, newItemCat);
+		long newItemId = db.dbCreateItem(newItemDesc, newItemCat, newItemQty, newItemPrice, newItemUpc);
 		db.dbCreateShoppingListItem(newItemId, cust.getMemberId(), false, 0);
 		Log.i(TAG, "ADDDDINNNNGGGG=("+newItemDesc+", "+newItemCat+" ("+newItemId+") )");
 		
-		Item newItem = new Item(newItemId, newItemDesc, newItemCat);
-		Map<String, ArrayList<ShoppingListItem>> newShoppingList = cust.getShoppingList();
-		ArrayList<ShoppingListItem> addedItem = newShoppingList.get(newItemCat);
+		Item newItem = new Item(newItemId, newItemCat, newItemDesc, newItemQty, newItemPrice, 0, newItemDesc, newItemUpc);
+		Map<String, ShoppingList> newShoppingList = cust.getShoppingList();
+		ShoppingList addedItem = newShoppingList.get(newItemCat);
 		if(addedItem == null) {
-			addedItem = new ArrayList<ShoppingListItem>();
+			addedItem = new ShoppingList();
 		}
-		addedItem.add(new ShoppingListItem(newItemId, false, 0, newItem));
+		addedItem.addItem(newItem);
 		newShoppingList.put(newItemCat, addedItem);
 		cust.setShoppingList(newShoppingList);
 	}

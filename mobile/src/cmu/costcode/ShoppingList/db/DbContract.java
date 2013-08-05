@@ -30,8 +30,13 @@ public class DbContract {
 	public static abstract class ItemEntry implements BaseColumns {
 		public static final String TABLE_NAME = "items";
 		public static final String ITEM_ID = "item_id";
-		public static final String DESCRIPTION = "description";
-		public static final String CATEGORY_NAME = "category_name";
+		public static final String ITEM_NAME = "name";
+		public static final String ITEM_PRICE = "price";
+		public static final String ITEM_QUANTITY = "quantity";
+		public static final String ITEM_UNIT = "unit";
+		public static final String ITEM_DESCRIPTION = "description";
+		public static final String ITEM_CATEGORY = "category_name";
+		public static final String ITEM_UPC = "upc";
 	}
 	
 	/** Constants for Category table in DB */

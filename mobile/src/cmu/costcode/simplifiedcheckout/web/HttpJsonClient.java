@@ -18,7 +18,7 @@ import android.util.Log;
 public class HttpJsonClient {
 	private static final String TAG = "HttpClient";
 
-	public static JSONObject SendHttpPost(String URL, JSONObject jsonObjSend) {
+	public static JSONObject sendHttpPost(String URL, JSONObject jsonObjSend) {
 		try {
 			DefaultHttpClient httpclient = new DefaultHttpClient();
 			HttpPost httpPostRequest = new HttpPost(URL);
@@ -67,7 +67,7 @@ public class HttpJsonClient {
 	}
 	
 	
-	public static JSONObject SendHttpGet(String url) {
+	public static JSONObject sendHttpGet(String url) {
 		InputStream content = null;
 		try {
 			DefaultHttpClient httpclient = new DefaultHttpClient();

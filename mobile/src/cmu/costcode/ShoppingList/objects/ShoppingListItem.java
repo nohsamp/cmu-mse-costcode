@@ -1,13 +1,12 @@
 package cmu.costcode.ShoppingList.objects;
 
-import java.io.Serializable;
+import edu.cmu.cc.sc.model.Item;
 
 /**
  * @author kevin
  *
  */
-public class ShoppingListItem implements Serializable {
-	private static final long serialVersionUID = 2L;
+public class ShoppingListItem {
 
 	private int itemId;
 	private boolean checked;

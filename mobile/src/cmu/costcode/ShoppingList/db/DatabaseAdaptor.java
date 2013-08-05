@@ -1,6 +1,7 @@
 package cmu.costcode.ShoppingList.db;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,10 +15,11 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 import cmu.costcode.ShoppingList.objects.Category;
 import cmu.costcode.ShoppingList.objects.Customer;
-import cmu.costcode.ShoppingList.objects.Item;
 import cmu.costcode.ShoppingList.objects.ShoppingListItem;
 import cmu.costcode.WIFIScanner.AccessPoint;
 import cmu.costcode.ShoppingList.objects.Category.Location;
+import edu.cmu.cc.sc.model.Item;
+import edu.cmu.cc.sc.model.ShoppingList;
 
 public class DatabaseAdaptor {
 	
@@ -61,8 +63,13 @@ public class DatabaseAdaptor {
 		private static final String SQL_CREATE_ITEM =
 			    "CREATE TABLE " + DbContract.ItemEntry.TABLE_NAME + " (" +
 			    DbContract.ItemEntry.ITEM_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
-			    DbContract.ItemEntry.DESCRIPTION + TEXT_TYPE + COMMA_SEP +
-			    DbContract.ItemEntry.CATEGORY_NAME + TEXT_TYPE + 
+			    DbContract.ItemEntry.ITEM_NAME + TEXT_TYPE + COMMA_SEP +
+			    DbContract.ItemEntry.ITEM_PRICE + " FLOAT" + COMMA_SEP +
+			    DbContract.ItemEntry.ITEM_QUANTITY + INT_TYPE + COMMA_SEP +
+			    DbContract.ItemEntry.ITEM_UNIT+ TEXT_TYPE + COMMA_SEP +
+			    DbContract.ItemEntry.ITEM_DESCRIPTION + TEXT_TYPE + COMMA_SEP +
+			    DbContract.ItemEntry.ITEM_CATEGORY + TEXT_TYPE + COMMA_SEP +
+			    DbContract.ItemEntry.ITEM_UPC + TEXT_TYPE + 
 			    " )";
 		
 		private static final String SQL_CREATE_CATEGORY =
@@ -225,13 +232,11 @@ public class DatabaseAdaptor {
 	}
 	
 	
-	public ArrayList<ShoppingListItem> dbGetItemList(int memberId) {
+	public ShoppingList dbGetItemList(int memberId) {
 		// Return cursor location of row with matching memberId
 		Cursor mCursor = db.query(true, DbContract.ListItemEntry.TABLE_NAME, 
 				new String[] {
 					DbContract.ListItemEntry.ITEM_ID,
-					DbContract.ListItemEntry.CHECKED,
-					DbContract.ListItemEntry.POSITION
 				}, DbContract.ListItemEntry.MEMBER_ID + "=" + memberId, null,
 				null, null, null, null);
 		if (mCursor != null && mCursor.getCount() > 0) {
@@ -246,33 +251,29 @@ public class DatabaseAdaptor {
 		
 
 		// Create Customer's list of ListItems mapped to category
-		ArrayList<ShoppingListItem> shoppingList = 
-				new ArrayList<ShoppingListItem>();
+		ShoppingList shoppingList = 
+				new ShoppingList();
+		shoppingList.setId(memberId);
+		shoppingList.setName(dbGetCustomer(memberId).getName() +"'s List");
+		shoppingList.setDate(Calendar.getInstance().getTime());
 		
 		// Iterate through all ShoppingListItems
 		for(int i=0; i<mCursor.getCount(); i++) {
 			// Read ShoppingListItem properties
-			int itemId = mCursor.getInt(
-				    mCursor.getColumnIndexOrThrow(DbContract.ListItemEntry.ITEM_ID)
-					);
 			
-			boolean checked = mCursor.getInt(
-					mCursor.getColumnIndexOrThrow(DbContract.ListItemEntry.CHECKED)
-					) > 0;
-			int position = mCursor.getInt(
-				    mCursor.getColumnIndexOrThrow(DbContract.ListItemEntry.POSITION)
+			long itemId = mCursor.getLong(
+				    mCursor.getColumnIndexOrThrow(DbContract.ListItemEntry.ITEM_ID)
 					);
 			
 			// Get Item object from DB
 			Item item = dbGetItemById(itemId);
-			String category = item.getCategory();
 			
 			// Get list of items for current ListItem category
-			shoppingList.add(new ShoppingListItem(itemId, checked, position, item));
+			shoppingList.addItem(item);
 			mCursor.moveToNext();
 		}
 		
-		Log.i(TAG, "Reading from DB: ShoppingList with " + shoppingList.size() + " items");
+		Log.i(TAG, "Reading from DB: ShoppingList with " + shoppingList.getItems().size() + " items");
 		return shoppingList;
 	}
 	
@@ -282,18 +283,16 @@ public class DatabaseAdaptor {
 	 * @param memberId
 	 * @return
 	 */
-	public Map<String, ArrayList<ShoppingListItem>> dbGetShoppingListItems(int memberId) {
+	public Map<String, ShoppingList> dbGetShoppingList(int memberId) {
 		// Return cursor location of row with matching memberId
-		Cursor mCursor = db.query(true, DbContract.ListItemEntry.TABLE_NAME, 
+		Cursor mCursor = db.query(true, DbContract.ListItemEntry.TABLE_NAME,
 				new String[] {
-					DbContract.ListItemEntry.ITEM_ID,
-					DbContract.ListItemEntry.CHECKED,
-					DbContract.ListItemEntry.POSITION
-				}, DbContract.ListItemEntry.MEMBER_ID + "=" + memberId, null,
-				null, null, null, null);
+				DbContract.ListItemEntry.ITEM_ID
+		}, DbContract.ListItemEntry.MEMBER_ID + "=" + memberId, null,
+		null, null, null, null);
 		if (mCursor != null && mCursor.getCount() > 0) {
 			mCursor.moveToFirst();
-			Log.d(TAG, "Read list of ShoppingListItems for memberId " + memberId 
+			Log.d(TAG, "Read list of ShoppingListItems for memberId " + memberId
 					+ ". Found " + mCursor.getCount() + " matches.");
 		} else {
 			// No matches found
@@ -303,8 +302,8 @@ public class DatabaseAdaptor {
 		
 
 		// Create Customer's list of ListItems mapped to category
-		Map<String, ArrayList<ShoppingListItem>> shoppingList = 
-				new HashMap<String, ArrayList<ShoppingListItem>>();
+		Map<String, ShoppingList> shoppingList = 
+				new HashMap<String, ShoppingList>();
 		
 		// Iterate through all ShoppingListItems
 		for(int i=0; i<mCursor.getCount(); i++) {
@@ -312,28 +311,24 @@ public class DatabaseAdaptor {
 			int itemId = mCursor.getInt(
 				    mCursor.getColumnIndexOrThrow(DbContract.ListItemEntry.ITEM_ID)
 					);
-			boolean checked = mCursor.getInt(
-					mCursor.getColumnIndexOrThrow(DbContract.ListItemEntry.CHECKED)
-					) > 0;
-			int position = mCursor.getInt(
-				    mCursor.getColumnIndexOrThrow(DbContract.ListItemEntry.POSITION)
-					);
 			
 			// Get Item object from DB
 			Item item = dbGetItemById(itemId);
 			String category = item.getCategory();
 			
 			// Get list of items for current ListItem category
-			ArrayList<ShoppingListItem> listItems;
+			ShoppingList list;
 			if(shoppingList.containsKey(category)) {
-				listItems = shoppingList.get(category);
+				list = shoppingList.get(category);
 			} else {
-				listItems = new ArrayList<ShoppingListItem>();
+				list = new ShoppingList();
+				list.setName(memberId + " member shopping list");
+				
 			}
-			listItems.add(new ShoppingListItem(itemId, checked, position, item));
+			list.addItem(item);
 			
 			// Add this ShoppingListItem to shoppingList
-			shoppingList.put(category, listItems);
+			shoppingList.put(category, list);
 			mCursor.moveToNext();
 		}
 		
@@ -347,13 +342,18 @@ public class DatabaseAdaptor {
 	 * @param listId
 	 * @return
 	 */
-	public Item dbGetItemById(int itemId) {
+	public Item dbGetItemById(long itemId) {
 		// Return cursor location of row with matching memberId
 		Cursor mCursor = db.query(true, DbContract.ItemEntry.TABLE_NAME, 
 				new String[] {
 					DbContract.ItemEntry.ITEM_ID,
-					DbContract.ItemEntry.DESCRIPTION,
-					DbContract.ItemEntry.CATEGORY_NAME
+					DbContract.ItemEntry.ITEM_NAME,
+					DbContract.ItemEntry.ITEM_DESCRIPTION,
+					DbContract.ItemEntry.ITEM_PRICE,
+					DbContract.ItemEntry.ITEM_QUANTITY,
+					DbContract.ItemEntry.ITEM_UNIT,
+					DbContract.ItemEntry.ITEM_CATEGORY,
+					DbContract.ItemEntry.ITEM_UPC,
 				}, DbContract.ItemEntry.ITEM_ID + "=" + itemId, null,
 				null, null, null, null);
 		if (mCursor != null && mCursor.getCount() > 0) {
@@ -366,18 +366,33 @@ public class DatabaseAdaptor {
 			return null;
 		}
 		
-		// Read Item description and category from DB
+		// Read Item data from DB
+		String name = mCursor.getString(
+				mCursor.getColumnIndexOrThrow(DbContract.ItemEntry.ITEM_NAME)
+				);
 		String description = mCursor.getString(
-				mCursor.getColumnIndexOrThrow(DbContract.ItemEntry.DESCRIPTION)
+				mCursor.getColumnIndexOrThrow(DbContract.ItemEntry.ITEM_DESCRIPTION)
+				);
+		float price = mCursor.getFloat(
+				mCursor.getColumnIndexOrThrow(DbContract.ItemEntry.ITEM_PRICE)
+				);
+		int quantity = mCursor.getInt(
+				mCursor.getColumnIndexOrThrow(DbContract.ItemEntry.ITEM_QUANTITY)
+				);
+		int unit = mCursor.getInt(
+				mCursor.getColumnIndexOrThrow(DbContract.ItemEntry.ITEM_UNIT)
 				);
 		String category = mCursor.getString(
-			    mCursor.getColumnIndexOrThrow(DbContract.ItemEntry.CATEGORY_NAME)
+			    mCursor.getColumnIndexOrThrow(DbContract.ItemEntry.ITEM_CATEGORY)
+				);
+		String upc = mCursor.getString(
+			    mCursor.getColumnIndexOrThrow(DbContract.ItemEntry.ITEM_UPC)
 				);
 		
 		// Create Item object and return it
 		Log.i(TAG, "Reading from DB: Item (id " + itemId + ") in category '" 
 				+ category + "': '" + description + "'");
-		return new Item(itemId, description, category);
+		return new Item(itemId, category, name, quantity, price, unit, description, upc);
 	}
 	
 	
@@ -511,22 +526,22 @@ public class DatabaseAdaptor {
 	
 	/**
 	 * Create a new row in the ShoppingListItem db; returns memberId
-	 * @param itemId
+	 * @param newItemId
 	 * @param memberId
 	 * @param checked
 	 * @param position
 	 * @return
 	 */
-	public int dbCreateShoppingListItem(int itemId, int memberId, boolean checked, int position) {
+	public long dbCreateShoppingListItem(long newItemId, int memberId, boolean checked, int position) {
 		// Create a new map of values, where column names are the keys
 		ContentValues values = new ContentValues();
-		values.put(DbContract.ListItemEntry.ITEM_ID, itemId);
+		values.put(DbContract.ListItemEntry.ITEM_ID, newItemId);
 		values.put(DbContract.ListItemEntry.MEMBER_ID, memberId);
 		values.put(DbContract.ListItemEntry.CHECKED, checked);
 		values.put(DbContract.ListItemEntry.POSITION, position);
 		
 		// Insert the new row, returning the primary key value of the new row (memberId)
-		return (int)db.insert(DbContract.ListItemEntry.TABLE_NAME, null, values);
+		return db.insert(DbContract.ListItemEntry.TABLE_NAME, null, values);
 	}
 	
 	/**
@@ -535,14 +550,18 @@ public class DatabaseAdaptor {
 	 * @param category
 	 * @return
 	 */
-	public int dbCreateItem(String description, String category) {
+	public long dbCreateItem(String name, String category, int quantity, float price, String upc) {
 		// Create a new map of values, where column names are the keys
 		ContentValues values = new ContentValues();
-		values.put(DbContract.ItemEntry.DESCRIPTION, description);
-		values.put(DbContract.ItemEntry.CATEGORY_NAME, category);
+		values.put(DbContract.ItemEntry.ITEM_NAME, name);
+		values.put(DbContract.ItemEntry.ITEM_CATEGORY, category);
+		values.put(DbContract.ItemEntry.ITEM_QUANTITY, quantity);
+		values.put(DbContract.ItemEntry.ITEM_PRICE, price);
+		values.put(DbContract.ItemEntry.ITEM_UPC, upc);
+
 		
 		// Insert the new row, returning the primary key value of the new row (itemId)
-		return (int)db.insert(DbContract.ItemEntry.TABLE_NAME, null, values);
+		return db.insert(DbContract.ItemEntry.TABLE_NAME, null, values);
 	}
 	
 	/**
@@ -622,11 +641,14 @@ public class DatabaseAdaptor {
 	 * @param description
 	 * @return
 	 */
-	public int dbUpdateItem(int itemId, String category, String description) {
+	public int dbUpdateItem(long itemId, String category, String name, int quantity, float price, String upc) {
 		// Create a new map of values, where column names are the keys
 		ContentValues values = new ContentValues();
-		values.put(DbContract.ItemEntry.CATEGORY_NAME, category);
-		values.put(DbContract.ItemEntry.DESCRIPTION, description);
+		values.put(DbContract.ItemEntry.ITEM_NAME, name);
+		values.put(DbContract.ItemEntry.ITEM_CATEGORY, category);
+		values.put(DbContract.ItemEntry.ITEM_QUANTITY, name);
+		values.put(DbContract.ItemEntry.ITEM_PRICE, category);
+		values.put(DbContract.ItemEntry.ITEM_UPC, upc);
 
 		// Which row to update, based on the ID
 		String selection = DbContract.ItemEntry.ITEM_ID + "=" + itemId;
@@ -778,5 +800,29 @@ public class DatabaseAdaptor {
 				" AND " + DbContract.AlertsEntry.LATITUDE + "=" + latitude +
 				" AND " + DbContract.AlertsEntry.LONGITUDE + "=" + longitude;
 		return (int)db.delete(DbContract.AlertsEntry.TABLE_NAME, selection, null);
+	}
+
+	public ShoppingListItem dbGetShoppingListItem(Item item) {
+		int itemId = (int)item.getId();
+		Cursor mCursor = db.query(true, DbContract.ListItemEntry.TABLE_NAME,
+				new String[] {
+				DbContract.ListItemEntry.CHECKED,
+				DbContract.ListItemEntry.POSITION
+		}, DbContract.ListItemEntry.ITEM_ID + "=" + itemId, null,
+		null, null, null, null);
+		if (mCursor != null && mCursor.getCount() > 0) {
+			mCursor.moveToFirst();
+			Log.d(TAG, "Read ShoppingListItem for itemId (UPC)" + itemId
+					+ ". Found");
+		} else {
+			// No matches found
+			Log.d(TAG, "No ShoppingListItem with itemId (UPC) " + itemId + " found.");
+			return null;
+		}
+		
+		boolean checked = mCursor.getInt(mCursor.getColumnIndexOrThrow(DbContract.ListItemEntry.CHECKED)) > 0;
+		int position = mCursor.getInt(mCursor.getColumnIndexOrThrow(DbContract.ListItemEntry.POSITION));
+
+		return new ShoppingListItem(itemId, checked, position, item);
 	}
 }

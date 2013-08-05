@@ -1,13 +1,13 @@
 package cmu.costcode.ShoppingList;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import cmu.costcode.ShoppingList.R;
 import cmu.costcode.ProximityAlert.NotificationActivity;
 import cmu.costcode.ProximityAlert.ProximityIntentReceiver;
-import cmu.costcode.ProximityAlert.ShoppingListApplication;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -15,6 +15,7 @@ import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Paint;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
@@ -28,16 +29,16 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.ToggleButton;
 import cmu.costcode.ShoppingList.db.DatabaseAdaptor;
-import cmu.costcode.ShoppingList.objects.Category.Location;
 import cmu.costcode.ShoppingList.objects.Customer;
-import cmu.costcode.ShoppingList.objects.Item;
 import cmu.costcode.ShoppingList.objects.ShoppingListItem;
 import cmu.costcode.Triangulation.TriangulationTask;
 import cmu.costcode.simplifiedcheckout.nfc.CustomerNFC;
 import cmu.costcode.simplifiedcheckout.qr.ScanditScanActivity;
 import cmu.costcode.simplifiedcheckout.web.CustomerWeb;
+import cmu.costcode.simplifiedcheckout.web.HttpJsonClient;
+import edu.cmu.cc.sc.model.Item;
+import edu.cmu.cc.sc.model.ShoppingList;
 
 public class ViewListActivity extends Activity  {
 	private final static String TAG = "ViewListActivity";
@@ -45,13 +46,13 @@ public class ViewListActivity extends Activity  {
 	private DatabaseAdaptor db;
 	private Customer cust;
 	
-	private static String TRIANGULATION_START;
-	private static String TRIANGULATION_STOP;
+	private static String triangulationStart;
+	private static String triangulationStop;
 	boolean isTaskStop = true; // flag for task start/stop
 	
-	//TODO: do something real (this is kinda dumb). Make the Category object do something. Map {CategoryName->Loc}
-//	private static Map<String, Location> categories = new HashMap<String, Location>(); 
-
+	final static String SERVER_URL = "http://cmu-mse-costco.herokuapp.com"; // "http://128.237.231.17:5000";
+	private final String API_GET_PRODUCT = "/costco/api/product/";
+	
 	private ProximityIntentReceiver pReceiver = null;
 	private TriangulationTask tTask = null;
 	
@@ -74,14 +75,14 @@ public class ViewListActivity extends Activity  {
 
 		// Load Customer and shoppingList from DB
 		cust = db.dbGetCustomer(memberId);
-		cust.setShoppingList(db.dbGetShoppingListItems(memberId));
+		cust.setShoppingList(db.dbGetShoppingList(memberId));
 
 		// Add list of ShoppingListItems
 		scroll = (ScrollView)findViewById(R.id.viewListScroll);
 		LinearLayout itemList = generateListView(this, cust.getShoppingList());
 		scroll.addView(itemList);
-		TRIANGULATION_START = getString(R.string.triangulation_start);
-		TRIANGULATION_STOP = getString(R.string.triangulation_stop);
+		triangulationStart = getString(R.string.triangulation_start);
+		triangulationStop = getString(R.string.triangulation_stop);
 		
 		// Prepare NFC for sending shopping list to the cashier
 		CustomerNFC customer = new CustomerNFC(ViewListActivity.this, this, db.dbGetItemList(cust.getMemberId()));
@@ -136,7 +137,7 @@ public class ViewListActivity extends Activity  {
 	 * @param shoppingList
 	 */
 	private LinearLayout generateListView(Context ctx,
-			Map<String, ArrayList<ShoppingListItem>> shoppingList) {
+			Map<String, ShoppingList> shoppingList) {
 		// Create the view that will be returned
 		LinearLayout view = new LinearLayout(ctx);
 		view.setOrientation(LinearLayout.VERTICAL);
@@ -153,17 +154,18 @@ public class ViewListActivity extends Activity  {
 		for (String category : shoppingList.keySet()) {
 			Log.i(TAG, "Iterating through category '" + category + "'.");
 
-			if (shoppingList.get(category).size() > 0) {
+			if (shoppingList.get(category).getItems().size() > 0) {
 				// Generate the TextView row to display the category name
 				TextView catRow = new TextView(ctx);
 				catRow.setTextSize(18);
 				catRow.setText(category);
 				view.addView(catRow);
+//				catRow.setTextSize(10);
+//				catRow.setText("Name\tPrice\tQty\tUPC");
 
 				// Iterate through each item within the category
-				for (final ShoppingListItem item : shoppingList.get(category)) {
-					Log.i(TAG, "    Item: " + item.getItem().getDescription()
-							+ " - " + item.isChecked());
+				for (final Item item : shoppingList.get(category).getItems()) {
+					Log.i(TAG, "    Item: " + item.getName());
 					view.addView(createItemCheckbox(ctx, item));
 				}
 			}
@@ -179,11 +181,14 @@ public class ViewListActivity extends Activity  {
 	 * @param item
 	 * @return CheckBox view
 	 */
-	private View createItemCheckbox(Context ctx, final ShoppingListItem item) {
+	private View createItemCheckbox(Context ctx, final Item inputItem) {
+		// Get ShoppingListItem object for input "item"
+		final ShoppingListItem listItem = db.dbGetShoppingListItem(inputItem);
+		
 		// Generate the CheckBox/text row for the item
 		CheckBox checkbox = new CheckBox(ctx);
-		checkbox.setText(item.getItem().getDescription());
-		if (item.isChecked()) {
+		checkbox.setText(inputItem.getName() + ",\t$" + inputItem.getPrice() + ",\tQty:" + inputItem.getQuantity() + ",\tUPC: " + inputItem.getUnit());
+		if (listItem.isChecked()) {
 			checkbox.setChecked(true);
 			checkbox.setPaintFlags(checkbox.getPaintFlags()
 					| Paint.STRIKE_THRU_TEXT_FLAG);
@@ -194,9 +199,9 @@ public class ViewListActivity extends Activity  {
 			@Override
 			public void onCheckedChanged(CompoundButton checkBoxView,
 					boolean isChecked) {
-				Log.i(TAG, "Setting checkbox of item " + item.getItemId()
+				Log.i(TAG, "Setting checkbox of item " + listItem.getItemId()
 						+ " to " + isChecked);
-				db.dbSetItemChecked(cust.getMemberId(), item.getItemId(),
+				db.dbSetItemChecked(cust.getMemberId(), listItem.getItemId(),
 						isChecked);
 				if (isChecked) {
 					checkBoxView.setPaintFlags(checkBoxView.getPaintFlags()
@@ -211,6 +216,7 @@ public class ViewListActivity extends Activity  {
 		return checkbox;
 	}
 	
+
 	/**
 	 * Switch to EditList activity
 	 * 
@@ -245,7 +251,7 @@ public class ViewListActivity extends Activity  {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		super.onOptionsItemSelected(item);
 		
-		if (item.getItemId() == R.id.menu_nfc) {
+		if (item.getItemId() == R.id.menu_web) {
 			CustomerWeb customerWeb = new CustomerWeb(this, cust.getMemberId(), db.dbGetItemList(cust.getMemberId()));
 			customerWeb.broadcastShoppingList(getCurrentFocus());
 		}
@@ -262,7 +268,7 @@ public class ViewListActivity extends Activity  {
 					Intent intent = new Intent(this, NotificationActivity.class);
 					startActivity(intent);
 				}
-				else if(!item.getTitle().equals(TRIANGULATION_STOP)) {
+				else if(!item.getTitle().equals(triangulationStop)) {
 	
 					// Register Broadcaster receiver for proximity alert 
 					IntentFilter proximityFilter = new IntentFilter();
@@ -280,10 +286,10 @@ public class ViewListActivity extends Activity  {
 					tTask.execute();
 					isTaskStop = false;
 	
-					item.setTitle(TRIANGULATION_STOP);
+					item.setTitle(triangulationStop);
 				}
 				else {
-					item.setTitle(TRIANGULATION_START);
+					item.setTitle(triangulationStart);
 	
 					// Unregister Broadcaster receiver for proximity alert 
 					unregisterReceiver(pReceiver);	// stop ProximityAlert
@@ -322,13 +328,19 @@ public class ViewListActivity extends Activity  {
 	    {
 	        String barcode = data.getStringExtra("barcode");
 	        try {
-	        	// barcode format should be "category/item description"
-		        String[] splits = barcode.split("/");
-		        // parameters: category, desc
-		        addItem(splits[0], splits[1]);
+//	        	// barcode format should be "category/item description"
+//		        String[] splits = barcode.split("/");
+//		        // parameters: category, desc, quantity, price, upc
+//		        addItem(splits[0], splits[1], 1, 10, "sampleupc");
+		        
+		    	// Send barcode to server to be processed
+		        String requestUrl = SERVER_URL + API_GET_PRODUCT + barcode;
+		        Log.i(TAG, "Getting barcode from server at: " + requestUrl);
+		        sendAsyncGetRequest(requestUrl, this);
 	        }
 	        catch(Exception e) {
 	        	Toast.makeText(this, "Scan fail: not an item." + barcode, Toast.LENGTH_SHORT).show();
+	        	Log.e(TAG, "Item scan failed; Exception=" + e.toString());
 	        }
 		}
 	    else if(resultCode == RESULT_CANCELED)
@@ -337,20 +349,63 @@ public class ViewListActivity extends Activity  {
 	    }
 	}
 	
-	private void addItem(String category, String desc) {
+	/**
+	 * Call an asynchronous GET request to the server to retrieve product information
+	 * @param requestUrl
+	 * @param ctx
+	 */
+	private void sendAsyncGetRequest(String requestUrl, final Context ctx) {
+		new AsyncTask<String, Void, JSONObject>() {
+			@Override
+			protected JSONObject doInBackground(String... urls) {
+				JSONObject jsonObjRecv = HttpJsonClient.sendHttpGet(urls[0]);
+				return jsonObjRecv;
+			}
+
+			@Override
+			protected void onPostExecute(JSONObject jsonObjRecv) {
+				if(jsonObjRecv == null) {
+					// Fail
+					Toast.makeText(ctx, "Something broked. :( \nCheck the looogs.", Toast.LENGTH_LONG).show();
+				} else {
+					// Success
+					//TODO: check to see if successful get; response code 201 in HttpJsonClient
+					//TODO: catch exceptions
+					Log.i(TAG, "Flask Server Response!: " + jsonObjRecv.toString());
+
+					try {
+						// Pull out parameters from JSON
+						String name = jsonObjRecv.getString("name");
+						String category = jsonObjRecv.getString("category");
+						float price = (float)jsonObjRecv.getDouble("price");
+						String upc = jsonObjRecv.getString("upc");
+						// Create new item
+						addItem(category, name, 1, price, upc);
+						Toast.makeText(ctx, "Added new item ", Toast.LENGTH_LONG).show();
+					} catch(JSONException e) {
+						Toast.makeText(ctx, "Invalid response; did not add item. :(", Toast.LENGTH_LONG).show();
+						Log.e(TAG, "Error adding item from server:" + e.toString());
+					}
+				}
+			}
+		}.execute(requestUrl);
+	}
+	
+	private void addItem(String category, String desc, int quantity, float price, String upc) {
 		// Add new item to database and ShoppingList
-		int newItemId = db.dbCreateItem(desc, category);
+		long newItemId = db.dbCreateItem(desc, category, quantity, price, upc);
 		db.dbCreateShoppingListItem(newItemId, cust.getMemberId(), false, 0);
 		
-		Item newItem = new Item(newItemId, desc, category);
-		Map<String, ArrayList<ShoppingListItem>> newShoppingList = cust.getShoppingList();
-		ArrayList<ShoppingListItem> addedItem = newShoppingList.get(category);
+		Item newItem = new Item(newItemId, category, desc, quantity, price, 0, desc, upc);
+		Map<String, ShoppingList> newShoppingList = cust.getShoppingList();
+		ShoppingList addedItem = newShoppingList.get(category);
 		if(addedItem == null) {
-			addedItem = new ArrayList<ShoppingListItem>();
+			addedItem = new ShoppingList();
 		}
-		addedItem.add(new ShoppingListItem(newItemId, false, 0, newItem));
+		addedItem.addItem(newItem);
 		newShoppingList.put(category, addedItem);
 		cust.setShoppingList(newShoppingList);
+		
 		
 		scroll.removeAllViewsInLayout();
 		scroll.addView(this.generateListView(this,newShoppingList));

@@ -100,15 +100,15 @@ public class LoginActivity extends Activity {
     		Log.d(TAG, "Created Dummy member Kevin with memberId " + memberId + ".");
 
     		
-    		long itemId1 = dbHelper.dbCreateItem("Harry Potter, Book 3", "Books/Magazines", 1, 17.50f, "0038332164718");
+    		long itemId1 = dbHelper.dbCreateItem("Harry Potter, Book 3", "Books/Magazines", 1, 6.49f, "0038332164718");
     		dbHelper.dbCreateShoppingListItem(itemId1, memberId, false, 1);
     		Log.d(TAG, "Created dummy item Milk with itemId " + itemId1 + ".");
 
-    		long itemId2 = dbHelper.dbCreateItem("Uncrustables", "Food", 1, 5.37f, "0051500048160");
+    		long itemId2 = dbHelper.dbCreateItem("Uncrustables", "Food", 1, 3.99f, "0051500048160");
     		dbHelper.dbCreateShoppingListItem(itemId2, memberId, false, 2);
     		Log.d(TAG, "Created dummy item Cheez-its with itemId " + itemId2 + ".");
 
-    		long itemId3 = dbHelper.dbCreateItem("North Face Denali jacket", "Clothing", 1, 124, "0032546198033");
+    		long itemId3 = dbHelper.dbCreateItem("North Face Denali jacket", "Clothing", 1, 116.32f, "0032546198033");
     		dbHelper.dbCreateShoppingListItem(itemId3, memberId, false, 3);
     		Log.d(TAG, "Created dummy item New Jacket with itemId " + itemId3 + ".");
     	}

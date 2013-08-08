@@ -9,9 +9,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import cmu.costcode.ShoppingList.objects.ShoppingList;
-import cmu.costcode.ShoppingList.objects.StoreItem;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -19,13 +16,16 @@ import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import cmu.costcode.R;
+import cmu.costcode.ShoppingList.objects.ShoppingList;
+import cmu.costcode.ShoppingList.objects.StoreItem;
+import cmu.costcode.simplifiedcheckout.web.HttpJsonClient;
 
 
 public class ListQRDisplayActivity extends Activity {
@@ -54,19 +54,7 @@ public class ListQRDisplayActivity extends Activity {
 		String safeUrlToCall = urlToCall.replace(":", "%3A").replace("/", "%2F");
 		
 		// Get shopping list extra and set to display receipt
-		try {
-			JSONObject shoppingListJson = new JSONObject(intent.getStringExtra("ShoppingList"));
-			shoppingList = createShoppingListFromJson(shoppingListJson);
-		} catch (JSONException e) {
-			Toast.makeText(this, "Invalid shopping list. :(", Toast.LENGTH_SHORT).show();
-			e.printStackTrace();
-		}
-		TextView receiptView = (TextView)findViewById(R.id.qrTextReceipt);
-		if(shoppingList != null) {
-    		receiptView.setText(shoppingList.toString());
-    		Toast.makeText(this, "Successfully retrieved shopping list from server!", Toast.LENGTH_SHORT).show();
-    		//TODO: Test that this works Kevin
-    	}
+		asyncGetReceipt(urlToCall, this);
 		
 		// Load view resources
 		imgView = (ImageView)findViewById(R.id.qrImageView);
@@ -74,7 +62,7 @@ public class ListQRDisplayActivity extends Activity {
 
 		// Request new QR code
 		String apiCallString = SCANDIT_API_URL_HEAD + safeUrlToCall + SCANDIT_API_URL_TAIL + SCANDIT_API_KEY;
-		sendAsyncGetRequest(apiCallString, this);
+		asyncGetQrCode(apiCallString, this);
 	}
 
 	/**
@@ -106,7 +94,7 @@ public class ListQRDisplayActivity extends Activity {
 	 * @param requestUrl
 	 * @param ctx
 	 */
-	private void sendAsyncGetRequest(String requestUrl, final Context ctx) {
+	private void asyncGetQrCode(String requestUrl, final Context ctx) {
 		new AsyncTask<String, Void, Drawable>() {
 			@Override
 			protected Drawable doInBackground(String... urls) {
@@ -133,6 +121,39 @@ public class ListQRDisplayActivity extends Activity {
 					urlTextView.setText(urlToCall);
 				}
 			}
+		}.execute(requestUrl);
+	}
+	
+	/**
+	 * Call an asynchronous GET request to the server to save a shopping list.
+	 * @param requestUrl
+	 * @param ctx
+	 */
+	private void asyncGetReceipt(String requestUrl, final Context ctx) {
+		new AsyncTask<String, Void, JSONObject>() {
+		    @Override
+		    protected JSONObject doInBackground(String... urls) {
+				JSONObject jsonObjRecv = HttpJsonClient.sendHttpGet(urls[0]);
+				return jsonObjRecv;
+		    }
+		
+		    @Override
+		    protected void onPostExecute(JSONObject jsonObjRecv) {
+		    	if(jsonObjRecv == null) {
+		    		// Fail
+		    		Toast.makeText(ctx, "Something broked. :( \nCheck the looogs.", Toast.LENGTH_LONG).show();
+		    	} else {
+		    		// Success
+			    	Log.i(TAG, "Flask Server Response!: " + jsonObjRecv.toString());
+			    	shoppingList = createShoppingListFromJson(jsonObjRecv);
+			    	TextView receiptView = (TextView)findViewById(R.id.qrTextReceipt);
+					if(shoppingList != null) {
+			    		receiptView.setText(shoppingList.toString());
+			    		Toast.makeText(ctx, "Successfully retrieved shopping list from server!", Toast.LENGTH_SHORT).show();
+			    		//TODO: Test that this works Kevin
+			    	}
+		    	}
+		    }
 		}.execute(requestUrl);
 	}
 	

@@ -187,7 +187,7 @@ public class ViewListActivity extends Activity  {
 		
 		// Generate the CheckBox/text row for the item
 		CheckBox checkbox = new CheckBox(ctx);
-		checkbox.setText(inputItem.getName() + ",\t$" + inputItem.getPrice() + ",\tQty:" + inputItem.getQuantity() + ",\tUPC: " + inputItem.getUnit());
+		checkbox.setText(inputItem.getName() + ",\t$" + inputItem.getPrice() + ",\tQty:" + inputItem.getQuantity() + ",\tUPC: " + inputItem.getUpc());
 		if (listItem.isChecked()) {
 			checkbox.setChecked(true);
 			checkbox.setPaintFlags(checkbox.getPaintFlags()

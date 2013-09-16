@@ -27,9 +27,15 @@
         <TextView 
             style="@style/formFieldLabel" 
             android:text="@string/sl_item_category" />
-        <edu.cmu.cc.sc.view.ItemCategorySpinner
+<!--         <edu.cmu.cc.sc.view.ItemCategorySpinner
             android:id="@+id/sp_sl_item_category"
-            style="@style/formField.spinner" />
+            style="@style/formField.spinner" /> -->
+        
+        <Spinner
+		    android:id="@+id/editNewItemCategories"
+		    android:layout_width="150dp"
+		    android:layout_height="wrap_content"
+		    android:entries="@array/categories" />
     </TableRow>
     
     <!-- NAME -->

@@ -129,7 +129,7 @@ public class CashierWeb {
 			for(int i=0; i< orders.length(); i++) {
 				JSONObject order = orders.getJSONObject(i);
 				long itemId = order.getLong("id");
-				String category = "Food"; //order.getString("category"); // TODO: category check on mobile app
+				String category = "Item List"; //order.getString("category"); // TODO: category check on mobile app
 				String name = order.getString("name");
 				String upc = order.getString("upc");
 				float price = (float)order.getDouble("price");

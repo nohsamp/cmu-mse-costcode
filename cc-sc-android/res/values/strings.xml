@@ -11,5 +11,26 @@
     <string name="tab_sl_active">ACTIVE LIST</string>
     <string name="tab_sl_settings">SETTINGS</string>
     <string name="tab_sl_get">GET LIST</string>
+    
+    <string-array name="categories">
+        <item>Appliances</item>
+        <item>Baby/Toys</item>
+        <item>Books/Magazines</item>
+        <item>Clothing</item>
+        <item>Computers</item>
+        <item>Electronics</item>
+        <item>Food</item>
+        <item>Furniture</item>
+        <item>Gifts</item>
+        <item>Hardware</item>
+        <item>Health/Beauty</item>
+        <item>Home/Seasonal</item>
+        <item>Jewelry</item>
+        <item>Office</item>
+        <item>Patio/Garden</item>
+        <item>Pets</item>
+        <item>Sports</item>
+        <item>Others</item>
+    </string-array>
 	
 </resources>

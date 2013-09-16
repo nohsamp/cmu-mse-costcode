@@ -8,6 +8,9 @@
 package edu.cmu.cc.sc;
 
 public final class R {
+    public static final class array {
+        public static final int categories=0x7f060000;
+    }
     public static final class attr {
     }
     public static final class dimen {
@@ -39,31 +42,31 @@ public final class R {
         public static final int songs_white=0x7f02000f;
     }
     public static final class id {
-        public static final int allshoppinglists_title=0x7f070006;
-        public static final int btnGetQR=0x7f07000e;
-        public static final int btnGetWeb=0x7f070010;
-        public static final int btn_active_sl_row_item_delete=0x7f070004;
-        public static final int btn_sl_all_row_delete=0x7f070009;
-        public static final int btn_sl_all_row_items_edit=0x7f070008;
-        public static final int et_sl_comment=0x7f07000d;
-        public static final int et_sl_item_comment=0x7f070016;
-        public static final int et_sl_item_name=0x7f070012;
-        public static final int et_sl_item_price=0x7f070015;
-        public static final int et_sl_item_quantity=0x7f070013;
-        public static final int et_sl_name=0x7f07000b;
-        public static final int iv_tab_indicator_icon=0x7f070017;
-        public static final int sl_get_customerId=0x7f07000f;
-        public static final int sp_sl_item_category=0x7f070011;
-        public static final int sp_sl_item_unit=0x7f070014;
-        public static final int tv_active_sl_group_name=0x7f070001;
-        public static final int tv_active_sl_row_item_details=0x7f070005;
-        public static final int tv_active_sl_row_item_mark=0x7f070002;
-        public static final int tv_active_sl_row_item_name=0x7f070003;
-        public static final int tv_active_sl_title=0x7f070000;
-        public static final int tv_sl_all_row_date=0x7f07000a;
-        public static final int tv_sl_all_row_name=0x7f070007;
-        public static final int tv_sl_date=0x7f07000c;
-        public static final int tv_tab_indicator_title=0x7f070018;
+        public static final int allshoppinglists_title=0x7f080006;
+        public static final int btnGetQR=0x7f08000e;
+        public static final int btnGetWeb=0x7f080010;
+        public static final int btn_active_sl_row_item_delete=0x7f080004;
+        public static final int btn_sl_all_row_delete=0x7f080009;
+        public static final int btn_sl_all_row_items_edit=0x7f080008;
+        public static final int et_sl_comment=0x7f08000d;
+        public static final int et_sl_item_comment=0x7f080016;
+        public static final int et_sl_item_name=0x7f080012;
+        public static final int et_sl_item_price=0x7f080015;
+        public static final int et_sl_item_quantity=0x7f080013;
+        public static final int et_sl_name=0x7f08000b;
+        public static final int iv_tab_indicator_icon=0x7f080017;
+        public static final int sl_get_customerId=0x7f08000f;
+        public static final int sp_sl_item_category=0x7f080011;
+        public static final int sp_sl_item_unit=0x7f080014;
+        public static final int tv_active_sl_group_name=0x7f080001;
+        public static final int tv_active_sl_row_item_details=0x7f080005;
+        public static final int tv_active_sl_row_item_mark=0x7f080002;
+        public static final int tv_active_sl_row_item_name=0x7f080003;
+        public static final int tv_active_sl_title=0x7f080000;
+        public static final int tv_sl_all_row_date=0x7f08000a;
+        public static final int tv_sl_all_row_name=0x7f080007;
+        public static final int tv_sl_date=0x7f08000c;
+        public static final int tv_tab_indicator_title=0x7f080018;
     }
     public static final class layout {
         public static final int active_sl=0x7f030000;
@@ -312,15 +315,15 @@ public final class R {
             backward-compatibility can go here.
         
          */
-        public static final int AppBaseTheme=0x7f060005;
+        public static final int AppBaseTheme=0x7f070005;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int SLHTheme=0x7f060006;
-        public static final int formField=0x7f060002;
-        public static final int formField_spinner=0x7f060004;
-        public static final int formField_text=0x7f060003;
-        public static final int formFieldLabel=0x7f060001;
-        public static final int formHeader=0x7f060000;
+        public static final int SLHTheme=0x7f070006;
+        public static final int formField=0x7f070002;
+        public static final int formField_spinner=0x7f070004;
+        public static final int formField_text=0x7f070003;
+        public static final int formFieldLabel=0x7f070001;
+        public static final int formHeader=0x7f070000;
     }
 }

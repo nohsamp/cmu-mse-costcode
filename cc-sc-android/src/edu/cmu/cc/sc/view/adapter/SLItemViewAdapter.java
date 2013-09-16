@@ -153,7 +153,7 @@ public class SLItemViewAdapter extends AbstractViewAdapter {
 		
 		String strPrice =
 				WidgetUtils.getEditTextAsString(view, R.id.et_sl_item_price);
-		item.setPrice(Integer.parseInt(strPrice));
+		item.setPrice(Float.parseFloat(strPrice));
 		
 		//---------------------------------------------------
 		// ITEM: Comment
@@ -221,9 +221,9 @@ public class SLItemViewAdapter extends AbstractViewAdapter {
 		
 		synchronized (validatingViews) {
 			
-			assignValidatorToView(parentView, R.id.sp_sl_item_category, 
-					R.string.sl_item_category, 
-					new OptionalSelectionSpinnerValidator());
+//			assignValidatorToView(parentView, R.id.sp_sl_item_category, 
+//					R.string.sl_item_category, 
+//					new OptionalSelectionSpinnerValidator());
 			
 			assignValidatorToView(parentView, R.id.et_sl_item_name, 
 					R.string.sl_item_name, 

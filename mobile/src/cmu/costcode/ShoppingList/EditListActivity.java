@@ -175,7 +175,7 @@ public class EditListActivity extends Activity {
 				EditText itemTextView = (EditText)listItem.findViewById(R.id.editItemText);
 				long itemId = (Long)listItem.getTag();
 				//TODO: change this pronto; user shouldn't have to enter prices or UPCs
-				db.dbUpdateItem(itemId, category, itemTextView.getText().toString(), 1, 0.0f, "111222333444"); 
+				db.dbUpdateItemName(itemId, category, itemTextView.getText().toString());//, 1, 0.0f, "111222333444"); 
 			}
 		}
 	}

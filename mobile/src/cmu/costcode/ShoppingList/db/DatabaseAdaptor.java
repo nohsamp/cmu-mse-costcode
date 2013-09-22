@@ -641,14 +641,14 @@ public class DatabaseAdaptor {
 	 * @param description
 	 * @return
 	 */
-	public int dbUpdateItem(long itemId, String category, String name, int quantity, float price, String upc) {
+	public int dbUpdateItemName(long itemId, String category, String name) { //, int quantity, float price, String upc) {
 		// Create a new map of values, where column names are the keys
 		ContentValues values = new ContentValues();
 		values.put(DbContract.ItemEntry.ITEM_NAME, name);
 		values.put(DbContract.ItemEntry.ITEM_CATEGORY, category);
-		values.put(DbContract.ItemEntry.ITEM_QUANTITY, name);
-		values.put(DbContract.ItemEntry.ITEM_PRICE, category);
-		values.put(DbContract.ItemEntry.ITEM_UPC, upc);
+//		values.put(DbContract.ItemEntry.ITEM_QUANTITY, quantity);
+//		values.put(DbContract.ItemEntry.ITEM_PRICE, price);
+//		values.put(DbContract.ItemEntry.ITEM_UPC, upc);
 
 		// Which row to update, based on the ID
 		String selection = DbContract.ItemEntry.ITEM_ID + "=" + itemId;

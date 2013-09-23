@@ -4,7 +4,6 @@
  */
 package edu.cmu.cc.sc.view.adapter;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 
 import android.content.Context;
@@ -19,7 +18,6 @@ import edu.cmu.cc.android.view.validation.spinner.OptionalSelectionSpinnerValida
 import edu.cmu.cc.sc.ApplicationState;
 import edu.cmu.cc.sc.R;
 import edu.cmu.cc.sc.model.Item;
-import edu.cmu.cc.sc.model.ItemCategory;
 import edu.cmu.cc.sc.view.validator.textview.CommentValidator;
 import edu.cmu.cc.sc.view.validator.textview.MoneyValidator;
 import edu.cmu.cc.sc.view.validator.textview.NameValidator;
@@ -166,10 +164,11 @@ public class SLItemViewAdapter extends AbstractViewAdapter {
 		// ITEM: Category
 		//---------------------------------------------------
 		
-//		Object selectedCategory = 
-//				WidgetUtils.getSpinner(view, R.id.sp_sl_item_category)
-//					.getSelectedItem();
-//		
+		String selectedCategory = 
+				(String) WidgetUtils.getSpinner(view, R.id.sp_sl_item_category)
+					.getSelectedItem();
+		item.setCategory(selectedCategory);
+		
 //		if (selectedCategory instanceof ItemCategory) {
 //			item.setCategory(((ItemCategory) selectedCategory).getName());
 //		} else {

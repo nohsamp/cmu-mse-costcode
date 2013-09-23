@@ -100,6 +100,12 @@ public class SaveSLItemTask extends AsyncTask<Item, Void, Void> {
 			}
 			Item item = params[0];
 			
+			//---------------------------------------------------
+			// Saving ShoppingListItem
+			//---------------------------------------------------
+			
+			saveSLItem(item);
+			
 		} catch (Throwable t) {
 			errorState = true;
 			caller.onAsyncTaskFailed(this.getClass(), t);

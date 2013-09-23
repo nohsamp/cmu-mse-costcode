@@ -134,7 +134,7 @@ public class CashierWeb {
 				String upc = order.getString("upc");
 				float price = (float)order.getDouble("price");
 				int quantity = order.getInt("quantity");
-				shoppingList.addItem(new Item(itemId, category, name, quantity, price, 0, null, upc));
+				shoppingList.addItem(new Item(itemId, category, name, quantity, price, 1, null, upc));
 			}
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block

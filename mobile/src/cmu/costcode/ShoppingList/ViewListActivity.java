@@ -5,9 +5,7 @@ import java.util.Map;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import cmu.costcode.R;
-import cmu.costcode.ProximityAlert.NotificationActivity;
-import cmu.costcode.ProximityAlert.ProximityIntentReceiver;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -29,6 +27,9 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
+import cmu.costcode.R;
+import cmu.costcode.ProximityAlert.NotificationActivity;
+import cmu.costcode.ProximityAlert.ProximityIntentReceiver;
 import cmu.costcode.ShoppingList.db.DatabaseAdaptor;
 import cmu.costcode.ShoppingList.objects.Customer;
 import cmu.costcode.ShoppingList.objects.ShoppingListItem;
@@ -64,7 +65,7 @@ public class ViewListActivity extends Activity  {
 
 		// Set the text view as the activity layout
 		setContentView(R.layout.activity_view_list);
-
+		
 		// Open database
 		db = new DatabaseAdaptor(this);
 		db.open();
@@ -252,6 +253,7 @@ public class ViewListActivity extends Activity  {
 		super.onOptionsItemSelected(item);
 		
 		if (item.getItemId() == R.id.menu_web) {
+			// Send the list to the cashier for the server
 			CustomerWeb customerWeb = new CustomerWeb(this, cust.getMemberId(), db.dbGetItemList(cust.getMemberId()));
 			customerWeb.broadcastShoppingList(getCurrentFocus());
 		}
@@ -304,6 +306,16 @@ public class ViewListActivity extends Activity  {
 		}
 
 		return true;
+	}
+	
+	
+	/**
+	 * Send shopping list to server for processing
+	 * @param view
+	 */
+	public void sendList(View view) {
+		CustomerWeb customerWeb = new CustomerWeb(view.getContext(), cust.getMemberId(), db.dbGetItemList(cust.getMemberId()));
+		customerWeb.broadcastShoppingList(getCurrentFocus());
 	}
 
 	/**

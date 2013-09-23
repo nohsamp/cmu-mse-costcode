@@ -29,3 +29,5 @@ keystorepword
 
 # Python stuff
 *.pyc
+
+*.jar

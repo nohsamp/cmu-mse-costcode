@@ -32,7 +32,8 @@
     <application
         android:name="cmu.costcode.ProximityAlert.ShoppingListApplication"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" >
+        android:label="@string/app_name" 
+         >
         <activity
             android:name="cmu.costcode.ShoppingList.WiFiScanSettingsActivity"
             android:label="@string/title_activity_wi_fi_scan_settings" >
@@ -43,16 +44,15 @@
         <activity
             android:name="cmu.costcode.ShoppingList.LoginActivity"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="cmu.costcode.ShoppingList.ViewListActivity"
             android:label="@string/title_activity_view_list"
             android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LoginActivity" />

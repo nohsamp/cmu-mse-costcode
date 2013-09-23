@@ -11,6 +11,8 @@ import android.widget.EditText;
 import cmu.costcode.R;
 import cmu.costcode.ShoppingList.db.DatabaseAdaptor;
 
+// TODO: not needed in current implementation; can be extended later to add log-in functionality
+
 public class LoginActivity extends Activity {
 	private DatabaseAdaptor dbHelper;
 	public final static String MEMBERID = "MEMBERID";

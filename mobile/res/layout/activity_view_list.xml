@@ -61,18 +61,27 @@
 
         <Button
             android:id="@+id/scanItemButton"
-            android:layout_width="157dp"
+            android:layout_width="105dp"
             android:layout_height="wrap_content"
             android:onClick="scanItem"
             android:text="@string/scanItemButtonText" />
 
         <Button
-            android:id="@+id/viewListEditButton"
-            android:layout_width="146dp"
+            android:id="@+id/sendListButton"
+            android:layout_width="105dp"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/scanItemButton"
             android:layout_alignBottom="@+id/scanItemButton"
             android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/viewListEditButton"
+            android:onClick="sendList"
+            android:text="Submit List" />
+
+        <Button
+            android:id="@+id/viewListEditButton"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/scanItemButton"
             android:onClick="editList"
             android:text="@string/viewListEditButtonText" />

@@ -9,10 +9,16 @@
 *.class
 
 # generated files
+bin/
+gen/
 mobile/bin/
 mobile/gen/
-*/bin/
-*/gen/
+cc-android-library/bin/
+cc-android-library/gen/
+cc-sc-android/bin/
+cc-sc-android/gen/
+cc-android-library/bin/
+cc-android-library/gen/
 
 # Local configuration file (sdk path, etc)
 local.properties

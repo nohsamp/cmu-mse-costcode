@@ -3,7 +3,7 @@
 
     <!-- Global Application Sources -->
     
-    <string name="app_name">Costco SC Cashier</string>
+    <string name="app_name">Costco - SC Cashier</string>
     <string name="image_logo">Logo</string>
     <string name="error_unspecified">Unspecified error.</string>
     

@@ -14,35 +14,32 @@
             android:layout_height="wrap_content"
             android:paddingLeft="5sp"
             android:gravity="left"/>
-        
-        <LinearLayout 
-            android:orientation="horizontal" 
-            android:layout_width="fill_parent" 
-            android:layout_height="wrap_content" 
-            android:paddingRight="5sp" 
-            android:paddingLeft="25sp"
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
             android:gravity="right"
-            android:layout_gravity="right">
-  			
+            android:orientation="horizontal"
+            android:paddingLeft="25sp"
+            android:paddingRight="5sp" >
+
             <ImageView
-  			    android:id="@+id/btn_sl_all_row_items_edit"
-  			    android:layout_width="wrap_content" 
-  			    android:layout_height="wrap_content"
-  			    android:src="@drawable/edit"
-  			    android:paddingLeft="10sp"
-  			    android:contentDescription="@string/sl_items_edit"
-  			    android:layout_gravity="right"/>
-            
-  			<ImageView
-  			    android:id="@+id/btn_sl_all_row_delete"
-  			    android:layout_width="wrap_content" 
-  			    android:layout_height="wrap_content"
-  			    android:src="@drawable/delete"
-  			    android:paddingLeft="10sp"
-  			    android:contentDescription="@string/sl_delete"
-  			    android:layout_gravity="right"/>
-  			
-  		</LinearLayout>
+                android:id="@+id/btn_sl_all_row_items_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/sl_items_edit"
+                android:paddingLeft="10sp"
+                android:src="@drawable/edit" />
+
+            <ImageView
+                android:id="@+id/btn_sl_all_row_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:contentDescription="@string/sl_delete"
+                android:paddingLeft="20sp"
+                android:src="@drawable/delete" />
+        </LinearLayout>
         
     </TableRow>
     

@@ -73,6 +73,7 @@ public class ViewListActivity extends Activity  {
 		// Get the message from the intent
 		Intent intent = getIntent();
 		int memberId = intent.getIntExtra(LoginActivity.MEMBERID, 1);
+		createDummyInfo();		// Create dummy user and product information
 
 		// Load Customer and shoppingList from DB
 		cust = db.dbGetCustomer(memberId);
@@ -422,4 +423,28 @@ public class ViewListActivity extends Activity  {
 		scroll.removeAllViewsInLayout();
 		scroll.addView(this.generateListView(this,newShoppingList));
 	}
+	
+	/**
+     * TODO: Temp method, intended to generate a few dummy values and test user
+     */
+    final int DUMMY_MEMBER_ID = 1;
+    private void createDummyInfo() {
+    	if(db.dbGetCustomer(DUMMY_MEMBER_ID) == null) {
+    		int memberId = db.dbCreateCustomer("Kevin", "Crane", "515 S Aiken Ave");
+    		memberId = 1;
+    		Log.d(TAG, "Created Dummy member Kevin with memberId " + memberId + ".");
+    		
+    		long itemId1 = db.dbCreateItem("Harry Potter, Book 3", "Books/Magazines", 1, 6.49f, "0038332164718");
+    		db.dbCreateShoppingListItem(itemId1, memberId, false, 1);
+    		Log.d(TAG, "Created dummy item Milk with itemId " + itemId1 + ".");
+
+    		long itemId2 = db.dbCreateItem("Uncrustables", "Food", 1, 3.99f, "0051500048160");
+    		db.dbCreateShoppingListItem(itemId2, memberId, false, 2);
+    		Log.d(TAG, "Created dummy item Cheez-its with itemId " + itemId2 + ".");
+
+    		long itemId3 = db.dbCreateItem("North Face Denali jacket", "Clothing", 1, 116.32f, "0032546198033");
+    		db.dbCreateShoppingListItem(itemId3, memberId, false, 3);
+    		Log.d(TAG, "Created dummy item New Jacket with itemId " + itemId3 + ".");
+    	}
+    }
 }

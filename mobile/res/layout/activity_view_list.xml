@@ -5,49 +5,35 @@
     android:orientation="vertical" >
 
     <!-- Header/Page Title -->
-    <TextView
-        android:id="@+id/viewListHeader"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="@string/app_name"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    
+	<LinearLayout
+		android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3">
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:adjustViewBounds="true"
+	        android:src="@drawable/costco_logo_banner" />
+	</LinearLayout>
+
     <!-- Shopping List Items -->
+
     <ScrollView
         android:id="@+id/viewListScroll"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_gravity="bottom" >
     </ScrollView>
-    
-    
+
     <!-- Bottom Divider -->
 
-	<View
-		android:layout_width="fill_parent"
-		android:layout_height="1dp"
-		android:background="@android:color/darker_gray"/>
-    
-	<!-- Toggle Proximity Alerts
-    <RelativeLinearLayout
-		android:layout_width="match_parent"
-		android:layout_height="match_parent" >
-		<TextView
-			android:id="@+id/textView1"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="@string/toggleProxAlertLabel"
-			android:textAppearance="?android:attr/textAppearanceMedium" />
-		<ToggleButton
-			android:id="@+id/toggleButton1"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content" 
-			android:onClick="toggleProximityAlerts" />
-	</RelativeLinearLayout>
-	-->
-    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
 
     <!-- Bottom Button: Edit List -->
 
@@ -85,9 +71,6 @@
             android:layout_toRightOf="@+id/scanItemButton"
             android:onClick="editList"
             android:text="@string/viewListEditButtonText" />
-
     </RelativeLayout>
-
-    
 
 </LinearLayout>

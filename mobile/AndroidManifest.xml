@@ -31,8 +31,9 @@
 
     <application
         android:name="cmu.costcode.ProximityAlert.ShoppingListApplication"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/costco_logo"
         android:label="@string/app_name" 
+		android:theme="@android:style/Theme.NoTitleBar"
          >
         <activity
             android:name="cmu.costcode.ShoppingList.WiFiScanSettingsActivity"

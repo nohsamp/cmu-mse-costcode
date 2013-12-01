@@ -45,7 +45,7 @@ public class ListQRDisplayActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_list_qrdisplay);
 		// Show the Up button in the action bar.
-		setupActionBar();
+//		setupActionBar();
 
 		// Get customer ID and build a QR code
 		Intent intent = getIntent();

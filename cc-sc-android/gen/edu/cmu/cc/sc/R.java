@@ -48,7 +48,6 @@ public final class R {
         public static final int btn_active_sl_row_item_delete=0x7f080004;
         public static final int btn_sl_all_row_delete=0x7f080009;
         public static final int btn_sl_all_row_items_edit=0x7f080008;
-        public static final int editNewItemCategories=0x7f080011;
         public static final int et_sl_comment=0x7f08000d;
         public static final int et_sl_item_comment=0x7f080016;
         public static final int et_sl_item_name=0x7f080012;
@@ -57,6 +56,7 @@ public final class R {
         public static final int et_sl_name=0x7f08000b;
         public static final int iv_tab_indicator_icon=0x7f080017;
         public static final int sl_get_customerId=0x7f08000f;
+        public static final int sp_sl_item_category=0x7f080011;
         public static final int sp_sl_item_unit=0x7f080014;
         public static final int tv_active_sl_group_name=0x7f080001;
         public static final int tv_active_sl_row_item_details=0x7f080005;

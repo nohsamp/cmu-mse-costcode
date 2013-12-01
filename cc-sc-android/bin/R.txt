@@ -23,7 +23,6 @@ int id btnGetWeb 0x7f080010
 int id btn_active_sl_row_item_delete 0x7f080004
 int id btn_sl_all_row_delete 0x7f080009
 int id btn_sl_all_row_items_edit 0x7f080008
-int id editNewItemCategories 0x7f080011
 int id et_sl_comment 0x7f08000d
 int id et_sl_item_comment 0x7f080016
 int id et_sl_item_name 0x7f080012
@@ -32,6 +31,7 @@ int id et_sl_item_quantity 0x7f080013
 int id et_sl_name 0x7f08000b
 int id iv_tab_indicator_icon 0x7f080017
 int id sl_get_customerId 0x7f08000f
+int id sp_sl_item_category 0x7f080011
 int id sp_sl_item_unit 0x7f080014
 int id tv_active_sl_group_name 0x7f080001
 int id tv_active_sl_row_item_details 0x7f080005

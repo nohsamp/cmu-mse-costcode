@@ -4,9 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -33,6 +30,7 @@ public class ScanditScanActivity extends Activity implements ScanditSDKListener 
      * 
      * @param entry The information entered by the user.
      */
+	@Override
 	public void didManualSearch(String entry) {
 		// Stop recognition to save resources.
 		mBarcodePicker.stopScanning();

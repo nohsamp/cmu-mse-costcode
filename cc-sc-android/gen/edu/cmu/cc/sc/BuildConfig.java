@@ -2,5 +2,5 @@
 package edu.cmu.cc.sc;
 
 public final class BuildConfig {
-    public final static boolean DEBUG = true;
+	public final static boolean DEBUG = true;
 }

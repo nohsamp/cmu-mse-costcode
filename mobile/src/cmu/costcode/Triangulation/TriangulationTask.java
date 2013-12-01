@@ -50,9 +50,9 @@ public class TriangulationTask extends AsyncTask<Void, Void, Void> {
 		}
 		else {
 			bgrunFlag = prefs.getBoolean("bgrun_checkbox", true);
-			initParams.put(WCL.TRIANG_METHOD, prefs.getString("triangulation_list", "WCL"));
-			initParams.put(WCL.SCAN_NUMBER, Integer.valueOf(prefs.getString("wifi_scannum", "5")));
-			initParams.put(WCL.NOISE_FILTER, prefs.getBoolean("noise_filter_checkbox", true));
+			initParams.put(Triangulation.TRIANG_METHOD, prefs.getString("triangulation_list", "WCL"));
+			initParams.put(Triangulation.SCAN_NUMBER, Integer.valueOf(prefs.getString("wifi_scannum", "5")));
+			initParams.put(Triangulation.NOISE_FILTER, prefs.getBoolean("noise_filter_checkbox", true));
 			initParams.put("DUMMY", prefs.getBoolean("dummy", false)); //TODO: test purpose, remove it later
 		}
 		return true;

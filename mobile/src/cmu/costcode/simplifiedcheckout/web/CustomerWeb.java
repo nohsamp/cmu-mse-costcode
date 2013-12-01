@@ -136,7 +136,7 @@ public class CustomerWeb {
 
 		while (iter.hasNext()) {
 			Entry<String, Object> pair = iter.next();
-			holder.put((String)pair.getKey(), pair.getValue());
+			holder.put(pair.getKey(), pair.getValue());
 		}
 		return holder;
 	}

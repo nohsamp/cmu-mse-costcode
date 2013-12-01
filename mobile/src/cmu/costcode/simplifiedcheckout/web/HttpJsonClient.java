@@ -33,7 +33,7 @@ public class HttpJsonClient {
 //			httpPostRequest.setHeader("Accept-Encoding", "gzip"); // only set this parameter if you would like to use gzip compression
 
 			long t = System.currentTimeMillis();
-			HttpResponse response = (HttpResponse) httpclient.execute(httpPostRequest);
+			HttpResponse response = httpclient.execute(httpPostRequest);
 			Log.i(TAG, "HTTPResponse received in [" + (System.currentTimeMillis()-t) + "ms]");
 
 			// Get hold of the response entity (-> the data):

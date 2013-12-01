@@ -618,7 +618,7 @@ public class DatabaseAdaptor {
 		String selection = DbContract.ListItemEntry.MEMBER_ID + "=" + memberId
 				+ " AND " + DbContract.ListItemEntry.ITEM_ID + "=" + itemId;
 		
-		return (int)db.update(DbContract.ListItemEntry.TABLE_NAME, values, selection, null);
+		return db.update(DbContract.ListItemEntry.TABLE_NAME, values, selection, null);
 	}
 	
 	/**
@@ -631,7 +631,7 @@ public class DatabaseAdaptor {
 		// Which row to update, based on the ID
 		String selection = DbContract.ListItemEntry.MEMBER_ID + "=" + memberId
 				+ " AND " + DbContract.ListItemEntry.ITEM_ID + "=" + itemId;
-		return (int) db.delete(DbContract.ListItemEntry.TABLE_NAME, selection, null);
+		return db.delete(DbContract.ListItemEntry.TABLE_NAME, selection, null);
 	}
 	
 	/**
@@ -653,7 +653,7 @@ public class DatabaseAdaptor {
 		// Which row to update, based on the ID
 		String selection = DbContract.ItemEntry.ITEM_ID + "=" + itemId;
 		
-		return (int)db.update(DbContract.ItemEntry.TABLE_NAME, values, selection, null);
+		return db.update(DbContract.ItemEntry.TABLE_NAME, values, selection, null);
 	}
 	
 	/**
@@ -661,7 +661,7 @@ public class DatabaseAdaptor {
 	 * @return The number of deleted rows
 	 */
 	public int dbDeleteAccessPoint() {
-		return (int) db.delete(DbContract.AccessPointEntry.TABLE_NAME, null, null);
+		return db.delete(DbContract.AccessPointEntry.TABLE_NAME, null, null);
 	}
 	
 	/**
@@ -669,7 +669,7 @@ public class DatabaseAdaptor {
 	 * @return The number of deleted rows
 	 */
 	public int dbDeleteCategory() {
-		return (int) db.delete(DbContract.CategoryEntry.TABLE_NAME, null, null);
+		return db.delete(DbContract.CategoryEntry.TABLE_NAME, null, null);
 	}
 
 	/**
@@ -723,7 +723,7 @@ public class DatabaseAdaptor {
 			// Which row to update, based on the infoName
 			String selection = DbContract.InfoVersionEntry.INFO_NAME + "= '" + infoName + "'";
 			
-			return (int)db.update(DbContract.InfoVersionEntry.TABLE_NAME, values, selection, null);
+			return db.update(DbContract.InfoVersionEntry.TABLE_NAME, values, selection, null);
 		}
 	}
 	
@@ -799,7 +799,7 @@ public class DatabaseAdaptor {
 		String selection = DbContract.AlertsEntry.CATEGORY_NAME + "='" + category + "'" +
 				" AND " + DbContract.AlertsEntry.LATITUDE + "=" + latitude +
 				" AND " + DbContract.AlertsEntry.LONGITUDE + "=" + longitude;
-		return (int)db.delete(DbContract.AlertsEntry.TABLE_NAME, selection, null);
+		return db.delete(DbContract.AlertsEntry.TABLE_NAME, selection, null);
 	}
 
 	public ShoppingListItem dbGetShoppingListItem(Item item) {

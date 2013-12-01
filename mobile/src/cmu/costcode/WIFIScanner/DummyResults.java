@@ -166,13 +166,13 @@ public class DummyResults {
 		if (mResult.getSsid().compareTo("clothes") == 0) {
 			mockAP = new PointF(0, 0);
 		} else if (mResult.getSsid().compareTo("electronics") == 0) {
-			mockAP = new PointF((float) 14.0, (float) 0);
+			mockAP = new PointF((float) 14.0, 0);
 		} else if (mResult.getSsid().compareTo("furniture") == 0) {
-			mockAP = new PointF((float) 11.5, (float) -10); // outside the room -10
+			mockAP = new PointF((float) 11.5, -10); // outside the room -10
 		} else if (mResult.getSsid().compareTo("jewelry") == 0) {
-			mockAP = new PointF((float) 2.3, (float) -10);
+			mockAP = new PointF((float) 2.3, -10);
 		} else if (mResult.getSsid().compareTo("food") == 0) {
-			mockAP = new PointF((float) 8, (float) -5);
+			mockAP = new PointF(8, -5);
 		}
 		
 		AccessPoint ap = new AccessPoint("", mResult.getSsid(),

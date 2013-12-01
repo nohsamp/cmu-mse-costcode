@@ -195,7 +195,7 @@ public class EditListActivity extends Activity {
 		String newItemDesc = prevItemDescView.getText().toString();
 		String newItemCat = prevItemCatView.getSelectedItem().toString();
 		int newItemQty = numpicQtyView.getValue();
-		float newItemPrice = (float)numpicPriceView.getValue();
+		float newItemPrice = numpicPriceView.getValue();
 		String newItemUpc = "1112222333444"; // TODO: layout change for UPC
 		
 		// Skip this item if no description filled in

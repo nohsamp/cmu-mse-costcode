@@ -14,54 +14,54 @@ import edu.cmu.cc.android.view.IValidatingView;
 import edu.cmu.cc.android.view.validation.IViewValidator;
 
 /**
- *  DESCRIPTION: Abstract parent class for model view adapters
- *	
- *  @author Azamat Samiyev
- *	@version 1.0
- *  Date: Jul 10, 2013
+ * DESCRIPTION: Abstract parent class for model view adapters
+ * 
+ * @author Azamat Samiyev
+ * @version 1.0 Date: Jul 10, 2013
  */
 public abstract class AbstractViewAdapter {
 
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 	// CONSTANTS
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 	// FIELDS
-	//-------------------------------------------------------------------------
-	
+	// -------------------------------------------------------------------------
+
 	protected List<IValidatingView> validatingViews;
 
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 	// CONSTRUCTORS
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 	// GETTERS - SETTERS
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 	// PUBLIC METHODS
-	//-------------------------------------------------------------------------
-	
+	// -------------------------------------------------------------------------
+
 	/**
 	 * Performs validation on all views
 	 */
 	public void validateAllViews() {
-		
+
 		synchronized (validatingViews) {
 			for (IValidatingView view : validatingViews) {
 				view.flagOrUnflagValidationError(true);
 			}
 		}
 	}
-	
+
 	/**
 	 * Checks whether all the views are valid or not
+	 * 
 	 * @return
 	 */
 	public boolean areAllViewsValid() {
-		
+
 		synchronized (validatingViews) {
 			for (IValidatingView view : validatingViews) {
 				if (!view.isValid()) {
@@ -69,15 +69,15 @@ public abstract class AbstractViewAdapter {
 				}
 			}
 		}
-		
+
 		return true;
 	}
-	
+
 	/**
 	 * Resets the values of the views and removes validation errors
 	 */
 	public void resetAllViewsValues() {
-		
+
 		synchronized (validatingViews) {
 			for (IValidatingView view : validatingViews) {
 				if (view instanceof EditText) {
@@ -90,21 +90,21 @@ public abstract class AbstractViewAdapter {
 		}
 	}
 
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 	// PROTECTED METHODS
-	//-------------------------------------------------------------------------
-	
-	protected void assignValidatorToView(View parentView, int viewResID, 
+	// -------------------------------------------------------------------------
+
+	protected void assignValidatorToView(View parentView, int viewResID,
 			int viewDisplayNameResID, IViewValidator validator) {
-		
-		IValidatingView validatingView = 
-				(IValidatingView) parentView.findViewById(viewResID);
-		
+
+		IValidatingView validatingView = (IValidatingView) parentView
+				.findViewById(viewResID);
+
 		String viewDisplayName = parentView.getContext().getResources()
 				.getString(viewDisplayNameResID);
-		
+
 		validatingView.setValidator(validator, viewDisplayName);
-		
+
 		validatingViews.add(validatingView);
 	}
 

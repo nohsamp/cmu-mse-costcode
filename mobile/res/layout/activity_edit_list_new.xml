@@ -10,7 +10,7 @@
         android:layout_height="wrap_content" >
 
         <View
-            android:layout_width="70dp"
+            android:layout_width="10dp"
             android:layout_height="0dp" />
 
         <TextView
@@ -21,11 +21,9 @@
 
         <EditText
             android:id="@+id/editNewItemDescription"
-            android:layout_width="50dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:inputType="text" >
-
-            <requestFocus />
         </EditText>
 
         <TextView
@@ -34,21 +32,12 @@
             android:layout_height="wrap_content"
             android:text=" Price: " />
 
-        <NumberPicker
-            android:id="@+id/numPickerPrice"
-            android:layout_width="40dp"
-            android:layout_height="30dp" />
-
-        <TextView
-            android:id="@+id/txtQuantity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" Qty: " />
-
-        <NumberPicker
-            android:id="@+id/numPickerQuantity"
-            android:layout_width="40dp"
-            android:layout_height="30dp" />
+		<EditText
+		    android:id="@+id/editTextPrice"
+		    android:layout_width="60dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:inputType="numberDecimal" />
     </LinearLayout>
 
     <LinearLayout
@@ -80,10 +69,23 @@
 
         <Spinner
             android:id="@+id/editNewItemCategories"
-            android:layout_width="150dp"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:entries="@array/categories"
             android:prompt="@string/editListCatPrompt" />
+
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Qty: " />
+
+        <EditText
+            android:id="@+id/editTextQuantity"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content" 
+            android:inputType="number"/>
+
     </LinearLayout>
 
 </LinearLayout>

@@ -3,10 +3,6 @@
 
     <string name="app_name">Costco - SC Customer</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="title_activity_view_list">ViewListActivity</string>
-    <string name="title_activity_edit_list">EditListActivity</string>
-    <string name="title_activity_sc_qr">ScanItemActivity</string>
     <string name="login">Login</string>
     <string name="loginEmailText">Email:</string>
     <string name="loginPwordText">Password:</string>

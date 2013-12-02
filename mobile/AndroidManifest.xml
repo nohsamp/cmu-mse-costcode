@@ -48,19 +48,14 @@
         </activity>
         <activity
             android:name="cmu.costcode.ShoppingList.ViewListActivity"
-            android:label="@string/title_activity_view_list"
             android:launchMode="singleTop" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LoginActivity" />
         </activity>
         <activity
-            android:name="cmu.costcode.ShoppingList.EditListActivity"
-            android:label="@string/title_activity_edit_list" >
+            android:name="cmu.costcode.ShoppingList.EditListActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ViewListActivity" />
@@ -70,8 +65,7 @@
             android:label="@string/title_activity_notification" >
         </activity>
         <activity
-            android:name="cmu.costcode.simplifiedcheckout.qr.ScanditScanActivity"
-            android:label="@string/title_activity_sc_qr" >
+            android:name="cmu.costcode.simplifiedcheckout.qr.ScanditScanActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ViewListActivity" />

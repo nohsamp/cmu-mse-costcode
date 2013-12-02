@@ -188,14 +188,20 @@ public class EditListActivity extends Activity {
 		// Find the description and category views
 		EditText prevItemDescView = (EditText)newItemView.findViewById(R.id.editNewItemDescription);
 		Spinner prevItemCatView = (Spinner)newItemView.findViewById(R.id.editNewItemCategories);
-		NumberPicker numpicQtyView = (NumberPicker)newItemView.findViewById(R.id.numPickerQuantity);
-		NumberPicker numpicPriceView = (NumberPicker)newItemView.findViewById(R.id.numPickerPrice);
+		EditText numpicQtyView = (EditText)newItemView.findViewById(R.id.editTextQuantity);
+		EditText numpicPriceView = (EditText)newItemView.findViewById(R.id.editTextPrice);
 		
 		// Convert the views into strings
 		String newItemDesc = prevItemDescView.getText().toString();
 		String newItemCat = prevItemCatView.getSelectedItem().toString();
-		int newItemQty = numpicQtyView.getValue();
-		float newItemPrice = numpicPriceView.getValue();
+		int newItemQty = 0;
+		float newItemPrice = 0;
+		try {
+			 newItemQty = Integer.parseInt(numpicQtyView.getText().toString());
+			 newItemPrice = Float.parseFloat(numpicPriceView.getText().toString());
+		} catch(Exception e) {
+			Log.e(TAG, "error: " + e.getMessage());
+		}
 		String newItemUpc = "1112222333444"; // TODO: layout change for UPC
 		
 		// Skip this item if no description filled in
@@ -217,6 +223,11 @@ public class EditListActivity extends Activity {
 		addedItem.addItem(newItem);
 		newShoppingList.put(newItemCat, addedItem);
 		cust.setShoppingList(newShoppingList);
+		
+		// Clear out field contents
+		prevItemDescView.setText("");
+		numpicPriceView.setText("");
+		numpicQtyView.setText("");
 	}
 	
 	/**

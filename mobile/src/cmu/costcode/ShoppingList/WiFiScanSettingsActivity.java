@@ -65,22 +65,22 @@ public class WiFiScanSettingsActivity extends PreferenceActivity {
 		addPreferencesFromResource(R.xml.pref_general);
 
 		// Add 'notifications' preferences, and a corresponding header.
-//		PreferenceCategory fakeHeader = new PreferenceCategory(this);
-//		fakeHeader.setTitle(R.string.pref_header_notifications);
-//		getPreferenceScreen().addPreference(fakeHeader);
-//		addPreferencesFromResource(R.xml.pref_notification);
+		// PreferenceCategory fakeHeader = new PreferenceCategory(this);
+		// fakeHeader.setTitle(R.string.pref_header_notifications);
+		// getPreferenceScreen().addPreference(fakeHeader);
+		// addPreferencesFromResource(R.xml.pref_notification);
 
 		// Bind the summaries of EditText/List/Dialog/Ringtone preferences to
 		// their values. When their values change, their summaries are updated
 		// to reflect the new value, per the Android Design guidelines.
-//		bindPreferenceSummaryToValue(findPreference("wifi_checkbox"));
-//		bindPreferenceSummaryToValue(findPreference("bgrun_checkbox"));
+		// bindPreferenceSummaryToValue(findPreference("wifi_checkbox"));
+		// bindPreferenceSummaryToValue(findPreference("bgrun_checkbox"));
 		bindPreferenceSummaryToValue(findPreference("reminder_list"));
 		bindPreferenceSummaryToValue(findPreference("triangulation_list"));
-//		bindPreferenceSummaryToValue(findPreference("notifications_new_message_ringtone"));
-//		bindPreferenceSummaryToValue(findPreference("sync_frequency"));
+		// bindPreferenceSummaryToValue(findPreference("notifications_new_message_ringtone"));
+		// bindPreferenceSummaryToValue(findPreference("sync_frequency"));
 		bindPreferenceSummaryToValue(findPreference("wifi_scannum"));
-		
+
 	}
 
 	/** {@inheritDoc} */
@@ -127,7 +127,7 @@ public class WiFiScanSettingsActivity extends PreferenceActivity {
 		@Override
 		public boolean onPreferenceChange(Preference preference, Object value) {
 			String stringValue = value.toString();
-			
+
 			if (preference instanceof ListPreference) {
 				// For list preferences, look up the correct display value in
 				// the preference's 'entries' list.
@@ -209,7 +209,7 @@ public class WiFiScanSettingsActivity extends PreferenceActivity {
 			// to their values. When their values change, their summaries are
 			// updated to reflect the new value, per the Android Design
 			// guidelines.
-//			bindPreferenceSummaryToValue(findPreference("example_text"));
+			// bindPreferenceSummaryToValue(findPreference("example_text"));
 			bindPreferenceSummaryToValue(findPreference("triangulation_list"));
 			bindPreferenceSummaryToValue(findPreference("wifi_scannum"));
 

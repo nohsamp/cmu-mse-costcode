@@ -1,4 +1,3 @@
-
 package cmu.costcode.Triangulation;
 
 import java.util.ArrayList;
@@ -18,7 +17,7 @@ public class WCL extends Triangulation {
 
 	private static float g = 0.6f;
 	boolean dummyFlag;
-	
+
 	public static float getG() {
 		return g;
 	}
@@ -29,9 +28,9 @@ public class WCL extends Triangulation {
 
 	public WCL(WifiManager wm, Map<String, Object> initParams, Context context) {
 		super(wm, initParams, context);
-		dummyFlag = (Boolean)initParams.get("DUMMY");
+		dummyFlag = (Boolean) initParams.get("DUMMY");
 	}
-	
+
 	private void doAWCL() {
 		Comparator<AccessPoint> comparator = new Comparator<AccessPoint>() {
 			@Override
@@ -55,8 +54,8 @@ public class WCL extends Triangulation {
 	@Override
 	// WCL triangulation algorithm
 	// calculate the distance from APs
-	
-	// Calculate the distance from AP using RSSI and the position of AP (posX, posY)
+	// Calculate the distance from AP using RSSI and the position of AP (posX,
+	// posY)
 	// The position of APs is known already.
 	public AccessPoint calculateAccessPointPosition() {
 		wifiScanner.scanStart();
@@ -65,14 +64,14 @@ public class WCL extends Triangulation {
 		if (apList == null || apList.size() < 3) {
 			return null;
 		}
-		
+
 		if (triangMethod.equals("AWCL")) {
 			doAWCL();
 		}
 
 		AccessPoint nearestAP = null;
 		float sumRssi = 0; // sum of Rssi for g = 0.6f
-		
+
 		for (Iterator<AccessPoint> it = apList.iterator(); it.hasNext();) {
 			AccessPoint dataSet = it.next();
 
@@ -81,14 +80,14 @@ public class WCL extends Triangulation {
 																// of AP
 			sumRssi += newRssi;
 			dataSet.setRssi(newRssi); // calculate weight and set Rssi to weight
-			
-			newRssi = (float) Math.pow(
-					Math.pow(10, dataSet.getRssi() / 20), 2.7); // RSSI: level
+
+			newRssi = (float) Math.pow(Math.pow(10, dataSet.getRssi() / 20),
+					2.7); // RSSI: level
 		}
 
 		float x = 0;
 		float y = 0;
-		
+
 		for (Iterator<AccessPoint> it = apList.iterator(); it.hasNext();) {
 			AccessPoint dataSet = it.next();
 
@@ -96,7 +95,7 @@ public class WCL extends Triangulation {
 			x += dataSet.getPosX() * weight;
 			y += dataSet.getPosY() * weight;
 		}
-		
+
 		double oldDist = Double.MAX_VALUE;
 		double newDist = Double.MAX_VALUE;
 		for (Iterator<AccessPoint> itd = apList.iterator(); itd.hasNext();) {
@@ -119,38 +118,41 @@ public class WCL extends Triangulation {
 
 		return nearestAP;
 	}
-	
+
 	@Override
 	public String getNearestCategory(double x, double y) {
-		double thresholdDistance = 30.0; // Distance threshold value for finding category (meter)
-		
-		if(dummyFlag) {
+		double thresholdDistance = 30.0; // Distance threshold value for finding
+											// category (meter)
+
+		if (dummyFlag) {
 			categoryList = new ArrayList<Category>(4);
 			categoryList.add(new Category("Food", new Location(5.3, -3.5)));
-			categoryList.add(new Category("Electronics", new Location(13, -7.3)));
+			categoryList
+					.add(new Category("Electronics", new Location(13, -7.3)));
 			categoryList.add(new Category("Appliances", new Location(10, 7.3)));
 			categoryList.add(new Category("Clothing", new Location(18, -15)));
-		}
-		else categoryList = wifiScanner.getCategoryList();
-		
-		if(categoryList == null)
+		} else
+			categoryList = wifiScanner.getCategoryList();
+
+		if (categoryList == null)
 			return null;
-		
+
 		String categoryName = null; // Result category
-		
+
 		double oldDist = Double.MAX_VALUE;
 		double newDist = Double.MAX_VALUE;
-		
+
 		for (Iterator<Category> itd = categoryList.iterator(); itd.hasNext();) {
 			Category category = itd.next();
 
 			newDist = Math.sqrt((category.getLocation().getLat() - x)
-					* (category.getLocation().getLat() - x) + (category.getLocation().getLon() - y)
+					* (category.getLocation().getLat() - x)
+					+ (category.getLocation().getLon() - y)
 					* (category.getLocation().getLon() - y));
 			// If distance is greater than threshold, ignore it
-			if(newDist >= thresholdDistance)
+			if (newDist >= thresholdDistance)
 				continue;
-			
+
 			if (oldDist > newDist) { // If new distance between device (x,
 										// y) and AP is shorter than old
 										// one,
@@ -159,7 +161,7 @@ public class WCL extends Triangulation {
 				categoryName = category.getName();
 			}
 		}
-		
+
 		return categoryName;
 	}
 }

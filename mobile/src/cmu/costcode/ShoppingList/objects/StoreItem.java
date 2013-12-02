@@ -8,7 +8,7 @@ public class StoreItem implements Serializable {
 	public String upc;
 	public double price;
 	public int quantity;
-	
+
 	public StoreItem(String name, String upc, double price, int quantity) {
 		this.name = name;
 		this.upc = upc;

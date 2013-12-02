@@ -32,7 +32,8 @@ public class CustomerWeb {
 	private Context context;
 
 	// Constructor
-	public CustomerWeb(Context context, int customerId, ShoppingList shoppingList) {
+	public CustomerWeb(Context context, int customerId,
+			ShoppingList shoppingList) {
 		this.shoppingList = shoppingList;
 		this.context = context;
 		this.customerName = "Customer" + customerId;
@@ -40,6 +41,7 @@ public class CustomerWeb {
 
 	/**
 	 * Called when Send to Cashier button is pressed;
+	 * 
 	 * @param view
 	 */
 	public void broadcastShoppingList(View view) {
@@ -52,27 +54,32 @@ public class CustomerWeb {
 		String apiPostAddress = "http://" + SERVER_IP + API_POST_LOCATION;
 		try {
 			JSONObject jsonObjSend = getJsonObjectFromMap(orderMap);
-			Log.i(TAG, "Sending shopping list to server: " + jsonObjSend.toString());
-			sendAsyncShoppingListRequest(apiPostAddress, jsonObjSend, this.context);
-		} catch(Exception e) {
+			Log.i(TAG,
+					"Sending shopping list to server: "
+							+ jsonObjSend.toString());
+			sendAsyncShoppingListRequest(apiPostAddress, jsonObjSend,
+					this.context);
+		} catch (Exception e) {
 			e.printStackTrace();
-			Toast.makeText(context, "Something broked. :( \nCheck the looogs.", Toast.LENGTH_LONG).show();
+			Toast.makeText(context, "Something broked. :( \nCheck the looogs.",
+					Toast.LENGTH_LONG).show();
 		}
 	}
 
 	/**
 	 * Convert the shopping list to a JSONArray
+	 * 
 	 * @param list
 	 * @return
 	 */
 	private JSONArray shoppingListToArray(ShoppingList list) {
 		JSONArray jsonListArray = new JSONArray();
-		for(Item item : list.getItems()) {
+		for (Item item : list.getItems()) {
 			JSONObject jsonItemMap = new JSONObject();
 			try {
 				jsonItemMap.put("upc", item.getUpc());
 				jsonItemMap.put("quantity", item.getQuantity());
-				//TODO: Account for item quantity? In ShoppingListItem perhaps.
+				// TODO: Account for item quantity? In ShoppingListItem perhaps.
 			} catch (JSONException e) {
 				e.printStackTrace();
 			}
@@ -81,57 +88,73 @@ public class CustomerWeb {
 		return jsonListArray;
 	}
 
-
 	/**
 	 * Call an asynchronous POST request to the server to save a shopping list.
+	 * 
 	 * @param requestUrl
 	 * @param jsonObjSend
 	 * @param ctx
 	 */
-	private void sendAsyncShoppingListRequest(String requestUrl, final JSONObject jsonObjSend, final Context ctx) {
+	private void sendAsyncShoppingListRequest(String requestUrl,
+			final JSONObject jsonObjSend, final Context ctx) {
 		new AsyncTask<String, Void, JSONObject>() {
 			@Override
 			protected void onPreExecute() {
-				Toast.makeText(ctx, "Sending shopping list to cashier", Toast.LENGTH_SHORT).show();
+				Toast.makeText(ctx, "Sending shopping list to cashier",
+						Toast.LENGTH_SHORT).show();
 			}
 
 			@Override
 			protected JSONObject doInBackground(String... urls) {
-				JSONObject jsonObjRecv = HttpJsonClient.sendHttpPost(urls[0], jsonObjSend);
+				JSONObject jsonObjRecv = HttpJsonClient.sendHttpPost(urls[0],
+						jsonObjSend);
 				return jsonObjRecv;
 			}
 
 			@Override
 			protected void onPostExecute(JSONObject jsonObjRecv) {
-				if(jsonObjRecv == null) {
-					Toast.makeText(ctx, "Something broked. :( \nCheck the looogs.", Toast.LENGTH_SHORT).show();
+				if (jsonObjRecv == null) {
+					Toast.makeText(ctx,
+							"Something broked. :( \nCheck the looogs.",
+							Toast.LENGTH_SHORT).show();
 				} else {
-					//TODO: check to see if successful post; response code 201 in HttpJsonClient
-					Log.i(TAG, "Flask Server Response!: " + jsonObjRecv.toString());
-					Toast.makeText(ctx, "Successfully sent shopping list to server!", Toast.LENGTH_SHORT).show();
-					
+					// TODO: check to see if successful post; response code 201
+					// in HttpJsonClient
+					Log.i(TAG,
+							"Flask Server Response!: " + jsonObjRecv.toString());
+					Toast.makeText(ctx,
+							"Successfully sent shopping list to server!",
+							Toast.LENGTH_SHORT).show();
+
 					Intent intent = new Intent(ctx, ListQRDisplayActivity.class);
 
 					// Get new customer ID
 					try {
 						int customerId = jsonObjRecv.getInt("customer_id");
 						intent.putExtra("CustomerID", customerId);
-						intent.putExtra("ShoppingList", jsonObjSend.toString());	//TODO: change to real ShoppingList object
+						intent.putExtra("ShoppingList", jsonObjSend.toString()); // TODO:
+																					// change
+																					// to
+																					// real
+																					// ShoppingList
+																					// object
 						ctx.startActivity(intent);
 					} catch (JSONException e) {
 						e.printStackTrace();
-						Toast.makeText(ctx, "Server sent back an invalid response. :(", Toast.LENGTH_SHORT).show();
+						Toast.makeText(ctx,
+								"Server sent back an invalid response. :(",
+								Toast.LENGTH_SHORT).show();
 					}
 				}
 			}
 		}.execute(requestUrl);
 	}
 
-
-	private static JSONObject getJsonObjectFromMap(Map<String, Object> params) throws JSONException {
+	private static JSONObject getJsonObjectFromMap(Map<String, Object> params)
+			throws JSONException {
 		Iterator<Entry<String, Object>> iter = params.entrySet().iterator();
 
-		//Stores JSON
+		// Stores JSON
 		JSONObject holder = new JSONObject();
 
 		while (iter.hasNext()) {

@@ -30,11 +30,14 @@ public class HttpJsonClient {
 			httpPostRequest.setEntity(se);
 			httpPostRequest.setHeader("Accept", "application/json");
 			httpPostRequest.setHeader("Content-type", "application/json");
-//			httpPostRequest.setHeader("Accept-Encoding", "gzip"); // only set this parameter if you would like to use gzip compression
+			// httpPostRequest.setHeader("Accept-Encoding", "gzip"); // only set
+			// this parameter if you would like to use gzip compression
 
 			long t = System.currentTimeMillis();
 			HttpResponse response = httpclient.execute(httpPostRequest);
-			Log.i(TAG, "HTTPResponse received in [" + (System.currentTimeMillis()-t) + "ms]");
+			Log.i(TAG,
+					"HTTPResponse received in ["
+							+ (System.currentTimeMillis() - t) + "ms]");
 
 			// Get hold of the response entity (-> the data):
 			HttpEntity entity = response.getEntity();
@@ -44,44 +47,47 @@ public class HttpJsonClient {
 				InputStream instream = entity.getContent();
 
 				// convert content stream to a String
-				String resultString= convertStreamToString(instream);
+				String resultString = convertStreamToString(instream);
 				instream.close();
-//				resultString = resultString.substring(1,resultString.length()-1); // remove wrapping "[" and "]"
+				// resultString =
+				// resultString.substring(1,resultString.length()-1); // remove
+				// wrapping "[" and "]"
 
 				// Transform the String into a JSONObject
 				JSONObject jsonObjRecv = new JSONObject(resultString);
 				// Raw DEBUG output of our received JSON object:
-				Log.i(TAG,"POST Response: <JSONObject>\n"+jsonObjRecv.toString()+"\n</JSONObject>");
+				Log.i(TAG,
+						"POST Response: <JSONObject>\n"
+								+ jsonObjRecv.toString() + "\n</JSONObject>");
 
 				return jsonObjRecv;
 			}
 
-		}
-		catch (Exception e)
-		{
+		} catch (Exception e) {
 			// More about HTTP exception handling in another tutorial.
 			// For now we just print the stack trace.
 			e.printStackTrace();
 		}
 		return null;
 	}
-	
-	
+
 	public static JSONObject sendHttpGet(String url) {
 		InputStream content = null;
 		try {
 			DefaultHttpClient httpclient = new DefaultHttpClient();
 			HttpGet httpRequest = new HttpGet(url);
 			httpRequest.setHeader("Accept", "application/json");
-			
+
 			HttpResponse response = httpclient.execute(httpRequest);
 			HttpEntity entity = response.getEntity();
-			if(entity != null) {
-				String resultString= convertStreamToString(entity.getContent());
+			if (entity != null) {
+				String resultString = convertStreamToString(entity.getContent());
 				// Transform the String into a JSONObject
 				JSONObject jsonObjRecv = new JSONObject(resultString);
 				// Raw DEBUG output of our received JSON object:
-				Log.i(TAG,"GET Response: <JSONObject>\n"+jsonObjRecv.toString()+"\n</JSONObject>");
+				Log.i(TAG,
+						"GET Response: <JSONObject>\n" + jsonObjRecv.toString()
+								+ "\n</JSONObject>");
 
 				return jsonObjRecv;
 			}
@@ -91,15 +97,16 @@ public class HttpJsonClient {
 		return null;
 	}
 
-
 	private static String convertStreamToString(InputStream is) {
 		/*
-		 * To convert the InputStream to String we use the BufferedReader.readLine()
-		 * method. We iterate until the BufferedReader return null which means
-		 * there's no more data to read. Each line will appended to a StringBuilder
-		 * and returned as String.
+		 * To convert the InputStream to String we use the
+		 * BufferedReader.readLine() method. We iterate until the BufferedReader
+		 * return null which means there's no more data to read. Each line will
+		 * appended to a StringBuilder and returned as String.
 		 * 
-		 * (c) public domain: http://senior.ceng.metu.edu.tr/2009/praeda/2009/01/11/a-simple-restful-client-at-android/
+		 * (c) public domain:
+		 * http://senior.ceng.metu.edu.tr/2009/praeda/2009/01/
+		 * 11/a-simple-restful-client-at-android/
 		 */
 		BufferedReader reader = new BufferedReader(new InputStreamReader(is));
 		StringBuilder sb = new StringBuilder();

@@ -16,57 +16,55 @@ import edu.cmu.cc.android.R;
 import edu.cmu.cc.android.view.validation.IViewValidator;
 
 /**
- *  DESCRIPTION: This spinner provides validating capabilities and displays
- *  error icon when the selection was not performed.
- *	
- *  @author Azamat Samiyev
- *	@version 1.0
- *  Date: Jul 10, 2013
+ * DESCRIPTION: This spinner provides validating capabilities and displays error
+ * icon when the selection was not performed.
+ * 
+ * @author Azamat Samiyev
+ * @version 1.0 Date: Jul 10, 2013
  */
-public class ValidatingSpinner<T> extends OptionalSelectionSpinner<T> 
-implements IValidatingView {
+public class ValidatingSpinner<T> extends OptionalSelectionSpinner<T> implements
+		IValidatingView {
 
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 	// CONSTANTS
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 	// FIELDS
-	//-------------------------------------------------------------------------
-	
+	// -------------------------------------------------------------------------
+
 	private IViewValidator validator;
-	
+
 	private boolean validationMode;
 
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 	// CONSTRUCTORS
-	//-------------------------------------------------------------------------
-	
+	// -------------------------------------------------------------------------
+
 	public ValidatingSpinner(Context ctx, T emptyItem) {
 		super(ctx, emptyItem);
 	}
-	
+
 	public ValidatingSpinner(Context ctx, AttributeSet attrs, T emptyItem) {
 		super(ctx, attrs, emptyItem);
 	}
-	
-	public ValidatingSpinner(Context ctx, AttributeSet attrs, int defStyle, 
+
+	public ValidatingSpinner(Context ctx, AttributeSet attrs, int defStyle,
 			T emptyItem) {
 		super(ctx, attrs, defStyle, emptyItem);
 	}
 
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 	// GETTER - SETTERS
-	//-------------------------------------------------------------------------
-	
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
+
+	// -------------------------------------------------------------------------
 	// PUBLIC METHODS
-	//-------------------------------------------------------------------------
-	
+	// -------------------------------------------------------------------------
+
 	@Override
-	public void setValidator(IViewValidator validator, 
-			String fieldDisplayName) {
-		
+	public void setValidator(IViewValidator validator, String fieldDisplayName) {
+
 		this.validator = validator;
 		this.validationMode = false;
 		registerListerners();
@@ -74,11 +72,11 @@ implements IValidatingView {
 
 	@Override
 	public boolean isValid() {
-		
+
 		if (validator == null || !validationMode) {
 			return true;
 		}
-		
+
 		return validator.validate(this);
 	}
 
@@ -91,32 +89,32 @@ implements IValidatingView {
 	@Override
 	public void draw(Canvas canvas) {
 		super.draw(canvas);
-		
+
 		if (!isValid()) {
 			drawErrorIcon(canvas);
 		}
 	}
-	
-	//-------------------------------------------------------------------------
+
+	// -------------------------------------------------------------------------
 	// PRIVATE METHODS
-	//-------------------------------------------------------------------------
-	
+	// -------------------------------------------------------------------------
+
 	private void drawErrorIcon(Canvas canvas) {
-		
+
 		final int ICON_RIGHT_MARGIN = 40;
-		
-		Bitmap icon = BitmapFactory.decodeResource(getResources(), 
+
+		Bitmap icon = BitmapFactory.decodeResource(getResources(),
 				R.drawable.indicator_input_error);
-		
+
 		float left = getWidth() - ICON_RIGHT_MARGIN - icon.getWidth();
 		float top = (getHeight() - icon.getHeight()) / 2;
-		
+
 		left = (left < 0) ? 0 : left;
 		top = (top < 0) ? 0 : top;
-		
+
 		canvas.drawBitmap(icon, left, top, new Paint());
 	}
-	
+
 	/**
 	 * Setting up listeners for this view.
 	 */
@@ -124,10 +122,10 @@ implements IValidatingView {
 		registerOnFocusChangeListener();
 		registerOnItemSelectedListener();
 	}
-	
+
 	protected void registerOnFocusChangeListener() {
 		setOnFocusChangeListener(new OnFocusChangeListener() {
-			
+
 			@Override
 			public void onFocusChange(View v, boolean hasFocus) {
 				if (!hasFocus) {
@@ -136,7 +134,7 @@ implements IValidatingView {
 			}
 		});
 	}
-	
+
 	protected void registerOnItemSelectedListener() {
 		setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
@@ -147,7 +145,8 @@ implements IValidatingView {
 			}
 
 			@Override
-			public void onNothingSelected(AdapterView<?> arg0) {}
+			public void onNothingSelected(AdapterView<?> arg0) {
+			}
 		});
 	}
 

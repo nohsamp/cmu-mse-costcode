@@ -21,36 +21,40 @@ import android.os.Message;
 import android.util.Log;
 import android.widget.Toast;
 
-public class CustomerNFC implements CreateNdefMessageCallback, OnNdefPushCompleteCallback {
+public class CustomerNFC implements CreateNdefMessageCallback,
+		OnNdefPushCompleteCallback {
 
 	private final static String TAG = "CustomerNFC";
 	NfcAdapter nfcAdapter;
 	private static final int MESSAGE_SENT = 1;
 	private ShoppingList shoppingList;
 	Context context;
-	
+
 	// Constructor
 	// The caller should pass Activity using ActivityName.this
-	public CustomerNFC(Activity sourceActivity, Context context, ShoppingList shoppingList) {
+	public CustomerNFC(Activity sourceActivity, Context context,
+			ShoppingList shoppingList) {
 		this.shoppingList = shoppingList;
 		this.context = context;
-		
+
 		// Show the Up button in the action bar.
-//		setupActionBar();
-		
+		// setupActionBar();
+
 		// Set up NFC Adapter
 		nfcAdapter = NfcAdapter.getDefaultAdapter(context);
 		if (nfcAdapter == null) {
-			Toast.makeText(context, "NFC is not available on this device. :(", Toast.LENGTH_LONG).show();
-			return;  // NFC not available on this device
+			Toast.makeText(context, "NFC is not available on this device. :(",
+					Toast.LENGTH_LONG).show();
+			return; // NFC not available on this device
 		}
-		
+
 		nfcAdapter.setNdefPushMessageCallback(this, sourceActivity);
 		nfcAdapter.setOnNdefPushCompleteCallback(this, sourceActivity);
 	}
-	
+
 	/**
-	 * Convert a serializable object 
+	 * Convert a serializable object
+	 * 
 	 * @param object
 	 * @return
 	 * @throws IOException
@@ -60,55 +64,58 @@ public class CustomerNFC implements CreateNdefMessageCallback, OnNdefPushComplet
 		ObjectOutput out = null;
 		byte[] serialized;
 		try {
-			out = new ObjectOutputStream(bos);   
+			out = new ObjectOutputStream(bos);
 			out.writeObject(object);
 			serialized = bos.toByteArray();
 		} finally {
 			out.close();
 			bos.close();
 		}
-		
+
 		return serialized;
 	}
-	
-// NDEF Stuff
-	
+
+	// NDEF Stuff
+
 	/**
 	 * Generate new Ndef Message to send to whoever wants to listen
 	 */
 	@Override
 	public NdefMessage createNdefMessage(NfcEvent event) {
-        byte[] byteMessage;
+		byte[] byteMessage;
 		try {
 			byteMessage = serializeObject(shoppingList);
 		} catch (IOException e) {
-			Log.e(TAG, "Error: could not serialize ShoppingList properly; " + e.getMessage());
+			Log.e(TAG,
+					"Error: could not serialize ShoppingList properly; "
+							+ e.getMessage());
 			byteMessage = new byte[1];
 		}
-        NdefMessage msg = new NdefMessage(NdefRecord.createMime(
-        		"application/cmu.costco.simplifiedcheckout.nfc", byteMessage)
-//        		,NdefRecord.createApplicationRecord("cmu.costco.simplifiedcheckout.nfc")
-        );
-        Log.i(TAG, msg.getRecords()[0].toString());
-        return msg;
+		NdefMessage msg = new NdefMessage(NdefRecord.createMime(
+				"application/cmu.costco.simplifiedcheckout.nfc", byteMessage)
+		// ,NdefRecord.createApplicationRecord("cmu.costco.simplifiedcheckout.nfc")
+		);
+		Log.i(TAG, msg.getRecords()[0].toString());
+		return msg;
 	}
 
 	@Override
 	public void onNdefPushComplete(NfcEvent event) {
 		// A handler is needed to send messages to the activity when this
-        // callback occurs, because it happens from a binder thread
-        mHandler.obtainMessage(MESSAGE_SENT).sendToTarget();
+		// callback occurs, because it happens from a binder thread
+		mHandler.obtainMessage(MESSAGE_SENT).sendToTarget();
 	}
-	
+
 	/** This handler receives a message from onNdefPushComplete */
-    @SuppressLint("HandlerLeak")
+	@SuppressLint("HandlerLeak")
 	private final Handler mHandler = new Handler() {
-        @Override
-        public void handleMessage(Message msg) {
-            if(msg.what == MESSAGE_SENT) {
-                Toast.makeText(context, "Message sent!", Toast.LENGTH_LONG).show();
-            }
-        }
-    };
-    
+		@Override
+		public void handleMessage(Message msg) {
+			if (msg.what == MESSAGE_SENT) {
+				Toast.makeText(context, "Message sent!", Toast.LENGTH_LONG)
+						.show();
+			}
+		}
+	};
+
 }

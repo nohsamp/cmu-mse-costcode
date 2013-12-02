@@ -12,49 +12,48 @@ import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 
 /**
- *  DESCRIPTION: Spinner adapter class.
- *	
- *  @author Azamat Samiyev
- *	@version 1.0
- *  Date: Jul 10, 2013
+ * DESCRIPTION: Spinner adapter class.
+ * 
+ * @author Azamat Samiyev
+ * @version 1.0 Date: Jul 10, 2013
  */
-public class OptionalSelectionSpinnerAdapter<T> extends BaseAdapter 
-implements SpinnerAdapter {
+public class OptionalSelectionSpinnerAdapter<T> extends BaseAdapter implements
+		SpinnerAdapter {
 
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 	// CONSTANTS
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 	// FIELDS
-	//-------------------------------------------------------------------------
-	
+	// -------------------------------------------------------------------------
+
 	private Context ctx;
-	
+
 	private SpinnerAdapter adapter;
-	
+
 	private T emptyItem;
 
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 	// CONSTRUCTORS
-	//-------------------------------------------------------------------------
-	
-	public OptionalSelectionSpinnerAdapter(Context ctx, 
-			SpinnerAdapter adapter, T emptyItem) {
-		
+	// -------------------------------------------------------------------------
+
+	public OptionalSelectionSpinnerAdapter(Context ctx, SpinnerAdapter adapter,
+			T emptyItem) {
+
 		this.ctx = ctx;
 		this.adapter = adapter;
 		this.emptyItem = emptyItem;
 	}
 
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 	// GETTERS - SETTERS
-	//-------------------------------------------------------------------------
-	
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
+
+	// -------------------------------------------------------------------------
 	// PUBLIC METHODS
-	//-------------------------------------------------------------------------
-	
+	// -------------------------------------------------------------------------
+
 	@Override
 	public int getCount() {
 		return adapter.getCount() + 1;
@@ -62,13 +61,13 @@ implements SpinnerAdapter {
 
 	@Override
 	public Object getItem(int position) {
-		
+
 		if (position == 0) {
 			return emptyItem;
 		} else if (position > 0) {
 			return adapter.getItem(position - 1);
 		}
-		
+
 		return null;
 	}
 
@@ -79,34 +78,33 @@ implements SpinnerAdapter {
 
 	@Override
 	public View getView(int position, View view, ViewGroup parent) {
-		
+
 		if (position == 0) {
 			TextView tvEmptyItem = new TextView(ctx);
 			tvEmptyItem.setText(emptyItem.toString());
-			
+
 			return tvEmptyItem;
 		} else if (position > 0) {
-			return adapter.getView(position-1, null, parent);
+			return adapter.getView(position - 1, null, parent);
 		}
-		
+
 		return null;
 	}
 
 	@Override
-	public View getDropDownView(int position, View convertView, 
-			ViewGroup parent) {
-		
+	public View getDropDownView(int position, View convertView, ViewGroup parent) {
+
 		if (position == 0) {
 			return new TextView(ctx);
 		} else if (position > 0) {
-			return adapter.getDropDownView(position-1, null, parent);
+			return adapter.getDropDownView(position - 1, null, parent);
 		}
-		
+
 		return null;
 	}
-	
-	//-------------------------------------------------------------------------
+
+	// -------------------------------------------------------------------------
 	// PRIVATE METHODS
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 
 }

@@ -4,7 +4,7 @@ import edu.cmu.cc.sc.model.Item;
 
 /**
  * @author kevin
- *
+ * 
  */
 public class ShoppingListItem {
 
@@ -12,7 +12,7 @@ public class ShoppingListItem {
 	private boolean checked;
 	private int position;
 	private Item item;
-	
+
 	public ShoppingListItem(int itemId, boolean checked, int position, Item item) {
 		this.itemId = itemId;
 		this.checked = checked;
@@ -51,25 +51,21 @@ public class ShoppingListItem {
 	public void setItem(Item item) {
 		this.item = item;
 	}
-	
+
 	public String getCategory() {
 		return item.getCategory();
 	}
-	
+
 	@Override
 	public String toString() {
 		return item.toString();
 	}
-	
-	/*
-	 * TODO: Put this all back later, laziness prevails
-	public int getQuantity() {
-		return quantity;
-	}
 
-	public void setQuantity(int quantity) {
-		this.quantity = quantity;
-	}
-	*/
+	/*
+	 * TODO: Put this all back later, laziness prevails public int getQuantity()
+	 * { return quantity; }
+	 * 
+	 * public void setQuantity(int quantity) { this.quantity = quantity; }
+	 */
 
 }

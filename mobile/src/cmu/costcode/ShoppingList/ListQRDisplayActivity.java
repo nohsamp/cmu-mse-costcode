@@ -27,7 +27,6 @@ import cmu.costcode.ShoppingList.objects.ShoppingList;
 import cmu.costcode.ShoppingList.objects.StoreItem;
 import cmu.costcode.simplifiedcheckout.web.HttpJsonClient;
 
-
 public class ListQRDisplayActivity extends Activity {
 
 	protected static final String TAG = "ListQRDisplayActivity";
@@ -38,30 +37,34 @@ public class ListQRDisplayActivity extends Activity {
 	private String urlToCall;
 	protected ImageView imgView;
 	protected TextView urlTextView;
-	private ShoppingList shoppingList;	//TODO: change to real ShoppingList object
+	private ShoppingList shoppingList; // TODO: change to real ShoppingList
+										// object
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_list_qrdisplay);
 		// Show the Up button in the action bar.
-//		setupActionBar();
+		// setupActionBar();
 
 		// Get customer ID and build a QR code
 		Intent intent = getIntent();
 		int customerId = intent.getIntExtra("CustomerID", 1);
-		urlToCall = ViewListActivity.SERVER_URL + SHOPPING_LIST_URL + customerId;
-		String safeUrlToCall = urlToCall.replace(":", "%3A").replace("/", "%2F");
-		
+		urlToCall = ViewListActivity.SERVER_URL + SHOPPING_LIST_URL
+				+ customerId;
+		String safeUrlToCall = urlToCall.replace(":", "%3A")
+				.replace("/", "%2F");
+
 		// Get shopping list extra and set to display receipt
 		asyncGetReceipt(urlToCall, this);
-		
+
 		// Load view resources
-		imgView = (ImageView)findViewById(R.id.qrImageView);
-		urlTextView = (TextView)findViewById(R.id.qrTextView);
+		imgView = (ImageView) findViewById(R.id.qrImageView);
+		urlTextView = (TextView) findViewById(R.id.qrTextView);
 
 		// Request new QR code
-		String apiCallString = SCANDIT_API_URL_HEAD + safeUrlToCall + SCANDIT_API_URL_TAIL + SCANDIT_API_KEY;
+		String apiCallString = SCANDIT_API_URL_HEAD + safeUrlToCall
+				+ SCANDIT_API_URL_TAIL + SCANDIT_API_KEY;
 		asyncGetQrCode(apiCallString, this);
 	}
 
@@ -90,7 +93,9 @@ public class ListQRDisplayActivity extends Activity {
 	}
 
 	/**
-	 * Call an asynchronous GET request to the server to retrieve a QR code image
+	 * Call an asynchronous GET request to the server to retrieve a QR code
+	 * image
+	 * 
 	 * @param requestUrl
 	 * @param ctx
 	 */
@@ -99,8 +104,10 @@ public class ListQRDisplayActivity extends Activity {
 			@Override
 			protected Drawable doInBackground(String... urls) {
 				try {
-					InputStream is = (InputStream) new URL(urls[0]).getContent();
-					Drawable d = Drawable.createFromStream(is, "sourceNameQuestionMark");
+					InputStream is = (InputStream) new URL(urls[0])
+							.getContent();
+					Drawable d = Drawable.createFromStream(is,
+							"sourceNameQuestionMark");
 					return d;
 				} catch (MalformedURLException e) {
 					e.printStackTrace();
@@ -112,9 +119,11 @@ public class ListQRDisplayActivity extends Activity {
 
 			@Override
 			protected void onPostExecute(Drawable drawable) {
-				if(drawable == null) {
+				if (drawable == null) {
 					// Fail
-					Toast.makeText(ctx, "Something broked. :( \nCheck the looogs.", Toast.LENGTH_LONG).show();
+					Toast.makeText(ctx,
+							"Something broked. :( \nCheck the looogs.",
+							Toast.LENGTH_LONG).show();
 				} else {
 					// Success
 					imgView.setImageDrawable(drawable);
@@ -123,42 +132,50 @@ public class ListQRDisplayActivity extends Activity {
 			}
 		}.execute(requestUrl);
 	}
-	
+
 	/**
 	 * Call an asynchronous GET request to the server to save a shopping list.
+	 * 
 	 * @param requestUrl
 	 * @param ctx
 	 */
 	private void asyncGetReceipt(String requestUrl, final Context ctx) {
 		new AsyncTask<String, Void, JSONObject>() {
-		    @Override
-		    protected JSONObject doInBackground(String... urls) {
+			@Override
+			protected JSONObject doInBackground(String... urls) {
 				JSONObject jsonObjRecv = HttpJsonClient.sendHttpGet(urls[0]);
 				return jsonObjRecv;
-		    }
-		
-		    @Override
-		    protected void onPostExecute(JSONObject jsonObjRecv) {
-		    	if(jsonObjRecv == null) {
-		    		// Fail
-		    		Toast.makeText(ctx, "Something broked. :( \nCheck the looogs.", Toast.LENGTH_LONG).show();
-		    	} else {
-		    		// Success
-			    	Log.i(TAG, "Flask Server Response!: " + jsonObjRecv.toString());
-			    	shoppingList = createShoppingListFromJson(jsonObjRecv);
-			    	TextView receiptView = (TextView)findViewById(R.id.qrTextReceipt);
-					if(shoppingList != null) {
-			    		receiptView.setText(shoppingList.toString());
-			    		Toast.makeText(ctx, "Successfully retrieved shopping list from server!", Toast.LENGTH_SHORT).show();
-			    		//TODO: Test that this works Kevin
-			    	}
-		    	}
-		    }
+			}
+
+			@Override
+			protected void onPostExecute(JSONObject jsonObjRecv) {
+				if (jsonObjRecv == null) {
+					// Fail
+					Toast.makeText(ctx,
+							"Something broked. :( \nCheck the looogs.",
+							Toast.LENGTH_LONG).show();
+				} else {
+					// Success
+					Log.i(TAG,
+							"Flask Server Response!: " + jsonObjRecv.toString());
+					shoppingList = createShoppingListFromJson(jsonObjRecv);
+					TextView receiptView = (TextView) findViewById(R.id.qrTextReceipt);
+					if (shoppingList != null) {
+						receiptView.setText(shoppingList.toString());
+						Toast.makeText(
+								ctx,
+								"Successfully retrieved shopping list from server!",
+								Toast.LENGTH_SHORT).show();
+						// TODO: Test that this works Kevin
+					}
+				}
+			}
 		}.execute(requestUrl);
 	}
-	
+
 	/**
 	 * Convert the values in a JSONObject to a real ShoppingList
+	 * 
 	 * @param jsonResponse
 	 * @return
 	 */
@@ -167,9 +184,9 @@ public class ListQRDisplayActivity extends Activity {
 		try {
 			String customerName = jsonResponse.getString("customer");
 			shoppingList = new ShoppingList(customerName);
-			
+
 			JSONArray orders = jsonResponse.getJSONArray("order");
-			for(int i=0; i< orders.length(); i++) {
+			for (int i = 0; i < orders.length(); i++) {
 				JSONObject order = orders.getJSONObject(i);
 				String name = order.getString("name");
 				String upc = order.getString("upc");
@@ -180,7 +197,7 @@ public class ListQRDisplayActivity extends Activity {
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
-		
+
 		return shoppingList;
 	}
 }

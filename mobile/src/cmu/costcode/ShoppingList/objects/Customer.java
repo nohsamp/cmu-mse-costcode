@@ -7,7 +7,7 @@ import edu.cmu.cc.sc.model.ShoppingList;
 
 /**
  * @author kevin
- *
+ * 
  */
 public class Customer {
 
@@ -16,34 +16,34 @@ public class Customer {
 	private String lastName;
 	private String address;
 	private Map<String, ShoppingList> shoppingList;
-	
+
 	public Customer() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	public Customer(int memberId, String firstName, String lastName, String address) {
+
+	public Customer(int memberId, String firstName, String lastName,
+			String address) {
 		this.memberId = memberId;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.address = address;
 		shoppingList = new HashMap<String, ShoppingList>();
 	}
-	
-	
-// ##### GETTERS AND SETTERS #####
-	
+
+	// ##### GETTERS AND SETTERS #####
+
 	public void setShoppingList(Map<String, ShoppingList> shoppingList) {
 		this.shoppingList = shoppingList;
 	}
-	
+
 	public Map<String, ShoppingList> getShoppingList() {
-		if(shoppingList == null) {
+		if (shoppingList == null) {
 			return new HashMap<String, ShoppingList>();
 		} else {
 			return shoppingList;
 		}
 	}
-	
+
 	/** Returns Customer's full name (first + last) */
 	public String getName() {
 		String name;

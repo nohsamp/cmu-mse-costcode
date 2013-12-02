@@ -23,26 +23,27 @@ public class ProximityIntentReceiver extends BroadcastReceiver {
 
 	private static final int NOTIFICATION_ID = 1000;
 	public static final String PROXIMITY_ALERT = "PROXIMITY_ALERT";
-	
+
 	private DatabaseAdaptor db;
-	
+
 	@Override
 	public void onReceive(Context context, Intent intent) {
 
 		String alert = intent.getAction();
-		Boolean entering = intent.getBooleanExtra(LocationManager.KEY_PROXIMITY_ENTERING, false);
+		Boolean entering = intent.getBooleanExtra(
+				LocationManager.KEY_PROXIMITY_ENTERING, false);
 		String category = null;
 
 		// Alert from WiFi triangulation
-		if(alert.equals(PROXIMITY_ALERT)){
+		if (alert.equals(PROXIMITY_ALERT)) {
 			// Get the section name (category)
 			category = intent.getStringExtra("category");
 			entering = true;
-		}
-		else {// Alert from addProximityAlert method, alert name is the category name
+		} else {// Alert from addProximityAlert method, alert name is the
+				// category name
 			category = alert;
 		}
-		
+
 		// Get the message from the intent
 		int memberId = intent.getIntExtra(LoginActivity.MEMBERID, 1);
 
@@ -64,37 +65,43 @@ public class ProximityIntentReceiver extends BroadcastReceiver {
 			}
 		}
 
-		if(entering) {
+		if (entering) {
 			Log.d(getClass().getSimpleName(), "entering");
-			Toast.makeText(context, category + " section entering. Unchecked items: " + uncheckedItems,
-					Toast.LENGTH_LONG).show();
+			Toast.makeText(
+					context,
+					category + " section entering. Unchecked items: "
+							+ uncheckedItems, Toast.LENGTH_LONG).show();
 
 			NotificationManager notificationManager = (NotificationManager) context
 					.getSystemService(Context.NOTIFICATION_SERVICE);
 			Notification notification = createNotification();
 
 			Intent viewIntent = new Intent(context, ViewListActivity.class);
-			PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, viewIntent, PendingIntent.FLAG_CANCEL_CURRENT);
+			PendingIntent pendingIntent = PendingIntent.getActivity(context, 0,
+					viewIntent, PendingIntent.FLAG_CANCEL_CURRENT);
 			notification.setLatestEventInfo(context, category
 					+ " section entering. Unchecked items: " + uncheckedItems,
 					"You are entering your point of interest.", pendingIntent);
-			notificationManager.notify(NOTIFICATION_ID, notification);	
-		} 
-		else {
+			notificationManager.notify(NOTIFICATION_ID, notification);
+		} else {
 			Log.d(getClass().getSimpleName(), "exiting");
-			Toast.makeText(context, category + " section exiting.",	Toast.LENGTH_LONG).show();
+			Toast.makeText(context, category + " section exiting.",
+					Toast.LENGTH_LONG).show();
 		}
 	}
-	
+
 	private Notification createNotification() {
 		Notification notification = new Notification();
 
-		notification.icon = R.drawable.icon;;
+		notification.icon = R.drawable.icon;
+		;
 		notification.when = System.currentTimeMillis();
 
 		notification.flags |= Notification.FLAG_AUTO_CANCEL;
 		notification.flags |= Notification.FLAG_SHOW_LIGHTS;
-		notification.flags |= Notification.FLAG_ONLY_ALERT_ONCE; //TODO: User choose this??
+		notification.flags |= Notification.FLAG_ONLY_ALERT_ONCE; // TODO: User
+																	// choose
+																	// this??
 
 		notification.defaults |= Notification.DEFAULT_VIBRATE;
 		notification.defaults |= Notification.DEFAULT_SOUND;
